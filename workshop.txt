@@ -1,0 +1,5 @@
+version=1
+title=Bundle Up!
+description=Meant to organize our excessive amounts of stuff
+tags=
+visibility=public

@@ -1,0 +1,37 @@
+module BundleUp {
+    craftRecipe RopePlanks {
+        timedAction = PackingBox,
+        time = 80,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 5 [Base.Plank] mode:destroy,
+            item 1 [Base.Rope;Base.SheetRope] mappers[ropeType],
+        }
+        outputs {
+            item 1 mapper:ropeType,
+        }
+        itemMapper ropeType {
+            Base.Rope = BundleUp.PlankBundle_Rope,
+            Base.SheetRope = BundleUp.PlankBundle_SheetRope
+        }
+    }
+
+    craftRecipe UnbundleRopePlanks {
+        timedAction = UnpackingBox,
+        time = 80,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope] mappers[ropeType],
+        }
+        outputs {
+            item 5 mapper:ropeType,
+            item 1 mapper:ropeType,
+        }
+        itemMapper ropeType {
+            BundleUp.PlankBundle_Rope = Base.Rope,
+            BundleUp.PlankBundle_SheetRope = Base.SheetRope
+        }
+    }
+}
