@@ -1,14 +1,17 @@
 module BundleUp {
+    imports {
+        Base,
+    }
     
     model Plank_Rope {
         mesh = WorldItems/Plank_Rope,
         texture = WorldItems/Plank_Rope,
-        scale = 0.01
+        scale = 0.2
     }
 
     model Plank_SheetRope {
         mesh = WorldItems/Plank_SheetRope,
         texture = WorldItems/Plank_SheetRope,
-        scale = 0.01
+        scale = 0.2
     }
 }
