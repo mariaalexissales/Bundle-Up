@@ -12,7 +12,7 @@ module BundleUp {
             item 5 [Base.Plank],
         }
         outputs {
-            item 1 BundleUp.PlankBundle_Rope,
+            item 1 [BundleUp.PlankBundle_Rope],
         }
     }
 
@@ -25,7 +25,7 @@ module BundleUp {
             item 5 [Base.Plank],
         }
         outputs {
-            item 1 BundleUp.PlankBundle_SheetRope,
+            item 1 [BundleUp.PlankBundle_SheetRope],
         }
     }
 
@@ -35,11 +35,11 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 BundleUp.PlankBundle_Rope,
+            item 1 [BundleUp.PlankBundle_Rope],
         }
         outputs {
-            item 1 Base.Rope,
-            item 5 Base.Plank,
+            item 1 [Base.Rope],
+            item 5 [Base.Plank],
         }
     }
 
@@ -48,11 +48,11 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 BundleUp.PlankBundle_SheetRope,
+            item 1 [BundleUp.PlankBundle_SheetRope],
         }
         outputs {
-            item 1 Base.SheetRope,
-            item 5 Base.Plank,
+            item 1 [Base.SheetRope],
+            item 5 [Base.Plank],
         }
     }
 }
