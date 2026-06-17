@@ -8,7 +8,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 10.0,
         Icon = PlankRope,
-        WorldStaticModel = Plank_Rope,
+        WorldStaticModel = BundleUp.Plank_Rope,
         DoubleClickRecipe = UnropePlanks,
     }
 
@@ -17,7 +17,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 10.0,
         Icon = PlankSheetRope,
-        WorldStaticModel = Plank_SheetRope,
+        WorldStaticModel = BundleUp.Plank_SheetRope,
         DoubleClickRecipe = UnropePlanks,
     }
 }

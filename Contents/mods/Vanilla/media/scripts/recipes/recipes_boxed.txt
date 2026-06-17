@@ -32,7 +32,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 BundleUp.NailsBox_Small,
+            item 1 [BundleUp.NailsBox_Small],
         }
         outputs {
             item 25 Base.Nails,
@@ -44,7 +44,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 BundleUp.NailsBox_Medium,
+            item 1 [BundleUp.NailsBox_Medium],
         }
         outputs {
             item 50 Base.Nails,
