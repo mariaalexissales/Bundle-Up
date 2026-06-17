@@ -7,7 +7,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 10.0,
-        Icon = Plank_Rope,
+        Icon = PlankRope,
         WorldStaticModel = PlankRope,
         DoubleClickRecipe = UnropePlanks,
     }
@@ -16,7 +16,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 10.0,
-        Icon = Plank_SheetRope,
+        Icon = PlankSheetRope,
         WorldStaticModel = PlankSheetRope,
         DoubleClickRecipe = UnropePlanks,
     }
