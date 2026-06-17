@@ -1,37 +1,58 @@
 module BundleUp {
+    imports {
+        Base,
+    }
+
     craftRecipe RopePlanks {
-        timedAction = PackingBox,
-        time = 80,
+        time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 5 [Base.Plank] mode:destroy,
-            item 1 [Base.Rope;Base.SheetRope] mappers[ropeType],
+            item 1 [Base.Rope],
+            item 5 [Base.Plank],
         }
         outputs {
-            item 1 mapper:ropeType,
-        }
-        itemMapper ropeType {
-            Base.Rope = BundleUp.PlankBundle_Rope,
-            Base.SheetRope = BundleUp.PlankBundle_SheetRope
+            item 1 BundleUp.PlankBundle_Rope,
         }
     }
 
-    craftRecipe UnbundleRopePlanks {
-        timedAction = UnpackingBox,
-        time = 80,
+    craftRecipe RopePlanks {
+        time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope] mappers[ropeType],
+            item 1 [Base.SheetRope],
+            item 5 [Base.Plank],
         }
         outputs {
-            item 5 mapper:ropeType,
-            item 1 mapper:ropeType,
+            item 1 BundleUp.PlankBundle_SheetRope,
         }
-        itemMapper ropeType {
-            BundleUp.PlankBundle_Rope = Base.Rope,
-            BundleUp.PlankBundle_SheetRope = Base.SheetRope
+    }
+
+    
+    craftRecipe UnropePlanks {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 BundleUp.PlankBundle_Rope,
+        }
+        outputs {
+            item 1 Base.Rope,
+            item 5 Base.Plank,
+        }
+    }
+
+    craftRecipe UnropePlanks {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 BundleUp.PlankBundle_SheetRope,
+        }
+        outputs {
+            item 1 Base.SheetRope,
+            item 5 Base.Plank,
         }
     }
 }
