@@ -1,0 +1,25 @@
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    item NailsBox_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = SmallNailsBox,
+        WorldStaticModel = Base.NailsBox,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxNailsSmall,
+    }
+
+    item NailsBox_Medium {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = SmallNailsBox,
+        WorldStaticModel = Base.NailsBox,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxNailsSmall,
+    }
+}
