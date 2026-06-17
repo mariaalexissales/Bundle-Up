@@ -1,5 +1,6 @@
 version=1
+id=3746632343
 title=Bundle Up!
 description=Meant to organize our excessive amounts of stuff
-tags=
+tags=Build 42;Balance;Misc;Multiplayer;QoL
 visibility=public

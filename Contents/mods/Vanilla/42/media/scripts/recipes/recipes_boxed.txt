@@ -1,0 +1,53 @@
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    craftRecipe BoxSmall {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 25 [Base.Nails],
+        }
+        outputs {
+            item 1 BundleUp.NailsBox_Small,
+        }
+    }
+
+    craftRecipe BoxMedium {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 50 [Base.Nails],
+        }
+        outputs {
+            item 1 BundleUp.NailsBox_Medium,
+        }
+    }
+
+    craftRecipe UnboxSmall {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.NailsBox_Small],
+        }
+        outputs {
+            item 25 Base.Nails,
+        }
+    }
+
+    craftRecipe UnboxMedium {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.NailsBox_Medium],
+        }
+        outputs {
+            item 50 Base.Nails,
+        }
+    }
+}
