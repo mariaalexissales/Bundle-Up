@@ -10,7 +10,7 @@ module BundleUp {
         Icon = SmallNailsBox,
         WorldStaticModel = Base.NailsBox,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxNailsSmall,
+        DoubleClickRecipe = UnboxSmall,
     }
 
     item NailsBox_Medium {
@@ -20,6 +20,6 @@ module BundleUp {
         Icon = SmallNailsBox,
         WorldStaticModel = Base.NailsBox,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxNailsSmall,
+        DoubleClickRecipe = UnboxMedium,
     }
 }
