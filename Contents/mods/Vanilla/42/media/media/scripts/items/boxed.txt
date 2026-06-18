@@ -1,0 +1,46 @@
+module BundleUp {
+    
+    imports {
+        Base,
+    }
+
+    item NailsBox_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = SmallNailsBox,
+        WorldStaticModel = Base.NailsBox,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxSmall,
+    }
+
+    item NailsBox_Medium {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = SmallNailsBox,
+        WorldStaticModel = Base.NailsBox,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxMedium,
+    }
+
+    item ScrewsBox_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = SmallScrewsBox,
+        WorldStaticModel = Base.ScrewsBox,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxSmall,
+    }
+
+    item ScrewsBox_Medium {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = SmallScrewsBox,
+        WorldStaticModel = Base.ScrewsBox,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxMedium,
+    }
+}

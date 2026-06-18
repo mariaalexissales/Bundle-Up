@@ -1,0 +1,23 @@
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    item PlankBundle_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = PlankRope,
+        WorldStaticModel = BundleUp.Plank_Rope,
+        DoubleClickRecipe = UnropePlanks,
+    }
+
+    item PlankBundle_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = PlankSheetRope,
+        WorldStaticModel = BundleUp.Plank_SheetRope,
+        DoubleClickRecipe = UnropePlanks,
+    }
+}
