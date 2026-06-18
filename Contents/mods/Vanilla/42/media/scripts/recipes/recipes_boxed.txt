@@ -56,7 +56,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [mapper:boxTypes] mappers[boxTypes],
+            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] mappers[boxTypes],
         }
         outputs {
             item 50 [mapper:boxTypes],
