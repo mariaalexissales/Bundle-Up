@@ -3,7 +3,7 @@ module BundleUp {
         Base,
     }
 
-    craftRecipe RopePlanks {
+    craftRecipe TieRope {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -20,7 +20,7 @@ module BundleUp {
         }
     }
     
-    craftRecipe UnropePlanks {
+    craftRecipe UntieRope {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -29,11 +29,14 @@ module BundleUp {
         }
         outputs {
             item 1 mapper:ropeTypes,
-            item 5 Base.Plank,
+            item 5 mapper:itemTypes,
         }
         itemMapper ropeTypes {
-            Base.Rope = BundleUp.PlankBundle_Rope,
-            Base.SheetRope = BundleUp.PlankBundle_SheetRope,
+            Base.Rope = [BundleUp.PlankBundle_Rope],
+            Base.SheetRope = [BundleUp.PlankBundle_SheetRope],
+        }
+        itemMapper itemTypes {
+            Base.Plank = [BundleUp.PlankBundle_Rope];[BundleUp.PlankBundle_SheetRope],
         }
     }
 }
