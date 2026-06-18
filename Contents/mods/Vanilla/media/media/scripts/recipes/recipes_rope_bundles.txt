@@ -25,7 +25,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope] mappers[ropeTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,

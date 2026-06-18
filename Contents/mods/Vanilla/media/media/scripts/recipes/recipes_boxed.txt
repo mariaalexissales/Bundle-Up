@@ -8,7 +8,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 25 [Base.Nails;Base.Screws] mappers[boxTypes],
+            item 25 [Base.Nails;Base.Screws],
         }
         outputs {
             item 1 mapper:boxTypes,
@@ -24,7 +24,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 50 [Base.Nails;Base.Screws] mappers[boxTypes],
+            item 50 [Base.Nails;Base.Screws],
         }
         outputs {
             item 1 mapper:boxTypes,
@@ -56,7 +56,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] mappers[boxTypes],
+            item 1 [mapper:boxTypes],
         }
         outputs {
             item 50 [mapper:boxTypes],
