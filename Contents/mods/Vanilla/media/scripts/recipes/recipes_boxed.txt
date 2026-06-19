@@ -43,7 +43,7 @@ module BundleUp {
             item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] mappers[boxTypes],
         }
         outputs {
-            item 25 [mapper:boxTypes],
+            item 25 mapper:boxTypes,
         }
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Small,
@@ -59,7 +59,7 @@ module BundleUp {
             item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] mappers[boxTypes],
         }
         outputs {
-            item 50 [mapper:boxTypes],
+            item 50 mapper:boxTypes,
         }
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Medium,
