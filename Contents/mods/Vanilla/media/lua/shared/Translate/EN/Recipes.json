@@ -1,4 +1,10 @@
 {
-    "RopePlanks": "Rope Planks",
-    "UnropePlanks": "Unbundle Rope Planks"
+    "TieRopePlank": "Bundle Planks",
+    "UntieRopePlank": "Unbundle Planks",
+    "TieRopeSheetMetal": "Bundle Sheet Metal",
+    "UntieRopeSheetMetal": "Unbundle Sheet Metal",
+    "BoxSmall": "Pack Items in Box",
+    "UnboxSmall": "Open Box (25 items)",
+    "BoxMedium": "Pack Items in Box",
+    "UnboxMedium": "Open Box (50 items)"
 }

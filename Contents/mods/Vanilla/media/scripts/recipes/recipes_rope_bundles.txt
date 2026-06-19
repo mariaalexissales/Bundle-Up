@@ -49,11 +49,12 @@ module BundleUp {
             item 5 mapper:itemTypes,
         }
         itemMapper ropeTypes {
-            Base.Rope = [BundleUp.PlankBundle_Rope],
-            Base.SheetRope = [BundleUp.PlankBundle_SheetRope],
+            Base.Rope = BundleUp.PlankBundle_Rope,
+            Base.SheetRope = BundleUp.PlankBundle_SheetRope,
         }
         itemMapper itemTypes {
-            Base.Plank = [BundleUp.PlankBundle_Rope];[BundleUp.PlankBundle_SheetRope],
+            Base.Plank = BundleUp.PlankBundle_Rope,
+            Base.Plank = BundleUp.PlankBundle_SheetRope,
         }
     }
 
@@ -69,11 +70,12 @@ module BundleUp {
             item 5 mapper:itemTypes,
         }
         itemMapper ropeTypes {
-            Base.Rope = [BundleUp.SheetMetalBundle_Rope],
-            Base.SheetRope = [BundleUp.SheetMetalBundle_SheetRope],
+            Base.Rope = BundleUp.SheetMetalBundle_Rope,
+            Base.SheetRope = BundleUp.SheetMetalBundle_SheetRope,
         }
         itemMapper itemTypes {
-            Base.SheetMetal = [BundleUp.SheetMetalBundle_Rope];[BundleUp.SheetMetalBundle_SheetRope],
+            Base.SheetMetal = BundleUp.SheetMetalBundle_Rope,
+            Base.SheetMetal = BundleUp.SheetMetalBundle_SheetRope,
         }
     }
 }
