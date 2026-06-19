@@ -3,7 +3,7 @@ module BundleUp {
         Base,
     }
 
-    craftRecipe TieRope {
+    craftRecipe TieRopePlank {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -19,8 +19,25 @@ module BundleUp {
             BundleUp.PlankBundle_SheetRope = Base.SheetRope,
         }
     }
-    
-    craftRecipe UntieRope {
+
+    craftRecipe TieRopeSheetMetal {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[ropeTypes],
+            item 5 [Base.SheetMetal],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+        }
+        itemMapper ropeTypes {
+            BundleUp.SheetMetalBundle_Rope = Base.Rope,
+            BundleUp.SheetMetalBundle_SheetRope = Base.SheetRope,
+        }
+    }
+
+    craftRecipe UntieRopePlank {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -37,6 +54,26 @@ module BundleUp {
         }
         itemMapper itemTypes {
             Base.Plank = [BundleUp.PlankBundle_Rope];[BundleUp.PlankBundle_SheetRope],
+        }
+    }
+
+    craftRecipe UntieRopeSheetMetal {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.SheetMetalBundle_Rope;BundleUp.SheetMetalBundle_SheetRope] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 5 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = [BundleUp.SheetMetalBundle_Rope],
+            Base.SheetRope = [BundleUp.SheetMetalBundle_SheetRope],
+        }
+        itemMapper itemTypes {
+            Base.SheetMetal = [BundleUp.SheetMetalBundle_Rope];[BundleUp.SheetMetalBundle_SheetRope],
         }
     }
 }

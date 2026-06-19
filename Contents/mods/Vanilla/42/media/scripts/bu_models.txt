@@ -14,4 +14,16 @@ module BundleUp {
         texture = WorldItems/Plank_SheetRope,
         scale = 0.2
     }
+
+    model SheetMetal_Rope {
+        mesh = WorldItems/SheetMetal_Rope,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.2
+    }
+
+    model SheetMetal_SheetRope {
+        mesh = WorldItems/SheetMetal_SheetRope,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.2
+    }
 }

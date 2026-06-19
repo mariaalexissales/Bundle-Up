@@ -9,7 +9,7 @@ module BundleUp {
         Weight = 10.0,
         Icon = PlankRope,
         WorldStaticModel = BundleUp.Plank_Rope,
-        DoubleClickRecipe = UnropePlanks,
+        DoubleClickRecipe = UntieRopePlank,
     }
 
     item PlankBundle_SheetRope {
@@ -18,6 +18,24 @@ module BundleUp {
         Weight = 10.0,
         Icon = PlankSheetRope,
         WorldStaticModel = BundleUp.Plank_SheetRope,
-        DoubleClickRecipe = UnropePlanks,
+        DoubleClickRecipe = UntieRopePlank,
+    }
+
+    item SheetMetalBundle_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = SheetMetalRope,
+        WorldStaticModel = BundleUp.SheetMetal_Rope,
+        DoubleClickRecipe = UntieRopeSheetMetal,
+    }
+
+    item SheetMetalBundle_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = SheetMetalSheetRope,
+        WorldStaticModel = BundleUp.SheetMetal_SheetRope,
+        DoubleClickRecipe = UntieRopeSheetMetal,
     }
 }
