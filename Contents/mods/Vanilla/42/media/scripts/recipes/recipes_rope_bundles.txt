@@ -15,8 +15,8 @@ module BundleUp {
             item 1 mapper:ropeTypes,
         }
         itemMapper ropeTypes {
-            BundleUp.PlankBundleSmall_Rope = Base.Rope,
-            BundleUp.PlankBundleSmall_SheetRope = Base.SheetRope,
+            BundleUp.PlankBundle_Rope = Base.Rope,
+            BundleUp.PlankBundle_SheetRope = Base.SheetRope,
         }
     }
 
@@ -32,8 +32,8 @@ module BundleUp {
             item 1 mapper:ropeTypes,
         }
         itemMapper ropeTypes {
-            BundleUp.SheetMetalBundleSmall_Rope = Base.Rope,
-            BundleUp.SheetMetalBundleSmall_SheetRope = Base.SheetRope,
+            BundleUp.SMBundle_Rope = Base.Rope,
+            BundleUp.SMBundle_SheetRope = Base.SheetRope,
         }
     }
 
@@ -42,19 +42,19 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankBundleSmall_Rope;BundleUp.PlankBundleSmall_SheetRope] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
             item 5 mapper:itemTypes,
         }
         itemMapper ropeTypes {
-            Base.Rope = BundleUp.PlankBundleSmall_Rope,
-            Base.SheetRope = BundleUp.PlankBundleSmall_SheetRope,
+            Base.Rope = BundleUp.PlankBundle_Rope,
+            Base.SheetRope = BundleUp.PlankBundle_SheetRope,
         }
         itemMapper itemTypes {
-            Base.Plank = BundleUp.PlankBundleSmall_Rope,
-            Base.Plank = BundleUp.PlankBundleSmall_SheetRope,
+            Base.Plank = BundleUp.PlankBundle_Rope,
+            Base.Plank = BundleUp.PlankBundle_SheetRope,
         }
     }
 
@@ -63,19 +63,98 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.SheetMetalBundleSmall_Rope;BundleUp.SheetMetalBundleSmall_SheetRope] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.SMBundle_Rope;BundleUp.SMBundle_SheetRope] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
             item 5 mapper:itemTypes,
         }
         itemMapper ropeTypes {
-            Base.Rope = BundleUp.SheetMetalBundleSmall_Rope,
-            Base.SheetRope = BundleUp.SheetMetalBundleSmall_SheetRope,
+            Base.Rope = BundleUp.SMBundle_Rope,
+            Base.SheetRope = BundleUp.SMBundle_SheetRope,
         }
         itemMapper itemTypes {
-            Base.SheetMetal = BundleUp.SheetMetalBundleSmall_Rope,
-            Base.SheetMetal = BundleUp.SheetMetalBundleSmall_SheetRope,
+            Base.SheetMetal = BundleUp.SMBundle_Rope,
+            Base.SheetMetal = BundleUp.SMBundle_SheetRope,
         }
     }
+
+    // 10 Stacks
+        craftRecipe TieRopePlank10 {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[ropeTypes],
+            item 10 [Base.Plank],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+        }
+        itemMapper ropeTypes {
+            BundleUp.PlankBundle_Rope = Base.Rope,
+            BundleUp.PlankBundle_SheetRope = Base.SheetRope,
+        }
+    }
+
+    craftRecipe TieRopeSheetMetal10 {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[ropeTypes],
+            item 10 [Base.SheetMetal],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+        }
+        itemMapper ropeTypes {
+            BundleUp.SMBundle_Rope = Base.Rope,
+            BundleUp.SMBundle_SheetRope = Base.SheetRope,
+        }
+    }
+
+    craftRecipe UntieRopePlank10 {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 10 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.PlankBundle_Rope,
+            Base.SheetRope = BundleUp.PlankBundle_SheetRope,
+        }
+        itemMapper itemTypes {
+            Base.Plank = BundleUp.PlankBundle_Rope,
+            Base.Plank = BundleUp.PlankBundle_SheetRope,
+        }
+    }
+
+    craftRecipe UntieRopeSheetMetal10 {
+        time = 20,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.SMBundleL_Rope;BundleUp.SMBundleL_SheetRope] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 10 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.SMBundleL_Rope,
+            Base.SheetRope = BundleUp.SMBundle_SheetRope,
+        }
+        itemMapper itemTypes {
+            Base.SheetMetal = BundleUp.SMBundleL_Rope,
+            Base.SheetMetal = BundleUp.SMBundleL_SheetRope,
+        }
+    }
+
+
 }

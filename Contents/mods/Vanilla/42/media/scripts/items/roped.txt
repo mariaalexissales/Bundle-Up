@@ -3,7 +3,7 @@ module BundleUp {
         Base,
     }
 
-    item PlankBundleSmall_Rope {
+    item PlankBundle_Rope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
@@ -12,7 +12,7 @@ module BundleUp {
         DoubleClickRecipe = UntieRopePlank5,
     }
 
-    item PlankBundleSmall_SheetRope {
+    item PlankBundle_SheetRope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
@@ -21,7 +21,7 @@ module BundleUp {
         DoubleClickRecipe = UntieRopePlank5,
     }
 
-    item SheetMetalBundleSmall_Rope {
+    item SMBundle_Rope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -30,12 +30,48 @@ module BundleUp {
         DoubleClickRecipe = UntieRopeSheetMetal5,
     }
 
-    item SheetMetalBundleSmall_SheetRope {
+    item SMBundle_SheetRope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
         Icon = SMSheetRope,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal5,
+    }
+
+    item PlankBundleL_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.5,
+        Icon = PlankRopeL,
+        WorldStaticModel = Base.Plank,
+        DoubleClickRecipe = UntieRopePlank10,
+    }
+
+    item PlankBundleL_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.5,
+        Icon = PlankSheetRopeL,
+        WorldStaticModel = Base.Plank,
+        DoubleClickRecipe = UntieRopePlank10,
+    }
+
+    item SMBundleL_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = SMRopeL,
+        WorldStaticModel = Base.SheetMetal,
+        DoubleClickRecipe = UntieRopeSheetMetal10,
+    }
+
+    item SMBundleL_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = SMSheetRopeL,
+        WorldStaticModel = Base.SheetMetal,
+        DoubleClickRecipe = UntieRopeSheetMetal10,
     }
 }
