@@ -25,7 +25,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
-        Icon = ShMetalRope,
+        Icon = SMRope,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal5,
     }
@@ -34,7 +34,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
-        Icon = ShMetalSheetRope,
+        Icon = SMSheetRope,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal5,
     }
