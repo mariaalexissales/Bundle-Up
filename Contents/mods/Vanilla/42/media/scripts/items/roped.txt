@@ -3,7 +3,7 @@ module BundleUp {
         Base,
     }
 
-    item PlankBundle_Rope {
+    item PlankBundleSmall_Rope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
@@ -12,7 +12,7 @@ module BundleUp {
         DoubleClickRecipe = UntieRopePlank5,
     }
 
-    item PlankBundle_SheetRope {
+    item PlankBundleSmall_SheetRope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
@@ -21,7 +21,7 @@ module BundleUp {
         DoubleClickRecipe = UntieRopePlank5,
     }
 
-    item SheetMetalBundle_Rope {
+    item SheetMetalBundleSmall_Rope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -30,7 +30,7 @@ module BundleUp {
         DoubleClickRecipe = UntieRopeSheetMetal5,
     }
 
-    item SheetMetalBundle_SheetRope {
+    item SheetMetalBundleSmall_SheetRope {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,

@@ -1,8 +1,8 @@
 {
-    "BundleUp.PlankBundle_Rope": "Bundle of Planks",
-    "BundleUp.PlankBundle_SheetRope": "Bundle of Planks",
-    "BundleUp.SheetMetalBundle_Rope": "Bundle of Sheet Metal",
-    "BundleUp.SheetMetalBundle_SheetRope": "Bundle of Sheet Metal",
+    "BundleUp.PlankBundleSmall_Rope": "Bundle of Planks",
+    "BundleUp.PlankBundleSmall_SheetRope": "Bundle of Planks",
+    "BundleUp.SheetMetalBundleSmall_Rope": "Bundle of Sheet Metal",
+    "BundleUp.SheetMetalBundleSmall_SheetRope": "Bundle of Sheet Metal",
     "BundleUp.NailsBox_Small": "Small Box of Nails",
     "BundleUp.NailsBox_Medium": "Medium Box of Nails",
     "BundleUp.ScrewsBox_Small": "Small Box of Screws",
