@@ -8,14 +8,14 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.Sack],
-            item 5 [Base.Sack] mappers[itemTypes],
+            item 1 [Base.EmptySandbag],
+            item 5 [Base.EmptySandbag] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
         }
         itemMapper itemTypes {
-            BundleUp.Sack_Sack = Base.Sack,
+            BundleUp.Sack_Sack = Base.EmptySandbag,
         }
     }
 
@@ -28,10 +28,10 @@ module BundleUp {
         }
         outputs {
             item 5 mapper:itemTypes,
-            item 1 Base.Sack,
+            item 1 Base.EmptySandbag,
         }
         itemMapper itemTypes {
-            Base.Sack = BundleUp.Sack_Sack,
+            Base.EmptySandbag = BundleUp.Sack_Sack,
         }
     }
 }
