@@ -5,7 +5,7 @@ module BundleUp {
         Weight = 2.0,
         Icon = WireCableS,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxWireSmall,
+        DoubleClickRecipe = UnbundleSmall,
     }
 
     item WireCable_Large {
@@ -14,7 +14,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = WireCableL,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxWireLarge,
+        DoubleClickRecipe = UnbundleLarge,
     }
 
     item JewelryPouch_Small {

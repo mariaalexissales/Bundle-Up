@@ -1,0 +1,36 @@
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    craftRecipe Sack {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Sack],
+            item 5 [Base.Sack] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.Sack_Sack = Base.Sack,
+        }
+    }
+
+    craftRecipe Unsack {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.Sack_Sack] mappers[itemTypes],
+        }
+        outputs {
+            item 5 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Sack = BundleUp.Sack_Sack,
+        }
+    }
+}

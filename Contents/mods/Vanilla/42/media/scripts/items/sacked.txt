@@ -10,41 +10,4 @@ module BundleUp {
         Icon = SackSack,
         DoubleClickRecipe = UnpackSack,
     }
-
-        item GoldScrap_Small {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.3,
-        Icon = GoldScrapS,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxGoldSmall,
-    }
-
-    item GoldScrap_Large {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.6,
-        Icon = GoldScrapL,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxGoldLarge,
-    }
-
-    item SilverScrap_Small {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.3,
-        Icon = SilverScrapS,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxSilverSmall,
-    }
-
-    item SilverScrap_Large {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.6,
-        Icon = SilverScrapL,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxSilverLarge,
-    }
-
 }

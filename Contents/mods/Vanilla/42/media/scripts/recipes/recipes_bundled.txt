@@ -1,0 +1,65 @@
+module BundleUp {
+    imports {
+        Base,
+    }
+    
+    craftRecipe BundleSmall {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 5 [Base.Wire] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WireCable_Small = Base.Wire,
+        }
+    }
+
+    craftRecipe UnbundleSmall {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.WireCable_Small] mappers[itemTypes],
+        }
+        outputs {
+            item 5 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Wire = BundleUp.WireCable_Small,
+        }
+    }
+
+    craftRecipe BundleLarge {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 10 [Base.Wire] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WireCable_Large = Base.Wire,
+        }
+    }
+
+    craftRecipe UnbundleLarge {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.WireCable_Large] mappers[itemTypes],
+        }
+        outputs {
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Wire = BundleUp.WireCable_Large,
+        }
+    }
+}
