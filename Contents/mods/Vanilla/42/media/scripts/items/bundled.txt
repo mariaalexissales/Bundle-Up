@@ -22,7 +22,6 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = JewelryPouchS,
-        DoubleClickRecipe = UnpackJewelrySmall,
     }
 
     item JewelryPouch_Medium {
@@ -30,6 +29,5 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.6,
         Icon = JewelryPouchM,
-        DoubleClickRecipe = UnpackJewelryMedium,
     }
 }

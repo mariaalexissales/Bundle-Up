@@ -6,5 +6,9 @@
     "BoxSmall": "Pack Items in Box",
     "UnboxSmall": "Open Box (25 items)",
     "BoxMedium": "Pack Items in Box",
-    "UnboxMedium": "Open Box (50 items)"
+    "UnboxMedium": "Open Box (50 items)",
+    "BundleSmall": "Bundle Items",
+    "UnbundleSmall": "Unbundle Items (5 items)",
+    "BundleLarge": "Bundle Items",
+    "UnbundleLarge": "Unbundle Items (10 items)"
 }
