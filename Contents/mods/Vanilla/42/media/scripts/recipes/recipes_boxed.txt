@@ -4,11 +4,11 @@ module BundleUp {
     }
 
     craftRecipe BoxSmall {
-        time = 20,
+        time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 25 [Base.Nails;Base.Screws] mappers[boxTypes],
+            item 25 [Base.Nails;Base.Screws;Base.GoldScrap;Base.SilverScrap] mappers[boxTypes],
         }
         outputs {
             item 1 mapper:boxTypes,
@@ -16,15 +16,17 @@ module BundleUp {
         itemMapper boxTypes {
             BundleUp.NailsBox_Small = Base.Nails,
             BundleUp.ScrewsBox_Small = Base.Screws,
+            BundleUp.GoldScrap_Small = Base.GoldScrap,
+            BundleUp.SilverScrap_Small = Base.SilverScrap,
         }
     }
 
     craftRecipe BoxMedium {
-        time = 20,
+        time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 50 [Base.Nails;Base.Screws] mappers[boxTypes],
+            item 50 [Base.Nails;Base.Screws;Base.GoldScrap;Base.SilverScrap] mappers[boxTypes],
         }
         outputs {
             item 1 mapper:boxTypes,
@@ -32,15 +34,17 @@ module BundleUp {
         itemMapper boxTypes {
             BundleUp.NailsBox_Medium = Base.Nails,
             BundleUp.ScrewsBox_Medium = Base.Screws,
+            BundleUp.GoldScrap_Large = Base.GoldScrap,
+            BundleUp.SilverScrap_Large = Base.SilverScrap,
         }
     }
 
     craftRecipe UnboxSmall {
-        time = 20,
+        time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] mappers[boxTypes],
+            item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small;BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small] mappers[boxTypes],
         }
         outputs {
             item 25 mapper:boxTypes,
@@ -48,15 +52,17 @@ module BundleUp {
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Small,
             Base.Screws = BundleUp.ScrewsBox_Small,
+            Base.GoldScrap = BundleUp.GoldScrap_Small,
+            Base.SilverScrap = BundleUp.SilverScrap_Small,
         }
     }
 
     craftRecipe UnboxMedium {
-        time = 20,
+        time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] mappers[boxTypes],
+            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium;BundleUp.GoldScrap_Large;BundleUp.SilverScrap_Large] mappers[boxTypes],
         }
         outputs {
             item 50 mapper:boxTypes,
@@ -64,6 +70,8 @@ module BundleUp {
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Medium,
             Base.Screws = BundleUp.ScrewsBox_Medium,
+            Base.GoldScrap = BundleUp.GoldScrap_Large,
+            Base.SilverScrap = BundleUp.SilverScrap_Large,
         }
     }
 }

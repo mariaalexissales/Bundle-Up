@@ -28,6 +28,7 @@ module BundleUp {
         }
         outputs {
             item 5 mapper:itemTypes,
+            item 1 Base.Sack,
         }
         itemMapper itemTypes {
             Base.Sack = BundleUp.Sack_Sack,
