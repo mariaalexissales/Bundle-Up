@@ -3,7 +3,7 @@ module BundleUp {
         Base,
     }
 
-    craftRecipe TieRopePlank {
+    craftRecipe TieRopePlank5 {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -20,7 +20,7 @@ module BundleUp {
         }
     }
 
-    craftRecipe TieRopeSheetMetal {
+    craftRecipe TieRopeSheetMetal5 {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -37,7 +37,7 @@ module BundleUp {
         }
     }
 
-    craftRecipe UntieRopePlank {
+    craftRecipe UntieRopePlank5 {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -58,7 +58,7 @@ module BundleUp {
         }
     }
 
-    craftRecipe UntieRopeSheetMetal {
+    craftRecipe UntieRopeSheetMetal5 {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
