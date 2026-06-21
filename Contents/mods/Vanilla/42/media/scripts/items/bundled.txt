@@ -1,0 +1,35 @@
+module BundleUp {
+    item WireCable_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.0,
+        Icon = WireCableS,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxWireSmall,
+    }
+
+    item WireCable_Large {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = WireCableL,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnboxWireLarge,
+    }
+
+    item JewelryPouch_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = JewelryPouchS,
+        DoubleClickRecipe = UnpackJewelrySmall,
+    }
+
+    item JewelryPouch_Medium {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.6,
+        Icon = JewelryPouchM,
+        DoubleClickRecipe = UnpackJewelryMedium,
+    }
+}

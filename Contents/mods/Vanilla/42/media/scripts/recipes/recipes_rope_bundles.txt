@@ -79,7 +79,6 @@ module BundleUp {
         }
     }
 
-    // 10 Stacks
         craftRecipe TieRopePlank10 {
         time = 20,
         Tags = InHandCraft;CanBeDoneInDark,
@@ -148,7 +147,7 @@ module BundleUp {
         }
         itemMapper ropeTypes {
             Base.Rope = BundleUp.SMBundleL_Rope,
-            Base.SheetRope = BundleUp.SMBundle_SheetRope,
+            Base.SheetRope = BundleUp.SMBundleL_SheetRope,
         }
         itemMapper itemTypes {
             Base.SheetMetal = BundleUp.SMBundleL_Rope,
