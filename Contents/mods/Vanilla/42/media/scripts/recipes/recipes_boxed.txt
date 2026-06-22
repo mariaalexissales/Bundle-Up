@@ -16,8 +16,6 @@ module BundleUp {
         itemMapper boxTypes {
             BundleUp.NailsBox_Small = Base.Nails,
             BundleUp.ScrewsBox_Small = Base.Screws,
-            BundleUp.GoldScrap_Small = Base.GoldScrap,
-            BundleUp.SilverScrap_Small = Base.SilverScrap,
         }
     }
 
@@ -34,8 +32,6 @@ module BundleUp {
         itemMapper boxTypes {
             BundleUp.NailsBox_Medium = Base.Nails,
             BundleUp.ScrewsBox_Medium = Base.Screws,
-            BundleUp.GoldScrap_Large = Base.GoldScrap,
-            BundleUp.SilverScrap_Large = Base.SilverScrap,
         }
     }
 
@@ -44,16 +40,14 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small;BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small] mappers[boxTypes],
+            item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] mappers[boxTypes],
         }
         outputs {
             item 25 mapper:boxTypes,
         }
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Small,
-            Base.Screws = BundleUp.ScrewsBox_Small,
-            Base.GoldScrap = BundleUp.GoldScrap_Small,
-            Base.SilverScrap = BundleUp.SilverScrap_Small,
+            Base.Screws = BundleUp.ScrewsBox_Small
         }
     }
 
@@ -62,7 +56,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium;BundleUp.GoldScrap_Large;BundleUp.SilverScrap_Large] mappers[boxTypes],
+            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] mappers[boxTypes],
         }
         outputs {
             item 50 mapper:boxTypes,
@@ -70,6 +64,68 @@ module BundleUp {
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Medium,
             Base.Screws = BundleUp.ScrewsBox_Medium,
+        }
+    }
+
+    craftRecipe BagSmall {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 50 [Base.GoldScrap;Base.SilverScrap] mappers[bagTypes],
+        }
+        outputs {
+            item 1 mapper:bagTypes,
+        }
+        itemMapper bagTypes {
+            BundleUp.GoldScrap_Small = Base.GoldScrap,
+            BundleUp.SilverScrap_Small = Base.SilverScrap,
+        }
+    }
+
+    craftRecipe UnbagSmall {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small] mappers[bagTypes],
+        }
+        outputs {
+            item 50 mapper:bagTypes,
+        }
+        itemMapper bagTypes {
+            Base.GoldScrap = BundleUp.GoldScrap_Small,
+            Base.SilverScrap = BundleUp.SilverScrap_Small,
+        }
+    }
+
+    craftRecipe BagLarge {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 100 [Base.GoldScrap;Base.SilverScrap] mappers[bagTypes],
+        }
+        outputs {
+            item 1 mapper:bagTypes,
+        }
+        itemMapper bagTypes {
+            BundleUp.GoldScrap_Large = Base.GoldScrap,
+            BundleUp.SilverScrap_Large = Base.SilverScrap,
+        }
+    }
+
+    craftRecipe UnbagLarge {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GoldScrap_Large;BundleUp.SilverScrap_Large] mappers[bagTypes],
+        }
+        outputs {
+            item 100 mapper:bagTypes,
+        }
+        itemMapper bagTypes {
             Base.GoldScrap = BundleUp.GoldScrap_Large,
             Base.SilverScrap = BundleUp.SilverScrap_Large,
         }

@@ -50,7 +50,7 @@ module BundleUp {
         Weight = 0.5,
         Icon = GoldScrapS,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxSmall,
+        DoubleClickRecipe = UnbagSmall,
     }
 
     item GoldScrap_Large {
@@ -59,7 +59,7 @@ module BundleUp {
         Weight = 1.0,
         Icon = GoldScrapL,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxMedium,
+        DoubleClickRecipe = UnbagLarge,
     }
 
     item SilverScrap_Small {
@@ -68,7 +68,7 @@ module BundleUp {
         Weight = 0.5,
         Icon = SilverScrapS,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxSmall,
+        DoubleClickRecipe = UnbagSmall,
     }
 
     item SilverScrap_Large {
@@ -77,6 +77,6 @@ module BundleUp {
         Weight = 1.0,
         Icon = SilverScrapL,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxMedium,
+        DoubleClickRecipe = UnbagLarge,
     }
 }
