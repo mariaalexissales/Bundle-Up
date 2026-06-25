@@ -7,7 +7,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
-        Icon = PlankRope,
+        Icon = PlankR,
         WorldStaticModel = Base.Plank,
         DoubleClickRecipe = UntieRopePlank5,
     }
@@ -16,7 +16,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
-        Icon = PlankSheetRope,
+        Icon = PlankSR,
         WorldStaticModel = Base.Plank,
         DoubleClickRecipe = UntieRopePlank5,
     }
@@ -25,7 +25,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
-        Icon = SMRope,
+        Icon = SheetMetalR,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal5,
     }
@@ -34,7 +34,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
-        Icon = SMSheetRope,
+        Icon = SheetMetalSR,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal5,
     }
@@ -43,7 +43,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 7.5,
-        Icon = PlankRopeL,
+        Icon = PlankLR,
         WorldStaticModel = Base.Plank,
         DoubleClickRecipe = UntieRopePlank10,
     }
@@ -52,7 +52,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 7.5,
-        Icon = PlankSheetRopeL,
+        Icon = PlankLSR,
         WorldStaticModel = Base.Plank,
         DoubleClickRecipe = UntieRopePlank10,
     }
@@ -61,7 +61,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,
-        Icon = SMRopeL,
+        Icon = SheetMetalLR,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal10,
     }
@@ -70,7 +70,7 @@ module BundleUp {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,
-        Icon = SMSheetRopeL,
+        Icon = SheetMetalLSR,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal10,
     }
