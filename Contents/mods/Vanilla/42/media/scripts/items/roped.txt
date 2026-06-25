@@ -39,6 +39,24 @@ module BundleUp {
         DoubleClickRecipe = UntieRopeSheetMetal5,
     }
 
+    item IronPipes_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = IronPipesR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UntieRopeIronPipes5,
+    }
+
+    item IronPipes_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = IronPipesSR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UntieRopeIronPipes5,
+    }
+
     item PlankBundleL_Rope {
         DisplayCategory = Material,
         ItemType = base:normal,
@@ -73,5 +91,23 @@ module BundleUp {
         Icon = SheetMetalLSR,
         WorldStaticModel = Base.SheetMetal,
         DoubleClickRecipe = UntieRopeSheetMetal10,
+    }
+
+        item IronPipesL_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = IronPipesLR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UntieRopeIronPipes10,
+    }
+
+    item IronPipesL_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = IronPipesLSR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UntieRopeIronPipes10,
     }
 }
