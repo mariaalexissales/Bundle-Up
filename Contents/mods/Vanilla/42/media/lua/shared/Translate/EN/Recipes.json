@@ -1,8 +1,8 @@
 {
-    "TieRopePlank5": "Bundle Planks",
-    "UntieRopePlank5": "Unbundle Planks",
-    "TieRopeSheetMetal5": "Bundle Sheet Metal",
-    "UntieRopeSheetMetal5": "Unbundle Sheet Metal",
+    "Tie5": "Bundle 5 Items",
+    "Untie5": "Unbundle 5 Items",
+    "Tie10": "Bundle 10 Items",
+    "Untie10": "Unbundle 10 Items",
     "BoxSmall": "Pack Items in Box",
     "UnboxSmall": "Open Box (25 items)",
     "BoxMedium": "Pack Items in Box",

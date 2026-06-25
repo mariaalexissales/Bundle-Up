@@ -9,7 +9,7 @@ module BundleUp {
         Weight = 5.0,
         Icon = PlankR,
         WorldStaticModel = Base.Plank,
-        DoubleClickRecipe = UntieRopePlank5,
+        DoubleClickRecipe = Untie5,
     }
 
     item PlankBundle_SheetRope {
@@ -18,7 +18,7 @@ module BundleUp {
         Weight = 5.0,
         Icon = PlankSR,
         WorldStaticModel = Base.Plank,
-        DoubleClickRecipe = UntieRopePlank5,
+        DoubleClickRecipe = Untie5,
     }
 
     item SMBundle_Rope {
@@ -27,7 +27,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = SheetMetalR,
         WorldStaticModel = Base.SheetMetal,
-        DoubleClickRecipe = UntieRopeSheetMetal5,
+        DoubleClickRecipe = Untie5,
     }
 
     item SMBundle_SheetRope {
@@ -36,7 +36,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = SheetMetalSR,
         WorldStaticModel = Base.SheetMetal,
-        DoubleClickRecipe = UntieRopeSheetMetal5,
+        DoubleClickRecipe = Untie5,
     }
 
     item IronPipes_Rope {
@@ -45,7 +45,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = IronPipesR,
         WorldStaticModel = Base.MetalPipe,
-        DoubleClickRecipe = UntieRopeIronPipes5,
+        DoubleClickRecipe = Untie5,
     }
 
     item IronPipes_SheetRope {
@@ -54,7 +54,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = IronPipesSR,
         WorldStaticModel = Base.MetalPipe,
-        DoubleClickRecipe = UntieRopeIronPipes5,
+        DoubleClickRecipe = Untie5,
     }
 
     item PlankBundleL_Rope {
@@ -63,7 +63,7 @@ module BundleUp {
         Weight = 7.5,
         Icon = PlankLR,
         WorldStaticModel = Base.Plank,
-        DoubleClickRecipe = UntieRopePlank10,
+        DoubleClickRecipe = Untie10,
     }
 
     item PlankBundleL_SheetRope {
@@ -72,7 +72,7 @@ module BundleUp {
         Weight = 7.5,
         Icon = PlankLSR,
         WorldStaticModel = Base.Plank,
-        DoubleClickRecipe = UntieRopePlank10,
+        DoubleClickRecipe = Untie10,
     }
 
     item SMBundleL_Rope {
@@ -81,7 +81,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = SheetMetalLR,
         WorldStaticModel = Base.SheetMetal,
-        DoubleClickRecipe = UntieRopeSheetMetal10,
+        DoubleClickRecipe = Untie10,
     }
 
     item SMBundleL_SheetRope {
@@ -90,7 +90,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = SheetMetalLSR,
         WorldStaticModel = Base.SheetMetal,
-        DoubleClickRecipe = UntieRopeSheetMetal10,
+        DoubleClickRecipe = Untie10,
     }
 
         item IronPipesL_Rope {
@@ -99,7 +99,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = IronPipesLR,
         WorldStaticModel = Base.MetalPipe,
-        DoubleClickRecipe = UntieRopeIronPipes10,
+        DoubleClickRecipe = Untie10,
     }
 
     item IronPipesL_SheetRope {
@@ -108,6 +108,6 @@ module BundleUp {
         Weight = 6.0,
         Icon = IronPipesLSR,
         WorldStaticModel = Base.MetalPipe,
-        DoubleClickRecipe = UntieRopeIronPipes10,
+        DoubleClickRecipe = Untie10,
     }
 }
