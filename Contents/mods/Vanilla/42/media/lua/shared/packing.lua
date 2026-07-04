@@ -1,13 +1,13 @@
 BUInv = BUInv or {}
 
 PACK_FLAVORS = {
-    ["BundleUp.BlueberryPack"]    = "SodaBlueberry",
-    ["BundleUp.BubblegumPack"]    = "SodaBubblegum",
-    ["BundleUp.SodaCanPack_Pop"]          = "SodaPop",
-    ["BundleUp.SodaCanPack_Lime"]         = "SodaLime",
-    ["BundleUp.SodaCanPack_Grape"]        = "SodaGrape",
-    ["BundleUp.SodaCanPack_Pineapple"]    = "SodaPineapple",
-    ["BundleUp.SodaCanPack_Strawberry"]   = "SodaStrawberry",
+    ["BundleUp.BlueberrySP"]    = "SodaBlueberry",
+    ["BundleUp.BubblegumSP"]    = "SodaBubblegum",
+    ["BundleUp.LimeSP"]         = "SodaLime",
+    ["BundleUp.OrangeSP"]       = "SodaPop",
+    ["BundleUp.GrapeSP"]        = "SodaGrape",
+    ["BundleUp.PineappleSP"]    = "SodaPineapple",
+    ["BundleUp.StrawberrySP"]   = "SodaStrawberry",
 }
 
 ---@param craftRecipeData CraftRecipeData
@@ -17,11 +17,14 @@ function BUInv.unpackSodaPack(craftRecipeData, character)
     local sodaFluid = PACK_FLAVORS[sodaPack:getFullType()]
 
     local sodaType = Fluid.Get(sodaFluid)
-    local inventory = character:getInventory()
+    local outputItems = craftRecipeData:getAllCreatedItems()
+
     -- put the soda in the cans
-    for i = 1, 6 do
-        local can = inventory:AddItem("Base.SodaCan")
-        can:Empty()
-        can:AddFluid(sodaType, 1.0)
+    for i = 0, outputItems:size() - 1 do
+        local can = outputItems:get(i)
+        local fluidContainer = can:getFluidContainer()
+        fluidContainer:Empty()
+        fluidContainer:addFluid(sodaType, 1.0)
+        can:setColor(sodaType:getColor())
     end
 end

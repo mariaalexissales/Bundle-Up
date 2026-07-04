@@ -14,5 +14,7 @@
     "BundleSmall": "Bundle Items",
     "UnbundleSmall": "Unbundle Items (5 items)",
     "BundleLarge": "Bundle Items",
-    "UnbundleLarge": "Unbundle Items (10 items)"
+    "UnbundleLarge": "Unbundle Items (10 items)",
+    "OpenSodaCanPack": "Open Soda Can Pack",
+    "OpenGingerAlePack": "Open Ginger Ale Pack"
 }

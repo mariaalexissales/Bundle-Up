@@ -69,10 +69,35 @@ module BundleUp {
         onCreate = BUInv.unpackSodaPack,
         category = Packing,
         inputs {
-            item 1 [BundleUp.GingerAlePack;BundleUp.BlueberryPack;BundleUp.BubblegumPack;BundleUp.SodaCanPack_Pineapple;BundleUp.SodaCanPack_Strawberry] mappers[itemTypes],
+            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP] mappers[itemTypes],
         }
         outputs {
             item 6 Base.SodaCan,
+        }
+    }
+
+    craftRecipe PackSodaCan {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackSodaCan,
+        onCreate = BUInv.packSodaCan,
+        category = Packing,
+        inputs {
+            item 6 [Base.SodaCan] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+    }
+
+    craftRecipe OpenGingerAlePack {
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GingerAleSP] mappers[itemTypes],
+        }
+        outputs {
+            item 6 Base.Pop3,
         }
     }
 }

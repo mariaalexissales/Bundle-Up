@@ -31,34 +31,34 @@ module BundleUp {
         Icon = JewelryPouchM,
     }
 
-    item GingerAlePack {
+    item GingerAleSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = GingerAlePack,
+        Icon = GingerAleSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenGingerAlePack,
+    }
+
+    item BlueberrySP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BlueberrySP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
 
-    item BlueberryPack {
+    item BubblegumSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = BlueberrySodaPack,
+        Icon = BubblegumSP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
 
-    item BubblegumPack {
-        DisplayCategory = Cooking,
-        ItemType = base:normal,
-        Weight = 1.0,
-        Icon = BubblegumSodaPack,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = OpenSodaCanPack,
-    }
-
-    item SodaCanPack_Grape {
+    item GrapeSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
@@ -67,38 +67,38 @@ module BundleUp {
         DoubleClickRecipe = OpenSodaCanPack,
     }
 
-    item SodaCanPack_Lime {
+    item LimeSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = LimeSodaPack,
+        Icon = LimeSP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
 
-    item SodaCanPack_Orange {
+    item OrangeSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = OrangeSodaPack,
+        Icon = OrangeSP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
 
-    item SodaCanPack_Pineapple {
+    item PineappleSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = PineappleSodaPack,
+        Icon = PineappleSP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
 
-    item SodaCanPack_Strawberry {
+    item StrawberrySP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = StrawberrySodaPack,
+        Icon = StrawberrySP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
