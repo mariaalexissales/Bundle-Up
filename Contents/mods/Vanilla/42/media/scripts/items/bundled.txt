@@ -17,6 +17,24 @@ module BundleUp {
         DoubleClickRecipe = UnbundleLarge,
     }
 
+    item SmallMetalSheetS {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.0,
+        Icon = SmallMetalSheetS,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleSmall,
+    }
+
+    item SmallMetalSheetL {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = SmallMetalSheetL,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleLarge,
+    }
+
     item JewelryPouch_Small {
         DisplayCategory = Material,
         ItemType = base:normal,

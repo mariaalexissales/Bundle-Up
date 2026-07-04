@@ -8,13 +8,14 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 5 [Base.Wire] mappers[itemTypes],
+            item 5 [Base.Wire;Base.SmallSheetMetal] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
         }
         itemMapper itemTypes {
             BundleUp.WireCable_Small = Base.Wire,
+            BundleUp.SmallMetalSheetS = Base.SmallSheetMetal
         }
     }
 
@@ -23,13 +24,14 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Small] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] mappers[itemTypes],
         }
         outputs {
             item 5 mapper:itemTypes,
         }
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Small,
+            Base.SmallSheetMetal = BundleUp.SmallMetalSheetS
         }
     }
 
@@ -38,13 +40,14 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.Wire] mappers[itemTypes],
+            item 10 [Base.Wire;Base.SmallSheetMetal] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
         }
         itemMapper itemTypes {
             BundleUp.WireCable_Large = Base.Wire,
+            BundleUp.SmallMetalSheetL = Base.SmallSheetMetal
         }
     }
 
@@ -53,13 +56,14 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Large] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
         }
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Large,
+            Base.SmallSheetMetal = BundleUp.SmallMetalSheetL
         }
     }
 
