@@ -35,7 +35,7 @@ module BundleUp {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = GingerAleSP,
+        Icon = GingerSP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenGingerAlePack,
     }
@@ -62,7 +62,7 @@ module BundleUp {
         DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 1.0,
-        Icon = GrapeSodaPack,
+        Icon = GrapeSP,
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
@@ -102,5 +102,4 @@ module BundleUp {
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
-
 }

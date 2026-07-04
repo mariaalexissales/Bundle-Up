@@ -80,13 +80,12 @@ module BundleUp {
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackSodaCan,
-        onCreate = BUInv.packSodaCan,
+        onCreate = BUInv.packSodaPack,
         category = Packing,
         inputs {
-            item 6 [Base.SodaCan] mappers[itemTypes],
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;ItemCount],
         }
         outputs {
-            item 1 mapper:itemTypes,
         }
     }
 
