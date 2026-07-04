@@ -20,4 +20,6 @@
     "OpenGingerAlePack": "Open Pack of Ginger Ale",
     "Sack": "Pack Empty Sacks",
     "Unsack": "Unpack Empty Sacks",
+    "PackStoneBlock": "Pack Stone Blocks",
+    "UnpackStoneBlock": "Unpack Stone Blocks",
 }

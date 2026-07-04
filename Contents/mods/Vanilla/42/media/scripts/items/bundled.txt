@@ -120,4 +120,21 @@ module BundleUp {
         Tags = base:hasmetal,
         DoubleClickRecipe = OpenSodaCanPack,
     }
+
+    item VarietyPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = VarietyPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenVarietyPack,
+    }
+
+    item StoneBlockPack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = StoneBlockPack,
+        DoubleClickRecipe = UnpackStoneBlock,
+    }
 }

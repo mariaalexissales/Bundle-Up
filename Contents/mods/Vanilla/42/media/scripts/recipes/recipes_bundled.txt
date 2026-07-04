@@ -114,4 +114,28 @@ module BundleUp {
             item 6 Base.SodaCan,
         }
     }
+
+    craftRecipe PackStoneBlock {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 10 [Base.StoneBlock],
+        }
+        outputs {
+            item 1 Base.StoneBlockPack,
+        }
+    }
+
+    craftRecipe UnpackStoneBlock {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.StoneBlockPack],
+        }
+        outputs {
+            item 10 Base.StoneBlock,
+        }
+    }
 }
