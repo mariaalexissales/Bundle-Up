@@ -10,6 +10,11 @@ PACK_FLAVORS = {
     ["BundleUp.StrawberrySP"]   = "SodaStrawberry",
 }
 
+local PACK_FLAVORS_REVERSE = {}
+for itemType, fluidName in pairs(PACK_FLAVORS) do
+    PACK_FLAVORS_REVERSE[fluidName] = itemType
+end
+
 ---@param craftRecipeData CraftRecipeData
 ---@param character IsoGameCharacter
 function BUInv.unpackSodaPack(craftRecipeData, character)
@@ -29,14 +34,58 @@ function BUInv.unpackSodaPack(craftRecipeData, character)
     end
 end
 
+---@param craftRecipeData CraftRecipeData
+---@param character IsoGameCharacter
+function BUInv.packSodaPack(craftRecipeData, character)
+    local sodaCan = craftRecipeData:getAllConsumedItems():get(0)
+
+    local fluidContainer = sodaCan:getFluidContainer()
+    if not fluidContainer then
+        return
+    end
+
+    local fluid = fluidContainer:getPrimaryFluid()
+    if not fluid then
+        return
+    end
+
+    local packType = PACK_FLAVORS_REVERSE[fluid:getFluidTypeString()]
+    if not packType then
+        return
+    end
+
+    local inventory = character:getInventory()
+    local sodaPack = inventory:AddItem(packType)
+    return sodaPack
+end
+
 ---@param item InventoryItem
 ---@param character IsoGameCharacter
 ---@return boolean logicTestResult
 function BUInv.testPackSodaCan(item, character)
-    local inventory = character:getInventory()
-    if -- there is 6 of the same item [Base.SodaCan] with the same fluid, return true.
-        return true
+    local fluidContainer = item:getFluidContainer()
+    if not fluidContainer then
+        return false
     end
 
-    return false
+    local fluid = fluidContainer:getPrimaryFluid()
+    if not fluid then
+        return false
+    end
+    local sodaType = fluid:getFluidType()
+
+    local inventory = character:getInventory()
+    local cans = inventory:FindAll(item:getFullType())
+    local count = 0
+
+    for i = 0, cans:size() - 1 do
+        local can = cans:get(i)
+        local canFluidContainer = can:getFluidContainer()
+        local canFluid = canFluidContainer and canFluidContainer:getPrimaryFluid()
+        if canFluid and canFluid:getFluidType() == sodaType then
+            count = count + 1
+        end
+    end
+
+    return count >= 6
 end
