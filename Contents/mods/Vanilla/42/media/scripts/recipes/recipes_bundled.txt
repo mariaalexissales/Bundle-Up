@@ -62,4 +62,17 @@ module BundleUp {
             Base.Wire = BundleUp.WireCable_Large,
         }
     }
+
+    craftRecipe OpenSodaCanPack {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onCreate = BUInv.unpackSodaPack,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GingerAlePack;BundleUp.BlueberryPack;BundleUp.BubblegumPack;BundleUp.SodaCanPack_Pineapple;BundleUp.SodaCanPack_Strawberry] mappers[itemTypes],
+        }
+        outputs {
+            item 6 Base.SodaCan,
+        }
+    }
 }

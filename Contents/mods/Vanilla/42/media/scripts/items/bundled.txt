@@ -30,4 +30,77 @@ module BundleUp {
         Weight = 0.6,
         Icon = JewelryPouchM,
     }
+
+    item GingerAlePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GingerAlePack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item BlueberryPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BlueberrySodaPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item BubblegumPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BubblegumSodaPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item SodaCanPack_Grape {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GrapeSodaPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item SodaCanPack_Lime {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = LimeSodaPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item SodaCanPack_Orange {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = OrangeSodaPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item SodaCanPack_Pineapple {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = PineappleSodaPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item SodaCanPack_Strawberry {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = StrawberrySodaPack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
 }
