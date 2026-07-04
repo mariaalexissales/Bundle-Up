@@ -103,4 +103,15 @@ module BundleUp {
             item 6 Base.Pop3,
         }
     }
+
+    craftRecipe OpenVarietyPack {
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.VarietyPack],
+        }
+        outputs {
+            item 6 Base.SodaCan,
+        }
+    }
 }
