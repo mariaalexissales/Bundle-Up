@@ -28,3 +28,15 @@ function BUInv.unpackSodaPack(craftRecipeData, character)
         can:setColor(sodaType:getColor())
     end
 end
+
+---@param item InventoryItem
+---@param character IsoGameCharacter
+---@return boolean logicTestResult
+function BUInv.testPackSodaCan(item, character)
+    local inventory = character:getInventory()
+    if -- there is 6 of the same item [Base.SodaCan] with the same fluid, return true.
+        return true
+    end
+
+    return false
+end
