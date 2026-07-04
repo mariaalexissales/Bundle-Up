@@ -21,6 +21,8 @@ module BundleUp {
             BundleUp.SMBundle_SheetRope = Base.SheetRope;Base.SheetMetal,
             BundleUp.IronPipes_Rope = Base.Rope;Base.MetalPipe,
             BundleUp.IronPipes_SheetRope = Base.SheetRope;Base.MetalPipe,
+            BundleUp.IronBar_Rope = Base.Rope;Base.IronBar,
+            BundleUp.IronBar_SheetRope = Base.SheetRope;Base.IronBar,
         }
     }
 
@@ -42,6 +44,8 @@ module BundleUp {
             BundleUp.SMBundleL_SheetRope = Base.SheetRope;Base.SheetMetal,
             BundleUp.IronPipesL_Rope = Base.Rope;Base.MetalPipe,
             BundleUp.IronPipesL_SheetRope = Base.SheetRope;Base.MetalPipe,
+            BundleUp.IronBarL_Rope = Base.Rope;Base.IronBar,
+            BundleUp.IronBarL_SheetRope = Base.SheetRope;Base.IronBar,
         }
     }
 
@@ -50,7 +54,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope;BundleUp.SMBundle_Rope;BundleUp.SMBundle_SheetRope;BundleUp.IronPipes_Rope;BundleUp.IronPipes_SheetRope] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope;BundleUp.SMBundle_Rope;BundleUp.SMBundle_SheetRope;BundleUp.IronPipes_Rope;BundleUp.IronPipes_SheetRope;BundleUp.IronBar_Rope;BundleUp.IronBar_SheetRope] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
@@ -71,6 +75,8 @@ module BundleUp {
             Base.SheetMetal = BundleUp.SMBundle_SheetRope,
             Base.MetalPipe = BundleUp.IronPipes_Rope,
             Base.MetalPipe = BundleUp.IronPipes_SheetRope,
+            Base.IronBar = BundleUp.IronBar_Rope,
+            Base.IronBar = BundleUp.IronBar_SheetRope,
         }
     }
 
@@ -79,7 +85,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope;BundleUp.SMBundleL_Rope;BundleUp.SMBundleL_SheetRope;BundleUp.IronPipesL_Rope;BundleUp.IronPipesL_SheetRope] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope;BundleUp.SMBundleL_Rope;BundleUp.SMBundleL_SheetRope;BundleUp.IronPipesL_Rope;BundleUp.IronPipesL_SheetRope;BundleUp.IronBarL_Rope;BundleUp.IronBarL_SheetRope] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
@@ -100,6 +106,8 @@ module BundleUp {
             Base.SheetMetal = BundleUp.SMBundleL_SheetRope,
             Base.MetalPipe = BundleUp.IronPipesL_Rope,
             Base.MetalPipe = BundleUp.IronPipesL_SheetRope,
+            Base.IronBar = BundleUp.IronBarL_Rope,
+            Base.IronBar = BundleUp.IronBarL_SheetRope,
         }
     }
 
