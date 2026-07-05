@@ -79,4 +79,36 @@ module BundleUp {
         Tags = base:hasmetal,
         DoubleClickRecipe = UnbagLarge,
     }
+
+    item PenBox_Black {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = PenBox,
+        DoubleClickRecipe = UnbundleLarge,
+    }
+
+    item PenBox_Blue {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = PenBox,
+        DoubleClickRecipe = UnbundleLarge,
+    }
+
+    item PenBox_Red {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = PenBox,
+        DoubleClickRecipe = UnbundleLarge,
+    }
+
+    item PenBox_Green {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = PenBox,
+        DoubleClickRecipe = UnbundleLarge,
+    }
 }

@@ -11,10 +11,10 @@
     "BundleUp.IronPipesL_Rope": "Large Bundle of Iron Pipes",
     "BundleUp.IronPipes_SheetRope": "Bundle of Iron Pipes",
     "BundleUp.IronPipesL_SheetRope": "Large Bundle of Iron Pipes",
-    "BundleUp.IronBars_Rope": "Bundle of Iron Bars",
-    "BundleUp.IronBarsL_Rope": "Large Bundle of Iron Bars",
-    "BundleUp.IronBars_SheetRope": "Bundle of Iron Bars",
-    "BundleUp.IronBarsL_SheetRope": "Large Bundle of Iron Bars",
+    "BundleUp.IronBar_Rope": "Bundle of Iron Bars",
+    "BundleUp.IronBarL_Rope": "Large Bundle of Iron Bars",
+    "BundleUp.IronBar_SheetRope": "Bundle of Iron Bars",
+    "BundleUp.IronBarL_SheetRope": "Large Bundle of Iron Bars",
     "BundleUp.NailsBox_Small": "Small Box of Nails",
     "BundleUp.NailsBox_Medium": "Medium Box of Nails",
     "BundleUp.ScrewsBox_Small": "Small Box of Screws",
@@ -37,5 +37,10 @@
     "BundleUp.LimeSP": "Six-Pack of Lime Soda",
     "BundleUp.OrangeSP": "Six-Pack of Orange Soda",
     "BundleUp.PineappleSP": "Six-Pack of Pineapple Soda",
-    "BundleUp.StrawberrySP": "Six-Pack of Strawberry Soda"
+    "BundleUp.StrawberrySP": "Six-Pack of Strawberry Soda",
+    "BundleUp.VarietyPack": "Six-Pack of Assorted Soda",
+    "BundleUp.PenBox_Black": "Box of Black Pens",
+    "BundleUp.PenBox_Blue": "Box of Blue Pens",
+    "BundleUp.PenBox_Red": "Box of Red Pens",
+    "BundleUp.PenBox_Green": "Box of Green Pens"
 }

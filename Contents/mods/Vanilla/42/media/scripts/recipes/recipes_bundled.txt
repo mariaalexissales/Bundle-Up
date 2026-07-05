@@ -40,14 +40,18 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.Wire;Base.SmallSheetMetal] mappers[itemTypes],
+            item 10 [Base.Wire;Base.SmallSheetMetal;Base.Pen;Base.BluePen;Base.RedPen;Base.GreenPen] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
         }
         itemMapper itemTypes {
             BundleUp.WireCable_Large = Base.Wire,
-            BundleUp.SmallMetalSheetL = Base.SmallSheetMetal
+            BundleUp.SmallMetalSheetL = Base.SmallSheetMetal,
+            BundleUp.PenBox_Black = Base.Pen,
+            BundleUp.PenBox_Blue = Base.BluePen,
+            BundleUp.PenBox_Red = Base.RedPen,
+            BundleUp.PenBox_Green = Base.GreenPen,
         }
     }
 
@@ -56,14 +60,18 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL;BundleUp.PenBox_Black;BundleUp.PenBox_Blue;BundleUp.PenBox_Red;BundleUp.PenBox_Green] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
         }
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Large,
-            Base.SmallSheetMetal = BundleUp.SmallMetalSheetL
+            Base.SmallSheetMetal = BundleUp.SmallMetalSheetL,
+            Base.Pen = BundleUp.PenBox_Black,
+            Base.BluePen = BundleUp.PenBox_Blue,
+            Base.RedPen = BundleUp.PenBox_Red,
+            Base.GreenPen = BundleUp.PenBox_Green
         }
     }
 
@@ -123,7 +131,7 @@ module BundleUp {
             item 10 [Base.StoneBlock],
         }
         outputs {
-            item 1 Base.StoneBlockPack,
+            item 1 BundleUp.StoneBlockPack,
         }
     }
 
@@ -132,7 +140,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.StoneBlockPack],
+            item 1 [BundleUp.StoneBlockPack],
         }
         outputs {
             item 10 Base.StoneBlock,

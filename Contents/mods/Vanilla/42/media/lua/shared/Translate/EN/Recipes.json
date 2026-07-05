@@ -18,8 +18,9 @@
     "OpenSodaCanPack": "Open Pack of Soda",
     "PackSodaCan": "Pack Soda Cans",
     "OpenGingerAlePack": "Open Pack of Ginger Ale",
+    "OpenVarietyPack": "Open Pack of Variety Soda",
     "Sack": "Pack Empty Sacks",
     "Unsack": "Unpack Empty Sacks",
     "PackStoneBlock": "Pack Stone Blocks",
-    "UnpackStoneBlock": "Unpack Stone Blocks",
+    "UnpackStoneBlock": "Unpack Stone Blocks"
 }
