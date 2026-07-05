@@ -130,4 +130,40 @@ module BundleUp {
             Base.SilverScrap = BundleUp.SilverScrap_Large,
         }
     }
+
+    craftRecipe BoxPens {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 10 [Base.Pen;Base.BluePen;Base.RedPen;Base.GreenPen] flags[ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.PenBox_Black = Base.Pen,
+            BundleUp.PenBox_Blue = Base.BluePen,
+            BundleUp.PenBox_Red = Base.RedPen,
+            BundleUp.PenBox_Green = Base.GreenPen
+        }
+    }
+
+    craftRecipe UnboxPens {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.PenBox_Black;BundleUp.PenBox_Blue;BundleUp.PenBox_Red;BundleUp.PenBox_Green] mappers[itemTypes],
+        }
+        outputs {
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Pen = BundleUp.PenBox_Black,
+            Base.BluePen = BundleUp.PenBox_Blue,
+            Base.RedPen = BundleUp.PenBox_Red,
+            Base.GreenPen = BundleUp.PenBox_Green
+        }
+    }
 }

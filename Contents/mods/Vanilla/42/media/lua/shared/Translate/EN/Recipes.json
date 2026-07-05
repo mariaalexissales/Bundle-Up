@@ -20,5 +20,7 @@
     "Sack": "Pack Empty Sacks",
     "Unsack": "Unpack Empty Sacks",
     "PackStoneBlock": "Pack Stone Blocks",
-    "UnpackStoneBlock": "Unpack Stone Blocks"
+    "UnpackStoneBlock": "Unpack Stone Blocks",
+    "BoxPens": "Pack Pens in Box",
+    "UnboxPens": "Open Box of Pens",
 }

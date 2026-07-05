@@ -85,7 +85,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.5,
         Icon = PenBox,
-        DoubleClickRecipe = UnbundleLarge,
+        DoubleClickRecipe = UnboxPens,
     }
 
     item PenBox_Blue {
@@ -93,7 +93,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.5,
         Icon = PenBox,
-        DoubleClickRecipe = UnbundleLarge,
+        DoubleClickRecipe = UnboxPens,
     }
 
     item PenBox_Red {
@@ -101,7 +101,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.5,
         Icon = PenBox,
-        DoubleClickRecipe = UnbundleLarge,
+        DoubleClickRecipe = UnboxPens,
     }
 
     item PenBox_Green {
@@ -109,6 +109,6 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.5,
         Icon = PenBox,
-        DoubleClickRecipe = UnbundleLarge,
+        DoubleClickRecipe = UnboxPens,
     }
 }
