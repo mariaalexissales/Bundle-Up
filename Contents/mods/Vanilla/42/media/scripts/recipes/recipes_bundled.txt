@@ -75,32 +75,6 @@ module BundleUp {
         }
     }
 
-    craftRecipe OpenSodaCanPack {
-        time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
-        onCreate = BUInv.unpackSodaPack,
-        category = Packing,
-        inputs {
-            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP] mappers[itemTypes],
-        }
-        outputs {
-            item 6 Base.SodaCan,
-        }
-    }
-
-    craftRecipe PackSodaCan {
-        time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
-        onTest = BUInv.testPackSodaCan,
-        onCreate = BUInv.packSodaPack,
-        category = Packing,
-        inputs {
-            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;ItemCount],
-        }
-        outputs {
-        }
-    }
-
     craftRecipe OpenGingerAlePack {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
