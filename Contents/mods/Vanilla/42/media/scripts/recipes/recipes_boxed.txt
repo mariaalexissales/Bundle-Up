@@ -47,7 +47,7 @@ module BundleUp {
         }
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Small,
-            Base.Screws = BundleUp.ScrewsBox_Small
+            Base.Screws = BundleUp.ScrewsBox_Small,
         }
     }
 
@@ -136,7 +136,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.Pen;Base.BluePen;Base.RedPen;Base.GreenPen] flags[ItemCount] mappers[itemTypes],
+            item 10 [Base.Pen;Base.BluePen;Base.RedPen;Base.GreenPen] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -145,7 +145,7 @@ module BundleUp {
             BundleUp.PenBox_Black = Base.Pen,
             BundleUp.PenBox_Blue = Base.BluePen,
             BundleUp.PenBox_Red = Base.RedPen,
-            BundleUp.PenBox_Green = Base.GreenPen
+            BundleUp.PenBox_Green = Base.GreenPen,
         }
     }
 
@@ -163,7 +163,7 @@ module BundleUp {
             Base.Pen = BundleUp.PenBox_Black,
             Base.BluePen = BundleUp.PenBox_Blue,
             Base.RedPen = BundleUp.PenBox_Red,
-            Base.GreenPen = BundleUp.PenBox_Green
+            Base.GreenPen = BundleUp.PenBox_Green,
         }
     }
 }

@@ -15,8 +15,8 @@ module BundleUp {
             item 1 mapper:ropeTypes,
         }
         itemMapper ropeTypes {
-            BundleUp.PlankBundle_Rope = Base.Rope,
-            BundleUp.PlankBundle_SheetRope = Base.SheetRope,
+            BundleUp.PlankR = Base.Rope,
+            BundleUp.PlankSR = Base.SheetRope,
         }
     }
 
@@ -42,19 +42,19 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankR;BundleUp.PlankSR] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
             item 5 mapper:itemTypes,
         }
         itemMapper ropeTypes {
-            Base.Rope = BundleUp.PlankBundle_Rope,
-            Base.SheetRope = BundleUp.PlankBundle_SheetRope,
+            Base.Rope = BundleUp.PlankR,
+            Base.SheetRope = BundleUp.PlankSR,
         }
         itemMapper itemTypes {
-            Base.Plank = BundleUp.PlankBundle_Rope,
-            Base.Plank = BundleUp.PlankBundle_SheetRope,
+            Base.Plank = BundleUp.PlankR,
+            Base.Plank = BundleUp.PlankSR,
         }
     }
 

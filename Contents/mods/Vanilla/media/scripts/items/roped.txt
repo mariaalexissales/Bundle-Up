@@ -3,7 +3,7 @@ module BundleUp {
         Base,
     }
 
-    item PlankBundle_Rope {
+    item PlankR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
@@ -12,7 +12,7 @@ module BundleUp {
         DoubleClickRecipe = UntieRopePlank,
     }
 
-    item PlankBundle_SheetRope {
+    item PlankSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
