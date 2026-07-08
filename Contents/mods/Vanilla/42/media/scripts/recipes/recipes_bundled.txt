@@ -78,7 +78,20 @@ module BundleUp {
         }
     }
 
+    craftRecipe PackGingerAle {
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Pop3] flags[ItemCount;IsExclusive],
+        }
+        outputs {
+            item 1 BundleUp.GingerAleSP,
+        }
+    }
+
     craftRecipe OpenVarietyPack {
+        timedAction = Making,
+        time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
