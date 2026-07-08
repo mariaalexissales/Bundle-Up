@@ -15,7 +15,7 @@ module BundleUp {
         }
         itemMapper itemTypes {
             BundleUp.WireCable_Small = Base.Wire,
-            BundleUp.SmallMetalSheetS = Base.SmallSheetMetal
+            BundleUp.SmallMetalSheetS = Base.SmallSheetMetal,
         }
     }
 
@@ -31,7 +31,7 @@ module BundleUp {
         }
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Small,
-            Base.SmallSheetMetal = BundleUp.SmallMetalSheetS
+            Base.SmallSheetMetal = BundleUp.SmallMetalSheetS,
         }
     }
 
@@ -71,7 +71,7 @@ module BundleUp {
             Base.Pen = BundleUp.PenBox_Black,
             Base.BluePen = BundleUp.PenBox_Blue,
             Base.RedPen = BundleUp.PenBox_Red,
-            Base.GreenPen = BundleUp.PenBox_Green
+            Base.GreenPen = BundleUp.PenBox_Green,
         }
     }
 
@@ -95,7 +95,7 @@ module BundleUp {
         onCreate = BUInv.packSodaPack,
         category = Packing,
         inputs {
-            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;ItemCount] flags[ItemCount;IsExclusive],
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;ItemCount] flags[IsExclusive;ItemCount],
         }
         outputs {
         }

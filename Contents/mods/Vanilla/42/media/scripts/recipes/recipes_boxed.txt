@@ -47,7 +47,7 @@ module BundleUp {
         }
         itemMapper boxTypes {
             Base.Nails = BundleUp.NailsBox_Small,
-            Base.Screws = BundleUp.ScrewsBox_Small
+            Base.Screws = BundleUp.ScrewsBox_Small,
         }
     }
 
