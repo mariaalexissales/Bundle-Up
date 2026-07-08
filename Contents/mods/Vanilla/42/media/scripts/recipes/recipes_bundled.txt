@@ -81,7 +81,7 @@ module BundleUp {
         onCreate = BUInv.unpackSodaPack,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP] mappers[itemTypes],
+            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP],
         }
         outputs {
             item 6 Base.SodaCan,
@@ -95,7 +95,7 @@ module BundleUp {
         onCreate = BUInv.packSodaPack,
         category = Packing,
         inputs {
-            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;ItemCount],
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;ItemCount] flags[ItemCount;IsExclusive],
         }
         outputs {
         }
@@ -105,7 +105,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.GingerAleSP] mappers[itemTypes],
+            item 1 [BundleUp.GingerAleSP],
         }
         outputs {
             item 6 Base.Pop3,
