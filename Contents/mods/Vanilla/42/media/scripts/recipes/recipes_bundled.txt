@@ -88,16 +88,94 @@ module BundleUp {
         }
     }
 
-    craftRecipe PackSodaCan {
+    craftRecipe PackBlueberrySodaCan {
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
-        onTest = BUInv.testPackSodaCan,
-        onCreate = BUInv.packSodaPack,
+        onTest = BUInv.testPackBlueberrySodaCan,
         category = Packing,
         inputs {
-            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;ItemCount] flags[IsExclusive;ItemCount],
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
         }
         outputs {
+            item 1 BundleUp.BlueberrySP,
+        }
+    }
+
+    craftRecipe PackBubblegumSodaCan {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackBubblegumSodaCan,
+        category = Packing,
+        inputs {
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.BubblegumSP,
+        }
+    }
+
+    craftRecipe PackLimeSodaCan {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackLimeSodaCan,
+        category = Packing,
+        inputs {
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.LimeSP,
+        }
+    }
+
+    craftRecipe PackOrangeSodaCan {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackOrangeSodaCan,
+        category = Packing,
+        inputs {
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.OrangeSP,
+        }
+    }
+
+    craftRecipe PackGrapeSodaCan {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackGrapeSodaCan,
+        category = Packing,
+        inputs {
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.GrapeSP,
+        }
+    }
+
+    craftRecipe PackPineappleSodaCan {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackPineappleSodaCan,
+        category = Packing,
+        inputs {
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.PineappleSP,
+        }
+    }
+
+    craftRecipe PackStrawberrySodaCan {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackStrawberrySodaCan,
+        category = Packing,
+        inputs {
+            item 6 [Base.SodaCan] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.StrawberrySP,
         }
     }
 
