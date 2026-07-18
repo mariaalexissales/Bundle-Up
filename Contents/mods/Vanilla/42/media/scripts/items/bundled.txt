@@ -58,6 +58,69 @@ module BundleUp {
         DoubleClickRecipe = OpenGingerAlePack,
     }
 
+    item BlueberrySP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BlueberrySP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item BubblegumSP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = BubblegumSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item GrapeSP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GrapeSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item LimeSP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = LimeSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item OrangeSP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = OrangeSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item PineappleSP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = PineappleSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item StrawberrySP {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = StrawberrySP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
     item VarietyPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
