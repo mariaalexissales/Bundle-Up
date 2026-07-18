@@ -24,9 +24,14 @@
     "PackPineappleSodaCan": "Pack Pineapple Soda Cans",
     "PackStrawberrySodaCan": "Pack Strawberry Soda Cans",
     "OpenGingerAlePack": "Open Pack of Ginger Ale",
+    "PackGingerAle": "Pack Ginger Ale",
     "OpenVarietyPack": "Open Pack of Variety Soda",
     "Sack": "Pack Empty Sacks",
     "Unsack": "Unpack Empty Sacks",
     "PackStoneBlock": "Pack Stone Blocks",
-    "UnpackStoneBlock": "Unpack Stone Blocks"
+    "UnpackStoneBlock": "Unpack Stone Blocks",
+    "BoxPens": "Pack Pens in Box",
+    "UnboxPens": "Open Box of Pens",
+    "UnpackDeprecated5": "Unpack Old Bundle (5 items)",
+    "UnpackDeprecated10": "Unpack Old Bundle (10 items)"
 }

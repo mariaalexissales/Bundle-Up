@@ -3,7 +3,7 @@ module BundleUp {
         Base,
     }
 
-    item PlankBundle_Rope {
+    item PlankR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
@@ -12,7 +12,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item PlankBundle_SheetRope {
+    item PlankSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 5.0,
@@ -21,7 +21,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item SMBundle_Rope {
+    item SheetMetalR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -30,7 +30,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item SMBundle_SheetRope {
+    item SheetMetalSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -39,7 +39,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item IronPipes_Rope {
+    item IronPipesR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -48,7 +48,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item IronPipes_SheetRope {
+    item IronPipesSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -57,7 +57,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item IronBar_Rope {
+    item IronBarR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -66,7 +66,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item IronBar_SheetRope {
+    item IronBarSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.0,
@@ -75,7 +75,7 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
-    item PlankBundleL_Rope {
+    item PlankLR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 7.5,
@@ -84,7 +84,7 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
-    item PlankBundleL_SheetRope {
+    item PlankLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 7.5,
@@ -93,7 +93,7 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
-    item SMBundleL_Rope {
+    item SheetMetalLR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,
@@ -102,7 +102,7 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
-    item SMBundleL_SheetRope {
+    item SheetMetalLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,
@@ -111,7 +111,7 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
-        item IronPipesL_Rope {
+    item IronPipesLR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,
@@ -120,7 +120,7 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
-    item IronPipesL_SheetRope {
+    item IronPipesLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,
@@ -129,7 +129,7 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
-    item IronBarL_Rope {
+    item IronBarLR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,
@@ -138,7 +138,7 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
-    item IronBarL_SheetRope {
+    item IronBarLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 6.0,

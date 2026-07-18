@@ -1,0 +1,149 @@
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    item PlankBundle_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = PlankR,
+        WorldStaticModel = Base.Plank,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item PlankBundle_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = PlankSR,
+        WorldStaticModel = Base.Plank,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item PlankBundleL_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.5,
+        Icon = PlankLR,
+        WorldStaticModel = Base.Plank,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+
+    item PlankBundleL_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.5,
+        Icon = PlankLSR,
+        WorldStaticModel = Base.Plank,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+
+    item SMBundle_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = SheetMetalR,
+        WorldStaticModel = Base.SheetMetal,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item SMBundle_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = SheetMetalSR,
+        WorldStaticModel = Base.SheetMetal,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item SMBundleL_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = SheetMetalLR,
+        WorldStaticModel = Base.SheetMetal,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+
+    item SMBundleL_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = SheetMetalLSR,
+        WorldStaticModel = Base.SheetMetal,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+
+    item IronPipes_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = IronPipesR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item IronPipes_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = IronPipesSR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item IronPipesL_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = IronPipesLR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+
+    item IronPipesL_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = IronPipesLSR,
+        WorldStaticModel = Base.MetalPipe,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+
+    item IronBar_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = IronBarR,
+        WorldStaticModel = Base.IronBar,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item IronBar_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.0,
+        Icon = IronBarSR,
+        WorldStaticModel = Base.IronBar,
+        DoubleClickRecipe = UnpackDeprecated5,
+    }
+
+    item IronBarL_Rope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = IronBarLR,
+        WorldStaticModel = Base.IronBar,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+
+    item IronBarL_SheetRope {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.0,
+        Icon = IronBarLSR,
+        WorldStaticModel = Base.IronBar,
+        DoubleClickRecipe = UnpackDeprecated10,
+    }
+}

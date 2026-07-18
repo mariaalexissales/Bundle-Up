@@ -1,0 +1,49 @@
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    craftRecipe UnpackDeprecated5 {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.PlankBundle_Rope;BundleUp.PlankBundle_SheetRope;BundleUp.SMBundle_Rope;BundleUp.SMBundle_SheetRope;BundleUp.IronPipes_Rope;BundleUp.IronPipes_SheetRope;BundleUp.IronBar_Rope;BundleUp.IronBar_SheetRope] mappers[itemTypes],
+        }
+        outputs {
+            item 5 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Plank = BundleUp.PlankBundle_Rope,
+            Base.Plank = BundleUp.PlankBundle_SheetRope,
+            Base.SheetMetal = BundleUp.SMBundle_Rope,
+            Base.SheetMetal = BundleUp.SMBundle_SheetRope,
+            Base.MetalPipe = BundleUp.IronPipes_Rope,
+            Base.MetalPipe = BundleUp.IronPipes_SheetRope,
+            Base.IronBar = BundleUp.IronBar_Rope,
+            Base.IronBar = BundleUp.IronBar_SheetRope,
+        }
+    }
+
+    craftRecipe UnpackDeprecated10 {
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.PlankBundleL_Rope;BundleUp.PlankBundleL_SheetRope;BundleUp.SMBundleL_Rope;BundleUp.SMBundleL_SheetRope;BundleUp.IronPipesL_Rope;BundleUp.IronPipesL_SheetRope;BundleUp.IronBarL_Rope;BundleUp.IronBarL_SheetRope] mappers[itemTypes],
+        }
+        outputs {
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Plank = BundleUp.PlankBundleL_Rope,
+            Base.Plank = BundleUp.PlankBundleL_SheetRope,
+            Base.SheetMetal = BundleUp.SMBundleL_Rope,
+            Base.SheetMetal = BundleUp.SMBundleL_SheetRope,
+            Base.MetalPipe = BundleUp.IronPipesL_Rope,
+            Base.MetalPipe = BundleUp.IronPipesL_SheetRope,
+            Base.IronBar = BundleUp.IronBarL_Rope,
+            Base.IronBar = BundleUp.IronBarL_SheetRope,
+        }
+    }
+}
