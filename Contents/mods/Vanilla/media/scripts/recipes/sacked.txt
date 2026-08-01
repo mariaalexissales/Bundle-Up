@@ -1,0 +1,109 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	recipe Pack Sack
+	{
+		destroy ElectronicsScrap=25,
+		EmptySandbag,
+
+		CanBeDoneFromFloor:true,
+		Result:ElectronicsScrapSack,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:150.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Sack
+	{
+		destroy ElectronicsScrapSack,
+
+		CanBeDoneFromFloor:true,
+		Result:ElectronicsScrap=25,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSandbag,
+		Time:105.0,
+		Category:Packing,
+	}
+
+	recipe Sack
+	{
+		destroy EmptySandbag=6,
+
+		CanBeDoneFromFloor:true,
+		Result:Sack_Sack,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Unsack
+	{
+		destroy Sack_Sack,
+
+		CanBeDoneFromFloor:true,
+		Result:EmptySandbag=6,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:35.0,
+		Category:Packing,
+	}
+
+	recipe Pack Sack
+	{
+		destroy ScrapMetal=25,
+		EmptySandbag,
+
+		CanBeDoneFromFloor:true,
+		Result:ScrapMetalSack,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:150.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Sack
+	{
+		destroy ScrapMetalSack,
+
+		CanBeDoneFromFloor:true,
+		Result:ScrapMetal=25,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSandbag,
+		Time:105.0,
+		Category:Packing,
+	}
+
+	recipe Pack Sack
+	{
+		destroy UnusableWood=25,
+		EmptySandbag,
+
+		CanBeDoneFromFloor:true,
+		Result:UnusableWoodSack,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:150.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Sack
+	{
+		destroy UnusableWoodSack,
+
+		CanBeDoneFromFloor:true,
+		Result:UnusableWood=25,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSandbag,
+		Time:105.0,
+		Category:Packing,
+	}
+}

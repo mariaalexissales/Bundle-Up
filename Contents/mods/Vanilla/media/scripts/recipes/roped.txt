@@ -1,0 +1,311 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	recipe Tie 10
+	{
+		destroy MetalPipe=10,
+		Rope,
+
+		CanBeDoneFromFloor:true,
+		Result:IronPipesLR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Untie 10
+	{
+		destroy IronPipesLR,
+
+		CanBeDoneFromFloor:true,
+		Result:MetalPipe=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveRope,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Tie 10
+	{
+		destroy MetalPipe=10,
+		SheetRope,
+
+		CanBeDoneFromFloor:true,
+		Result:IronPipesLSR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Untie 10
+	{
+		destroy IronPipesLSR,
+
+		CanBeDoneFromFloor:true,
+		Result:MetalPipe=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSheetRope,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Tie 5
+	{
+		destroy MetalPipe=5,
+		Rope,
+
+		CanBeDoneFromFloor:true,
+		Result:IronPipesR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Untie 5
+	{
+		destroy IronPipesR,
+
+		CanBeDoneFromFloor:true,
+		Result:MetalPipe=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveRope,
+		Time:35.0,
+		Category:Packing,
+	}
+
+	recipe Tie 5
+	{
+		destroy MetalPipe=5,
+		SheetRope,
+
+		CanBeDoneFromFloor:true,
+		Result:IronPipesSR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Untie 5
+	{
+		destroy IronPipesSR,
+
+		CanBeDoneFromFloor:true,
+		Result:MetalPipe=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSheetRope,
+		Time:35.0,
+		Category:Packing,
+	}
+
+	recipe Tie 10
+	{
+		destroy Plank=10,
+		Rope,
+
+		CanBeDoneFromFloor:true,
+		Result:PlankLR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Untie 10
+	{
+		destroy PlankLR,
+
+		CanBeDoneFromFloor:true,
+		Result:Plank=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveRope,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Tie 10
+	{
+		destroy Plank=10,
+		SheetRope,
+
+		CanBeDoneFromFloor:true,
+		Result:PlankLSR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Untie 10
+	{
+		destroy PlankLSR,
+
+		CanBeDoneFromFloor:true,
+		Result:Plank=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSheetRope,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Tie 5
+	{
+		destroy Plank=5,
+		Rope,
+
+		CanBeDoneFromFloor:true,
+		Result:PlankR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Untie 5
+	{
+		destroy PlankR,
+
+		CanBeDoneFromFloor:true,
+		Result:Plank=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveRope,
+		Time:35.0,
+		Category:Packing,
+	}
+
+	recipe Tie 5
+	{
+		destroy Plank=5,
+		SheetRope,
+
+		CanBeDoneFromFloor:true,
+		Result:PlankSR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Untie 5
+	{
+		destroy PlankSR,
+
+		CanBeDoneFromFloor:true,
+		Result:Plank=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSheetRope,
+		Time:35.0,
+		Category:Packing,
+	}
+
+	recipe Tie 10
+	{
+		destroy SheetMetal=10,
+		Rope,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetalLR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Untie 10
+	{
+		destroy SheetMetalLR,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetal=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveRope,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Tie 10
+	{
+		destroy SheetMetal=10,
+		SheetRope,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetalLSR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Untie 10
+	{
+		destroy SheetMetalLSR,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetal=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSheetRope,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Tie 5
+	{
+		destroy SheetMetal=5,
+		Rope,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetalR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Untie 5
+	{
+		destroy SheetMetalR,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetal=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveRope,
+		Time:35.0,
+		Category:Packing,
+	}
+
+	recipe Tie 5
+	{
+		destroy SheetMetal=5,
+		SheetRope,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetalSR,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Untie 5
+	{
+		destroy SheetMetalSR,
+
+		CanBeDoneFromFloor:true,
+		Result:SheetMetal=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BUGiveSheetRope,
+		Time:35.0,
+		Category:Packing,
+	}
+}

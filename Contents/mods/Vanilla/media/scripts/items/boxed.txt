@@ -1,46 +1,74 @@
-module BundleUp {
-    
-    imports {
-        Base,
-    }
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
 
-    item NailsBox_Small {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.5,
-        Icon = NailsBoxSmall,
-        WorldStaticModel = Base.NailsBox,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxSmall,
-    }
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
 
-    item NailsBox_Medium {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 1.0,
-        Icon = NailsBoxMedium,
-        WorldStaticModel = Base.NailsBox,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxMedium,
-    }
+	item NailsBox_Medium
+	{
+		Type			= Normal,
+		DisplayName		= Medium Box of Nails,
+		DisplayCategory	= Material,
+		Weight			= 1.0,
+		Icon			= NailsBoxMedium,
+	}
 
-    item ScrewsBox_Small {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.5,
-        Icon = ScrewsBoxSmall,
-        WorldStaticModel = Base.ScrewsBox,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxSmall,
-    }
+	item NailsBox_Small
+	{
+		Type			= Normal,
+		DisplayName		= Small Box of Nails,
+		DisplayCategory	= Material,
+		Weight			= 0.5,
+		Icon			= NailsBoxSmall,
+	}
 
-    item ScrewsBox_Medium {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 1.0,
-        Icon = ScrewsBoxMedium,
-        WorldStaticModel = Base.ScrewsBox,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnboxMedium,
-    }
+	item PenBox_Black
+	{
+		Type			= Normal,
+		DisplayName		= Box of Black Pens,
+		DisplayCategory	= Material,
+		Weight			= 0.5,
+		Icon			= PenBox,
+	}
+
+	item PenBox_Blue
+	{
+		Type			= Normal,
+		DisplayName		= Box of Blue Pens,
+		DisplayCategory	= Material,
+		Weight			= 0.5,
+		Icon			= PenBox,
+	}
+
+	item PenBox_Red
+	{
+		Type			= Normal,
+		DisplayName		= Box of Red Pens,
+		DisplayCategory	= Material,
+		Weight			= 0.5,
+		Icon			= PenBox,
+	}
+
+	item ScrewsBox_Medium
+	{
+		Type			= Normal,
+		DisplayName		= Medium Box of Screws,
+		DisplayCategory	= Material,
+		Weight			= 1.0,
+		Icon			= ScrewsBoxMedium,
+	}
+
+	item ScrewsBox_Small
+	{
+		Type			= Normal,
+		DisplayName		= Small Box of Screws,
+		DisplayCategory	= Material,
+		Weight			= 0.5,
+		Icon			= ScrewsBoxSmall,
+	}
 }

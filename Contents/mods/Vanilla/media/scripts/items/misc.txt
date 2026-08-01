@@ -1,0 +1,452 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	item AluminumBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Aluminum Foil,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item AmplifierBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Amplifiers,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item BakingSodaBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Baking Soda,
+		DisplayCategory	= Food,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item ButterKnifeBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Butter Knives,
+		DisplayCategory	= CookingWeapon,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item ButtonBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Buttons,
+		DisplayCategory	= Household,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item DoorknobBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Doorknobs,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item ElectricWireBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Electrical Wire,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item FishingLineBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Fishing Line,
+		DisplayCategory	= Fishing,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item ForkBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Forks,
+		DisplayCategory	= CookingWeapon,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item GlueBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Glue,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item GravyMixBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Gravy Mix,
+		DisplayCategory	= Food,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item HairgelBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Hair Gel,
+		DisplayCategory	= Appearance,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item HingeBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Door Hinges,
+		DisplayCategory	= Junk,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item JarLidBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Jar Lids,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbBlueBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Blue,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbCyanBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Cyan,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbGreenBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Green,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbMagentaBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Magenta,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbOrangeBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Orange,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbPinkBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Pink,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbPurpleBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Purple,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbRedBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Red,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LightBulbYellowBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Light Bulbs - Yellow,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item LighterBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Lighters,
+		DisplayCategory	= FireSource,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item MakeupEyeshadowBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Eye Makeup,
+		DisplayCategory	= Appearance,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item MakeupFoundationBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Foundation Makeup,
+		DisplayCategory	= Food,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item MatchesBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Matchbooks,
+		DisplayCategory	= Junk,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item MotionSensorBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Motion Sensors,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item PancakeMixBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Pancake Mix,
+		DisplayCategory	= Food,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item PaperclipBoxCrate
+	{
+		Type			= Normal,
+		DisplayName		= Crate of Paperclips,
+		DisplayCategory	= Junk,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item PillowBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Pillows,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item RadioReceiverBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Radio Receivers,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item RadioTransmitterBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Radio Transmitters,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item ReceiverBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Receivers,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item RemoteBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of TV Remotes,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item Soap2Box
+	{
+		Type			= Normal,
+		DisplayName		= Box of Soap,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item SparklersBox
+	{
+		Type			= Normal,
+		DisplayName		= Crate of Sparklers,
+		DisplayCategory	= Bug,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item SpongeBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Sponges,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item SpoonBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Spoons,
+		DisplayCategory	= CookingWeapon,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item TarpBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Tarps,
+		DisplayCategory	= Material,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item TimerBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Timers,
+		DisplayCategory	= Cooking,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item TimerCraftedBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Timers - Crafted,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item ToiletPaperBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Toilet Paper,
+		DisplayCategory	= Household,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item ToothbrushBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Toothbrushes,
+		DisplayCategory	= Junk,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item TriggerCraftedBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Crafted Triggers,
+		DisplayCategory	= Electronics,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item TwineBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Twine,
+		DisplayCategory	= Paint,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item WeldingRodsBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Welding Rods,
+		DisplayCategory	= Tool,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item WoodglueBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Wood Glue,
+		DisplayCategory	= Household,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+
+	item YeastBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Yeast,
+		DisplayCategory	= Cooking,
+		Weight			= 0.8,
+		Icon			= Toolbox,
+	}
+}

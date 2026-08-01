@@ -1,0 +1,103 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	recipe Bundle 10
+	{
+		destroy SmallSheetMetal=10,
+
+		CanBeDoneFromFloor:true,
+		Result:SmallMetalSheetL,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unbundle 10
+	{
+		destroy SmallMetalSheetL,
+
+		CanBeDoneFromFloor:true,
+		Result:SmallSheetMetal=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Bundle 5
+	{
+		destroy SmallSheetMetal=5,
+
+		CanBeDoneFromFloor:true,
+		Result:SmallMetalSheetS,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Unbundle 5
+	{
+		destroy SmallMetalSheetS,
+
+		CanBeDoneFromFloor:true,
+		Result:SmallSheetMetal=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:35.0,
+		Category:Packing,
+	}
+
+	recipe Bundle 10
+	{
+		destroy Wire=10,
+
+		CanBeDoneFromFloor:true,
+		Result:WireCable_Large,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unbundle 10
+	{
+		destroy WireCable_Large,
+
+		CanBeDoneFromFloor:true,
+		Result:Wire=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Bundle 5
+	{
+		destroy Wire=5,
+
+		CanBeDoneFromFloor:true,
+		Result:WireCable_Small,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:50.0,
+		Category:Packing,
+	}
+
+	recipe Unbundle 5
+	{
+		destroy WireCable_Small,
+
+		CanBeDoneFromFloor:true,
+		Result:Wire=5,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:35.0,
+		Category:Packing,
+	}
+}

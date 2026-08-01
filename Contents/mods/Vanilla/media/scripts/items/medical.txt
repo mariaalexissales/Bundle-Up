@@ -1,0 +1,92 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	item AlcoholBandageBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Bandages (Sterilized),
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item AlcoholWipesBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Alcohol Wipes,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item AlcoholedCottonBallsBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Cotton Balls Doused in Alcohol,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item PillsAntiDepBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Antidepressants,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item PillsBetaBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Beta Blockers,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item PillsBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Painkillers,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item PillsSleepingTabletsBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Sleeping Pills,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item PillsVitaminsBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Caffeine Pills,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+
+	item TissueBox
+	{
+		Type			= Normal,
+		DisplayName		= Box of Tissues,
+		DisplayCategory	= FirstAid,
+		Weight			= 0.5,
+		Icon			= FirstAid,
+	}
+}

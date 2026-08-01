@@ -1,0 +1,47 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	item SmallMetalSheetL
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Small Metal Sheets,
+		DisplayCategory	= Material,
+		Weight			= 4.0,
+		Icon			= SmallMetalSheetL,
+	}
+
+	item SmallMetalSheetS
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Small Metal Sheets,
+		DisplayCategory	= Material,
+		Weight			= 2.0,
+		Icon			= SmallMetalSheetS,
+	}
+
+	item WireCable_Large
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Wire,
+		DisplayCategory	= Material,
+		Weight			= 4.0,
+		Icon			= WireCableL,
+	}
+
+	item WireCable_Small
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Wire,
+		DisplayCategory	= Material,
+		Weight			= 2.0,
+		Icon			= WireCableS,
+	}
+}

@@ -1,41 +1,119 @@
-module BundleUp {
-    imports {
-        Base,
-    }
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
 
-    item PlankR {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 5.0,
-        Icon = PlankRope,
-        WorldStaticModel = Base.Plank,
-        DoubleClickRecipe = UntieRopePlank,
-    }
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
 
-    item PlankSR {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 5.0,
-        Icon = PlankSheetRope,
-        WorldStaticModel = Base.Plank,
-        DoubleClickRecipe = UntieRopePlank,
-    }
+	item IronPipesLR
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Iron Pipes,
+		DisplayCategory	= Material,
+		Weight			= 6.0,
+		Icon			= IronPipesLR,
+	}
 
-    item SheetMetalBundle_Rope {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 4.0,
-        Icon = ShMetalRope,
-        WorldStaticModel = Base.SheetMetal,
-        DoubleClickRecipe = UntieRopeSheetMetal,
-    }
+	item IronPipesLSR
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Iron Pipes,
+		DisplayCategory	= Material,
+		Weight			= 6.0,
+		Icon			= IronPipesLSR,
+	}
 
-    item SheetMetalBundle_SheetRope {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 4.0,
-        Icon = ShMetalSheetRope,
-        WorldStaticModel = Base.SheetMetal,
-        DoubleClickRecipe = UntieRopeSheetMetal,
-    }
+	item IronPipesR
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Iron Pipes,
+		DisplayCategory	= Material,
+		Weight			= 4.0,
+		Icon			= IronPipesR,
+	}
+
+	item IronPipesSR
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Iron Pipes,
+		DisplayCategory	= Material,
+		Weight			= 4.0,
+		Icon			= IronPipesSR,
+	}
+
+	item PlankLR
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Planks,
+		DisplayCategory	= Material,
+		Weight			= 7.5,
+		Icon			= PlankLR,
+	}
+
+	item PlankLSR
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Planks,
+		DisplayCategory	= Material,
+		Weight			= 7.5,
+		Icon			= PlankLSR,
+	}
+
+	item PlankR
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Planks,
+		DisplayCategory	= Material,
+		Weight			= 5.0,
+		Icon			= PlankR,
+	}
+
+	item PlankSR
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Planks,
+		DisplayCategory	= Material,
+		Weight			= 5.0,
+		Icon			= PlankSR,
+	}
+
+	item SheetMetalLR
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Sheet Metal,
+		DisplayCategory	= Material,
+		Weight			= 6.0,
+		Icon			= SheetMetalLR,
+	}
+
+	item SheetMetalLSR
+	{
+		Type			= Normal,
+		DisplayName		= Large Bundle of Sheet Metal,
+		DisplayCategory	= Material,
+		Weight			= 6.0,
+		Icon			= SheetMetalLSR,
+	}
+
+	item SheetMetalR
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Sheet Metal,
+		DisplayCategory	= Material,
+		Weight			= 4.0,
+		Icon			= SheetMetalR,
+	}
+
+	item SheetMetalSR
+	{
+		Type			= Normal,
+		DisplayName		= Bundle of Sheet Metal,
+		DisplayCategory	= Material,
+		Weight			= 4.0,
+		Icon			= SheetMetalSR,
+	}
 }

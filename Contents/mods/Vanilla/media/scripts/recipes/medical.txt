@@ -1,0 +1,218 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy AlcoholBandage=10,
+
+		CanBeDoneFromFloor:true,
+		Result:AlcoholBandageBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy AlcoholBandageBox,
+
+		CanBeDoneFromFloor:true,
+		Result:AlcoholBandage=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy AlcoholWipes=10,
+
+		CanBeDoneFromFloor:true,
+		Result:AlcoholWipesBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy AlcoholWipesBox,
+
+		CanBeDoneFromFloor:true,
+		Result:AlcoholWipes=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy AlcoholedCottonBalls=10,
+
+		CanBeDoneFromFloor:true,
+		Result:AlcoholedCottonBallsBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy AlcoholedCottonBallsBox,
+
+		CanBeDoneFromFloor:true,
+		Result:AlcoholedCottonBalls=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy PillsAntiDep=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsAntiDepBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy PillsAntiDepBox,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsAntiDep=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy PillsBeta=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsBetaBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy PillsBetaBox,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsBeta=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy Pills=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy PillsBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Pills=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy PillsSleepingTablets=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsSleepingTabletsBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy PillsSleepingTabletsBox,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsSleepingTablets=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy PillsVitamins=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsVitaminsBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy PillsVitaminsBox,
+
+		CanBeDoneFromFloor:true,
+		Result:PillsVitamins=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Medical Box
+	{
+		destroy Tissue=10,
+
+		CanBeDoneFromFloor:true,
+		Result:TissueBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Medical Box
+	{
+		destroy TissueBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Tissue=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+}

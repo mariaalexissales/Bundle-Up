@@ -1,0 +1,47 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	item ElectronicsScrapSack
+	{
+		Type			= Normal,
+		DisplayName		= Sack of Scrap Electronics,
+		DisplayCategory	= Electronics,
+		Weight			= 1.5,
+		Icon			= Sandbag,
+	}
+
+	item Sack_Sack
+	{
+		Type			= Normal,
+		DisplayName		= Sack of Sacks,
+		DisplayCategory	= Material,
+		Weight			= 1.0,
+		Icon			= SackSack,
+	}
+
+	item ScrapMetalSack
+	{
+		Type			= Normal,
+		DisplayName		= Sack of Scrap Metal,
+		DisplayCategory	= Material,
+		Weight			= 1.5,
+		Icon			= Sandbag,
+	}
+
+	item UnusableWoodSack
+	{
+		Type			= Normal,
+		DisplayName		= Sack of Scrap Wood,
+		DisplayCategory	= Junk,
+		Weight			= 1.5,
+		Icon			= Sandbag,
+	}
+}

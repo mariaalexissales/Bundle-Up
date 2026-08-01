@@ -1,0 +1,2337 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	recipe Pack Carton
+	{
+		destroy BeefJerky=12,
+
+		CanBeDoneFromFloor:true,
+		Result:BeefJerkyCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy BeefJerkyCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:BeefJerky=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy BellPepper=12,
+
+		CanBeDoneFromFloor:true,
+		Result:BellPepperCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy BellPepperCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:BellPepper=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Broccoli=12,
+
+		CanBeDoneFromFloor:true,
+		Result:BroccoliCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy BroccoliCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Broccoli=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Butter=12,
+
+		CanBeDoneFromFloor:true,
+		Result:ButterCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy ButterCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Butter=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Cabbage=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CabbageCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CabbageCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Cabbage=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CandyCorn=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CandyCornCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CandyCornCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CandyCorn=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CandyFruitSlices=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CandyFruitSlicesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CandyFruitSlicesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CandyFruitSlices=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Candycane=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CandycaneCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CandycaneCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Candycane=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Carrots=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CarrotsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CarrotsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Carrots=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Cereal=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CerealCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CerealCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Cereal=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Cheese=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CheeseCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CheeseCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Cheese=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy ChocoCakes=12,
+
+		CanBeDoneFromFloor:true,
+		Result:ChocoCakesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy ChocoCakesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:ChocoCakes=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Chocolate=12,
+
+		CanBeDoneFromFloor:true,
+		Result:ChocolateCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy ChocolateCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Chocolate=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy ChocolateChips=12,
+
+		CanBeDoneFromFloor:true,
+		Result:ChocolateChipsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy ChocolateChipsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:ChocolateChips=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy ChocolateCoveredCoffeeBeans=12,
+
+		CanBeDoneFromFloor:true,
+		Result:ChocolateCoveredCoffeeBeansCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy ChocolateCoveredCoffeeBeansCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:ChocolateCoveredCoffeeBeans=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CinnamonRoll=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CinnamonRollCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CinnamonRollCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CinnamonRoll=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CocoaPowder=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CocoaPowderCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CocoaPowderCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CocoaPowder=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Coffee2=12,
+
+		CanBeDoneFromFloor:true,
+		Result:Coffee2Carton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy Coffee2Carton,
+
+		CanBeDoneFromFloor:true,
+		Result:Coffee2=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CookieChocolateChip=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CookieChocolateChipCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CookieChocolateChipCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CookieChocolateChip=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CookieJelly=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CookieJellyCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CookieJellyCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CookieJelly=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CookiesChocolate=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesChocolateCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CookiesChocolateCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesChocolate=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CookiesOatmeal=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesOatmealCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CookiesOatmealCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesOatmeal=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CookiesShortbread=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesShortbreadCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CookiesShortbreadCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesShortbread=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy CookiesSugar=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesSugarCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CookiesSugarCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:CookiesSugar=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Corn=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CornCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CornCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Corn=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Crackers=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CrackersCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CrackersCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Crackers=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Crisps2=12,
+
+		CanBeDoneFromFloor:true,
+		Result:Crisps2Carton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy Crisps2Carton,
+
+		CanBeDoneFromFloor:true,
+		Result:Crisps2=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Crisps3=12,
+
+		CanBeDoneFromFloor:true,
+		Result:Crisps3Carton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy Crisps3Carton,
+
+		CanBeDoneFromFloor:true,
+		Result:Crisps3=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Crisps4=12,
+
+		CanBeDoneFromFloor:true,
+		Result:Crisps4Carton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy Crisps4Carton,
+
+		CanBeDoneFromFloor:true,
+		Result:Crisps4=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Crisps=12,
+
+		CanBeDoneFromFloor:true,
+		Result:CrispsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy CrispsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Crisps=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy DehydratedMeatStick=12,
+
+		CanBeDoneFromFloor:true,
+		Result:DehydratedMeatStickCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy DehydratedMeatStickCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:DehydratedMeatStick=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy DriedBlackBeans=12,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedBlackBeansCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy DriedBlackBeansCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedBlackBeans=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy DriedChickpeas=12,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedChickpeasCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy DriedChickpeasCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedChickpeas=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy DriedKidneyBeans=12,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedKidneyBeansCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy DriedKidneyBeansCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedKidneyBeans=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy DriedLentils=12,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedLentilsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy DriedLentilsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedLentils=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy DriedSplitPeas=12,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedSplitPeasCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy DriedSplitPeasCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedSplitPeas=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy DriedWhiteBeans=12,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedWhiteBeansCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy DriedWhiteBeansCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:DriedWhiteBeans=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Eggplant=12,
+
+		CanBeDoneFromFloor:true,
+		Result:EggplantCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy EggplantCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Eggplant=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Ginseng=12,
+
+		CanBeDoneFromFloor:true,
+		Result:GinsengCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy GinsengCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Ginseng=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy GrahamCrackers=12,
+
+		CanBeDoneFromFloor:true,
+		Result:GrahamCrackersCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy GrahamCrackersCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:GrahamCrackers=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy GranolaBar=12,
+
+		CanBeDoneFromFloor:true,
+		Result:GranolaBarCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy GranolaBarCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:GranolaBar=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Gum=12,
+
+		CanBeDoneFromFloor:true,
+		Result:GumCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy GumCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Gum=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy GummyBears=12,
+
+		CanBeDoneFromFloor:true,
+		Result:GummyBearsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy GummyBearsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:GummyBears=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy GummyWorms=12,
+
+		CanBeDoneFromFloor:true,
+		Result:GummyWormsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy GummyWormsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:GummyWorms=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy HardCandies=12,
+
+		CanBeDoneFromFloor:true,
+		Result:HardCandiesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy HardCandiesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:HardCandies=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy HiHis=12,
+
+		CanBeDoneFromFloor:true,
+		Result:HiHisCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy HiHisCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:HiHis=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Honey=12,
+
+		CanBeDoneFromFloor:true,
+		Result:HoneyCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy HoneyCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Honey=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Hotsauce=12,
+
+		CanBeDoneFromFloor:true,
+		Result:HotsauceCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy HotsauceCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Hotsauce=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy JamFruit=12,
+
+		CanBeDoneFromFloor:true,
+		Result:JamFruitCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy JamFruitCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:JamFruit=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy JamMarmalade=12,
+
+		CanBeDoneFromFloor:true,
+		Result:JamMarmaladeCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy JamMarmaladeCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:JamMarmalade=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy JellyBeans=12,
+
+		CanBeDoneFromFloor:true,
+		Result:JellyBeansCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy JellyBeansCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:JellyBeans=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Jujubes=12,
+
+		CanBeDoneFromFloor:true,
+		Result:JujubesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy JujubesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Jujubes=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Ketchup=12,
+
+		CanBeDoneFromFloor:true,
+		Result:KetchupCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy KetchupCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Ketchup=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Lard=12,
+
+		CanBeDoneFromFloor:true,
+		Result:LardCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy LardCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Lard=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Leek=12,
+
+		CanBeDoneFromFloor:true,
+		Result:LeekCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy LeekCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Leek=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Lettuce=12,
+
+		CanBeDoneFromFloor:true,
+		Result:LettuceCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy LettuceCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Lettuce=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy LicoriceBlack=12,
+
+		CanBeDoneFromFloor:true,
+		Result:LicoriceBlackCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy LicoriceBlackCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:LicoriceBlack=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy LicoriceRed=12,
+
+		CanBeDoneFromFloor:true,
+		Result:LicoriceRedCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy LicoriceRedCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:LicoriceRed=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy MapleSyrup=12,
+
+		CanBeDoneFromFloor:true,
+		Result:MapleSyrupCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy MapleSyrupCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:MapleSyrup=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Margarine=12,
+
+		CanBeDoneFromFloor:true,
+		Result:MargarineCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy MargarineCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Margarine=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Marinara=12,
+
+		CanBeDoneFromFloor:true,
+		Result:MarinaraCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy MarinaraCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Marinara=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Marshmallows=12,
+
+		CanBeDoneFromFloor:true,
+		Result:MarshmallowsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy MarshmallowsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Marshmallows=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy MayonnaiseFull=12,
+
+		CanBeDoneFromFloor:true,
+		Result:MayonnaiseFullCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy MayonnaiseFullCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:MayonnaiseFull=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Mustard=12,
+
+		CanBeDoneFromFloor:true,
+		Result:MustardCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy MustardCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Mustard=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy OatsRaw=12,
+
+		CanBeDoneFromFloor:true,
+		Result:OatsRawCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy OatsRawCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:OatsRaw=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy OilOlive=12,
+
+		CanBeDoneFromFloor:true,
+		Result:OilOliveCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy OilOliveCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:OilOlive=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy OilVegetable=12,
+
+		CanBeDoneFromFloor:true,
+		Result:OilVegetableCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy OilVegetableCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:OilVegetable=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Onion=12,
+
+		CanBeDoneFromFloor:true,
+		Result:OnionCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy OnionCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Onion=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Pasta=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PastaCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PastaCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Pasta=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy PeanutButter=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PeanutButterCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PeanutButterCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:PeanutButter=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Pepper=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PepperCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PepperCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Pepper=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy PepperHabanero=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PepperHabaneroCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PepperHabaneroCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:PepperHabanero=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy PepperJalapeno=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PepperJalapenoCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PepperJalapenoCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:PepperJalapeno=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Pickles=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PicklesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PicklesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Pickles=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Plonkies=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PlonkiesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PlonkiesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Plonkies=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Popcorn=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PopcornCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PopcornCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Popcorn=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Potato=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PotatoCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PotatoCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Potato=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Pretzel=12,
+
+		CanBeDoneFromFloor:true,
+		Result:PretzelCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy PretzelCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Pretzel=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy QuaggaCakes=12,
+
+		CanBeDoneFromFloor:true,
+		Result:QuaggaCakesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy QuaggaCakesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:QuaggaCakes=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Ramen=12,
+
+		CanBeDoneFromFloor:true,
+		Result:RamenCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy RamenCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Ramen=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy RedRadish=12,
+
+		CanBeDoneFromFloor:true,
+		Result:RedRadishCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy RedRadishCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:RedRadish=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy RemouladeFull=12,
+
+		CanBeDoneFromFloor:true,
+		Result:RemouladeFullCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy RemouladeFullCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:RemouladeFull=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Rice=12,
+
+		CanBeDoneFromFloor:true,
+		Result:RiceCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy RiceCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Rice=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy RiceVinegar=12,
+
+		CanBeDoneFromFloor:true,
+		Result:RiceVinegarCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy RiceVinegarCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:RiceVinegar=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy RockCandy=12,
+
+		CanBeDoneFromFloor:true,
+		Result:RockCandyCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy RockCandyCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:RockCandy=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Salami=12,
+
+		CanBeDoneFromFloor:true,
+		Result:SalamiCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy SalamiCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Salami=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Salt=12,
+
+		CanBeDoneFromFloor:true,
+		Result:SaltCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy SaltCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Salt=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy SnoGlobes=12,
+
+		CanBeDoneFromFloor:true,
+		Result:SnoGlobesCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy SnoGlobesCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:SnoGlobes=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Soysauce=12,
+
+		CanBeDoneFromFloor:true,
+		Result:SoysauceCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy SoysauceCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Soysauce=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy SugarBrown=12,
+
+		CanBeDoneFromFloor:true,
+		Result:SugarBrownCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy SugarBrownCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:SugarBrown=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Sugar=12,
+
+		CanBeDoneFromFloor:true,
+		Result:SugarCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy SugarCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Sugar=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Teabag2=12,
+
+		CanBeDoneFromFloor:true,
+		Result:Teabag2Carton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy Teabag2Carton,
+
+		CanBeDoneFromFloor:true,
+		Result:Teabag2=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Tomato=12,
+
+		CanBeDoneFromFloor:true,
+		Result:TomatoCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy TomatoCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Tomato=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy TomatoPaste=12,
+
+		CanBeDoneFromFloor:true,
+		Result:TomatoPasteCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy TomatoPasteCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:TomatoPaste=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy TortillaChips=12,
+
+		CanBeDoneFromFloor:true,
+		Result:TortillaChipsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy TortillaChipsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:TortillaChips=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy WildEggs=12,
+
+		CanBeDoneFromFloor:true,
+		Result:WildEggsCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy WildEggsCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:WildEggs=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Yoghurt=12,
+
+		CanBeDoneFromFloor:true,
+		Result:YoghurtCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy YoghurtCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Yoghurt=12,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:59.5,
+		Category:Packing,
+	}
+
+	recipe Pack Carton
+	{
+		destroy Zucchini=12,
+
+		CanBeDoneFromFloor:true,
+		Result:ZucchiniCarton,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		OnCreate:Recipe.OnCreate.BUSaveFood,
+		Time:85.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Carton
+	{
+		destroy ZucchiniCarton,
+
+		CanBeDoneFromFloor:true,
+		Result:Zucchini=1,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:Recipe.OnCreate.BULoadFood,
+		Time:59.5,
+		Category:Packing,
+	}
+}

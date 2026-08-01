@@ -1,0 +1,1138 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Aluminum=10,
+
+		CanBeDoneFromFloor:true,
+		Result:AluminumBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy AluminumBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Aluminum=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Amplifier=10,
+
+		CanBeDoneFromFloor:true,
+		Result:AmplifierBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy AmplifierBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Amplifier=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy BakingSoda=10,
+
+		CanBeDoneFromFloor:true,
+		Result:BakingSodaBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy BakingSodaBox,
+
+		CanBeDoneFromFloor:true,
+		Result:BakingSoda=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy ButterKnife=10,
+
+		CanBeDoneFromFloor:true,
+		Result:ButterKnifeBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy ButterKnifeBox,
+
+		CanBeDoneFromFloor:true,
+		Result:ButterKnife=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Button=10,
+
+		CanBeDoneFromFloor:true,
+		Result:ButtonBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy ButtonBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Button=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Doorknob=10,
+
+		CanBeDoneFromFloor:true,
+		Result:DoorknobBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy DoorknobBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Doorknob=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy ElectricWire=10,
+
+		CanBeDoneFromFloor:true,
+		Result:ElectricWireBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy ElectricWireBox,
+
+		CanBeDoneFromFloor:true,
+		Result:ElectricWire=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy FishingLine=10,
+
+		CanBeDoneFromFloor:true,
+		Result:FishingLineBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy FishingLineBox,
+
+		CanBeDoneFromFloor:true,
+		Result:FishingLine=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Fork=10,
+
+		CanBeDoneFromFloor:true,
+		Result:ForkBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy ForkBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Fork=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Glue=10,
+
+		CanBeDoneFromFloor:true,
+		Result:GlueBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy GlueBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Glue=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy GravyMix=10,
+
+		CanBeDoneFromFloor:true,
+		Result:GravyMixBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy GravyMixBox,
+
+		CanBeDoneFromFloor:true,
+		Result:GravyMix=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Hairgel=10,
+
+		CanBeDoneFromFloor:true,
+		Result:HairgelBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy HairgelBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Hairgel=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Hinge=10,
+
+		CanBeDoneFromFloor:true,
+		Result:HingeBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy HingeBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Hinge=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy JarLid=10,
+
+		CanBeDoneFromFloor:true,
+		Result:JarLidBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy JarLidBox,
+
+		CanBeDoneFromFloor:true,
+		Result:JarLid=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbBlue=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbBlueBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbBlueBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbBlue=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbCyan=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbCyanBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbCyanBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbCyan=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbGreen=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbGreenBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbGreenBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbGreen=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbMagenta=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbMagentaBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbMagentaBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbMagenta=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbOrange=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbOrangeBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbOrangeBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbOrange=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbPink=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbPinkBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbPinkBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbPink=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbPurple=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbPurpleBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbPurpleBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbPurple=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbRed=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbRedBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbRedBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbRed=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy LightBulbYellow=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbYellowBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LightBulbYellowBox,
+
+		CanBeDoneFromFloor:true,
+		Result:LightBulbYellow=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Lighter=10,
+
+		CanBeDoneFromFloor:true,
+		Result:LighterBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy LighterBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Lighter=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy MakeupEyeshadow=10,
+
+		CanBeDoneFromFloor:true,
+		Result:MakeupEyeshadowBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy MakeupEyeshadowBox,
+
+		CanBeDoneFromFloor:true,
+		Result:MakeupEyeshadow=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy MakeupFoundation=10,
+
+		CanBeDoneFromFloor:true,
+		Result:MakeupFoundationBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy MakeupFoundationBox,
+
+		CanBeDoneFromFloor:true,
+		Result:MakeupFoundation=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Matches=10,
+
+		CanBeDoneFromFloor:true,
+		Result:MatchesBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy MatchesBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Matches=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy MotionSensor=10,
+
+		CanBeDoneFromFloor:true,
+		Result:MotionSensorBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy MotionSensorBox,
+
+		CanBeDoneFromFloor:true,
+		Result:MotionSensor=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy PancakeMix=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PancakeMixBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy PancakeMixBox,
+
+		CanBeDoneFromFloor:true,
+		Result:PancakeMix=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy PaperclipBox=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PaperclipBoxCrate,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy PaperclipBoxCrate,
+
+		CanBeDoneFromFloor:true,
+		Result:PaperclipBox=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Pillow=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PillowBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy PillowBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Pillow=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy RadioReceiver=10,
+
+		CanBeDoneFromFloor:true,
+		Result:RadioReceiverBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy RadioReceiverBox,
+
+		CanBeDoneFromFloor:true,
+		Result:RadioReceiver=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy RadioTransmitter=10,
+
+		CanBeDoneFromFloor:true,
+		Result:RadioTransmitterBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy RadioTransmitterBox,
+
+		CanBeDoneFromFloor:true,
+		Result:RadioTransmitter=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Receiver=10,
+
+		CanBeDoneFromFloor:true,
+		Result:ReceiverBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy ReceiverBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Receiver=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Remote=10,
+
+		CanBeDoneFromFloor:true,
+		Result:RemoteBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy RemoteBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Remote=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Soap2=10,
+
+		CanBeDoneFromFloor:true,
+		Result:Soap2Box,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy Soap2Box,
+
+		CanBeDoneFromFloor:true,
+		Result:Soap2=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Sparklers=10,
+
+		CanBeDoneFromFloor:true,
+		Result:SparklersBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy SparklersBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Sparklers=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Sponge=10,
+
+		CanBeDoneFromFloor:true,
+		Result:SpongeBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy SpongeBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Sponge=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Spoon=10,
+
+		CanBeDoneFromFloor:true,
+		Result:SpoonBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy SpoonBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Spoon=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Tarp=10,
+
+		CanBeDoneFromFloor:true,
+		Result:TarpBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy TarpBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Tarp=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Timer=10,
+
+		CanBeDoneFromFloor:true,
+		Result:TimerBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy TimerBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Timer=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy TimerCrafted=10,
+
+		CanBeDoneFromFloor:true,
+		Result:TimerCraftedBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy TimerCraftedBox,
+
+		CanBeDoneFromFloor:true,
+		Result:TimerCrafted=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy ToiletPaper=10,
+
+		CanBeDoneFromFloor:true,
+		Result:ToiletPaperBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy ToiletPaperBox,
+
+		CanBeDoneFromFloor:true,
+		Result:ToiletPaper=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Toothbrush=10,
+
+		CanBeDoneFromFloor:true,
+		Result:ToothbrushBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy ToothbrushBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Toothbrush=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy TriggerCrafted=10,
+
+		CanBeDoneFromFloor:true,
+		Result:TriggerCraftedBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy TriggerCraftedBox,
+
+		CanBeDoneFromFloor:true,
+		Result:TriggerCrafted=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Twine=10,
+
+		CanBeDoneFromFloor:true,
+		Result:TwineBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy TwineBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Twine=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy WeldingRods=10,
+
+		CanBeDoneFromFloor:true,
+		Result:WeldingRodsBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy WeldingRodsBox,
+
+		CanBeDoneFromFloor:true,
+		Result:WeldingRods=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Woodglue=10,
+
+		CanBeDoneFromFloor:true,
+		Result:WoodglueBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy WoodglueBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Woodglue=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Pack Supply Box
+	{
+		destroy Yeast=10,
+
+		CanBeDoneFromFloor:true,
+		Result:YeastBox,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unpack Supply Box
+	{
+		destroy YeastBox,
+
+		CanBeDoneFromFloor:true,
+		Result:Yeast=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+}

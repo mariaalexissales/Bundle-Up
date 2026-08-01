@@ -1,0 +1,893 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	item BeefJerkyCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Beef Jerky,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item BellPepperCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Bell Peppers,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item BroccoliCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Broccoli,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item ButterCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Butter,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CabbageCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Cabbage,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CandyCornCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Candy Corn,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CandyFruitSlicesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Candied Fruit Slices,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CandycaneCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Candy Canes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CarrotsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Carrots,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CerealCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Cereal,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CheeseCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Cheese,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item ChocoCakesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Choco Cakes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item ChocolateCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Milk Chocolate Bars,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item ChocolateChipsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chocolate Chips,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item ChocolateCoveredCoffeeBeansCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chocolate-Covered Coffee Beans,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CinnamonRollCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Cinnamon Rolls,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CocoaPowderCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Cocoa Powder,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item Coffee2Carton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Coffee,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CookieChocolateChipCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chocolate Chip Cookies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CookieJellyCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Raspberry Shortbread Cookies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CookiesChocolateCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chocolate Cookies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CookiesOatmealCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Oatmeal Cookies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CookiesShortbreadCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Shortbread Cookies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CookiesSugarCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Sugar Cookies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CornCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Corn,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item CrackersCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Crackers,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item Crisps2Carton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chips - Barbecue,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item Crisps3Carton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chips - Salt & Vinegar,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item Crisps4Carton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chips - Sour Cream & Onion,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item CrispsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chips - Plain,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item DehydratedMeatStickCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Dehydrated Meat Sticks,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item DriedBlackBeansCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Black Beans (Dried),
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item DriedChickpeasCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Chick Peas (Dried),
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item DriedKidneyBeansCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Kidney Beans (Dried),
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item DriedLentilsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Lentils (Dried),
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item DriedSplitPeasCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Split Peas (Dried),
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item DriedWhiteBeansCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of White Beans (Dried),
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item EggplantCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Eggplants,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item GinsengCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Ginseng,
+		DisplayCategory	= FirstAid,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item GrahamCrackersCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Graham Crackers,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item GranolaBarCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Granola Bars,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item GumCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Gum,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item GummyBearsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Gummy Bears,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item GummyWormsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Gummy Worms,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item HardCandiesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Hard Candies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item HiHisCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Hi His,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item HoneyCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Honey,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item HotsauceCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Hot Sauce,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item JamFruitCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Fruit Jam,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item JamMarmaladeCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Marmalade,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item JellyBeansCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Jellybeans,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item JujubesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Jujubes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item KetchupCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Ketchup,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item LardCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Lard,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item LeekCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Leeks,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item LettuceCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Lettuce,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item LicoriceBlackCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Licorice,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item LicoriceRedCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Licorice,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item MapleSyrupCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Maple Syrup,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item MargarineCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Margarine,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item MarinaraCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Marinara,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item MarshmallowsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Marshmallows,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item MayonnaiseFullCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Mayonnaise,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item MustardCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Mustard,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item OatsRawCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Canned Oats,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item OilOliveCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Olive Oil,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item OilVegetableCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Vegetable Oil,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item OnionCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Onions,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item PastaCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Pasta,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item PeanutButterCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Peanut Butter,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item PepperCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Pepper,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item PepperHabaneroCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Habaneros,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item PepperJalapenoCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Jalapenos,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item PicklesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Pickles,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item PlonkiesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Plonkies,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item PopcornCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Instant Popcorn,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item PotatoCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Potatoes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item PretzelCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Pretzels,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item QuaggaCakesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Quagga Cakes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item RamenCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Dry Ramen Noodles,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item RedRadishCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Radishes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item RemouladeFullCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Remoulade,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item RiceCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Rice,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item RiceVinegarCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Rice Vinegar,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item RockCandyCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Rock Candy,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item SalamiCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Salami,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item SaltCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Salt,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item SnoGlobesCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Sno Globes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item SoysauceCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Soy Sauce,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item SugarBrownCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Brown Sugar,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item SugarCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of White Sugar,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item Teabag2Carton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Tea Bags,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item TomatoCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Tomatoes,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item TomatoPasteCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Tomato Paste,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item TortillaChipsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Tortilla Chips,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item WildEggsCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Wild Eggs,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+
+	item YoghurtCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Yogurt,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Paperbag,
+	}
+
+	item ZucchiniCarton
+	{
+		Type			= Normal,
+		DisplayName		= Carton of Zucchini,
+		DisplayCategory	= Food,
+		Weight			= 1.5,
+		Icon			= Plasticbag,
+	}
+}

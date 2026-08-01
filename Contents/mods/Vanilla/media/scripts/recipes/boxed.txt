@@ -1,0 +1,172 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp
+{
+	imports
+	{
+		Base,
+	}
+
+	recipe Box 50
+	{
+		destroy Nails=50,
+
+		CanBeDoneFromFloor:true,
+		Result:NailsBox_Medium,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:200.0,
+		Category:Packing,
+	}
+
+	recipe Unbox 50
+	{
+		destroy NailsBox_Medium,
+
+		CanBeDoneFromFloor:true,
+		Result:Nails=50,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:140.0,
+		Category:Packing,
+	}
+
+	recipe Box 25
+	{
+		destroy Nails=25,
+
+		CanBeDoneFromFloor:true,
+		Result:NailsBox_Small,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:150.0,
+		Category:Packing,
+	}
+
+	recipe Unbox 25
+	{
+		destroy NailsBox_Small,
+
+		CanBeDoneFromFloor:true,
+		Result:Nails=25,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:105.0,
+		Category:Packing,
+	}
+
+	recipe Box Pens
+	{
+		destroy Pen=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PenBox_Black,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unbox Pens
+	{
+		destroy PenBox_Black,
+
+		CanBeDoneFromFloor:true,
+		Result:Pen=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Box Pens
+	{
+		destroy BluePen=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PenBox_Blue,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unbox Pens
+	{
+		destroy PenBox_Blue,
+
+		CanBeDoneFromFloor:true,
+		Result:BluePen=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Box Pens
+	{
+		destroy RedPen=10,
+
+		CanBeDoneFromFloor:true,
+		Result:PenBox_Red,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:75.0,
+		Category:Packing,
+	}
+
+	recipe Unbox Pens
+	{
+		destroy PenBox_Red,
+
+		CanBeDoneFromFloor:true,
+		Result:RedPen=10,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:52.5,
+		Category:Packing,
+	}
+
+	recipe Box 50
+	{
+		destroy Screws=50,
+
+		CanBeDoneFromFloor:true,
+		Result:ScrewsBox_Medium,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:200.0,
+		Category:Packing,
+	}
+
+	recipe Unbox 50
+	{
+		destroy ScrewsBox_Medium,
+
+		CanBeDoneFromFloor:true,
+		Result:Screws=50,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:140.0,
+		Category:Packing,
+	}
+
+	recipe Box 25
+	{
+		destroy Screws=25,
+
+		CanBeDoneFromFloor:true,
+		Result:ScrewsBox_Small,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:Recipe.OnTest.BUIsNotFavorite,
+		Time:150.0,
+		Category:Packing,
+	}
+
+	recipe Unbox 25
+	{
+		destroy ScrewsBox_Small,
+
+		CanBeDoneFromFloor:true,
+		Result:Screws=25,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Time:105.0,
+		Category:Packing,
+	}
+}
