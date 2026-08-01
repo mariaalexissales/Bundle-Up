@@ -1,4 +1,9 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
+    
     imports {
         Base,
     }
@@ -9,6 +14,7 @@ module BundleUp {
         Weight = 5.0,
         Icon = PlankR,
         WorldStaticModel = Base.Plank,
+        Tags = base:isfirefuel,
         DoubleClickRecipe = Untie5,
     }
 
@@ -18,6 +24,7 @@ module BundleUp {
         Weight = 5.0,
         Icon = PlankSR,
         WorldStaticModel = Base.Plank,
+        Tags = base:isfirefuel,
         DoubleClickRecipe = Untie5,
     }
 
@@ -27,6 +34,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = SheetMetalR,
         WorldStaticModel = Base.SheetMetal,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie5,
     }
 
@@ -36,6 +44,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = SheetMetalSR,
         WorldStaticModel = Base.SheetMetal,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie5,
     }
 
@@ -45,6 +54,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = IronPipesR,
         WorldStaticModel = Base.MetalPipe,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie5,
     }
 
@@ -54,6 +64,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = IronPipesSR,
         WorldStaticModel = Base.MetalPipe,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie5,
     }
 
@@ -63,6 +74,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = IronBarR,
         WorldStaticModel = Base.IronBar,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie5,
     }
 
@@ -72,6 +84,7 @@ module BundleUp {
         Weight = 4.0,
         Icon = IronBarSR,
         WorldStaticModel = Base.IronBar,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie5,
     }
 
@@ -81,6 +94,7 @@ module BundleUp {
         Weight = 7.5,
         Icon = PlankLR,
         WorldStaticModel = Base.Plank,
+        Tags = base:isfirefuel,
         DoubleClickRecipe = Untie10,
     }
 
@@ -90,6 +104,7 @@ module BundleUp {
         Weight = 7.5,
         Icon = PlankLSR,
         WorldStaticModel = Base.Plank,
+        Tags = base:isfirefuel,
         DoubleClickRecipe = Untie10,
     }
 
@@ -99,6 +114,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = SheetMetalLR,
         WorldStaticModel = Base.SheetMetal,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie10,
     }
 
@@ -108,6 +124,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = SheetMetalLSR,
         WorldStaticModel = Base.SheetMetal,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie10,
     }
 
@@ -117,6 +134,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = IronPipesLR,
         WorldStaticModel = Base.MetalPipe,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie10,
     }
 
@@ -126,6 +144,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = IronPipesLSR,
         WorldStaticModel = Base.MetalPipe,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie10,
     }
 
@@ -135,6 +154,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = IronBarLR,
         WorldStaticModel = Base.IronBar,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie10,
     }
 
@@ -144,6 +164,7 @@ module BundleUp {
         Weight = 6.0,
         Icon = IronBarLSR,
         WorldStaticModel = Base.IronBar,
+        Tags = base:hasmetal,
         DoubleClickRecipe = Untie10,
     }
 }

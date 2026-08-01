@@ -1,4 +1,13 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
+
+    imports {
+        Base,
+    }
+    
     item WireCable_Small {
         DisplayCategory = Material,
         ItemType = base:normal,
@@ -135,6 +144,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 2.5,
         Icon = StoneBlockPack,
+        Tags = base:stone,
         DoubleClickRecipe = UnpackStoneBlock,
     }
 }

@@ -1,9 +1,14 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
     imports {
         Base,
     }
 
     craftRecipe UnpackDeprecated5 {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -26,6 +31,7 @@ module BundleUp {
     }
 
     craftRecipe UnpackDeprecated10 {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
