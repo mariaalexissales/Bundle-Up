@@ -1,9 +1,14 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
     imports {
         Base,
     }
 
     craftRecipe Tie5 {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -27,6 +32,7 @@ module BundleUp {
     }
 
     craftRecipe Tie10 {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -38,8 +44,8 @@ module BundleUp {
             item 1 mapper:bundleType,
         }
         itemMapper bundleType {
-            BundleUp.PlankR = Base.Rope;Base.Plank,
-            BundleUp.PlankSR = Base.SheetRope;Base.Plank,
+            BundleUp.PlankLR = Base.Rope;Base.Plank,
+            BundleUp.PlankLSR = Base.SheetRope;Base.Plank,
             BundleUp.SheetMetalLR = Base.Rope;Base.SheetMetal,
             BundleUp.SheetMetalLSR = Base.SheetRope;Base.SheetMetal,
             BundleUp.IronPipesLR = Base.Rope;Base.MetalPipe,
@@ -50,11 +56,12 @@ module BundleUp {
     }
 
     craftRecipe Untie5 {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipeR;BundleUp.IronPipeSR;BundleUp.IronBarR;BundleUp.IronBarSR] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
@@ -67,6 +74,8 @@ module BundleUp {
             Base.SheetRope = BundleUp.SheetMetalSR,
             Base.Rope = BundleUp.IronPipesR,
             Base.SheetRope = BundleUp.IronPipesSR,
+            Base.Rope = BundleUp.IronBarR,
+            Base.SheetRope = BundleUp.IronBarSR,
         }
         itemMapper itemTypes {
             Base.Plank = BundleUp.PlankR,
@@ -81,6 +90,7 @@ module BundleUp {
     }
 
     craftRecipe Untie10 {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,

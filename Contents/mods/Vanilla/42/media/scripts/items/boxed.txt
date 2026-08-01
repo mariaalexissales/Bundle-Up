@@ -1,3 +1,7 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
     
     imports {
@@ -42,42 +46,6 @@ module BundleUp {
         WorldStaticModel = Base.ScrewsBox,
         Tags = base:hasmetal,
         DoubleClickRecipe = UnboxMedium,
-    }
-
-    item GoldScrap_Small {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.5,
-        Icon = GoldScrapS,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnbagSmall,
-    }
-
-    item GoldScrap_Large {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 1.0,
-        Icon = GoldScrapL,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnbagLarge,
-    }
-
-    item SilverScrap_Small {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.5,
-        Icon = SilverScrapS,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnbagSmall,
-    }
-
-    item SilverScrap_Large {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 1.0,
-        Icon = SilverScrapL,
-        Tags = base:hasmetal,
-        DoubleClickRecipe = UnbagLarge,
     }
 
     item PenBox_Black {

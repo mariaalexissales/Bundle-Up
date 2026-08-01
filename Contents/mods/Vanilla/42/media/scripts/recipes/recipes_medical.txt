@@ -1,0 +1,61 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp {
+
+    imports {
+        Base,
+    }
+
+    craftRecipe PackMedicalBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 10 [Base.AlcoholBandage;Base.AlcoholWipes;Base.AlcoholedCottonBalls;Base.Pills;Base.PillsAntiDep;Base.PillsBeta;Base.PillsSleepingTablets;Base.PillsVitamins;Base.Tissue;Base.WaterPurificationTablets] flags[IsExclusive;ItemCount] mappers[medicalMap],
+        }
+        outputs {
+            item 1 mapper:medicalMap,
+        }
+        itemMapper medicalMap {
+            BundleUp.AlcoholBandageBox = Base.AlcoholBandage,
+            BundleUp.AlcoholWipesBox = Base.AlcoholWipes,
+            BundleUp.AlcoholedCottonBallsBox = Base.AlcoholedCottonBalls,
+            BundleUp.PillsBox = Base.Pills,
+            BundleUp.PillsAntiDepBox = Base.PillsAntiDep,
+            BundleUp.PillsBetaBox = Base.PillsBeta,
+            BundleUp.PillsSleepingTabletsBox = Base.PillsSleepingTablets,
+            BundleUp.PillsVitaminsBox = Base.PillsVitamins,
+            BundleUp.TissueBox = Base.Tissue,
+            BundleUp.WaterPurificationTabletsBox = Base.WaterPurificationTablets,
+        }
+    }
+
+    craftRecipe UnpackMedicalBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.AlcoholBandageBox;BundleUp.AlcoholWipesBox;BundleUp.AlcoholedCottonBallsBox;BundleUp.PillsBox;BundleUp.PillsAntiDepBox;BundleUp.PillsBetaBox;BundleUp.PillsSleepingTabletsBox;BundleUp.PillsVitaminsBox;BundleUp.TissueBox;BundleUp.WaterPurificationTabletsBox] mappers[medicalMap],
+        }
+        outputs {
+            item 10 mapper:medicalMap,
+        }
+        itemMapper medicalMap {
+            Base.AlcoholBandage = BundleUp.AlcoholBandageBox,
+            Base.AlcoholWipes = BundleUp.AlcoholWipesBox,
+            Base.AlcoholedCottonBalls = BundleUp.AlcoholedCottonBallsBox,
+            Base.Pills = BundleUp.PillsBox,
+            Base.PillsAntiDep = BundleUp.PillsAntiDepBox,
+            Base.PillsBeta = BundleUp.PillsBetaBox,
+            Base.PillsSleepingTablets = BundleUp.PillsSleepingTabletsBox,
+            Base.PillsVitamins = BundleUp.PillsVitaminsBox,
+            Base.Tissue = BundleUp.TissueBox,
+            Base.WaterPurificationTablets = BundleUp.WaterPurificationTabletsBox,
+        }
+    }
+
+}

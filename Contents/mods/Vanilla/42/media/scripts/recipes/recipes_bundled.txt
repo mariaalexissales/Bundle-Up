@@ -1,9 +1,14 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
     imports {
         Base,
     }
     
     craftRecipe BundleSmall {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -20,6 +25,7 @@ module BundleUp {
     }
 
     craftRecipe UnbundleSmall {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -36,6 +42,7 @@ module BundleUp {
     }
 
     craftRecipe BundleLarge {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -52,6 +59,7 @@ module BundleUp {
     }
 
     craftRecipe UnbundleLarge {
+        timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -64,14 +72,11 @@ module BundleUp {
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Large,
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetL,
-            Base.Pen = BundleUp.PenBox_Black,
-            Base.BluePen = BundleUp.PenBox_Blue,
-            Base.RedPen = BundleUp.PenBox_Red,
-            Base.GreenPen = BundleUp.PenBox_Green,
         }
     }
 
     craftRecipe OpenSodaCanPack {
+        timedAction = UnPackBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onCreate = BUInv.unpackSodaPack,
@@ -85,6 +90,7 @@ module BundleUp {
     }
 
     craftRecipe PackBlueberrySodaCan {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackBlueberrySodaCan,
@@ -98,6 +104,7 @@ module BundleUp {
     }
 
     craftRecipe PackBubblegumSodaCan {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackBubblegumSodaCan,
@@ -111,6 +118,7 @@ module BundleUp {
     }
 
     craftRecipe PackLimeSodaCan {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackLimeSodaCan,
@@ -124,6 +132,7 @@ module BundleUp {
     }
 
     craftRecipe PackOrangeSodaCan {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackOrangeSodaCan,
@@ -137,6 +146,7 @@ module BundleUp {
     }
 
     craftRecipe PackGrapeSodaCan {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackGrapeSodaCan,
@@ -150,6 +160,7 @@ module BundleUp {
     }
 
     craftRecipe PackPineappleSodaCan {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackPineappleSodaCan,
@@ -163,6 +174,7 @@ module BundleUp {
     }
 
     craftRecipe PackStrawberrySodaCan {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         onTest = BUInv.testPackStrawberrySodaCan,
@@ -176,6 +188,8 @@ module BundleUp {
     }
 
     craftRecipe PackGingerAle {
+        timedAction = PackingBox,
+        time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
@@ -187,7 +201,7 @@ module BundleUp {
     }
 
     craftRecipe OpenVarietyPack {
-        timedAction = Making,
+        timedAction = UnPackBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -200,6 +214,7 @@ module BundleUp {
     }
 
     craftRecipe PackStoneBlock {
+        timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -212,6 +227,7 @@ module BundleUp {
     }
 
     craftRecipe UnpackStoneBlock {
+        timedAction = UnPackBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,

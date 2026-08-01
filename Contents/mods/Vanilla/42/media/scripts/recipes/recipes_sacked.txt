@@ -1,9 +1,15 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
+
     imports {
         Base,
     }
 
     craftRecipe Sack {
+        timedAction = PutInBag,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -20,6 +26,7 @@ module BundleUp {
     }
 
     craftRecipe Unsack {
+        timedAction = UnPackSack,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
@@ -34,4 +41,131 @@ module BundleUp {
             Base.EmptySandbag = BundleUp.Sack_Sack,
         }
     }
+
+    craftRecipe BagSmall {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] mappers[bagTypes],
+            item 50 [Base.GoldScrap;Base.SilverScrap] mappers[bagTypes],
+        }
+        outputs {
+            item 1 mapper:bagTypes,
+        }
+        itemMapper bagTypes {
+            BundleUp.GoldScrap_Small = Base.EmptySandbag;Base.GoldScrap,
+            BundleUp.SilverScrap_Small = Base.EmptySandbag;Base.SilverScrap,
+        }
+    }
+
+    craftRecipe UnbagSmall {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small] mappers[bagTypes],
+        }
+        outputs {
+            item 50 mapper:bagTypes,
+            item 1 Base.EmptySandbag,
+        }
+        itemMapper bagTypes {
+            Base.GoldScrap = BundleUp.GoldScrap_Small,
+            Base.SilverScrap = BundleUp.SilverScrap_Small,
+        }
+    }
+
+    craftRecipe BagLarge {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] mappers[bagTypes],
+            item 100 [Base.GoldScrap;Base.SilverScrap] mappers[bagTypes],
+        }
+        outputs {
+            item 1 mapper:bagTypes,
+        }
+        itemMapper bagTypes {
+            BundleUp.GoldScrap_Large = Base.EmptySandbag;Base.GoldScrap,
+            BundleUp.SilverScrap_Large = Base.EmptySandbag;Base.SilverScrap,
+        }
+    }
+
+    craftRecipe UnbagLarge {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GoldScrap_Large;BundleUp.SilverScrap_Large] mappers[bagTypes],
+        }
+        outputs {
+            item 100 mapper:bagTypes,
+            item 1 Base.EmptySandbag,
+        }
+        itemMapper bagTypes {
+            Base.GoldScrap = BundleUp.GoldScrap_Large,
+            Base.SilverScrap = BundleUp.SilverScrap_Large,
+        }
+    }
+
+    craftRecipe PackScrapSack {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] mappers[scrapMap],
+            item 25 [Base.AluminumScrap;Base.BrassScrap;Base.BrokenGlass;Base.CharcoalCrafted;Base.CopperScrap;Base.ElectronicsScrap;Base.IronScrap;Base.ScrapMetal;Base.Splinters;Base.SteelScrap;Base.UnusableWood] mappers[scrapMap],
+        }
+        outputs {
+            item 1 mapper:scrapMap,
+        }
+        itemMapper scrapMap {
+            BundleUp.AluminumScrapSack = Base.EmptySandbag;Base.AluminumScrap,
+            BundleUp.BrassScrapSack = Base.EmptySandbag;Base.BrassScrap,
+            BundleUp.BrokenGlassSack = Base.EmptySandbag;Base.BrokenGlass,
+            BundleUp.CharcoalCraftedSack = Base.EmptySandbag;Base.CharcoalCrafted,
+            BundleUp.CopperScrapSack = Base.EmptySandbag;Base.CopperScrap,
+            BundleUp.ElectronicsScrapSack = Base.EmptySandbag;Base.ElectronicsScrap,
+            BundleUp.IronScrapSack = Base.EmptySandbag;Base.IronScrap,
+            BundleUp.ScrapMetalSack = Base.EmptySandbag;Base.ScrapMetal,
+            BundleUp.SplintersSack = Base.EmptySandbag;Base.Splinters,
+            BundleUp.SteelScrapSack = Base.EmptySandbag;Base.SteelScrap,
+            BundleUp.UnusableWoodSack = Base.EmptySandbag;Base.UnusableWood,
+        }
+    }
+
+    craftRecipe UnpackScrapSack {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.ElectronicsScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] mappers[scrapMap],
+        }
+        outputs {
+            item 25 mapper:scrapMap,
+            item 1 Base.EmptySandbag,
+        }
+        itemMapper scrapMap {
+            Base.AluminumScrap = BundleUp.AluminumScrapSack,
+            Base.BrassScrap = BundleUp.BrassScrapSack,
+            Base.BrokenGlass = BundleUp.BrokenGlassSack,
+            Base.CharcoalCrafted = BundleUp.CharcoalCraftedSack,
+            Base.CopperScrap = BundleUp.CopperScrapSack,
+            Base.ElectronicsScrap = BundleUp.ElectronicsScrapSack,
+            Base.IronScrap = BundleUp.IronScrapSack,
+            Base.ScrapMetal = BundleUp.ScrapMetalSack,
+            Base.Splinters = BundleUp.SplintersSack,
+            Base.SteelScrap = BundleUp.SteelScrapSack,
+            Base.UnusableWood = BundleUp.UnusableWoodSack,
+        }
+    }
+
 }

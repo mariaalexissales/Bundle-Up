@@ -1,4 +1,9 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
 module BundleUp {
+
     imports {
         Base,
     }
@@ -10,4 +15,114 @@ module BundleUp {
         Icon = SackSack,
         DoubleClickRecipe = UnpackSack,
     }
+    item GoldScrap_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = GoldScrapS,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbagSmall,
+    }
+    item GoldScrap_Large {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GoldScrapL,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbagLarge,
+    }
+    item SilverScrap_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = SilverScrapS,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbagSmall,
+    }
+    item SilverScrap_Large {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = SilverScrapL,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbagLarge,
+    }
+    item AluminumScrapSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item BrassScrapSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item BrokenGlassSack {
+        DisplayCategory = Furniture,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item CharcoalCraftedSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item CopperScrapSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item ElectronicsScrapSack {
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item IronScrapSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item ScrapMetalSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item SplintersSack {
+        DisplayCategory = SkillBook,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item SteelScrapSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+    item UnusableWoodSack {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 1.5,
+        Icon = Sack_Laundry,
+        DoubleClickRecipe = UnpackScrapSack,
+    }
+
 }
