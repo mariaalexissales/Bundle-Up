@@ -13,13 +13,13 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.Rope;Base.SheetRope] mappers[bundleType],
-            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] mappers[bundleType],
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] mappers[bundleTypes],
         }
         outputs {
-            item 1 mapper:bundleType,
+            item 1 mapper:bundleTypes,
         }
-        itemMapper bundleType {
+        itemMapper bundleTypes {
             BundleUp.PlankR = Base.Rope;Base.Plank,
             BundleUp.PlankSR = Base.SheetRope;Base.Plank,
             BundleUp.SheetMetalR = Base.Rope;Base.SheetMetal,
@@ -37,13 +37,13 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.Rope;Base.SheetRope] mappers[bundleType],
-            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] mappers[bundleType] flags[ItemCount],
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] mappers[bundleTypes] flags[ItemCount],
         }
         outputs {
-            item 1 mapper:bundleType,
+            item 1 mapper:bundleTypes,
         }
-        itemMapper bundleType {
+        itemMapper bundleTypes {
             BundleUp.PlankLR = Base.Rope;Base.Plank,
             BundleUp.PlankLSR = Base.SheetRope;Base.Plank,
             BundleUp.SheetMetalLR = Base.Rope;Base.SheetMetal,

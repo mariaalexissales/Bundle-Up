@@ -125,4 +125,389 @@ module BundleUp {
         DoubleClickRecipe = UnpackScrapSack,
     }
 
+    item BarleyBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item BasilBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item BellPepperBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item BlackSageBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item BroadleafPlantainBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item BroccoliBagSeed2Pouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item CabbageBagSeed2Pouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item CarrotBagSeed2Pouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item CauliflowerBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item ChamomileBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item ChivesBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item CilantroBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item ComfreyBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item CommonMallowBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item CornBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item CucumberBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item FlaxBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item GarlicBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item GreenpeasBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item HabaneroBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item HempBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item HopsBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item JalapenoBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item KaleBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item LavenderBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item LeekBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item LemonGrassBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item LettuceBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item MarigoldBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item MintBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item OnionBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item OreganoBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item ParsleyBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item PoppyBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item PotatoBagSeed2Pouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item PumpkinBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item RedRadishBagSeed2Pouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item RoseBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item RosemaryBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item RyeBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item SageBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item SoybeansBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item SpinachBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item StrewberrieBagSeed2Pouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item SugarBeetBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item SunflowerBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item SweetPotatoBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item ThymeBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item TobaccoBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item TomatoBagSeed2Pouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item TurnipBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item WatermelonBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item WheatBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item WildGarlicBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
+    item ZucchiniBagSeedPouch {
+        DisplayCategory = Farming,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Parcel_Medium_Food,
+        DoubleClickRecipe = UnpackSeedPouch,
+    }
 }

@@ -577,3 +577,519 @@ BU.BaseCategory["Base.Whetstone"] = "ReductionOther"
 BU.BaseCategory["Base.Woodglue"] = "ReductionOther"
 BU.BaseCategory["Base.Yeast"] = "ReductionOther"
 BU.BaseCategory["Base.Zipties"] = "ReductionOther"
+
+-- Added: ammo magazine/clip boxes
+BU.Bundles["BundleUp.44ClipBox"] = { base = "Base.44Clip", count = 5 }
+BU.Bundles["BundleUp.JS14ClipBox"] = { base = "Base.JS14_Clip", count = 5 }
+BU.Bundles["BundleUp.556ClipBox"] = { base = "Base.556Clip", count = 5 }
+BU.Bundles["BundleUp.45ClipBox"] = { base = "Base.45Clip", count = 5 }
+BU.Bundles["BundleUp.M14ClipBox"] = { base = "Base.M14Clip", count = 5 }
+BU.Bundles["BundleUp.9mmClipBox"] = { base = "Base.9mmClip", count = 5 }
+BU.BaseCategory["Base.44Clip"] = "ReductionOther"
+BU.BaseCategory["Base.JS14_Clip"] = "ReductionOther"
+BU.BaseCategory["Base.556Clip"] = "ReductionOther"
+BU.BaseCategory["Base.45Clip"] = "ReductionOther"
+BU.BaseCategory["Base.M14Clip"] = "ReductionOther"
+BU.BaseCategory["Base.9mmClip"] = "ReductionOther"
+
+-- Added: seed pouches
+BU.Bundles["BundleUp.BarleyBagSeedPouch"] = { base = "Base.BarleyBagSeed", count = 10 }
+BU.Bundles["BundleUp.BasilBagSeedPouch"] = { base = "Base.BasilBagSeed", count = 10 }
+BU.Bundles["BundleUp.BellPepperBagSeedPouch"] = { base = "Base.BellPepperBagSeed", count = 10 }
+BU.Bundles["BundleUp.BlackSageBagSeedPouch"] = { base = "Base.BlackSageBagSeed", count = 10 }
+BU.Bundles["BundleUp.BroadleafPlantainBagSeedPouch"] = { base = "Base.BroadleafPlantainBagSeed", count = 10 }
+BU.Bundles["BundleUp.BroccoliBagSeed2Pouch"] = { base = "Base.BroccoliBagSeed2", count = 10 }
+BU.Bundles["BundleUp.CabbageBagSeed2Pouch"] = { base = "Base.CabbageBagSeed2", count = 10 }
+BU.Bundles["BundleUp.CarrotBagSeed2Pouch"] = { base = "Base.CarrotBagSeed2", count = 10 }
+BU.Bundles["BundleUp.CauliflowerBagSeedPouch"] = { base = "Base.CauliflowerBagSeed", count = 10 }
+BU.Bundles["BundleUp.ChamomileBagSeedPouch"] = { base = "Base.ChamomileBagSeed", count = 10 }
+BU.Bundles["BundleUp.ChivesBagSeedPouch"] = { base = "Base.ChivesBagSeed", count = 10 }
+BU.Bundles["BundleUp.CilantroBagSeedPouch"] = { base = "Base.CilantroBagSeed", count = 10 }
+BU.Bundles["BundleUp.ComfreyBagSeedPouch"] = { base = "Base.ComfreyBagSeed", count = 10 }
+BU.Bundles["BundleUp.CommonMallowBagSeedPouch"] = { base = "Base.CommonMallowBagSeed", count = 10 }
+BU.Bundles["BundleUp.CornBagSeedPouch"] = { base = "Base.CornBagSeed", count = 10 }
+BU.Bundles["BundleUp.CucumberBagSeedPouch"] = { base = "Base.CucumberBagSeed", count = 10 }
+BU.Bundles["BundleUp.FlaxBagSeedPouch"] = { base = "Base.FlaxBagSeed", count = 10 }
+BU.Bundles["BundleUp.GarlicBagSeedPouch"] = { base = "Base.GarlicBagSeed", count = 10 }
+BU.Bundles["BundleUp.GreenpeasBagSeedPouch"] = { base = "Base.GreenpeasBagSeed", count = 10 }
+BU.Bundles["BundleUp.HabaneroBagSeedPouch"] = { base = "Base.HabaneroBagSeed", count = 10 }
+BU.Bundles["BundleUp.HempBagSeedPouch"] = { base = "Base.HempBagSeed", count = 10 }
+BU.Bundles["BundleUp.HopsBagSeedPouch"] = { base = "Base.HopsBagSeed", count = 10 }
+BU.Bundles["BundleUp.JalapenoBagSeedPouch"] = { base = "Base.JalapenoBagSeed", count = 10 }
+BU.Bundles["BundleUp.KaleBagSeedPouch"] = { base = "Base.KaleBagSeed", count = 10 }
+BU.Bundles["BundleUp.LavenderBagSeedPouch"] = { base = "Base.LavenderBagSeed", count = 10 }
+BU.Bundles["BundleUp.LeekBagSeedPouch"] = { base = "Base.LeekBagSeed", count = 10 }
+BU.Bundles["BundleUp.LemonGrassBagSeedPouch"] = { base = "Base.LemonGrassBagSeed", count = 10 }
+BU.Bundles["BundleUp.LettuceBagSeedPouch"] = { base = "Base.LettuceBagSeed", count = 10 }
+BU.Bundles["BundleUp.MarigoldBagSeedPouch"] = { base = "Base.MarigoldBagSeed", count = 10 }
+BU.Bundles["BundleUp.MintBagSeedPouch"] = { base = "Base.MintBagSeed", count = 10 }
+BU.Bundles["BundleUp.OnionBagSeedPouch"] = { base = "Base.OnionBagSeed", count = 10 }
+BU.Bundles["BundleUp.OreganoBagSeedPouch"] = { base = "Base.OreganoBagSeed", count = 10 }
+BU.Bundles["BundleUp.ParsleyBagSeedPouch"] = { base = "Base.ParsleyBagSeed", count = 10 }
+BU.Bundles["BundleUp.PoppyBagSeedPouch"] = { base = "Base.PoppyBagSeed", count = 10 }
+BU.Bundles["BundleUp.PotatoBagSeed2Pouch"] = { base = "Base.PotatoBagSeed2", count = 10 }
+BU.Bundles["BundleUp.PumpkinBagSeedPouch"] = { base = "Base.PumpkinBagSeed", count = 10 }
+BU.Bundles["BundleUp.RedRadishBagSeed2Pouch"] = { base = "Base.RedRadishBagSeed2", count = 10 }
+BU.Bundles["BundleUp.RoseBagSeedPouch"] = { base = "Base.RoseBagSeed", count = 10 }
+BU.Bundles["BundleUp.RosemaryBagSeedPouch"] = { base = "Base.RosemaryBagSeed", count = 10 }
+BU.Bundles["BundleUp.RyeBagSeedPouch"] = { base = "Base.RyeBagSeed", count = 10 }
+BU.Bundles["BundleUp.SageBagSeedPouch"] = { base = "Base.SageBagSeed", count = 10 }
+BU.Bundles["BundleUp.SoybeansBagSeedPouch"] = { base = "Base.SoybeansBagSeed", count = 10 }
+BU.Bundles["BundleUp.SpinachBagSeedPouch"] = { base = "Base.SpinachBagSeed", count = 10 }
+BU.Bundles["BundleUp.StrewberrieBagSeed2Pouch"] = { base = "Base.StrewberrieBagSeed2", count = 10 }
+BU.Bundles["BundleUp.SugarBeetBagSeedPouch"] = { base = "Base.SugarBeetBagSeed", count = 10 }
+BU.Bundles["BundleUp.SunflowerBagSeedPouch"] = { base = "Base.SunflowerBagSeed", count = 10 }
+BU.Bundles["BundleUp.SweetPotatoBagSeedPouch"] = { base = "Base.SweetPotatoBagSeed", count = 10 }
+BU.Bundles["BundleUp.ThymeBagSeedPouch"] = { base = "Base.ThymeBagSeed", count = 10 }
+BU.Bundles["BundleUp.TobaccoBagSeedPouch"] = { base = "Base.TobaccoBagSeed", count = 10 }
+BU.Bundles["BundleUp.TomatoBagSeed2Pouch"] = { base = "Base.TomatoBagSeed2", count = 10 }
+BU.Bundles["BundleUp.TurnipBagSeedPouch"] = { base = "Base.TurnipBagSeed", count = 10 }
+BU.Bundles["BundleUp.WatermelonBagSeedPouch"] = { base = "Base.WatermelonBagSeed", count = 10 }
+BU.Bundles["BundleUp.WheatBagSeedPouch"] = { base = "Base.WheatBagSeed", count = 10 }
+BU.Bundles["BundleUp.WildGarlicBagSeedPouch"] = { base = "Base.WildGarlicBagSeed", count = 10 }
+BU.Bundles["BundleUp.ZucchiniBagSeedPouch"] = { base = "Base.ZucchiniBagSeed", count = 10 }
+BU.BaseCategory["Base.BarleyBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.BasilBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.BellPepperBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.BlackSageBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.BroadleafPlantainBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.BroccoliBagSeed2"] = "ReductionOther"
+BU.BaseCategory["Base.CabbageBagSeed2"] = "ReductionOther"
+BU.BaseCategory["Base.CarrotBagSeed2"] = "ReductionOther"
+BU.BaseCategory["Base.CauliflowerBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.ChamomileBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.ChivesBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.CilantroBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.ComfreyBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.CommonMallowBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.CornBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.CucumberBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.GarlicBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.GreenpeasBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.HabaneroBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.HempBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.HopsBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.JalapenoBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.KaleBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.LavenderBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.LeekBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.LemonGrassBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.LettuceBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.MarigoldBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.MintBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.OnionBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.OreganoBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.ParsleyBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.PoppyBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.PotatoBagSeed2"] = "ReductionOther"
+BU.BaseCategory["Base.PumpkinBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.RedRadishBagSeed2"] = "ReductionOther"
+BU.BaseCategory["Base.RoseBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.RosemaryBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.RyeBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.SageBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.SoybeansBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.SpinachBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.StrewberrieBagSeed2"] = "ReductionOther"
+BU.BaseCategory["Base.SugarBeetBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.SunflowerBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.SweetPotatoBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.ThymeBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.TobaccoBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.TomatoBagSeed2"] = "ReductionOther"
+BU.BaseCategory["Base.TurnipBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.WatermelonBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.WheatBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.WildGarlicBagSeed"] = "ReductionOther"
+BU.BaseCategory["Base.ZucchiniBagSeed"] = "ReductionOther"
+
+-- Added: literature bundles
+BU.Bundles["BundleUp.BookBundle"] = { base = "Base.Book", count = 10 }
+BU.Bundles["BundleUp.Book_AdventureNonFictionBundle"] = { base = "Base.Book_AdventureNonFiction", count = 10 }
+BU.Bundles["BundleUp.Book_ArtBundle"] = { base = "Base.Book_Art", count = 10 }
+BU.Bundles["BundleUp.Book_BaseballBundle"] = { base = "Base.Book_Baseball", count = 10 }
+BU.Bundles["BundleUp.Book_BiographyBundle"] = { base = "Base.Book_Biography", count = 10 }
+BU.Bundles["BundleUp.Book_BusinessBundle"] = { base = "Base.Book_Business", count = 10 }
+BU.Bundles["BundleUp.Book_ChildsBundle"] = { base = "Base.Book_Childs", count = 10 }
+BU.Bundles["BundleUp.Book_CinemaBundle"] = { base = "Base.Book_Cinema", count = 10 }
+BU.Bundles["BundleUp.Book_ClassicBundle"] = { base = "Base.Book_Classic", count = 10 }
+BU.Bundles["BundleUp.Book_ClassicFictionBundle"] = { base = "Base.Book_ClassicFiction", count = 10 }
+BU.Bundles["BundleUp.Book_ClassicNonfictionBundle"] = { base = "Base.Book_ClassicNonfiction", count = 10 }
+BU.Bundles["BundleUp.Book_ComputerBundle"] = { base = "Base.Book_Computer", count = 10 }
+BU.Bundles["BundleUp.Book_CrimeFictionBundle"] = { base = "Base.Book_CrimeFiction", count = 10 }
+BU.Bundles["BundleUp.Book_FantasyBundle"] = { base = "Base.Book_Fantasy", count = 10 }
+BU.Bundles["BundleUp.Book_FarmingBundle"] = { base = "Base.Book_Farming", count = 10 }
+BU.Bundles["BundleUp.Book_FashionBundle"] = { base = "Base.Book_Fashion", count = 10 }
+BU.Bundles["BundleUp.Book_FictionBundle"] = { base = "Base.Book_Fiction", count = 10 }
+BU.Bundles["BundleUp.Book_GeneralNonFictionBundle"] = { base = "Base.Book_GeneralNonFiction", count = 10 }
+BU.Bundles["BundleUp.Book_GeneralReferenceBundle"] = { base = "Base.Book_GeneralReference", count = 10 }
+BU.Bundles["BundleUp.Book_GolfBundle"] = { base = "Base.Book_Golf", count = 10 }
+BU.Bundles["BundleUp.Book_HistoryBundle"] = { base = "Base.Book_History", count = 10 }
+BU.Bundles["BundleUp.Book_HorrorBundle"] = { base = "Base.Book_Horror", count = 10 }
+BU.Bundles["BundleUp.Book_LegalBundle"] = { base = "Base.Book_Legal", count = 10 }
+BU.Bundles["BundleUp.Book_LiteraryFictionBundle"] = { base = "Base.Book_LiteraryFiction", count = 10 }
+BU.Bundles["BundleUp.Book_MedicalBundle"] = { base = "Base.Book_Medical", count = 10 }
+BU.Bundles["BundleUp.Book_MilitaryBundle"] = { base = "Base.Book_Military", count = 10 }
+BU.Bundles["BundleUp.Book_MilitaryHistoryBundle"] = { base = "Base.Book_MilitaryHistory", count = 10 }
+BU.Bundles["BundleUp.Book_MusicBundle"] = { base = "Base.Book_Music", count = 10 }
+BU.Bundles["BundleUp.Book_NatureBundle"] = { base = "Base.Book_Nature", count = 10 }
+BU.Bundles["BundleUp.Book_OccultBundle"] = { base = "Base.Book_Occult", count = 10 }
+BU.Bundles["BundleUp.Book_PhilosophyBundle"] = { base = "Base.Book_Philosophy", count = 10 }
+BU.Bundles["BundleUp.Book_PolicingBundle"] = { base = "Base.Book_Policing", count = 10 }
+BU.Bundles["BundleUp.Book_PoliticsBundle"] = { base = "Base.Book_Politics", count = 10 }
+BU.Bundles["BundleUp.Book_QuackeryBundle"] = { base = "Base.Book_Quackery", count = 10 }
+BU.Bundles["BundleUp.Book_ReligionBundle"] = { base = "Base.Book_Religion", count = 10 }
+BU.Bundles["BundleUp.Book_RichBundle"] = { base = "Base.Book_Rich", count = 10 }
+BU.Bundles["BundleUp.Book_RomanceBundle"] = { base = "Base.Book_Romance", count = 10 }
+BU.Bundles["BundleUp.Book_SadNonFictionBundle"] = { base = "Base.Book_SadNonFiction", count = 10 }
+BU.Bundles["BundleUp.Book_SchoolTextbookBundle"] = { base = "Base.Book_SchoolTextbook", count = 10 }
+BU.Bundles["BundleUp.Book_ScienceBundle"] = { base = "Base.Book_Science", count = 10 }
+BU.Bundles["BundleUp.Book_SciFiBundle"] = { base = "Base.Book_SciFi", count = 10 }
+BU.Bundles["BundleUp.Book_SportsBundle"] = { base = "Base.Book_Sports", count = 10 }
+BU.Bundles["BundleUp.Book_ThrillerBundle"] = { base = "Base.Book_Thriller", count = 10 }
+BU.Bundles["BundleUp.Book_TravelBundle"] = { base = "Base.Book_Travel", count = 10 }
+BU.Bundles["BundleUp.Book_WesternBundle"] = { base = "Base.Book_Western", count = 10 }
+BU.Bundles["BundleUp.Book_BibleBundle"] = { base = "Base.Book_Bible", count = 10 }
+BU.Bundles["BundleUp.BookFancy_ClassicBundle"] = { base = "Base.BookFancy_Classic", count = 10 }
+BU.Bundles["BundleUp.BookFancy_ClassicFictionBundle"] = { base = "Base.BookFancy_ClassicFiction", count = 10 }
+BU.Bundles["BundleUp.BookFancy_ClassicNonfictionBundle"] = { base = "Base.BookFancy_ClassicNonfiction", count = 10 }
+BU.Bundles["BundleUp.BookFancy_HistoryBundle"] = { base = "Base.BookFancy_History", count = 10 }
+BU.Bundles["BundleUp.BookFancy_LegalBundle"] = { base = "Base.BookFancy_Legal", count = 10 }
+BU.Bundles["BundleUp.BookFancy_MedicalBundle"] = { base = "Base.BookFancy_Medical", count = 10 }
+BU.Bundles["BundleUp.BookFancy_MilitaryHistoryBundle"] = { base = "Base.BookFancy_MilitaryHistory", count = 10 }
+BU.Bundles["BundleUp.BookFancy_OccultBundle"] = { base = "Base.BookFancy_Occult", count = 10 }
+BU.Bundles["BundleUp.BookFancy_PhilosophyBundle"] = { base = "Base.BookFancy_Philosophy", count = 10 }
+BU.Bundles["BundleUp.BookFancy_PoliticsBundle"] = { base = "Base.BookFancy_Politics", count = 10 }
+BU.Bundles["BundleUp.BookFancy_ReligionBundle"] = { base = "Base.BookFancy_Religion", count = 10 }
+BU.Bundles["BundleUp.BookFancy_BibleBundle"] = { base = "Base.BookFancy_Bible", count = 10 }
+BU.Bundles["BundleUp.PaperbackBundle"] = { base = "Base.Paperback", count = 10 }
+BU.Bundles["BundleUp.Paperback_AdventureNonFictionBundle"] = { base = "Base.Paperback_AdventureNonFiction", count = 10 }
+BU.Bundles["BundleUp.Paperback_ArtBundle"] = { base = "Base.Paperback_Art", count = 10 }
+BU.Bundles["BundleUp.Paperback_BaseballBundle"] = { base = "Base.Paperback_Baseball", count = 10 }
+BU.Bundles["BundleUp.Paperback_BiographyBundle"] = { base = "Base.Paperback_Biography", count = 10 }
+BU.Bundles["BundleUp.Paperback_BusinessBundle"] = { base = "Base.Paperback_Business", count = 10 }
+BU.Bundles["BundleUp.Paperback_ChildsBundle"] = { base = "Base.Paperback_Childs", count = 10 }
+BU.Bundles["BundleUp.Paperback_CinemaBundle"] = { base = "Base.Paperback_Cinema", count = 10 }
+BU.Bundles["BundleUp.Paperback_ClassicBundle"] = { base = "Base.Paperback_Classic", count = 10 }
+BU.Bundles["BundleUp.Paperback_ClassicFictionBundle"] = { base = "Base.Paperback_ClassicFiction", count = 10 }
+BU.Bundles["BundleUp.Paperback_ClassicNonfictionBundle"] = { base = "Base.Paperback_ClassicNonfiction", count = 10 }
+BU.Bundles["BundleUp.Paperback_ComputerBundle"] = { base = "Base.Paperback_Computer", count = 10 }
+BU.Bundles["BundleUp.Paperback_ConspiracyBundle"] = { base = "Base.Paperback_Conspiracy", count = 10 }
+BU.Bundles["BundleUp.Paperback_CrimeFictionBundle"] = { base = "Base.Paperback_CrimeFiction", count = 10 }
+BU.Bundles["BundleUp.Paperback_DietBundle"] = { base = "Base.Paperback_Diet", count = 10 }
+BU.Bundles["BundleUp.Paperback_FantasyBundle"] = { base = "Base.Paperback_Fantasy", count = 10 }
+BU.Bundles["BundleUp.Paperback_FashionBundle"] = { base = "Base.Paperback_Fashion", count = 10 }
+BU.Bundles["BundleUp.Paperback_FictionBundle"] = { base = "Base.Paperback_Fiction", count = 10 }
+BU.Bundles["BundleUp.Paperback_GolfBundle"] = { base = "Base.Paperback_Golf", count = 10 }
+BU.Bundles["BundleUp.Paperback_HassBundle"] = { base = "Base.Paperback_Hass", count = 10 }
+BU.Bundles["BundleUp.Paperback_HistoryBundle"] = { base = "Base.Paperback_History", count = 10 }
+BU.Bundles["BundleUp.Paperback_HorrorBundle"] = { base = "Base.Paperback_Horror", count = 10 }
+BU.Bundles["BundleUp.Paperback_LegalBundle"] = { base = "Base.Paperback_Legal", count = 10 }
+BU.Bundles["BundleUp.Paperback_LiteraryFictionBundle"] = { base = "Base.Paperback_LiteraryFiction", count = 10 }
+BU.Bundles["BundleUp.Paperback_MedicalBundle"] = { base = "Base.Paperback_Medical", count = 10 }
+BU.Bundles["BundleUp.Paperback_MilitaryBundle"] = { base = "Base.Paperback_Military", count = 10 }
+BU.Bundles["BundleUp.Paperback_MilitaryHistoryBundle"] = { base = "Base.Paperback_MilitaryHistory", count = 10 }
+BU.Bundles["BundleUp.Paperback_MusicBundle"] = { base = "Base.Paperback_Music", count = 10 }
+BU.Bundles["BundleUp.Paperback_NatureBundle"] = { base = "Base.Paperback_Nature", count = 10 }
+BU.Bundles["BundleUp.Paperback_NewAgeBundle"] = { base = "Base.Paperback_NewAge", count = 10 }
+BU.Bundles["BundleUp.Paperback_OccultBundle"] = { base = "Base.Paperback_Occult", count = 10 }
+BU.Bundles["BundleUp.Paperback_PhilosophyBundle"] = { base = "Base.Paperback_Philosophy", count = 10 }
+BU.Bundles["BundleUp.Paperback_PlayBundle"] = { base = "Base.Paperback_Play", count = 10 }
+BU.Bundles["BundleUp.Paperback_PolicingBundle"] = { base = "Base.Paperback_Policing", count = 10 }
+BU.Bundles["BundleUp.Paperback_PoliticsBundle"] = { base = "Base.Paperback_Politics", count = 10 }
+BU.Bundles["BundleUp.Paperback_PoorBundle"] = { base = "Base.Paperback_Poor", count = 10 }
+BU.Bundles["BundleUp.Paperback_QuackeryBundle"] = { base = "Base.Paperback_Quackery", count = 10 }
+BU.Bundles["BundleUp.Paperback_QuigleyBundle"] = { base = "Base.Paperback_Quigley", count = 10 }
+BU.Bundles["BundleUp.Paperback_RelationshipBundle"] = { base = "Base.Paperback_Relationship", count = 10 }
+BU.Bundles["BundleUp.Paperback_ReligionBundle"] = { base = "Base.Paperback_Religion", count = 10 }
+BU.Bundles["BundleUp.Paperback_RichBundle"] = { base = "Base.Paperback_Rich", count = 10 }
+BU.Bundles["BundleUp.Paperback_RomanceBundle"] = { base = "Base.Paperback_Romance", count = 10 }
+BU.Bundles["BundleUp.Paperback_SadNonFictionBundle"] = { base = "Base.Paperback_SadNonFiction", count = 10 }
+BU.Bundles["BundleUp.Paperback_ScaryBundle"] = { base = "Base.Paperback_Scary", count = 10 }
+BU.Bundles["BundleUp.Paperback_ScienceBundle"] = { base = "Base.Paperback_Science", count = 10 }
+BU.Bundles["BundleUp.Paperback_SciFiBundle"] = { base = "Base.Paperback_SciFi", count = 10 }
+BU.Bundles["BundleUp.Paperback_SelfHelpBundle"] = { base = "Base.Paperback_SelfHelp", count = 10 }
+BU.Bundles["BundleUp.Paperback_SexyBundle"] = { base = "Base.Paperback_Sexy", count = 10 }
+BU.Bundles["BundleUp.Paperback_SportsBundle"] = { base = "Base.Paperback_Sports", count = 10 }
+BU.Bundles["BundleUp.Paperback_TeensBundle"] = { base = "Base.Paperback_Teens", count = 10 }
+BU.Bundles["BundleUp.Paperback_ThrillerBundle"] = { base = "Base.Paperback_Thriller", count = 10 }
+BU.Bundles["BundleUp.Paperback_TravelBundle"] = { base = "Base.Paperback_Travel", count = 10 }
+BU.Bundles["BundleUp.Paperback_TrueCrimeBundle"] = { base = "Base.Paperback_TrueCrime", count = 10 }
+BU.Bundles["BundleUp.Paperback_WesternBundle"] = { base = "Base.Paperback_Western", count = 10 }
+BU.Bundles["BundleUp.Paperback_BibleBundle"] = { base = "Base.Paperback_Bible", count = 10 }
+BU.Bundles["BundleUp.HottieZ_NewBundle"] = { base = "Base.HottieZ_New", count = 10 }
+BU.Bundles["BundleUp.MagazineBundle"] = { base = "Base.Magazine", count = 10 }
+BU.Bundles["BundleUp.Magazine_ArtBundle"] = { base = "Base.Magazine_Art", count = 10 }
+BU.Bundles["BundleUp.Magazine_BusinessBundle"] = { base = "Base.Magazine_Business", count = 10 }
+BU.Bundles["BundleUp.Magazine_CarBundle"] = { base = "Base.Magazine_Car", count = 10 }
+BU.Bundles["BundleUp.Magazine_ChildsBundle"] = { base = "Base.Magazine_Childs", count = 10 }
+BU.Bundles["BundleUp.Magazine_CinemaBundle"] = { base = "Base.Magazine_Cinema", count = 10 }
+BU.Bundles["BundleUp.Magazine_CrimeBundle"] = { base = "Base.Magazine_Crime", count = 10 }
+BU.Bundles["BundleUp.Magazine_FashionBundle"] = { base = "Base.Magazine_Fashion", count = 10 }
+BU.Bundles["BundleUp.Magazine_FirearmBundle"] = { base = "Base.Magazine_Firearm", count = 10 }
+BU.Bundles["BundleUp.Magazine_GamingBundle"] = { base = "Base.Magazine_Gaming", count = 10 }
+BU.Bundles["BundleUp.Magazine_GolfBundle"] = { base = "Base.Magazine_Golf", count = 10 }
+BU.Bundles["BundleUp.Magazine_HealthBundle"] = { base = "Base.Magazine_Health", count = 10 }
+BU.Bundles["BundleUp.Magazine_HobbyBundle"] = { base = "Base.Magazine_Hobby", count = 10 }
+BU.Bundles["BundleUp.Magazine_HorrorBundle"] = { base = "Base.Magazine_Horror", count = 10 }
+BU.Bundles["BundleUp.Magazine_HumorBundle"] = { base = "Base.Magazine_Humor", count = 10 }
+BU.Bundles["BundleUp.Magazine_MilitaryBundle"] = { base = "Base.Magazine_Military", count = 10 }
+BU.Bundles["BundleUp.Magazine_MusicBundle"] = { base = "Base.Magazine_Music", count = 10 }
+BU.Bundles["BundleUp.Magazine_OutdoorsBundle"] = { base = "Base.Magazine_Outdoors", count = 10 }
+BU.Bundles["BundleUp.Magazine_PoliceBundle"] = { base = "Base.Magazine_Police", count = 10 }
+BU.Bundles["BundleUp.Magazine_PopularBundle"] = { base = "Base.Magazine_Popular", count = 10 }
+BU.Bundles["BundleUp.Magazine_RichBundle"] = { base = "Base.Magazine_Rich", count = 10 }
+BU.Bundles["BundleUp.Magazine_ScienceBundle"] = { base = "Base.Magazine_Science", count = 10 }
+BU.Bundles["BundleUp.Magazine_SportsBundle"] = { base = "Base.Magazine_Sports", count = 10 }
+BU.Bundles["BundleUp.Magazine_TechBundle"] = { base = "Base.Magazine_Tech", count = 10 }
+BU.Bundles["BundleUp.Magazine_TeensBundle"] = { base = "Base.Magazine_Teens", count = 10 }
+BU.Bundles["BundleUp.Magazine_NewBundle"] = { base = "Base.Magazine_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Art_NewBundle"] = { base = "Base.Magazine_Art_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Business_NewBundle"] = { base = "Base.Magazine_Business_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Car_NewBundle"] = { base = "Base.Magazine_Car_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Childs_NewBundle"] = { base = "Base.Magazine_Childs_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Cinema_NewBundle"] = { base = "Base.Magazine_Cinema_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Crime_NewBundle"] = { base = "Base.Magazine_Crime_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Fashion_NewBundle"] = { base = "Base.Magazine_Fashion_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Firearm_NewBundle"] = { base = "Base.Magazine_Firearm_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Gaming_NewBundle"] = { base = "Base.Magazine_Gaming_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Golf_NewBundle"] = { base = "Base.Magazine_Golf_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Health_NewBundle"] = { base = "Base.Magazine_Health_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Hobby_NewBundle"] = { base = "Base.Magazine_Hobby_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Horror_NewBundle"] = { base = "Base.Magazine_Horror_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Humor_NewBundle"] = { base = "Base.Magazine_Humor_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Military_NewBundle"] = { base = "Base.Magazine_Military_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Music_NewBundle"] = { base = "Base.Magazine_Music_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Outdoors_NewBundle"] = { base = "Base.Magazine_Outdoors_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Police_NewBundle"] = { base = "Base.Magazine_Police_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Popular_NewBundle"] = { base = "Base.Magazine_Popular_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Rich_NewBundle"] = { base = "Base.Magazine_Rich_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Science_NewBundle"] = { base = "Base.Magazine_Science_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Sports_NewBundle"] = { base = "Base.Magazine_Sports_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Tech_NewBundle"] = { base = "Base.Magazine_Tech_New", count = 10 }
+BU.Bundles["BundleUp.Magazine_Teens_NewBundle"] = { base = "Base.Magazine_Teens_New", count = 10 }
+BU.Bundles["BundleUp.MagazineCrosswordBundle"] = { base = "Base.MagazineCrossword", count = 10 }
+BU.Bundles["BundleUp.HottieZBundle"] = { base = "Base.HottieZ", count = 10 }
+BU.Bundles["BundleUp.TVMagazineBundle"] = { base = "Base.TVMagazine", count = 10 }
+BU.Bundles["BundleUp.TVMagazine_NewBundle"] = { base = "Base.TVMagazine_New", count = 10 }
+BU.Bundles["BundleUp.MagazineWordsearchBundle"] = { base = "Base.MagazineWordsearch", count = 10 }
+BU.Bundles["BundleUp.CatalogBundle"] = { base = "Base.Catalog", count = 10 }
+BU.Bundles["BundleUp.ComicBookBundle"] = { base = "Base.ComicBook", count = 10 }
+BU.Bundles["BundleUp.ComicBook_RetailBundle"] = { base = "Base.ComicBook_Retail", count = 10 }
+BU.Bundles["BundleUp.Diary1Bundle"] = { base = "Base.Diary1", count = 10 }
+BU.Bundles["BundleUp.Diary2Bundle"] = { base = "Base.Diary2", count = 10 }
+BU.Bundles["BundleUp.GraphPaperBundle"] = { base = "Base.GraphPaper", count = 10 }
+BU.Bundles["BundleUp.JournalBundle"] = { base = "Base.Journal", count = 10 }
+BU.Bundles["BundleUp.MenuCardBundle"] = { base = "Base.MenuCard", count = 10 }
+BU.Bundles["BundleUp.Newspaper_RecentBundle"] = { base = "Base.Newspaper_Recent", count = 10 }
+BU.Bundles["BundleUp.Newspaper_NewBundle"] = { base = "Base.Newspaper_New", count = 10 }
+BU.Bundles["BundleUp.Newspaper_Knews_NewBundle"] = { base = "Base.Newspaper_Knews_New", count = 10 }
+BU.Bundles["BundleUp.Newspaper_Times_NewBundle"] = { base = "Base.Newspaper_Times_New", count = 10 }
+BU.Bundles["BundleUp.Newspaper_Herald_NewBundle"] = { base = "Base.Newspaper_Herald_New", count = 10 }
+BU.Bundles["BundleUp.Newspaper_Dispatch_NewBundle"] = { base = "Base.Newspaper_Dispatch_New", count = 10 }
+BU.Bundles["BundleUp.NotebookBundle"] = { base = "Base.Notebook", count = 10 }
+BU.Bundles["BundleUp.NotepadBundle"] = { base = "Base.Notepad", count = 10 }
+BU.Bundles["BundleUp.NewspaperBundle"] = { base = "Base.Newspaper", count = 10 }
+BU.Bundles["BundleUp.PhonebookBundle"] = { base = "Base.Phonebook", count = 10 }
+BU.Bundles["BundleUp.PhotoBookBundle"] = { base = "Base.PhotoBook", count = 10 }
+BU.Bundles["BundleUp.ChildsPictureBookBundle"] = { base = "Base.ChildsPictureBook", count = 10 }
+BU.Bundles["BundleUp.RPGmanualBundle"] = { base = "Base.RPGmanual", count = 10 }
+BU.Bundles["BundleUp.SheetPaper2Bundle"] = { base = "Base.SheetPaper2", count = 10 }
+BU.BaseCategory["Base.Book"] = "ReductionOther"
+BU.BaseCategory["Base.Book_AdventureNonFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Art"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Baseball"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Biography"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Business"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Childs"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Cinema"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Classic"] = "ReductionOther"
+BU.BaseCategory["Base.Book_ClassicFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_ClassicNonfiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Computer"] = "ReductionOther"
+BU.BaseCategory["Base.Book_CrimeFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Fantasy"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Farming"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Fashion"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Fiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_GeneralNonFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_GeneralReference"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Golf"] = "ReductionOther"
+BU.BaseCategory["Base.Book_History"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Horror"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Legal"] = "ReductionOther"
+BU.BaseCategory["Base.Book_LiteraryFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Medical"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Military"] = "ReductionOther"
+BU.BaseCategory["Base.Book_MilitaryHistory"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Music"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Nature"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Occult"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Philosophy"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Policing"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Politics"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Quackery"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Religion"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Rich"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Romance"] = "ReductionOther"
+BU.BaseCategory["Base.Book_SadNonFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Book_SchoolTextbook"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Science"] = "ReductionOther"
+BU.BaseCategory["Base.Book_SciFi"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Sports"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Thriller"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Travel"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Western"] = "ReductionOther"
+BU.BaseCategory["Base.Book_Bible"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Classic"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_ClassicFiction"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_ClassicNonfiction"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_History"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Legal"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Medical"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_MilitaryHistory"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Occult"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Philosophy"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Politics"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Religion"] = "ReductionOther"
+BU.BaseCategory["Base.BookFancy_Bible"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_AdventureNonFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Art"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Baseball"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Biography"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Business"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Childs"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Cinema"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Classic"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_ClassicFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_ClassicNonfiction"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Computer"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Conspiracy"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_CrimeFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Diet"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Fantasy"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Fashion"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Fiction"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Golf"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Hass"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_History"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Horror"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Legal"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_LiteraryFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Medical"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Military"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_MilitaryHistory"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Music"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Nature"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_NewAge"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Occult"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Philosophy"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Play"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Policing"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Politics"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Poor"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Quackery"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Quigley"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Relationship"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Religion"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Rich"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Romance"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_SadNonFiction"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Scary"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Science"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_SciFi"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_SelfHelp"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Sexy"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Sports"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Teens"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Thriller"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Travel"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_TrueCrime"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Western"] = "ReductionOther"
+BU.BaseCategory["Base.Paperback_Bible"] = "ReductionOther"
+BU.BaseCategory["Base.HottieZ_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Art"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Business"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Car"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Childs"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Cinema"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Crime"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Fashion"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Firearm"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Gaming"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Golf"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Health"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Hobby"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Horror"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Humor"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Military"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Music"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Outdoors"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Police"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Popular"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Rich"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Science"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Sports"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Tech"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Teens"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Art_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Business_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Car_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Childs_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Cinema_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Crime_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Fashion_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Firearm_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Gaming_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Golf_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Health_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Hobby_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Horror_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Humor_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Military_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Music_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Outdoors_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Police_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Popular_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Rich_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Science_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Sports_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Tech_New"] = "ReductionOther"
+BU.BaseCategory["Base.Magazine_Teens_New"] = "ReductionOther"
+BU.BaseCategory["Base.MagazineCrossword"] = "ReductionOther"
+BU.BaseCategory["Base.HottieZ"] = "ReductionOther"
+BU.BaseCategory["Base.TVMagazine"] = "ReductionOther"
+BU.BaseCategory["Base.TVMagazine_New"] = "ReductionOther"
+BU.BaseCategory["Base.MagazineWordsearch"] = "ReductionOther"
+BU.BaseCategory["Base.Catalog"] = "ReductionOther"
+BU.BaseCategory["Base.ComicBook"] = "ReductionOther"
+BU.BaseCategory["Base.ComicBook_Retail"] = "ReductionOther"
+BU.BaseCategory["Base.Diary1"] = "ReductionOther"
+BU.BaseCategory["Base.Diary2"] = "ReductionOther"
+BU.BaseCategory["Base.GraphPaper"] = "ReductionOther"
+BU.BaseCategory["Base.Journal"] = "ReductionOther"
+BU.BaseCategory["Base.MenuCard"] = "ReductionOther"
+BU.BaseCategory["Base.Newspaper_Recent"] = "ReductionOther"
+BU.BaseCategory["Base.Newspaper_New"] = "ReductionOther"
+BU.BaseCategory["Base.Newspaper_Knews_New"] = "ReductionOther"
+BU.BaseCategory["Base.Newspaper_Times_New"] = "ReductionOther"
+BU.BaseCategory["Base.Newspaper_Herald_New"] = "ReductionOther"
+BU.BaseCategory["Base.Newspaper_Dispatch_New"] = "ReductionOther"
+BU.BaseCategory["Base.Notebook"] = "ReductionOther"
+BU.BaseCategory["Base.Notepad"] = "ReductionOther"
+BU.BaseCategory["Base.Newspaper"] = "ReductionOther"
+BU.BaseCategory["Base.Phonebook"] = "ReductionOther"
+BU.BaseCategory["Base.PhotoBook"] = "ReductionOther"
+BU.BaseCategory["Base.ChildsPictureBook"] = "ReductionOther"
+BU.BaseCategory["Base.RPGmanual"] = "ReductionOther"
+BU.BaseCategory["Base.SheetPaper2"] = "ReductionOther"
+
+-- Added: plain medical (dirty bandage, disinfectant)
+BU.Bundles["BundleUp.BandageDirtyBox"] = { base = "Base.BandageDirty", count = 10 }
+BU.Bundles["BundleUp.DisinfectantBox"] = { base = "Base.Disinfectant", count = 10 }
+BU.BaseCategory["Base.BandageDirty"] = "ReductionMedical"
+BU.BaseCategory["Base.Disinfectant"] = "ReductionMedical"
