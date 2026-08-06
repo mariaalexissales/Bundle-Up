@@ -120,13 +120,13 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.EmptySandbag] mappers[scrapMap],
-            item 25 [Base.AluminumScrap;Base.BrassScrap;Base.BrokenGlass;Base.CharcoalCrafted;Base.CopperScrap;Base.ElectronicsScrap;Base.IronScrap;Base.ScrapMetal;Base.Splinters;Base.SteelScrap;Base.UnusableWood] mappers[scrapMap],
+            item 1 [Base.EmptySandbag] mappers[scrapTypes],
+            item 25 [Base.AluminumScrap;Base.BrassScrap;Base.BrokenGlass;Base.CharcoalCrafted;Base.CopperScrap;Base.ElectronicsScrap;Base.IronScrap;Base.ScrapMetal;Base.Splinters;Base.SteelScrap;Base.UnusableWood] mappers[scrapTypes],
         }
         outputs {
-            item 1 mapper:scrapMap,
+            item 1 mapper:scrapTypes,
         }
-        itemMapper scrapMap {
+        itemMapper scrapTypes {
             BundleUp.AluminumScrapSack = Base.EmptySandbag;Base.AluminumScrap,
             BundleUp.BrassScrapSack = Base.EmptySandbag;Base.BrassScrap,
             BundleUp.BrokenGlassSack = Base.EmptySandbag;Base.BrokenGlass,
@@ -147,13 +147,13 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.ElectronicsScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] mappers[scrapMap],
+            item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.ElectronicsScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] mappers[scrapTypes],
         }
         outputs {
-            item 25 mapper:scrapMap,
+            item 25 mapper:scrapTypes,
             item 1 Base.EmptySandbag,
         }
-        itemMapper scrapMap {
+        itemMapper scrapTypes {
             Base.AluminumScrap = BundleUp.AluminumScrapSack,
             Base.BrassScrap = BundleUp.BrassScrapSack,
             Base.BrokenGlass = BundleUp.BrokenGlassSack,
@@ -168,4 +168,143 @@ module BundleUp {
         }
     }
 
+    craftRecipe PackSeedPouch {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 10 [Base.BarleyBagSeed;Base.BasilBagSeed;Base.BellPepperBagSeed;Base.BlackSageBagSeed;Base.BroadleafPlantainBagSeed;Base.BroccoliBagSeed2;Base.CabbageBagSeed2;Base.CarrotBagSeed2;Base.CauliflowerBagSeed;Base.ChamomileBagSeed;Base.ChivesBagSeed;Base.CilantroBagSeed;Base.ComfreyBagSeed;Base.CommonMallowBagSeed;Base.CornBagSeed;Base.CucumberBagSeed;Base.FlaxBagSeed;Base.GarlicBagSeed;Base.GreenpeasBagSeed;Base.HabaneroBagSeed;Base.HempBagSeed;Base.HopsBagSeed;Base.JalapenoBagSeed;Base.KaleBagSeed;Base.LavenderBagSeed;Base.LeekBagSeed;Base.LemonGrassBagSeed;Base.LettuceBagSeed;Base.MarigoldBagSeed;Base.MintBagSeed;Base.OnionBagSeed;Base.OreganoBagSeed;Base.ParsleyBagSeed;Base.PoppyBagSeed;Base.PotatoBagSeed2;Base.PumpkinBagSeed;Base.RedRadishBagSeed2;Base.RoseBagSeed;Base.RosemaryBagSeed;Base.RyeBagSeed;Base.SageBagSeed;Base.SoybeansBagSeed;Base.SpinachBagSeed;Base.StrewberrieBagSeed2;Base.SugarBeetBagSeed;Base.SunflowerBagSeed;Base.SweetPotatoBagSeed;Base.ThymeBagSeed;Base.TobaccoBagSeed;Base.TomatoBagSeed2;Base.TurnipBagSeed;Base.WatermelonBagSeed;Base.WheatBagSeed;Base.WildGarlicBagSeed;Base.ZucchiniBagSeed] flags[IsExclusive;ItemCount] mappers[seedMap],
+        }
+        outputs {
+            item 1 mapper:seedMap,
+        }
+        itemMapper seedMap {
+            BundleUp.BarleyBagSeedPouch = Base.BarleyBagSeed,
+            BundleUp.BasilBagSeedPouch = Base.BasilBagSeed,
+            BundleUp.BellPepperBagSeedPouch = Base.BellPepperBagSeed,
+            BundleUp.BlackSageBagSeedPouch = Base.BlackSageBagSeed,
+            BundleUp.BroadleafPlantainBagSeedPouch = Base.BroadleafPlantainBagSeed,
+            BundleUp.BroccoliBagSeed2Pouch = Base.BroccoliBagSeed2,
+            BundleUp.CabbageBagSeed2Pouch = Base.CabbageBagSeed2,
+            BundleUp.CarrotBagSeed2Pouch = Base.CarrotBagSeed2,
+            BundleUp.CauliflowerBagSeedPouch = Base.CauliflowerBagSeed,
+            BundleUp.ChamomileBagSeedPouch = Base.ChamomileBagSeed,
+            BundleUp.ChivesBagSeedPouch = Base.ChivesBagSeed,
+            BundleUp.CilantroBagSeedPouch = Base.CilantroBagSeed,
+            BundleUp.ComfreyBagSeedPouch = Base.ComfreyBagSeed,
+            BundleUp.CommonMallowBagSeedPouch = Base.CommonMallowBagSeed,
+            BundleUp.CornBagSeedPouch = Base.CornBagSeed,
+            BundleUp.CucumberBagSeedPouch = Base.CucumberBagSeed,
+            BundleUp.FlaxBagSeedPouch = Base.FlaxBagSeed,
+            BundleUp.GarlicBagSeedPouch = Base.GarlicBagSeed,
+            BundleUp.GreenpeasBagSeedPouch = Base.GreenpeasBagSeed,
+            BundleUp.HabaneroBagSeedPouch = Base.HabaneroBagSeed,
+            BundleUp.HempBagSeedPouch = Base.HempBagSeed,
+            BundleUp.HopsBagSeedPouch = Base.HopsBagSeed,
+            BundleUp.JalapenoBagSeedPouch = Base.JalapenoBagSeed,
+            BundleUp.KaleBagSeedPouch = Base.KaleBagSeed,
+            BundleUp.LavenderBagSeedPouch = Base.LavenderBagSeed,
+            BundleUp.LeekBagSeedPouch = Base.LeekBagSeed,
+            BundleUp.LemonGrassBagSeedPouch = Base.LemonGrassBagSeed,
+            BundleUp.LettuceBagSeedPouch = Base.LettuceBagSeed,
+            BundleUp.MarigoldBagSeedPouch = Base.MarigoldBagSeed,
+            BundleUp.MintBagSeedPouch = Base.MintBagSeed,
+            BundleUp.OnionBagSeedPouch = Base.OnionBagSeed,
+            BundleUp.OreganoBagSeedPouch = Base.OreganoBagSeed,
+            BundleUp.ParsleyBagSeedPouch = Base.ParsleyBagSeed,
+            BundleUp.PoppyBagSeedPouch = Base.PoppyBagSeed,
+            BundleUp.PotatoBagSeed2Pouch = Base.PotatoBagSeed2,
+            BundleUp.PumpkinBagSeedPouch = Base.PumpkinBagSeed,
+            BundleUp.RedRadishBagSeed2Pouch = Base.RedRadishBagSeed2,
+            BundleUp.RoseBagSeedPouch = Base.RoseBagSeed,
+            BundleUp.RosemaryBagSeedPouch = Base.RosemaryBagSeed,
+            BundleUp.RyeBagSeedPouch = Base.RyeBagSeed,
+            BundleUp.SageBagSeedPouch = Base.SageBagSeed,
+            BundleUp.SoybeansBagSeedPouch = Base.SoybeansBagSeed,
+            BundleUp.SpinachBagSeedPouch = Base.SpinachBagSeed,
+            BundleUp.StrewberrieBagSeed2Pouch = Base.StrewberrieBagSeed2,
+            BundleUp.SugarBeetBagSeedPouch = Base.SugarBeetBagSeed,
+            BundleUp.SunflowerBagSeedPouch = Base.SunflowerBagSeed,
+            BundleUp.SweetPotatoBagSeedPouch = Base.SweetPotatoBagSeed,
+            BundleUp.ThymeBagSeedPouch = Base.ThymeBagSeed,
+            BundleUp.TobaccoBagSeedPouch = Base.TobaccoBagSeed,
+            BundleUp.TomatoBagSeed2Pouch = Base.TomatoBagSeed2,
+            BundleUp.TurnipBagSeedPouch = Base.TurnipBagSeed,
+            BundleUp.WatermelonBagSeedPouch = Base.WatermelonBagSeed,
+            BundleUp.WheatBagSeedPouch = Base.WheatBagSeed,
+            BundleUp.WildGarlicBagSeedPouch = Base.WildGarlicBagSeed,
+            BundleUp.ZucchiniBagSeedPouch = Base.ZucchiniBagSeed,
+        }
+    }
+
+    craftRecipe UnpackSeedPouch {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.BarleyBagSeedPouch;BundleUp.BasilBagSeedPouch;BundleUp.BellPepperBagSeedPouch;BundleUp.BlackSageBagSeedPouch;BundleUp.BroadleafPlantainBagSeedPouch;BundleUp.BroccoliBagSeed2Pouch;BundleUp.CabbageBagSeed2Pouch;BundleUp.CarrotBagSeed2Pouch;BundleUp.CauliflowerBagSeedPouch;BundleUp.ChamomileBagSeedPouch;BundleUp.ChivesBagSeedPouch;BundleUp.CilantroBagSeedPouch;BundleUp.ComfreyBagSeedPouch;BundleUp.CommonMallowBagSeedPouch;BundleUp.CornBagSeedPouch;BundleUp.CucumberBagSeedPouch;BundleUp.FlaxBagSeedPouch;BundleUp.GarlicBagSeedPouch;BundleUp.GreenpeasBagSeedPouch;BundleUp.HabaneroBagSeedPouch;BundleUp.HempBagSeedPouch;BundleUp.HopsBagSeedPouch;BundleUp.JalapenoBagSeedPouch;BundleUp.KaleBagSeedPouch;BundleUp.LavenderBagSeedPouch;BundleUp.LeekBagSeedPouch;BundleUp.LemonGrassBagSeedPouch;BundleUp.LettuceBagSeedPouch;BundleUp.MarigoldBagSeedPouch;BundleUp.MintBagSeedPouch;BundleUp.OnionBagSeedPouch;BundleUp.OreganoBagSeedPouch;BundleUp.ParsleyBagSeedPouch;BundleUp.PoppyBagSeedPouch;BundleUp.PotatoBagSeed2Pouch;BundleUp.PumpkinBagSeedPouch;BundleUp.RedRadishBagSeed2Pouch;BundleUp.RoseBagSeedPouch;BundleUp.RosemaryBagSeedPouch;BundleUp.RyeBagSeedPouch;BundleUp.SageBagSeedPouch;BundleUp.SoybeansBagSeedPouch;BundleUp.SpinachBagSeedPouch;BundleUp.StrewberrieBagSeed2Pouch;BundleUp.SugarBeetBagSeedPouch;BundleUp.SunflowerBagSeedPouch;BundleUp.SweetPotatoBagSeedPouch;BundleUp.ThymeBagSeedPouch;BundleUp.TobaccoBagSeedPouch;BundleUp.TomatoBagSeed2Pouch;BundleUp.TurnipBagSeedPouch;BundleUp.WatermelonBagSeedPouch;BundleUp.WheatBagSeedPouch;BundleUp.WildGarlicBagSeedPouch;BundleUp.ZucchiniBagSeedPouch] mappers[seedMap],
+        }
+        outputs {
+            item 10 mapper:seedMap,
+        }
+        itemMapper seedMap {
+            Base.BarleyBagSeed = BundleUp.BarleyBagSeedPouch,
+            Base.BasilBagSeed = BundleUp.BasilBagSeedPouch,
+            Base.BellPepperBagSeed = BundleUp.BellPepperBagSeedPouch,
+            Base.BlackSageBagSeed = BundleUp.BlackSageBagSeedPouch,
+            Base.BroadleafPlantainBagSeed = BundleUp.BroadleafPlantainBagSeedPouch,
+            Base.BroccoliBagSeed2 = BundleUp.BroccoliBagSeed2Pouch,
+            Base.CabbageBagSeed2 = BundleUp.CabbageBagSeed2Pouch,
+            Base.CarrotBagSeed2 = BundleUp.CarrotBagSeed2Pouch,
+            Base.CauliflowerBagSeed = BundleUp.CauliflowerBagSeedPouch,
+            Base.ChamomileBagSeed = BundleUp.ChamomileBagSeedPouch,
+            Base.ChivesBagSeed = BundleUp.ChivesBagSeedPouch,
+            Base.CilantroBagSeed = BundleUp.CilantroBagSeedPouch,
+            Base.ComfreyBagSeed = BundleUp.ComfreyBagSeedPouch,
+            Base.CommonMallowBagSeed = BundleUp.CommonMallowBagSeedPouch,
+            Base.CornBagSeed = BundleUp.CornBagSeedPouch,
+            Base.CucumberBagSeed = BundleUp.CucumberBagSeedPouch,
+            Base.FlaxBagSeed = BundleUp.FlaxBagSeedPouch,
+            Base.GarlicBagSeed = BundleUp.GarlicBagSeedPouch,
+            Base.GreenpeasBagSeed = BundleUp.GreenpeasBagSeedPouch,
+            Base.HabaneroBagSeed = BundleUp.HabaneroBagSeedPouch,
+            Base.HempBagSeed = BundleUp.HempBagSeedPouch,
+            Base.HopsBagSeed = BundleUp.HopsBagSeedPouch,
+            Base.JalapenoBagSeed = BundleUp.JalapenoBagSeedPouch,
+            Base.KaleBagSeed = BundleUp.KaleBagSeedPouch,
+            Base.LavenderBagSeed = BundleUp.LavenderBagSeedPouch,
+            Base.LeekBagSeed = BundleUp.LeekBagSeedPouch,
+            Base.LemonGrassBagSeed = BundleUp.LemonGrassBagSeedPouch,
+            Base.LettuceBagSeed = BundleUp.LettuceBagSeedPouch,
+            Base.MarigoldBagSeed = BundleUp.MarigoldBagSeedPouch,
+            Base.MintBagSeed = BundleUp.MintBagSeedPouch,
+            Base.OnionBagSeed = BundleUp.OnionBagSeedPouch,
+            Base.OreganoBagSeed = BundleUp.OreganoBagSeedPouch,
+            Base.ParsleyBagSeed = BundleUp.ParsleyBagSeedPouch,
+            Base.PoppyBagSeed = BundleUp.PoppyBagSeedPouch,
+            Base.PotatoBagSeed2 = BundleUp.PotatoBagSeed2Pouch,
+            Base.PumpkinBagSeed = BundleUp.PumpkinBagSeedPouch,
+            Base.RedRadishBagSeed2 = BundleUp.RedRadishBagSeed2Pouch,
+            Base.RoseBagSeed = BundleUp.RoseBagSeedPouch,
+            Base.RosemaryBagSeed = BundleUp.RosemaryBagSeedPouch,
+            Base.RyeBagSeed = BundleUp.RyeBagSeedPouch,
+            Base.SageBagSeed = BundleUp.SageBagSeedPouch,
+            Base.SoybeansBagSeed = BundleUp.SoybeansBagSeedPouch,
+            Base.SpinachBagSeed = BundleUp.SpinachBagSeedPouch,
+            Base.StrewberrieBagSeed2 = BundleUp.StrewberrieBagSeed2Pouch,
+            Base.SugarBeetBagSeed = BundleUp.SugarBeetBagSeedPouch,
+            Base.SunflowerBagSeed = BundleUp.SunflowerBagSeedPouch,
+            Base.SweetPotatoBagSeed = BundleUp.SweetPotatoBagSeedPouch,
+            Base.ThymeBagSeed = BundleUp.ThymeBagSeedPouch,
+            Base.TobaccoBagSeed = BundleUp.TobaccoBagSeedPouch,
+            Base.TomatoBagSeed2 = BundleUp.TomatoBagSeed2Pouch,
+            Base.TurnipBagSeed = BundleUp.TurnipBagSeedPouch,
+            Base.WatermelonBagSeed = BundleUp.WatermelonBagSeedPouch,
+            Base.WheatBagSeed = BundleUp.WheatBagSeedPouch,
+            Base.WildGarlicBagSeed = BundleUp.WildGarlicBagSeedPouch,
+            Base.ZucchiniBagSeed = BundleUp.ZucchiniBagSeedPouch,
+        }
+    }
 }

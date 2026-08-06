@@ -45,5 +45,15 @@
     "PackScrapSack": "Pack Scrap in Sack",
     "UnpackScrapSack": "Empty Scrap Sack (25 items)",
     "PackPartsBox": "Pack Parts in Box",
-    "UnpackPartsBox": "Open Parts Box (10 items)"
+    "UnpackPartsBox": "Open Parts Box (10 items)",
+    "PackAmmoClipBox": "Pack Magazines in Box",
+    "UnpackAmmoClipBox": "Open Box of Magazines (5 items)",
+    "PackSeedPouch": "Pack Seed Packets in Pouch",
+    "UnpackSeedPouch": "Open Seed Pouch (10 items)",
+    "PackBookBundle": "Pack Books in Box",
+    "UnpackBookBundle": "Open Box of Books (10 items)",
+    "PackMagazineBundle": "Pack Magazines in Box",
+    "UnpackMagazineBundle": "Open Box of Magazines (10 items)",
+    "PackReadingMiscBundle": "Pack Reading Material in Box",
+    "UnpackReadingMiscBundle": "Open Box of Reading Material (10 items)"
 }
