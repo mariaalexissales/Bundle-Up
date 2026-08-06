@@ -147,4 +147,1342 @@ module BundleUp {
         Tags = base:stone,
         DoubleClickRecipe = UnpackStoneBlock,
     }
+
+    item BookBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_AdventureNonFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ArtBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_BaseballBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_BiographyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_BusinessBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ChildsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_CinemaBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ClassicBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ClassicFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ClassicNonfictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ComputerBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_CrimeFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_FantasyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_FarmingBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_FashionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_FictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_GeneralNonFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_GeneralReferenceBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_GolfBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_HistoryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_HorrorBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_LegalBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_LiteraryFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_MedicalBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_MilitaryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_MilitaryHistoryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_MusicBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_NatureBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_OccultBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_PhilosophyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_PolicingBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_PoliticsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_QuackeryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ReligionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_RichBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_RomanceBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_SadNonFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_SchoolTextbookBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ScienceBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_SciFiBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_SportsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_ThrillerBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_TravelBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_WesternBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Book_BibleBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_ClassicBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_ClassicFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_ClassicNonfictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_HistoryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_LegalBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_MedicalBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_MilitaryHistoryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_OccultBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_PhilosophyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_PoliticsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_ReligionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item BookFancy_BibleBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item PaperbackBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_AdventureNonFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ArtBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_BaseballBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_BiographyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_BusinessBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ChildsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_CinemaBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ClassicBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ClassicFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ClassicNonfictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ComputerBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ConspiracyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_CrimeFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_DietBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_FantasyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_FashionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_FictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_GolfBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_HassBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_HistoryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_HorrorBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_LegalBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_LiteraryFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_MedicalBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_MilitaryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_MilitaryHistoryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_MusicBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_NatureBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_NewAgeBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_OccultBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_PhilosophyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_PlayBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_PolicingBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_PoliticsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_PoorBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_QuackeryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_QuigleyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_RelationshipBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ReligionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_RichBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_RomanceBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_SadNonFictionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ScaryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ScienceBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_SciFiBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_SelfHelpBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_SexyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_SportsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_TeensBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_ThrillerBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_TravelBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_TrueCrimeBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_WesternBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item Paperback_BibleBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackBookBundle,
+    }
+    item HottieZ_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item MagazineBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_ArtBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_BusinessBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_CarBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_ChildsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_CinemaBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_CrimeBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_FashionBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_FirearmBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_GamingBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_GolfBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_HealthBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_HobbyBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_HorrorBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_HumorBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_MilitaryBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_MusicBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_OutdoorsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_PoliceBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_PopularBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_RichBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_ScienceBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_SportsBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_TechBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_TeensBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Art_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Business_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Car_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Childs_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Cinema_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Crime_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Fashion_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Firearm_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Gaming_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Golf_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Health_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Hobby_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Horror_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Humor_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Military_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Music_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Outdoors_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Police_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Popular_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Rich_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Science_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Sports_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Tech_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item Magazine_Teens_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item MagazineCrosswordBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item HottieZBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item TVMagazineBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item TVMagazine_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item MagazineWordsearchBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackMagazineBundle,
+    }
+    item CatalogBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item ComicBookBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item ComicBook_RetailBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Diary1Bundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Diary2Bundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item GraphPaperBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item JournalBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item MenuCardBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Newspaper_RecentBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Newspaper_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Newspaper_Knews_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Newspaper_Times_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Newspaper_Herald_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item Newspaper_Dispatch_NewBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item NotebookBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item NotepadBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item NewspaperBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item PhonebookBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item PhotoBookBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item ChildsPictureBookBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item RPGmanualBundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
+    item SheetPaper2Bundle {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = Parcel_Large_Hardware,
+        DoubleClickRecipe = UnpackReadingMiscBundle,
+    }
 }
