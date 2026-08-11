@@ -515,3 +515,60 @@ local FARMING_WEIGHTS = {
 }
 
 applyDistribution(FARMING_ITEMS, FARMING_WEIGHTS)
+
+local SCRAP_ITEMS = {
+    "BundleUp.AluminumScrapSack",
+    "BundleUp.BrassScrapSack",
+    "BundleUp.BrokenGlassSack",
+    "BundleUp.CharcoalCraftedSack",
+    "BundleUp.CopperScrapSack",
+    "BundleUp.ElectronicsScrapSack",
+    "BundleUp.IronScrapSack",
+    "BundleUp.ScrapMetalSack",
+    "BundleUp.SplintersSack",
+    "BundleUp.SteelScrapSack",
+    "BundleUp.UnusableWoodSack",
+    "BundleUp.Sack_Sack",
+    "BundleUp.CircularSawbladeBox",
+    "BundleUp.IronBandBox",
+    "BundleUp.IronBandSmallBox",
+    "BundleUp.IronBarHalfBox",
+    "BundleUp.IronBarQuarterBox",
+    "BundleUp.IronBlockBox",
+    "BundleUp.IronChunkBox",
+    "BundleUp.IronPieceBox",
+    "BundleUp.RakeHeadBox",
+    "BundleUp.SteelBarHalfBox",
+    "BundleUp.SteelBarQuarterBox",
+    "BundleUp.SteelBlockBox",
+    "BundleUp.SteelChunkBox",
+    "BundleUp.SteelPieceBox",
+}
+
+local SCRAP_WEIGHTS = {
+    WeldingWorkshopMetal = 0.3,
+    WeldingWorkshopFuel  = 0.1,
+    WeldingWorkshopTools = 0.15,
+    MechanicShelfTools   = 0.2,
+    MechanicOutfit       = 0.1,
+}
+
+applyDistribution(SCRAP_ITEMS, SCRAP_WEIGHTS)
+
+local JEWELRY_ITEMS = {
+    "BundleUp.GoldScrap_Small",
+    "BundleUp.GoldScrap_Large",
+    "BundleUp.SilverScrap_Small",
+    "BundleUp.SilverScrap_Large",
+    "BundleUp.JewelryPouch_Small",
+    "BundleUp.JewelryPouch_Medium",
+}
+
+local JEWELRY_WEIGHTS = {
+    JewelryGold        = 0.3,
+    JewelrySilver      = 0.3,
+    JewelryOthers      = 0.2,
+    JewelryStorageAll  = 0.2,
+}
+
+applyDistribution(JEWELRY_ITEMS, JEWELRY_WEIGHTS)
