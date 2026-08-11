@@ -406,3 +406,112 @@ local FISHING_SUPPLY_WEIGHTS = {
 }
 
 applyDistribution(FISHING_SUPPLY_ITEMS, FISHING_SUPPLY_WEIGHTS)
+
+local MEDICAL_ITEMS = {
+    "BundleUp.AlcoholBandageBox",
+    "BundleUp.AlcoholWipesBox",
+    "BundleUp.AlcoholedCottonBallsBox",
+    "BundleUp.PillsBox",
+    "BundleUp.PillsAntiDepBox",
+    "BundleUp.PillsBetaBox",
+    "BundleUp.PillsSleepingTabletsBox",
+    "BundleUp.PillsVitaminsBox",
+    "BundleUp.TissueBox",
+    "BundleUp.WaterPurificationTabletsBox",
+    "BundleUp.BandageDirtyBox",
+    "BundleUp.DisinfectantBox",
+}
+
+local MEDICAL_WEIGHTS = {
+    MedicalStorageDrugs = 0.3,
+    MedicalClinicDrugs  = 0.25,
+    StoreShelfMedical   = 0.2,
+    FridgeMedical       = 0.1,
+}
+
+applyDistribution(MEDICAL_ITEMS, MEDICAL_WEIGHTS)
+
+local AMMO_ITEMS = {
+    "BundleUp.44ClipBox",
+    "BundleUp.JS14ClipBox",
+    "BundleUp.556ClipBox",
+    "BundleUp.45ClipBox",
+    "BundleUp.M14ClipBox",
+    "BundleUp.9mmClipBox",
+}
+
+local AMMO_WEIGHTS = {
+    GunStoreAmmunition    = 0.2,
+    GunStoreMagsAmmo      = 0.3,
+    ArmyStorageAmmunition = 0.2,
+    ArmySurplusAmmoBoxes  = 0.15,
+    SWATStorageAmmunition = 0.15,
+}
+
+applyDistribution(AMMO_ITEMS, AMMO_WEIGHTS)
+
+local FARMING_ITEMS = {
+    "BundleUp.BarleyBagSeedPouch",
+    "BundleUp.BasilBagSeedPouch",
+    "BundleUp.BellPepperBagSeedPouch",
+    "BundleUp.BlackSageBagSeedPouch",
+    "BundleUp.BroadleafPlantainBagSeedPouch",
+    "BundleUp.BroccoliBagSeed2Pouch",
+    "BundleUp.CabbageBagSeed2Pouch",
+    "BundleUp.CarrotBagSeed2Pouch",
+    "BundleUp.CauliflowerBagSeedPouch",
+    "BundleUp.ChamomileBagSeedPouch",
+    "BundleUp.ChivesBagSeedPouch",
+    "BundleUp.CilantroBagSeedPouch",
+    "BundleUp.ComfreyBagSeedPouch",
+    "BundleUp.CommonMallowBagSeedPouch",
+    "BundleUp.CornBagSeedPouch",
+    "BundleUp.CucumberBagSeedPouch",
+    "BundleUp.FlaxBagSeedPouch",
+    "BundleUp.GarlicBagSeedPouch",
+    "BundleUp.GreenpeasBagSeedPouch",
+    "BundleUp.HabaneroBagSeedPouch",
+    "BundleUp.HempBagSeedPouch",
+    "BundleUp.HopsBagSeedPouch",
+    "BundleUp.JalapenoBagSeedPouch",
+    "BundleUp.KaleBagSeedPouch",
+    "BundleUp.LavenderBagSeedPouch",
+    "BundleUp.LeekBagSeedPouch",
+    "BundleUp.LemonGrassBagSeedPouch",
+    "BundleUp.LettuceBagSeedPouch",
+    "BundleUp.MarigoldBagSeedPouch",
+    "BundleUp.MintBagSeedPouch",
+    "BundleUp.OnionBagSeedPouch",
+    "BundleUp.OreganoBagSeedPouch",
+    "BundleUp.ParsleyBagSeedPouch",
+    "BundleUp.PoppyBagSeedPouch",
+    "BundleUp.PotatoBagSeed2Pouch",
+    "BundleUp.PumpkinBagSeedPouch",
+    "BundleUp.RedRadishBagSeed2Pouch",
+    "BundleUp.RoseBagSeedPouch",
+    "BundleUp.RosemaryBagSeedPouch",
+    "BundleUp.RyeBagSeedPouch",
+    "BundleUp.SageBagSeedPouch",
+    "BundleUp.SoybeansBagSeedPouch",
+    "BundleUp.SpinachBagSeedPouch",
+    "BundleUp.StrewberrieBagSeed2Pouch",
+    "BundleUp.SugarBeetBagSeedPouch",
+    "BundleUp.SunflowerBagSeedPouch",
+    "BundleUp.SweetPotatoBagSeedPouch",
+    "BundleUp.ThymeBagSeedPouch",
+    "BundleUp.TobaccoBagSeedPouch",
+    "BundleUp.TomatoBagSeed2Pouch",
+    "BundleUp.TurnipBagSeedPouch",
+    "BundleUp.WatermelonBagSeedPouch",
+    "BundleUp.WheatBagSeedPouch",
+    "BundleUp.WildGarlicBagSeedPouch",
+    "BundleUp.ZucchiniBagSeedPouch",
+}
+
+local FARMING_WEIGHTS = {
+    GardenStoreMisc  = 0.4,
+    GardenStoreTools = 0.2,
+    GigamartFarming  = 0.2,
+}
+
+applyDistribution(FARMING_ITEMS, FARMING_WEIGHTS)
