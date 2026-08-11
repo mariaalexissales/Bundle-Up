@@ -2,6 +2,22 @@
 --ESTRAL--
 ----------
 
+local ProceduralDistributions_list = ProceduralDistributions.list
+local table_insert = table.insert
+
+local function applyDistribution(items, weights)
+    for tableName, weight in pairs(weights) do
+        local distribution = ProceduralDistributions_list[tableName]
+        local containerItems = distribution and distribution.items
+        if containerItems then
+            for i = 1, #items do
+                table_insert(containerItems, items[i])
+                table_insert(containerItems, weight)
+            end
+        end
+    end
+end
+
 local PACK_ITEMS = {
     "BundleUp.BlueberrySP",
     "BundleUp.BubblegumSP",
@@ -41,16 +57,4 @@ local PACK_WEIGHTS = {
     TheatreDrinks       = 0.45,
 }
 
-local ProceduralDistributions_list = ProceduralDistributions.list
-local table_insert = table.insert
-
-for tableName, weight in pairs(PACK_WEIGHTS) do
-    local distribution = ProceduralDistributions_list[tableName]
-    local items = distribution and distribution.items
-    if items then
-        for i = 1, #PACK_ITEMS do
-            table_insert(items, PACK_ITEMS[i])
-            table_insert(items, weight)
-        end
-    end
-end
+applyDistribution(PACK_ITEMS, PACK_WEIGHTS)
