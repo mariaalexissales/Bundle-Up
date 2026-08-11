@@ -572,3 +572,399 @@ local JEWELRY_WEIGHTS = {
 }
 
 applyDistribution(JEWELRY_ITEMS, JEWELRY_WEIGHTS)
+
+local LITERATURE_GROUPS = {
+    {
+        items = {
+            "BundleUp.Book_AdventureNonFictionBundle",
+            "BundleUp.Paperback_AdventureNonFictionBundle",
+            "BundleUp.Book_GeneralNonFictionBundle",
+            "BundleUp.Book_ClassicNonfictionBundle",
+            "BundleUp.BookFancy_ClassicNonfictionBundle",
+            "BundleUp.Paperback_ClassicNonfictionBundle",
+            "BundleUp.Book_SadNonFictionBundle",
+            "BundleUp.Paperback_SadNonFictionBundle",
+            "BundleUp.Paperback_DietBundle",
+        },
+        weights = { BookstoreNonFiction = 0.3, LibraryNonFiction = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_ArtBundle",
+            "BundleUp.Paperback_ArtBundle",
+            "BundleUp.Magazine_ArtBundle",
+            "BundleUp.Magazine_Art_NewBundle",
+        },
+        weights = { BookstoreArt = 0.3, LibraryArt = 0.2, ArtStoreLiterature = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_BaseballBundle",
+            "BundleUp.Paperback_BaseballBundle",
+            "BundleUp.Book_GolfBundle",
+            "BundleUp.Paperback_GolfBundle",
+            "BundleUp.Book_SportsBundle",
+            "BundleUp.Paperback_SportsBundle",
+            "BundleUp.Magazine_GolfBundle",
+            "BundleUp.Magazine_Golf_NewBundle",
+            "BundleUp.Magazine_SportsBundle",
+            "BundleUp.Magazine_Sports_NewBundle",
+        },
+        weights = { BookstoreSports = 0.3, LibrarySports = 0.2, GolfStoreLiterature = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_BiographyBundle",
+            "BundleUp.Paperback_BiographyBundle",
+        },
+        weights = { BookstoreBiography = 0.3, LibraryBiography = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_BusinessBundle",
+            "BundleUp.Paperback_BusinessBundle",
+            "BundleUp.Book_RichBundle",
+            "BundleUp.Paperback_RichBundle",
+            "BundleUp.Magazine_BusinessBundle",
+            "BundleUp.Magazine_Business_NewBundle",
+            "BundleUp.Magazine_RichBundle",
+            "BundleUp.Magazine_Rich_NewBundle",
+        },
+        weights = { BookstoreBusiness = 0.3, LibraryBusiness = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_ChildsBundle",
+            "BundleUp.Paperback_ChildsBundle",
+            "BundleUp.Magazine_ChildsBundle",
+            "BundleUp.Magazine_Childs_NewBundle",
+            "BundleUp.Paperback_TeensBundle",
+            "BundleUp.Magazine_TeensBundle",
+            "BundleUp.Magazine_Teens_NewBundle",
+            "BundleUp.ChildsPictureBookBundle",
+        },
+        weights = { BookstoreChilds = 0.3, LibraryChilds = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_CinemaBundle",
+            "BundleUp.Paperback_CinemaBundle",
+            "BundleUp.Magazine_CinemaBundle",
+            "BundleUp.Magazine_Cinema_NewBundle",
+        },
+        weights = { BookstoreCinema = 0.3, LibraryCinema = 0.2, HomeCinemaLiterature = 0.15 },
+    },
+    {
+        items = {
+            "BundleUp.BookBundle",
+            "BundleUp.PaperbackBundle",
+            "BundleUp.Book_ClassicBundle",
+            "BundleUp.BookFancy_ClassicBundle",
+            "BundleUp.Paperback_ClassicBundle",
+            "BundleUp.Book_ClassicFictionBundle",
+            "BundleUp.BookFancy_ClassicFictionBundle",
+            "BundleUp.Paperback_ClassicFictionBundle",
+            "BundleUp.Book_FictionBundle",
+            "BundleUp.Paperback_FictionBundle",
+            "BundleUp.Book_LiteraryFictionBundle",
+            "BundleUp.Paperback_LiteraryFictionBundle",
+        },
+        weights = { BookstoreLiteraryFiction = 0.3, LibraryLiteraryFiction = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_ComputerBundle",
+            "BundleUp.Paperback_ComputerBundle",
+        },
+        weights = { BookstoreComputer = 0.3, LibraryComputer = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_CrimeFictionBundle",
+            "BundleUp.Paperback_CrimeFictionBundle",
+            "BundleUp.Book_PolicingBundle",
+            "BundleUp.Paperback_PolicingBundle",
+            "BundleUp.Paperback_TrueCrimeBundle",
+            "BundleUp.Magazine_CrimeBundle",
+            "BundleUp.Magazine_Crime_NewBundle",
+            "BundleUp.Magazine_PoliceBundle",
+            "BundleUp.Magazine_Police_NewBundle",
+        },
+        weights = { BookstoreCrimeFiction = 0.3, LibraryCrimeFiction = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_FantasyBundle",
+            "BundleUp.Paperback_FantasyBundle",
+            "BundleUp.Book_SciFiBundle",
+            "BundleUp.Paperback_SciFiBundle",
+        },
+        weights = { BookstoreFantasySciFi = 0.3, LibraryFantasySciFi = 0.2 },
+    },
+    {
+        items = { "BundleUp.Book_FarmingBundle" },
+        weights = { BookstoreFarming = 0.3, GigamartFarming = 0.15 },
+    },
+    {
+        items = {
+            "BundleUp.Book_FashionBundle",
+            "BundleUp.Paperback_FashionBundle",
+            "BundleUp.Magazine_FashionBundle",
+            "BundleUp.Magazine_Fashion_NewBundle",
+        },
+        weights = { BookstoreFashion = 0.3, LibraryFashion = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_GeneralReferenceBundle",
+            "BundleUp.Book_SchoolTextbookBundle",
+        },
+        weights = { BookstoreGeneralReference = 0.3, LibraryGeneralReference = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_HistoryBundle",
+            "BundleUp.BookFancy_HistoryBundle",
+            "BundleUp.Paperback_HistoryBundle",
+        },
+        weights = { BookstoreHistory = 0.3, LibraryHistory = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_MilitaryHistoryBundle",
+            "BundleUp.BookFancy_MilitaryHistoryBundle",
+            "BundleUp.Paperback_MilitaryHistoryBundle",
+        },
+        weights = { BookstoreMilitaryHistory = 0.3, LibraryMilitaryHistory = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_HorrorBundle",
+            "BundleUp.Paperback_HorrorBundle",
+            "BundleUp.Paperback_ScaryBundle",
+            "BundleUp.Magazine_HorrorBundle",
+            "BundleUp.Magazine_Horror_NewBundle",
+        },
+        weights = { BookstoreHorror = 0.3, LibraryHorror = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_LegalBundle",
+            "BundleUp.BookFancy_LegalBundle",
+            "BundleUp.Paperback_LegalBundle",
+        },
+        weights = { BookstoreLegal = 0.3, LibraryLegal = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_MedicalBundle",
+            "BundleUp.BookFancy_MedicalBundle",
+            "BundleUp.Paperback_MedicalBundle",
+        },
+        weights = { BookstoreMedical = 0.3, LibraryMedical = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_MilitaryBundle",
+            "BundleUp.Paperback_MilitaryBundle",
+            "BundleUp.Magazine_MilitaryBundle",
+            "BundleUp.Magazine_Military_NewBundle",
+        },
+        weights = { BookstoreMilitaryHistory = 0.2, LibraryMilitaryHistory = 0.15, ArmySurplusLiterature = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Magazine_FirearmBundle",
+            "BundleUp.Magazine_Firearm_NewBundle",
+        },
+        weights = { GunStoreLiterature = 0.3, ArmySurplusLiterature = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_MusicBundle",
+            "BundleUp.Paperback_MusicBundle",
+            "BundleUp.Magazine_MusicBundle",
+            "BundleUp.Magazine_Music_NewBundle",
+        },
+        weights = { BookstoreMusic = 0.3, LibraryMusic = 0.2, MusicStoreLiterature = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_NatureBundle",
+            "BundleUp.Paperback_NatureBundle",
+            "BundleUp.Magazine_OutdoorsBundle",
+            "BundleUp.Magazine_Outdoors_NewBundle",
+        },
+        weights = { BookstoreOutdoors = 0.3, LibraryOutdoors = 0.2, CampingStoreBooks = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_OccultBundle",
+            "BundleUp.BookFancy_OccultBundle",
+            "BundleUp.Paperback_OccultBundle",
+            "BundleUp.Book_QuackeryBundle",
+            "BundleUp.Paperback_QuackeryBundle",
+            "BundleUp.Paperback_ConspiracyBundle",
+        },
+        weights = { BookstoreOccult = 0.3, LibraryOccult = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_PhilosophyBundle",
+            "BundleUp.BookFancy_PhilosophyBundle",
+            "BundleUp.Paperback_PhilosophyBundle",
+        },
+        weights = { BookstorePhilosophy = 0.3, LibraryPhilosophy = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_PoliticsBundle",
+            "BundleUp.BookFancy_PoliticsBundle",
+            "BundleUp.Paperback_PoliticsBundle",
+        },
+        weights = { BookstorePolitics = 0.3, LibraryPolitics = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_ReligionBundle",
+            "BundleUp.BookFancy_ReligionBundle",
+            "BundleUp.Paperback_ReligionBundle",
+            "BundleUp.Book_BibleBundle",
+            "BundleUp.BookFancy_BibleBundle",
+            "BundleUp.Paperback_BibleBundle",
+        },
+        weights = { BookstoreReligion = 0.3, LibraryReligion = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_RomanceBundle",
+            "BundleUp.Paperback_RomanceBundle",
+            "BundleUp.Paperback_RelationshipBundle",
+            "BundleUp.Paperback_SexyBundle",
+        },
+        weights = { BookstoreRomance = 0.3, LibraryRomance = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_ScienceBundle",
+            "BundleUp.Paperback_ScienceBundle",
+            "BundleUp.Magazine_ScienceBundle",
+            "BundleUp.Magazine_Science_NewBundle",
+        },
+        weights = { BookstoreScience = 0.3, LibraryScience = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_ThrillerBundle",
+            "BundleUp.Paperback_ThrillerBundle",
+        },
+        weights = { BookstoreThriller = 0.3, LibraryThriller = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_TravelBundle",
+            "BundleUp.Paperback_TravelBundle",
+        },
+        weights = { BookstoreTravel = 0.3, LibraryTravel = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Book_WesternBundle",
+            "BundleUp.Paperback_WesternBundle",
+        },
+        weights = { BookstoreWestern = 0.3, LibraryWestern = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Paperback_NewAgeBundle",
+            "BundleUp.Paperback_SelfHelpBundle",
+        },
+        weights = { BookstoreNewAge = 0.3, LibraryNewAge = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Paperback_HassBundle",
+            "BundleUp.Paperback_QuigleyBundle",
+            "BundleUp.Paperback_PoorBundle",
+            "BundleUp.Paperback_PlayBundle",
+        },
+        weights = { BookstoreMisc = 0.3, LibraryBooks = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Magazine_CarBundle",
+            "BundleUp.Magazine_Car_NewBundle",
+        },
+        weights = { CarSupplyLiterature = 0.3, MagazineRackMixed = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.Magazine_GamingBundle",
+            "BundleUp.Magazine_Gaming_NewBundle",
+            "BundleUp.Magazine_HealthBundle",
+            "BundleUp.Magazine_Health_NewBundle",
+            "BundleUp.Magazine_HobbyBundle",
+            "BundleUp.Magazine_Hobby_NewBundle",
+            "BundleUp.Magazine_HumorBundle",
+            "BundleUp.Magazine_Humor_NewBundle",
+            "BundleUp.Magazine_PopularBundle",
+            "BundleUp.Magazine_Popular_NewBundle",
+            "BundleUp.Magazine_TechBundle",
+            "BundleUp.Magazine_Tech_NewBundle",
+        },
+        weights = { MagazineRackMixed = 0.3 },
+    },
+    {
+        items = {
+            "BundleUp.HottieZ_NewBundle",
+            "BundleUp.MagazineBundle",
+            "BundleUp.Magazine_NewBundle",
+            "BundleUp.MagazineCrosswordBundle",
+            "BundleUp.HottieZBundle",
+            "BundleUp.TVMagazineBundle",
+            "BundleUp.TVMagazine_NewBundle",
+            "BundleUp.MagazineWordsearchBundle",
+        },
+        weights = { MagazineRackMixed = 0.3, MagazineRackPaperback = 0.15 },
+    },
+    {
+        items = {
+            "BundleUp.Newspaper_RecentBundle",
+            "BundleUp.Newspaper_NewBundle",
+            "BundleUp.Newspaper_Knews_NewBundle",
+            "BundleUp.Newspaper_Times_NewBundle",
+            "BundleUp.Newspaper_Herald_NewBundle",
+            "BundleUp.Newspaper_Dispatch_NewBundle",
+            "BundleUp.NewspaperBundle",
+        },
+        weights = { MagazineRackNewspaper = 0.3 },
+    },
+    {
+        items = {
+            "BundleUp.ComicBookBundle",
+            "BundleUp.ComicBook_RetailBundle",
+        },
+        weights = { ComicStoreDisplayComics = 0.3, ComicStoreShelfComics = 0.2 },
+    },
+    {
+        items = {
+            "BundleUp.CatalogBundle",
+            "BundleUp.Diary1Bundle",
+            "BundleUp.Diary2Bundle",
+            "BundleUp.GraphPaperBundle",
+            "BundleUp.JournalBundle",
+            "BundleUp.MenuCardBundle",
+            "BundleUp.NotebookBundle",
+            "BundleUp.NotepadBundle",
+            "BundleUp.PhonebookBundle",
+            "BundleUp.PhotoBookBundle",
+            "BundleUp.RPGmanualBundle",
+            "BundleUp.SheetPaper2Bundle",
+        },
+        weights = { BookstoreMisc = 0.2, LibraryBooks = 0.15, GigamartSchool = 0.2 },
+    },
+}
+
+for i = 1, #LITERATURE_GROUPS do
+    applyDistribution(LITERATURE_GROUPS[i].items, LITERATURE_GROUPS[i].weights)
+end
