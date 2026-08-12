@@ -5,7 +5,17 @@
 local ProceduralDistributions_list = ProceduralDistributions.list
 local table_insert = table.insert
 
-local function applyDistribution(items, weights)
+-- SandboxVars.BundleUp is nil at file-load time (initSandboxVars() hasn't run yet),
+-- so items go in at base weight now and get recorded here for applySpawnRates()
+-- to rescale in place once the sandbox options actually exist.
+local registry = {}
+
+local function applyDistribution(option, items, weights)
+    local slots = registry[option]
+    if not slots then
+        slots = {}
+        registry[option] = slots
+    end
     for tableName, weight in pairs(weights) do
         local distribution = ProceduralDistributions_list[tableName]
         local containerItems = distribution and distribution.items
@@ -13,6 +23,12 @@ local function applyDistribution(items, weights)
             for i = 1, #items do
                 table_insert(containerItems, items[i])
                 table_insert(containerItems, weight)
+                slots[#slots + 1] = {
+                    items = containerItems,
+                    index = #containerItems,
+                    name  = items[i],
+                    base  = weight,
+                }
             end
         end
     end
@@ -57,7 +73,7 @@ local PACK_WEIGHTS = {
     TheatreDrinks       = 0.45,
 }
 
-applyDistribution(PACK_ITEMS, PACK_WEIGHTS)
+applyDistribution("SpawnSixPacks", PACK_ITEMS, PACK_WEIGHTS)
 
 local FOOD_ITEMS = {
     "BundleUp.BBQSauceCarton",
@@ -252,7 +268,7 @@ local FOOD_WEIGHTS = {
     GroceryStorageCrate3    = 0.4,
 }
 
-applyDistribution(FOOD_ITEMS, FOOD_WEIGHTS)
+applyDistribution("SpawnFood", FOOD_ITEMS, FOOD_WEIGHTS)
 
 local MATERIALS_ITEMS = {
     "BundleUp.PlankR",
@@ -298,7 +314,7 @@ local MATERIALS_WEIGHTS = {
     ToolStoreHandles     = 0.15,
 }
 
-applyDistribution(MATERIALS_ITEMS, MATERIALS_WEIGHTS)
+applyDistribution("SpawnMaterials", MATERIALS_ITEMS, MATERIALS_WEIGHTS)
 
 local GENERAL_ITEMS = {
     "BundleUp.AdhesiveTapeBoxCrate",
@@ -390,7 +406,7 @@ local GENERAL_WEIGHTS = {
     GigamartTools            = 0.15,
 }
 
-applyDistribution(GENERAL_ITEMS, GENERAL_WEIGHTS)
+applyDistribution("SpawnSupplies", GENERAL_ITEMS, GENERAL_WEIGHTS)
 
 local FISHING_SUPPLY_ITEMS = {
     "BundleUp.FishingHookBoxCrate",
@@ -405,7 +421,7 @@ local FISHING_SUPPLY_WEIGHTS = {
     FishingStoreGear = 0.2,
 }
 
-applyDistribution(FISHING_SUPPLY_ITEMS, FISHING_SUPPLY_WEIGHTS)
+applyDistribution("SpawnFishing", FISHING_SUPPLY_ITEMS, FISHING_SUPPLY_WEIGHTS)
 
 local MEDICAL_ITEMS = {
     "BundleUp.AlcoholBandageBox",
@@ -429,7 +445,7 @@ local MEDICAL_WEIGHTS = {
     FridgeMedical       = 0.1,
 }
 
-applyDistribution(MEDICAL_ITEMS, MEDICAL_WEIGHTS)
+applyDistribution("SpawnMedical", MEDICAL_ITEMS, MEDICAL_WEIGHTS)
 
 local AMMO_ITEMS = {
     "BundleUp.44ClipBox",
@@ -448,7 +464,7 @@ local AMMO_WEIGHTS = {
     SWATStorageAmmunition = 0.15,
 }
 
-applyDistribution(AMMO_ITEMS, AMMO_WEIGHTS)
+applyDistribution("SpawnAmmo", AMMO_ITEMS, AMMO_WEIGHTS)
 
 local FARMING_ITEMS = {
     "BundleUp.BarleyBagSeedPouch",
@@ -514,7 +530,7 @@ local FARMING_WEIGHTS = {
     GigamartFarming  = 0.2,
 }
 
-applyDistribution(FARMING_ITEMS, FARMING_WEIGHTS)
+applyDistribution("SpawnSeeds", FARMING_ITEMS, FARMING_WEIGHTS)
 
 local SCRAP_ITEMS = {
     "BundleUp.AluminumScrapSack",
@@ -553,7 +569,7 @@ local SCRAP_WEIGHTS = {
     MechanicOutfit       = 0.1,
 }
 
-applyDistribution(SCRAP_ITEMS, SCRAP_WEIGHTS)
+applyDistribution("SpawnScrap", SCRAP_ITEMS, SCRAP_WEIGHTS)
 
 local JEWELRY_ITEMS = {
     "BundleUp.GoldScrap_Small",
@@ -571,7 +587,7 @@ local JEWELRY_WEIGHTS = {
     JewelryStorageAll  = 0.2,
 }
 
-applyDistribution(JEWELRY_ITEMS, JEWELRY_WEIGHTS)
+applyDistribution("SpawnJewelry", JEWELRY_ITEMS, JEWELRY_WEIGHTS)
 
 local LITERATURE_GROUPS = {
     {
@@ -966,5 +982,47 @@ local LITERATURE_GROUPS = {
 }
 
 for i = 1, #LITERATURE_GROUPS do
-    applyDistribution(LITERATURE_GROUPS[i].items, LITERATURE_GROUPS[i].weights)
+    applyDistribution("SpawnLiterature", LITERATURE_GROUPS[i].items, LITERATURE_GROUPS[i].weights)
 end
+
+-- Sandbox enum values are 1-based. The master option (SpawnDefault) maps
+-- straight onto SCALE; the per-category options carry an extra leading
+-- "Inherit default" entry, so their value is offset by one.
+local SCALE = { 0, 0.25, 0.5, 1.0, 1.5, 2.0 }
+local DEFAULT_VALUE = 4
+
+local function multiplierFor(sv, option)
+    local value = sv[option]
+    if value and value > 1 then
+        return SCALE[value - 1] or 1.0
+    end
+    return SCALE[sv.SpawnDefault or DEFAULT_VALUE] or 1.0
+end
+
+-- Recomputed from the recorded base weight each time, so re-running never compounds.
+local function applySpawnRates()
+    local sv = SandboxVars and SandboxVars.BundleUp
+    if not sv then return end
+    for option, slots in pairs(registry) do
+        local multiplier = multiplierFor(sv, option)
+        for i = 1, #slots do
+            local slot = slots[i]
+            -- Skip if another mod shifted our entry out from under the index.
+            if slot.items[slot.index - 1] == slot.name then
+                slot.items[slot.index] = slot.base * multiplier
+            end
+        end
+    end
+end
+
+-- Whichever of these fires first with the sandbox options loaded wins; the
+-- other is a harmless no-op re-run. Guarded so an event missing on some build
+-- degrades to base weights instead of erroring.
+local function hook(event)
+    if Events[event] then
+        Events[event].Add(applySpawnRates)
+    end
+end
+
+hook("OnInitGlobalModData")
+hook("OnPreDistributionMerge")
