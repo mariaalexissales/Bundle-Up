@@ -13,7 +13,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 5 [Base.Wire;Base.SmallSheetMetal] mappers[itemTypes],
+            item 5 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -47,7 +47,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.Wire;Base.SmallSheetMetal] mappers[itemTypes],
+            item 10 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -193,7 +193,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.GingerAleSP],
+            item 5 [Base.Pop3],
         }
         outputs {
             item 1 BundleUp.GingerAleSP,
