@@ -193,10 +193,57 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 5 [Base.Pop3],
+            item 6 [Base.Pop3] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
         }
         outputs {
             item 1 BundleUp.GingerAleSP,
+        }
+    }
+
+    craftRecipe OpenGingerAlePack {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Pop3] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount]
+        }
+        outputs {
+            1 BundleUp.GingerAleSP
+        }
+    }
+
+    craftRecipe PackSoda {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Pop;Base.Pop2] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[sodaTypes],
+        }
+        outputs {
+            item 1 mapper:sodaTypes,
+        }
+        itemMapper sodaTypes {
+            BundleUp.SodaPack = Base.Pop2,
+            BundleUp.DietSodaPack = Base.Pop,
+        }
+    }
+
+    craftRecipe OpenSodaPack {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.SodaPack;BundleUp.DietSodaPack] mappers[sodaTypes],
+        }
+        outputs {
+            item 6 mapper:sodaTypes,
+        }
+        itemMapper sodaTypes {
+            Base.Pop2 = BundleUp.SodaPack,
+            Base.Pop = BundleUp.DietSodaPack,
         }
     }
 
