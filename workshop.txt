@@ -41,5 +41,5 @@ description=https://steamcommunity.com/sharedfiles/filedetails/?id=3757904107
 description=
 description=[i]We are actively updating this as Project Zomboid blooms into its new B42 era.
 description=Good luck out there survivors :D[/i]
-tags=Build 42;Balance;Misc;Multiplayer;QoL
+tags=Build 42;Balance;Food;Framework;Items;Literature;Misc;Multiplayer;Realistic;QoL;WIP
 visibility=public
