@@ -57,6 +57,24 @@ module BundleUp {
         Icon = JewelryPouchM,
     }
 
+    item SodaPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GingerSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaPack,
+    }
+
+    item DietSodaPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GingerSP,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaPack,
+    }
+
     item GingerAleSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
