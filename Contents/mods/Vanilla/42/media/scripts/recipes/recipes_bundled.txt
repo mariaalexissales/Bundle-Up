@@ -206,7 +206,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.GingerAleSP] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount]
+            item 1 [BundleUp.GingerAleSP] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
         }
         outputs {
             item 6 Base.Pop3,
