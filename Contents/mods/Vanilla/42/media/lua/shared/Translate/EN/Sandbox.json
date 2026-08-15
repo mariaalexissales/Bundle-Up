@@ -136,5 +136,7 @@
     "Sandbox_BundleUp_ReductionMedical": "Medical reduction %% (boxes)",
     "Sandbox_BundleUp_ReductionMedical_tooltip": "Reduction for medical boxes (bandages, pills, tablets, first aid). -1 = inherit the default.",
     "Sandbox_BundleUp_ReductionOther": "Other supplies reduction %% (boxes)",
-    "Sandbox_BundleUp_ReductionOther_tooltip": "Reduction for general supply boxes (household, electronics, hardware, cosmetics, fishing, fire-starting). -1 = inherit the default."
+    "Sandbox_BundleUp_ReductionOther_tooltip": "Reduction for general supply boxes (household, electronics, hardware, cosmetics, fishing, fire-starting). -1 = inherit the default.",
+    "Sandbox_BundleUp_CartonSpoilRate": "Carton spoilage rate %%",
+    "Sandbox_BundleUp_CartonSpoilRate_tooltip": "How fast food ages while packed inside a carton, as a percentage of the normal rate. 100 = packed food spoils exactly as if it were loose. 0 = packing stops spoilage completely. Cold storage does not slow a carton down."
 }

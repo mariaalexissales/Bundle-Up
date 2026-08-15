@@ -130,6 +130,12 @@ option BundleUp.ReductionOther
     page = BundleUp, translation = BundleUp_ReductionOther,
 }
 
+option BundleUp.CartonSpoilRate
+{
+    type = integer, min = 0, max = 100, default = 100,
+    page = BundleUp, translation = BundleUp_CartonSpoilRate,
+}
+
 option BundleUp.Item_PlankR
 {
     type = integer, min = -1, max = 100, default = -1,
