@@ -74,6 +74,10 @@ function BUInv.testPackStrawberrySodaCan(item, character)
     return BU_isCanOfFlavor(item, "SodaStrewberry")
 end
 
+function BUInv.testPackPerishable(item, character)
+    return not (item and item:IsFood() and item:isRotten())
+end
+
 local function BU_worldAgeHours()
     local gameTime = getGameTime()
     if not gameTime then
