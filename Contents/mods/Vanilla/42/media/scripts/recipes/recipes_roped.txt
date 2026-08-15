@@ -14,7 +14,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
-            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] mappers[bundleTypes],
+            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] flags[IsExclusive;ItemCount] mappers[bundleTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
@@ -38,7 +38,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
-            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] mappers[bundleTypes] flags[ItemCount],
+            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar]flags[IsExclusive;ItemCount] mappers[bundleTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
@@ -61,7 +61,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
@@ -95,7 +95,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankLR;BundleUp.PlankLSR;BundleUp.SheetMetalLR;BundleUp.SheetMetalLSR;BundleUp.IronPipesLR;BundleUp.IronPipesLSR;BundleUp.IronBarLR;BundleUp.IronBarLSR] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankLR;BundleUp.PlankLSR;BundleUp.SheetMetalLR;BundleUp.SheetMetalLSR;BundleUp.IronPipesLR;BundleUp.IronPipesLSR;BundleUp.IronBarLR;BundleUp.IronBarLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,

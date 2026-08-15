@@ -193,7 +193,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 6 [Base.Pop3] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+            item 6 [Base.Pop3] mode:destroy flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
         }
         outputs {
             item 1 BundleUp.GingerAleSP,
@@ -219,7 +219,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 6 [Base.Pop;Base.Pop2] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[sodaTypes],
+            item 6 [Base.Pop;Base.Pop2] mode:destroy flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[sodaTypes],
         }
         outputs {
             item 1 mapper:sodaTypes,

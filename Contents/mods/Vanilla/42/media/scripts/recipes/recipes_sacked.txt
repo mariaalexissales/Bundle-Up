@@ -14,7 +14,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag],
-            item 5 [Base.EmptySandbag] mappers[itemTypes],
+            item 5 [Base.EmptySandbag] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,

@@ -814,46 +814,4 @@ module BundleUp {
             Base.Zipties = BundleUp.ZiptiesBox,
         }
     }
-
-    craftRecipe PackAmmoClipBox {
-        timedAction = PackingBox,
-        time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
-        category = Packing,
-        inputs {
-            item 5 [Base.44Clip;Base.JS14_Clip;Base.556Clip;Base.45Clip;Base.M14Clip;Base.9mmClip] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
-        }
-        outputs {
-            item 1 mapper:ammoClipMap,
-        }
-        itemMapper ammoClipMap {
-            BundleUp.44ClipBox = Base.44Clip,
-            BundleUp.JS14ClipBox = Base.JS14_Clip,
-            BundleUp.556ClipBox = Base.556Clip,
-            BundleUp.45ClipBox = Base.45Clip,
-            BundleUp.M14ClipBox = Base.M14Clip,
-            BundleUp.9mmClipBox = Base.9mmClip,
-        }
-    }
-
-    craftRecipe UnpackAmmoClipBox {
-        timedAction = UnPackBox,
-        time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
-        category = Packing,
-        inputs {
-            item 1 [BundleUp.44ClipBox;BundleUp.JS14ClipBox;BundleUp.556ClipBox;BundleUp.45ClipBox;BundleUp.M14ClipBox;BundleUp.9mmClipBox] mappers[ammoClipMap],
-        }
-        outputs {
-            item 5 mapper:ammoClipMap,
-        }
-        itemMapper ammoClipMap {
-            Base.44Clip = BundleUp.44ClipBox,
-            Base.JS14_Clip = BundleUp.JS14ClipBox,
-            Base.556Clip = BundleUp.556ClipBox,
-            Base.45Clip = BundleUp.45ClipBox,
-            Base.M14Clip = BundleUp.M14ClipBox,
-            Base.9mmClip = BundleUp.9mmClipBox,
-        }
-    }
 }
