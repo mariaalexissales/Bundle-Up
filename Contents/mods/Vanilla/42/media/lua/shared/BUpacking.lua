@@ -74,6 +74,22 @@ function BUInv.testPackStrawberrySodaCan(item, character)
     return BU_isCanOfFlavor(item, "SodaStrewberry")
 end
 
+local function BU_worldAgeHours()
+    local gameTime = getGameTime()
+    if not gameTime then
+        return nil
+    end
+    return gameTime:getWorldAgeHours()
+end
+
+local function BU_spoilRate()
+    local sv = SandboxVars and SandboxVars.BundleUp
+    if not sv or sv.CartonSpoilRate == nil then
+        return 1.0
+    end
+    return sv.CartonSpoilRate / 100
+end
+
 local function BU_worstFoodAge(items)
     local worst = nil
     for i = 0, items:size() - 1 do
@@ -93,11 +109,14 @@ function BUInv.packPerishable(craftRecipeData, character)
     if worst == nil then
         return
     end
+    local packedAt = BU_worldAgeHours()
     local created = craftRecipeData:getAllCreatedItems()
     for i = 0, created:size() - 1 do
         local pack = created:get(i)
         if pack then
-            pack:getModData().buFoodAge = worst
+            local modData = pack:getModData()
+            modData.buFoodAge = worst
+            modData.buPackedAt = packedAt
         end
     end
 end
@@ -105,21 +124,33 @@ end
 function BUInv.unpackPerishable(craftRecipeData, character)
     local consumed = craftRecipeData:getAllConsumedItems()
     local age = nil
+    local packedAt = nil
     for i = 0, consumed:size() - 1 do
         local pack = consumed:get(i)
-        if pack and pack:getModData().buFoodAge ~= nil then
-            age = pack:getModData().buFoodAge
+        local modData = pack and pack:getModData()
+        if modData and modData.buFoodAge ~= nil then
+            age = modData.buFoodAge
+            packedAt = modData.buPackedAt
             break
         end
     end
     if age == nil then
         return
     end
+
+    local now = BU_worldAgeHours()
+    if packedAt ~= nil and now ~= nil and now > packedAt then
+        age = age + (now - packedAt) * BU_spoilRate()
+    end
+
     local created = craftRecipeData:getAllCreatedItems()
     for i = 0, created:size() - 1 do
         local food = created:get(i)
         if food and food:IsFood() then
             food:setAge(age)
+            if now ~= nil then
+                food:setLastAged(now)
+            end
         end
     end
 end
