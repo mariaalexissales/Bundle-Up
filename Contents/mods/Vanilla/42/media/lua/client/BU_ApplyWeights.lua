@@ -11,7 +11,8 @@ local function reductionFor(fullType, def, sv)
     local per = sv["Item_" .. short]
     if per and per >= 0 then return per end
 
-    local catVar = BU.BaseCategory[def.base]
+    local baseType = BU.resolveBase(fullType) or def.base
+    local catVar = BU.BaseCategory[baseType]
     if catVar then
         local v = sv[catVar]
         if v and v >= 0 then return v end
@@ -27,7 +28,19 @@ function BU.applyWeights()
     local sm = getScriptManager()
     if not sm then return end
 
-    for fullType, def in pairs(BU.Bundles) do
+    local order = {}
+    for fullType in pairs(BU.Bundles) do
+        order[#order + 1] = fullType
+    end
+    table.sort(order, function(a, b)
+        local da, db = BU.nestingDepth(a), BU.nestingDepth(b)
+        if da ~= db then return da < db end
+        return a < b
+    end)
+
+    for i = 1, #order do
+        local fullType = order[i]
+        local def = BU.Bundles[fullType]
         local bundle = sm:getItem(fullType)
         local baseItem = sm:getItem(def.base)
         if bundle and baseItem then
