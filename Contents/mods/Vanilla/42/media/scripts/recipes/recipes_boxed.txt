@@ -117,7 +117,7 @@ module BundleUp {
         timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
-        onCreate = BUInv.packPerishable,
+        onCreate = BUInv.carryFoodAge,
         onTest = BUInv.testPackPerishable,
         category = Packing,
         inputs {
@@ -233,7 +233,7 @@ module BundleUp {
         timedAction = UnPackBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
-        onCreate = BUInv.unpackPerishable,
+        onCreate = BUInv.carryFoodAge,
         category = Packing,
         inputs {
             item 1 [BundleUp.BBQSauceCarton;BundleUp.BalsamicVinegarCarton;BundleUp.BeefJerkyCarton;BundleUp.CandyCaramelsCarton;BundleUp.CandyCornCarton;BundleUp.CandyFruitSlicesCarton;BundleUp.CandyGummyfishCarton;BundleUp.CandyMolassesCarton;BundleUp.CandyNovapopsCarton;BundleUp.CandycaneCarton;BundleUp.ChocolateCarton;BundleUp.ChocolateChipsCarton;BundleUp.Chocolate_ButterchunkersCarton;BundleUp.Chocolate_CandyCarton;BundleUp.Chocolate_CrackleCarton;BundleUp.Chocolate_DeuxCarton;BundleUp.Chocolate_GalacticDairyCarton;BundleUp.Chocolate_RoysPBPucksCarton;BundleUp.Chocolate_SmirkersCarton;BundleUp.Chocolate_SnikSnakCarton;BundleUp.CilantroDriedCarton;BundleUp.CookieChocolateChipCarton;BundleUp.CookieJellyCarton;BundleUp.CookiesChocolateCarton;BundleUp.CookiesOatmealCarton;BundleUp.CookiesShortbreadCarton;BundleUp.Cornflour2Carton;BundleUp.Cornmeal2Carton;BundleUp.CrackersCarton;BundleUp.CrispsCarton;BundleUp.Crisps2Carton;BundleUp.Crisps3Carton;BundleUp.Crisps4Carton;BundleUp.DehydratedMeatStickCarton;BundleUp.Dip_SalsaCarton;BundleUp.DriedBlackBeansCarton;BundleUp.DriedChickpeasCarton;BundleUp.DriedKidneyBeansCarton;BundleUp.DriedLentilsCarton;BundleUp.DriedSplitPeasCarton;BundleUp.Flour2Carton;BundleUp.GrahamCrackersCarton;BundleUp.GranolaBarCarton;BundleUp.GumCarton;BundleUp.GummyBearsCarton;BundleUp.GummyWormsCarton;BundleUp.HardCandiesCarton;BundleUp.HiHisCarton;BundleUp.HoneyCarton;BundleUp.JamFruitCarton;BundleUp.JamMarmaladeCarton;BundleUp.JellyBeansCarton;BundleUp.JujubesCarton;BundleUp.KetchupCarton;BundleUp.LardCarton;BundleUp.LavenderPetalsDriedCarton;BundleUp.LicoriceBlackCarton;BundleUp.LicoriceRedCarton;BundleUp.MacaroniCarton;BundleUp.MapleSyrupCarton;BundleUp.MargarineCarton;BundleUp.MarinaraCarton;BundleUp.MarshmallowsCarton;BundleUp.MustardCarton;BundleUp.OatsRawCarton;BundleUp.OilOliveCarton;BundleUp.OilVegetableCarton;BundleUp.PeanutButterCarton;BundleUp.PepperCarton;BundleUp.PepperHabaneroCarton;BundleUp.PepperJalapenoCarton;BundleUp.PepperJalapenoDriedCarton;BundleUp.PlonkiesCarton;BundleUp.PopcornCarton;BundleUp.PorkRindsCarton;BundleUp.PowderedGarlicCarton;BundleUp.PowderedOnionCarton;BundleUp.PretzelCarton;BundleUp.RamenCarton;BundleUp.RiceVinegarCarton;BundleUp.RockCandyCarton;BundleUp.ScoutCookiesCarton;BundleUp.SeasoningSaltCarton;BundleUp.Seasoning_BasilCarton;BundleUp.Seasoning_ChivesCarton;BundleUp.Seasoning_CilantroCarton;BundleUp.Seasoning_OreganoCarton;BundleUp.Seasoning_ParsleyCarton;BundleUp.Seasoning_RosemaryCarton;BundleUp.Seasoning_SageCarton;BundleUp.Seasoning_ThymeCarton;BundleUp.SesameOilCarton;BundleUp.SnoGlobesCarton;BundleUp.SoysauceCarton;BundleUp.SugarCarton;BundleUp.SugarBrownCarton;BundleUp.Teabag2Carton;BundleUp.ThymeDriedCarton;BundleUp.YoghurtCarton] mappers[dryTypes],
@@ -348,7 +348,7 @@ module BundleUp {
         timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
-        onCreate = BUInv.packPerishable,
+        onCreate = BUInv.carryFoodAge,
         onTest = BUInv.testPackPerishable,
         category = Packing,
         inputs {
@@ -432,7 +432,7 @@ module BundleUp {
         timedAction = UnPackBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
-        onCreate = BUInv.unpackPerishable,
+        onCreate = BUInv.carryFoodAge,
         category = Packing,
         inputs {
             item 1 [BundleUp.BasilDriedCarton;BundleUp.BellPepperCarton;BundleUp.BlackSageDriedCarton;BundleUp.BroccoliCarton;BundleUp.ButterCarton;BundleUp.CabbageCarton;BundleUp.CarrotsCarton;BundleUp.CauliflowerCarton;BundleUp.CerealCarton;BundleUp.ChamomileDriedCarton;BundleUp.CheeseCarton;BundleUp.ChivesDriedCarton;BundleUp.ChocoCakesCarton;BundleUp.ChocolateCoveredCoffeeBeansCarton;BundleUp.CinnamonRollCarton;BundleUp.CocoaPowderCarton;BundleUp.Coffee2Carton;BundleUp.CommonMallowDriedCarton;BundleUp.CookiesSugarCarton;BundleUp.CornCarton;BundleUp.CrispyRiceSquareCarton;BundleUp.CucumberCarton;BundleUp.Dip_NachoCheeseCarton;BundleUp.Dip_RanchCarton;BundleUp.DogFoodBagCrate;BundleUp.DriedWhiteBeansCarton;BundleUp.EggplantCarton;BundleUp.GarlicCarton;BundleUp.GingerbreadmanCarton;BundleUp.GinsengCarton;BundleUp.GreenpeasCarton;BundleUp.HotsauceCarton;BundleUp.KaleCarton;BundleUp.LeekCarton;BundleUp.LettuceCarton;BundleUp.MarigoldDriedCarton;BundleUp.MayonnaiseFullCarton;BundleUp.MintHerbDriedCarton;BundleUp.OnionCarton;BundleUp.OreganoDriedCarton;BundleUp.ParsleyDriedCarton;BundleUp.PastaCarton;BundleUp.PepperHabaneroDriedCarton;BundleUp.PicklesCarton;BundleUp.PotatoCarton;BundleUp.QuaggaCakesCarton;BundleUp.RedRadishCarton;BundleUp.RemouladeFullCarton;BundleUp.RiceCarton;BundleUp.RosePetalsDriedCarton;BundleUp.RosemaryDriedCarton;BundleUp.SageDriedCarton;BundleUp.SalamiCarton;BundleUp.SaltCarton;BundleUp.SoybeansCarton;BundleUp.SpinachCarton;BundleUp.SquashCarton;BundleUp.SugarBeetCarton;BundleUp.SweetPotatoCarton;BundleUp.TomatoCarton;BundleUp.TomatoPasteCarton;BundleUp.TortillaChipsCarton;BundleUp.TurkeyEggCarton;BundleUp.TurnipCarton;BundleUp.WildEggsCarton;BundleUp.WildGarlicDriedCarton;BundleUp.ZucchiniCarton] mappers[freshTypes],

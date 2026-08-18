@@ -94,67 +94,68 @@ local function BU_spoilRate()
     return sv.CartonSpoilRate / 100
 end
 
-local function BU_worstFoodAge(items)
+-- Food carries its own age; a pack carries the age it was sealed at plus the
+-- time since. Reading both the same way lets a pack sit anywhere in a chain.
+local function BU_effectiveAge(item, now)
+    if not item then
+        return nil
+    end
+    if item:IsFood() then
+        return item:getAge()
+    end
+
+    local modData = item:getModData()
+    local age = modData.buFoodAge
+    if age == nil then
+        return nil
+    end
+
+    local packedAt = modData.buPackedAt
+    if packedAt ~= nil and now ~= nil and now > packedAt then
+        age = age + (now - packedAt) * BU_spoilRate()
+    end
+    return age
+end
+
+local function BU_stampAge(item, age, now)
+    if not item then
+        return
+    end
+    if item:IsFood() then
+        item:setAge(age)
+        if now ~= nil then
+            item:setLastAged(now)
+        end
+        return
+    end
+
+    local modData = item:getModData()
+    modData.buFoodAge = age
+    modData.buPackedAt = now
+end
+
+local function BU_worstAge(items, now)
     local worst = nil
     for i = 0, items:size() - 1 do
-        local it = items:get(i)
-        if it and it:IsFood() then
-            local age = it:getAge()
-            if worst == nil or age > worst then
-                worst = age
-            end
+        local age = BU_effectiveAge(items:get(i), now)
+        if age ~= nil and (worst == nil or age > worst) then
+            worst = age
         end
     end
     return worst
 end
 
-function BUInv.packPerishable(craftRecipeData, character)
-    local worst = BU_worstFoodAge(craftRecipeData:getAllConsumedItems())
+-- Packing and unpacking are the same move in opposite directions: take the
+-- oldest thing going in and stamp that age onto everything coming out.
+function BUInv.carryFoodAge(craftRecipeData, character)
+    local now = BU_worldAgeHours()
+    local worst = BU_worstAge(craftRecipeData:getAllConsumedItems(), now)
     if worst == nil then
         return
     end
-    local packedAt = BU_worldAgeHours()
-    local created = craftRecipeData:getAllCreatedItems()
-    for i = 0, created:size() - 1 do
-        local pack = created:get(i)
-        if pack then
-            local modData = pack:getModData()
-            modData.buFoodAge = worst
-            modData.buPackedAt = packedAt
-        end
-    end
-end
-
-function BUInv.unpackPerishable(craftRecipeData, character)
-    local consumed = craftRecipeData:getAllConsumedItems()
-    local age = nil
-    local packedAt = nil
-    for i = 0, consumed:size() - 1 do
-        local pack = consumed:get(i)
-        local modData = pack and pack:getModData()
-        if modData and modData.buFoodAge ~= nil then
-            age = modData.buFoodAge
-            packedAt = modData.buPackedAt
-            break
-        end
-    end
-    if age == nil then
-        return
-    end
-
-    local now = BU_worldAgeHours()
-    if packedAt ~= nil and now ~= nil and now > packedAt then
-        age = age + (now - packedAt) * BU_spoilRate()
-    end
 
     local created = craftRecipeData:getAllCreatedItems()
     for i = 0, created:size() - 1 do
-        local food = created:get(i)
-        if food and food:IsFood() then
-            food:setAge(age)
-            if now ~= nil then
-                food:setLastAged(now)
-            end
-        end
+        BU_stampAge(created:get(i), worst, now)
     end
 end
