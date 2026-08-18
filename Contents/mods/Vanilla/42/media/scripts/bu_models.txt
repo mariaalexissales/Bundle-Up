@@ -9,27 +9,75 @@ module BundleUp {
     }
     
     model Plank_Rope {
-        mesh = WorldItems/Plank_Rope,
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/Plank_Rope,
-        scale = 0.2
+        scale = 0.15
+    }
+
+    model Plank_Rope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Plank_Rope,
+        scale = 0.15
     }
 
     model Plank_SheetRope {
-        mesh = WorldItems/Plank_SheetRope,
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/Plank_SheetRope,
-        scale = 0.2
+        scale = 0.15
+    }
+
+    model Plank_SheetRope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Plank_SheetRope,
+        scale = 0.15
     }
 
     model SheetMetal_Rope {
-        mesh = WorldItems/SheetMetal_Rope,
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.15
+    }
+
+    model SheetMetal_Rope_Large {
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/SheetMetal_Rope,
         scale = 0.2
     }
 
+    model MetalStock_Rope {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.08
+    }
+
     model SheetMetal_SheetRope {
-        mesh = WorldItems/SheetMetal_SheetRope,
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.15
+    }
+
+    model SheetMetal_SheetRope_Large {
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/SheetMetal_SheetRope,
         scale = 0.2
+    }
+
+    model MetalStock_SheetRope {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.08
+    }
+
+    model MetalStock_Rope_Large {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.11
+    }
+
+    model MetalStock_SheetRope_Large {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.11
     }
 
     model Parcel_Produce_Small {
