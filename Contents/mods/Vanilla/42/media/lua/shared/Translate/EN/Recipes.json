@@ -63,5 +63,7 @@
   "PackMagazineBundle": "Pack Magazines in Box",
   "UnpackMagazineBundle": "Open Box of Magazines (10 items)",
   "PackReadingMiscBundle": "Pack Reading Material in Box",
-  "UnpackReadingMiscBundle": "Open Box of Reading Material (10 items)"
+  "UnpackReadingMiscBundle": "Open Box of Reading Material (10 items)",
+  "PackFoodCase": "Pack Food Cartons in Case",
+  "UnpackFoodCase": "Open Food Case (4 cartons)"
 }

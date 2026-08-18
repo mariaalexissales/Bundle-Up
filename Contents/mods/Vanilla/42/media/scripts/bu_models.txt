@@ -86,6 +86,12 @@ module BundleUp {
         scale = 0.3
     }
 
+    model Parcel_Produce_ExtraLarge {
+        mesh = WorldItems/Parcel_Present_1,
+        texture = WorldItems/Parcel_Produce_1,
+        scale = 0.2
+    }
+
     model Parcel_Produce_Small {
         mesh = WorldItems/Parcel_Present_5,
         texture = WorldItems/Parcel_Produce_5,
