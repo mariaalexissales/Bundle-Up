@@ -28,13 +28,15 @@ function BU.applyWeights()
     local sm = getScriptManager()
     if not sm then return end
 
-    local order = {}
+    -- A nested pack reads its base's weight, so the base has to be final
+    -- first. Depth is measured once up front rather than per comparison.
+    local order, depth = {}, {}
     for fullType in pairs(BU.Bundles) do
         order[#order + 1] = fullType
+        depth[fullType] = BU.nestingDepth(fullType)
     end
     table.sort(order, function(a, b)
-        local da, db = BU.nestingDepth(a), BU.nestingDepth(b)
-        if da ~= db then return da < db end
+        if depth[a] ~= depth[b] then return depth[a] < depth[b] end
         return a < b
     end)
 

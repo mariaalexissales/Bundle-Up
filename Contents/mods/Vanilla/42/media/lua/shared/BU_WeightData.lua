@@ -71,38 +71,37 @@ BU.BaseCategory = {
 
 -- A pack's base is usually a vanilla item, but a nested pack names another
 -- pack instead. Walking down to the vanilla item at the bottom gives the
--- category lookup something it can match and the total unit count.
+-- category lookup something it can match.
 local MAX_DEPTH = 16
 
 function BU.resolveBase(fullType)
     local def = BU.Bundles[fullType]
     if not def then
-        return nil, 0
+        return nil
     end
 
     local base = def.base
-    local count = def.count
     for _ = 1, MAX_DEPTH do
         local parent = BU.Bundles[base]
         if not parent then
-            return base, count
+            return base
         end
-        count = count * parent.count
         base = parent.base
     end
-    return nil, 0
+    return nil
 end
 
 function BU.nestingDepth(fullType)
-    local depth = 0
     local def = BU.Bundles[fullType]
-    while def and depth <= MAX_DEPTH do
+    for depth = 0, MAX_DEPTH do
+        if not def then
+            return depth
+        end
         local parent = BU.Bundles[def.base]
         if not parent then
             return depth
         end
-        depth = depth + 1
         def = parent
     end
-    return depth
+    return MAX_DEPTH
 end
