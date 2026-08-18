@@ -80,6 +80,12 @@ module BundleUp {
         scale = 0.11
     }
 
+    model Crate_Ammo {
+        mesh = WorldItems/Crate_Basic,
+        texture = WorldItems/CrateBasic,
+        scale = 0.3
+    }
+
     model Parcel_Produce_Small {
         mesh = WorldItems/Parcel_Present_5,
         texture = WorldItems/Parcel_Produce_5,

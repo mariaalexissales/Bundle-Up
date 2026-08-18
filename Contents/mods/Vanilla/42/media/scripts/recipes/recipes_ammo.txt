@@ -74,4 +74,88 @@ module BundleUp {
             item 12 Base.CapGunCapBox,
         }
     }
+
+    craftRecipe PackAmmoClipCarton {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 12 [BundleUp.44ClipBox;BundleUp.JS14ClipBox;BundleUp.556ClipBox;BundleUp.45ClipBox;BundleUp.M14ClipBox;BundleUp.9mmClipBox] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
+        }
+        outputs {
+            item 1 mapper:ammoClipMap,
+        }
+        itemMapper ammoClipMap {
+            BundleUp.44ClipCarton = BundleUp.44ClipBox,
+            BundleUp.JS14ClipCarton = BundleUp.JS14ClipBox,
+            BundleUp.556ClipCarton = BundleUp.556ClipBox,
+            BundleUp.45ClipCarton = BundleUp.45ClipBox,
+            BundleUp.M14ClipCarton = BundleUp.M14ClipBox,
+            BundleUp.9mmClipCarton = BundleUp.9mmClipBox,
+        }
+    }
+
+    craftRecipe UnpackAmmoClipCarton {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.44ClipCarton;BundleUp.JS14ClipCarton;BundleUp.556ClipCarton;BundleUp.45ClipCarton;BundleUp.M14ClipCarton;BundleUp.9mmClipCarton] mappers[ammoClipMap],
+        }
+        outputs {
+            item 12 mapper:ammoClipMap,
+        }
+        itemMapper ammoClipMap {
+            BundleUp.44ClipBox = BundleUp.44ClipCarton,
+            BundleUp.JS14ClipBox = BundleUp.JS14ClipCarton,
+            BundleUp.556ClipBox = BundleUp.556ClipCarton,
+            BundleUp.45ClipBox = BundleUp.45ClipCarton,
+            BundleUp.M14ClipBox = BundleUp.M14ClipCarton,
+            BundleUp.9mmClipBox = BundleUp.9mmClipCarton,
+        }
+    }
+
+    craftRecipe PackAmmoClipCase {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 4 [BundleUp.44ClipCarton;BundleUp.JS14ClipCarton;BundleUp.556ClipCarton;BundleUp.45ClipCarton;BundleUp.M14ClipCarton;BundleUp.9mmClipCarton] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
+        }
+        outputs {
+            item 1 mapper:ammoClipMap,
+        }
+        itemMapper ammoClipMap {
+            BundleUp.44ClipCase = BundleUp.44ClipCarton,
+            BundleUp.JS14ClipCase = BundleUp.JS14ClipCarton,
+            BundleUp.556ClipCase = BundleUp.556ClipCarton,
+            BundleUp.45ClipCase = BundleUp.45ClipCarton,
+            BundleUp.M14ClipCase = BundleUp.M14ClipCarton,
+            BundleUp.9mmClipCase = BundleUp.9mmClipCarton,
+        }
+    }
+
+    craftRecipe UnpackAmmoClipCase {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.44ClipCase;BundleUp.JS14ClipCase;BundleUp.556ClipCase;BundleUp.45ClipCase;BundleUp.M14ClipCase;BundleUp.9mmClipCase] mappers[ammoClipMap],
+        }
+        outputs {
+            item 4 mapper:ammoClipMap,
+        }
+        itemMapper ammoClipMap {
+            BundleUp.44ClipCarton = BundleUp.44ClipCase,
+            BundleUp.JS14ClipCarton = BundleUp.JS14ClipCase,
+            BundleUp.556ClipCarton = BundleUp.556ClipCase,
+            BundleUp.45ClipCarton = BundleUp.45ClipCase,
+            BundleUp.M14ClipCarton = BundleUp.M14ClipCase,
+            BundleUp.9mmClipCarton = BundleUp.9mmClipCase,
+        }
+    }
 }

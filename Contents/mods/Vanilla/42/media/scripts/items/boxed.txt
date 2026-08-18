@@ -2346,4 +2346,124 @@ module BundleUp {
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackCapGunCapCarton,
     }
+
+    item 44ClipCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCarton,
+    }
+
+    item JS14ClipCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCarton,
+    }
+
+    item 556ClipCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCarton,
+    }
+
+    item 45ClipCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCarton,
+    }
+
+    item M14ClipCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCarton,
+    }
+
+    item 9mmClipCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCarton,
+    }
+
+    item 44ClipCase {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 38.0,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCase,
+    }
+
+    item JS14ClipCase {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 38.0,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCase,
+    }
+
+    item 556ClipCase {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 38.0,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCase,
+    }
+
+    item 45ClipCase {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 38.0,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCase,
+    }
+
+    item M14ClipCase {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 38.0,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCase,
+    }
+
+    item 9mmClipCase {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 38.0,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackAmmoClipCase,
+    }
 }
