@@ -2,6 +2,8 @@
 --ESTRAL--
 ----------
 
+require "BU_WeightData"
+
 BUInv = BUInv or {}
 
 PACK_FLAVORS = {
@@ -74,10 +76,6 @@ function BUInv.testPackStrawberrySodaCan(item, character)
     return BU_isCanOfFlavor(item, "SodaStrewberry")
 end
 
-function BUInv.testPackPerishable(item, character)
-    return not (item and item:IsFood() and item:isRotten())
-end
-
 local function BU_worldAgeHours()
     local gameTime = getGameTime()
     if not gameTime then
@@ -143,6 +141,42 @@ local function BU_worstAge(items, now)
         end
     end
     return worst
+end
+
+-- Whether an age counts as rotten is the base item's business, so ask a spare
+-- copy of it rather than reimplementing the thresholds here.
+local rotProbes = {}
+
+local function BU_isAgeRotten(baseType, age)
+    if baseType == nil or age == nil then
+        return false
+    end
+
+    local probe = rotProbes[baseType]
+    if probe == nil then
+        probe = InventoryItemFactory.CreateItem(baseType) or false
+        rotProbes[baseType] = probe
+    end
+    if not probe or not probe:IsFood() then
+        return false
+    end
+
+    probe:setAge(age)
+    return probe:isRotten()
+end
+
+-- Loose food answers for itself; a pack answers for what it is holding, or
+-- rotten cartons would launder into a fresh-looking case.
+function BUInv.testPackPerishable(item, character)
+    if not item then
+        return true
+    end
+    if item:IsFood() then
+        return not item:isRotten()
+    end
+
+    local baseType = BU.resolveBase(item:getFullType())
+    return not BU_isAgeRotten(baseType, BU_effectiveAge(item, BU_worldAgeHours()))
 end
 
 -- Packing and unpacking are the same move in opposite directions: take the
