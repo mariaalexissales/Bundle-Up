@@ -12,6 +12,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.0,
         Icon = SackSack,
+        WorldStaticModel = SandBag_Ground,
         DoubleClickRecipe = UnpackSack,
     }
     item GoldScrap_Small {
@@ -19,6 +20,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.5,
         Icon = GoldScrapS,
+        WorldStaticModel = Parcel_ExtraSmall,
         Tags = base:hasmetal,
         DoubleClickRecipe = UnbagSmall,
     }
@@ -27,6 +29,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.0,
         Icon = GoldScrapL,
+        WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
         DoubleClickRecipe = UnbagLarge,
     }
@@ -35,6 +38,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.5,
         Icon = SilverScrapS,
+        WorldStaticModel = Parcel_ExtraSmall,
         Tags = base:hasmetal,
         DoubleClickRecipe = UnbagSmall,
     }
@@ -43,6 +47,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.0,
         Icon = SilverScrapL,
+        WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
         DoubleClickRecipe = UnbagLarge,
     }
@@ -51,6 +56,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item BrassScrapSack {
@@ -58,6 +64,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item BrokenGlassSack {
@@ -65,6 +72,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item CharcoalCraftedSack {
@@ -72,6 +80,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item CopperScrapSack {
@@ -79,6 +88,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item ElectronicsScrapSack {
@@ -86,6 +96,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item IronScrapSack {
@@ -93,6 +104,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item ScrapMetalSack {
@@ -100,6 +112,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item SplintersSack {
@@ -107,6 +120,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item SteelScrapSack {
@@ -114,6 +128,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
     item UnusableWoodSack {
@@ -121,6 +136,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 1.5,
         Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
 
@@ -129,6 +145,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BasilBagSeedPouch {
@@ -136,6 +153,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BellPepperBagSeedPouch {
@@ -143,6 +161,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BlackSageBagSeedPouch {
@@ -150,6 +169,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BroadleafPlantainBagSeedPouch {
@@ -157,6 +177,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BroccoliBagSeed2Pouch {
@@ -164,6 +185,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CabbageBagSeed2Pouch {
@@ -171,6 +193,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CarrotBagSeed2Pouch {
@@ -178,6 +201,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CauliflowerBagSeedPouch {
@@ -185,6 +209,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ChamomileBagSeedPouch {
@@ -192,6 +217,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ChivesBagSeedPouch {
@@ -199,6 +225,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CilantroBagSeedPouch {
@@ -206,6 +233,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ComfreyBagSeedPouch {
@@ -213,6 +241,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CommonMallowBagSeedPouch {
@@ -220,6 +249,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CornBagSeedPouch {
@@ -227,6 +257,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CucumberBagSeedPouch {
@@ -234,6 +265,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item FlaxBagSeedPouch {
@@ -241,6 +273,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item GarlicBagSeedPouch {
@@ -248,6 +281,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item GreenpeasBagSeedPouch {
@@ -255,6 +289,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item HabaneroBagSeedPouch {
@@ -262,6 +297,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item HempBagSeedPouch {
@@ -269,6 +305,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item HopsBagSeedPouch {
@@ -276,6 +313,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item JalapenoBagSeedPouch {
@@ -283,6 +321,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item KaleBagSeedPouch {
@@ -290,6 +329,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LavenderBagSeedPouch {
@@ -297,6 +337,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LeekBagSeedPouch {
@@ -304,6 +345,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LemonGrassBagSeedPouch {
@@ -311,6 +353,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LettuceBagSeedPouch {
@@ -318,6 +361,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item MarigoldBagSeedPouch {
@@ -325,6 +369,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item MintBagSeedPouch {
@@ -332,6 +377,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item OnionBagSeedPouch {
@@ -339,6 +385,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item OreganoBagSeedPouch {
@@ -346,6 +393,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ParsleyBagSeedPouch {
@@ -353,6 +401,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item PoppyBagSeedPouch {
@@ -360,6 +409,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item PotatoBagSeed2Pouch {
@@ -367,6 +417,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item PumpkinBagSeedPouch {
@@ -374,6 +425,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RedRadishBagSeed2Pouch {
@@ -381,6 +433,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RoseBagSeedPouch {
@@ -388,6 +441,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RosemaryBagSeedPouch {
@@ -395,6 +449,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RyeBagSeedPouch {
@@ -402,6 +457,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SageBagSeedPouch {
@@ -409,6 +465,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SoybeansBagSeedPouch {
@@ -416,6 +473,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SpinachBagSeedPouch {
@@ -423,6 +481,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item StrewberrieBagSeed2Pouch {
@@ -430,6 +489,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SugarBeetBagSeedPouch {
@@ -437,6 +497,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SunflowerBagSeedPouch {
@@ -444,6 +505,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SweetPotatoBagSeedPouch {
@@ -451,6 +513,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ThymeBagSeedPouch {
@@ -458,6 +521,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item TobaccoBagSeedPouch {
@@ -465,6 +529,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item TomatoBagSeed2Pouch {
@@ -472,6 +537,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item TurnipBagSeedPouch {
@@ -479,6 +545,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item WatermelonBagSeedPouch {
@@ -486,6 +553,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item WheatBagSeedPouch {
@@ -493,6 +561,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item WildGarlicBagSeedPouch {
@@ -500,6 +569,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ZucchiniBagSeedPouch {
@@ -507,6 +577,7 @@ module BundleUp {
         ItemType = base:normal,
         Weight = 0.3,
         Icon = Parcel_Medium_Food,
+        WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
 }

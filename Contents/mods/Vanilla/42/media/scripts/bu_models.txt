@@ -31,4 +31,10 @@ module BundleUp {
         texture = WorldItems/SheetMetal_SheetRope,
         scale = 0.2
     }
+
+    model Parcel_Produce_Small {
+        mesh = WorldItems/Parcel_Present_5,
+        texture = WorldItems/Parcel_Produce_5,
+        scale = 0.15
+    }
 }
