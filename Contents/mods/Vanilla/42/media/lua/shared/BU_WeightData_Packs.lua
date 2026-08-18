@@ -591,6 +591,9 @@ BU.BaseCategory["Base.45Clip"] = "ReductionOther"
 BU.BaseCategory["Base.M14Clip"] = "ReductionOther"
 BU.BaseCategory["Base.9mmClip"] = "ReductionOther"
 
+BU.Bundles["BundleUp.CapGunCapCarton"] = { base = "Base.CapGunCapBox", count = 12 }
+BU.BaseCategory["Base.CapGunCapBox"] = "ReductionOther"
+
 BU.Bundles["BundleUp.BarleyBagSeedPouch"] = { base = "Base.BarleyBagSeed", count = 10 }
 BU.Bundles["BundleUp.BasilBagSeedPouch"] = { base = "Base.BasilBagSeed", count = 10 }
 BU.Bundles["BundleUp.BellPepperBagSeedPouch"] = { base = "Base.BellPepperBagSeed", count = 10 }

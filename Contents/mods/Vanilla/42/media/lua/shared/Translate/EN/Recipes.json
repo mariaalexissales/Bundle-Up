@@ -50,6 +50,8 @@
   "UnpackPartsBox": "Open Parts Box (10 items)",
   "PackAmmoClipBox": "Pack Magazines in Box",
   "UnpackAmmoClipBox": "Open Box of Magazines (5 items)",
+  "PackCapGunCapCarton": "Pack Caps in Carton",
+  "UnpackCapGunCapCarton": "Open Carton of Caps (12 boxes)",
   "PackSeedPouch": "Pack Seed Packets in Pouch",
   "UnpackSeedPouch": "Open Seed Pouch (10 items)",
   "PackBookBundle": "Pack Books in Box",

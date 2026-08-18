@@ -48,4 +48,30 @@ module BundleUp {
             Base.9mmClip = BundleUp.9mmClipBox,
         }
     }
+
+    craftRecipe PackCapGunCapCarton {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 12 [Base.CapGunCapBox] flags[ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.CapGunCapCarton,
+        }
+    }
+
+    craftRecipe UnpackCapGunCapCarton {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.CapGunCapCarton],
+        }
+        outputs {
+            item 12 Base.CapGunCapBox,
+        }
+    }
 }

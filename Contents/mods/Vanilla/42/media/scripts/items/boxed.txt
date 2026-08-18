@@ -2336,4 +2336,14 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackAmmoClipBox,
     }
+
+    item CapGunCapCarton {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.0,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackCapGunCapCarton,
+    }
 }
