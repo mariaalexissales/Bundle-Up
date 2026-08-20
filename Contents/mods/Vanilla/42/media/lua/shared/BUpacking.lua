@@ -2,6 +2,7 @@
 --ESTRAL--
 ----------
 
+BU = BU or {}
 BUInv = BUInv or {}
 
 PACK_FLAVORS = {
@@ -14,16 +15,18 @@ PACK_FLAVORS = {
     ["BundleUp.StrawberrySP"] = "SodaStrewberry",
 }
 
+function BU.worldAgeHours()
+    local gameTime = getGameTime()
+    if not gameTime then return nil end
+    return gameTime:getWorldAgeHours()
+end
+
 function BUInv.unpackSodaPack(craftRecipeData, character)
     local sodaPack = craftRecipeData:getAllConsumedItems():get(0)
     local sodaFluidName = PACK_FLAVORS[sodaPack:getFullType()]
-    if not sodaFluidName then
-        return
-    end
+    if not sodaFluidName then return end
     local sodaType = Fluid.Get(sodaFluidName)
-    if not sodaType then
-        return
-    end
+    if not sodaType then return end
 
     local outputItems = craftRecipeData:getAllCreatedItems()
     for i = 0, outputItems:size() - 1 do
@@ -46,44 +49,17 @@ local function BU_isCanOfFlavor(can, fluidName)
     return fluid ~= nil and fluid:getFluidTypeString() == fluidName
 end
 
-function BUInv.testPackBlueberrySodaCan(item, character)
-    return BU_isCanOfFlavor(item, "SodaBlueberry")
-end
-
-function BUInv.testPackBubblegumSodaCan(item, character)
-    return BU_isCanOfFlavor(item, "SodaBubblegum")
-end
-
-function BUInv.testPackLimeSodaCan(item, character)
-    return BU_isCanOfFlavor(item, "SodaLime")
-end
-
-function BUInv.testPackOrangeSodaCan(item, character)
-    return BU_isCanOfFlavor(item, "SodaPop")
-end
-
-function BUInv.testPackGrapeSodaCan(item, character)
-    return BU_isCanOfFlavor(item, "SodaGrape")
-end
-
-function BUInv.testPackPineappleSodaCan(item, character)
-    return BU_isCanOfFlavor(item, "SodaPineapple")
-end
-
-function BUInv.testPackStrawberrySodaCan(item, character)
-    return BU_isCanOfFlavor(item, "SodaStrewberry")
+-- These build the testPack<Flavor>SodaCan names the pack recipes ask for by
+-- string, so grepping the Lua for them turns up nothing: see recipes_bundled.txt.
+for packType, fluidName in pairs(PACK_FLAVORS) do
+    local flavor = packType:match("%.(.+)SP$")
+    BUInv["testPack" .. flavor .. "SodaCan"] = function(item, character)
+        return BU_isCanOfFlavor(item, fluidName)
+    end
 end
 
 function BUInv.testPackPerishable(item, character)
     return not (item and item:IsFood() and item:isRotten())
-end
-
-local function BU_worldAgeHours()
-    local gameTime = getGameTime()
-    if not gameTime then
-        return nil
-    end
-    return gameTime:getWorldAgeHours()
 end
 
 local function BU_spoilRate()
@@ -110,10 +86,8 @@ end
 
 function BUInv.packPerishable(craftRecipeData, character)
     local worst = BU_worstFoodAge(craftRecipeData:getAllConsumedItems())
-    if worst == nil then
-        return
-    end
-    local packedAt = BU_worldAgeHours()
+    if worst == nil then return end
+    local packedAt = BU.worldAgeHours()
     local created = craftRecipeData:getAllCreatedItems()
     for i = 0, created:size() - 1 do
         local pack = created:get(i)
@@ -138,11 +112,9 @@ function BUInv.unpackPerishable(craftRecipeData, character)
             break
         end
     end
-    if age == nil then
-        return
-    end
+    if age == nil then return end
 
-    local now = BU_worldAgeHours()
+    local now = BU.worldAgeHours()
     if packedAt ~= nil and now ~= nil and now > packedAt then
         age = age + (now - packedAt) * BU_spoilRate()
     end
