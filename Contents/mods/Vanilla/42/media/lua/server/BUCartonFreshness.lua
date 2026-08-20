@@ -3,6 +3,7 @@
 ----------
 
 require "BU_WeightData"
+require "BUpacking"
 
 local cartons = nil
 
@@ -24,17 +25,14 @@ local function BU_perishableCartons()
 end
 
 local function BU_stampLootCartons(roomName, containerType, container)
-    local gameTime = getGameTime()
-    if not gameTime or not container then
-        return
-    end
+    if not container then return end
+
+    local now = BU.worldAgeHours()
+    if not now then return end
 
     local perishable = BU_perishableCartons()
-    if not perishable then
-        return
-    end
+    if not perishable then return end
 
-    local now = gameTime:getWorldAgeHours()
     local items = container:getItems()
     for i = 0, items:size() - 1 do
         local item = items:get(i)
