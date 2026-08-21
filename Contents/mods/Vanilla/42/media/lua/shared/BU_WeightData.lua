@@ -68,3 +68,40 @@ BU.BaseCategory = {
     ["Base.Plank"]           = "ReductionWood",
     ["Base.StoneBlock"]      = "ReductionStone",
 }
+
+-- A pack's base is usually a vanilla item, but a nested pack names another
+-- pack instead. Walking down to the vanilla item at the bottom gives the
+-- category lookup something it can match.
+local MAX_DEPTH = 16
+
+function BU.resolveBase(fullType)
+    local def = BU.Bundles[fullType]
+    if not def then
+        return nil
+    end
+
+    local base = def.base
+    for _ = 1, MAX_DEPTH do
+        local parent = BU.Bundles[base]
+        if not parent then
+            return base
+        end
+        base = parent.base
+    end
+    return nil
+end
+
+function BU.nestingDepth(fullType)
+    local def = BU.Bundles[fullType]
+    for depth = 0, MAX_DEPTH do
+        if not def then
+            return depth
+        end
+        local parent = BU.Bundles[def.base]
+        if not parent then
+            return depth
+        end
+        def = parent
+    end
+    return MAX_DEPTH
+end

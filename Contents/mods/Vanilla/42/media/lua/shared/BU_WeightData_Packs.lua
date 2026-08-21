@@ -591,6 +591,21 @@ BU.BaseCategory["Base.45Clip"] = "ReductionOther"
 BU.BaseCategory["Base.M14Clip"] = "ReductionOther"
 BU.BaseCategory["Base.9mmClip"] = "ReductionOther"
 
+BU.Bundles["BundleUp.44ClipCarton"] = { base = "BundleUp.44ClipBox", count = 12 }
+BU.Bundles["BundleUp.JS14ClipCarton"] = { base = "BundleUp.JS14ClipBox", count = 12 }
+BU.Bundles["BundleUp.556ClipCarton"] = { base = "BundleUp.556ClipBox", count = 12 }
+BU.Bundles["BundleUp.45ClipCarton"] = { base = "BundleUp.45ClipBox", count = 12 }
+BU.Bundles["BundleUp.M14ClipCarton"] = { base = "BundleUp.M14ClipBox", count = 12 }
+BU.Bundles["BundleUp.9mmClipCarton"] = { base = "BundleUp.9mmClipBox", count = 12 }
+BU.Bundles["BundleUp.44ClipCase"] = { base = "BundleUp.44ClipCarton", count = 4 }
+BU.Bundles["BundleUp.JS14ClipCase"] = { base = "BundleUp.JS14ClipCarton", count = 4 }
+BU.Bundles["BundleUp.556ClipCase"] = { base = "BundleUp.556ClipCarton", count = 4 }
+BU.Bundles["BundleUp.45ClipCase"] = { base = "BundleUp.45ClipCarton", count = 4 }
+BU.Bundles["BundleUp.M14ClipCase"] = { base = "BundleUp.M14ClipCarton", count = 4 }
+BU.Bundles["BundleUp.9mmClipCase"] = { base = "BundleUp.9mmClipCarton", count = 4 }
+BU.Bundles["BundleUp.CapGunCapCarton"] = { base = "Base.CapGunCapBox", count = 12 }
+BU.BaseCategory["Base.CapGunCapBox"] = "ReductionOther"
+
 BU.Bundles["BundleUp.BarleyBagSeedPouch"] = { base = "Base.BarleyBagSeed", count = 10 }
 BU.Bundles["BundleUp.BasilBagSeedPouch"] = { base = "Base.BasilBagSeed", count = 10 }
 BU.Bundles["BundleUp.BellPepperBagSeedPouch"] = { base = "Base.BellPepperBagSeed", count = 10 }

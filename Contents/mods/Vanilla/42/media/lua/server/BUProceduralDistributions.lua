@@ -466,6 +466,36 @@ local AMMO_WEIGHTS = {
 
 BU_applyDistribution("SpawnAmmo", AMMO_ITEMS, AMMO_WEIGHTS)
 
+local AMMO_CARTON_ITEMS = {
+    "BundleUp.44ClipCarton",
+    "BundleUp.JS14ClipCarton",
+    "BundleUp.556ClipCarton",
+    "BundleUp.45ClipCarton",
+    "BundleUp.M14ClipCarton",
+    "BundleUp.9mmClipCarton",
+}
+
+local AMMO_CARTON_WEIGHTS = {
+    GunStoreAmmunition    = 0.05,
+    GunStoreMagsAmmo      = 0.07,
+    ArmyStorageAmmunition = 0.05,
+    ArmySurplusAmmoBoxes  = 0.04,
+    SWATStorageAmmunition = 0.04,
+}
+
+applyDistribution("SpawnAmmo", AMMO_CARTON_ITEMS, AMMO_CARTON_WEIGHTS)
+
+local CAP_CARTON_ITEMS = {
+    "BundleUp.CapGunCapCarton",
+}
+
+local CAP_CARTON_WEIGHTS = {
+    WildWestSheriffDesk   = 0.1,
+    WildWestSheriffLocker = 0.1,
+}
+
+applyDistribution("SpawnAmmo", CAP_CARTON_ITEMS, CAP_CARTON_WEIGHTS)
+
 local FARMING_ITEMS = {
     "BundleUp.BarleyBagSeedPouch",
     "BundleUp.BasilBagSeedPouch",

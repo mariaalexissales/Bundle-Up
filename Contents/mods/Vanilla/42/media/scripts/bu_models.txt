@@ -7,28 +7,99 @@ module BundleUp {
     imports {
         Base,
     }
-    
+
+    /*-- Scales are anchored to vanilla's own values for the same mesh:
+         Firewood_Bundle 0.125, Kindling_Bundle 0.05, FourLogsStack 0.4,
+         Parcel_Present_5 0.15, Parcel_Present_1 0.2. Every property needs
+         its trailing comma or the parser drops the line. --*/
+
     model Plank_Rope {
-        mesh = WorldItems/Plank_Rope,
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/Plank_Rope,
-        scale = 0.2
+        scale = 0.12,
+    }
+
+    model Plank_Rope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Plank_Rope,
+        scale = 0.3,
     }
 
     model Plank_SheetRope {
-        mesh = WorldItems/Plank_SheetRope,
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/Plank_SheetRope,
-        scale = 0.2
+        scale = 0.12,
+    }
+
+    model Plank_SheetRope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Plank_SheetRope,
+        scale = 0.3,
     }
 
     model SheetMetal_Rope {
-        mesh = WorldItems/SheetMetal_Rope,
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/SheetMetal_Rope,
-        scale = 0.2
+        scale = 0.1,
+    }
+
+    model SheetMetal_Rope_Large {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.14,
     }
 
     model SheetMetal_SheetRope {
-        mesh = WorldItems/SheetMetal_SheetRope,
+        mesh = WorldItems/Firewood_Bundle,
         texture = WorldItems/SheetMetal_SheetRope,
-        scale = 0.2
+        scale = 0.1,
+    }
+
+    model SheetMetal_SheetRope_Large {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.14,
+    }
+
+    model MetalStock_Rope {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.05,
+    }
+
+    model MetalStock_Rope_Large {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.07,
+    }
+
+    model MetalStock_SheetRope {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.05,
+    }
+
+    model MetalStock_SheetRope_Large {
+        mesh = WorldItems/Kindling_Bundle,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.07,
+    }
+
+    model Crate_Ammo {
+        mesh = WorldItems/Crate_Basic,
+        texture = WorldItems/CrateBasic,
+        scale = 0.25,
+    }
+
+    model Parcel_Produce_ExtraLarge {
+        mesh = WorldItems/Parcel_Present_1,
+        texture = WorldItems/Parcel_Produce_1,
+        scale = 0.2,
+    }
+
+    model Parcel_Produce_Small {
+        mesh = WorldItems/Parcel_Present_5,
+        texture = WorldItems/Parcel_Produce_5,
+        scale = 0.15,
     }
 }

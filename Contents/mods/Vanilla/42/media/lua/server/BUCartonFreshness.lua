@@ -16,8 +16,8 @@ local function BU_perishableCartons()
     end
 
     cartons = {}
-    for fullType, def in pairs(BU.Bundles) do
-        if BU.BaseCategory[def.base] == "ReductionFood" then
+    for fullType in pairs(BU.Bundles) do
+        if BU.BaseCategory[BU.resolveBase(fullType)] == "ReductionFood" then
             cartons[fullType] = true
         end
     end
