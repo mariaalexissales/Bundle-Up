@@ -50,12 +50,15 @@ module BundleUp {
 
     item BellPepperCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item BlackSageDriedCase {
@@ -70,12 +73,15 @@ module BundleUp {
 
     item BroccoliCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item ButterCase {
@@ -90,12 +96,15 @@ module BundleUp {
 
     item CabbageCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 2,
+        DaysTotallyRotten = 4,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item CandyCaramelsCase {
@@ -170,22 +179,28 @@ module BundleUp {
 
     item CarrotsCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 8,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item CauliflowerCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item CerealCase {
@@ -210,12 +225,15 @@ module BundleUp {
 
     item CheeseCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 20,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item ChivesDriedCase {
@@ -460,12 +478,15 @@ module BundleUp {
 
     item CornCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item Cornflour2Case {
@@ -550,12 +571,15 @@ module BundleUp {
 
     item CucumberCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 14,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item DehydratedMeatStickCase {
@@ -570,42 +594,54 @@ module BundleUp {
 
     item Dip_NachoCheeseCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item Dip_RanchCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item Dip_SalsaCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item DogFoodBagCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 365,
+        DaysTotallyRotten = 547,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item DriedBlackBeansCase {
@@ -670,12 +706,15 @@ module BundleUp {
 
     item EggplantCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item Flour2Case {
@@ -690,12 +729,15 @@ module BundleUp {
 
     item GarlicCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item GingerbreadmanCase {
@@ -710,12 +752,15 @@ module BundleUp {
 
     item GinsengCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item GrahamCrackersCase {
@@ -740,12 +785,15 @@ module BundleUp {
 
     item GreenpeasCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item GumCase {
@@ -860,12 +908,15 @@ module BundleUp {
 
     item KaleCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item KetchupCase {
@@ -900,22 +951,28 @@ module BundleUp {
 
     item LeekCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item LettuceCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item LicoriceBlackCase {
@@ -1000,12 +1057,15 @@ module BundleUp {
 
     item MayonnaiseFullCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 13,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item MintHerbDriedCase {
@@ -1030,12 +1090,15 @@ module BundleUp {
 
     item OatsRawCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 180,
+        DaysTotallyRotten = 365,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item OilOliveCase {
@@ -1060,12 +1123,15 @@ module BundleUp {
 
     item OnionCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item OreganoDriedCase {
@@ -1120,12 +1186,15 @@ module BundleUp {
 
     item PepperHabaneroCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item PepperHabaneroDriedCase {
@@ -1140,12 +1209,15 @@ module BundleUp {
 
     item PepperJalapenoCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item PepperJalapenoDriedCase {
@@ -1200,12 +1272,15 @@ module BundleUp {
 
     item PotatoCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item PowderedGarlicCase {
@@ -1250,32 +1325,41 @@ module BundleUp {
 
     item RamenCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 365,
+        DaysTotallyRotten = 730,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item RedRadishCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 7,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item RemouladeFullCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 8,
+        DaysTotallyRotten = 11,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item RiceCase {
@@ -1340,12 +1424,15 @@ module BundleUp {
 
     item SalamiCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 15,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item SaltCase {
@@ -1480,12 +1567,15 @@ module BundleUp {
 
     item SoybeansCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item SoysauceCase {
@@ -1500,32 +1590,41 @@ module BundleUp {
 
     item SpinachCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item SquashCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item SugarBeetCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item SugarBrownCase {
@@ -1550,12 +1649,15 @@ module BundleUp {
 
     item SweetPotatoCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item Teabag2Case {
@@ -1580,12 +1682,15 @@ module BundleUp {
 
     item TomatoCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 12,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item TomatoPasteCase {
@@ -1610,32 +1715,41 @@ module BundleUp {
 
     item TurkeyEggCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item TurnipCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item WildEggsCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item WildGarlicDriedCase {
@@ -1650,21 +1764,27 @@ module BundleUp {
 
     item YoghurtCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 15,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 
     item ZucchiniCase {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 14,
         Weight = 5.8,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        DoubleClickRecipe = UnpackFoodCase,
+        OpeningRecipe = UnpackFoodCase,
     }
 }

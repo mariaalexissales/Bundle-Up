@@ -6,7 +6,7 @@ require "BU_WeightData"
 
 local MIN_WEIGHT = 0.01
 
-local function reductionFor(fullType, def, sv)
+local function BU_reductionFor(fullType, def, sv)
     local short = fullType:match("%.(.+)$") or fullType
     local per = sv["Item_" .. short]
     if per and per >= 0 then return per end
@@ -47,7 +47,7 @@ function BU.applyWeights()
         local baseItem = sm:getItem(def.base)
         if bundle and baseItem then
             local raw = baseItem:getActualWeight() * def.count
-            local weight = raw * (1 - reductionFor(fullType, def, sv) / 100)
+            local weight = raw * (1 - BU_reductionFor(fullType, def, sv) / 100)
             if weight < MIN_WEIGHT then weight = MIN_WEIGHT end
             bundle:setActualWeight(weight)
         end
@@ -56,10 +56,10 @@ end
 
 Events.OnGameStart.Add(BU.applyWeights)
 
-local function onFillInventoryContextMenu(playerNum, context, items)
+local function BU_onFillInventoryContextMenu(playerNum, context, items)
     if not isAdmin() then return end
     context:addOption(getText("ContextMenu_BU_ReapplyWeights"), nil, function()
         BU.applyWeights()
     end)
 end
-Events.OnFillInventoryObjectContextMenu.Add(onFillInventoryContextMenu)
+Events.OnFillInventoryObjectContextMenu.Add(BU_onFillInventoryContextMenu)

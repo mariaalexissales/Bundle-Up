@@ -66,7 +66,6 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small] mappers[bagTypes],
-            item 50 [Base.GoldScrap;Base.SilverScrap] flags[ItemCount;IsExclusive] mappers[bagTypes],
         }
         outputs {
             item 50 mapper:bagTypes,
