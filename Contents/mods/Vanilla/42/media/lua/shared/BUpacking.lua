@@ -104,8 +104,8 @@ local function BU_coldKind(container)
     return kind
 end
 
-local function BU_coldRate(item)
-    local kind = BU_coldKind(item:getContainer())
+local function BU_coldRate(container)
+    local kind = BU_coldKind(container)
     if kind == nil then
         return 1.0
     end
@@ -117,8 +117,8 @@ local function BU_coldRate(item)
     return FRIDGE_RATE[factor] or FRIDGE_RATE[DEFAULT_FRIDGE_FACTOR]
 end
 
-local function BU_inFreezer(item)
-    return BU_coldKind(item:getContainer()) == "freezer"
+local function BU_inFreezer(container)
+    return BU_coldKind(container) == "freezer"
 end
 
 local function BU_freezeAfter(freeze, inFreezer, hours)
@@ -186,7 +186,7 @@ end
 -- Where the clock actually moves. Closing the span at the rate it was opened at
 -- is what lets a pack cross from a freezer to a backpack without the fridge
 -- discount leaking backwards or forwards over the move.
-function BU.settleItem(item, now)
+function BU.settleItem(item, now, container)
     if not item or item:IsFood() then
         return
     end
@@ -196,11 +196,12 @@ function BU.settleItem(item, now)
         return
     end
 
+    container = container or item:getContainer()
     modData.buFoodAge = BU_effectiveAge(item, now)
     modData.buFreezeTime = BU_effectiveFreeze(item, now)
     modData.buPackedAt = now
-    modData.buColdRate = BU_coldRate(item)
-    modData.buInFreezer = BU_inFreezer(item)
+    modData.buColdRate = BU_coldRate(container)
+    modData.buInFreezer = BU_inFreezer(container)
 end
 
 function BU.settleContainer(container, now)
@@ -210,7 +211,7 @@ function BU.settleContainer(container, now)
 
     local items = container:getItems()
     for i = 0, items:size() - 1 do
-        BU.settleItem(items:get(i), now)
+        BU.settleItem(items:get(i), now, container)
     end
 end
 
@@ -228,12 +229,13 @@ local function BU_stampAge(item, age, freeze, now)
         return
     end
 
+    local container = item:getContainer()
     local modData = item:getModData()
     modData.buFoodAge = age
     modData.buFreezeTime = freeze
     modData.buPackedAt = now
-    modData.buColdRate = BU_coldRate(item)
-    modData.buInFreezer = BU_inFreezer(item)
+    modData.buColdRate = BU_coldRate(container)
+    modData.buInFreezer = BU_inFreezer(container)
 end
 
 local function BU_worstAge(items, now)
