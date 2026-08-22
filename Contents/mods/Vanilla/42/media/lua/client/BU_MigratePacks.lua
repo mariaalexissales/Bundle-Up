@@ -4,18 +4,10 @@
 
 require "BUpacking"
 
--- Packs used to carry their own spoilage clock in modData, because a pack was
--- not Food and nothing else would ever age it. Perishable packs are Food now
--- and the engine owns the clock, so those keys are dead - but a carton already
--- sitting in a save still has them, and dropping them without reading them
--- would hand the player back a pantry of freshly minted food.
+-- one-shot conversion of the old modData clock. delete this file a release
+-- after it ships.
 --
--- The published build stored buFoodAge in raw world hours, so hours is the only
--- reading worth honouring. Clamping at the rot threshold means the worst a
--- stale carton can come back as is rotten, never absurd.
---
--- This is a one-shot conversion and the whole file is meant to be deleted a
--- release after it ships.
+-- buFoodAge is in hours, not days - that was the bug. don't drop the /24.
 local HOURS_PER_DAY = 24.0
 
 local function BU_migratePack(item)
@@ -58,9 +50,6 @@ local function BU_migrateContainer(container)
     end
 end
 
--- Only what a player is carrying or standing in front of. A pack nobody has
--- reached for cannot be observed to be wrong, and sweeping the world for a
--- conversion this short-lived would cost more than it is worth.
 local function BU_migrateWatched()
     for playerNum = 0, getNumActivePlayers() - 1 do
         local player = getSpecificPlayer(playerNum)

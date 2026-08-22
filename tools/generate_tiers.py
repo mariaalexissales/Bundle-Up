@@ -132,10 +132,8 @@ def label_for(carton_type, names, tier):
 def carton_rot():
     """DaysFresh / DaysTotallyRotten per carton, read off the cartons themselves.
 
-    A case has to rot on exactly the schedule its carton does, or age stops
-    mapping one-to-one as it moves up and down the ladder. Copying from the
-    carton keeps the two in step without a second source of truth, and without
-    this script needing to know where the game is installed.
+    A case has to rot on the same schedule as its carton or age stops mapping
+    one to one as it moves up and down the ladder.
     """
     out = {}
     for m in re.finditer(r"    item (\w+) \{(.*?)    \}", read("scripts/items/boxed.txt"), re.S):
@@ -149,9 +147,6 @@ def carton_rot():
 def item_block(stem, tier, icon, model, unpack, carton_count, rot):
     weight = round(carton_count * tier["per"] * 0.12, 1)
 
-    # A perishable case is Food so the engine ages, chills and freezes it the
-    # way it does the loose food it stands in for. CantEat plus OpeningRecipe is
-    # how vanilla keeps an unopened can from being eaten off the shelf.
     if rot:
         kind = (
             "        ItemType = base:food,\n"
