@@ -41,7 +41,6 @@ local function BU_stampLootCartons(roomName, containerType, container)
             if modData.buPackedAt == nil then
                 modData.buFoodAge = 0
                 modData.buPackedAt = now
-                BU.settleItem(item, now, container)
             end
         end
     end

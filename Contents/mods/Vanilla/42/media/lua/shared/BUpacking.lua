@@ -167,8 +167,12 @@ local function BU_coldFactor(container)
     return BU_fridgeFactor()
 end
 
-local function BU_freezeAfter(freeze, container, hours)
-    if freeze < FROZEN and container and container:isFreezer() and container:isPowered() then
+local function BU_isFreezing(container)
+    return container ~= nil and container:isFreezer() and container:isPowered()
+end
+
+local function BU_freezeAfter(freeze, container, freezing, hours)
+    if freeze < FROZEN and freezing then
         freeze = freeze + hours / HOURS_TO_FREEZE * FROZEN
     elseif freeze > 0 then
         local thaw = THAW_HOURS
@@ -192,10 +196,49 @@ local function BU_freezeAfter(freeze, container, hours)
     return freeze
 end
 
+local function BU_effectiveFreeze(item, now, container)
+    if not item then
+        return nil
+    end
+    if item:IsFood() then
+        return item:getFreezingTime()
+    end
+
+    local modData = item:getModData()
+    if modData.buFoodAge == nil then
+        return nil
+    end
+
+    local freeze = modData.buFreezeTime or 0
+    local packedAt = modData.buPackedAt
+    if packedAt == nil or now == nil or now <= packedAt then
+        return freeze
+    end
+
+    container = container or item:getOutermostContainer()
+    local freezing = BU_isFreezing(container)
+
+    -- Nothing frozen and nothing freezing answers 0 either way, so do not pay to
+    -- build a probe confirming it. That is most packs, most of the time, and it
+    -- keeps every ordinary container move from instantiating anything.
+    if freeze <= 0 and not freezing then
+        return 0
+    end
+    if not BU_canFreeze(item) then
+        return 0
+    end
+
+    return BU_freezeAfter(freeze, container, freezing, now - packedAt)
+end
+
 -- Food carries its own age; a pack carries the age it was sealed at plus the
--- time since, at the rate the storage it was sealed into was running. Reading
--- both the same way lets a pack sit anywhere in a chain.
-local function BU_effectiveAge(item, now)
+-- time since, charged at whatever the storage it is sitting in is worth right
+-- now. Reading both the same way lets a pack sit anywhere in a chain.
+--
+-- The rate is read live rather than remembered, which is what vanilla does and
+-- what makes a dead fridge cost its contents the discount rather than keep
+-- crediting one that lapsed at some unknowable point in the span.
+local function BU_effectiveAge(item, now, container, freeze)
     if not item then
         return nil
     end
@@ -210,42 +253,29 @@ local function BU_effectiveAge(item, now)
     end
 
     local packedAt = modData.buPackedAt
-    if packedAt ~= nil and now ~= nil and now > packedAt then
-        local rate = modData.buColdRate or 1.0
-        local hours = (now - packedAt) * rate * BU_spoilRate() * BU_rotSpeed()
-        age = age + hours / HOURS_PER_DAY
+    if packedAt == nil or now == nil or now <= packedAt then
+        return age
     end
-    return age
+
+    container = container or item:getOutermostContainer()
+    if freeze == nil then
+        freeze = BU_effectiveFreeze(item, now, container)
+    end
+
+    -- Vanilla settles freezing before aging and then zeroes the whole delta if
+    -- the result is frozen, so a span that ends solid contributes nothing.
+    local rate = 0.0
+    if freeze == nil or freeze < FROZEN then
+        rate = BU_coldFactor(container)
+    end
+
+    local hours = (now - packedAt) * rate * BU_spoilRate() * BU_rotSpeed()
+    return age + hours / HOURS_PER_DAY
 end
 
-local function BU_effectiveFreeze(item, now, container)
-    if not item then
-        return nil
-    end
-    if item:IsFood() then
-        return item:getFreezingTime()
-    end
-
-    local modData = item:getModData()
-    if modData.buFoodAge == nil then
-        return nil
-    end
-    if not BU_canFreeze(item) then
-        return 0
-    end
-
-    local freeze = modData.buFreezeTime or 0
-    local packedAt = modData.buPackedAt
-    if packedAt ~= nil and now ~= nil and now > packedAt then
-        container = container or item:getOutermostContainer()
-        freeze = BU_freezeAfter(freeze, container, now - packedAt)
-    end
-    return freeze
-end
-
--- Where the clock actually moves. Closing the span at the rate it was opened at
--- is what lets a pack cross from a freezer to a backpack without the fridge
--- discount leaking across the move.
+-- Where the clock actually moves. Callers settle a pack while it is still in the
+-- container it spent the span in, which is why nothing has to be remembered
+-- about that container afterwards.
 function BU.settleItem(item, now, container)
     if not item or item:IsFood() or not now then
         return
@@ -259,14 +289,9 @@ function BU.settleItem(item, now, container)
     container = container or item:getOutermostContainer()
     local freeze = BU_effectiveFreeze(item, now, container)
 
-    modData.buFoodAge = BU_effectiveAge(item, now)
+    modData.buFoodAge = BU_effectiveAge(item, now, container, freeze)
     modData.buFreezeTime = freeze
     modData.buPackedAt = now
-    if freeze >= FROZEN then
-        modData.buColdRate = 0.0
-    else
-        modData.buColdRate = BU_coldFactor(container)
-    end
 end
 
 function BU.settleContainer(container, now)
@@ -298,16 +323,10 @@ local function BU_stampAge(item, age, freeze, now)
         return
     end
 
-    local container = item:getOutermostContainer()
     local modData = item:getModData()
     modData.buFoodAge = age
     modData.buFreezeTime = freeze
     modData.buPackedAt = now
-    if freeze >= FROZEN then
-        modData.buColdRate = 0.0
-    else
-        modData.buColdRate = BU_coldFactor(container)
-    end
 end
 
 local function BU_worstAge(items, now)
@@ -345,13 +364,14 @@ function BUInv.testPackPerishable(item, character)
     end
 
     local now = BU.worldAgeHours()
-    local freeze = BU_effectiveFreeze(item, now)
+    local container = item:getOutermostContainer()
+    local freeze = BU_effectiveFreeze(item, now, container)
     if freeze ~= nil and freeze >= FROZEN then
         return true
     end
 
     local baseType = BU.resolveBase(item:getFullType())
-    return not BU_isAgeRotten(baseType, BU_effectiveAge(item, now))
+    return not BU_isAgeRotten(baseType, BU_effectiveAge(item, now, container, freeze))
 end
 
 -- Packing and unpacking are the same move in opposite directions: take the
