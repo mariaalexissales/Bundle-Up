@@ -152,6 +152,12 @@ end
 -- Vanilla scales a fridge and a freezer by the same factor. What makes a
 -- freezer worth more is that its contents eventually freeze solid, and frozen
 -- food does not age at all.
+--
+-- The power test here is getSourceGrid():haveElectricity(), while BU_isFreezing
+-- below asks isPowered(). That mismatch is deliberate: updateAge and isFreezing
+-- ask different questions in vanilla, and matching each call site is what keeps a
+-- carton in step with the loose food beside it. Tidying the two into one test
+-- would be a silent divergence.
 local function BU_coldFactor(container)
     if not container then
         return 1.0
