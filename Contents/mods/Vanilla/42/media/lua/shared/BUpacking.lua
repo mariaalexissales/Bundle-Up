@@ -103,7 +103,11 @@ local function BU_probe(baseType)
 
     local probe = probes[baseType]
     if probe == nil then
-        probe = InventoryItemFactory.CreateItem(baseType) or false
+        -- Caching the failure as false matters as much as caching the item: a
+        -- probe we cannot build must never be retried on every settle, and must
+        -- never take a context menu or a container transfer down with it.
+        local ok, created = pcall(instanceItem, baseType)
+        probe = (ok and created) or false
         probes[baseType] = probe
     end
     if not probe or not probe:IsFood() then
