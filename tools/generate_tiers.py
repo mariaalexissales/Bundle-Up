@@ -129,17 +129,50 @@ def label_for(carton_type, names, tier):
     return tier["label"].format(stem or carton_type.split(".")[-1])
 
 
-def item_block(stem, tier, icon, model, unpack, carton_count):
+def carton_rot():
+    """DaysFresh / DaysTotallyRotten per carton, read off the cartons themselves.
+
+    A case has to rot on exactly the schedule its carton does, or age stops
+    mapping one-to-one as it moves up and down the ladder. Copying from the
+    carton keeps the two in step without a second source of truth, and without
+    this script needing to know where the game is installed.
+    """
+    out = {}
+    for m in re.finditer(r"    item (\w+) \{(.*?)    \}", read("scripts/items/boxed.txt"), re.S):
+        fresh = re.search(r"DaysFresh = ([^,\n]+),", m.group(2))
+        rotten = re.search(r"DaysTotallyRotten = ([^,\n]+),", m.group(2))
+        if fresh and rotten:
+            out[m.group(1)] = (fresh.group(1), rotten.group(1))
+    return out
+
+
+def item_block(stem, tier, icon, model, unpack, carton_count, rot):
     weight = round(carton_count * tier["per"] * 0.12, 1)
+
+    # A perishable case is Food so the engine ages, chills and freezes it the
+    # way it does the loose food it stands in for. CantEat plus OpeningRecipe is
+    # how vanilla keeps an unopened can from being eaten off the shelf.
+    if rot:
+        kind = (
+            "        ItemType = base:food,\n"
+            "        CantEat = true,\n"
+            "        DaysFresh = " + rot[0] + ",\n"
+            "        DaysTotallyRotten = " + rot[1] + ",\n"
+        )
+        open_with = "        OpeningRecipe = " + unpack + ",\n"
+    else:
+        kind = "        ItemType = base:normal,\n"
+        open_with = "        DoubleClickRecipe = " + unpack + ",\n"
+
     return (
         "    item " + stem + tier["name"] + " {\n"
         "        DisplayCategory = " + tier["display_category"] + ",\n"
-        "        ItemType = base:normal,\n"
+        + kind +
         "        Weight = " + str(weight) + ",\n"
         "        Icon = " + icon + ",\n"
         "        WorldStaticModel = " + model + ",\n"
         "        Tags = " + tier["tags"] + ",\n"
-        "        DoubleClickRecipe = " + unpack + ",\n"
+        + open_with +
         "    }"
     )
 
@@ -185,6 +218,7 @@ def recipe_pair(tier, pack, unpack, rows):
 
 def build(bundles, category, names):
     items, recipes, weights, item_names, recipe_names = [], [], [], {}, {}
+    rot = carton_rot()
 
     for tier in TIERS:
         pack = "Pack" + tier["recipe"]
@@ -198,7 +232,8 @@ def build(bundles, category, names):
             icon, model = tier["art"][kind]
             _, carton_count = bundles[carton]
 
-            items.append(item_block(stem, tier, icon, model, unpack, carton_count))
+            items.append(item_block(stem, tier, icon, model, unpack, carton_count,
+                                    rot.get(carton.split(".", 1)[1])))
             weights.append(
                 'BU.Bundles["' + new + '"] = { base = "' + carton + '", count = '
                 + str(tier["per"]) + " }"

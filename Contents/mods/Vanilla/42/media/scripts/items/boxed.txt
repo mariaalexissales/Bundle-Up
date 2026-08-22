@@ -357,11 +357,14 @@ module BundleUp {
     }
     item Dip_SalsaCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
         Weight = 1.5,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
-        DoubleClickRecipe = UnpackDryCarton,
+        OpeningRecipe = UnpackDryCarton,
     }
     item DriedBlackBeansCarton {
         DisplayCategory = Food,
@@ -597,11 +600,14 @@ module BundleUp {
     }
     item OatsRawCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 180,
+        DaysTotallyRotten = 365,
         Weight = 1.5,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
-        DoubleClickRecipe = UnpackDryCarton,
+        OpeningRecipe = UnpackDryCarton,
     }
     item OilOliveCarton {
         DisplayCategory = Food,
@@ -637,19 +643,25 @@ module BundleUp {
     }
     item PepperHabaneroCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 1.5,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
-        DoubleClickRecipe = UnpackDryCarton,
+        OpeningRecipe = UnpackDryCarton,
     }
     item PepperJalapenoCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 1.5,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
-        DoubleClickRecipe = UnpackDryCarton,
+        OpeningRecipe = UnpackDryCarton,
     }
     item PepperJalapenoDriedCarton {
         DisplayCategory = Food,
@@ -709,11 +721,14 @@ module BundleUp {
     }
     item RamenCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 365,
+        DaysTotallyRotten = 730,
         Weight = 1.5,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
-        DoubleClickRecipe = UnpackDryCarton,
+        OpeningRecipe = UnpackDryCarton,
     }
     item RiceVinegarCarton {
         DisplayCategory = Food,
@@ -869,11 +884,14 @@ module BundleUp {
     }
     item YoghurtCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 15,
         Weight = 1.5,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
-        DoubleClickRecipe = UnpackDryCarton,
+        OpeningRecipe = UnpackDryCarton,
     }
 
     item BasilDriedCarton {
@@ -886,11 +904,14 @@ module BundleUp {
     }
     item BellPepperCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item BlackSageDriedCarton {
         DisplayCategory = FirstAid,
@@ -902,11 +923,14 @@ module BundleUp {
     }
     item BroccoliCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item ButterCarton {
         DisplayCategory = Food,
@@ -918,27 +942,36 @@ module BundleUp {
     }
     item CabbageCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 2,
+        DaysTotallyRotten = 4,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item CarrotsCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 8,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item CauliflowerCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item CerealCarton {
         DisplayCategory = Food,
@@ -958,11 +991,14 @@ module BundleUp {
     }
     item CheeseCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 20,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item ChivesDriedCarton {
         DisplayCategory = Food,
@@ -1030,11 +1066,14 @@ module BundleUp {
     }
     item CornCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item CrispyRiceSquareCarton {
         DisplayCategory = Food,
@@ -1046,35 +1085,47 @@ module BundleUp {
     }
     item CucumberCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 14,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item Dip_NachoCheeseCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item Dip_RanchCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item DogFoodBagCrate {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 365,
+        DaysTotallyRotten = 547,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item DriedWhiteBeansCarton {
         DisplayCategory = Food,
@@ -1086,19 +1137,25 @@ module BundleUp {
     }
     item EggplantCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item GarlicCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item GingerbreadmanCarton {
         DisplayCategory = Food,
@@ -1110,19 +1167,25 @@ module BundleUp {
     }
     item GinsengCarton {
         DisplayCategory = FirstAid,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item GreenpeasCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item HotsauceCarton {
         DisplayCategory = Food,
@@ -1134,27 +1197,36 @@ module BundleUp {
     }
     item KaleCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item LeekCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item LettuceCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item MarigoldDriedCarton {
         DisplayCategory = Food,
@@ -1166,11 +1238,14 @@ module BundleUp {
     }
     item MayonnaiseFullCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 13,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item MintHerbDriedCarton {
         DisplayCategory = Food,
@@ -1182,11 +1257,14 @@ module BundleUp {
     }
     item OnionCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item OreganoDriedCarton {
         DisplayCategory = Food,
@@ -1230,11 +1308,14 @@ module BundleUp {
     }
     item PotatoCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item QuaggaCakesCarton {
         DisplayCategory = Food,
@@ -1246,19 +1327,25 @@ module BundleUp {
     }
     item RedRadishCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 7,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item RemouladeFullCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 8,
+        DaysTotallyRotten = 11,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item RiceCarton {
         DisplayCategory = Food,
@@ -1294,11 +1381,14 @@ module BundleUp {
     }
     item SalamiCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 15,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item SaltCarton {
         DisplayCategory = Food,
@@ -1310,51 +1400,69 @@ module BundleUp {
     }
     item SoybeansCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item SpinachCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item SquashCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item SugarBeetCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item SweetPotatoCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item TomatoCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 12,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item TomatoPasteCarton {
         DisplayCategory = Food,
@@ -1374,27 +1482,36 @@ module BundleUp {
     }
     item TurkeyEggCarton {
         DisplayCategory = AnimalPart,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item TurnipCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item WildEggsCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
     item WildGarlicDriedCarton {
         DisplayCategory = Food,
@@ -1406,11 +1523,14 @@ module BundleUp {
     }
     item ZucchiniCarton {
         DisplayCategory = Food,
-        ItemType = base:normal,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 14,
         Weight = 1.5,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
-        DoubleClickRecipe = UnpackFreshCarton,
+        OpeningRecipe = UnpackFreshCarton,
     }
 
     item CircularSawbladeBox {
