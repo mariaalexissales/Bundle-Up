@@ -483,7 +483,7 @@ local AMMO_CARTON_WEIGHTS = {
     SWATStorageAmmunition = 0.04,
 }
 
-applyDistribution("SpawnAmmo", AMMO_CARTON_ITEMS, AMMO_CARTON_WEIGHTS)
+BU_applyDistribution("SpawnAmmo", AMMO_CARTON_ITEMS, AMMO_CARTON_WEIGHTS)
 
 local CAP_CARTON_ITEMS = {
     "BundleUp.CapGunCapCarton",
@@ -494,7 +494,7 @@ local CAP_CARTON_WEIGHTS = {
     WildWestSheriffLocker = 0.1,
 }
 
-applyDistribution("SpawnAmmo", CAP_CARTON_ITEMS, CAP_CARTON_WEIGHTS)
+BU_applyDistribution("SpawnAmmo", CAP_CARTON_ITEMS, CAP_CARTON_WEIGHTS)
 
 local FARMING_ITEMS = {
     "BundleUp.BarleyBagSeedPouch",
