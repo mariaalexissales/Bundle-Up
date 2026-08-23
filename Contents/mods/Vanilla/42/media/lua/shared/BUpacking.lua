@@ -63,7 +63,7 @@ for packType, fluidName in pairs(PACK_FLAVORS) do
 end
 
 function BUInv.testPackPerishable(item, character)
-    return item == nil or not item:isRotten()
+    return item == nil or not item:IsFood() or not item:isRotten()
 end
 
 function BUInv.carryFoodAge(craftRecipeData, character)
