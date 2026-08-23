@@ -28,7 +28,7 @@ function BU.applySpoilage()
 
     for fullType in pairs(BU.Bundles) do
         local pack = sm:getItem(fullType)
-        if pack and pack:IsFood() and pack:getDaysFresh() > 0 then
+        if pack and pack:getDaysFresh() > 0 then
             -- scale off the remembered values, not the current ones, or every
             -- re-run multiplies the last run's result.
             local original = BU.PackRot[fullType]
