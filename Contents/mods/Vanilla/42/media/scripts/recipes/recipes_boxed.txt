@@ -575,7 +575,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.AlcoholBandage;Base.AlcoholWipes;Base.AlcoholedCottonBalls;Base.Pills;Base.PillsAntiDep;Base.PillsBeta;Base.PillsSleepingTablets;Base.PillsVitamins;Base.Tissue;Base.WaterPurificationTablets;Base.BandageDirty;Base.Disinfectant] flags[IsExclusive;ItemCount] mappers[medicalTypes],
+            item 10 [Base.AlcoholBandage;Base.AlcoholWipes;Base.AlcoholedCottonBalls;Base.Pills;Base.PillsAntiDep;Base.PillsBeta;Base.PillsSleepingTablets;Base.PillsVitamins;Base.Tissue;Base.WaterPurificationTablets;Base.BandageDirty;Base.Disinfectant] flags[IsExclusive;ItemCount] mode:destroy mappers[medicalTypes],
         }
         outputs {
             item 1 mapper:medicalTypes,
