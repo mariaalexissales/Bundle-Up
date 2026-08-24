@@ -7,10 +7,10 @@
   "UnboxSmall": "Open Box (25 items)",
   "BoxMedium": "Pack Items in Box",
   "UnboxMedium": "Open Box (50 items)",
-  "BagSmall": "Pack Scrap in Small Sack",
-  "UnbagSmall": "Empty Small Scrap Sack (50 items)",
-  "BagLarge": "Pack Scrap in Large Sack",
-  "UnbagLarge": "Empty Large Scrap Sack (100 items)",
+  "BagSmall": "Pack in Small Sack",
+  "UnbagSmall": "Empty Small Sack (50 items)",
+  "BagLarge": "Pack in Large Sack",
+  "UnbagLarge": "Empty Large Sack (100 items)",
   "BundleSmall": "Bundle Items",
   "UnbundleSmall": "Unbundle Items (5 items)",
   "BundleLarge": "Bundle Items",
@@ -65,5 +65,8 @@
   "PackReadingMiscBundle": "Pack Reading Material in Box",
   "UnpackReadingMiscBundle": "Open Box of Reading Material (10 items)",
   "PackFoodCase": "Pack Food Cartons in Case",
-  "UnpackFoodCase": "Open Food Case (4 cartons)"
+  "UnpackFoodCase": "Open Food Case (4 cartons)",
+  "TieCan4": "Bundle Gas Cans",
+  "UntieCan4": "Untie Gas Cans (4 items)",
+  "UnpackNutsBoltsBox": "Open Nuts & Bolts Box (50 items)"
 }

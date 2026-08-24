@@ -51,6 +51,24 @@ module BundleUp {
         Tags = base:hasmetal,
         DoubleClickRecipe = UnbagLarge,
     }
+    item Coke_Small {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = CokeS,
+        WorldStaticModel = Parcel_ExtraSmall,
+        Tags = base:charcoal;base:isfirefuel,
+        DoubleClickRecipe = UnbagSmall,
+    }
+    item Coke_Large {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = CokeL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:charcoal;base:isfirefuel,
+        DoubleClickRecipe = UnbagLarge,
+    }
     item AluminumScrapSack {
         DisplayCategory = Material,
         ItemType = base:normal,

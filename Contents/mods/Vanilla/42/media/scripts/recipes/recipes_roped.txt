@@ -123,4 +123,44 @@ module BundleUp {
         }
     }
 
+    craftRecipe TieCan4 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 4 [Base.PetrolCan] flags[IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.GasCanR = Base.Rope;Base.PetrolCan,
+            BundleUp.GasCanSR = Base.SheetRope;Base.PetrolCan,
+        }
+    }
+
+    craftRecipe UntieCan4 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GasCanR;BundleUp.GasCanSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 4 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.GasCanR,
+            Base.SheetRope = BundleUp.GasCanSR,
+        }
+        itemMapper itemTypes {
+            Base.PetrolCan = BundleUp.GasCanR,
+            Base.PetrolCan = BundleUp.GasCanSR,
+        }
+    }
+
 }

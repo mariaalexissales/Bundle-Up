@@ -2125,7 +2125,7 @@ module BundleUp {
         Weight = 0.8,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackSupplyBox,
+        DoubleClickRecipe = UnpackNutsBoltsBox,
     }
     item PagerBox {
         DisplayCategory = Electronics,

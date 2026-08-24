@@ -629,7 +629,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.AdhesiveTapeBox;Base.Aluminum;Base.Amplifier;Base.BakingSoda;Base.BatteryBox;Base.Buckle;Base.ButterKnife;Base.Button;Base.CandleBox;Base.CorrectionFluid;Base.Doorknob;Base.DuctTapeBox;Base.ElectricWire;Base.Epoxy;Base.FiberglassTape;Base.FishingHookBox;Base.FishingLine;Base.Fork;Base.Garbagebag_box;Base.GasmaskFilter;Base.Glue;Base.GravyMix;Base.Hairgel;Base.Hairspray2;Base.Hinge;Base.InsectRepellent;Base.JarLid;Base.JigLure;Base.LightBulbBlue;Base.LightBulbBox;Base.LightBulbCyan;Base.LightBulbGreen;Base.LightBulbMagenta;Base.LightBulbOrange;Base.LightBulbPink;Base.LightBulbPurple;Base.LightBulbRed;Base.LightBulbYellow;Base.Lighter;Base.LighterBBQ;Base.LighterDisposable;Base.MagnesiumFirestarter;Base.MakeupEyeshadow;Base.MakeupFoundation;Base.Matches;Base.MinnowLure;Base.MotionSensor;Base.NutsBolts;Base.Pager;Base.PancakeMix;Base.PaperNapkins2;Base.PaperclipBox;Base.Pillow;Base.PremiumFishingLine;Base.RadioReceiver;Base.RadioTransmitter;Base.RatPoison;Base.Receiver;Base.Remote;Base.SlugRepellent;Base.SmallAnimalBone;Base.SmallHandle;Base.Soap2;Base.Sparklers;Base.Sponge;Base.Spoon;Base.Tarp;Base.Thread_Aramid;Base.Thread_Sinew;Base.Timer;Base.TimerCrafted;Base.TissueBox;Base.ToiletPaper;Base.Toothbrush;Base.TriggerCrafted;Base.Twine;Base.Vinegar2;Base.Vinegar_Jug;Base.WeldingRods;Base.Whetstone;Base.Woodglue;Base.Yeast;Base.Zipties] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 10 [Base.AdhesiveTapeBox;Base.Aluminum;Base.Amplifier;Base.BakingSoda;Base.BatteryBox;Base.Buckle;Base.ButterKnife;Base.Button;Base.CandleBox;Base.CorrectionFluid;Base.Doorknob;Base.DuctTapeBox;Base.ElectricWire;Base.Epoxy;Base.FiberglassTape;Base.FishingHookBox;Base.FishingLine;Base.Fork;Base.Garbagebag_box;Base.GasmaskFilter;Base.Glue;Base.GravyMix;Base.Hairgel;Base.Hairspray2;Base.Hinge;Base.InsectRepellent;Base.JarLid;Base.JigLure;Base.LightBulbBlue;Base.LightBulbBox;Base.LightBulbCyan;Base.LightBulbGreen;Base.LightBulbMagenta;Base.LightBulbOrange;Base.LightBulbPink;Base.LightBulbPurple;Base.LightBulbRed;Base.LightBulbYellow;Base.Lighter;Base.LighterBBQ;Base.LighterDisposable;Base.MagnesiumFirestarter;Base.MakeupEyeshadow;Base.MakeupFoundation;Base.Matches;Base.MinnowLure;Base.MotionSensor;50:Base.NutsBolts;Base.Pager;Base.PancakeMix;Base.PaperNapkins2;Base.PaperclipBox;Base.Pillow;Base.PremiumFishingLine;Base.RadioReceiver;Base.RadioTransmitter;Base.RatPoison;Base.Receiver;Base.Remote;Base.SlugRepellent;Base.SmallAnimalBone;Base.SmallHandle;Base.Soap2;Base.Sparklers;Base.Sponge;Base.Spoon;Base.Tarp;Base.Thread_Aramid;Base.Thread_Sinew;Base.Timer;Base.TimerCrafted;Base.TissueBox;Base.ToiletPaper;Base.Toothbrush;Base.TriggerCrafted;Base.Twine;Base.Vinegar2;Base.Vinegar_Jug;Base.WeldingRods;Base.Whetstone;Base.Woodglue;Base.Yeast;Base.Zipties] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -727,7 +727,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.AdhesiveTapeBoxCrate;BundleUp.AluminumBox;BundleUp.AmplifierBox;BundleUp.BakingSodaBox;BundleUp.BatteryBoxCrate;BundleUp.BuckleBox;BundleUp.ButterKnifeBox;BundleUp.ButtonBox;BundleUp.CandleBoxCrate;BundleUp.CorrectionFluidBox;BundleUp.DoorknobBox;BundleUp.DuctTapeBoxCrate;BundleUp.ElectricWireBox;BundleUp.EpoxyBox;BundleUp.FiberglassTapeBox;BundleUp.FishingHookBoxCrate;BundleUp.FishingLineBox;BundleUp.ForkBox;BundleUp.Garbagebag_boxBox;BundleUp.GasmaskFilterBox;BundleUp.GlueBox;BundleUp.GravyMixBox;BundleUp.HairgelBox;BundleUp.Hairspray2Box;BundleUp.HingeBox;BundleUp.InsectRepellentBox;BundleUp.JarLidBox;BundleUp.JigLureBox;BundleUp.LightBulbBlueBox;BundleUp.LightBulbBoxCrate;BundleUp.LightBulbCyanBox;BundleUp.LightBulbGreenBox;BundleUp.LightBulbMagentaBox;BundleUp.LightBulbOrangeBox;BundleUp.LightBulbPinkBox;BundleUp.LightBulbPurpleBox;BundleUp.LightBulbRedBox;BundleUp.LightBulbYellowBox;BundleUp.LighterBox;BundleUp.LighterBBQBox;BundleUp.LighterDisposableBox;BundleUp.MagnesiumFirestarterBox;BundleUp.MakeupEyeshadowBox;BundleUp.MakeupFoundationBox;BundleUp.MatchesBox;BundleUp.MinnowLureBox;BundleUp.MotionSensorBox;BundleUp.NutsBoltsBox;BundleUp.PagerBox;BundleUp.PancakeMixBox;BundleUp.PaperNapkins2Box;BundleUp.PaperclipBoxCrate;BundleUp.PillowBox;BundleUp.PremiumFishingLineBox;BundleUp.RadioReceiverBox;BundleUp.RadioTransmitterBox;BundleUp.RatPoisonBox;BundleUp.ReceiverBox;BundleUp.RemoteBox;BundleUp.SlugRepellentBox;BundleUp.SmallAnimalBoneBox;BundleUp.SmallHandleBox;BundleUp.Soap2Box;BundleUp.SparklersBox;BundleUp.SpongeBox;BundleUp.SpoonBox;BundleUp.TarpBox;BundleUp.Thread_AramidBox;BundleUp.Thread_SinewBox;BundleUp.TimerBox;BundleUp.TimerCraftedBox;BundleUp.TissueBoxCrate;BundleUp.ToiletPaperBox;BundleUp.ToothbrushBox;BundleUp.TriggerCraftedBox;BundleUp.TwineBox;BundleUp.Vinegar2Box;BundleUp.Vinegar_JugBox;BundleUp.WeldingRodsBox;BundleUp.WhetstoneBox;BundleUp.WoodglueBox;BundleUp.YeastBox;BundleUp.ZiptiesBox] mappers[itemTypes],
+            item 1 [BundleUp.AdhesiveTapeBoxCrate;BundleUp.AluminumBox;BundleUp.AmplifierBox;BundleUp.BakingSodaBox;BundleUp.BatteryBoxCrate;BundleUp.BuckleBox;BundleUp.ButterKnifeBox;BundleUp.ButtonBox;BundleUp.CandleBoxCrate;BundleUp.CorrectionFluidBox;BundleUp.DoorknobBox;BundleUp.DuctTapeBoxCrate;BundleUp.ElectricWireBox;BundleUp.EpoxyBox;BundleUp.FiberglassTapeBox;BundleUp.FishingHookBoxCrate;BundleUp.FishingLineBox;BundleUp.ForkBox;BundleUp.Garbagebag_boxBox;BundleUp.GasmaskFilterBox;BundleUp.GlueBox;BundleUp.GravyMixBox;BundleUp.HairgelBox;BundleUp.Hairspray2Box;BundleUp.HingeBox;BundleUp.InsectRepellentBox;BundleUp.JarLidBox;BundleUp.JigLureBox;BundleUp.LightBulbBlueBox;BundleUp.LightBulbBoxCrate;BundleUp.LightBulbCyanBox;BundleUp.LightBulbGreenBox;BundleUp.LightBulbMagentaBox;BundleUp.LightBulbOrangeBox;BundleUp.LightBulbPinkBox;BundleUp.LightBulbPurpleBox;BundleUp.LightBulbRedBox;BundleUp.LightBulbYellowBox;BundleUp.LighterBox;BundleUp.LighterBBQBox;BundleUp.LighterDisposableBox;BundleUp.MagnesiumFirestarterBox;BundleUp.MakeupEyeshadowBox;BundleUp.MakeupFoundationBox;BundleUp.MatchesBox;BundleUp.MinnowLureBox;BundleUp.MotionSensorBox;BundleUp.PagerBox;BundleUp.PancakeMixBox;BundleUp.PaperNapkins2Box;BundleUp.PaperclipBoxCrate;BundleUp.PillowBox;BundleUp.PremiumFishingLineBox;BundleUp.RadioReceiverBox;BundleUp.RadioTransmitterBox;BundleUp.RatPoisonBox;BundleUp.ReceiverBox;BundleUp.RemoteBox;BundleUp.SlugRepellentBox;BundleUp.SmallAnimalBoneBox;BundleUp.SmallHandleBox;BundleUp.Soap2Box;BundleUp.SparklersBox;BundleUp.SpongeBox;BundleUp.SpoonBox;BundleUp.TarpBox;BundleUp.Thread_AramidBox;BundleUp.Thread_SinewBox;BundleUp.TimerBox;BundleUp.TimerCraftedBox;BundleUp.TissueBoxCrate;BundleUp.ToiletPaperBox;BundleUp.ToothbrushBox;BundleUp.TriggerCraftedBox;BundleUp.TwineBox;BundleUp.Vinegar2Box;BundleUp.Vinegar_JugBox;BundleUp.WeldingRodsBox;BundleUp.WhetstoneBox;BundleUp.WoodglueBox;BundleUp.YeastBox;BundleUp.ZiptiesBox] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
@@ -780,7 +780,6 @@ module BundleUp {
             Base.Matches = BundleUp.MatchesBox,
             Base.MinnowLure = BundleUp.MinnowLureBox,
             Base.MotionSensor = BundleUp.MotionSensorBox,
-            Base.NutsBolts = BundleUp.NutsBoltsBox,
             Base.Pager = BundleUp.PagerBox,
             Base.PancakeMix = BundleUp.PancakeMixBox,
             Base.PaperNapkins2 = BundleUp.PaperNapkins2Box,
@@ -816,6 +815,19 @@ module BundleUp {
             Base.Woodglue = BundleUp.WoodglueBox,
             Base.Yeast = BundleUp.YeastBox,
             Base.Zipties = BundleUp.ZiptiesBox,
+        }
+    }
+
+    craftRecipe UnpackNutsBoltsBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.NutsBoltsBox],
+        }
+        outputs {
+            item 50 Base.NutsBolts,
         }
     }
 }
