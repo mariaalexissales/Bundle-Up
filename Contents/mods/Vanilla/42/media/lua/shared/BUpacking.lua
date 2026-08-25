@@ -63,7 +63,9 @@ for packType, fluidName in pairs(PACK_FLAVORS) do
 end
 
 function BUInv.testPackPerishable(item, character)
-    return item == nil or not item:isRotten()
+    -- isRotten is Food-only. the non-perishable cartons are base:normal, so this
+    -- guard is what keeps the handcraft window from dying on them.
+    return item == nil or not item:IsFood() or not item:isRotten()
 end
 
 function BUInv.carryFoodAge(craftRecipeData, character)
