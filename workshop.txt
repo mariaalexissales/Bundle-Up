@@ -1,6 +1,6 @@
 version=1
 id=3746632343
-title=Bundle Up!
+title=Bundle Up! - A Packing Mod
 description=[h1]Bundle Up[/h1]
 description=[h2]Ready for B42.20!![/h2]
 description=[b]Meant to organize our excessive amounts of stuff![/b]
