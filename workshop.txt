@@ -1,6 +1,6 @@
 version=1
 id=3746632343
-title=Bundle Up!
+title=Bundle Up! - A Packing Mod
 description=[h1]Bundle Up[/h1]
 description=[h2]Ready for B42.20!![/h2]
 description=[b]Meant to organize our excessive amounts of stuff![/b]
@@ -33,6 +33,8 @@ description=
 description=[b]New loot:[/b] magazine cartons turn up in gun stores, army and SWAT storage at about a quarter the rate of the boxes, and cap cartons in the Wild West sheriff furniture that already carried the boxes.
 description=
 description=[b]Fixed:[/b] cartons of non-perishable food (granola bars, chocolate, crisps, cookies, dry goods) threw a Lua error every time the crafting window refreshed, and couldn’t be packed into a Case at all. Both sorted.
+description=
+description=[b]Fixed:[/b] the Sandbox spoilage rate only ever slowed the carton down, never what came out of it - so at 0% a carton would sit there looking perfectly fresh and still unpack into a pile of rotten food. Packing and unpacking now carry how much shelf life is left rather than a raw day count, so 0% really does hold food exactly as you packed it, and 50% really does make it last twice as long. Changing the setting also applies to cartons you already have instead of only new ones.
 description=
 description=*Listen, I  know that the plank bundle is just a log bundle but now with the plank texture. The budget** didn’t include Blender courses.
 description=
