@@ -2,6 +2,8 @@
 --ESTRAL--
 ----------
 
+require "BU_ApplySpoilage"
+
 BU = BU or {}
 BUInv = BUInv or {}
 
@@ -68,15 +70,27 @@ function BUInv.testPackPerishable(item, character)
     return item == nil or not item:IsFood() or not item:isRotten()
 end
 
+local function BU_shelfLife(item)
+    local life = item:getOffAgeMax()
+    if life == nil or life <= 0 then
+        return nil
+    end
+    return life
+end
+
 function BUInv.carryFoodAge(craftRecipeData, character)
     local consumed = craftRecipeData:getAllConsumedItems()
 
-    local oldest, softest = nil, nil
+    local oldest, softest, oldestRank = nil, nil, nil
     for i = 0, consumed:size() - 1 do
         local item = consumed:get(i)
         if item and item:IsFood() then
-            if oldest == nil or item:getAge() > oldest:getAge() then
-                oldest = item
+            BU.refreshPack(item)
+
+            local life = BU_shelfLife(item)
+            local rank = life and (item:getAge() / life) or item:getAge()
+            if oldestRank == nil or rank > oldestRank then
+                oldest, oldestRank = item, rank
             end
             if softest == nil or item:getFreezingTime() < softest:getFreezingTime() then
                 softest = item
@@ -87,12 +101,22 @@ function BUInv.carryFoodAge(craftRecipeData, character)
         return
     end
 
+    local sourceLife = BU_shelfLife(oldest)
     local now = BU.worldAgeHours()
     local created = craftRecipeData:getAllCreatedItems()
     for i = 0, created:size() - 1 do
         local item = created:get(i)
         if item and item:IsFood() then
-            item:setAge(oldest:getAge())
+            -- a carton's rot thresholds are stretched by the spoilage rate and its
+            -- contents' are not, so raw days leak the stretch across the boundary.
+            -- carry the fraction of shelf life instead.
+            local life = BU_shelfLife(item)
+            local age = oldest:getAge()
+            if life and sourceLife then
+                age = age * (life / sourceLife)
+            end
+
+            item:setAge(age)
             if now ~= nil then
                 item:setLastAged(now)
             end
