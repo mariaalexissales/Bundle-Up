@@ -48,4 +48,41 @@ function BU.applySpoilage()
     end
 end
 
+function BU.spoilTargets(fullType)
+    local original = BU.PackRot[fullType]
+    if original == nil then
+        return nil
+    end
+
+    local scale = BU_spoilScale()
+    if scale == nil then
+        return NEVER_ROTS, NEVER_ROTS
+    end
+    return original.fresh * scale, original.rotten * scale
+end
+
+function BU.refreshPack(item)
+    if not item or not item:IsFood() then
+        return
+    end
+
+    local fresh, rotten = BU.spoilTargets(item:getFullType())
+    if fresh == nil then
+        return
+    end
+
+    local current = item:getOffAgeMax()
+    if current == nil or current <= 0 or math.abs(current - rotten) < 0.001 then
+        return
+    end
+
+    -- settle the age under the old thresholds first, or the days since lastAged
+    -- get counted at the new scale.
+    item:updateAge()
+    item:setAge(item:getAge() * (rotten / current))
+    item:setOffAge(fresh)
+    item:setOffAgeMax(rotten)
+end
+
 Events.OnGameStart.Add(BU.applySpoilage)
+Events.OnServerStarted.Add(BU.applySpoilage)
