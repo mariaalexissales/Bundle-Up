@@ -38,7 +38,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
-            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar]flags[IsExclusive;ItemCount] mappers[bundleTypes],
+            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] flags[IsExclusive;ItemCount] mappers[bundleTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
