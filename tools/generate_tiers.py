@@ -34,6 +34,7 @@ TIERS = [
         "packs": "Carton",
         "per": 4,
         "recipe": "FoodCase",
+        "file": "tiered.txt",
         "display_category": "Food",
         "tags": "base:ignorezombiedensity",
         "verb": ("Pack Food Cartons in Case", "Open Food Case (4 cartons)"),
@@ -52,12 +53,13 @@ def read(path):
     return (MEDIA / path).read_text(encoding="utf-8")
 
 
-def write(path, text, changed):
+def write(path, text, changed, check=False):
     target = MEDIA / path
     old = target.read_text(encoding="utf-8") if target.exists() else None
     if old != text:
         changed.append(str(Path(path)))
-        target.write_text(text, encoding="utf-8", newline="\n")
+        if not check:
+            target.write_text(text, encoding="utf-8", newline="\n")
 
 
 def load_bundles():
@@ -110,6 +112,8 @@ def food_cartons(bundles, category):
     return out
 
 
+DEFAULT_REDUCTION = 17
+
 # Rung names that already appear as item suffixes, longest first so that a
 # name ending in both is trimmed by the more specific one.
 RUNG_SUFFIXES = ("Carton", "Crate", "Box", "Pack", "Sack", "Pouch")
@@ -144,8 +148,34 @@ def carton_rot():
     return out
 
 
-def item_block(stem, tier, icon, model, unpack, carton_count, rot):
-    weight = round(carton_count * tier["per"] * 0.12, 1)
+def declared_weights(path):
+    """The Weight each item in a generated file already carries."""
+    out = {}
+    if not (MEDIA / path).exists():
+        return out
+    for m in re.finditer(r"\n    item (\w+) \{(.*?)\n    \}", read(path), re.S):
+        found = re.search(r"Weight = ([\d.]+),", m.group(2))
+        if found:
+            out["BundleUp." + m.group(1)] = found.group(1)
+    return out
+
+
+def weight_for(new, carton, tier, settled, cartons):
+    """Keep the weight the rung already declares; only size a brand new one.
+
+    applyWeights chains full-precision weights down the stack, so rebuilding a
+    case here from the carton's rounded Weight lands a cent away from what the
+    game computes.
+    """
+    if new in settled:
+        return settled[new]
+    below = cartons.get(carton)
+    if below is None:
+        raise RuntimeError(carton + " has no weight to size " + new + " from")
+    return "%g" % round(below * tier["per"] * (1 - DEFAULT_REDUCTION / 100), 2)
+
+
+def item_block(stem, tier, icon, model, unpack, weight, rot):
 
     if rot:
         kind = (
@@ -163,7 +193,7 @@ def item_block(stem, tier, icon, model, unpack, carton_count, rot):
         "    item " + stem + tier["name"] + " {\n"
         "        DisplayCategory = " + tier["display_category"] + ",\n"
         + kind +
-        "        Weight = " + str(weight) + ",\n"
+        "        Weight = " + weight + ",\n"
         "        Icon = " + icon + ",\n"
         "        WorldStaticModel = " + model + ",\n"
         "        Tags = " + tier["tags"] + ",\n"
@@ -201,7 +231,7 @@ def recipe_pair(tier, pack, unpack, rows):
         "        onCreate = " + tier["on_create"] + ",\n"
         "        category = Packing,\n"
         "        inputs {\n"
-        "            item 1 [" + upper + "] mappers[tierMap],\n"
+        "            item 1 [" + upper + "] flags[AllowRottenItem;AllowFrozenItem] mappers[tierMap],\n"
         "        }\n"
         "        outputs {\n"
         "            item " + per + " mapper:tierMap,\n"
@@ -214,20 +244,23 @@ def recipe_pair(tier, pack, unpack, rows):
 def build(bundles, category, names):
     items, recipes, weights, item_names, recipe_names = [], [], [], {}, {}
     rot = carton_rot()
+    cartons = {k: float(v) for k, v in declared_weights("scripts/items/boxed.txt").items()}
 
     for tier in TIERS:
         pack = "Pack" + tier["recipe"]
         unpack = "Unpack" + tier["recipe"]
         recipe_names[pack], recipe_names[unpack] = tier["verb"]
 
+        settled = declared_weights("scripts/items/" + tier["file"])
+
         rows = []
         for carton, kind in food_cartons(bundles, category):
             stem = strip_rung(carton.split(".", 1)[1], tier["packs"])
             new = "BundleUp." + stem + tier["name"]
             icon, model = tier["art"][kind]
-            _, carton_count = bundles[carton]
 
-            items.append(item_block(stem, tier, icon, model, unpack, carton_count,
+            items.append(item_block(stem, tier, icon, model, unpack,
+                                    weight_for(new, carton, tier, settled, cartons),
                                     rot.get(carton.split(".", 1)[1])))
             weights.append(
                 'BU.Bundles["' + new + '"] = { base = "' + carton + '", count = '
@@ -241,13 +274,13 @@ def build(bundles, category, names):
     return items, recipes, weights, item_names, recipe_names
 
 
-def splice_json(path, generated, changed):
+def splice_json(path, generated, changed, check=False):
     """Keep hand-written entries in place, park generated ones at the end."""
     existing = json.loads(read(path))
     kept = {k: v for k, v in existing.items() if k not in generated}
     merged = list(kept.items()) + [(k, generated[k]) for k in sorted(generated)]
     body = ",\n".join("  " + json.dumps(k) + ": " + json.dumps(v) for k, v in merged)
-    write(path, "{\n" + body + "\n}\n", changed)
+    write(path, "{\n" + body + "\n}\n", changed, check)
 
 
 def main():
@@ -263,17 +296,17 @@ def main():
     changed = []
     write("scripts/items/tiered.txt",
           BANNER_SCRIPT + STAMP_SCRIPT + MODULE_HEAD + "\n\n".join(items) + "\n}\n",
-          changed)
+          changed, args.check)
     write("scripts/recipes/recipes_tiered.txt",
           BANNER_SCRIPT + STAMP_SCRIPT + MODULE_HEAD + "\n\n".join(recipes) + "\n}\n",
-          changed)
+          changed, args.check)
     write("lua/shared/BU_WeightData_Tiers.lua",
           BANNER_LUA + STAMP_LUA + '\nrequire "BU_WeightData"\n\n'
           "BU = BU or {}\nBU.Bundles = BU.Bundles or {}\n\n"
           + "\n".join(weights) + "\n",
-          changed)
-    splice_json("lua/shared/Translate/EN/ItemName.json", item_names, changed)
-    splice_json("lua/shared/Translate/EN/Recipes.json", recipe_names, changed)
+          changed, args.check)
+    splice_json("lua/shared/Translate/EN/ItemName.json", item_names, changed, args.check)
+    splice_json("lua/shared/Translate/EN/Recipes.json", recipe_names, changed, args.check)
 
     if args.check:
         if changed:

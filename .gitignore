@@ -1,1 +1,4 @@
 .vscode/
+__pycache__/
+tools/sync_weights.py
+tools/base_weights.json

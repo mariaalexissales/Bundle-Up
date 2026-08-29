@@ -6,7 +6,7 @@ module BundleUp {
     imports {
         Base,
     }
-    
+
     craftRecipe BundleSmall {
         timedAction = Making,
         time = 5,
@@ -18,7 +18,7 @@ module BundleUp {
         outputs {
             item 1 mapper:itemTypes,
         }
-        itemMapper itemTypes{
+        itemMapper itemTypes {
             BundleUp.WireCable_Small = Base.Wire,
             BundleUp.SmallMetalSheetS = Base.SmallSheetMetal,
         }
@@ -35,7 +35,7 @@ module BundleUp {
         outputs {
             item 5 mapper:itemTypes,
         }
-        itemMapper itemTypes{
+        itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Small,
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetS,
         }
@@ -52,7 +52,7 @@ module BundleUp {
         outputs {
             item 1 mapper:itemTypes,
         }
-        itemMapper itemTypes{
+        itemMapper itemTypes {
             BundleUp.WireCable_Large = Base.Wire,
             BundleUp.SmallMetalSheetL = Base.SmallSheetMetal,
         }
@@ -69,7 +69,7 @@ module BundleUp {
         outputs {
             item 10 mapper:itemTypes,
         }
-        itemMapper itemTypes{
+        itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Large,
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetL,
         }
@@ -193,7 +193,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 6 [Base.Pop3] mode:destroy flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+            item 6 [Base.Pop3] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
         }
         outputs {
             item 1 BundleUp.GingerAleSP,
@@ -219,7 +219,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 6 [Base.Pop;Base.Pop2] mode:destroy flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[sodaTypes],
+            item 6 [Base.Pop;Base.Pop2] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[sodaTypes],
         }
         outputs {
             item 1 mapper:sodaTypes,
