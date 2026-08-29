@@ -21,6 +21,10 @@ BU.Bundles = {
     ["BundleUp.IronPipesLSR"]   = { base = "Base.MetalPipe",      count = 10 },
     ["BundleUp.IronBarLR"]      = { base = "Base.IronBar",        count = 10 },
     ["BundleUp.IronBarLSR"]     = { base = "Base.IronBar",        count = 10 },
+    ["BundleUp.GasCanR"]        = { base = "Base.PetrolCan",      count = 4  },
+    ["BundleUp.GasCanSR"]       = { base = "Base.PetrolCan",      count = 4  },
+    ["BundleUp.GasCanFullR"]    = { base = "Base.PetrolCan",      count = 4, fluid = 10 },
+    ["BundleUp.GasCanFullSR"]   = { base = "Base.PetrolCan",      count = 4, fluid = 10 },
 
     ["BundleUp.NailsBox_Small"]   = { base = "Base.Nails",        count = 25  },
     ["BundleUp.NailsBox_Medium"]  = { base = "Base.Nails",        count = 50  },
@@ -67,6 +71,7 @@ BU.BaseCategory = {
     ["Base.SodaCan"]         = "ReductionMetal",
     ["Base.Plank"]           = "ReductionWood",
     ["Base.StoneBlock"]      = "ReductionStone",
+    ["Base.PetrolCan"]       = "ReductionOther",
 }
 
 -- A pack's base is usually a vanilla item, but a nested pack names another
