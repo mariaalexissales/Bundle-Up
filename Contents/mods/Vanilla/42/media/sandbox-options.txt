@@ -90,7 +90,7 @@ option BundleUp.SpawnLiterature
 
 option BundleUp.ReductionDefault
 {
-    type = integer, min = 0, max = 100, default = 0,
+    type = integer, min = 0, max = 100, default = 17,
     page = BundleUp, translation = BundleUp_ReductionDefault,
 }
 
@@ -232,27 +232,39 @@ option BundleUp.Item_IronBarLSR
     page = BundleUp, translation = BundleUp_Item_IronBarLSR,
 }
 
-option BundleUp.Item_NailsBox_Small
+option BundleUp.Item_GasCanR
 {
     type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GasCanR,
+}
+
+option BundleUp.Item_GasCanSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GasCanSR,
+}
+
+option BundleUp.Item_NailsBox_Small
+{
+    type = integer, min = -1, max = 100, default = 60,
     page = BundleUp, translation = BundleUp_Item_NailsBox_Small,
 }
 
 option BundleUp.Item_NailsBox_Medium
 {
-    type = integer, min = -1, max = 100, default = -1,
+    type = integer, min = -1, max = 100, default = 60,
     page = BundleUp, translation = BundleUp_Item_NailsBox_Medium,
 }
 
 option BundleUp.Item_ScrewsBox_Small
 {
-    type = integer, min = -1, max = 100, default = -1,
+    type = integer, min = -1, max = 100, default = 60,
     page = BundleUp, translation = BundleUp_Item_ScrewsBox_Small,
 }
 
 option BundleUp.Item_ScrewsBox_Medium
 {
-    type = integer, min = -1, max = 100, default = -1,
+    type = integer, min = -1, max = 100, default = 60,
     page = BundleUp, translation = BundleUp_Item_ScrewsBox_Medium,
 }
 
@@ -278,6 +290,18 @@ option BundleUp.Item_SilverScrap_Large
 {
     type = integer, min = -1, max = 100, default = -1,
     page = BundleUp, translation = BundleUp_Item_SilverScrap_Large,
+}
+
+option BundleUp.Item_Coke_Small
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_Coke_Small,
+}
+
+option BundleUp.Item_Coke_Large
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_Coke_Large,
 }
 
 option BundleUp.Item_PenBox_Black
@@ -332,6 +356,18 @@ option BundleUp.Item_GingerAleSP
 {
     type = integer, min = -1, max = 100, default = -1,
     page = BundleUp, translation = BundleUp_Item_GingerAleSP,
+}
+
+option BundleUp.Item_SodaPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SodaPack,
+}
+
+option BundleUp.Item_DietSodaPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_DietSodaPack,
 }
 
 option BundleUp.Item_BlueberrySP
