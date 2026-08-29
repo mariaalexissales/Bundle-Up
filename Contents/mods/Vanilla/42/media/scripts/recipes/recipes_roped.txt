@@ -130,7 +130,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
-            item 4 [Base.PetrolCan] flags[IsExclusive;ItemCount] mappers[bundleTypes],
+            item 4 [Base.PetrolCan] flags[IsEmpty;IsExclusive;ItemCount] mappers[bundleTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
@@ -160,6 +160,47 @@ module BundleUp {
         itemMapper itemTypes {
             Base.PetrolCan = BundleUp.GasCanR,
             Base.PetrolCan = BundleUp.GasCanSR,
+        }
+    }
+
+    craftRecipe TieCanFull4 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 4 [Base.PetrolCan] flags[IsFull;IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.GasCanFullR = Base.Rope;Base.PetrolCan,
+            BundleUp.GasCanFullSR = Base.SheetRope;Base.PetrolCan,
+        }
+    }
+
+    craftRecipe UntieCanFull4 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        onCreate = BUInv.unpackFullGasCans,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.GasCanFullR;BundleUp.GasCanFullSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 4 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.GasCanFullR,
+            Base.SheetRope = BundleUp.GasCanFullSR,
+        }
+        itemMapper itemTypes {
+            Base.PetrolCan = BundleUp.GasCanFullR,
+            Base.PetrolCan = BundleUp.GasCanFullSR,
         }
     }
 
