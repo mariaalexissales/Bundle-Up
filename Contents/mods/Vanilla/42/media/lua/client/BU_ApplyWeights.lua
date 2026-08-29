@@ -46,7 +46,9 @@ function BU.applyWeights()
         local bundle = sm:getItem(fullType)
         local baseItem = sm:getItem(def.base)
         if bundle and baseItem then
-            local raw = baseItem:getActualWeight() * def.count
+            -- a fluid pack is weighed full: the can and the litres it holds, at 1kg
+            -- each. an empty pack of the same can simply leaves fluid unset.
+            local raw = (baseItem:getActualWeight() + (def.fluid or 0)) * def.count
             local weight = raw * (1 - BU_reductionFor(fullType, def, sv) / 100)
             if weight < MIN_WEIGHT then weight = MIN_WEIGHT end
             bundle:setActualWeight(weight)
