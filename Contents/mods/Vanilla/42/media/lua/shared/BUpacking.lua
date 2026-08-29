@@ -46,6 +46,24 @@ function BUInv.unpackSodaPack(craftRecipeData, character)
     end
 end
 
+function BUInv.unpackFullGasCans(craftRecipeData, character)
+    local petrol = Fluid.Get("Petrol")
+    if not petrol then
+        return
+    end
+
+    local outputItems = craftRecipeData:getAllCreatedItems()
+    for i = 0, outputItems:size() - 1 do
+        local can = outputItems:get(i)
+        -- the rope comes out in this same list, and has no fluid container
+        local fluidContainer = can:getFluidContainer()
+        if fluidContainer then
+            fluidContainer:Empty()
+            fluidContainer:addFluid(petrol, fluidContainer:getCapacity())
+        end
+    end
+end
+
 local function BU_isCanOfFlavor(can, fluidName)
     local fluidContainer = can:getFluidContainer()
     if not fluidContainer or not fluidContainer:isFull() then
