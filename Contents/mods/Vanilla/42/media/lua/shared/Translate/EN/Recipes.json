@@ -64,8 +64,10 @@
   "UnpackMagazineBundle": "Open Box of Magazines (10 items)",
   "PackReadingMiscBundle": "Pack Reading Material in Box",
   "UnpackReadingMiscBundle": "Open Box of Reading Material (10 items)",
-  "TieCan4": "Bundle Gas Cans",
-  "UntieCan4": "Untie Gas Cans (4 items)",
+  "TieCan4": "Pack Empty Gas Cans",
+  "UntieCan4": "Unpack Empty Gas Cans (4 items)",
+  "TieCanFull4": "Pack Full Gas Cans",
+  "UntieCanFull4": "Unpack Full Gas Cans (4 items)",
   "UnpackNutsBoltsBox": "Open Nuts & Bolts Box (50 items)",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
