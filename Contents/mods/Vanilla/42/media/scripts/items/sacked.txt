@@ -13,7 +13,7 @@ module BundleUp {
         Weight = 2.07,
         Icon = SackSack,
         WorldStaticModel = SandBag_Ground,
-        DoubleClickRecipe = UnpackSack,
+        DoubleClickRecipe = Unsack,
     }
     item GoldScrap_Small {
         DisplayCategory = Material,
