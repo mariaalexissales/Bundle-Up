@@ -23,6 +23,8 @@ BU.Bundles = {
     ["BundleUp.IronBarLSR"]     = { base = "Base.IronBar",        count = 10 },
     ["BundleUp.GasCanR"]        = { base = "Base.PetrolCan",      count = 4  },
     ["BundleUp.GasCanSR"]       = { base = "Base.PetrolCan",      count = 4  },
+    ["BundleUp.GasCanFullR"]    = { base = "Base.PetrolCan",      count = 4, fluid = 10 },
+    ["BundleUp.GasCanFullSR"]   = { base = "Base.PetrolCan",      count = 4, fluid = 10 },
 
     ["BundleUp.NailsBox_Small"]   = { base = "Base.Nails",        count = 25  },
     ["BundleUp.NailsBox_Medium"]  = { base = "Base.Nails",        count = 50  },
