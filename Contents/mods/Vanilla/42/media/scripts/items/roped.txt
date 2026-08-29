@@ -10,7 +10,7 @@ module BundleUp {
     item PlankR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 5.0,
+        Weight = 12.45,
         Icon = PlankR,
         WorldStaticModel = Plank_Rope,
         Tags = base:isfirefuel,
@@ -20,7 +20,7 @@ module BundleUp {
     item PlankSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 5.0,
+        Weight = 12.45,
         Icon = PlankSR,
         WorldStaticModel = Plank_SheetRope,
         Tags = base:isfirefuel,
@@ -30,7 +30,7 @@ module BundleUp {
     item SheetMetalR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 8.3,
         Icon = SheetMetalR,
         WorldStaticModel = SheetMetal_Rope,
         Tags = base:hasmetal,
@@ -40,7 +40,7 @@ module BundleUp {
     item SheetMetalSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 8.3,
         Icon = SheetMetalSR,
         WorldStaticModel = SheetMetal_SheetRope,
         Tags = base:hasmetal,
@@ -50,7 +50,7 @@ module BundleUp {
     item IronPipesR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 6.22,
         Icon = IronPipesR,
         WorldStaticModel = MetalStock_Rope,
         Tags = base:hasmetal,
@@ -60,7 +60,7 @@ module BundleUp {
     item IronPipesSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 6.22,
         Icon = IronPipesSR,
         WorldStaticModel = MetalStock_SheetRope,
         Tags = base:hasmetal,
@@ -70,7 +70,7 @@ module BundleUp {
     item IronBarR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 8.3,
         Icon = IronBarR,
         WorldStaticModel = MetalStock_Rope,
         Tags = base:hasmetal,
@@ -80,7 +80,7 @@ module BundleUp {
     item IronBarSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 8.3,
         Icon = IronBarSR,
         WorldStaticModel = MetalStock_SheetRope,
         Tags = base:hasmetal,
@@ -90,7 +90,7 @@ module BundleUp {
     item PlankLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 7.5,
+        Weight = 24.9,
         Icon = PlankLR,
         WorldStaticModel = Plank_Rope_Large,
         Tags = base:isfirefuel,
@@ -100,7 +100,7 @@ module BundleUp {
     item PlankLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 7.5,
+        Weight = 24.9,
         Icon = PlankLSR,
         WorldStaticModel = Plank_SheetRope_Large,
         Tags = base:isfirefuel,
@@ -110,7 +110,7 @@ module BundleUp {
     item SheetMetalLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 6.0,
+        Weight = 16.6,
         Icon = SheetMetalLR,
         WorldStaticModel = SheetMetal_Rope_Large,
         Tags = base:hasmetal,
@@ -120,7 +120,7 @@ module BundleUp {
     item SheetMetalLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 6.0,
+        Weight = 16.6,
         Icon = SheetMetalLSR,
         WorldStaticModel = SheetMetal_SheetRope_Large,
         Tags = base:hasmetal,
@@ -130,7 +130,7 @@ module BundleUp {
     item IronPipesLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 6.0,
+        Weight = 12.45,
         Icon = IronPipesLR,
         WorldStaticModel = MetalStock_Rope_Large,
         Tags = base:hasmetal,
@@ -140,7 +140,7 @@ module BundleUp {
     item IronPipesLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 6.0,
+        Weight = 12.45,
         Icon = IronPipesLSR,
         WorldStaticModel = MetalStock_SheetRope_Large,
         Tags = base:hasmetal,
@@ -150,7 +150,7 @@ module BundleUp {
     item IronBarLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 6.0,
+        Weight = 16.6,
         Icon = IronBarLR,
         WorldStaticModel = MetalStock_Rope_Large,
         Tags = base:hasmetal,
@@ -160,7 +160,7 @@ module BundleUp {
     item IronBarLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 6.0,
+        Weight = 16.6,
         Icon = IronBarLSR,
         WorldStaticModel = MetalStock_SheetRope_Large,
         Tags = base:hasmetal,
@@ -170,7 +170,7 @@ module BundleUp {
     item GasCanR {
         DisplayCategory = VehicleMaintenance,
         ItemType = base:normal,
-        Weight = 6.4,
+        Weight = 5.31,
         Icon = GasCanR,
         WorldStaticModel = GasCan_Ground,
         Tags = base:petrol,
@@ -180,7 +180,7 @@ module BundleUp {
     item GasCanSR {
         DisplayCategory = VehicleMaintenance,
         ItemType = base:normal,
-        Weight = 6.4,
+        Weight = 5.31,
         Icon = GasCanSR,
         WorldStaticModel = GasCan_Ground,
         Tags = base:petrol,

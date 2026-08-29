@@ -50,7 +50,7 @@ module BundleUp {
     item PenBox_Black {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = PenBox,
         WorldStaticModel = Parcel_ExtraSmall,
         DoubleClickRecipe = UnboxPens,
@@ -59,7 +59,7 @@ module BundleUp {
     item PenBox_Blue {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = PenBox,
         WorldStaticModel = Parcel_ExtraSmall,
         DoubleClickRecipe = UnboxPens,
@@ -68,7 +68,7 @@ module BundleUp {
     item PenBox_Red {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = PenBox,
         WorldStaticModel = Parcel_ExtraSmall,
         DoubleClickRecipe = UnboxPens,
@@ -77,7 +77,7 @@ module BundleUp {
     item PenBox_Green {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = PenBox,
         WorldStaticModel = Parcel_ExtraSmall,
         DoubleClickRecipe = UnboxPens,
@@ -86,7 +86,7 @@ module BundleUp {
     item BBQSauceCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -94,7 +94,7 @@ module BundleUp {
     item BalsamicVinegarCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -102,7 +102,7 @@ module BundleUp {
     item BeefJerkyCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -110,7 +110,7 @@ module BundleUp {
     item CandyCaramelsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -118,7 +118,7 @@ module BundleUp {
     item CandyCornCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -126,7 +126,7 @@ module BundleUp {
     item CandyFruitSlicesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -134,7 +134,7 @@ module BundleUp {
     item CandyGummyfishCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -142,7 +142,7 @@ module BundleUp {
     item CandyMolassesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -150,7 +150,7 @@ module BundleUp {
     item CandyNovapopsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -158,7 +158,7 @@ module BundleUp {
     item CandycaneCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -166,7 +166,7 @@ module BundleUp {
     item ChocolateCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -174,7 +174,7 @@ module BundleUp {
     item ChocolateChipsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -182,7 +182,7 @@ module BundleUp {
     item Chocolate_ButterchunkersCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -190,7 +190,7 @@ module BundleUp {
     item Chocolate_CandyCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -198,7 +198,7 @@ module BundleUp {
     item Chocolate_CrackleCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -206,7 +206,7 @@ module BundleUp {
     item Chocolate_DeuxCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -214,7 +214,7 @@ module BundleUp {
     item Chocolate_GalacticDairyCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -222,7 +222,7 @@ module BundleUp {
     item Chocolate_RoysPBPucksCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -230,7 +230,7 @@ module BundleUp {
     item Chocolate_SmirkersCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -238,7 +238,7 @@ module BundleUp {
     item Chocolate_SnikSnakCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -246,7 +246,7 @@ module BundleUp {
     item CilantroDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -254,7 +254,7 @@ module BundleUp {
     item CookieChocolateChipCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -262,7 +262,7 @@ module BundleUp {
     item CookieJellyCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -270,7 +270,7 @@ module BundleUp {
     item CookiesChocolateCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -278,7 +278,7 @@ module BundleUp {
     item CookiesOatmealCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -286,7 +286,7 @@ module BundleUp {
     item CookiesShortbreadCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -294,7 +294,7 @@ module BundleUp {
     item Cornflour2Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -302,7 +302,7 @@ module BundleUp {
     item Cornmeal2Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -310,7 +310,7 @@ module BundleUp {
     item CrackersCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -318,7 +318,7 @@ module BundleUp {
     item CrispsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -326,7 +326,7 @@ module BundleUp {
     item Crisps2Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -334,7 +334,7 @@ module BundleUp {
     item Crisps3Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -342,7 +342,7 @@ module BundleUp {
     item Crisps4Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -350,7 +350,7 @@ module BundleUp {
     item DehydratedMeatStickCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -361,7 +361,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 60,
         DaysTotallyRotten = 75,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         OpeningRecipe = UnpackDryCarton,
@@ -369,7 +369,7 @@ module BundleUp {
     item DriedBlackBeansCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -377,7 +377,7 @@ module BundleUp {
     item DriedChickpeasCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -385,7 +385,7 @@ module BundleUp {
     item DriedKidneyBeansCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -393,7 +393,7 @@ module BundleUp {
     item DriedLentilsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -401,7 +401,7 @@ module BundleUp {
     item DriedSplitPeasCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -409,7 +409,7 @@ module BundleUp {
     item Flour2Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -417,7 +417,7 @@ module BundleUp {
     item GrahamCrackersCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -425,7 +425,7 @@ module BundleUp {
     item GranolaBarCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -433,7 +433,7 @@ module BundleUp {
     item GumCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -441,7 +441,7 @@ module BundleUp {
     item GummyBearsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -449,7 +449,7 @@ module BundleUp {
     item GummyWormsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -457,7 +457,7 @@ module BundleUp {
     item HardCandiesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -465,7 +465,7 @@ module BundleUp {
     item HiHisCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -473,7 +473,7 @@ module BundleUp {
     item HoneyCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 3.98,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -481,7 +481,7 @@ module BundleUp {
     item JamFruitCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -489,7 +489,7 @@ module BundleUp {
     item JamMarmaladeCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -497,7 +497,7 @@ module BundleUp {
     item JellyBeansCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -505,7 +505,7 @@ module BundleUp {
     item JujubesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -513,7 +513,7 @@ module BundleUp {
     item KetchupCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -521,7 +521,7 @@ module BundleUp {
     item LardCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -529,7 +529,7 @@ module BundleUp {
     item LavenderPetalsDriedCarton {
         DisplayCategory = Gardening,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -537,7 +537,7 @@ module BundleUp {
     item LicoriceBlackCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -545,7 +545,7 @@ module BundleUp {
     item LicoriceRedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -553,7 +553,7 @@ module BundleUp {
     item MacaroniCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -561,7 +561,7 @@ module BundleUp {
     item MapleSyrupCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -569,7 +569,7 @@ module BundleUp {
     item MargarineCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -577,7 +577,7 @@ module BundleUp {
     item MarinaraCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -585,7 +585,7 @@ module BundleUp {
     item MarshmallowsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -593,7 +593,7 @@ module BundleUp {
     item MustardCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -604,7 +604,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 180,
         DaysTotallyRotten = 365,
-        Weight = 1.5,
+        Weight = 7.97,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         OpeningRecipe = UnpackDryCarton,
@@ -612,7 +612,7 @@ module BundleUp {
     item OilOliveCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -620,7 +620,7 @@ module BundleUp {
     item OilVegetableCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -628,7 +628,7 @@ module BundleUp {
     item PeanutButterCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -636,7 +636,7 @@ module BundleUp {
     item PepperCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -647,7 +647,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 5,
         DaysTotallyRotten = 8,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         OpeningRecipe = UnpackDryCarton,
@@ -658,7 +658,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 5,
         DaysTotallyRotten = 8,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         OpeningRecipe = UnpackDryCarton,
@@ -666,7 +666,7 @@ module BundleUp {
     item PepperJalapenoDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -674,7 +674,7 @@ module BundleUp {
     item PlonkiesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -682,7 +682,7 @@ module BundleUp {
     item PopcornCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -690,7 +690,7 @@ module BundleUp {
     item PorkRindsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -698,7 +698,7 @@ module BundleUp {
     item PowderedGarlicCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -706,7 +706,7 @@ module BundleUp {
     item PowderedOnionCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -714,7 +714,7 @@ module BundleUp {
     item PretzelCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -725,7 +725,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 365,
         DaysTotallyRotten = 730,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         OpeningRecipe = UnpackDryCarton,
@@ -733,7 +733,7 @@ module BundleUp {
     item RiceVinegarCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -741,7 +741,7 @@ module BundleUp {
     item RockCandyCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -749,7 +749,7 @@ module BundleUp {
     item ScoutCookiesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -757,7 +757,7 @@ module BundleUp {
     item SeasoningSaltCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -765,7 +765,7 @@ module BundleUp {
     item Seasoning_BasilCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -773,7 +773,7 @@ module BundleUp {
     item Seasoning_ChivesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -781,7 +781,7 @@ module BundleUp {
     item Seasoning_CilantroCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -789,7 +789,7 @@ module BundleUp {
     item Seasoning_OreganoCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -797,7 +797,7 @@ module BundleUp {
     item Seasoning_ParsleyCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -805,7 +805,7 @@ module BundleUp {
     item Seasoning_RosemaryCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -813,7 +813,7 @@ module BundleUp {
     item Seasoning_SageCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -821,7 +821,7 @@ module BundleUp {
     item Seasoning_ThymeCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -829,7 +829,7 @@ module BundleUp {
     item SesameOilCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -837,7 +837,7 @@ module BundleUp {
     item SnoGlobesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -845,7 +845,7 @@ module BundleUp {
     item SoysauceCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -853,7 +853,7 @@ module BundleUp {
     item SugarCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 5.98,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -861,7 +861,7 @@ module BundleUp {
     item SugarBrownCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 5.98,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -869,7 +869,7 @@ module BundleUp {
     item Teabag2Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -877,7 +877,7 @@ module BundleUp {
     item ThymeDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackDryCarton,
@@ -888,7 +888,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 10,
         DaysTotallyRotten = 15,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Medium_Food,
         WorldStaticModel = Parcel_Food_Medium,
         OpeningRecipe = UnpackDryCarton,
@@ -897,7 +897,7 @@ module BundleUp {
     item BasilDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -908,7 +908,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 5,
         DaysTotallyRotten = 8,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -916,7 +916,7 @@ module BundleUp {
     item BlackSageDriedCarton {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -927,7 +927,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 4,
         DaysTotallyRotten = 6,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -935,7 +935,7 @@ module BundleUp {
     item ButterCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -946,7 +946,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 2,
         DaysTotallyRotten = 4,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -957,7 +957,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 6,
         DaysTotallyRotten = 8,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -968,7 +968,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 4,
         DaysTotallyRotten = 6,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -976,7 +976,7 @@ module BundleUp {
     item CerealCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -984,7 +984,7 @@ module BundleUp {
     item ChamomileDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -995,7 +995,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 14,
         DaysTotallyRotten = 20,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1003,7 +1003,7 @@ module BundleUp {
     item ChivesDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1011,7 +1011,7 @@ module BundleUp {
     item ChocoCakesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1019,7 +1019,7 @@ module BundleUp {
     item ChocolateCoveredCoffeeBeansCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1027,7 +1027,7 @@ module BundleUp {
     item CinnamonRollCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1035,7 +1035,7 @@ module BundleUp {
     item CocoaPowderCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 9.96,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1043,7 +1043,7 @@ module BundleUp {
     item Coffee2Carton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 9.96,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1051,7 +1051,7 @@ module BundleUp {
     item CommonMallowDriedCarton {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1059,7 +1059,7 @@ module BundleUp {
     item CookiesSugarCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1070,7 +1070,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 5,
         DaysTotallyRotten = 8,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1078,7 +1078,7 @@ module BundleUp {
     item CrispyRiceSquareCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1089,7 +1089,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 6,
         DaysTotallyRotten = 14,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1100,7 +1100,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 60,
         DaysTotallyRotten = 75,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1111,7 +1111,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 60,
         DaysTotallyRotten = 75,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1122,7 +1122,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 365,
         DaysTotallyRotten = 547,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1130,7 +1130,7 @@ module BundleUp {
     item DriedWhiteBeansCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1141,7 +1141,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 5,
         DaysTotallyRotten = 8,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1152,7 +1152,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 14,
         DaysTotallyRotten = 28,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1160,7 +1160,7 @@ module BundleUp {
     item GingerbreadmanCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1171,7 +1171,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 14,
         DaysTotallyRotten = 28,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1182,7 +1182,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 3,
         DaysTotallyRotten = 5,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1190,7 +1190,7 @@ module BundleUp {
     item HotsauceCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1201,7 +1201,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 3,
         DaysTotallyRotten = 5,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1212,7 +1212,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 5,
         DaysTotallyRotten = 8,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1223,7 +1223,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 3,
         DaysTotallyRotten = 5,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1231,7 +1231,7 @@ module BundleUp {
     item MarigoldDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1242,7 +1242,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 10,
         DaysTotallyRotten = 13,
-        Weight = 1.5,
+        Weight = 4.98,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1250,7 +1250,7 @@ module BundleUp {
     item MintHerbDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1261,7 +1261,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 14,
         DaysTotallyRotten = 28,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1269,7 +1269,7 @@ module BundleUp {
     item OreganoDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1277,7 +1277,7 @@ module BundleUp {
     item ParsleyDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1285,7 +1285,7 @@ module BundleUp {
     item PastaCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1293,7 +1293,7 @@ module BundleUp {
     item PepperHabaneroDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1301,7 +1301,7 @@ module BundleUp {
     item PicklesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1312,7 +1312,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 28,
         DaysTotallyRotten = 280,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1320,7 +1320,7 @@ module BundleUp {
     item QuaggaCakesCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1331,7 +1331,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 3,
         DaysTotallyRotten = 7,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1342,7 +1342,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 8,
         DaysTotallyRotten = 11,
-        Weight = 1.5,
+        Weight = 4.98,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1350,7 +1350,7 @@ module BundleUp {
     item RiceCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 19.92,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1358,7 +1358,7 @@ module BundleUp {
     item RosePetalsDriedCarton {
         DisplayCategory = Gardening,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1366,7 +1366,7 @@ module BundleUp {
     item RosemaryDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1374,7 +1374,7 @@ module BundleUp {
     item SageDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1385,7 +1385,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 10,
         DaysTotallyRotten = 15,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1393,7 +1393,7 @@ module BundleUp {
     item SaltCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1404,7 +1404,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 3,
         DaysTotallyRotten = 5,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1415,7 +1415,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 4,
         DaysTotallyRotten = 6,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1426,7 +1426,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 14,
         DaysTotallyRotten = 28,
-        Weight = 1.5,
+        Weight = 4.98,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1437,7 +1437,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 4,
         DaysTotallyRotten = 6,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1448,7 +1448,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 28,
         DaysTotallyRotten = 280,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1459,7 +1459,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 4,
         DaysTotallyRotten = 12,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1467,7 +1467,7 @@ module BundleUp {
     item TomatoPasteCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1475,7 +1475,7 @@ module BundleUp {
     item TortillaChipsCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1486,7 +1486,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 14,
         DaysTotallyRotten = 21,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1497,7 +1497,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 28,
         DaysTotallyRotten = 280,
-        Weight = 1.5,
+        Weight = 1.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1508,7 +1508,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 14,
         DaysTotallyRotten = 21,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1516,7 +1516,7 @@ module BundleUp {
     item WildGarlicDriedCarton {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 1.5,
+        Weight = 1.0,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
@@ -1527,7 +1527,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 6,
         DaysTotallyRotten = 14,
-        Weight = 1.5,
+        Weight = 2.99,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = Parcel_Produce_Small,
         OpeningRecipe = UnpackFreshCarton,
@@ -1536,7 +1536,7 @@ module BundleUp {
     item CircularSawbladeBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1544,7 +1544,7 @@ module BundleUp {
     item IronBandBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1552,7 +1552,7 @@ module BundleUp {
     item IronBandSmallBox {
         DisplayCategory = Tool,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1560,7 +1560,7 @@ module BundleUp {
     item IronBarHalfBox {
         DisplayCategory = AnimalPartWeapon,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1568,7 +1568,7 @@ module BundleUp {
     item IronBarQuarterBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1576,7 +1576,7 @@ module BundleUp {
     item IronBlockBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1584,7 +1584,7 @@ module BundleUp {
     item IronChunkBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1592,7 +1592,7 @@ module BundleUp {
     item IronPieceBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1600,7 +1600,7 @@ module BundleUp {
     item RakeHeadBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1608,7 +1608,7 @@ module BundleUp {
     item SteelBarHalfBox {
         DisplayCategory = MaterialWeapon,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1616,7 +1616,7 @@ module BundleUp {
     item SteelBarQuarterBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1624,7 +1624,7 @@ module BundleUp {
     item SteelBlockBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1632,7 +1632,7 @@ module BundleUp {
     item SteelChunkBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1640,7 +1640,7 @@ module BundleUp {
     item SteelPieceBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 3.0,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBox,
@@ -1649,7 +1649,7 @@ module BundleUp {
     item AlcoholBandageBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1657,7 +1657,7 @@ module BundleUp {
     item AlcoholWipesBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 2.49,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1665,7 +1665,7 @@ module BundleUp {
     item AlcoholedCottonBallsBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1673,7 +1673,7 @@ module BundleUp {
     item PillsBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 1.66,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1681,7 +1681,7 @@ module BundleUp {
     item PillsAntiDepBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 1.66,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1689,7 +1689,7 @@ module BundleUp {
     item PillsBetaBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 1.66,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1697,7 +1697,7 @@ module BundleUp {
     item PillsSleepingTabletsBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 1.66,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1705,7 +1705,7 @@ module BundleUp {
     item PillsVitaminsBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 1.66,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1713,7 +1713,7 @@ module BundleUp {
     item TissueBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1721,7 +1721,7 @@ module BundleUp {
     item WaterPurificationTabletsBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 1.66,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1729,7 +1729,7 @@ module BundleUp {
     item BandageDirtyBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1737,7 +1737,7 @@ module BundleUp {
     item DisinfectantBox {
         DisplayCategory = FirstAid,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 1.66,
         Icon = GenericMedicalParcel1,
         WorldStaticModel = MedicalParcel_Green,
         DoubleClickRecipe = UnpackMedicalBox,
@@ -1746,7 +1746,7 @@ module BundleUp {
     item AdhesiveTapeBoxCrate {
         DisplayCategory = Junk,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 24.9,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1754,7 +1754,7 @@ module BundleUp {
     item AluminumBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1762,7 +1762,7 @@ module BundleUp {
     item AmplifierBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1770,7 +1770,7 @@ module BundleUp {
     item BakingSodaBox {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1778,7 +1778,7 @@ module BundleUp {
     item BatteryBoxCrate {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1786,7 +1786,7 @@ module BundleUp {
     item BuckleBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1794,7 +1794,7 @@ module BundleUp {
     item ButterKnifeBox {
         DisplayCategory = CookingWeapon,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.07,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1802,7 +1802,7 @@ module BundleUp {
     item ButtonBox {
         DisplayCategory = Household,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1810,7 +1810,7 @@ module BundleUp {
     item CandleBoxCrate {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1818,7 +1818,7 @@ module BundleUp {
     item CorrectionFluidBox {
         DisplayCategory = FireSource,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1826,7 +1826,7 @@ module BundleUp {
     item DoorknobBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1834,7 +1834,7 @@ module BundleUp {
     item DuctTapeBoxCrate {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 41.5,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1842,7 +1842,7 @@ module BundleUp {
     item ElectricWireBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1850,7 +1850,7 @@ module BundleUp {
     item EpoxyBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1858,7 +1858,7 @@ module BundleUp {
     item FiberglassTapeBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 6.64,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1866,7 +1866,7 @@ module BundleUp {
     item FishingHookBoxCrate {
         DisplayCategory = Fishing,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1874,7 +1874,7 @@ module BundleUp {
     item FishingLineBox {
         DisplayCategory = Fishing,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1882,7 +1882,7 @@ module BundleUp {
     item ForkBox {
         DisplayCategory = CookingWeapon,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.07,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1890,7 +1890,7 @@ module BundleUp {
     item Garbagebag_boxBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1898,7 +1898,7 @@ module BundleUp {
     item GasmaskFilterBox {
         DisplayCategory = Accessory,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1906,7 +1906,7 @@ module BundleUp {
     item GlueBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1914,7 +1914,7 @@ module BundleUp {
     item GravyMixBox {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1922,7 +1922,7 @@ module BundleUp {
     item HairgelBox {
         DisplayCategory = Appearance,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1930,7 +1930,7 @@ module BundleUp {
     item Hairspray2Box {
         DisplayCategory = Appearance,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 6.64,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1938,7 +1938,7 @@ module BundleUp {
     item HingeBox {
         DisplayCategory = Junk,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1946,7 +1946,7 @@ module BundleUp {
     item InsectRepellentBox {
         DisplayCategory = Camping,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 6.64,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1954,7 +1954,7 @@ module BundleUp {
     item JarLidBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1962,7 +1962,7 @@ module BundleUp {
     item JigLureBox {
         DisplayCategory = Fishing,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1970,7 +1970,7 @@ module BundleUp {
     item LightBulbBlueBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1978,7 +1978,7 @@ module BundleUp {
     item LightBulbBoxCrate {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1986,7 +1986,7 @@ module BundleUp {
     item LightBulbCyanBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -1994,7 +1994,7 @@ module BundleUp {
     item LightBulbGreenBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2002,7 +2002,7 @@ module BundleUp {
     item LightBulbMagentaBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2010,7 +2010,7 @@ module BundleUp {
     item LightBulbOrangeBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2018,7 +2018,7 @@ module BundleUp {
     item LightBulbPinkBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2026,7 +2026,7 @@ module BundleUp {
     item LightBulbPurpleBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2034,7 +2034,7 @@ module BundleUp {
     item LightBulbRedBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2042,7 +2042,7 @@ module BundleUp {
     item LightBulbYellowBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2050,7 +2050,7 @@ module BundleUp {
     item LighterBox {
         DisplayCategory = FireSource,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2058,7 +2058,7 @@ module BundleUp {
     item LighterBBQBox {
         DisplayCategory = Junk,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2066,7 +2066,7 @@ module BundleUp {
     item LighterDisposableBox {
         DisplayCategory = Household,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2074,7 +2074,7 @@ module BundleUp {
     item MagnesiumFirestarterBox {
         DisplayCategory = FireSource,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2082,7 +2082,7 @@ module BundleUp {
     item MakeupEyeshadowBox {
         DisplayCategory = Appearance,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2090,7 +2090,7 @@ module BundleUp {
     item MakeupFoundationBox {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2098,7 +2098,7 @@ module BundleUp {
     item MatchesBox {
         DisplayCategory = Junk,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2106,7 +2106,7 @@ module BundleUp {
     item MinnowLureBox {
         DisplayCategory = Fishing,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2114,7 +2114,7 @@ module BundleUp {
     item MotionSensorBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2122,7 +2122,7 @@ module BundleUp {
     item NutsBoltsBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackNutsBoltsBox,
@@ -2130,7 +2130,7 @@ module BundleUp {
     item PagerBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2138,7 +2138,7 @@ module BundleUp {
     item PancakeMixBox {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2146,7 +2146,7 @@ module BundleUp {
     item PaperNapkins2Box {
         DisplayCategory = LightSource,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2154,7 +2154,7 @@ module BundleUp {
     item PaperclipBoxCrate {
         DisplayCategory = Junk,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2162,7 +2162,7 @@ module BundleUp {
     item PillowBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2170,7 +2170,7 @@ module BundleUp {
     item PremiumFishingLineBox {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2178,7 +2178,7 @@ module BundleUp {
     item RadioReceiverBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2186,7 +2186,7 @@ module BundleUp {
     item RadioTransmitterBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2194,7 +2194,7 @@ module BundleUp {
     item RatPoisonBox {
         DisplayCategory = Accessory,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2202,7 +2202,7 @@ module BundleUp {
     item ReceiverBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2210,7 +2210,7 @@ module BundleUp {
     item RemoteBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2218,7 +2218,7 @@ module BundleUp {
     item SlugRepellentBox {
         DisplayCategory = Household,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2226,7 +2226,7 @@ module BundleUp {
     item SmallAnimalBoneBox {
         DisplayCategory = AnimalPart,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2234,7 +2234,7 @@ module BundleUp {
     item SmallHandleBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2242,7 +2242,7 @@ module BundleUp {
     item Soap2Box {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2250,7 +2250,7 @@ module BundleUp {
     item SparklersBox {
         DisplayCategory = Bug,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2258,7 +2258,7 @@ module BundleUp {
     item SpongeBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2266,7 +2266,7 @@ module BundleUp {
     item SpoonBox {
         DisplayCategory = CookingWeapon,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.07,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2274,7 +2274,7 @@ module BundleUp {
     item TarpBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2282,7 +2282,7 @@ module BundleUp {
     item Thread_AramidBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2290,7 +2290,7 @@ module BundleUp {
     item Thread_SinewBox {
         DisplayCategory = Tool,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2298,7 +2298,7 @@ module BundleUp {
     item TimerBox {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2306,7 +2306,7 @@ module BundleUp {
     item TimerCraftedBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2314,7 +2314,7 @@ module BundleUp {
     item TissueBoxCrate {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2322,7 +2322,7 @@ module BundleUp {
     item ToiletPaperBox {
         DisplayCategory = Household,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2330,7 +2330,7 @@ module BundleUp {
     item ToothbrushBox {
         DisplayCategory = Junk,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2338,7 +2338,7 @@ module BundleUp {
     item TriggerCraftedBox {
         DisplayCategory = Electronics,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2346,7 +2346,7 @@ module BundleUp {
     item TwineBox {
         DisplayCategory = Paint,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2354,7 +2354,7 @@ module BundleUp {
     item Vinegar2Box {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2362,7 +2362,7 @@ module BundleUp {
     item Vinegar_JugBox {
         DisplayCategory = Gardening,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2370,7 +2370,7 @@ module BundleUp {
     item WeldingRodsBox {
         DisplayCategory = Tool,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 12.45,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2378,7 +2378,7 @@ module BundleUp {
     item WhetstoneBox {
         DisplayCategory = Tool,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2386,7 +2386,7 @@ module BundleUp {
     item WoodglueBox {
         DisplayCategory = Household,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2394,7 +2394,7 @@ module BundleUp {
     item YeastBox {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2402,7 +2402,7 @@ module BundleUp {
     item ZiptiesBox {
         DisplayCategory = Tool,
         ItemType = base:normal,
-        Weight = 0.8,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
@@ -2411,7 +2411,7 @@ module BundleUp {
     item 44ClipBox {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackAmmoClipBox,
@@ -2419,7 +2419,7 @@ module BundleUp {
     item JS14ClipBox {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackAmmoClipBox,
@@ -2427,7 +2427,7 @@ module BundleUp {
     item 556ClipBox {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackAmmoClipBox,
@@ -2435,7 +2435,7 @@ module BundleUp {
     item 45ClipBox {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackAmmoClipBox,
@@ -2443,7 +2443,7 @@ module BundleUp {
     item M14ClipBox {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackAmmoClipBox,
@@ -2451,7 +2451,7 @@ module BundleUp {
     item 9mmClipBox {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 0.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackAmmoClipBox,
@@ -2460,7 +2460,7 @@ module BundleUp {
     item CapGunCapCarton {
         DisplayCategory = Memento,
         ItemType = base:normal,
-        Weight = 2.0,
+        Weight = 1.99,
         Icon = Parcel_Medium_Ammo,
         WorldStaticModel = Parcel_Ammo_Medium,
         Tags = base:ignorezombiedensity,
@@ -2470,7 +2470,7 @@ module BundleUp {
     item 44ClipCarton {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
         WorldStaticModel = Parcel_Ammo_Medium,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2480,7 +2480,7 @@ module BundleUp {
     item JS14ClipCarton {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
         WorldStaticModel = Parcel_Ammo_Medium,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2490,7 +2490,7 @@ module BundleUp {
     item 556ClipCarton {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
         WorldStaticModel = Parcel_Ammo_Medium,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2500,7 +2500,7 @@ module BundleUp {
     item 45ClipCarton {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
         WorldStaticModel = Parcel_Ammo_Medium,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2510,7 +2510,7 @@ module BundleUp {
     item M14ClipCarton {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
         WorldStaticModel = Parcel_Ammo_Medium,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2520,7 +2520,7 @@ module BundleUp {
     item 9mmClipCarton {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
         WorldStaticModel = Parcel_Ammo_Medium,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2530,7 +2530,7 @@ module BundleUp {
     item 44ClipCase {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 38.0,
+        Weight = 27.45,
         Icon = AmmoCase,
         WorldStaticModel = Crate_Ammo,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2540,7 +2540,7 @@ module BundleUp {
     item JS14ClipCase {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 38.0,
+        Weight = 27.45,
         Icon = AmmoCase,
         WorldStaticModel = Crate_Ammo,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2550,7 +2550,7 @@ module BundleUp {
     item 556ClipCase {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 38.0,
+        Weight = 27.45,
         Icon = AmmoCase,
         WorldStaticModel = Crate_Ammo,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2560,7 +2560,7 @@ module BundleUp {
     item 45ClipCase {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 38.0,
+        Weight = 27.45,
         Icon = AmmoCase,
         WorldStaticModel = Crate_Ammo,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2570,7 +2570,7 @@ module BundleUp {
     item M14ClipCase {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 38.0,
+        Weight = 27.45,
         Icon = AmmoCase,
         WorldStaticModel = Crate_Ammo,
         Tags = base:hasmetal;base:ignorezombiedensity,
@@ -2580,7 +2580,7 @@ module BundleUp {
     item 9mmClipCase {
         DisplayCategory = Weapon,
         ItemType = base:normal,
-        Weight = 38.0,
+        Weight = 27.45,
         Icon = AmmoCase,
         WorldStaticModel = Crate_Ammo,
         Tags = base:hasmetal;base:ignorezombiedensity,

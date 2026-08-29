@@ -10,7 +10,7 @@ module BundleUp {
     item WireCable_Small {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 2.0,
+        Weight = 4.15,
         Icon = WireCableS,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -20,7 +20,7 @@ module BundleUp {
     item WireCable_Large {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 8.3,
         Icon = WireCableL,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -30,7 +30,7 @@ module BundleUp {
     item SmallMetalSheetS {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 2.0,
+        Weight = 2.07,
         Icon = SmallMetalSheetS,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -40,7 +40,7 @@ module BundleUp {
     item SmallMetalSheetL {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.0,
+        Weight = 4.15,
         Icon = SmallMetalSheetL,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -66,7 +66,7 @@ module BundleUp {
     item SodaPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = GingerSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -76,7 +76,7 @@ module BundleUp {
     item DietSodaPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = GingerSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -86,7 +86,7 @@ module BundleUp {
     item GingerAleSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = GingerSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -96,7 +96,7 @@ module BundleUp {
     item BlueberrySP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = BlueberrySP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -106,7 +106,7 @@ module BundleUp {
     item BubblegumSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = BubblegumSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -116,7 +116,7 @@ module BundleUp {
     item GrapeSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = GrapeSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -126,7 +126,7 @@ module BundleUp {
     item LimeSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = LimeSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -136,7 +136,7 @@ module BundleUp {
     item OrangeSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = OrangeSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -146,7 +146,7 @@ module BundleUp {
     item PineappleSP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = PineappleSP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -156,7 +156,7 @@ module BundleUp {
     item StrawberrySP {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = StrawberrySP,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -166,7 +166,7 @@ module BundleUp {
     item VarietyPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.0,
+        Weight = 1.49,
         Icon = VarietyPack,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -176,7 +176,7 @@ module BundleUp {
     item StoneBlockPack {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 2.49,
         Icon = StoneBlockPack,
         WorldStaticModel = Parcel_Large,
         Tags = base:stone,
@@ -186,7 +186,7 @@ module BundleUp {
     item BookBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -194,7 +194,7 @@ module BundleUp {
     item Book_AdventureNonFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -202,7 +202,7 @@ module BundleUp {
     item Book_ArtBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -210,7 +210,7 @@ module BundleUp {
     item Book_BaseballBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -218,7 +218,7 @@ module BundleUp {
     item Book_BiographyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -226,7 +226,7 @@ module BundleUp {
     item Book_BusinessBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -234,7 +234,7 @@ module BundleUp {
     item Book_ChildsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -242,7 +242,7 @@ module BundleUp {
     item Book_CinemaBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -250,7 +250,7 @@ module BundleUp {
     item Book_ClassicBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -258,7 +258,7 @@ module BundleUp {
     item Book_ClassicFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -266,7 +266,7 @@ module BundleUp {
     item Book_ClassicNonfictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -274,7 +274,7 @@ module BundleUp {
     item Book_ComputerBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -282,7 +282,7 @@ module BundleUp {
     item Book_CrimeFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -290,7 +290,7 @@ module BundleUp {
     item Book_FantasyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -298,7 +298,7 @@ module BundleUp {
     item Book_FarmingBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -306,7 +306,7 @@ module BundleUp {
     item Book_FashionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -314,7 +314,7 @@ module BundleUp {
     item Book_FictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -322,7 +322,7 @@ module BundleUp {
     item Book_GeneralNonFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -330,7 +330,7 @@ module BundleUp {
     item Book_GeneralReferenceBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -338,7 +338,7 @@ module BundleUp {
     item Book_GolfBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -346,7 +346,7 @@ module BundleUp {
     item Book_HistoryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -354,7 +354,7 @@ module BundleUp {
     item Book_HorrorBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -362,7 +362,7 @@ module BundleUp {
     item Book_LegalBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -370,7 +370,7 @@ module BundleUp {
     item Book_LiteraryFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -378,7 +378,7 @@ module BundleUp {
     item Book_MedicalBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -386,7 +386,7 @@ module BundleUp {
     item Book_MilitaryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -394,7 +394,7 @@ module BundleUp {
     item Book_MilitaryHistoryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -402,7 +402,7 @@ module BundleUp {
     item Book_MusicBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -410,7 +410,7 @@ module BundleUp {
     item Book_NatureBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -418,7 +418,7 @@ module BundleUp {
     item Book_OccultBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -426,7 +426,7 @@ module BundleUp {
     item Book_PhilosophyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -434,7 +434,7 @@ module BundleUp {
     item Book_PolicingBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -442,7 +442,7 @@ module BundleUp {
     item Book_PoliticsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -450,7 +450,7 @@ module BundleUp {
     item Book_QuackeryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -458,7 +458,7 @@ module BundleUp {
     item Book_ReligionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -466,7 +466,7 @@ module BundleUp {
     item Book_RichBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -474,7 +474,7 @@ module BundleUp {
     item Book_RomanceBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -482,7 +482,7 @@ module BundleUp {
     item Book_SadNonFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -490,7 +490,7 @@ module BundleUp {
     item Book_SchoolTextbookBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -498,7 +498,7 @@ module BundleUp {
     item Book_ScienceBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -506,7 +506,7 @@ module BundleUp {
     item Book_SciFiBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -514,7 +514,7 @@ module BundleUp {
     item Book_SportsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -522,7 +522,7 @@ module BundleUp {
     item Book_ThrillerBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -530,7 +530,7 @@ module BundleUp {
     item Book_TravelBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -538,7 +538,7 @@ module BundleUp {
     item Book_WesternBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -546,7 +546,7 @@ module BundleUp {
     item Book_BibleBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -554,7 +554,7 @@ module BundleUp {
     item BookFancy_ClassicBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -562,7 +562,7 @@ module BundleUp {
     item BookFancy_ClassicFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -570,7 +570,7 @@ module BundleUp {
     item BookFancy_ClassicNonfictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -578,7 +578,7 @@ module BundleUp {
     item BookFancy_HistoryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -586,7 +586,7 @@ module BundleUp {
     item BookFancy_LegalBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -594,7 +594,7 @@ module BundleUp {
     item BookFancy_MedicalBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -602,7 +602,7 @@ module BundleUp {
     item BookFancy_MilitaryHistoryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -610,7 +610,7 @@ module BundleUp {
     item BookFancy_OccultBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -618,7 +618,7 @@ module BundleUp {
     item BookFancy_PhilosophyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -626,7 +626,7 @@ module BundleUp {
     item BookFancy_PoliticsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -634,7 +634,7 @@ module BundleUp {
     item BookFancy_ReligionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -642,7 +642,7 @@ module BundleUp {
     item BookFancy_BibleBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -650,7 +650,7 @@ module BundleUp {
     item PaperbackBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -658,7 +658,7 @@ module BundleUp {
     item Paperback_AdventureNonFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -666,7 +666,7 @@ module BundleUp {
     item Paperback_ArtBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -674,7 +674,7 @@ module BundleUp {
     item Paperback_BaseballBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -682,7 +682,7 @@ module BundleUp {
     item Paperback_BiographyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -690,7 +690,7 @@ module BundleUp {
     item Paperback_BusinessBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -698,7 +698,7 @@ module BundleUp {
     item Paperback_ChildsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -706,7 +706,7 @@ module BundleUp {
     item Paperback_CinemaBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -714,7 +714,7 @@ module BundleUp {
     item Paperback_ClassicBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -722,7 +722,7 @@ module BundleUp {
     item Paperback_ClassicFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -730,7 +730,7 @@ module BundleUp {
     item Paperback_ClassicNonfictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -738,7 +738,7 @@ module BundleUp {
     item Paperback_ComputerBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -746,7 +746,7 @@ module BundleUp {
     item Paperback_ConspiracyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -754,7 +754,7 @@ module BundleUp {
     item Paperback_CrimeFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -762,7 +762,7 @@ module BundleUp {
     item Paperback_DietBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -770,7 +770,7 @@ module BundleUp {
     item Paperback_FantasyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -778,7 +778,7 @@ module BundleUp {
     item Paperback_FashionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -786,7 +786,7 @@ module BundleUp {
     item Paperback_FictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -794,7 +794,7 @@ module BundleUp {
     item Paperback_GolfBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -802,7 +802,7 @@ module BundleUp {
     item Paperback_HassBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -810,7 +810,7 @@ module BundleUp {
     item Paperback_HistoryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -818,7 +818,7 @@ module BundleUp {
     item Paperback_HorrorBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -826,7 +826,7 @@ module BundleUp {
     item Paperback_LegalBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -834,7 +834,7 @@ module BundleUp {
     item Paperback_LiteraryFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -842,7 +842,7 @@ module BundleUp {
     item Paperback_MedicalBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -850,7 +850,7 @@ module BundleUp {
     item Paperback_MilitaryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -858,7 +858,7 @@ module BundleUp {
     item Paperback_MilitaryHistoryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -866,7 +866,7 @@ module BundleUp {
     item Paperback_MusicBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -874,7 +874,7 @@ module BundleUp {
     item Paperback_NatureBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -882,7 +882,7 @@ module BundleUp {
     item Paperback_NewAgeBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -890,7 +890,7 @@ module BundleUp {
     item Paperback_OccultBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -898,7 +898,7 @@ module BundleUp {
     item Paperback_PhilosophyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -906,7 +906,7 @@ module BundleUp {
     item Paperback_PlayBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -914,7 +914,7 @@ module BundleUp {
     item Paperback_PolicingBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -922,7 +922,7 @@ module BundleUp {
     item Paperback_PoliticsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -930,7 +930,7 @@ module BundleUp {
     item Paperback_PoorBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -938,7 +938,7 @@ module BundleUp {
     item Paperback_QuackeryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -946,7 +946,7 @@ module BundleUp {
     item Paperback_QuigleyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -954,7 +954,7 @@ module BundleUp {
     item Paperback_RelationshipBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -962,7 +962,7 @@ module BundleUp {
     item Paperback_ReligionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -970,7 +970,7 @@ module BundleUp {
     item Paperback_RichBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -978,7 +978,7 @@ module BundleUp {
     item Paperback_RomanceBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -986,7 +986,7 @@ module BundleUp {
     item Paperback_SadNonFictionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -994,7 +994,7 @@ module BundleUp {
     item Paperback_ScaryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1002,7 +1002,7 @@ module BundleUp {
     item Paperback_ScienceBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1010,7 +1010,7 @@ module BundleUp {
     item Paperback_SciFiBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1018,7 +1018,7 @@ module BundleUp {
     item Paperback_SelfHelpBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1026,7 +1026,7 @@ module BundleUp {
     item Paperback_SexyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1034,7 +1034,7 @@ module BundleUp {
     item Paperback_SportsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1042,7 +1042,7 @@ module BundleUp {
     item Paperback_TeensBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1050,7 +1050,7 @@ module BundleUp {
     item Paperback_ThrillerBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1058,7 +1058,7 @@ module BundleUp {
     item Paperback_TravelBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1066,7 +1066,7 @@ module BundleUp {
     item Paperback_TrueCrimeBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1074,7 +1074,7 @@ module BundleUp {
     item Paperback_WesternBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1082,7 +1082,7 @@ module BundleUp {
     item Paperback_BibleBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBookBundle,
@@ -1090,7 +1090,7 @@ module BundleUp {
     item HottieZ_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1098,7 +1098,7 @@ module BundleUp {
     item MagazineBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1106,7 +1106,7 @@ module BundleUp {
     item Magazine_ArtBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1114,7 +1114,7 @@ module BundleUp {
     item Magazine_BusinessBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1122,7 +1122,7 @@ module BundleUp {
     item Magazine_CarBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1130,7 +1130,7 @@ module BundleUp {
     item Magazine_ChildsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1138,7 +1138,7 @@ module BundleUp {
     item Magazine_CinemaBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1146,7 +1146,7 @@ module BundleUp {
     item Magazine_CrimeBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1154,7 +1154,7 @@ module BundleUp {
     item Magazine_FashionBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1162,7 +1162,7 @@ module BundleUp {
     item Magazine_FirearmBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1170,7 +1170,7 @@ module BundleUp {
     item Magazine_GamingBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1178,7 +1178,7 @@ module BundleUp {
     item Magazine_GolfBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1186,7 +1186,7 @@ module BundleUp {
     item Magazine_HealthBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1194,7 +1194,7 @@ module BundleUp {
     item Magazine_HobbyBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1202,7 +1202,7 @@ module BundleUp {
     item Magazine_HorrorBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1210,7 +1210,7 @@ module BundleUp {
     item Magazine_HumorBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1218,7 +1218,7 @@ module BundleUp {
     item Magazine_MilitaryBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1226,7 +1226,7 @@ module BundleUp {
     item Magazine_MusicBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1234,7 +1234,7 @@ module BundleUp {
     item Magazine_OutdoorsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1242,7 +1242,7 @@ module BundleUp {
     item Magazine_PoliceBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1250,7 +1250,7 @@ module BundleUp {
     item Magazine_PopularBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1258,7 +1258,7 @@ module BundleUp {
     item Magazine_RichBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1266,7 +1266,7 @@ module BundleUp {
     item Magazine_ScienceBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1274,7 +1274,7 @@ module BundleUp {
     item Magazine_SportsBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1282,7 +1282,7 @@ module BundleUp {
     item Magazine_TechBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1290,7 +1290,7 @@ module BundleUp {
     item Magazine_TeensBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1298,7 +1298,7 @@ module BundleUp {
     item Magazine_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1306,7 +1306,7 @@ module BundleUp {
     item Magazine_Art_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1314,7 +1314,7 @@ module BundleUp {
     item Magazine_Business_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1322,7 +1322,7 @@ module BundleUp {
     item Magazine_Car_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1330,7 +1330,7 @@ module BundleUp {
     item Magazine_Childs_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1338,7 +1338,7 @@ module BundleUp {
     item Magazine_Cinema_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1346,7 +1346,7 @@ module BundleUp {
     item Magazine_Crime_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1354,7 +1354,7 @@ module BundleUp {
     item Magazine_Fashion_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1362,7 +1362,7 @@ module BundleUp {
     item Magazine_Firearm_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1370,7 +1370,7 @@ module BundleUp {
     item Magazine_Gaming_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1378,7 +1378,7 @@ module BundleUp {
     item Magazine_Golf_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1386,7 +1386,7 @@ module BundleUp {
     item Magazine_Health_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1394,7 +1394,7 @@ module BundleUp {
     item Magazine_Hobby_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1402,7 +1402,7 @@ module BundleUp {
     item Magazine_Horror_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1410,7 +1410,7 @@ module BundleUp {
     item Magazine_Humor_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1418,7 +1418,7 @@ module BundleUp {
     item Magazine_Military_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1426,7 +1426,7 @@ module BundleUp {
     item Magazine_Music_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1434,7 +1434,7 @@ module BundleUp {
     item Magazine_Outdoors_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1442,7 +1442,7 @@ module BundleUp {
     item Magazine_Police_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1450,7 +1450,7 @@ module BundleUp {
     item Magazine_Popular_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1458,7 +1458,7 @@ module BundleUp {
     item Magazine_Rich_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1466,7 +1466,7 @@ module BundleUp {
     item Magazine_Science_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1474,7 +1474,7 @@ module BundleUp {
     item Magazine_Sports_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1482,7 +1482,7 @@ module BundleUp {
     item Magazine_Tech_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1490,7 +1490,7 @@ module BundleUp {
     item Magazine_Teens_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1498,7 +1498,7 @@ module BundleUp {
     item MagazineCrosswordBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1506,7 +1506,7 @@ module BundleUp {
     item HottieZBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1514,7 +1514,7 @@ module BundleUp {
     item TVMagazineBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1522,7 +1522,7 @@ module BundleUp {
     item TVMagazine_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 3.32,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1530,7 +1530,7 @@ module BundleUp {
     item MagazineWordsearchBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackMagazineBundle,
@@ -1538,7 +1538,7 @@ module BundleUp {
     item CatalogBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1546,7 +1546,7 @@ module BundleUp {
     item ComicBookBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 3.32,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1554,7 +1554,7 @@ module BundleUp {
     item ComicBook_RetailBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 3.32,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1562,7 +1562,7 @@ module BundleUp {
     item Diary1Bundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1570,7 +1570,7 @@ module BundleUp {
     item Diary2Bundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 2.49,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1578,7 +1578,7 @@ module BundleUp {
     item GraphPaperBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1586,7 +1586,7 @@ module BundleUp {
     item JournalBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1594,7 +1594,7 @@ module BundleUp {
     item MenuCardBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1602,7 +1602,7 @@ module BundleUp {
     item Newspaper_RecentBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1610,7 +1610,7 @@ module BundleUp {
     item Newspaper_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1618,7 +1618,7 @@ module BundleUp {
     item Newspaper_Knews_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1626,7 +1626,7 @@ module BundleUp {
     item Newspaper_Times_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1634,7 +1634,7 @@ module BundleUp {
     item Newspaper_Herald_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1642,7 +1642,7 @@ module BundleUp {
     item Newspaper_Dispatch_NewBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1650,7 +1650,7 @@ module BundleUp {
     item NotebookBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1658,7 +1658,7 @@ module BundleUp {
     item NotepadBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 1.66,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1666,7 +1666,7 @@ module BundleUp {
     item NewspaperBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1674,7 +1674,7 @@ module BundleUp {
     item PhonebookBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1682,7 +1682,7 @@ module BundleUp {
     item PhotoBookBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 8.3,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1690,7 +1690,7 @@ module BundleUp {
     item ChildsPictureBookBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 4.15,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1698,7 +1698,7 @@ module BundleUp {
     item RPGmanualBundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 6.64,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
@@ -1706,7 +1706,7 @@ module BundleUp {
     item SheetPaper2Bundle {
         DisplayCategory = Literature,
         ItemType = base:normal,
-        Weight = 2.5,
+        Weight = 0.83,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
