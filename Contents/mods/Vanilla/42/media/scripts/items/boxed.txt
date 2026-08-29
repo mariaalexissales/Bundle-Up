@@ -2120,7 +2120,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item NutsBoltsBox {
-        DisplayCategory = Cooking,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 0.8,
         Icon = Parcel_Large_Hardware,
