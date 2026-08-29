@@ -256,7 +256,7 @@ BU.Bundles["BundleUp.MakeupFoundationBox"] = { base = "Base.MakeupFoundation", c
 BU.Bundles["BundleUp.MatchesBox"] = { base = "Base.Matches", count = 10 }
 BU.Bundles["BundleUp.MinnowLureBox"] = { base = "Base.MinnowLure", count = 10 }
 BU.Bundles["BundleUp.MotionSensorBox"] = { base = "Base.MotionSensor", count = 10 }
-BU.Bundles["BundleUp.NutsBoltsBox"] = { base = "Base.NutsBolts", count = 10 }
+BU.Bundles["BundleUp.NutsBoltsBox"] = { base = "Base.NutsBolts", count = 50 }
 BU.Bundles["BundleUp.PagerBox"] = { base = "Base.Pager", count = 10 }
 BU.Bundles["BundleUp.PancakeMixBox"] = { base = "Base.PancakeMix", count = 10 }
 BU.Bundles["BundleUp.PaperNapkins2Box"] = { base = "Base.PaperNapkins2", count = 10 }
