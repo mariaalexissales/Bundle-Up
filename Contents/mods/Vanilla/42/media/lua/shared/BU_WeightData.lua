@@ -21,6 +21,10 @@ BU.Bundles = {
     ["BundleUp.IronPipesLSR"]   = { base = "Base.MetalPipe",      count = 10 },
     ["BundleUp.IronBarLR"]      = { base = "Base.IronBar",        count = 10 },
     ["BundleUp.IronBarLSR"]     = { base = "Base.IronBar",        count = 10 },
+    ["BundleUp.GasCanR"]        = { base = "Base.PetrolCan",      count = 4  },
+    ["BundleUp.GasCanSR"]       = { base = "Base.PetrolCan",      count = 4  },
+    ["BundleUp.GasCanFullR"]    = { base = "Base.PetrolCan",      count = 4, fluid = 10 },
+    ["BundleUp.GasCanFullSR"]   = { base = "Base.PetrolCan",      count = 4, fluid = 10 },
 
     ["BundleUp.NailsBox_Small"]   = { base = "Base.Nails",        count = 25  },
     ["BundleUp.NailsBox_Medium"]  = { base = "Base.Nails",        count = 50  },
@@ -30,6 +34,8 @@ BU.Bundles = {
     ["BundleUp.GoldScrap_Large"]  = { base = "Base.GoldScrap",    count = 100 },
     ["BundleUp.SilverScrap_Small"]= { base = "Base.SilverScrap",  count = 50  },
     ["BundleUp.SilverScrap_Large"]= { base = "Base.SilverScrap",  count = 100 },
+    ["BundleUp.Coke_Small"]       = { base = "Base.Coke",         count = 50  },
+    ["BundleUp.Coke_Large"]       = { base = "Base.Coke",         count = 100 },
     ["BundleUp.PenBox_Black"]     = { base = "Base.Pen",          count = 10  },
     ["BundleUp.PenBox_Blue"]      = { base = "Base.BluePen",      count = 10  },
     ["BundleUp.PenBox_Red"]       = { base = "Base.RedPen",       count = 10  },
@@ -39,7 +45,9 @@ BU.Bundles = {
     ["BundleUp.WireCable_Large"]  = { base = "Base.Wire",           count = 10 },
     ["BundleUp.SmallMetalSheetS"] = { base = "Base.SmallSheetMetal", count = 5  },
     ["BundleUp.SmallMetalSheetL"] = { base = "Base.SmallSheetMetal", count = 10 },
-    ["BundleUp.GingerAleSP"]      = { base = "Base.SodaCan",        count = 6  },
+    ["BundleUp.GingerAleSP"]      = { base = "Base.Pop3",          count = 6  },
+    ["BundleUp.SodaPack"]         = { base = "Base.Pop2",          count = 6  },
+    ["BundleUp.DietSodaPack"]     = { base = "Base.Pop",           count = 6  },
     ["BundleUp.BlueberrySP"]      = { base = "Base.SodaCan",        count = 6  },
     ["BundleUp.BubblegumSP"]      = { base = "Base.SodaCan",        count = 6  },
     ["BundleUp.GrapeSP"]          = { base = "Base.SodaCan",        count = 6  },
@@ -65,8 +73,14 @@ BU.BaseCategory = {
     ["Base.MetalPipe"]       = "ReductionMetal",
     ["Base.IronBar"]         = "ReductionMetal",
     ["Base.SodaCan"]         = "ReductionMetal",
+    ["Base.Pop"]             = "ReductionMetal",
+    ["Base.Pop2"]            = "ReductionMetal",
+    ["Base.Pop3"]            = "ReductionMetal",
     ["Base.Plank"]           = "ReductionWood",
+    -- coke is forge fuel, not timber; it rides the wood slider with charcoal.
+    ["Base.Coke"]            = "ReductionWood",
     ["Base.StoneBlock"]      = "ReductionStone",
+    ["Base.PetrolCan"]       = "ReductionOther",
 }
 
 -- A pack's base is usually a vanilla item, but a nested pack names another
