@@ -186,4 +186,24 @@ module BundleUp {
         Tags = base:petrol,
         DoubleClickRecipe = UntieCan4,
     }
+
+    item GasCanFullR {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 38.51,
+        Icon = GasCanR,
+        WorldStaticModel = GasCan_Ground,
+        Tags = base:petrol,
+        DoubleClickRecipe = UntieCanFull4,
+    }
+
+    item GasCanFullSR {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 38.51,
+        Icon = GasCanSR,
+        WorldStaticModel = GasCan_Ground,
+        Tags = base:petrol,
+        DoubleClickRecipe = UntieCanFull4,
+    }
 }
