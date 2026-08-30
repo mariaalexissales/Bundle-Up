@@ -144,10 +144,9 @@ function BUUI.scanContainers(player)
     return containers, tally, sample
 end
 
--- Mirrors ISInventoryPaneContextMenu.OnNewCraft, which is the path a double-click on a
--- bundle already takes today. Every vanilla caller builds a fresh logic and gives it a
--- craft surface before asking whether a recipe can run; one shared across recipes
--- answers no to all of them.
+-- Mirrors ISInventoryPaneContextMenu.OnNewCraft, the path a double-click on a bundle
+-- already takes today: every vanilla caller builds a fresh logic and gives it a craft
+-- surface before asking whether the recipe can run.
 local function BUUI_probeLogic(player, containers)
     local logic = HandcraftLogic.new(player, nil, nil)
     logic:setIsoObject(logic:findCraftSurface(player, 2))
