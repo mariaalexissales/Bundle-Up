@@ -268,7 +268,9 @@ function BUUI.resolveRows(player, bundling)
                     logic:setRecipeFromContextClick(entry.recipe, item)
 
                     local inputs, satisfied = BUUI_describeInputs(logic, entry)
-                    local max = logic:getPossibleCraftCount(false)
+                    -- the flag is forceRecache: this logic was built a line ago and has
+                    -- no cache to read, so asking for the cached count answers zero.
+                    local max = logic:getPossibleCraftCount(true)
                     local outputs = BUUI.describeOutputs(logic, entry.recipe)
                     local ready = (satisfied and logic:canPerformCurrentRecipe() and max > 0) and true or false
 

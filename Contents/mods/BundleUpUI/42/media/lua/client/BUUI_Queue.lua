@@ -141,7 +141,7 @@ local function BUUI_step()
     logic:setContainers(containers)
     logic:setRecipeFromContextClick(row.entry.recipe, sample)
 
-    if not logic:canPerformCurrentRecipe() or logic:getPossibleCraftCount(false) < 1 then
+    if not logic:canPerformCurrentRecipe() or logic:getPossibleCraftCount(true) < 1 then
         -- This type is spent or blocked, but a merged row may have another behind
         -- it, so step past it rather than abandoning the whole batch.
         job.sourceIndex = job.sourceIndex + 1
