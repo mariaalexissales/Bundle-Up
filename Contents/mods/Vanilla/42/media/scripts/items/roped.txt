@@ -87,6 +87,26 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
+    item SteelRodR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = SteelRodR,
+        WorldStaticModel = MetalStock_Rope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie5,
+    }
+
+    item SteelRodSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = SteelRodSR,
+        WorldStaticModel = MetalStock_SheetRope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie5,
+    }
+
     item PlankLR {
         DisplayCategory = Material,
         ItemType = base:normal,

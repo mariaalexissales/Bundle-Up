@@ -14,7 +14,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
-            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar] flags[IsExclusive;ItemCount] mappers[bundleTypes],
+            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar;Base.MetalBar] flags[IsExclusive;ItemCount] mappers[bundleTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
@@ -28,6 +28,8 @@ module BundleUp {
             BundleUp.IronPipesSR = Base.SheetRope;Base.MetalPipe,
             BundleUp.IronBarR = Base.Rope;Base.IronBar,
             BundleUp.IronBarSR = Base.SheetRope;Base.IronBar,
+            BundleUp.SteelRodR = Base.Rope;Base.MetalBar,
+            BundleUp.SteelRodSR = Base.SheetRope;Base.MetalBar,
         }
     }
 
@@ -61,7 +63,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR;BundleUp.SteelRodR;BundleUp.SteelRodSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
@@ -76,6 +78,8 @@ module BundleUp {
             Base.SheetRope = BundleUp.IronPipesSR,
             Base.Rope = BundleUp.IronBarR,
             Base.SheetRope = BundleUp.IronBarSR,
+            Base.Rope = BundleUp.SteelRodR,
+            Base.SheetRope = BundleUp.SteelRodSR,
         }
         itemMapper itemTypes {
             Base.Plank = BundleUp.PlankR,
@@ -86,6 +90,8 @@ module BundleUp {
             Base.MetalPipe = BundleUp.IronPipesSR,
             Base.IronBar = BundleUp.IronBarR,
             Base.IronBar = BundleUp.IronBarSR,
+            Base.MetalBar = BundleUp.SteelRodR,
+            Base.MetalBar = BundleUp.SteelRodSR,
         }
     }
 
