@@ -287,10 +287,7 @@ function BUUI.resolveRows(player, bundling)
 
                     local source = {
                         fullType = fullType,
-                        item = item,
-                        count = count,
                         container = item:getContainer(),
-                        max = max,
                     }
 
                     local row = byKey[key]
