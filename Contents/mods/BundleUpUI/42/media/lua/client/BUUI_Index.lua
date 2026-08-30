@@ -11,28 +11,51 @@ BUUI.modules = BUUI.modules or { BundleUp = true }
 
 BUUI.recipes = nil
 
+-- one input covers a whole family and each member can carry its own amount - the
+-- boxed recipes write "item 10 [...;50:Base.NutsBolts;...]". the scalar getIntAmount
+-- reads 1 for those, so the keyed lookup is the real number and the scalar a fallback.
+local function BUUI_amountFor(input, fullName)
+    local amount = fullName and input:getAmount(fullName)
+    if not amount or amount < 1 then amount = input:getIntAmount() end
+    return math.ceil(amount)
+end
+
+local function BUUI_largestAmount(input)
+    local possible = input:getPossibleInputItems()
+    if not possible or possible:size() == 0 then return input:getIntAmount() end
+
+    local largest = 0
+    for i = 0, possible:size() - 1 do
+        local amount = BUUI_amountFor(input, possible:get(i):getFullName())
+        if amount > largest then largest = amount end
+    end
+
+    return largest
+end
+
 -- The bulk material is always the input asking for the most of something: Tie5
 -- wants one rope and five planks, PackScrapSack one sandbag and 25 scrap. Going
 -- by amount rather than by flags matters because flags[ItemCount;IsExclusive] is
 -- applied inconsistently across the recipe files - BoxSmall carries none at all.
 local function BUUI_splitInputs(recipe)
     local inputs = recipe:getInputs()
-    if not inputs or inputs:size() == 0 then return nil, nil end
+    if not inputs or inputs:size() == 0 then return nil, nil, 0 end
 
-    local pivot, others = nil, {}
+    local pivot, bulk, others = nil, 0, {}
     for i = 0, inputs:size() - 1 do
         local input = inputs:get(i)
         if input:getResourceType() == ResourceType.Item and not input:isAutomationOnly() then
-            if not pivot or input:getIntAmount() > pivot:getIntAmount() then
+            local amount = BUUI_largestAmount(input)
+            if not pivot or amount > bulk then
                 if pivot then others[#others + 1] = pivot end
-                pivot = input
+                pivot, bulk = input, amount
             else
                 others[#others + 1] = input
             end
         end
     end
 
-    return pivot, others
+    return pivot, others, bulk
 end
 
 local function BUUI_moduleOf(recipe)
@@ -52,17 +75,11 @@ function BUUI.buildIndex()
         local recipe = all:get(i)
         local module = BUUI_moduleOf(recipe)
         if module and BUUI.modules[module] then
-            local pivot, others = BUUI_splitInputs(recipe)
+            local pivot, others, bulk = BUUI_splitInputs(recipe)
             if pivot then
                 -- Packing consumes many to make one and unpacking does the reverse, so the
-                -- pivot amount tells the two apart without matching on recipe names.
-                local entry = {
-                    recipe = recipe,
-                    pivot = pivot,
-                    secondaries = others,
-                    count = pivot:getIntAmount(),
-                    bundling = pivot:getIntAmount() >= 2,
-                }
+                -- bulk amount tells the two apart without matching on recipe names.
+                local bundling = bulk >= 2
 
                 local possible = pivot:getPossibleInputItems()
                 if possible then
@@ -73,7 +90,16 @@ function BUUI.buildIndex()
                             bucket = {}
                             index[fullName] = bucket
                         end
-                        bucket[#bucket + 1] = entry
+
+                        -- an entry per item rather than per recipe, because the family
+                        -- members disagree: a box takes 10 remotes but 50 nuts and bolts.
+                        bucket[#bucket + 1] = {
+                            recipe = recipe,
+                            pivot = pivot,
+                            secondaries = others,
+                            count = BUUI_amountFor(pivot, fullName),
+                            bundling = bundling,
+                        }
                     end
                 end
             end
@@ -138,18 +164,21 @@ end
 -- first possible item is a coin toss, not the one in front of the player. Name what
 -- the logic actually picked up, and fall back to the script's own list only when
 -- nothing was picked up, which is exactly the missing-rope case worth naming.
-local function BUUI_inputLabel(logic, input)
+local function BUUI_inputNames(logic, input)
     local chosen = logic:getSatisfiedInputItems(input)
     if chosen and chosen:size() > 0 then
-        return chosen:get(0):getDisplayName()
+        local item = chosen:get(0)
+        local script = item:getScriptItem()
+        return item:getDisplayName(), script and script:getFullName() or nil
     end
 
     local possible = input:getPossibleInputItems()
     if possible and possible:size() > 0 then
-        return possible:get(0):getDisplayName()
+        local script = possible:get(0)
+        return script:getDisplayName(), script:getFullName()
     end
 
-    return "?"
+    return "?", nil
 end
 
 local function BUUI_describeInputs(logic, entry)
@@ -159,10 +188,12 @@ local function BUUI_describeInputs(logic, entry)
         local ok = logic:isInputSatisfied(input) and true or false
         if not ok then satisfied = false end
 
+        local label, fullName = BUUI_inputNames(logic, input)
+
         parts[#parts + 1] = {
-            label = BUUI_inputLabel(logic, input),
+            label = label,
             have = logic:getInputCount(input),
-            need = input:getIntAmount(),
+            need = BUUI_amountFor(input, fullName),
             satisfied = ok,
         }
     end
