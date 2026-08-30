@@ -15,9 +15,9 @@ BUUI.recipes = nil
 -- boxed recipes write "item 10 [...;50:Base.NutsBolts;...]". the scalar getIntAmount
 -- reads 1 for those, so the keyed lookup is the real number and the scalar a fallback.
 local function BUUI_amountFor(input, fullName)
-    local amount = fullName and input:getAmount(fullName)
-    if not amount or amount < 1 then amount = input:getIntAmount() end
-    return math.ceil(amount)
+    local amount = fullName and input:getIntAmount(fullName) or 0
+    if amount < 1 then amount = input:getIntAmount() end
+    return amount
 end
 
 local function BUUI_largestAmount(input)
