@@ -3,7 +3,10 @@
     "IGUI_BUUI_PanelTooltip": "Packing Panel",
     "IGUI_BUUI_Bundle": "Bundle",
     "IGUI_BUUI_Unbundle": "Unbundle",
+    "IGUI_BUUI_BundleItems": "Bundle Items",
+    "IGUI_BUUI_UnbundleItems": "Unbundle Items",
     "IGUI_BUUI_BundleAll": "Bundle All",
+    "IGUI_BUUI_UnbundleAll": "Unbundle All",
     "IGUI_BUUI_Stop": "Stop",
     "IGUI_BUUI_Max": "MAX",
     "IGUI_BUUI_RefreshLabel": "Refresh",
@@ -13,5 +16,6 @@
     "IGUI_BUUI_NoSources": "Nothing in reach",
     "IGUI_BUUI_Inventory": "Inventory",
     "IGUI_BUUI_Empty": "Nothing here can be bundled",
+    "IGUI_BUUI_EmptyUnbundle": "Nothing here can be unbundled",
     "IGUI_BUUI_Summary": "%1 ready, %2 blocked"
 }
