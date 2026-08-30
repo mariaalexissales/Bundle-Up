@@ -11,9 +11,6 @@ BUUI.modules = BUUI.modules or { BundleUp = true }
 
 BUUI.recipes = nil
 
-local BUUI_PACK = "pack"
-local BUUI_UNPACK = "unpack"
-
 -- The bulk material is always the input asking for the most of something: Tie5
 -- wants one rope and five planks, PackScrapSack one sandbag and 25 scrap. Going
 -- by amount rather than by flags matters because flags[ItemCount;IsExclusive] is
@@ -43,12 +40,6 @@ local function BUUI_moduleOf(recipe)
     return fullType and fullType:match("^([^%.]+)%.") or nil
 end
 
--- Packing consumes many to make one and unpacking does the reverse, so the pivot
--- amount tells the two apart without matching on recipe names.
-local function BUUI_directionOf(pivot)
-    return pivot:getIntAmount() >= 2 and BUUI_PACK or BUUI_UNPACK
-end
-
 function BUUI.buildIndex()
     local index = {}
     local all = ScriptManager.instance:getAllCraftRecipes()
@@ -63,12 +54,14 @@ function BUUI.buildIndex()
         if module and BUUI.modules[module] then
             local pivot, others = BUUI_splitInputs(recipe)
             if pivot then
+                -- Packing consumes many to make one and unpacking does the reverse, so the
+                -- pivot amount tells the two apart without matching on recipe names.
                 local entry = {
                     recipe = recipe,
                     pivot = pivot,
                     secondaries = others,
                     count = pivot:getIntAmount(),
-                    direction = BUUI_directionOf(pivot),
+                    bundling = pivot:getIntAmount() >= 2,
                 }
 
                 local possible = pivot:getPossibleInputItems()
@@ -232,7 +225,7 @@ local function BUUI_outputLabel(outputs)
     return table.concat(parts, " + ")
 end
 
-function BUUI.resolveRows(player, direction)
+function BUUI.resolveRows(player, bundling)
     local index = BUUI.getIndex()
     local containers, tally, sample = BUUI.scanContainers(player)
     local logic = BUUI_probeLogic(player, containers)
@@ -242,7 +235,7 @@ function BUUI.resolveRows(player, direction)
         local bucket = index[fullType]
         if bucket then
             for _, entry in ipairs(bucket) do
-                if entry.direction == direction then
+                if entry.bundling == bundling then
                     local item = sample[fullType]
                     logic:setRecipeFromContextClick(entry.recipe, item)
 

@@ -43,7 +43,7 @@ function BUUI_Panel:new(x, y, width, height, player)
     o.player = player
     o.playerNum = player:getPlayerNum()
     o.title = getText("IGUI_BUUI_Title")
-    o.direction = "pack"
+    o.bundling = true
     o.rows = {}
     o.ticks = 0
     o.resizable = true
@@ -78,14 +78,14 @@ function BUUI_Panel:createChildren()
 
     self.tabBundle = BUUI_Button:new(PAD, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Bundle"), self, BUUI_Panel.onTab)
     self.tabBundle:sizeToTitle(28)
-    self.tabBundle.internal = "pack"
+    self.tabBundle.bundling = true
     self.tabBundle:initialise()
     self.tabBundle:instantiate()
     self:addChild(self.tabBundle)
 
     self.tabUnbundle = BUUI_Button:new(self.tabBundle:getRight() + 4, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Unbundle"), self, BUUI_Panel.onTab)
     self.tabUnbundle:sizeToTitle(28)
-    self.tabUnbundle.internal = "unpack"
+    self.tabUnbundle.bundling = false
     self.tabUnbundle:initialise()
     self.tabUnbundle:instantiate()
     self:addChild(self.tabUnbundle)
@@ -133,7 +133,7 @@ function BUUI_Panel:createChildren()
 end
 
 function BUUI_Panel:onTab(button)
-    self.direction = button.internal
+    self.bundling = button.bundling
     self:refresh()
 end
 
@@ -142,7 +142,7 @@ function BUUI_Panel:onRefresh()
 end
 
 function BUUI_Panel:refresh()
-    local rows, containers = BUUI.resolveRows(self.player, self.direction)
+    local rows, containers = BUUI.resolveRows(self.player, self.bundling)
     self.rows = rows
     self.sourceText = self:describeSources(containers)
 
@@ -218,7 +218,7 @@ function BUUI_Panel:onBundleAll()
         return
     end
 
-    BUUI.Queue.startAll(self.player, self.direction,
+    BUUI.Queue.startAll(self.player, self.bundling,
         function() self:refresh() end,
         function() self:refresh() end)
     self:refresh()
@@ -227,8 +227,8 @@ end
 function BUUI_Panel:prerender()
     ISCollapsableWindow.prerender(self)
 
-    self.tabBundle.selected = self.direction == "pack"
-    self.tabUnbundle.selected = self.direction == "unpack"
+    self.tabBundle.selected = self.bundling
+    self.tabUnbundle.selected = not self.bundling
 
     local _, barY, listY, footerY = self:bands()
     local inner = self.width - PAD * 2
@@ -250,7 +250,7 @@ function BUUI_Panel:render()
     self:drawText(self.sourceText or "", PAD + GAP, barY + 4, COL_TEXT.r, COL_TEXT.g, COL_TEXT.b, 1, UIFont.Small)
 
     if #self.rows == 0 then
-        local empty = getText("IGUI_BUUI_Empty")
+        local empty = getText(self.bundling and "IGUI_BUUI_Empty" or "IGUI_BUUI_EmptyUnbundle")
         local width = getTextManager():MeasureStringX(UIFont.Small, empty)
         local height = footerY - listY - GAP
         self:drawText(empty, (self.width - width) / 2, listY + height / 2 - 8,

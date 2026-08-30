@@ -228,13 +228,13 @@ end
 -- Bundle All cannot be planned up front: Tie5 and Tie10 compete for the same planks
 -- and rope, and getPossibleCraftCount cannot see crafts that have not happened yet.
 -- So each recipe's batch finishes before the next is chosen.
-function BUUI.Queue.startAll(player, direction, onProgress, onFinished)
+function BUUI.Queue.startAll(player, bundling, onProgress, onFinished)
     if BUUI_active then return false end
 
     local attempted = {}
 
     local function nextRow(job)
-        local rows = BUUI.resolveRows(player, direction)
+        local rows = BUUI.resolveRows(player, bundling)
         for _, row in ipairs(rows) do
             local key = row.entry.recipe:getName() .. "|" .. (row.name or "")
             if row.ready and row.max > 0 and not attempted[key] then

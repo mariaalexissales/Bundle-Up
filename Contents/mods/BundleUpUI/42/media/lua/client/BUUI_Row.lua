@@ -76,7 +76,7 @@ function BUUI_Row:setRow(row)
     self.row = row
     if not row then return end
 
-    self.action.title = self.panel.direction == "pack"
+    self.action.title = self.panel.bundling
         and getText("IGUI_BUUI_Bundle")
         or getText("IGUI_BUUI_Unbundle")
     self.action.enable = row.ready and not BUUI.Queue.isRunning()
