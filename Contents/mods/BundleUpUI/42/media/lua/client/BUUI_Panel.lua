@@ -81,33 +81,38 @@ local function BUUI_labelWidth(button, ...)
     return 24 + widest
 end
 
+-- anchors are applied by instantiate(), so they have to be assigned before it runs.
+function BUUI_Panel:attach(button, anchors)
+    for key, value in pairs(anchors or {}) do button[key] = value end
+
+    button:initialise()
+    button:instantiate()
+    self:addChild(button)
+
+    return button
+end
+
 function BUUI_Panel:createChildren()
     ISCollapsableWindow.createChildren(self)
 
     local tabY, _, listY, footerY = self:bands()
+    local RIGHT = { anchorRight = true, anchorLeft = false }
+    local FOOTER = { anchorTop = false, anchorBottom = true, anchorRight = true, anchorLeft = false }
 
     self.tabBundle = BUUI_Button:new(PAD, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Bundle"), self, BUUI_Panel.onTab)
     self.tabBundle:sizeToTitle(28)
     self.tabBundle.bundling = true
-    self.tabBundle:initialise()
-    self.tabBundle:instantiate()
-    self:addChild(self.tabBundle)
+    self:attach(self.tabBundle)
 
     self.tabUnbundle = BUUI_Button:new(self.tabBundle:getRight() + 4, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Unbundle"), self, BUUI_Panel.onTab)
     self.tabUnbundle:sizeToTitle(28)
     self.tabUnbundle.bundling = false
-    self.tabUnbundle:initialise()
-    self.tabUnbundle:instantiate()
-    self:addChild(self.tabUnbundle)
+    self:attach(self.tabUnbundle)
 
     self.refreshButton = BUUI_Button:new(0, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_RefreshLabel"), self, BUUI_Panel.onRefresh)
     self.refreshButton:sizeToTitle(20)
     self.refreshButton:setX(self.width - self.refreshButton:getWidth() - PAD)
-    self.refreshButton.anchorRight = true
-    self.refreshButton.anchorLeft = false
-    self.refreshButton:initialise()
-    self.refreshButton:instantiate()
-    self:addChild(self.refreshButton)
+    self:attach(self.refreshButton, RIGHT)
 
     -- The scroll view paints nothing of its own, so it sits one pixel inside the
     -- frame the panel draws for it.
@@ -130,25 +135,13 @@ function BUUI_Panel:createChildren()
     self.bundleAll:setWidth(BUUI_labelWidth(self.bundleAll,
         "IGUI_BUUI_BundleAll", "IGUI_BUUI_UnbundleAll", "IGUI_BUUI_Stop"))
     self.bundleAll:setX(self.width - self.bundleAll:getWidth() - PAD)
-    self.bundleAll.anchorTop = false
-    self.bundleAll.anchorBottom = true
-    self.bundleAll.anchorRight = true
-    self.bundleAll.anchorLeft = false
-    self.bundleAll:initialise()
-    self.bundleAll:instantiate()
-    self:addChild(self.bundleAll)
+    self:attach(self.bundleAll, FOOTER)
 
     self.bundleItems = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleItems"), self, BUUI_Panel.onBundleItems)
     self.bundleItems:setWidth(BUUI_labelWidth(self.bundleItems,
         "IGUI_BUUI_BundleItems", "IGUI_BUUI_UnbundleItems", "IGUI_BUUI_Stop"))
     self.bundleItems:setX(self.bundleAll:getX() - self.bundleItems:getWidth() - GAP)
-    self.bundleItems.anchorTop = false
-    self.bundleItems.anchorBottom = true
-    self.bundleItems.anchorRight = true
-    self.bundleItems.anchorLeft = false
-    self.bundleItems:initialise()
-    self.bundleItems:instantiate()
-    self:addChild(self.bundleItems)
+    self:attach(self.bundleItems, FOOTER)
 
     self:refresh()
 end
