@@ -144,16 +144,15 @@ function BUUI.scanContainers(player)
     return containers, tally, sample
 end
 
--- One long-lived logic object does all the probing. Rebuilding it per row would
--- throw away the container cache that makes getPossibleCraftCount cheap.
-local BUUI_probe = nil
-
+-- Mirrors ISInventoryPaneContextMenu.OnNewCraft, which is the path a double-click on a
+-- bundle already takes today. Every vanilla caller builds a fresh logic and gives it a
+-- craft surface before asking whether a recipe can run; one shared across recipes
+-- answers no to all of them.
 local function BUUI_probeLogic(player, containers)
-    if not BUUI_probe then
-        BUUI_probe = HandcraftLogic.new(player, nil, nil)
-    end
-    BUUI_probe:setContainers(containers)
-    return BUUI_probe
+    local logic = HandcraftLogic.new(player, nil, nil)
+    logic:setIsoObject(logic:findCraftSurface(player, 2))
+    logic:setContainers(containers)
+    return logic
 end
 
 -- Bundle Up fans a single craftRecipe across a whole family through itemMapper,
@@ -259,7 +258,6 @@ end
 function BUUI.resolveRows(player, bundling)
     local index = BUUI.getIndex()
     local containers, tally, sample = BUUI.scanContainers(player)
-    local logic = BUUI_probeLogic(player, containers)
     local rows, byKey = {}, {}
 
     for fullType, count in pairs(tally) do
@@ -268,6 +266,7 @@ function BUUI.resolveRows(player, bundling)
             for _, entry in ipairs(bucket) do
                 if entry.bundling == bundling then
                     local item = sample[fullType]
+                    local logic = BUUI_probeLogic(player, containers)
                     logic:setRecipeFromContextClick(entry.recipe, item)
 
                     local inputs, satisfied = BUUI_describeInputs(logic, entry)

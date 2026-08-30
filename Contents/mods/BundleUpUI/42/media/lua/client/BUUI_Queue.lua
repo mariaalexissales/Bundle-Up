@@ -137,6 +137,7 @@ local function BUUI_step()
     end
 
     local logic = HandcraftLogic.new(job.player, nil, nil)
+    logic:setIsoObject(logic:findCraftSurface(job.player, 2))
     logic:setContainers(containers)
     logic:setRecipeFromContextClick(row.entry.recipe, sample)
 
