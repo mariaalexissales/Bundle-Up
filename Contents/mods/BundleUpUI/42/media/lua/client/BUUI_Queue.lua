@@ -200,35 +200,10 @@ function BUUI.Queue.isRunning()
     return BUUI_active ~= nil
 end
 
-function BUUI.Queue.stop()
-    if not BUUI_active then return end
-
-    local player = BUUI_active.player
-    BUUI_active = nil
-    ISTimedActionQueue.clear(player)
-end
-
--- the list is fixed when the button is pressed, so an earlier row can eat what a later
--- one counted on - Tie10 and Tie5 want the same planks. not an error: the step loop
--- looks each source up by type and skips a spent one, so the batch just makes fewer.
-function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
+-- nextRow is the only thing that differs between a fixed list and Bundle All: it
+-- hands back the next row to run, or nil to finish.
+local function BUUI_begin(player, nextRow, onProgress, onFinished)
     if BUUI_active then return false end
-
-    local index = 0
-
-    local function nextRow(job)
-        while true do
-            index = index + 1
-            local row = rows[index]
-            if not row then return nil end
-
-            if (row.quantity or 0) > 0 then
-                job.total = job.total + row.quantity
-                job.sourceIndex = 1
-                return row
-            end
-        end
-    end
 
     BUUI_active = {
         player = player,
@@ -246,12 +221,41 @@ function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
     return true
 end
 
+function BUUI.Queue.stop()
+    if not BUUI_active then return end
+
+    local player = BUUI_active.player
+    BUUI_active = nil
+    ISTimedActionQueue.clear(player)
+end
+
+-- the list is fixed when the button is pressed, so an earlier row can eat what a later
+-- one counted on - Tie10 and Tie5 want the same planks. not an error: the step loop
+-- looks each source up by type and skips a spent one, so the batch just makes fewer.
+function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
+    local index = 0
+
+    local function nextRow(job)
+        while true do
+            index = index + 1
+            local row = rows[index]
+            if not row then return nil end
+
+            if (row.quantity or 0) > 0 then
+                job.total = job.total + row.quantity
+                job.sourceIndex = 1
+                return row
+            end
+        end
+    end
+
+    return BUUI_begin(player, nextRow, onProgress, onFinished)
+end
+
 -- Bundle All cannot be planned up front: Tie5 and Tie10 compete for the same planks
 -- and rope, and getPossibleCraftCount cannot see crafts that have not happened yet.
 -- So each recipe's batch finishes before the next is chosen.
 function BUUI.Queue.startAll(player, bundling, onProgress, onFinished)
-    if BUUI_active then return false end
-
     local attempted = {}
 
     local function nextRow(job)
@@ -270,18 +274,5 @@ function BUUI.Queue.startAll(player, bundling, onProgress, onFinished)
         return nil
     end
 
-    BUUI_active = {
-        player = player,
-        row = nil,
-        sourceIndex = 1,
-        remaining = 0,
-        total = 0,
-        done = 0,
-        onProgress = onProgress,
-        onFinished = onFinished,
-        nextRow = nextRow,
-    }
-
-    BUUI_step()
-    return true
+    return BUUI_begin(player, nextRow, onProgress, onFinished)
 end
