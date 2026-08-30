@@ -207,18 +207,38 @@ function BUUI.Queue.stop()
     ISTimedActionQueue.clear(player)
 end
 
-function BUUI.Queue.startRow(player, row, onProgress, onFinished)
+-- the list is fixed when the button is pressed, so an earlier row can eat what a later
+-- one counted on - Tie10 and Tie5 want the same planks. not an error: the step loop
+-- looks each source up by type and skips a spent one, so the batch just makes fewer.
+function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
     if BUUI_active then return false end
+
+    local index = 0
+
+    local function nextRow(job)
+        while true do
+            index = index + 1
+            local row = rows[index]
+            if not row then return nil end
+
+            if (row.quantity or 0) > 0 then
+                job.total = job.total + row.quantity
+                job.sourceIndex = 1
+                return row
+            end
+        end
+    end
 
     BUUI_active = {
         player = player,
-        row = row,
+        row = nil,
         sourceIndex = 1,
-        remaining = row.quantity,
-        total = row.quantity,
+        remaining = 0,
+        total = 0,
         done = 0,
         onProgress = onProgress,
         onFinished = onFinished,
+        nextRow = nextRow,
     }
 
     BUUI_step()
