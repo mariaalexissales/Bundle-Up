@@ -6,9 +6,8 @@ require "ISUI/ISButton"
 
 BUUI_Button = ISButton:derive("BUUI_Button")
 
--- NeatUI's button art is a dark translucent bar with two bright end caps. The caps
--- take a tint and the body does not, so state is carried by tinting the caps and
--- filling the body behind them.
+-- NeatUI's end caps take a tint and the body does not, so state is carried by tinting
+-- the caps and filling the body behind them.
 local BUUI_TEXTURES = nil
 
 local function BUUI_textures()
@@ -43,14 +42,12 @@ function BUUI_Button:new(x, y, width, height, title, target, onclick)
     o.font = UIFont.Small
     o.selected = false
 
-    -- The vanilla rect-and-border chrome would sit under the NeatUI art.
+    -- the vanilla rect-and-border chrome would sit under the NeatUI art.
     o.displayBackground = false
 
     return o
 end
 
--- Sizes the button to its own label, which is what keeps the strip from overflowing
--- when a translation is longer than the English original.
 function BUUI_Button:sizeToTitle(padding)
     self:setWidth(getTextManager():MeasureStringX(self.font, self.title) + (padding or 20))
     return self

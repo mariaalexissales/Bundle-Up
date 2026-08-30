@@ -4,9 +4,8 @@
 
 require "BUUI_Panel"
 
--- ISEquippedItem keeps TEXTURE_WIDTH as a file-local, so the sidebar scale has to
--- be derived again here. Size 6 means "match the font size" and resolves through
--- a different option entirely.
+-- ISEquippedItem keeps TEXTURE_WIDTH file-local, so the scale is derived again here.
+-- size 6 means "match the font size" and resolves through a different option.
 local function BUUI_textureWidth()
     local size = getCore():getOptionSidebarSize()
     if size == 6 then
@@ -20,9 +19,8 @@ local function BUUI_textureWidth()
     return 48
 end
 
--- The sidebar is rebuilt wholesale when the size option changes, which leaves the
--- old panel alive for a frame or two. Anything touching a stale panel corrupts the
--- live one's geometry.
+-- the sidebar is rebuilt wholesale when the size option changes, leaving the old panel
+-- alive for a frame or two. touching a stale one corrupts the live panel's geometry.
 local function BUUI_isCurrentPanel(panel)
     if not panel or not panel.playerNum then return false end
 
@@ -34,10 +32,9 @@ local function BUUI_isCurrentPanel(panel)
     return true
 end
 
--- Cell 0 is the vanilla crafting button itself. Anything already flying out of it
--- claims the cells after that, so measure rather than assume: with Project Cook
--- installed its popup is two cells wide and we land third, without it we land
--- second. Measuring every frame means load order between the mods does not matter.
+-- cell 0 is the vanilla crafting button; anything already flying out of it claims the
+-- cells after. measuring every frame rather than assuming means load order against
+-- Project Cook, whose popup is two cells wide, does not matter.
 local function BUUI_cellOffset(panel, textureWidth)
     local cells = 1
 
@@ -78,7 +75,7 @@ function BUUI_Popup:render()
         texture = self.iconOn or texture
     end
 
-    -- A missing texture should cost us our icon, not the whole sidebar render pass.
+    -- a missing texture should cost us our icon, not the whole sidebar render pass.
     if texture then
         self:drawTexture(texture, 0, 0, 1, 1, 1, 1)
     end
@@ -161,7 +158,7 @@ local function BUUI_updateVisibility(panel)
         or panel.BUUI_popup:isMouseOver()
         or BUUI.isWindowOpen(panel.chr:getPlayerNum())
 
-    -- Without this the cursor loses us halfway: travelling right from the crafting
+    -- without this the cursor loses us halfway: travelling right from the crafting
     -- button to our cell crosses whatever else is flying out in between.
     if not show and panel.craftingPopup and panel.craftingPopup.isMouseOver then
         show = panel.craftingPopup:isMouseOver()
@@ -225,6 +222,5 @@ local function BUUI_patchSidebar()
     end
 end
 
--- Wrapping the sidebar while the UI is still booting can leave it half-built, so
--- the patch waits for the game to be up.
+-- wrapping the sidebar while the UI is still booting can leave it half-built.
 Events.OnGameStart.Add(BUUI_patchSidebar)

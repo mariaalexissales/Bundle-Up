@@ -18,9 +18,8 @@ local function BUUI_snapshot(player)
     return seen
 end
 
--- The recipe resolves its outputs through an item mapper, so the concrete types
--- are only knowable once the family is pinned. Collecting them up front lets the
--- diff below reject anything the player happened to pick up mid-craft.
+-- the concrete output types are only knowable once the mapper is pinned. collecting
+-- them up front lets the diff below reject anything picked up mid-craft.
 local function BUUI_outputTypes(logic, recipe)
     local types, any = {}, false
 
@@ -41,7 +40,7 @@ local function BUUI_returnOutputs(player, before, types, container)
     for i = 0, items:size() - 1 do
         local item = items:get(i)
         local isNew = not before[item:getID()]
-        -- Without a resolved output list, fall back to trusting the diff alone.
+        -- without a resolved output list, trust the diff alone.
         local isOutput = (not types) or types[item:getFullType()]
 
         if isNew and isOutput then
@@ -53,9 +52,8 @@ local function BUUI_returnOutputs(player, before, types, container)
     end
 end
 
--- Bundle Up recipes are all InHandCraft, so the materials have to pass through the
--- player's hands. Pulling one craft's worth at a time keeps the peak carried weight
--- at a single recipe instead of a whole crate.
+-- the recipes are all InHandCraft, so materials pass through the player's hands. one
+-- craft's worth at a time keeps peak carried weight at a recipe, not a whole crate.
 local function BUUI_stageInputs(player, logic)
     local returned = {}
     if logic:getRecipe():isCanBeDoneFromFloor() then return returned end
@@ -74,8 +72,8 @@ local function BUUI_stageInputs(player, logic)
     return returned
 end
 
--- The sample item the row was built from gets eaten by the first craft, so every
--- iteration has to find a live one of that type before pinning the item mapper.
+-- the sample the row was built from is eaten by the first craft, so every iteration
+-- has to find a live one of that type before pinning the mapper.
 local function BUUI_liveSample(player, fullType)
     local containers = ISInventoryPaneContextMenu.getContainers(player)
     for i = 0, containers:size() - 1 do
@@ -88,9 +86,8 @@ local function BUUI_liveSample(player, fullType)
     return nil, containers
 end
 
--- A row can stand for several item types the game names identically, so a batch
--- that exhausts one of them carries on into the next instead of stopping short of
--- the count the player asked for.
+-- a row can stand for several item types the game names alike, so a batch that
+-- exhausts one carries on into the next instead of stopping short.
 local function BUUI_nextSample(job)
     local sources = job.row.sources
 
@@ -142,8 +139,8 @@ local function BUUI_step()
     logic:setRecipeFromContextClick(row.entry.recipe, sample)
 
     if not logic:canPerformCurrentRecipe() or logic:getPossibleCraftCount(true) < 1 then
-        -- This type is spent or blocked, but a merged row may have another behind
-        -- it, so step past it rather than abandoning the whole batch.
+        -- this type is spent or blocked, but a merged row may have another behind it,
+        -- so step past rather than abandon the batch.
         job.sourceIndex = job.sourceIndex + 1
         BUUI_step()
         return
@@ -171,9 +168,8 @@ local function BUUI_step()
         action:setOnComplete(function()
             logic:stopCraftAction()
 
-            -- Stopping clears the queue, but an action already under way can still
-            -- report back. Without this the stale callback would drive whichever
-            -- batch the player started next.
+            -- stopping clears the queue, but an action already under way still reports
+            -- back. without this the stale callback drives the next batch.
             if BUUI_active ~= job then return end
 
             BUUI_returnOutputs(job.player, before or {}, outputTypes, source.container)
@@ -253,8 +249,8 @@ function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
 end
 
 -- Bundle All cannot be planned up front: Tie5 and Tie10 compete for the same planks
--- and rope, and getPossibleCraftCount cannot see crafts that have not happened yet.
--- So each recipe's batch finishes before the next is chosen.
+-- and getPossibleCraftCount cannot see crafts that have not happened. so each batch
+-- finishes before the next row is chosen.
 function BUUI.Queue.startAll(player, bundling, onProgress, onFinished)
     local attempted = {}
 

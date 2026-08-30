@@ -56,13 +56,9 @@ function BUUI_Panel:new(x, y, width, height, player)
     return o
 end
 
--- One place computes the vertical bands so createChildren and onResize cannot drift.
---
--- A resizable ISCollapsableWindow reserves the bottom of itself: render paints a
--- status bar across it and createChildren lays a second ISResizeWidget over the
--- whole bottom edge, which swallows clicks. Anything drawn there is both covered
--- up and unclickable, and because the strip is pinned to the edge it follows the
--- window on resize. The footer sits above it.
+-- one place for the vertical bands so createChildren and onResize cannot drift. a
+-- resizable ISCollapsableWindow paints a status bar over its own bottom edge and lays
+-- a resize widget across it that swallows clicks, so the footer sits above that.
 function BUUI_Panel:bands()
     local tabY = self:titleBarHeight() + PAD
     local barY = tabY + TAB_HEIGHT + GAP
@@ -114,8 +110,8 @@ function BUUI_Panel:createChildren()
     self.refreshButton:setX(self.width - self.refreshButton:getWidth() - PAD)
     self:attach(self.refreshButton, RIGHT)
 
-    -- The scroll view paints nothing of its own, so it sits one pixel inside the
-    -- frame the panel draws for it.
+    -- the scroll view paints nothing of its own, so it sits a pixel inside the frame
+    -- the panel draws for it.
     self.list = NIVirtualScrollView:new(PAD + 1, listY + 1, self.width - PAD * 2 - 2, footerY - listY - GAP - 2)
     self.list:initialise()
     self.list:instantiate()
@@ -174,25 +170,21 @@ function BUUI_Panel:refresh()
         if row.ready then self.ready = self.ready + 1 end
     end
 
-    -- The scroll view only reassigns data when the visible range moves, so a
-    -- refresh that leaves the row count alone still needs to be forced through.
+    -- the scroll view only reassigns data when the visible range moves, so a refresh
+    -- that leaves the row count alone has to be forced through.
     self.list:setDataSource(self.rows, true)
 
     self:updateFooter()
 end
 
--- Split from refresh because a spinner changes what the buttons should say without
--- changing what is in reach, and re-resolving every row on a click of + is far too slow.
 function BUUI_Panel:updateFooter()
     if not self.bundleItems then return end
 
     self.bundleItems.title = getText(self.bundling and "IGUI_BUUI_BundleItems" or "IGUI_BUUI_UnbundleItems")
     self.bundleAll.title = getText(self.bundling and "IGUI_BUUI_BundleAll" or "IGUI_BUUI_UnbundleAll")
 
-    -- only the button that started the batch becomes the stop control, so there is
-    -- never a question of which run a Stop would cancel. a batch that outlived the
-    -- window it was started from has no button of its own, and falls to Bundle All
-    -- rather than leaving a reopened panel with nothing that can cancel it.
+    -- only the button that started the batch becomes Stop. one that outlived its window
+    -- has none, and falls to Bundle All so a reopened panel can still cancel it.
     if BUUI.Queue.isRunning() then
         local stop = self.runningButton or self.bundleAll
         stop.title = getText("IGUI_BUUI_Stop")
@@ -210,12 +202,9 @@ function BUUI_Panel:updateFooter()
     self.bundleAll.enable = (self.ready or 0) > 0
 end
 
--- Naming the containers is what makes the panel legible when the player is stood
--- between a crate, a shelf and their own bag: it says where the rows came from.
--- Labels follow the inventory UI's own convention so they read the same and come
--- out translated: a bag is named by the item holding it, everything else by its
--- container type. The player's own inventory has neither, so it would otherwise
--- print its raw type of "none".
+-- follows the inventory UI's convention so the labels read the same and come out
+-- translated: a bag by the item holding it, everything else by its container type.
+-- the player's own inventory has neither and would print its raw type of "none".
 local function BUUI_containerName(container)
     local holder = container:getContainingItem()
     if holder then return holder:getName() end
@@ -263,8 +252,8 @@ function BUUI_Panel:onBatchFinished()
     self:refresh()
 end
 
--- Runs exactly what the player dialled in, on the rows as they stand. Bundle All keeps
--- re-reading the containers between recipes; this deliberately does not.
+-- runs the rows as they stand. Bundle All re-reads the containers between recipes;
+-- this deliberately does not.
 function BUUI_Panel:onBundleItems()
     if BUUI.Queue.isRunning() then
         self:stopBatch()
@@ -340,11 +329,9 @@ end
 function BUUI_Panel:update()
     ISCollapsableWindow.update(self)
 
-    -- Containers open, close and empty while the panel is up, so the list keeps
-    -- itself current instead of going stale until the player clicks refresh.
-    -- Resolving a row means probing the recipe, which is far too expensive to do
-    -- every frame against a crate holding a hundred distinct carton families.
-    -- While a batch is running the queue's own progress callback covers this.
+    -- containers open and empty while the panel is up, but resolving a row probes the
+    -- recipe and is far too costly to do every frame. while a batch runs, the queue's
+    -- own progress callback covers this.
     if BUUI.Queue.isRunning() then return end
 
     self.ticks = self.ticks + 1
@@ -365,8 +352,8 @@ function BUUI_Panel:onResize()
     self.list:setWidth(self.width - PAD * 2 - 2)
     self.list:setHeight(listHeight)
 
-    -- setConfig tears down and rebuilds the whole widget pool, and onResize fires
-    -- on every frame of a drag, so only reconfigure when the height actually moved.
+    -- setConfig rebuilds the whole widget pool and onResize fires every frame of a
+    -- drag, so only reconfigure when the height actually moved.
     if self.listHeight ~= listHeight then
         self.listHeight = listHeight
         self.list:setConfig(BUUI_Row.HEIGHT, 4)

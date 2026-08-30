@@ -4,9 +4,8 @@
 
 BUUI = BUUI or {}
 
--- Other packing mods can list their module here to appear in the panel; the
--- index keys off the recipe's module prefix rather than a tag so the base mod's
--- 67 recipes need no edits.
+-- keyed off the recipe's module prefix rather than a tag, so the base mod's 67 recipes
+-- need no edits and another packing mod only has to name its module here.
 BUUI.modules = BUUI.modules or { BundleUp = true }
 
 BUUI.recipes = nil
@@ -33,10 +32,9 @@ local function BUUI_largestAmount(input)
     return largest
 end
 
--- The bulk material is always the input asking for the most of something: Tie5
--- wants one rope and five planks, PackScrapSack one sandbag and 25 scrap. Going
--- by amount rather than by flags matters because flags[ItemCount;IsExclusive] is
--- applied inconsistently across the recipe files - BoxSmall carries none at all.
+-- the bulk material is the input asking for the most of something - Tie5 wants one
+-- rope and five planks. going by amount rather than flags[ItemCount] matters because
+-- the flags are inconsistent across the recipe files: BoxSmall carries none at all.
 local function BUUI_splitInputs(recipe)
     local inputs = recipe:getInputs()
     if not inputs or inputs:size() == 0 then return nil, nil, 0 end
@@ -77,8 +75,8 @@ function BUUI.buildIndex()
         if module and BUUI.modules[module] then
             local pivot, others, bulk = BUUI_splitInputs(recipe)
             if pivot then
-                -- Packing consumes many to make one and unpacking does the reverse, so the
-                -- bulk amount tells the two apart without matching on recipe names.
+                -- packing consumes many to make one and unpacking does the reverse, so
+                -- the bulk amount sorts the two without matching on recipe names.
                 local bundling = bulk >= 2
 
                 local possible = pivot:getPossibleInputItems()
@@ -106,8 +104,8 @@ function BUUI.buildIndex()
         end
     end
 
-    -- Deepest compaction first, so Tie10 outranks Tie5 in the list and Bundle All
-    -- reaches for the tighter pack before the looser one competes for the planks.
+    -- deepest compaction first, so Bundle All reaches for Tie10 before Tie5 competes
+    -- for the same planks.
     for _, bucket in pairs(index) do
         table.sort(bucket, function(a, b)
             if a.count ~= b.count then return a.count > b.count end
@@ -123,8 +121,7 @@ function BUUI.getIndex()
     return BUUI.recipes or BUUI.buildIndex()
 end
 
--- Every item the player can reach, tallied by full type. The container list is
--- the same one the vanilla crafting window works from, so "nearby" means exactly
+-- the same container list the vanilla crafting window works from, so "nearby" means
 -- what it means everywhere else in the game.
 function BUUI.scanContainers(player)
     local containers = ISInventoryPaneContextMenu.getContainers(player)
@@ -144,9 +141,8 @@ function BUUI.scanContainers(player)
     return containers, tally, sample
 end
 
--- Mirrors ISInventoryPaneContextMenu.OnNewCraft, the path a double-click on a bundle
--- already takes today: every vanilla caller builds a fresh logic and gives it a craft
--- surface before asking whether the recipe can run.
+-- mirrors ISInventoryPaneContextMenu.OnNewCraft: every vanilla caller builds a fresh
+-- logic and gives it a craft surface before asking whether the recipe can run.
 local function BUUI_probeLogic(player, containers)
     local logic = HandcraftLogic.new(player, nil, nil)
     logic:setIsoObject(logic:findCraftSurface(player, 2))
@@ -154,17 +150,11 @@ local function BUUI_probeLogic(player, containers)
     return logic
 end
 
--- Bundle Up fans a single craftRecipe across a whole family through itemMapper,
--- so PackFoodCase alone has to become one row per carton actually present.
--- setRecipeFromContextClick pins the mapper to the sample item, which is what
--- makes the output name, icon and count come back resolved for that family.
--- An input can accept a whole family - PackFoodCase lists all 166 cartons - so the
--- first possible item is a coin toss, not the one in front of the player. Name what
--- the logic actually picked up, and fall back to the script's own list only when
--- nothing was picked up, which is exactly the missing-rope case worth naming.
+-- an input can accept a whole family - PackFoodCase lists all 166 cartons - so the
+-- first possible item is a coin toss, not the one in front of the player.
 local function BUUI_inputNames(logic, input)
-    -- the satisfied list and the script's own list hold the same kind of object, so
-    -- vanilla swaps one for the other and reads both alike (ISWidgetInput:197).
+    -- both lists hold the same kind of object, so vanilla swaps one for the other and
+    -- reads them alike (ISWidgetInput:197). the fallback is the missing-rope case.
     local objects = logic:getSatisfiedInputItems(input)
     if not objects or objects:size() == 0 then
         objects = input:getPossibleInputItems()
@@ -201,13 +191,9 @@ local function BUUI_describeInputs(logic, entry)
     return parts, satisfied
 end
 
--- Untying a bundle hands back the rope as well as the planks, so reading only the
--- first output would drop half of what the recipe makes. Automation-only outputs
--- are skipped the way the vanilla ingredients widget skips them.
---
--- BundleUp's mappers key on a combination of inputs, so Tie5 cannot resolve its
--- output until both the rope and the planks are in reach. The script's own list of
--- possible results covers the row that is still missing an ingredient.
+-- untying hands back the rope as well as the planks, so reading only the first output
+-- drops half of what the recipe makes. the mapper cannot resolve until every input is
+-- in reach, so the script's own result list covers a row still short an ingredient.
 function BUUI.describeOutputs(logic, recipe)
     local outputs, described = recipe:getOutputs(), {}
     if not outputs then return described end
@@ -239,9 +225,8 @@ function BUUI.describeOutputs(logic, recipe)
     return described
 end
 
--- What the row promises the player, and the only thing separating two bundles the
--- mod names identically: a rope-tied bundle of planks returns Rope, a sheet-rope
--- one returns Sheet Rope.
+-- what the row promises the player, and part of the key that keeps two bundles of the
+-- same name apart.
 local function BUUI_outputLabel(outputs)
     if #outputs == 0 then return nil end
 
@@ -277,11 +262,9 @@ function BUUI.resolveRows(player, bundling)
                     local name = item:getDisplayName()
                     local result = BUUI_outputLabel(outputs)
 
-                    -- Vanilla gives 56 pairs of these items one display name between
-                    -- them, so keying on the type alone shows the player two rows it
-                    -- cannot tell apart. Merging on what is actually drawn - recipe,
-                    -- name and promised output - folds those together while keeping
-                    -- rows that differ in the rope they hand back separate.
+                    -- dozens of these items share a display name, so merging on what is
+                    -- drawn - recipe, name, output - folds the duplicates together while
+                    -- keeping rows that hand back different rope apart.
                     local key = entry.recipe:getScriptObjectFullType()
                         .. "|" .. name .. "|" .. tostring(result)
 
@@ -296,9 +279,8 @@ function BUUI.resolveRows(player, bundling)
                         row.sourceCount = row.sourceCount + count
                         row.max = row.max + max
 
-                        -- Show the checks belonging to a source that can actually run,
-                        -- so a row offering a Bundle button never lists a blocked
-                        -- variant's ingredients.
+                        -- show the checks of a source that can run, so a ready row never
+                        -- lists a blocked variant's ingredients.
                         if ready and not row.ready then
                             row.ready = true
                             row.inputs = inputs

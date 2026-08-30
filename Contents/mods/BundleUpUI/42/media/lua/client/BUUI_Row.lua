@@ -54,7 +54,6 @@ function BUUI_Row:layout()
     self.spinner:setX(self.width - self.spinner:getWidth() - PAD)
 end
 
--- Where the text has to stop so it never runs under the spinner.
 function BUUI_Row:textLimit()
     return self.spinner:getX() - PAD
 end
@@ -97,8 +96,6 @@ function BUUI_Row:render()
     local row = self.row
     if not row then return end
 
-    -- The state of a row is the thing a player scans for, so it gets a colour bar
-    -- rather than only a word buried in the ingredient list.
     local accent = row.ready and COL_READY or COL_BLOCKED
     self:drawRect(0, 0, ACCENT, self.height, 0.85, accent.r, accent.g, accent.b)
 
@@ -118,8 +115,6 @@ function BUUI_Row:renderName(row, x, limit)
     self:drawText(name, x, LINE_ONE, COL_NAME.r, COL_NAME.g, COL_NAME.b, 1, UIFont.Small)
     x = x + getTextManager():MeasureStringX(UIFont.Small, name) + 6
 
-    -- A row can stand for several item types the game names identically, so it says
-    -- how many of the thing are in reach rather than leaving the player to guess.
     if (row.sourceCount or 1) > 1 then
         if x >= limit then return end
 
