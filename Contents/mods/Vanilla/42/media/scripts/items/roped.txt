@@ -190,7 +190,7 @@ module BundleUp {
     item GasCanFullR {
         DisplayCategory = VehicleMaintenance,
         ItemType = base:normal,
-        Weight = 46.4,
+        Weight = 38.51,
         Icon = GasCanR,
         WorldStaticModel = GasCan_Ground,
         Tags = base:petrol,
@@ -200,7 +200,7 @@ module BundleUp {
     item GasCanFullSR {
         DisplayCategory = VehicleMaintenance,
         ItemType = base:normal,
-        Weight = 46.4,
+        Weight = 38.51,
         Icon = GasCanSR,
         WorldStaticModel = GasCan_Ground,
         Tags = base:petrol,
