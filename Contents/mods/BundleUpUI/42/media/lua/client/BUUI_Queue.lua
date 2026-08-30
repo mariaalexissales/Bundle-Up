@@ -19,11 +19,14 @@ local function BUUI_snapshot(player)
 end
 
 -- the concrete output types are only knowable once the mapper is pinned. collecting
--- them up front lets the diff below reject anything picked up mid-craft.
+-- them up front lets the diff below reject anything picked up mid-craft. an unresolved
+-- output is describeOutputs guessing at the family, so filtering on it would strand the
+-- real ones in the player's inventory - hand back nil and let the diff stand alone.
 local function BUUI_outputTypes(logic, recipe)
     local types, any = {}, false
 
     for _, output in ipairs(BUUI.describeOutputs(logic, recipe)) do
+        if not output.resolved then return nil end
         types[output.fullType] = true
         any = true
     end

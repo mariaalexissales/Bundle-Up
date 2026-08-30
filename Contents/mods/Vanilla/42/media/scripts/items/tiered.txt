@@ -58,7 +58,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item BlackSageDriedCase {
@@ -81,7 +81,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item ButterCase {
@@ -104,7 +104,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item CandyCaramelsCase {
@@ -187,7 +187,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item CauliflowerCase {
@@ -200,7 +200,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item CerealCase {
@@ -233,7 +233,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item ChivesDriedCase {
@@ -486,7 +486,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item Cornflour2Case {
@@ -579,7 +579,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item DehydratedMeatStickCase {
@@ -602,7 +602,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item Dip_RanchCase {
@@ -615,7 +615,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item Dip_SalsaCase {
@@ -628,7 +628,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item DogFoodBagCase {
@@ -641,7 +641,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item DriedBlackBeansCase {
@@ -714,7 +714,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item Flour2Case {
@@ -737,7 +737,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item GingerbreadmanCase {
@@ -760,7 +760,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item GrahamCrackersCase {
@@ -793,7 +793,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item GumCase {
@@ -916,7 +916,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item KetchupCase {
@@ -959,7 +959,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item LettuceCase {
@@ -972,7 +972,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item LicoriceBlackCase {
@@ -1065,7 +1065,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item MintHerbDriedCase {
@@ -1098,7 +1098,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item OilOliveCase {
@@ -1131,7 +1131,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item OreganoDriedCase {
@@ -1194,7 +1194,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item PepperHabaneroDriedCase {
@@ -1217,7 +1217,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item PepperJalapenoDriedCase {
@@ -1280,7 +1280,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item PowderedGarlicCase {
@@ -1333,7 +1333,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item RedRadishCase {
@@ -1346,7 +1346,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item RemouladeFullCase {
@@ -1359,7 +1359,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item RiceCase {
@@ -1432,7 +1432,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item SaltCase {
@@ -1575,7 +1575,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item SoysauceCase {
@@ -1598,7 +1598,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item SquashCase {
@@ -1611,7 +1611,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item SugarBeetCase {
@@ -1624,7 +1624,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item SugarBrownCase {
@@ -1657,7 +1657,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item Teabag2Case {
@@ -1690,7 +1690,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item TomatoPasteCase {
@@ -1723,7 +1723,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item TurnipCase {
@@ -1736,7 +1736,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item WildEggsCase {
@@ -1749,7 +1749,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item WildGarlicDriedCase {
@@ -1772,7 +1772,7 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 
     item ZucchiniCase {
@@ -1785,6 +1785,6 @@ module BundleUp {
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
-        OpeningRecipe = UnpackFoodCase,
+        DoubleClickRecipe = UnpackFoodCase,
     }
 }

@@ -47,22 +47,6 @@ module BundleUp {
         DoubleClickRecipe = UnbundleLarge,
     }
 
-    item JewelryPouch_Small {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.3,
-        Icon = JewelryPouchS,
-        WorldStaticModel = Parcel_ExtraSmall,
-    }
-
-    item JewelryPouch_Medium {
-        DisplayCategory = Material,
-        ItemType = base:normal,
-        Weight = 0.6,
-        Icon = JewelryPouchM,
-        WorldStaticModel = Parcel_ExtraSmall,
-    }
-
     item SodaPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,

@@ -184,10 +184,12 @@ def item_block(stem, tier, icon, model, unpack, weight, rot):
             "        DaysFresh = " + rot[0] + ",\n"
             "        DaysTotallyRotten = " + rot[1] + ",\n"
         )
-        open_with = "        OpeningRecipe = " + unpack + ",\n"
     else:
         kind = "        ItemType = base:normal,\n"
-        open_with = "        DoubleClickRecipe = " + unpack + ",\n"
+
+    # OpeningRecipe is vanilla's open-a-sealed-food-then-eat-it hook: a perishable
+    # bundle wearing it lands in the eating branch and never unpacks.
+    open_with = "        DoubleClickRecipe = " + unpack + ",\n"
 
     return (
         "    item " + stem + tier["name"] + " {\n"
