@@ -606,8 +606,6 @@ local JEWELRY_ITEMS = {
     "BundleUp.GoldScrap_Large",
     "BundleUp.SilverScrap_Small",
     "BundleUp.SilverScrap_Large",
-    "BundleUp.JewelryPouch_Small",
-    "BundleUp.JewelryPouch_Medium",
 }
 
 local JEWELRY_WEIGHTS = {

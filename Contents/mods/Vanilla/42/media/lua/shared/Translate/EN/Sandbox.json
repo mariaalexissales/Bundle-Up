@@ -34,7 +34,7 @@
     "Sandbox_BundleUp_SpawnScrap": "Scrap and Parts spawn rate",
     "Sandbox_BundleUp_SpawnScrap_tooltip": "Scrap sacks and metal parts boxes in welding workshops and mechanic shops. Inherit default follows the master setting above.",
     "Sandbox_BundleUp_SpawnJewelry": "Jewelry and Precious Scrap spawn rate",
-    "Sandbox_BundleUp_SpawnJewelry_tooltip": "Gold and silver scrap sacks and jewelry pouches in jewelry stores, pawn shops and department stores. Inherit default follows the master setting above.",
+    "Sandbox_BundleUp_SpawnJewelry_tooltip": "Gold and silver scrap sacks in jewelry stores, pawn shops and department stores. Inherit default follows the master setting above.",
     "Sandbox_BundleUp_SpawnLiterature": "Books and Magazines spawn rate",
     "Sandbox_BundleUp_SpawnLiterature_tooltip": "Book, paperback, magazine and reading material bundles in bookstores, libraries and magazine racks. Inherit default follows the master setting above.",
     "Sandbox_BundleUp_ReductionDefault": "Default encumbrance reduction %%",
