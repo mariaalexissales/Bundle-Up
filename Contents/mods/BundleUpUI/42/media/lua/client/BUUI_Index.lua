@@ -163,17 +163,16 @@ end
 -- the logic actually picked up, and fall back to the script's own list only when
 -- nothing was picked up, which is exactly the missing-rope case worth naming.
 local function BUUI_inputNames(logic, input)
-    local chosen = logic:getSatisfiedInputItems(input)
-    if chosen and chosen:size() > 0 then
-        local item = chosen:get(0)
-        local script = item:getScriptItem()
-        return item:getDisplayName(), script and script:getFullName() or nil
+    -- the satisfied list and the script's own list hold the same kind of object, so
+    -- vanilla swaps one for the other and reads both alike (ISWidgetInput:197).
+    local objects = logic:getSatisfiedInputItems(input)
+    if not objects or objects:size() == 0 then
+        objects = input:getPossibleInputItems()
     end
 
-    local possible = input:getPossibleInputItems()
-    if possible and possible:size() > 0 then
-        local script = possible:get(0)
-        return script:getDisplayName(), script:getFullName()
+    if objects and objects:size() > 0 then
+        local object = objects:get(0)
+        return object:getDisplayName(), object:getFullName()
     end
 
     return "?", nil
