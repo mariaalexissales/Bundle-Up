@@ -1,0 +1,320 @@
+----------
+--ESTRAL--
+----------
+
+BUUI = BUUI or {}
+
+-- Other packing mods can list their module here to appear in the panel; the
+-- index keys off the recipe's module prefix rather than a tag so the base mod's
+-- 67 recipes need no edits.
+BUUI.modules = BUUI.modules or { BundleUp = true }
+
+BUUI.recipes = nil
+
+local BUUI_PACK = "pack"
+local BUUI_UNPACK = "unpack"
+
+-- The bulk material is always the input asking for the most of something: Tie5
+-- wants one rope and five planks, PackScrapSack one sandbag and 25 scrap. Going
+-- by amount rather than by flags matters because flags[ItemCount;IsExclusive] is
+-- applied inconsistently across the recipe files - BoxSmall carries none at all.
+local function BUUI_splitInputs(recipe)
+    local inputs = recipe:getInputs()
+    if not inputs or inputs:size() == 0 then return nil, nil end
+
+    local pivot, others = nil, {}
+    for i = 0, inputs:size() - 1 do
+        local input = inputs:get(i)
+        if input:getResourceType() == ResourceType.Item and not input:isAutomationOnly() then
+            if not pivot or input:getIntAmount() > pivot:getIntAmount() then
+                if pivot then others[#others + 1] = pivot end
+                pivot = input
+            else
+                others[#others + 1] = input
+            end
+        end
+    end
+
+    return pivot, others
+end
+
+local function BUUI_moduleOf(recipe)
+    local fullType = recipe:getScriptObjectFullType()
+    return fullType and fullType:match("^([^%.]+)%.") or nil
+end
+
+-- Packing consumes many to make one and unpacking does the reverse, so the pivot
+-- amount tells the two apart without matching on recipe names.
+local function BUUI_directionOf(pivot)
+    return pivot:getIntAmount() >= 2 and BUUI_PACK or BUUI_UNPACK
+end
+
+function BUUI.buildIndex()
+    local index = {}
+    local all = ScriptManager.instance:getAllCraftRecipes()
+    if not all then
+        BUUI.recipes = index
+        return index
+    end
+
+    for i = 0, all:size() - 1 do
+        local recipe = all:get(i)
+        local module = BUUI_moduleOf(recipe)
+        if module and BUUI.modules[module] then
+            local pivot, others = BUUI_splitInputs(recipe)
+            if pivot then
+                local entry = {
+                    recipe = recipe,
+                    pivot = pivot,
+                    secondaries = others,
+                    count = pivot:getIntAmount(),
+                    direction = BUUI_directionOf(pivot),
+                }
+
+                local possible = pivot:getPossibleInputItems()
+                if possible then
+                    for n = 0, possible:size() - 1 do
+                        local fullName = possible:get(n):getFullName()
+                        local bucket = index[fullName]
+                        if not bucket then
+                            bucket = {}
+                            index[fullName] = bucket
+                        end
+                        bucket[#bucket + 1] = entry
+                    end
+                end
+            end
+        end
+    end
+
+    -- Deepest compaction first, so Tie10 outranks Tie5 in the list and Bundle All
+    -- reaches for the tighter pack before the looser one competes for the planks.
+    for _, bucket in pairs(index) do
+        table.sort(bucket, function(a, b)
+            if a.count ~= b.count then return a.count > b.count end
+            return a.recipe:getName() < b.recipe:getName()
+        end)
+    end
+
+    BUUI.recipes = index
+    return index
+end
+
+function BUUI.getIndex()
+    return BUUI.recipes or BUUI.buildIndex()
+end
+
+-- Every item the player can reach, tallied by full type. The container list is
+-- the same one the vanilla crafting window works from, so "nearby" means exactly
+-- what it means everywhere else in the game.
+function BUUI.scanContainers(player)
+    local containers = ISInventoryPaneContextMenu.getContainers(player)
+    local tally, sample = {}, {}
+
+    for i = 0, containers:size() - 1 do
+        local container = containers:get(i)
+        local items = container:getItems()
+        for n = 0, items:size() - 1 do
+            local item = items:get(n)
+            local fullType = item:getFullType()
+            tally[fullType] = (tally[fullType] or 0) + 1
+            if not sample[fullType] then sample[fullType] = item end
+        end
+    end
+
+    return containers, tally, sample
+end
+
+-- One long-lived logic object does all the probing. Rebuilding it per row would
+-- throw away the container cache that makes getPossibleCraftCount cheap.
+local BUUI_probe = nil
+
+local function BUUI_probeLogic(player, containers)
+    if not BUUI_probe then
+        BUUI_probe = HandcraftLogic.new(player, nil, nil)
+    end
+    BUUI_probe:setContainers(containers)
+    return BUUI_probe
+end
+
+-- Bundle Up fans a single craftRecipe across a whole family through itemMapper,
+-- so PackFoodCase alone has to become one row per carton actually present.
+-- setRecipeFromContextClick pins the mapper to the sample item, which is what
+-- makes the output name, icon and count come back resolved for that family.
+-- An input can accept a whole family - PackFoodCase lists all 166 cartons - so the
+-- first possible item is a coin toss, not the one in front of the player. Name what
+-- the logic actually picked up, and fall back to the script's own list only when
+-- nothing was picked up, which is exactly the missing-rope case worth naming.
+local function BUUI_inputLabel(logic, input)
+    local chosen = logic:getSatisfiedInputItems(input)
+    if chosen and chosen:size() > 0 then
+        return chosen:get(0):getDisplayName()
+    end
+
+    local possible = input:getPossibleInputItems()
+    if possible and possible:size() > 0 then
+        return possible:get(0):getDisplayName()
+    end
+
+    return "?"
+end
+
+local function BUUI_describeInputs(logic, entry)
+    local parts, satisfied = {}, true
+
+    local function describe(input)
+        local ok = logic:isInputSatisfied(input) and true or false
+        if not ok then satisfied = false end
+
+        parts[#parts + 1] = {
+            label = BUUI_inputLabel(logic, input),
+            have = logic:getInputCount(input),
+            need = input:getIntAmount(),
+            satisfied = ok,
+        }
+    end
+
+    describe(entry.pivot)
+    for _, input in ipairs(entry.secondaries) do describe(input) end
+
+    return parts, satisfied
+end
+
+-- Untying a bundle hands back the rope as well as the planks, so reading only the
+-- first output would drop half of what the recipe makes. Automation-only outputs
+-- are skipped the way the vanilla ingredients widget skips them.
+--
+-- BundleUp's mappers key on a combination of inputs, so Tie5 cannot resolve its
+-- output until both the rope and the planks are in reach. The script's own list of
+-- possible results covers the row that is still missing an ingredient.
+function BUUI.describeOutputs(logic, recipe)
+    local outputs, described = recipe:getOutputs(), {}
+    if not outputs then return described end
+
+    local data = logic:getRecipeData()
+
+    for i = 0, outputs:size() - 1 do
+        local script = outputs:get(i)
+        if not script:isAutomationOnly() and script:getResourceType() == ResourceType.Item then
+            local mapper = script.getOutputMapper and script:getOutputMapper()
+            local item = data and mapper and mapper:getOutputItem(data, true)
+
+            if not item then
+                local possible = script:getPossibleResultItems()
+                if possible and possible:size() > 0 then item = possible:get(0) end
+            end
+
+            if item then
+                described[#described + 1] = {
+                    fullType = item:getFullName(),
+                    name = item:getDisplayName(),
+                    amount = script:getIntAmount(),
+                    texture = item:getNormalTexture(),
+                }
+            end
+        end
+    end
+
+    return described
+end
+
+-- What the row promises the player, and the only thing separating two bundles the
+-- mod names identically: a rope-tied bundle of planks returns Rope, a sheet-rope
+-- one returns Sheet Rope.
+local function BUUI_outputLabel(outputs)
+    if #outputs == 0 then return nil end
+
+    local parts = {}
+    for _, output in ipairs(outputs) do
+        parts[#parts + 1] = tostring(output.amount) .. " " .. output.name
+    end
+
+    return table.concat(parts, " + ")
+end
+
+function BUUI.resolveRows(player, direction)
+    local index = BUUI.getIndex()
+    local containers, tally, sample = BUUI.scanContainers(player)
+    local logic = BUUI_probeLogic(player, containers)
+    local rows, byKey = {}, {}
+
+    for fullType, count in pairs(tally) do
+        local bucket = index[fullType]
+        if bucket then
+            for _, entry in ipairs(bucket) do
+                if entry.direction == direction then
+                    local item = sample[fullType]
+                    logic:setRecipeFromContextClick(entry.recipe, item)
+
+                    local inputs, satisfied = BUUI_describeInputs(logic, entry)
+                    local max = logic:getPossibleCraftCount(false)
+                    local outputs = BUUI.describeOutputs(logic, entry.recipe)
+                    local ready = (satisfied and logic:canPerformCurrentRecipe() and max > 0) and true or false
+
+                    local name = item:getDisplayName()
+                    local result = BUUI_outputLabel(outputs)
+
+                    -- Vanilla gives 56 pairs of these items one display name between
+                    -- them, so keying on the type alone shows the player two rows it
+                    -- cannot tell apart. Merging on what is actually drawn - recipe,
+                    -- name and promised output - folds those together while keeping
+                    -- rows that differ in the rope they hand back separate.
+                    local key = entry.recipe:getScriptObjectFullType()
+                        .. "|" .. name .. "|" .. tostring(result)
+
+                    local source = {
+                        fullType = fullType,
+                        item = item,
+                        count = count,
+                        container = item:getContainer(),
+                        max = max,
+                    }
+
+                    local row = byKey[key]
+                    if row then
+                        row.sources[#row.sources + 1] = source
+                        row.sourceCount = row.sourceCount + count
+                        row.max = row.max + max
+
+                        -- Show the checks belonging to a source that can actually run,
+                        -- so a row offering a Bundle button never lists a blocked
+                        -- variant's ingredients.
+                        if ready and not row.ready then
+                            row.ready = true
+                            row.inputs = inputs
+                        end
+                    else
+                        row = {
+                            entry = entry,
+                            sources = { source },
+                            sourceCount = count,
+                            inputs = inputs,
+                            ready = ready,
+                            max = max,
+                            quantity = 1,
+                            name = name,
+                            result = result,
+                            texture = logic:getResultTexture()
+                                or (outputs[1] and outputs[1].texture)
+                                or item:getTexture(),
+                        }
+                        byKey[key] = row
+                        rows[#rows + 1] = row
+                    end
+                end
+            end
+        end
+    end
+
+    table.sort(rows, function(a, b)
+        if a.ready ~= b.ready then return a.ready end
+        if a.entry.count ~= b.entry.count then return a.entry.count > b.entry.count end
+        return (a.name or "") < (b.name or "")
+    end)
+
+    return rows, containers
+end
+
+Events.OnGameStart.Add(function()
+    BUUI.buildIndex()
+end)
