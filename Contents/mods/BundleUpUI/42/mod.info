@@ -1,7 +1,7 @@
-name=Bundle Up! - Packing Panel
+name=Bundle Up! - UI Add-on
 id=BundleUpUI
 author=Estral
-description=Adds the Packing Panel UI to Bundle Up! - by Estral
+description=Adds the bundling panel to Bundle Up! - by Estral
 poster=poster.png
 require=BundleUp,NeatUI_Framework
 versionMin=42.15
