@@ -257,9 +257,10 @@ function BUUI.Queue.startAll(player, bundling, onProgress, onFinished)
     local function nextRow(job)
         local rows = BUUI.resolveRows(player, bundling)
         for _, row in ipairs(rows) do
-            local key = row.entry.recipe:getName() .. "|" .. (row.name or "")
-            if row.ready and row.max > 0 and not attempted[key] then
-                attempted[key] = true
+            -- row.key is the only thing separating the rope twins: Untie5 takes both
+            -- plank bundles and they share a name, so keying on that would skip one.
+            if row.ready and row.max > 0 and not attempted[row.key] then
+                attempted[row.key] = true
                 row.quantity = row.max
                 job.total = job.total + row.max
                 job.sourceIndex = 1
