@@ -2,8 +2,6 @@
 --ESTRAL--
 ----------
 
-require "BUUI_Button"
-require "BUUI_Queue"
 require "BUUI_Spinner"
 
 BUUI_Row = ISPanel:derive("BUUI_Row")
@@ -47,24 +45,13 @@ function BUUI_Row:createChildren()
     self.spinner:instantiate()
     self:addChild(self.spinner)
 
-    -- Sized for the longer of the two labels so the button does not jump when the
-    -- panel flips to the unbundle tab.
-    self.action = BUUI_Button:new(0, controlY, 10, CONTROL_HEIGHT, getText("IGUI_BUUI_Bundle"), self, BUUI_Row.onAction)
-    self.action:setWidth(16 + math.max(
-        getTextManager():MeasureStringX(self.action.font, getText("IGUI_BUUI_Bundle")),
-        getTextManager():MeasureStringX(self.action.font, getText("IGUI_BUUI_Unbundle"))))
-    self.action:initialise()
-    self.action:instantiate()
-    self:addChild(self.action)
-
     self:layout()
 end
 
 function BUUI_Row:layout()
-    if not self.action then return end
+    if not self.spinner then return end
 
-    self.action:setX(self.width - self.action:getWidth() - PAD)
-    self.spinner:setX(self.action:getX() - self.spinner:getWidth() - PAD)
+    self.spinner:setX(self.width - self.spinner:getWidth() - PAD)
 end
 
 -- Where the text has to stop so it never runs under the spinner.
@@ -76,23 +63,22 @@ function BUUI_Row:setRow(row)
     self.row = row
     if not row then return end
 
-    self.action.title = self.panel.bundling
-        and getText("IGUI_BUUI_Bundle")
-        or getText("IGUI_BUUI_Unbundle")
-    self.action.enable = row.ready and not BUUI.Queue.isRunning()
+    -- setMax re-fires onChange carrying the value left over from whichever row this
+    -- recycled widget showed last, which would overwrite the one being restored.
+    self.settingRow = true
     self.spinner:setMax(row.max)
     self.spinner:setValue(row.quantity or 1)
+    self.settingRow = false
+    row.quantity = self.spinner:getValue()
+
     self:layout()
 end
 
 function BUUI_Row:onQuantity(value)
-    if self.row then self.row.quantity = value end
-end
+    if self.settingRow then return end
 
-function BUUI_Row:onAction()
-    if self.row and self.panel then
-        self.panel:bundleRow(self.row)
-    end
+    if self.row then self.row.quantity = value end
+    if self.panel then self.panel:updateFooter() end
 end
 
 function BUUI_Row:onResize()

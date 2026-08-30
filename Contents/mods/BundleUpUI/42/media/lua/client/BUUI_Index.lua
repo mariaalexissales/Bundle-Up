@@ -278,6 +278,7 @@ function BUUI.resolveRows(player, bundling)
                         end
                     else
                         row = {
+                            key = key,
                             entry = entry,
                             sources = { source },
                             sourceCount = count,

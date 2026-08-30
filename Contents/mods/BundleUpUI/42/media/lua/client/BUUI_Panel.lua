@@ -71,6 +71,16 @@ function BUUI_Panel:bands()
     return tabY, barY, listY, footerY
 end
 
+-- both footer buttons swap label with the tab and one of them turns into Stop, so each
+-- is sized for the widest text it can ever hold and the strip never reflows.
+local function BUUI_labelWidth(button, ...)
+    local widest = 0
+    for _, key in ipairs({ ... }) do
+        widest = math.max(widest, getTextManager():MeasureStringX(button.font, getText(key)))
+    end
+    return 24 + widest
+end
+
 function BUUI_Panel:createChildren()
     ISCollapsableWindow.createChildren(self)
 
@@ -117,9 +127,8 @@ function BUUI_Panel:createChildren()
     self:addChild(self.list)
 
     self.bundleAll = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleAll"), self, BUUI_Panel.onBundleAll)
-    self.bundleAll:setWidth(24 + math.max(
-        getTextManager():MeasureStringX(self.bundleAll.font, getText("IGUI_BUUI_BundleAll")),
-        getTextManager():MeasureStringX(self.bundleAll.font, getText("IGUI_BUUI_Stop"))))
+    self.bundleAll:setWidth(BUUI_labelWidth(self.bundleAll,
+        "IGUI_BUUI_BundleAll", "IGUI_BUUI_UnbundleAll", "IGUI_BUUI_Stop"))
     self.bundleAll:setX(self.width - self.bundleAll:getWidth() - PAD)
     self.bundleAll.anchorTop = false
     self.bundleAll.anchorBottom = true
@@ -128,6 +137,18 @@ function BUUI_Panel:createChildren()
     self.bundleAll:initialise()
     self.bundleAll:instantiate()
     self:addChild(self.bundleAll)
+
+    self.bundleItems = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleItems"), self, BUUI_Panel.onBundleItems)
+    self.bundleItems:setWidth(BUUI_labelWidth(self.bundleItems,
+        "IGUI_BUUI_BundleItems", "IGUI_BUUI_UnbundleItems", "IGUI_BUUI_Stop"))
+    self.bundleItems:setX(self.bundleAll:getX() - self.bundleItems:getWidth() - GAP)
+    self.bundleItems.anchorTop = false
+    self.bundleItems.anchorBottom = true
+    self.bundleItems.anchorRight = true
+    self.bundleItems.anchorLeft = false
+    self.bundleItems:initialise()
+    self.bundleItems:instantiate()
+    self:addChild(self.bundleItems)
 
     self:refresh()
 end
@@ -142,22 +163,58 @@ function BUUI_Panel:onRefresh()
 end
 
 function BUUI_Panel:refresh()
+    -- the auto-refresh rebuilds every row, so a dialled quantity has to be carried
+    -- across by key or the timer wipes it before the player reaches the button.
+    local dialled = {}
+    for _, row in ipairs(self.rows) do
+        if row.key then dialled[row.key] = row.quantity end
+    end
+
     local rows, containers = BUUI.resolveRows(self.player, self.bundling)
     self.rows = rows
     self.sourceText = self:describeSources(containers)
+
+    self.ready = 0
+    for _, row in ipairs(self.rows) do
+        local previous = dialled[row.key]
+        if previous then row.quantity = math.min(previous, row.max) end
+        if row.ready then self.ready = self.ready + 1 end
+    end
 
     -- The scroll view only reassigns data when the visible range moves, so a
     -- refresh that leaves the row count alone still needs to be forced through.
     self.list:setDataSource(self.rows, true)
 
-    self.ready = 0
-    for _, row in ipairs(self.rows) do
-        if row.ready then self.ready = self.ready + 1 end
+    self:updateFooter()
+end
+
+-- Split from refresh because a spinner changes what the buttons should say without
+-- changing what is in reach, and re-resolving every row on a click of + is far too slow.
+function BUUI_Panel:updateFooter()
+    if not self.bundleItems then return end
+
+    self.bundleItems.title = getText(self.bundling and "IGUI_BUUI_BundleItems" or "IGUI_BUUI_UnbundleItems")
+    self.bundleAll.title = getText(self.bundling and "IGUI_BUUI_BundleAll" or "IGUI_BUUI_UnbundleAll")
+
+    -- only the button that started the batch becomes the stop control, so there is
+    -- never a question of which run a Stop would cancel. a batch that outlived the
+    -- window it was started from has no button of its own, and falls to Bundle All
+    -- rather than leaving a reopened panel with nothing that can cancel it.
+    if BUUI.Queue.isRunning() then
+        local stop = self.runningButton or self.bundleAll
+        stop.title = getText("IGUI_BUUI_Stop")
+        self.bundleItems.enable = stop == self.bundleItems
+        self.bundleAll.enable = stop == self.bundleAll
+        return
     end
 
-    local running = BUUI.Queue.isRunning()
-    self.bundleAll.title = running and getText("IGUI_BUUI_Stop") or getText("IGUI_BUUI_BundleAll")
-    self.bundleAll.enable = running or self.ready > 0
+    local chosen = 0
+    for _, row in ipairs(self.rows) do
+        if row.ready and (row.quantity or 0) > 0 then chosen = chosen + 1 end
+    end
+
+    self.bundleItems.enable = chosen > 0
+    self.bundleAll.enable = (self.ready or 0) > 0
 end
 
 -- Naming the containers is what makes the panel legible when the player is stood
@@ -202,25 +259,50 @@ function BUUI_Panel:describeSources(containers)
     return text
 end
 
-function BUUI_Panel:bundleRow(row)
-    if BUUI.Queue.isRunning() then return end
+function BUUI_Panel:stopBatch()
+    BUUI.Queue.stop()
+    self.runningButton = nil
+    self:refresh()
+end
 
-    BUUI.Queue.startRow(self.player, row,
+function BUUI_Panel:onBatchFinished()
+    self.runningButton = nil
+    self:refresh()
+end
+
+-- Runs exactly what the player dialled in, on the rows as they stand. Bundle All keeps
+-- re-reading the containers between recipes; this deliberately does not.
+function BUUI_Panel:onBundleItems()
+    if BUUI.Queue.isRunning() then
+        self:stopBatch()
+        return
+    end
+
+    local chosen = {}
+    for _, row in ipairs(self.rows) do
+        if row.ready and (row.quantity or 0) > 0 then
+            chosen[#chosen + 1] = row
+        end
+    end
+    if #chosen == 0 then return end
+
+    self.runningButton = self.bundleItems
+    BUUI.Queue.startRows(self.player, chosen,
         function() self:refresh() end,
-        function() self:refresh() end)
+        function() self:onBatchFinished() end)
     self:refresh()
 end
 
 function BUUI_Panel:onBundleAll()
     if BUUI.Queue.isRunning() then
-        BUUI.Queue.stop()
-        self:refresh()
+        self:stopBatch()
         return
     end
 
+    self.runningButton = self.bundleAll
     BUUI.Queue.startAll(self.player, self.bundling,
         function() self:refresh() end,
-        function() self:refresh() end)
+        function() self:onBatchFinished() end)
     self:refresh()
 end
 

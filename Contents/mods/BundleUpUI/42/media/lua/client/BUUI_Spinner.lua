@@ -70,9 +70,6 @@ function BUUI_Spinner:setValue(value)
     value = tonumber(value) or 1
     value = PZMath.clamp(value, 0, self.max)
 
-    -- Zero only reads as a real choice when there is genuinely nothing to make.
-    if value == 0 and self.max > 0 then value = 1 end
-
     self.value = value
     if self.entry and self.entry:getInternalText() ~= tostring(value) then
         self.entry:setText(tostring(value))
