@@ -75,6 +75,40 @@ module BundleUp {
         }
     }
 
+    craftRecipe MergeBoxSmall {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 2 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] flags[IsExclusive;ItemCount] mappers[boxTypes],
+        }
+        outputs {
+            item 1 mapper:boxTypes,
+        }
+        itemMapper boxTypes {
+            BundleUp.NailsBox_Medium = BundleUp.NailsBox_Small,
+            BundleUp.ScrewsBox_Medium = BundleUp.ScrewsBox_Small,
+        }
+    }
+
+    craftRecipe MergeBoxMedium {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 2 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] flags[IsExclusive;ItemCount] mappers[boxTypes],
+        }
+        outputs {
+            item 1 mapper:boxTypes,
+        }
+        itemMapper boxTypes {
+            Base.NailsBox = BundleUp.NailsBox_Medium,
+            Base.ScrewsBox = BundleUp.ScrewsBox_Medium,
+        }
+    }
+
     craftRecipe BoxPens {
         timedAction = PackingBox,
         time = 5,
@@ -517,7 +551,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.CircularSawblade;Base.IronBand;Base.IronBandSmall;Base.IronBarHalf;Base.IronBarQuarter;Base.IronBlock;Base.IronChunk;Base.IronPiece;Base.RakeHead;Base.SteelBarHalf;Base.SteelBarQuarter;Base.SteelBlock;Base.SteelChunk;Base.SteelPiece] flags[IsExclusive;ItemCount] mappers[materialTypes],
+            item 10 [Base.CircularSawblade;Base.IronBand;40:Base.IronBandSmall;20:Base.IronBarHalf;40:Base.IronBarQuarter;Base.IronBlock;40:Base.IronChunk;200:Base.IronPiece;Base.RakeHead;20:Base.SteelBarHalf;40:Base.SteelBarQuarter;Base.SteelBlock;40:Base.SteelChunk;200:Base.SteelPiece] flags[IsExclusive;ItemCount] mappers[materialTypes],
         }
         outputs {
             item 1 mapper:materialTypes,
@@ -546,7 +580,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.CircularSawbladeBox;BundleUp.IronBandBox;BundleUp.IronBandSmallBox;BundleUp.IronBarHalfBox;BundleUp.IronBarQuarterBox;BundleUp.IronBlockBox;BundleUp.IronChunkBox;BundleUp.IronPieceBox;BundleUp.RakeHeadBox;BundleUp.SteelBarHalfBox;BundleUp.SteelBarQuarterBox;BundleUp.SteelBlockBox;BundleUp.SteelChunkBox;BundleUp.SteelPieceBox] mappers[materialTypes],
+            item 1 [BundleUp.CircularSawbladeBox;BundleUp.IronBandBox;BundleUp.IronBlockBox;BundleUp.RakeHeadBox;BundleUp.SteelBlockBox] mappers[materialTypes],
         }
         outputs {
             item 10 mapper:materialTypes,
@@ -554,17 +588,62 @@ module BundleUp {
         itemMapper materialTypes {
             Base.CircularSawblade = BundleUp.CircularSawbladeBox,
             Base.IronBand = BundleUp.IronBandBox,
-            Base.IronBandSmall = BundleUp.IronBandSmallBox,
-            Base.IronBarHalf = BundleUp.IronBarHalfBox,
-            Base.IronBarQuarter = BundleUp.IronBarQuarterBox,
             Base.IronBlock = BundleUp.IronBlockBox,
-            Base.IronChunk = BundleUp.IronChunkBox,
-            Base.IronPiece = BundleUp.IronPieceBox,
             Base.RakeHead = BundleUp.RakeHeadBox,
-            Base.SteelBarHalf = BundleUp.SteelBarHalfBox,
-            Base.SteelBarQuarter = BundleUp.SteelBarQuarterBox,
             Base.SteelBlock = BundleUp.SteelBlockBox,
+        }
+    }
+
+    craftRecipe UnpackPartsBoxHalves {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronBarHalfBox;BundleUp.SteelBarHalfBox] mappers[materialTypes],
+        }
+        outputs {
+            item 20 mapper:materialTypes,
+        }
+        itemMapper materialTypes {
+            Base.IronBarHalf = BundleUp.IronBarHalfBox,
+            Base.SteelBarHalf = BundleUp.SteelBarHalfBox,
+        }
+    }
+
+    craftRecipe UnpackPartsBoxQuarters {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronBandSmallBox;BundleUp.IronBarQuarterBox;BundleUp.IronChunkBox;BundleUp.SteelBarQuarterBox;BundleUp.SteelChunkBox] mappers[materialTypes],
+        }
+        outputs {
+            item 40 mapper:materialTypes,
+        }
+        itemMapper materialTypes {
+            Base.IronBandSmall = BundleUp.IronBandSmallBox,
+            Base.IronBarQuarter = BundleUp.IronBarQuarterBox,
+            Base.IronChunk = BundleUp.IronChunkBox,
+            Base.SteelBarQuarter = BundleUp.SteelBarQuarterBox,
             Base.SteelChunk = BundleUp.SteelChunkBox,
+        }
+    }
+
+    craftRecipe UnpackPartsBoxPieces {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronPieceBox;BundleUp.SteelPieceBox] mappers[materialTypes],
+        }
+        outputs {
+            item 200 mapper:materialTypes,
+        }
+        itemMapper materialTypes {
+            Base.IronPiece = BundleUp.IronPieceBox,
             Base.SteelPiece = BundleUp.SteelPieceBox,
         }
     }

@@ -46,6 +46,9 @@
   "UnpackScrapSack": "Empty Scrap Sack (25 items)",
   "PackPartsBox": "Pack Parts in Box",
   "UnpackPartsBox": "Open Parts Box (10 items)",
+  "UnpackPartsBoxHalves": "Open Parts Box (20 items)",
+  "UnpackPartsBoxQuarters": "Open Parts Box (40 items)",
+  "UnpackPartsBoxPieces": "Open Parts Box (200 items)",
   "PackAmmoClipBox": "Pack Magazines in Box",
   "UnpackAmmoClipBox": "Open Box of Magazines (5 items)",
   "PackAmmoClipCarton": "Pack Magazine Boxes in Carton",
@@ -67,6 +70,11 @@
   "TieCanFull4": "Pack Full Gas Cans",
   "UntieCanFull4": "Unpack Full Gas Cans (4 items)",
   "UnpackNutsBoltsBox": "Open Nuts & Bolts Box (50 items)",
+  "MergeBoxSmall": "Combine into Medium Box",
+  "MergeBoxMedium": "Combine into Full Box",
+  "MergeBundle": "Combine into Large Bundle",
+  "MergeSack": "Combine into Large Sack",
+  "MergeTie": "Combine into Large Bundle",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
 }

@@ -289,6 +289,8 @@ local MATERIALS_ITEMS = {
     "BundleUp.IronPipesLSR",
     "BundleUp.IronBarLR",
     "BundleUp.IronBarLSR",
+    "BundleUp.SteelRodLR",
+    "BundleUp.SteelRodLSR",
     "BundleUp.NailsBox_Small",
     "BundleUp.NailsBox_Medium",
     "BundleUp.ScrewsBox_Small",
