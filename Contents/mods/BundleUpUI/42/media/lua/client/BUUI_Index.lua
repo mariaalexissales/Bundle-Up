@@ -151,8 +151,9 @@ local function BUUI_probeLogic(player, containers)
 end
 
 -- an input can accept a whole family - PackFoodCase lists all 166 cartons - so the
--- first possible item is a coin toss, not the one in front of the player.
-local function BUUI_inputNames(logic, input)
+-- first possible item is a coin toss, not the one in front of the player. wanted is
+-- the type the row was built from; only the pivot knows it, a secondary passes nil.
+local function BUUI_inputNames(logic, input, wanted)
     -- both lists hold the same kind of object, so vanilla swaps one for the other and
     -- reads them alike (ISWidgetInput:197). the fallback is the missing-rope case.
     local objects = logic:getSatisfiedInputItems(input)
@@ -161,6 +162,15 @@ local function BUUI_inputNames(logic, input)
     end
 
     if objects and objects:size() > 0 then
+        if wanted then
+            for i = 0, objects:size() - 1 do
+                local object = objects:get(i)
+                if object:getFullName() == wanted then
+                    return object:getDisplayName(), object:getFullName()
+                end
+            end
+        end
+
         local object = objects:get(0)
         return object:getDisplayName(), object:getFullName()
     end
@@ -168,14 +178,14 @@ local function BUUI_inputNames(logic, input)
     return "?", nil
 end
 
-local function BUUI_describeInputs(logic, entry)
+local function BUUI_describeInputs(logic, entry, fullType)
     local parts, satisfied = {}, true
 
-    local function describe(input)
+    local function describe(input, wanted)
         local ok = logic:isInputSatisfied(input) and true or false
         if not ok then satisfied = false end
 
-        local label, fullName = BUUI_inputNames(logic, input)
+        local label, fullName = BUUI_inputNames(logic, input, wanted)
 
         parts[#parts + 1] = {
             label = label,
@@ -185,7 +195,7 @@ local function BUUI_describeInputs(logic, entry)
         }
     end
 
-    describe(entry.pivot)
+    describe(entry.pivot, fullType)
     for _, input in ipairs(entry.secondaries) do describe(input) end
 
     return parts, satisfied
@@ -205,6 +215,7 @@ function BUUI.describeOutputs(logic, recipe)
         if not script:isAutomationOnly() and script:getResourceType() == ResourceType.Item then
             local mapper = script.getOutputMapper and script:getOutputMapper()
             local item = data and mapper and mapper:getOutputItem(data, true)
+            local resolved = item ~= nil
 
             if not item then
                 local possible = script:getPossibleResultItems()
@@ -217,6 +228,7 @@ function BUUI.describeOutputs(logic, recipe)
                     name = item:getDisplayName(),
                     amount = script:getIntAmount(),
                     texture = item:getNormalTexture(),
+                    resolved = resolved,
                 }
             end
         end
@@ -252,7 +264,7 @@ function BUUI.resolveRows(player, bundling)
                     local logic = BUUI_probeLogic(player, containers)
                     logic:setRecipeFromContextClick(entry.recipe, item)
 
-                    local inputs, satisfied = BUUI_describeInputs(logic, entry)
+                    local inputs, satisfied = BUUI_describeInputs(logic, entry, fullType)
                     -- the flag is forceRecache: this logic was built a line ago and has
                     -- no cache to read, so asking for the cached count answers zero.
                     local max = logic:getPossibleCraftCount(true)

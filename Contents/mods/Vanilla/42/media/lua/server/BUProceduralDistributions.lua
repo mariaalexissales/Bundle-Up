@@ -279,6 +279,8 @@ local MATERIALS_ITEMS = {
     "BundleUp.IronPipesSR",
     "BundleUp.IronBarR",
     "BundleUp.IronBarSR",
+    "BundleUp.SteelRodR",
+    "BundleUp.SteelRodSR",
     "BundleUp.PlankLR",
     "BundleUp.PlankLSR",
     "BundleUp.SheetMetalLR",
@@ -287,6 +289,8 @@ local MATERIALS_ITEMS = {
     "BundleUp.IronPipesLSR",
     "BundleUp.IronBarLR",
     "BundleUp.IronBarLSR",
+    "BundleUp.SteelRodLR",
+    "BundleUp.SteelRodLSR",
     "BundleUp.NailsBox_Small",
     "BundleUp.NailsBox_Medium",
     "BundleUp.ScrewsBox_Small",
@@ -606,8 +610,6 @@ local JEWELRY_ITEMS = {
     "BundleUp.GoldScrap_Large",
     "BundleUp.SilverScrap_Small",
     "BundleUp.SilverScrap_Large",
-    "BundleUp.JewelryPouch_Small",
-    "BundleUp.JewelryPouch_Medium",
 }
 
 local JEWELRY_WEIGHTS = {

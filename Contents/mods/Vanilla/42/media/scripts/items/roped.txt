@@ -87,6 +87,26 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
+    item SteelRodR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = SteelRodR,
+        WorldStaticModel = MetalStock_Rope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie5,
+    }
+
+    item SteelRodSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = SteelRodSR,
+        WorldStaticModel = MetalStock_SheetRope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie5,
+    }
+
     item PlankLR {
         DisplayCategory = Material,
         ItemType = base:normal,
@@ -167,6 +187,26 @@ module BundleUp {
         DoubleClickRecipe = Untie10,
     }
 
+    item SteelRodLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = IronPipesLR,
+        WorldStaticModel = MetalStock_Rope_Large,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie10,
+    }
+
+    item SteelRodLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = IronPipesLSR,
+        WorldStaticModel = MetalStock_SheetRope_Large,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie10,
+    }
+
     item GasCanR {
         DisplayCategory = VehicleMaintenance,
         ItemType = base:normal,
@@ -190,7 +230,7 @@ module BundleUp {
     item GasCanFullR {
         DisplayCategory = VehicleMaintenance,
         ItemType = base:normal,
-        Weight = 46.4,
+        Weight = 38.51,
         Icon = GasCanR,
         WorldStaticModel = GasCan_Ground,
         Tags = base:petrol,
@@ -200,7 +240,7 @@ module BundleUp {
     item GasCanFullSR {
         DisplayCategory = VehicleMaintenance,
         ItemType = base:normal,
-        Weight = 46.4,
+        Weight = 38.51,
         Icon = GasCanSR,
         WorldStaticModel = GasCan_Ground,
         Tags = base:petrol,
