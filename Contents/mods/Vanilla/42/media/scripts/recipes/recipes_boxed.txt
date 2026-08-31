@@ -75,6 +75,40 @@ module BundleUp {
         }
     }
 
+    craftRecipe MergeBoxSmall {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 2 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] flags[IsExclusive;ItemCount] mappers[boxTypes],
+        }
+        outputs {
+            item 1 mapper:boxTypes,
+        }
+        itemMapper boxTypes {
+            BundleUp.NailsBox_Medium = BundleUp.NailsBox_Small,
+            BundleUp.ScrewsBox_Medium = BundleUp.ScrewsBox_Small,
+        }
+    }
+
+    craftRecipe MergeBoxMedium {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 2 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] flags[IsExclusive;ItemCount] mappers[boxTypes],
+        }
+        outputs {
+            item 1 mapper:boxTypes,
+        }
+        itemMapper boxTypes {
+            Base.NailsBox = BundleUp.NailsBox_Medium,
+            Base.ScrewsBox = BundleUp.ScrewsBox_Medium,
+        }
+    }
+
     craftRecipe BoxPens {
         timedAction = PackingBox,
         time = 5,

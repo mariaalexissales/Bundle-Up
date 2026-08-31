@@ -72,6 +72,8 @@
   "TieCanFull4": "Pack Full Gas Cans",
   "UntieCanFull4": "Unpack Full Gas Cans (4 items)",
   "UnpackNutsBoltsBox": "Open Nuts & Bolts Box (50 items)",
+  "MergeBoxSmall": "Combine into Medium Box",
+  "MergeBoxMedium": "Combine into Full Box",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
 }
