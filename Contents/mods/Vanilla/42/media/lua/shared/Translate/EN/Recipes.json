@@ -74,6 +74,9 @@
   "UnpackNutsBoltsBox": "Open Nuts & Bolts Box (50 items)",
   "MergeBoxSmall": "Combine into Medium Box",
   "MergeBoxMedium": "Combine into Full Box",
+  "MergeBundle": "Combine into Large Bundle",
+  "MergeSack": "Combine into Large Sack",
+  "MergeTie": "Combine into Large Bundle",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
 }

@@ -105,6 +105,23 @@ module BundleUp {
         }
     }
 
+    craftRecipe MergeBundle {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 2 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WireCable_Large = BundleUp.WireCable_Small,
+            BundleUp.SmallMetalSheetL = BundleUp.SmallMetalSheetS,
+        }
+    }
+
     craftRecipe OpenSodaCanPack {
         timedAction = UnPackBox,
         time = 5,

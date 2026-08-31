@@ -129,6 +129,40 @@ module BundleUp {
         }
     }
 
+    craftRecipe MergeTie {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 2 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR] flags[IsExclusive;ItemCount] mappers[bundleTypes;ropeTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+            item 1 mapper:ropeTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.PlankLR = BundleUp.PlankR,
+            BundleUp.PlankLSR = BundleUp.PlankSR,
+            BundleUp.SheetMetalLR = BundleUp.SheetMetalR,
+            BundleUp.SheetMetalLSR = BundleUp.SheetMetalSR,
+            BundleUp.IronPipesLR = BundleUp.IronPipesR,
+            BundleUp.IronPipesLSR = BundleUp.IronPipesSR,
+            BundleUp.IronBarLR = BundleUp.IronBarR,
+            BundleUp.IronBarLSR = BundleUp.IronBarSR,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.PlankR,
+            Base.SheetRope = BundleUp.PlankSR,
+            Base.Rope = BundleUp.SheetMetalR,
+            Base.SheetRope = BundleUp.SheetMetalSR,
+            Base.Rope = BundleUp.IronPipesR,
+            Base.SheetRope = BundleUp.IronPipesSR,
+            Base.Rope = BundleUp.IronBarR,
+            Base.SheetRope = BundleUp.IronBarSR,
+        }
+    }
+
     craftRecipe TieCan4 {
         timedAction = Making,
         time = 5,
