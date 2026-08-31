@@ -30,21 +30,21 @@ module BundleUp {
     item SmallMetalSheetS {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 8.3,
+        Weight = 2.07,
         Icon = SmallMetalSheetS,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnbundleSmallSheets,
+        DoubleClickRecipe = UnbundleSmall,
     }
 
     item SmallMetalSheetL {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 16.6,
+        Weight = 4.15,
         Icon = SmallMetalSheetL,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
-        DoubleClickRecipe = UnbundleLargeSheets,
+        DoubleClickRecipe = UnbundleLarge,
     }
 
     item SodaPack {

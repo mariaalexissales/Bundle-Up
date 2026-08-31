@@ -47,8 +47,8 @@ BU.Bundles = {
 
     ["BundleUp.WireCable_Small"]  = { base = "Base.Wire",           count = 5  },
     ["BundleUp.WireCable_Large"]  = { base = "Base.Wire",           count = 10 },
-    ["BundleUp.SmallMetalSheetS"] = { base = "Base.SmallSheetMetal", count = 20 },
-    ["BundleUp.SmallMetalSheetL"] = { base = "Base.SmallSheetMetal", count = 40 },
+    ["BundleUp.SmallMetalSheetS"] = { base = "Base.SmallSheetMetal", count = 5  },
+    ["BundleUp.SmallMetalSheetL"] = { base = "Base.SmallSheetMetal", count = 10 },
     ["BundleUp.GingerAleSP"]      = { base = "Base.Pop3",          count = 6  },
     ["BundleUp.SodaPack"]         = { base = "Base.Pop2",          count = 6  },
     ["BundleUp.DietSodaPack"]     = { base = "Base.Pop",           count = 6  },

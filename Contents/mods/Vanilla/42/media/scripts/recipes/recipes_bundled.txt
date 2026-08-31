@@ -13,7 +13,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 5 [Base.Wire;20:Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
+            item 5 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -30,28 +30,13 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Small] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] mappers[itemTypes],
         }
         outputs {
             item 5 mapper:itemTypes,
         }
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Small,
-        }
-    }
-
-    craftRecipe UnbundleSmallSheets {
-        timedAction = Making,
-        time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
-        category = Packing,
-        inputs {
-            item 1 [BundleUp.SmallMetalSheetS] mappers[itemTypes],
-        }
-        outputs {
-            item 20 mapper:itemTypes,
-        }
-        itemMapper itemTypes {
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetS,
         }
     }
@@ -62,7 +47,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.Wire;40:Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
+            item 10 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -79,28 +64,13 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Large] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
         }
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Large,
-        }
-    }
-
-    craftRecipe UnbundleLargeSheets {
-        timedAction = Making,
-        time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
-        category = Packing,
-        inputs {
-            item 1 [BundleUp.SmallMetalSheetL] mappers[itemTypes],
-        }
-        outputs {
-            item 40 mapper:itemTypes,
-        }
-        itemMapper itemTypes {
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetL,
         }
     }
