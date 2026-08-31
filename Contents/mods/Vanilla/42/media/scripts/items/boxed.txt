@@ -1552,26 +1552,26 @@ module BundleUp {
     item IronBandSmallBox {
         DisplayCategory = Tool,
         ItemType = base:normal,
-        Weight = 4.15,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
     item IronBarHalfBox {
         DisplayCategory = AnimalPartWeapon,
         ItemType = base:normal,
-        Weight = 8.3,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxHalves,
     }
     item IronBarQuarterBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.15,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
     item IronBlockBox {
         DisplayCategory = Material,
@@ -1584,18 +1584,18 @@ module BundleUp {
     item IronChunkBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.15,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
     item IronPieceBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.83,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxPieces,
     }
     item RakeHeadBox {
         DisplayCategory = Material,
@@ -1608,18 +1608,18 @@ module BundleUp {
     item SteelBarHalfBox {
         DisplayCategory = MaterialWeapon,
         ItemType = base:normal,
-        Weight = 8.3,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxHalves,
     }
     item SteelBarQuarterBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.15,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
     item SteelBlockBox {
         DisplayCategory = Material,
@@ -1632,18 +1632,18 @@ module BundleUp {
     item SteelChunkBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 4.15,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
     item SteelPieceBox {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 0.83,
+        Weight = 16.6,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackPartsBox,
+        DoubleClickRecipe = UnpackPartsBoxPieces,
     }
 
     item AlcoholBandageBox {
