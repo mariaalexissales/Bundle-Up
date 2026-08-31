@@ -23,6 +23,8 @@ BU.Bundles = {
     ["BundleUp.IronPipesLSR"]   = { base = "Base.MetalPipe",      count = 10 },
     ["BundleUp.IronBarLR"]      = { base = "Base.IronBar",        count = 10 },
     ["BundleUp.IronBarLSR"]     = { base = "Base.IronBar",        count = 10 },
+    ["BundleUp.SteelRodLR"]     = { base = "Base.MetalBar",       count = 10 },
+    ["BundleUp.SteelRodLSR"]    = { base = "Base.MetalBar",       count = 10 },
     ["BundleUp.GasCanR"]        = { base = "Base.PetrolCan",      count = 4  },
     ["BundleUp.GasCanSR"]       = { base = "Base.PetrolCan",      count = 4  },
     ["BundleUp.GasCanFullR"]    = { base = "Base.PetrolCan",      count = 4, fluid = 10 },

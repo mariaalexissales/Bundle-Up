@@ -196,6 +196,18 @@ option BundleUp.Item_SteelRodSR
     page = BundleUp, translation = BundleUp_Item_SteelRodSR,
 }
 
+option BundleUp.Item_SteelRodLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SteelRodLR,
+}
+
+option BundleUp.Item_SteelRodLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SteelRodLSR,
+}
+
 option BundleUp.Item_PlankLR
 {
     type = integer, min = -1, max = 100, default = -1,
