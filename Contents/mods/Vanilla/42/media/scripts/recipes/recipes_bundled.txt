@@ -13,7 +13,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 5 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
+            item 5 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -47,7 +47,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
+            item 10 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -210,7 +210,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 6 [Base.Pop3] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
+            item 6 [Base.Pop3] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount;IsFull],
         }
         outputs {
             item 1 BundleUp.GingerAleSP,
@@ -236,7 +236,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 6 [Base.Pop;Base.Pop2] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[sodaTypes],
+            item 6 [Base.Pop;Base.Pop2] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount;IsFull] mappers[sodaTypes],
         }
         outputs {
             item 1 mapper:sodaTypes,
