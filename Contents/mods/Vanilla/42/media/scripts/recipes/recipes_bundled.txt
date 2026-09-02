@@ -11,6 +11,7 @@ module BundleUp {
         timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackFull,
         category = Packing,
         inputs {
             item 5 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
@@ -45,6 +46,7 @@ module BundleUp {
         timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackFull,
         category = Packing,
         inputs {
             item 10 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive] mappers[itemTypes],
@@ -208,6 +210,7 @@ module BundleUp {
         timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackFull,
         category = Packing,
         inputs {
             item 6 [Base.Pop3] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount],
@@ -234,6 +237,7 @@ module BundleUp {
         timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
+        onTest = BUInv.testPackFull,
         category = Packing,
         inputs {
             item 6 [Base.Pop;Base.Pop2] flags[AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[sodaTypes],
