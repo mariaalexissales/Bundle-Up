@@ -58,10 +58,6 @@ description=[*] Clay Bricks
 description=[/list]
 description=
 description=[hr][/hr]
-description=[i]In the UK, our online safety laws are all wonky right now, so we can’t use Imgur to post pictures in descriptions. So this will have to do.[/i]
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3757904107]Click here for pictures[/url]
-description=
-description=[hr][/hr]
 description=[h2]Support the Mod[/h2]
 description=If Bundle Up! has decluttered your life (or at least your storage crate), consider tossing a coin toward more B42 updates & following my Twitch to see me update the mod or just code :D:
 description=[url=https://ko-fi.com/estralexe]☕ Ko-fi[/url]
@@ -77,6 +73,13 @@ description=[h2]More From Estral[/h2]
 description=Check out my other mods while you’re at it:
 description=
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305][img]https://images.steamusercontent.com/ugc/11843508093091308261/A79EED3FC204D4945A5842ACFCD964749B4F39EE/[/img][/url]
-description=[b]Pinoy Pantry[/b] sarap ng Pinas in Knox Country
+description=[b]Pinoy Pantry[/b] 
+description=sarap ng Pinas in Knox Country
+description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412][img]https://images.steamusercontent.com/ugc/12446045936225687270/CC23BD518588F9117F37B405BF1824B00CA7B8CE/[/img][/url]
+description=[b]Quest System Framework[/b] 
+description=Add quests to your multiplayer servers
+description=
+description=[hr][/hr]
 tags=Build 42;Balance;Food;Framework;Items;Literature;Misc;Multiplayer;Realistic;Silly/Fun;Skills;Vehicles;QoL;WIP
 visibility=public
