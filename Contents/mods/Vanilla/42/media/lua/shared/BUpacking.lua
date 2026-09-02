@@ -88,6 +88,13 @@ function BUInv.testPackPerishable(item, character)
     return item == nil or not item:IsFood() or not item:isRotten()
 end
 
+function BUInv.testPackFull(item, character)
+    if item == nil then return true end
+    if item:IsDrainable() then return item:isFullUses() end
+    local fluidContainer = item:getFluidContainer()
+    return fluidContainer == nil or fluidContainer:isFull()
+end
+
 local function BU_shelfLife(item)
     local life = item:getOffAgeMax()
     if life == nil or life <= 0 then
