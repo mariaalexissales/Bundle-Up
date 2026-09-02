@@ -88,6 +88,10 @@ function BUInv.testPackPerishable(item, character)
     return item == nil or not item:IsFood() or not item:isRotten()
 end
 
+function BUInv.testPackEmptyMagazine(item, character)
+    return item == nil or item:getCurrentAmmoCount() <= 0
+end
+
 local function BU_shelfLife(item)
     local life = item:getOffAgeMax()
     if life == nil or life <= 0 then
