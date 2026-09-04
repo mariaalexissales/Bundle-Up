@@ -73,11 +73,11 @@ description=[h2]More From Estral[/h2]
 description=Check out my other mods while you’re at it:
 description=
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305][img]https://images.steamusercontent.com/ugc/11843508093091308261/A79EED3FC204D4945A5842ACFCD964749B4F39EE/[/img][/url]
-description=[b]Pinoy Pantry[/b] 
+description=[b]Pinoy Pantry[/b]
 description=sarap ng Pinas in Knox Country
 description=
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412][img]https://images.steamusercontent.com/ugc/12446045936225687270/CC23BD518588F9117F37B405BF1824B00CA7B8CE/[/img][/url]
-description=[b]Quest System Framework[/b] 
+description=[b]Quest System Framework[/b]
 description=Add quests to your multiplayer servers
 description=
 description=[hr][/hr]
