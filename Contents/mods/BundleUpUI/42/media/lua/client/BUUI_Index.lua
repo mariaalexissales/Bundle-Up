@@ -309,8 +309,9 @@ function BUUI.resolveRows(player, bundling)
                             quantity = 1,
                             name = name,
                             result = result,
-                            texture = logic:getResultTexture()
-                                or (outputs[1] and outputs[1].texture)
+                            -- getResultTexture derefs getFirstInputItem() on every input, so a
+                            -- row short an ingredient throws. describeOutputs already has the icon.
+                            texture = (outputs[1] and outputs[1].texture)
                                 or item:getTexture(),
                         }
                         byKey[key] = row
