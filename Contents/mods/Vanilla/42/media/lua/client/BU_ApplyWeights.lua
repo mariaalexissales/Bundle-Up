@@ -56,6 +56,14 @@ function BU.applyWeights()
     end
 end
 
+-- OnInitGlobalModData is the first event to fire after SandboxOptions.load(),
+-- and it lands before the cell deserializes any inventory, so a saved bundle is
+-- built from an already-patched script item. OnGameStart is far too late for
+-- that; it stays on as a harmless re-run. Guarded so a build missing the event
+-- degrades instead of taking the whole file down.
+if Events.OnInitGlobalModData then
+    Events.OnInitGlobalModData.Add(BU.applyWeights)
+end
 Events.OnGameStart.Add(BU.applyWeights)
 
 local function BU_onFillInventoryContextMenu(playerNum, context, items)
