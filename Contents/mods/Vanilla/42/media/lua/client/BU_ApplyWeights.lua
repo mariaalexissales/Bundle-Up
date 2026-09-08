@@ -56,6 +56,25 @@ function BU.applyWeights()
     end
 end
 
+-- an item copies the script weight when it is built, so one restored from a
+-- save predates the patch below and has to be restamped. deliberately no
+-- setCustomWeight: leaving it unset keeps the weight script-derived, so the
+-- next sandbox change still reaches bundles already sitting in a save.
+function BU.refreshWeight(item)
+    if not item or not BU.Bundles[item:getFullType()] then
+        return
+    end
+
+    local sm = getScriptManager()
+    local script = sm and sm:getItem(item:getFullType())
+    if not script then
+        return
+    end
+
+    item:setActualWeight(script:getActualWeight())
+    item:setWeight(script:getActualWeight())
+end
+
 -- OnInitGlobalModData is the first event to fire after SandboxOptions.load(),
 -- and it lands before the cell deserializes any inventory, so a saved bundle is
 -- built from an already-patched script item. OnGameStart is far too late for
@@ -65,11 +84,3 @@ if Events.OnInitGlobalModData then
     Events.OnInitGlobalModData.Add(BU.applyWeights)
 end
 Events.OnGameStart.Add(BU.applyWeights)
-
-local function BU_onFillInventoryContextMenu(playerNum, context, items)
-    if not isAdmin() then return end
-    context:addOption(getText("ContextMenu_BU_ReapplyWeights"), nil, function()
-        BU.applyWeights()
-    end)
-end
-Events.OnFillInventoryObjectContextMenu.Add(BU_onFillInventoryContextMenu)
