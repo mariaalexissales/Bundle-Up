@@ -84,5 +84,12 @@ function BU.refreshPack(item)
     item:setOffAgeMax(rotten)
 end
 
+-- earlier than OnGameStart so loot built during world init gets scaled
+-- thresholds at birth. unlike weight, a food item saves its own offAge and
+-- offAgeMax, so this does not reach packs already in a save -- BU_RefreshSpoilage
+-- is still what migrates those after a slider change.
+if Events.OnInitGlobalModData then
+    Events.OnInitGlobalModData.Add(BU.applySpoilage)
+end
 Events.OnGameStart.Add(BU.applySpoilage)
 Events.OnServerStarted.Add(BU.applySpoilage)
