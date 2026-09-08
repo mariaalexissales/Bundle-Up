@@ -195,6 +195,7 @@ module BundleUp {
         timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark,
+        onCreate = BUInv.unpackEmptyGasCans,
         category = Packing,
         inputs {
             item 1 [BundleUp.GasCanR;BundleUp.GasCanSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],

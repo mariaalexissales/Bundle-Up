@@ -46,12 +46,7 @@ function BUInv.unpackSodaPack(craftRecipeData, character)
     end
 end
 
-function BUInv.unpackFullGasCans(craftRecipeData, character)
-    local petrol = Fluid.Get("Petrol")
-    if not petrol then
-        return
-    end
-
+local function BU_refillCreatedCans(craftRecipeData, fluid)
     local outputItems = craftRecipeData:getAllCreatedItems()
     for i = 0, outputItems:size() - 1 do
         local can = outputItems:get(i)
@@ -59,9 +54,25 @@ function BUInv.unpackFullGasCans(craftRecipeData, character)
         local fluidContainer = can:getFluidContainer()
         if fluidContainer then
             fluidContainer:Empty()
-            fluidContainer:addFluid(petrol, fluidContainer:getCapacity())
+            if fluid then
+                fluidContainer:addFluid(fluid, fluidContainer:getCapacity())
+            end
         end
     end
+end
+
+function BUInv.unpackFullGasCans(craftRecipeData, character)
+    local petrol = Fluid.Get("Petrol")
+    if not petrol then
+        return
+    end
+    BU_refillCreatedCans(craftRecipeData, petrol)
+end
+
+function BUInv.unpackEmptyGasCans(craftRecipeData, character)
+    -- PetrolCan's script Fluids block is initial contents, so a created can spawns
+    -- with a full 10L. empty it or the bundle mints petrol.
+    BU_refillCreatedCans(craftRecipeData, nil)
 end
 
 local function BU_isCanOfFlavor(can, fluidName)
