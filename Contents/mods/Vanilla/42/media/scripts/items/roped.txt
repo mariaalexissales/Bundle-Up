@@ -107,6 +107,204 @@ module BundleUp {
         DoubleClickRecipe = Untie5,
     }
 
+    item TreeBranchR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item TreeBranchSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item WoodenRodR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item WoodenRodSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LargeBranchR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LargeBranchSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item SaplingR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item SaplingSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LongStickR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LongStickSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item MediumHandleR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item MediumHandleSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LargeHandleR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LargeHandleSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FirewoodBundle,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LeadPipeR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = IronPipesR,
+        WorldStaticModel = MetalStock_Rope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item LeadPipeSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = IronPipesSR,
+        WorldStaticModel = MetalStock_SheetRope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UntieStock5,
+    }
+
+    item CopperSheetR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = SheetMetalR,
+        WorldStaticModel = SheetMetal_Rope,
+        DoubleClickRecipe = Untie5,
+    }
+
+    item CopperSheetSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = SheetMetalSR,
+        WorldStaticModel = SheetMetal_SheetRope,
+        DoubleClickRecipe = Untie5,
+    }
+
+    item GoldSheetR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = SheetMetalR,
+        WorldStaticModel = SheetMetal_Rope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie5,
+    }
+
+    item GoldSheetSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = SheetMetalSR,
+        WorldStaticModel = SheetMetal_SheetRope,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie5,
+    }
+
     item PlankLR {
         DisplayCategory = Material,
         ItemType = base:normal,
@@ -203,6 +401,204 @@ module BundleUp {
         Weight = 12.45,
         Icon = IronPipesLSR,
         WorldStaticModel = MetalStock_SheetRope_Large,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie10,
+    }
+
+    item TreeBranchLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item TreeBranchLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item WoodenRodLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item WoodenRodLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LargeBranchLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 49.8,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LargeBranchLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 49.8,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item SaplingLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item SaplingLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LongStickLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LongStickLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item MediumHandleLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item MediumHandleLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LargeHandleLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LargeHandleLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = Firewood_Bundle,
+        WorldStaticModel = FourLogsStack,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LeadPipeLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = IronPipesLR,
+        WorldStaticModel = MetalStock_Rope_Large,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item LeadPipeLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = IronPipesLSR,
+        WorldStaticModel = MetalStock_SheetRope_Large,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UntieStock10,
+    }
+
+    item CopperSheetLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = SheetMetalLR,
+        WorldStaticModel = SheetMetal_Rope_Large,
+        DoubleClickRecipe = Untie10,
+    }
+
+    item CopperSheetLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 16.6,
+        Icon = SheetMetalLSR,
+        WorldStaticModel = SheetMetal_SheetRope_Large,
+        DoubleClickRecipe = Untie10,
+    }
+
+    item GoldSheetLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = SheetMetalLR,
+        WorldStaticModel = SheetMetal_Rope_Large,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = Untie10,
+    }
+
+    item GoldSheetLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = SheetMetalLSR,
+        WorldStaticModel = SheetMetal_SheetRope_Large,
         Tags = base:hasmetal,
         DoubleClickRecipe = Untie10,
     }
