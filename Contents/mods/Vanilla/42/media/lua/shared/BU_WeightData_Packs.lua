@@ -1104,3 +1104,39 @@ BU.Bundles["BundleUp.BandageDirtyBox"] = { base = "Base.BandageDirty", count = 1
 BU.Bundles["BundleUp.DisinfectantBox"] = { base = "Base.Disinfectant", count = 10 }
 BU.BaseCategory["Base.BandageDirty"] = "ReductionMedical"
 BU.BaseCategory["Base.Disinfectant"] = "ReductionMedical"
+
+BU.Bundles["BundleUp.IronOreSack"] = { base = "Base.IronOre", count = 10 }
+BU.Bundles["BundleUp.CopperOreSack"] = { base = "Base.CopperOre", count = 10 }
+BU.Bundles["BundleUp.HematiteSack"] = { base = "Base.Hematite", count = 25 }
+BU.Bundles["BundleUp.HematiteLargeSack"] = { base = "Base.HematiteLarge", count = 25 }
+BU.Bundles["BundleUp.MalachiteSack"] = { base = "Base.Malachite", count = 25 }
+BU.Bundles["BundleUp.MalachiteLargeSack"] = { base = "Base.MalachiteLarge", count = 25 }
+BU.Bundles["BundleUp.LimestoneSack"] = { base = "Base.Limestone", count = 25 }
+BU.Bundles["BundleUp.IronBloomSack"] = { base = "Base.IronBloom", count = 10 }
+BU.Bundles["BundleUp.QuicklimeSack"] = { base = "Base.Quicklime", count = 25 }
+BU.Bundles["BundleUp.CharcoalSack"] = { base = "Base.Charcoal", count = 25 }
+BU.Bundles["BundleUp.SteelRodQuarterBox"] = { base = "Base.SteelRodQuarter", count = 40 }
+BU.Bundles["BundleUp.SteelRodHalfBox"] = { base = "Base.SteelRodHalf", count = 20 }
+BU.Bundles["BundleUp.SteelSlugBox"] = { base = "Base.SteelSlug", count = 200 }
+BU.Bundles["BundleUp.PiercedIronBlockBox"] = { base = "Base.PiercedIronBlock", count = 10 }
+BU.Bundles["BundleUp.PiercedSteelBlockBox"] = { base = "Base.PiercedSteelBlock", count = 10 }
+BU.Bundles["BundleUp.PiercedIronChunkBox"] = { base = "Base.PiercedIronChunk", count = 40 }
+BU.Bundles["BundleUp.PiercedSteelChunkBox"] = { base = "Base.PiercedSteelChunk", count = 40 }
+
+BU.BaseCategory["Base.IronOre"] = "ReductionStone"
+BU.BaseCategory["Base.CopperOre"] = "ReductionStone"
+BU.BaseCategory["Base.Hematite"] = "ReductionStone"
+BU.BaseCategory["Base.HematiteLarge"] = "ReductionStone"
+BU.BaseCategory["Base.Malachite"] = "ReductionStone"
+BU.BaseCategory["Base.MalachiteLarge"] = "ReductionStone"
+BU.BaseCategory["Base.Limestone"] = "ReductionStone"
+BU.BaseCategory["Base.IronBloom"] = "ReductionStone"
+BU.BaseCategory["Base.Quicklime"] = "ReductionStone"
+BU.BaseCategory["Base.Charcoal"] = "ReductionWood"
+BU.BaseCategory["Base.SteelRodQuarter"] = "ReductionMetal"
+BU.BaseCategory["Base.SteelRodHalf"] = "ReductionMetal"
+BU.BaseCategory["Base.SteelSlug"] = "ReductionMetal"
+BU.BaseCategory["Base.PiercedIronBlock"] = "ReductionMetal"
+BU.BaseCategory["Base.PiercedSteelBlock"] = "ReductionMetal"
+BU.BaseCategory["Base.PiercedIronChunk"] = "ReductionMetal"
+BU.BaseCategory["Base.PiercedSteelChunk"] = "ReductionMetal"

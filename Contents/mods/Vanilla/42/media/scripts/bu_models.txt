@@ -102,4 +102,54 @@ module BundleUp {
         texture = WorldItems/Parcel_Produce_5,
         scale = 0.15,
     }
+
+
+    model Hide_Rope {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/Plank_Rope,
+        scale = 0.12,
+    }
+
+    model Hide_Rope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Plank_Rope,
+        scale = 0.3,
+    }
+
+    model Hide_SheetRope {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/Plank_SheetRope,
+        scale = 0.12,
+    }
+
+    model Hide_SheetRope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Plank_SheetRope,
+        scale = 0.3,
+    }
+
+
+    model Aggregate_Rope {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.12,
+    }
+
+    model Aggregate_Rope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/SheetMetal_Rope,
+        scale = 0.3,
+    }
+
+    model Aggregate_SheetRope {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.12,
+    }
+
+    model Aggregate_SheetRope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/SheetMetal_SheetRope,
+        scale = 0.3,
+    }
 }

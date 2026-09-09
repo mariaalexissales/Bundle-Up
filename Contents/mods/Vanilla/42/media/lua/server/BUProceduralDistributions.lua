@@ -1057,6 +1057,313 @@ for i = 1, #LITERATURE_GROUPS do
     BU_applyDistribution("SpawnLiterature", LITERATURE_GROUPS[i].items, LITERATURE_GROUPS[i].weights)
 end
 
+
+local HIDE_ITEMS = {
+    "BundleUp.HideCalfAngusR",
+    "BundleUp.HideCalfAngusSR",
+    "BundleUp.HideCalfAngusLR",
+    "BundleUp.HideCalfAngusLSR",
+    "BundleUp.HideCowAngusR",
+    "BundleUp.HideCowAngusSR",
+    "BundleUp.HideCowAngusLR",
+    "BundleUp.HideCowAngusLSR",
+    "BundleUp.HidePigBlackR",
+    "BundleUp.HidePigBlackSR",
+    "BundleUp.HidePigBlackLR",
+    "BundleUp.HidePigBlackLSR",
+    "BundleUp.HidePigletBlackR",
+    "BundleUp.HidePigletBlackSR",
+    "BundleUp.HidePigletBlackLR",
+    "BundleUp.HidePigletBlackLSR",
+    "BundleUp.HideCalfHolsteinR",
+    "BundleUp.HideCalfHolsteinSR",
+    "BundleUp.HideCalfHolsteinLR",
+    "BundleUp.HideCalfHolsteinLSR",
+    "BundleUp.HideCowHolsteinR",
+    "BundleUp.HideCowHolsteinSR",
+    "BundleUp.HideCowHolsteinLR",
+    "BundleUp.HideCowHolsteinLSR",
+    "BundleUp.HideCalfSimmentalR",
+    "BundleUp.HideCalfSimmentalSR",
+    "BundleUp.HideCalfSimmentalLR",
+    "BundleUp.HideCalfSimmentalLSR",
+    "BundleUp.HideCowSimmentalR",
+    "BundleUp.HideCowSimmentalSR",
+    "BundleUp.HideCowSimmentalLR",
+    "BundleUp.HideCowSimmentalLSR",
+    "BundleUp.HideDeerR",
+    "BundleUp.HideDeerSR",
+    "BundleUp.HideDeerLR",
+    "BundleUp.HideDeerLSR",
+    "BundleUp.HideFawnR",
+    "BundleUp.HideFawnSR",
+    "BundleUp.HideFawnLR",
+    "BundleUp.HideFawnLSR",
+    "BundleUp.HideRabbitR",
+    "BundleUp.HideRabbitSR",
+    "BundleUp.HideRabbitLR",
+    "BundleUp.HideRabbitLSR",
+    "BundleUp.HidePigLandraceR",
+    "BundleUp.HidePigLandraceSR",
+    "BundleUp.HidePigLandraceLR",
+    "BundleUp.HidePigLandraceLSR",
+    "BundleUp.HidePigletLandraceR",
+    "BundleUp.HidePigletLandraceSR",
+    "BundleUp.HidePigletLandraceLR",
+    "BundleUp.HidePigletLandraceLSR",
+    "BundleUp.HideLambR",
+    "BundleUp.HideLambSR",
+    "BundleUp.HideLambLR",
+    "BundleUp.HideLambLSR",
+    "BundleUp.HideSheepR",
+    "BundleUp.HideSheepSR",
+    "BundleUp.HideSheepLR",
+    "BundleUp.HideSheepLSR",
+    "BundleUp.HideRabbitGreyR",
+    "BundleUp.HideRabbitGreySR",
+    "BundleUp.HideRabbitGreyLR",
+    "BundleUp.HideRabbitGreyLSR",
+    "BundleUp.HideRaccoonR",
+    "BundleUp.HideRaccoonSR",
+    "BundleUp.HideRaccoonLR",
+    "BundleUp.HideRaccoonLSR",
+    "BundleUp.HideCrudeLargeR",
+    "BundleUp.HideCrudeLargeSR",
+    "BundleUp.HideCrudeLargeLR",
+    "BundleUp.HideCrudeLargeLSR",
+    "BundleUp.HideCrudeMediumR",
+    "BundleUp.HideCrudeMediumSR",
+    "BundleUp.HideCrudeMediumLR",
+    "BundleUp.HideCrudeMediumLSR",
+    "BundleUp.HideCrudeSmallR",
+    "BundleUp.HideCrudeSmallSR",
+    "BundleUp.HideCrudeSmallLR",
+    "BundleUp.HideCrudeSmallLSR",
+}
+
+local HIDE_WEIGHTS = {
+    CrateLeatherLarge   = 0.5,
+    CrateLeather        = 0.4,
+    LeatherworkingTools = 0.1,
+    BagStoreLeather     = 0.05,
+}
+
+BU_applyDistribution("SpawnMaterials", HIDE_ITEMS, HIDE_WEIGHTS)
+
+local SMITHING_STOCK_ITEMS = {
+    "BundleUp.IronIngot_S",
+    "BundleUp.IronIngot_L",
+    "BundleUp.SteelIngot_S",
+    "BundleUp.SteelIngot_L",
+    "BundleUp.CopperIngot_S",
+    "BundleUp.CopperIngot_L",
+    "BundleUp.BrassIngot_S",
+    "BundleUp.BrassIngot_L",
+    "BundleUp.GoldBar_S",
+    "BundleUp.GoldBar_L",
+    "BundleUp.SmallGoldBar_S",
+    "BundleUp.SmallGoldBar_L",
+    "BundleUp.SilverBar_S",
+    "BundleUp.SilverBar_L",
+    "BundleUp.SmallSilverBar_S",
+    "BundleUp.SmallSilverBar_L",
+    "BundleUp.PiercedIronIngot_S",
+    "BundleUp.PiercedIronIngot_L",
+    "BundleUp.PiercedSteelIngot_S",
+    "BundleUp.PiercedSteelIngot_L",
+    "BundleUp.SteelRodQuarterBox",
+    "BundleUp.SteelRodHalfBox",
+    "BundleUp.SteelSlugBox",
+    "BundleUp.PiercedIronBlockBox",
+    "BundleUp.PiercedSteelBlockBox",
+    "BundleUp.PiercedIronChunkBox",
+    "BundleUp.PiercedSteelChunkBox",
+}
+
+local SMITHING_STOCK_WEIGHTS = {
+    CrateMetalBars       = 0.4,
+    CrateMetalwork       = 0.3,
+    CrateBlacksmithing   = 0.25,
+    WeldingWorkshopMetal = 0.15,
+    BlacksmithTools      = 0.1,
+    MetalShopTools       = 0.1,
+}
+
+BU_applyDistribution("SpawnMaterials", SMITHING_STOCK_ITEMS, SMITHING_STOCK_WEIGHTS)
+
+local ORE_ITEMS = {
+    "BundleUp.IronOreSack",
+    "BundleUp.CopperOreSack",
+    "BundleUp.HematiteSack",
+    "BundleUp.HematiteLargeSack",
+    "BundleUp.MalachiteSack",
+    "BundleUp.MalachiteLargeSack",
+    "BundleUp.LimestoneSack",
+    "BundleUp.IronBloomSack",
+    "BundleUp.QuicklimeSack",
+    "BundleUp.CharcoalSack",
+}
+
+local ORE_WEIGHTS = {
+    CrateStones           = 0.3,
+    CrateCharcoal         = 0.3,
+    CrateLimestoneCrushed = 0.25,
+    CrateLargeStone       = 0.2,
+    CrateFlintNodules     = 0.15,
+    CrateBlacksmithing    = 0.15,
+}
+
+BU_applyDistribution("SpawnMaterials", ORE_ITEMS, ORE_WEIGHTS)
+
+local BUILDING_ITEMS = {
+    "BundleUp.SandbagR",
+    "BundleUp.SandbagSR",
+    "BundleUp.SandbagLR",
+    "BundleUp.SandbagLSR",
+    "BundleUp.DirtbagR",
+    "BundleUp.DirtbagSR",
+    "BundleUp.DirtbagLR",
+    "BundleUp.DirtbagLSR",
+    "BundleUp.ClaybagR",
+    "BundleUp.ClaybagSR",
+    "BundleUp.ClaybagLR",
+    "BundleUp.ClaybagLSR",
+    "BundleUp.GravelbagR",
+    "BundleUp.GravelbagSR",
+    "BundleUp.GravelbagLR",
+    "BundleUp.GravelbagLSR",
+    "BundleUp.ConcretePowderR",
+    "BundleUp.ConcretePowderSR",
+    "BundleUp.ConcretePowderLR",
+    "BundleUp.ConcretePowderLSR",
+    "BundleUp.PlasterPowderR",
+    "BundleUp.PlasterPowderSR",
+    "BundleUp.PlasterPowderLR",
+    "BundleUp.PlasterPowderLSR",
+    "BundleUp.WallpaperPasteR",
+    "BundleUp.WallpaperPasteSR",
+    "BundleUp.WallpaperPasteLR",
+    "BundleUp.WallpaperPasteLSR",
+    "BundleUp.GlassPanelR",
+    "BundleUp.GlassPanelSR",
+    "BundleUp.GlassPanelLR",
+    "BundleUp.GlassPanelLSR",
+    "BundleUp.LargePlankR",
+    "BundleUp.LargePlankSR",
+    "BundleUp.LargePlankLR",
+    "BundleUp.LargePlankLSR",
+    "BundleUp.FlatStoneSack",
+    "BundleUp.LargeStoneSack",
+    "BundleUp.SharpedStoneSack",
+    "BundleUp.ClaySack",
+}
+
+local BUILDING_WEIGHTS = {
+    CrateSandBags      = 0.35,
+    CrateGravelBags    = 0.3,
+    CrateClayBags      = 0.3,
+    CrateConcrete      = 0.25,
+    CratePlaster       = 0.25,
+    CrateMasonry       = 0.2,
+    CrateStoneBlocks   = 0.15,
+    ToolStoreCarpentry = 0.1,
+}
+
+BU_applyDistribution("SpawnMaterials", BUILDING_ITEMS, BUILDING_WEIGHTS)
+
+local GARDEN_BAG_ITEMS = {
+    "BundleUp.CompostBagR",
+    "BundleUp.CompostBagSR",
+    "BundleUp.CompostBagLR",
+    "BundleUp.CompostBagLSR",
+    "BundleUp.GrassBagR",
+    "BundleUp.GrassBagSR",
+    "BundleUp.GrassBagLR",
+    "BundleUp.GrassBagLSR",
+    "BundleUp.AnimalFeedBagR",
+    "BundleUp.AnimalFeedBagSR",
+    "BundleUp.AnimalFeedBagLR",
+    "BundleUp.AnimalFeedBagLSR",
+    "BundleUp.FertilizerBagR",
+    "BundleUp.FertilizerBagSR",
+    "BundleUp.FertilizerBagLR",
+    "BundleUp.FertilizerBagLSR",
+}
+
+local GARDEN_BAG_WEIGHTS = {
+    CrateFertilizer = 0.4,
+    CrateAnimalFeed = 0.35,
+    CrateGardening  = 0.3,
+    CrateFarming    = 0.2,
+    GardenStoreMisc = 0.15,
+}
+
+BU_applyDistribution("SpawnMaterials", GARDEN_BAG_ITEMS, GARDEN_BAG_WEIGHTS)
+
+local ALCOHOL_PACK_ITEMS = {
+    "BundleUp.WhiskeyPack",
+    "BundleUp.VodkaPack",
+    "BundleUp.RumPack",
+    "BundleUp.GinPack",
+    "BundleUp.TequilaPack",
+    "BundleUp.BrandyPack",
+    "BundleUp.ScotchPack",
+    "BundleUp.SherryPack",
+    "BundleUp.PortPack",
+    "BundleUp.VermouthPack",
+    "BundleUp.CiderPack",
+    "BundleUp.CuracaoPack",
+    "BundleUp.GrenadinePack",
+    "BundleUp.CoffeeLiquerPack",
+    "BundleUp.WineWhitePack",
+    "BundleUp.WineRedPack",
+    "BundleUp.WineAgedPack",
+    "BundleUp.WineBoxPack",
+    "BundleUp.WineScrewtopPack",
+    "BundleUp.ChampagnePack",
+    "BundleUp.BeerImportedPack",
+}
+
+local ALCOHOL_PACK_WEIGHTS = {
+    CrateLiquor      = 0.4,
+    CrateWine        = 0.35,
+    BarShelfLiquor   = 0.3,
+    BarCounterLiquor = 0.25,
+    CrateBeer        = 0.1,
+    FridgeRich       = 0.05,
+}
+
+BU_applyDistribution("SpawnSixPacks", ALCOHOL_PACK_ITEMS, ALCOHOL_PACK_WEIGHTS)
+
+local SOFT_DRINK_PACK_ITEMS = {
+    "BundleUp.JuiceBoxGrapePack",
+    "BundleUp.JuiceBoxApplePack",
+    "BundleUp.JuiceBoxFruitpunchPack",
+    "BundleUp.JuiceBoxOrangePack",
+    "BundleUp.JuiceCranberryPack",
+    "BundleUp.JuiceFruitpunchPack",
+    "BundleUp.JuiceGrapePack",
+    "BundleUp.JuiceLemonPack",
+    "BundleUp.JuiceOrangePack",
+    "BundleUp.JuiceTomatoPack",
+    "BundleUp.MilkPack",
+    "BundleUp.MilkBottlePack",
+    "BundleUp.MilkSmallPack",
+    "BundleUp.MilkChocSmallPack",
+}
+
+local SOFT_DRINK_PACK_WEIGHTS = {
+    JuiceStandDrinks = 0.4,
+    JuiceStandFridge = 0.3,
+    GigamartBottles  = 0.25,
+    CafeteriaDrinks  = 0.2,
+    FridgeBottles    = 0.2,
+    CrateSodaBottles = 0.2,
+    FridgeGeneric    = 0.05,
+}
+
+BU_applyDistribution("SpawnSixPacks", SOFT_DRINK_PACK_ITEMS, SOFT_DRINK_PACK_WEIGHTS)
+
 -- Sandbox enum values are 1-based. The master option (SpawnDefault) maps
 -- straight onto SCALE; the per-category options carry an extra leading
 -- "Inherit default" entry, so their value is offset by one.
