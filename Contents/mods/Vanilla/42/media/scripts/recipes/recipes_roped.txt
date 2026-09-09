@@ -14,7 +14,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
-            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar;Base.MetalBar] flags[IsExclusive;ItemCount] mappers[bundleTypes],
+            item 5 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar;Base.MetalBar;Base.CopperSheet;Base.GoldSheet] flags[IsExclusive;ItemCount] mappers[bundleTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
@@ -30,6 +30,10 @@ module BundleUp {
             BundleUp.IronBarSR = Base.SheetRope;Base.IronBar,
             BundleUp.SteelRodR = Base.Rope;Base.MetalBar,
             BundleUp.SteelRodSR = Base.SheetRope;Base.MetalBar,
+            BundleUp.CopperSheetR = Base.Rope;Base.CopperSheet,
+            BundleUp.CopperSheetSR = Base.SheetRope;Base.CopperSheet,
+            BundleUp.GoldSheetR = Base.Rope;Base.GoldSheet,
+            BundleUp.GoldSheetSR = Base.SheetRope;Base.GoldSheet,
         }
     }
 
@@ -40,7 +44,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
-            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar;Base.MetalBar] flags[IsExclusive;ItemCount] mappers[bundleTypes],
+            item 10 [Base.Plank;Base.SheetMetal;Base.MetalPipe;Base.IronBar;Base.MetalBar;Base.CopperSheet;Base.GoldSheet] flags[IsExclusive;ItemCount] mappers[bundleTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
@@ -56,6 +60,10 @@ module BundleUp {
             BundleUp.IronBarLSR = Base.SheetRope;Base.IronBar,
             BundleUp.SteelRodLR = Base.Rope;Base.MetalBar,
             BundleUp.SteelRodLSR = Base.SheetRope;Base.MetalBar,
+            BundleUp.CopperSheetLR = Base.Rope;Base.CopperSheet,
+            BundleUp.CopperSheetLSR = Base.SheetRope;Base.CopperSheet,
+            BundleUp.GoldSheetLR = Base.Rope;Base.GoldSheet,
+            BundleUp.GoldSheetLSR = Base.SheetRope;Base.GoldSheet,
         }
     }
 
@@ -65,7 +73,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR;BundleUp.SteelRodR;BundleUp.SteelRodSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR;BundleUp.SteelRodR;BundleUp.SteelRodSR;BundleUp.CopperSheetR;BundleUp.CopperSheetSR;BundleUp.GoldSheetR;BundleUp.GoldSheetSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
@@ -82,6 +90,10 @@ module BundleUp {
             Base.SheetRope = BundleUp.IronBarSR,
             Base.Rope = BundleUp.SteelRodR,
             Base.SheetRope = BundleUp.SteelRodSR,
+            Base.Rope = BundleUp.CopperSheetR,
+            Base.SheetRope = BundleUp.CopperSheetSR,
+            Base.Rope = BundleUp.GoldSheetR,
+            Base.SheetRope = BundleUp.GoldSheetSR,
         }
         itemMapper itemTypes {
             Base.Plank = BundleUp.PlankR,
@@ -94,6 +106,10 @@ module BundleUp {
             Base.IronBar = BundleUp.IronBarSR,
             Base.MetalBar = BundleUp.SteelRodR,
             Base.MetalBar = BundleUp.SteelRodSR,
+            Base.CopperSheet = BundleUp.CopperSheetR,
+            Base.CopperSheet = BundleUp.CopperSheetSR,
+            Base.GoldSheet = BundleUp.GoldSheetR,
+            Base.GoldSheet = BundleUp.GoldSheetSR,
         }
     }
 
@@ -103,7 +119,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PlankLR;BundleUp.PlankLSR;BundleUp.SheetMetalLR;BundleUp.SheetMetalLSR;BundleUp.IronPipesLR;BundleUp.IronPipesLSR;BundleUp.IronBarLR;BundleUp.IronBarLSR;BundleUp.SteelRodLR;BundleUp.SteelRodLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+            item 1 [BundleUp.PlankLR;BundleUp.PlankLSR;BundleUp.SheetMetalLR;BundleUp.SheetMetalLSR;BundleUp.IronPipesLR;BundleUp.IronPipesLSR;BundleUp.IronBarLR;BundleUp.IronBarLSR;BundleUp.SteelRodLR;BundleUp.SteelRodLSR;BundleUp.CopperSheetLR;BundleUp.CopperSheetLSR;BundleUp.GoldSheetLR;BundleUp.GoldSheetLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
         }
         outputs {
             item 1 mapper:ropeTypes,
@@ -120,6 +136,10 @@ module BundleUp {
             Base.SheetRope = BundleUp.IronBarLSR,
             Base.Rope = BundleUp.SteelRodLR,
             Base.SheetRope = BundleUp.SteelRodLSR,
+            Base.Rope = BundleUp.CopperSheetLR,
+            Base.SheetRope = BundleUp.CopperSheetLSR,
+            Base.Rope = BundleUp.GoldSheetLR,
+            Base.SheetRope = BundleUp.GoldSheetLSR,
         }
         itemMapper itemTypes {
             Base.Plank = BundleUp.PlankLR,
@@ -132,6 +152,10 @@ module BundleUp {
             Base.IronBar = BundleUp.IronBarLSR,
             Base.MetalBar = BundleUp.SteelRodLR,
             Base.MetalBar = BundleUp.SteelRodLSR,
+            Base.CopperSheet = BundleUp.CopperSheetLR,
+            Base.CopperSheet = BundleUp.CopperSheetLSR,
+            Base.GoldSheet = BundleUp.GoldSheetLR,
+            Base.GoldSheet = BundleUp.GoldSheetLSR,
         }
     }
 
@@ -141,7 +165,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 2 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR;BundleUp.SteelRodR;BundleUp.SteelRodSR] flags[IsExclusive;ItemCount] mappers[bundleTypes;ropeTypes],
+            item 2 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR;BundleUp.SteelRodR;BundleUp.SteelRodSR;BundleUp.CopperSheetR;BundleUp.CopperSheetSR;BundleUp.GoldSheetR;BundleUp.GoldSheetSR] flags[IsExclusive;ItemCount] mappers[bundleTypes;ropeTypes],
         }
         outputs {
             item 1 mapper:bundleTypes,
@@ -158,6 +182,10 @@ module BundleUp {
             BundleUp.IronBarLSR = BundleUp.IronBarSR,
             BundleUp.SteelRodLR = BundleUp.SteelRodR,
             BundleUp.SteelRodLSR = BundleUp.SteelRodSR,
+            BundleUp.CopperSheetLR = BundleUp.CopperSheetR,
+            BundleUp.CopperSheetLSR = BundleUp.CopperSheetSR,
+            BundleUp.GoldSheetLR = BundleUp.GoldSheetR,
+            BundleUp.GoldSheetLSR = BundleUp.GoldSheetSR,
         }
         itemMapper ropeTypes {
             Base.Rope = BundleUp.PlankR,
@@ -170,6 +198,224 @@ module BundleUp {
             Base.SheetRope = BundleUp.IronBarSR,
             Base.Rope = BundleUp.SteelRodR,
             Base.SheetRope = BundleUp.SteelRodSR,
+            Base.Rope = BundleUp.CopperSheetR,
+            Base.SheetRope = BundleUp.CopperSheetSR,
+            Base.Rope = BundleUp.GoldSheetR,
+            Base.SheetRope = BundleUp.GoldSheetSR,
+        }
+    }
+
+    craftRecipe TieStock5 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 5 [Base.TreeBranch2;Base.WoodenStick2;Base.LargeBranch;Base.Sapling;Base.LongStick;Base.Handle;Base.LongHandle;Base.LeadPipe] flags[IsUndamaged;IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.TreeBranchR = Base.Rope;Base.TreeBranch2,
+            BundleUp.TreeBranchSR = Base.SheetRope;Base.TreeBranch2,
+            BundleUp.WoodenRodR = Base.Rope;Base.WoodenStick2,
+            BundleUp.WoodenRodSR = Base.SheetRope;Base.WoodenStick2,
+            BundleUp.LargeBranchR = Base.Rope;Base.LargeBranch,
+            BundleUp.LargeBranchSR = Base.SheetRope;Base.LargeBranch,
+            BundleUp.SaplingR = Base.Rope;Base.Sapling,
+            BundleUp.SaplingSR = Base.SheetRope;Base.Sapling,
+            BundleUp.LongStickR = Base.Rope;Base.LongStick,
+            BundleUp.LongStickSR = Base.SheetRope;Base.LongStick,
+            BundleUp.MediumHandleR = Base.Rope;Base.Handle,
+            BundleUp.MediumHandleSR = Base.SheetRope;Base.Handle,
+            BundleUp.LargeHandleR = Base.Rope;Base.LongHandle,
+            BundleUp.LargeHandleSR = Base.SheetRope;Base.LongHandle,
+            BundleUp.LeadPipeR = Base.Rope;Base.LeadPipe,
+            BundleUp.LeadPipeSR = Base.SheetRope;Base.LeadPipe,
+        }
+    }
+
+    craftRecipe TieStock10 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 10 [Base.TreeBranch2;Base.WoodenStick2;Base.LargeBranch;Base.Sapling;Base.LongStick;Base.Handle;Base.LongHandle;Base.LeadPipe] flags[IsUndamaged;IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.TreeBranchLR = Base.Rope;Base.TreeBranch2,
+            BundleUp.TreeBranchLSR = Base.SheetRope;Base.TreeBranch2,
+            BundleUp.WoodenRodLR = Base.Rope;Base.WoodenStick2,
+            BundleUp.WoodenRodLSR = Base.SheetRope;Base.WoodenStick2,
+            BundleUp.LargeBranchLR = Base.Rope;Base.LargeBranch,
+            BundleUp.LargeBranchLSR = Base.SheetRope;Base.LargeBranch,
+            BundleUp.SaplingLR = Base.Rope;Base.Sapling,
+            BundleUp.SaplingLSR = Base.SheetRope;Base.Sapling,
+            BundleUp.LongStickLR = Base.Rope;Base.LongStick,
+            BundleUp.LongStickLSR = Base.SheetRope;Base.LongStick,
+            BundleUp.MediumHandleLR = Base.Rope;Base.Handle,
+            BundleUp.MediumHandleLSR = Base.SheetRope;Base.Handle,
+            BundleUp.LargeHandleLR = Base.Rope;Base.LongHandle,
+            BundleUp.LargeHandleLSR = Base.SheetRope;Base.LongHandle,
+            BundleUp.LeadPipeLR = Base.Rope;Base.LeadPipe,
+            BundleUp.LeadPipeLSR = Base.SheetRope;Base.LeadPipe,
+        }
+    }
+
+    craftRecipe UntieStock5 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.TreeBranchR;BundleUp.TreeBranchSR;BundleUp.WoodenRodR;BundleUp.WoodenRodSR;BundleUp.LargeBranchR;BundleUp.LargeBranchSR;BundleUp.SaplingR;BundleUp.SaplingSR;BundleUp.LongStickR;BundleUp.LongStickSR;BundleUp.MediumHandleR;BundleUp.MediumHandleSR;BundleUp.LargeHandleR;BundleUp.LargeHandleSR;BundleUp.LeadPipeR;BundleUp.LeadPipeSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 5 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.TreeBranchR,
+            Base.SheetRope = BundleUp.TreeBranchSR,
+            Base.Rope = BundleUp.WoodenRodR,
+            Base.SheetRope = BundleUp.WoodenRodSR,
+            Base.Rope = BundleUp.LargeBranchR,
+            Base.SheetRope = BundleUp.LargeBranchSR,
+            Base.Rope = BundleUp.SaplingR,
+            Base.SheetRope = BundleUp.SaplingSR,
+            Base.Rope = BundleUp.LongStickR,
+            Base.SheetRope = BundleUp.LongStickSR,
+            Base.Rope = BundleUp.MediumHandleR,
+            Base.SheetRope = BundleUp.MediumHandleSR,
+            Base.Rope = BundleUp.LargeHandleR,
+            Base.SheetRope = BundleUp.LargeHandleSR,
+            Base.Rope = BundleUp.LeadPipeR,
+            Base.SheetRope = BundleUp.LeadPipeSR,
+        }
+        itemMapper itemTypes {
+            Base.TreeBranch2 = BundleUp.TreeBranchR,
+            Base.TreeBranch2 = BundleUp.TreeBranchSR,
+            Base.WoodenStick2 = BundleUp.WoodenRodR,
+            Base.WoodenStick2 = BundleUp.WoodenRodSR,
+            Base.LargeBranch = BundleUp.LargeBranchR,
+            Base.LargeBranch = BundleUp.LargeBranchSR,
+            Base.Sapling = BundleUp.SaplingR,
+            Base.Sapling = BundleUp.SaplingSR,
+            Base.LongStick = BundleUp.LongStickR,
+            Base.LongStick = BundleUp.LongStickSR,
+            Base.Handle = BundleUp.MediumHandleR,
+            Base.Handle = BundleUp.MediumHandleSR,
+            Base.LongHandle = BundleUp.LargeHandleR,
+            Base.LongHandle = BundleUp.LargeHandleSR,
+            Base.LeadPipe = BundleUp.LeadPipeR,
+            Base.LeadPipe = BundleUp.LeadPipeSR,
+        }
+    }
+
+    craftRecipe UntieStock10 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.TreeBranchLR;BundleUp.TreeBranchLSR;BundleUp.WoodenRodLR;BundleUp.WoodenRodLSR;BundleUp.LargeBranchLR;BundleUp.LargeBranchLSR;BundleUp.SaplingLR;BundleUp.SaplingLSR;BundleUp.LongStickLR;BundleUp.LongStickLSR;BundleUp.MediumHandleLR;BundleUp.MediumHandleLSR;BundleUp.LargeHandleLR;BundleUp.LargeHandleLSR;BundleUp.LeadPipeLR;BundleUp.LeadPipeLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 10 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.TreeBranchLR,
+            Base.SheetRope = BundleUp.TreeBranchLSR,
+            Base.Rope = BundleUp.WoodenRodLR,
+            Base.SheetRope = BundleUp.WoodenRodLSR,
+            Base.Rope = BundleUp.LargeBranchLR,
+            Base.SheetRope = BundleUp.LargeBranchLSR,
+            Base.Rope = BundleUp.SaplingLR,
+            Base.SheetRope = BundleUp.SaplingLSR,
+            Base.Rope = BundleUp.LongStickLR,
+            Base.SheetRope = BundleUp.LongStickLSR,
+            Base.Rope = BundleUp.MediumHandleLR,
+            Base.SheetRope = BundleUp.MediumHandleLSR,
+            Base.Rope = BundleUp.LargeHandleLR,
+            Base.SheetRope = BundleUp.LargeHandleLSR,
+            Base.Rope = BundleUp.LeadPipeLR,
+            Base.SheetRope = BundleUp.LeadPipeLSR,
+        }
+        itemMapper itemTypes {
+            Base.TreeBranch2 = BundleUp.TreeBranchLR,
+            Base.TreeBranch2 = BundleUp.TreeBranchLSR,
+            Base.WoodenStick2 = BundleUp.WoodenRodLR,
+            Base.WoodenStick2 = BundleUp.WoodenRodLSR,
+            Base.LargeBranch = BundleUp.LargeBranchLR,
+            Base.LargeBranch = BundleUp.LargeBranchLSR,
+            Base.Sapling = BundleUp.SaplingLR,
+            Base.Sapling = BundleUp.SaplingLSR,
+            Base.LongStick = BundleUp.LongStickLR,
+            Base.LongStick = BundleUp.LongStickLSR,
+            Base.Handle = BundleUp.MediumHandleLR,
+            Base.Handle = BundleUp.MediumHandleLSR,
+            Base.LongHandle = BundleUp.LargeHandleLR,
+            Base.LongHandle = BundleUp.LargeHandleLSR,
+            Base.LeadPipe = BundleUp.LeadPipeLR,
+            Base.LeadPipe = BundleUp.LeadPipeLSR,
+        }
+    }
+
+    craftRecipe MergeTieStock {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 2 [BundleUp.TreeBranchR;BundleUp.TreeBranchSR;BundleUp.WoodenRodR;BundleUp.WoodenRodSR;BundleUp.LargeBranchR;BundleUp.LargeBranchSR;BundleUp.SaplingR;BundleUp.SaplingSR;BundleUp.LongStickR;BundleUp.LongStickSR;BundleUp.MediumHandleR;BundleUp.MediumHandleSR;BundleUp.LargeHandleR;BundleUp.LargeHandleSR;BundleUp.LeadPipeR;BundleUp.LeadPipeSR] flags[IsExclusive;ItemCount] mappers[bundleTypes;ropeTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+            item 1 mapper:ropeTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.TreeBranchLR = BundleUp.TreeBranchR,
+            BundleUp.TreeBranchLSR = BundleUp.TreeBranchSR,
+            BundleUp.WoodenRodLR = BundleUp.WoodenRodR,
+            BundleUp.WoodenRodLSR = BundleUp.WoodenRodSR,
+            BundleUp.LargeBranchLR = BundleUp.LargeBranchR,
+            BundleUp.LargeBranchLSR = BundleUp.LargeBranchSR,
+            BundleUp.SaplingLR = BundleUp.SaplingR,
+            BundleUp.SaplingLSR = BundleUp.SaplingSR,
+            BundleUp.LongStickLR = BundleUp.LongStickR,
+            BundleUp.LongStickLSR = BundleUp.LongStickSR,
+            BundleUp.MediumHandleLR = BundleUp.MediumHandleR,
+            BundleUp.MediumHandleLSR = BundleUp.MediumHandleSR,
+            BundleUp.LargeHandleLR = BundleUp.LargeHandleR,
+            BundleUp.LargeHandleLSR = BundleUp.LargeHandleSR,
+            BundleUp.LeadPipeLR = BundleUp.LeadPipeR,
+            BundleUp.LeadPipeLSR = BundleUp.LeadPipeSR,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.TreeBranchR,
+            Base.SheetRope = BundleUp.TreeBranchSR,
+            Base.Rope = BundleUp.WoodenRodR,
+            Base.SheetRope = BundleUp.WoodenRodSR,
+            Base.Rope = BundleUp.LargeBranchR,
+            Base.SheetRope = BundleUp.LargeBranchSR,
+            Base.Rope = BundleUp.SaplingR,
+            Base.SheetRope = BundleUp.SaplingSR,
+            Base.Rope = BundleUp.LongStickR,
+            Base.SheetRope = BundleUp.LongStickSR,
+            Base.Rope = BundleUp.MediumHandleR,
+            Base.SheetRope = BundleUp.MediumHandleSR,
+            Base.Rope = BundleUp.LargeHandleR,
+            Base.SheetRope = BundleUp.LargeHandleSR,
+            Base.Rope = BundleUp.LeadPipeR,
+            Base.SheetRope = BundleUp.LeadPipeSR,
         }
     }
 

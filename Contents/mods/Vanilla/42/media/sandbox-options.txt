@@ -256,6 +256,246 @@ option BundleUp.Item_IronBarLSR
     page = BundleUp, translation = BundleUp_Item_IronBarLSR,
 }
 
+option BundleUp.Item_TreeBranchR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_TreeBranchR,
+}
+
+option BundleUp.Item_TreeBranchSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_TreeBranchSR,
+}
+
+option BundleUp.Item_WoodenRodR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WoodenRodR,
+}
+
+option BundleUp.Item_WoodenRodSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WoodenRodSR,
+}
+
+option BundleUp.Item_LargeBranchR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeBranchR,
+}
+
+option BundleUp.Item_LargeBranchSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeBranchSR,
+}
+
+option BundleUp.Item_SaplingR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SaplingR,
+}
+
+option BundleUp.Item_SaplingSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SaplingSR,
+}
+
+option BundleUp.Item_LongStickR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LongStickR,
+}
+
+option BundleUp.Item_LongStickSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LongStickSR,
+}
+
+option BundleUp.Item_MediumHandleR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MediumHandleR,
+}
+
+option BundleUp.Item_MediumHandleSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MediumHandleSR,
+}
+
+option BundleUp.Item_LargeHandleR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeHandleR,
+}
+
+option BundleUp.Item_LargeHandleSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeHandleSR,
+}
+
+option BundleUp.Item_LeadPipeR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LeadPipeR,
+}
+
+option BundleUp.Item_LeadPipeSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LeadPipeSR,
+}
+
+option BundleUp.Item_CopperSheetR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CopperSheetR,
+}
+
+option BundleUp.Item_CopperSheetSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CopperSheetSR,
+}
+
+option BundleUp.Item_GoldSheetR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GoldSheetR,
+}
+
+option BundleUp.Item_GoldSheetSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GoldSheetSR,
+}
+
+option BundleUp.Item_TreeBranchLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_TreeBranchLR,
+}
+
+option BundleUp.Item_TreeBranchLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_TreeBranchLSR,
+}
+
+option BundleUp.Item_WoodenRodLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WoodenRodLR,
+}
+
+option BundleUp.Item_WoodenRodLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WoodenRodLSR,
+}
+
+option BundleUp.Item_LargeBranchLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeBranchLR,
+}
+
+option BundleUp.Item_LargeBranchLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeBranchLSR,
+}
+
+option BundleUp.Item_SaplingLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SaplingLR,
+}
+
+option BundleUp.Item_SaplingLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SaplingLSR,
+}
+
+option BundleUp.Item_LongStickLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LongStickLR,
+}
+
+option BundleUp.Item_LongStickLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LongStickLSR,
+}
+
+option BundleUp.Item_MediumHandleLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MediumHandleLR,
+}
+
+option BundleUp.Item_MediumHandleLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MediumHandleLSR,
+}
+
+option BundleUp.Item_LargeHandleLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeHandleLR,
+}
+
+option BundleUp.Item_LargeHandleLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LargeHandleLSR,
+}
+
+option BundleUp.Item_LeadPipeLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LeadPipeLR,
+}
+
+option BundleUp.Item_LeadPipeLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LeadPipeLSR,
+}
+
+option BundleUp.Item_CopperSheetLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CopperSheetLR,
+}
+
+option BundleUp.Item_CopperSheetLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CopperSheetLSR,
+}
+
+option BundleUp.Item_GoldSheetLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GoldSheetLR,
+}
+
+option BundleUp.Item_GoldSheetLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GoldSheetLSR,
+}
+
 option BundleUp.Item_GasCanR
 {
     type = integer, min = -1, max = 100, default = -1,
