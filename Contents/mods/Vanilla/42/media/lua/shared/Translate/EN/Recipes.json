@@ -81,5 +81,10 @@
   "MergeTie": "Combine into Large Bundle",
   "MergeTieStock": "Combine into Large Bundle",
   "PackFoodCase": "Pack Food Cartons in Case",
-  "UnpackFoodCase": "Open Food Case (4 cartons)"
+  "UnpackFoodCase": "Open Food Case (4 cartons)",
+  "TieHide5": "Bundle 5 Hides",
+  "TieHide10": "Bundle 10 Hides",
+  "UntieHide5": "Unbundle 5 Hides",
+  "UntieHide10": "Unbundle 10 Hides",
+  "MergeTieHide": "Combine into Large Bundle"
 }

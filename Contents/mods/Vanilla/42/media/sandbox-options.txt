@@ -694,3 +694,488 @@ option BundleUp.Item_Sack_Sack
     page = BundleUp, translation = BundleUp_Item_Sack_Sack,
 }
 
+option BundleUp.ReductionLeather
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_ReductionLeather,
+}
+
+option BundleUp.Item_HideCalfAngusR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfAngusR,
+}
+
+option BundleUp.Item_HideCalfAngusSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfAngusSR,
+}
+
+option BundleUp.Item_HideCalfAngusLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfAngusLR,
+}
+
+option BundleUp.Item_HideCalfAngusLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfAngusLSR,
+}
+
+option BundleUp.Item_HideCowAngusR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowAngusR,
+}
+
+option BundleUp.Item_HideCowAngusSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowAngusSR,
+}
+
+option BundleUp.Item_HideCowAngusLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowAngusLR,
+}
+
+option BundleUp.Item_HideCowAngusLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowAngusLSR,
+}
+
+option BundleUp.Item_HidePigBlackR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigBlackR,
+}
+
+option BundleUp.Item_HidePigBlackSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigBlackSR,
+}
+
+option BundleUp.Item_HidePigBlackLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigBlackLR,
+}
+
+option BundleUp.Item_HidePigBlackLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigBlackLSR,
+}
+
+option BundleUp.Item_HidePigletBlackR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletBlackR,
+}
+
+option BundleUp.Item_HidePigletBlackSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletBlackSR,
+}
+
+option BundleUp.Item_HidePigletBlackLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletBlackLR,
+}
+
+option BundleUp.Item_HidePigletBlackLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletBlackLSR,
+}
+
+option BundleUp.Item_HideCalfHolsteinR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinR,
+}
+
+option BundleUp.Item_HideCalfHolsteinSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinSR,
+}
+
+option BundleUp.Item_HideCalfHolsteinLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinLR,
+}
+
+option BundleUp.Item_HideCalfHolsteinLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinLSR,
+}
+
+option BundleUp.Item_HideCowHolsteinR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinR,
+}
+
+option BundleUp.Item_HideCowHolsteinSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinSR,
+}
+
+option BundleUp.Item_HideCowHolsteinLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinLR,
+}
+
+option BundleUp.Item_HideCowHolsteinLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinLSR,
+}
+
+option BundleUp.Item_HideCalfSimmentalR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalR,
+}
+
+option BundleUp.Item_HideCalfSimmentalSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalSR,
+}
+
+option BundleUp.Item_HideCalfSimmentalLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalLR,
+}
+
+option BundleUp.Item_HideCalfSimmentalLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalLSR,
+}
+
+option BundleUp.Item_HideCowSimmentalR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalR,
+}
+
+option BundleUp.Item_HideCowSimmentalSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalSR,
+}
+
+option BundleUp.Item_HideCowSimmentalLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalLR,
+}
+
+option BundleUp.Item_HideCowSimmentalLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalLSR,
+}
+
+option BundleUp.Item_HideDeerR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideDeerR,
+}
+
+option BundleUp.Item_HideDeerSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideDeerSR,
+}
+
+option BundleUp.Item_HideDeerLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideDeerLR,
+}
+
+option BundleUp.Item_HideDeerLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideDeerLSR,
+}
+
+option BundleUp.Item_HideFawnR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideFawnR,
+}
+
+option BundleUp.Item_HideFawnSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideFawnSR,
+}
+
+option BundleUp.Item_HideFawnLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideFawnLR,
+}
+
+option BundleUp.Item_HideFawnLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideFawnLSR,
+}
+
+option BundleUp.Item_HideRabbitR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitR,
+}
+
+option BundleUp.Item_HideRabbitSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitSR,
+}
+
+option BundleUp.Item_HideRabbitLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitLR,
+}
+
+option BundleUp.Item_HideRabbitLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitLSR,
+}
+
+option BundleUp.Item_HidePigLandraceR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigLandraceR,
+}
+
+option BundleUp.Item_HidePigLandraceSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigLandraceSR,
+}
+
+option BundleUp.Item_HidePigLandraceLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigLandraceLR,
+}
+
+option BundleUp.Item_HidePigLandraceLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigLandraceLSR,
+}
+
+option BundleUp.Item_HidePigletLandraceR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceR,
+}
+
+option BundleUp.Item_HidePigletLandraceSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceSR,
+}
+
+option BundleUp.Item_HidePigletLandraceLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceLR,
+}
+
+option BundleUp.Item_HidePigletLandraceLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceLSR,
+}
+
+option BundleUp.Item_HideLambR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideLambR,
+}
+
+option BundleUp.Item_HideLambSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideLambSR,
+}
+
+option BundleUp.Item_HideLambLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideLambLR,
+}
+
+option BundleUp.Item_HideLambLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideLambLSR,
+}
+
+option BundleUp.Item_HideSheepR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideSheepR,
+}
+
+option BundleUp.Item_HideSheepSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideSheepSR,
+}
+
+option BundleUp.Item_HideSheepLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideSheepLR,
+}
+
+option BundleUp.Item_HideSheepLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideSheepLSR,
+}
+
+option BundleUp.Item_HideRabbitGreyR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitGreyR,
+}
+
+option BundleUp.Item_HideRabbitGreySR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitGreySR,
+}
+
+option BundleUp.Item_HideRabbitGreyLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitGreyLR,
+}
+
+option BundleUp.Item_HideRabbitGreyLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRabbitGreyLSR,
+}
+
+option BundleUp.Item_HideRaccoonR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRaccoonR,
+}
+
+option BundleUp.Item_HideRaccoonSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRaccoonSR,
+}
+
+option BundleUp.Item_HideRaccoonLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRaccoonLR,
+}
+
+option BundleUp.Item_HideRaccoonLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideRaccoonLSR,
+}
+
+option BundleUp.Item_HideCrudeLargeR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeR,
+}
+
+option BundleUp.Item_HideCrudeLargeSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeSR,
+}
+
+option BundleUp.Item_HideCrudeLargeLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeLR,
+}
+
+option BundleUp.Item_HideCrudeLargeLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeLSR,
+}
+
+option BundleUp.Item_HideCrudeMediumR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumR,
+}
+
+option BundleUp.Item_HideCrudeMediumSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumSR,
+}
+
+option BundleUp.Item_HideCrudeMediumLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumLR,
+}
+
+option BundleUp.Item_HideCrudeMediumLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumLSR,
+}
+
+option BundleUp.Item_HideCrudeSmallR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallR,
+}
+
+option BundleUp.Item_HideCrudeSmallSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallSR,
+}
+
+option BundleUp.Item_HideCrudeSmallLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallLR,
+}
+
+option BundleUp.Item_HideCrudeSmallLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallLSR,
+}

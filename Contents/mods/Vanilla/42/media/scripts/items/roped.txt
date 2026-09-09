@@ -642,4 +642,724 @@ module BundleUp {
         Tags = base:petrol,
         DoubleClickRecipe = UntieCanFull4,
     }
+
+    item HideCalfAngusR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBlackR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfAngusSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBlackSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfAngusLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBlackLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfAngusLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBlackLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowAngusR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCowBlackR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowAngusSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCowBlackSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowAngusLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCowBlackLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowAngusLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCowBlackLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigBlackR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideCowBlackR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigBlackSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideCowBlackSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigBlackLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideCowBlackLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigBlackLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideCowBlackLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletBlackR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBlackR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletBlackSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBlackSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletBlackLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBlackLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletBlackLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBlackLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfHolsteinR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowWhitePatchR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfHolsteinSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowWhitePatchSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfHolsteinLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowWhitePatchLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfHolsteinLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowWhitePatchLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowHolsteinR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCowWhitePatchR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowHolsteinSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCowWhitePatchSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowHolsteinLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCowWhitePatchLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowHolsteinLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCowWhitePatchLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfSimmentalR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBrownPatchR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfSimmentalSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBrownPatchSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfSimmentalLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBrownPatchLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfSimmentalLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBrownPatchLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowSimmentalR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCowBrownPatchR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowSimmentalSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCowBrownPatchSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowSimmentalLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCowBrownPatchLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowSimmentalLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCowBrownPatchLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideDeerR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideCowBrownR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideDeerSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideCowBrownSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideDeerLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideCowBrownLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideDeerLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideCowBrownLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideFawnR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBrownR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideFawnSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBrownSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideFawnLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBrownLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideFawnLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBrownLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBrownR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCowBrownSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBrownLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCowBrownLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigLandraceR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HidePigPinkR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigLandraceSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HidePigPinkSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigLandraceLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HidePigPinkLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigLandraceLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HidePigPinkLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletLandraceR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HidePigPinkR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletLandraceSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HidePigPinkSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletLandraceLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HidePigPinkLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletLandraceLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HidePigPinkLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideLambR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideSheepWhiteR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideLambSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideSheepWhiteSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideLambLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideSheepWhiteLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideLambLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideSheepWhiteLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideSheepR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideSheepWhiteR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideSheepSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideSheepWhiteSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideSheepLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideSheepWhiteLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideSheepLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideSheepWhiteLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitGreyR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideGreyR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitGreySR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideGreySR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitGreyLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideGreyLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitGreyLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideGreyLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRaccoonR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideGreyR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRaccoonSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideGreySR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRaccoonLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideGreyLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRaccoonLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideGreyLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeLargeR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCrudeR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeLargeSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = HideCrudeSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeLargeLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCrudeLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeLargeLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = HideCrudeLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeMediumR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideCrudeR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeMediumSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = HideCrudeSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeMediumLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideCrudeLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeMediumLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = HideCrudeLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeSmallR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCrudeR,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeSmallSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = HideCrudeSR,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeSmallLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCrudeLR,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeSmallLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = HideCrudeLSR,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
 }
