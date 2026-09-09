@@ -30,7 +30,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 5 mapper:itemTypes,
@@ -64,7 +64,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
@@ -99,7 +99,7 @@ module BundleUp {
         onCreate = BUInv.unpackSodaPack,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP],
+            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 6 Base.SodaCan,
@@ -253,7 +253,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.SodaPack;BundleUp.DietSodaPack] mappers[sodaTypes],
+            item 1 [BundleUp.SodaPack;BundleUp.DietSodaPack] flags[IsExclusive;ItemCount] mappers[sodaTypes],
         }
         outputs {
             item 6 mapper:sodaTypes,
@@ -270,7 +270,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.VarietyPack],
+            item 1 [BundleUp.VarietyPack] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 6 Base.SodaCan,
@@ -283,7 +283,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.StoneBlock],
+            item 10 [Base.StoneBlock] flags[ItemCount],
         }
         outputs {
             item 1 BundleUp.StoneBlockPack,
@@ -296,7 +296,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.StoneBlockPack],
+            item 1 [BundleUp.StoneBlockPack] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 10 Base.StoneBlock,
@@ -437,7 +437,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BookBundle;BundleUp.Book_AdventureNonFictionBundle;BundleUp.Book_ArtBundle;BundleUp.Book_BaseballBundle;BundleUp.Book_BiographyBundle;BundleUp.Book_BusinessBundle;BundleUp.Book_ChildsBundle;BundleUp.Book_CinemaBundle;BundleUp.Book_ClassicBundle;BundleUp.Book_ClassicFictionBundle;BundleUp.Book_ClassicNonfictionBundle;BundleUp.Book_ComputerBundle;BundleUp.Book_CrimeFictionBundle;BundleUp.Book_FantasyBundle;BundleUp.Book_FarmingBundle;BundleUp.Book_FashionBundle;BundleUp.Book_FictionBundle;BundleUp.Book_GeneralNonFictionBundle;BundleUp.Book_GeneralReferenceBundle;BundleUp.Book_GolfBundle;BundleUp.Book_HistoryBundle;BundleUp.Book_HorrorBundle;BundleUp.Book_LegalBundle;BundleUp.Book_LiteraryFictionBundle;BundleUp.Book_MedicalBundle;BundleUp.Book_MilitaryBundle;BundleUp.Book_MilitaryHistoryBundle;BundleUp.Book_MusicBundle;BundleUp.Book_NatureBundle;BundleUp.Book_OccultBundle;BundleUp.Book_PhilosophyBundle;BundleUp.Book_PolicingBundle;BundleUp.Book_PoliticsBundle;BundleUp.Book_QuackeryBundle;BundleUp.Book_ReligionBundle;BundleUp.Book_RichBundle;BundleUp.Book_RomanceBundle;BundleUp.Book_SadNonFictionBundle;BundleUp.Book_SchoolTextbookBundle;BundleUp.Book_ScienceBundle;BundleUp.Book_SciFiBundle;BundleUp.Book_SportsBundle;BundleUp.Book_ThrillerBundle;BundleUp.Book_TravelBundle;BundleUp.Book_WesternBundle;BundleUp.Book_BibleBundle;BundleUp.BookFancy_ClassicBundle;BundleUp.BookFancy_ClassicFictionBundle;BundleUp.BookFancy_ClassicNonfictionBundle;BundleUp.BookFancy_HistoryBundle;BundleUp.BookFancy_LegalBundle;BundleUp.BookFancy_MedicalBundle;BundleUp.BookFancy_MilitaryHistoryBundle;BundleUp.BookFancy_OccultBundle;BundleUp.BookFancy_PhilosophyBundle;BundleUp.BookFancy_PoliticsBundle;BundleUp.BookFancy_ReligionBundle;BundleUp.BookFancy_BibleBundle;BundleUp.PaperbackBundle;BundleUp.Paperback_AdventureNonFictionBundle;BundleUp.Paperback_ArtBundle;BundleUp.Paperback_BaseballBundle;BundleUp.Paperback_BiographyBundle;BundleUp.Paperback_BusinessBundle;BundleUp.Paperback_ChildsBundle;BundleUp.Paperback_CinemaBundle;BundleUp.Paperback_ClassicBundle;BundleUp.Paperback_ClassicFictionBundle;BundleUp.Paperback_ClassicNonfictionBundle;BundleUp.Paperback_ComputerBundle;BundleUp.Paperback_ConspiracyBundle;BundleUp.Paperback_CrimeFictionBundle;BundleUp.Paperback_DietBundle;BundleUp.Paperback_FantasyBundle;BundleUp.Paperback_FashionBundle;BundleUp.Paperback_FictionBundle;BundleUp.Paperback_GolfBundle;BundleUp.Paperback_HassBundle;BundleUp.Paperback_HistoryBundle;BundleUp.Paperback_HorrorBundle;BundleUp.Paperback_LegalBundle;BundleUp.Paperback_LiteraryFictionBundle;BundleUp.Paperback_MedicalBundle;BundleUp.Paperback_MilitaryBundle;BundleUp.Paperback_MilitaryHistoryBundle;BundleUp.Paperback_MusicBundle;BundleUp.Paperback_NatureBundle;BundleUp.Paperback_NewAgeBundle;BundleUp.Paperback_OccultBundle;BundleUp.Paperback_PhilosophyBundle;BundleUp.Paperback_PlayBundle;BundleUp.Paperback_PolicingBundle;BundleUp.Paperback_PoliticsBundle;BundleUp.Paperback_PoorBundle;BundleUp.Paperback_QuackeryBundle;BundleUp.Paperback_QuigleyBundle;BundleUp.Paperback_RelationshipBundle;BundleUp.Paperback_ReligionBundle;BundleUp.Paperback_RichBundle;BundleUp.Paperback_RomanceBundle;BundleUp.Paperback_SadNonFictionBundle;BundleUp.Paperback_ScaryBundle;BundleUp.Paperback_ScienceBundle;BundleUp.Paperback_SciFiBundle;BundleUp.Paperback_SelfHelpBundle;BundleUp.Paperback_SexyBundle;BundleUp.Paperback_SportsBundle;BundleUp.Paperback_TeensBundle;BundleUp.Paperback_ThrillerBundle;BundleUp.Paperback_TravelBundle;BundleUp.Paperback_TrueCrimeBundle;BundleUp.Paperback_WesternBundle;BundleUp.Paperback_BibleBundle] mappers[bookTypes],
+            item 1 [BundleUp.BookBundle;BundleUp.Book_AdventureNonFictionBundle;BundleUp.Book_ArtBundle;BundleUp.Book_BaseballBundle;BundleUp.Book_BiographyBundle;BundleUp.Book_BusinessBundle;BundleUp.Book_ChildsBundle;BundleUp.Book_CinemaBundle;BundleUp.Book_ClassicBundle;BundleUp.Book_ClassicFictionBundle;BundleUp.Book_ClassicNonfictionBundle;BundleUp.Book_ComputerBundle;BundleUp.Book_CrimeFictionBundle;BundleUp.Book_FantasyBundle;BundleUp.Book_FarmingBundle;BundleUp.Book_FashionBundle;BundleUp.Book_FictionBundle;BundleUp.Book_GeneralNonFictionBundle;BundleUp.Book_GeneralReferenceBundle;BundleUp.Book_GolfBundle;BundleUp.Book_HistoryBundle;BundleUp.Book_HorrorBundle;BundleUp.Book_LegalBundle;BundleUp.Book_LiteraryFictionBundle;BundleUp.Book_MedicalBundle;BundleUp.Book_MilitaryBundle;BundleUp.Book_MilitaryHistoryBundle;BundleUp.Book_MusicBundle;BundleUp.Book_NatureBundle;BundleUp.Book_OccultBundle;BundleUp.Book_PhilosophyBundle;BundleUp.Book_PolicingBundle;BundleUp.Book_PoliticsBundle;BundleUp.Book_QuackeryBundle;BundleUp.Book_ReligionBundle;BundleUp.Book_RichBundle;BundleUp.Book_RomanceBundle;BundleUp.Book_SadNonFictionBundle;BundleUp.Book_SchoolTextbookBundle;BundleUp.Book_ScienceBundle;BundleUp.Book_SciFiBundle;BundleUp.Book_SportsBundle;BundleUp.Book_ThrillerBundle;BundleUp.Book_TravelBundle;BundleUp.Book_WesternBundle;BundleUp.Book_BibleBundle;BundleUp.BookFancy_ClassicBundle;BundleUp.BookFancy_ClassicFictionBundle;BundleUp.BookFancy_ClassicNonfictionBundle;BundleUp.BookFancy_HistoryBundle;BundleUp.BookFancy_LegalBundle;BundleUp.BookFancy_MedicalBundle;BundleUp.BookFancy_MilitaryHistoryBundle;BundleUp.BookFancy_OccultBundle;BundleUp.BookFancy_PhilosophyBundle;BundleUp.BookFancy_PoliticsBundle;BundleUp.BookFancy_ReligionBundle;BundleUp.BookFancy_BibleBundle;BundleUp.PaperbackBundle;BundleUp.Paperback_AdventureNonFictionBundle;BundleUp.Paperback_ArtBundle;BundleUp.Paperback_BaseballBundle;BundleUp.Paperback_BiographyBundle;BundleUp.Paperback_BusinessBundle;BundleUp.Paperback_ChildsBundle;BundleUp.Paperback_CinemaBundle;BundleUp.Paperback_ClassicBundle;BundleUp.Paperback_ClassicFictionBundle;BundleUp.Paperback_ClassicNonfictionBundle;BundleUp.Paperback_ComputerBundle;BundleUp.Paperback_ConspiracyBundle;BundleUp.Paperback_CrimeFictionBundle;BundleUp.Paperback_DietBundle;BundleUp.Paperback_FantasyBundle;BundleUp.Paperback_FashionBundle;BundleUp.Paperback_FictionBundle;BundleUp.Paperback_GolfBundle;BundleUp.Paperback_HassBundle;BundleUp.Paperback_HistoryBundle;BundleUp.Paperback_HorrorBundle;BundleUp.Paperback_LegalBundle;BundleUp.Paperback_LiteraryFictionBundle;BundleUp.Paperback_MedicalBundle;BundleUp.Paperback_MilitaryBundle;BundleUp.Paperback_MilitaryHistoryBundle;BundleUp.Paperback_MusicBundle;BundleUp.Paperback_NatureBundle;BundleUp.Paperback_NewAgeBundle;BundleUp.Paperback_OccultBundle;BundleUp.Paperback_PhilosophyBundle;BundleUp.Paperback_PlayBundle;BundleUp.Paperback_PolicingBundle;BundleUp.Paperback_PoliticsBundle;BundleUp.Paperback_PoorBundle;BundleUp.Paperback_QuackeryBundle;BundleUp.Paperback_QuigleyBundle;BundleUp.Paperback_RelationshipBundle;BundleUp.Paperback_ReligionBundle;BundleUp.Paperback_RichBundle;BundleUp.Paperback_RomanceBundle;BundleUp.Paperback_SadNonFictionBundle;BundleUp.Paperback_ScaryBundle;BundleUp.Paperback_ScienceBundle;BundleUp.Paperback_SciFiBundle;BundleUp.Paperback_SelfHelpBundle;BundleUp.Paperback_SexyBundle;BundleUp.Paperback_SportsBundle;BundleUp.Paperback_TeensBundle;BundleUp.Paperback_ThrillerBundle;BundleUp.Paperback_TravelBundle;BundleUp.Paperback_TrueCrimeBundle;BundleUp.Paperback_WesternBundle;BundleUp.Paperback_BibleBundle] flags[IsExclusive;ItemCount] mappers[bookTypes],
         }
         outputs {
             item 10 mapper:bookTypes,
@@ -636,7 +636,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.HottieZ_NewBundle;BundleUp.MagazineBundle;BundleUp.Magazine_ArtBundle;BundleUp.Magazine_BusinessBundle;BundleUp.Magazine_CarBundle;BundleUp.Magazine_ChildsBundle;BundleUp.Magazine_CinemaBundle;BundleUp.Magazine_CrimeBundle;BundleUp.Magazine_FashionBundle;BundleUp.Magazine_FirearmBundle;BundleUp.Magazine_GamingBundle;BundleUp.Magazine_GolfBundle;BundleUp.Magazine_HealthBundle;BundleUp.Magazine_HobbyBundle;BundleUp.Magazine_HorrorBundle;BundleUp.Magazine_HumorBundle;BundleUp.Magazine_MilitaryBundle;BundleUp.Magazine_MusicBundle;BundleUp.Magazine_OutdoorsBundle;BundleUp.Magazine_PoliceBundle;BundleUp.Magazine_PopularBundle;BundleUp.Magazine_RichBundle;BundleUp.Magazine_ScienceBundle;BundleUp.Magazine_SportsBundle;BundleUp.Magazine_TechBundle;BundleUp.Magazine_TeensBundle;BundleUp.Magazine_NewBundle;BundleUp.Magazine_Art_NewBundle;BundleUp.Magazine_Business_NewBundle;BundleUp.Magazine_Car_NewBundle;BundleUp.Magazine_Childs_NewBundle;BundleUp.Magazine_Cinema_NewBundle;BundleUp.Magazine_Crime_NewBundle;BundleUp.Magazine_Fashion_NewBundle;BundleUp.Magazine_Firearm_NewBundle;BundleUp.Magazine_Gaming_NewBundle;BundleUp.Magazine_Golf_NewBundle;BundleUp.Magazine_Health_NewBundle;BundleUp.Magazine_Hobby_NewBundle;BundleUp.Magazine_Horror_NewBundle;BundleUp.Magazine_Humor_NewBundle;BundleUp.Magazine_Military_NewBundle;BundleUp.Magazine_Music_NewBundle;BundleUp.Magazine_Outdoors_NewBundle;BundleUp.Magazine_Police_NewBundle;BundleUp.Magazine_Popular_NewBundle;BundleUp.Magazine_Rich_NewBundle;BundleUp.Magazine_Science_NewBundle;BundleUp.Magazine_Sports_NewBundle;BundleUp.Magazine_Tech_NewBundle;BundleUp.Magazine_Teens_NewBundle;BundleUp.MagazineCrosswordBundle;BundleUp.HottieZBundle;BundleUp.TVMagazineBundle;BundleUp.TVMagazine_NewBundle;BundleUp.MagazineWordsearchBundle] mappers[magazineTypes],
+            item 1 [BundleUp.HottieZ_NewBundle;BundleUp.MagazineBundle;BundleUp.Magazine_ArtBundle;BundleUp.Magazine_BusinessBundle;BundleUp.Magazine_CarBundle;BundleUp.Magazine_ChildsBundle;BundleUp.Magazine_CinemaBundle;BundleUp.Magazine_CrimeBundle;BundleUp.Magazine_FashionBundle;BundleUp.Magazine_FirearmBundle;BundleUp.Magazine_GamingBundle;BundleUp.Magazine_GolfBundle;BundleUp.Magazine_HealthBundle;BundleUp.Magazine_HobbyBundle;BundleUp.Magazine_HorrorBundle;BundleUp.Magazine_HumorBundle;BundleUp.Magazine_MilitaryBundle;BundleUp.Magazine_MusicBundle;BundleUp.Magazine_OutdoorsBundle;BundleUp.Magazine_PoliceBundle;BundleUp.Magazine_PopularBundle;BundleUp.Magazine_RichBundle;BundleUp.Magazine_ScienceBundle;BundleUp.Magazine_SportsBundle;BundleUp.Magazine_TechBundle;BundleUp.Magazine_TeensBundle;BundleUp.Magazine_NewBundle;BundleUp.Magazine_Art_NewBundle;BundleUp.Magazine_Business_NewBundle;BundleUp.Magazine_Car_NewBundle;BundleUp.Magazine_Childs_NewBundle;BundleUp.Magazine_Cinema_NewBundle;BundleUp.Magazine_Crime_NewBundle;BundleUp.Magazine_Fashion_NewBundle;BundleUp.Magazine_Firearm_NewBundle;BundleUp.Magazine_Gaming_NewBundle;BundleUp.Magazine_Golf_NewBundle;BundleUp.Magazine_Health_NewBundle;BundleUp.Magazine_Hobby_NewBundle;BundleUp.Magazine_Horror_NewBundle;BundleUp.Magazine_Humor_NewBundle;BundleUp.Magazine_Military_NewBundle;BundleUp.Magazine_Music_NewBundle;BundleUp.Magazine_Outdoors_NewBundle;BundleUp.Magazine_Police_NewBundle;BundleUp.Magazine_Popular_NewBundle;BundleUp.Magazine_Rich_NewBundle;BundleUp.Magazine_Science_NewBundle;BundleUp.Magazine_Sports_NewBundle;BundleUp.Magazine_Tech_NewBundle;BundleUp.Magazine_Teens_NewBundle;BundleUp.MagazineCrosswordBundle;BundleUp.HottieZBundle;BundleUp.TVMagazineBundle;BundleUp.TVMagazine_NewBundle;BundleUp.MagazineWordsearchBundle] flags[IsExclusive;ItemCount] mappers[magazineTypes],
         }
         outputs {
             item 10 mapper:magazineTypes,
@@ -744,7 +744,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.CatalogBundle;BundleUp.ComicBookBundle;BundleUp.ComicBook_RetailBundle;BundleUp.Diary1Bundle;BundleUp.Diary2Bundle;BundleUp.GraphPaperBundle;BundleUp.JournalBundle;BundleUp.MenuCardBundle;BundleUp.Newspaper_RecentBundle;BundleUp.Newspaper_NewBundle;BundleUp.Newspaper_Knews_NewBundle;BundleUp.Newspaper_Times_NewBundle;BundleUp.Newspaper_Herald_NewBundle;BundleUp.Newspaper_Dispatch_NewBundle;BundleUp.NotebookBundle;BundleUp.NotepadBundle;BundleUp.NewspaperBundle;BundleUp.PhonebookBundle;BundleUp.PhotoBookBundle;BundleUp.ChildsPictureBookBundle;BundleUp.RPGmanualBundle;BundleUp.SheetPaper2Bundle] mappers[miscTypes],
+            item 1 [BundleUp.CatalogBundle;BundleUp.ComicBookBundle;BundleUp.ComicBook_RetailBundle;BundleUp.Diary1Bundle;BundleUp.Diary2Bundle;BundleUp.GraphPaperBundle;BundleUp.JournalBundle;BundleUp.MenuCardBundle;BundleUp.Newspaper_RecentBundle;BundleUp.Newspaper_NewBundle;BundleUp.Newspaper_Knews_NewBundle;BundleUp.Newspaper_Times_NewBundle;BundleUp.Newspaper_Herald_NewBundle;BundleUp.Newspaper_Dispatch_NewBundle;BundleUp.NotebookBundle;BundleUp.NotepadBundle;BundleUp.NewspaperBundle;BundleUp.PhonebookBundle;BundleUp.PhotoBookBundle;BundleUp.ChildsPictureBookBundle;BundleUp.RPGmanualBundle;BundleUp.SheetPaper2Bundle] flags[IsExclusive;ItemCount] mappers[miscTypes],
         }
         outputs {
             item 10 mapper:miscTypes,

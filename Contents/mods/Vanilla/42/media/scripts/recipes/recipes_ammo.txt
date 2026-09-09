@@ -35,7 +35,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.44ClipBox;BundleUp.JS14ClipBox;BundleUp.556ClipBox;BundleUp.45ClipBox;BundleUp.M14ClipBox;BundleUp.9mmClipBox] mappers[ammoClipMap],
+            item 1 [BundleUp.44ClipBox;BundleUp.JS14ClipBox;BundleUp.556ClipBox;BundleUp.45ClipBox;BundleUp.M14ClipBox;BundleUp.9mmClipBox] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
         }
         outputs {
             item 5 mapper:ammoClipMap,
@@ -69,7 +69,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.CapGunCapCarton],
+            item 1 [BundleUp.CapGunCapCarton] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 12 Base.CapGunCapBox,
@@ -103,7 +103,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.44ClipCarton;BundleUp.JS14ClipCarton;BundleUp.556ClipCarton;BundleUp.45ClipCarton;BundleUp.M14ClipCarton;BundleUp.9mmClipCarton] mappers[ammoClipMap],
+            item 1 [BundleUp.44ClipCarton;BundleUp.JS14ClipCarton;BundleUp.556ClipCarton;BundleUp.45ClipCarton;BundleUp.M14ClipCarton;BundleUp.9mmClipCarton] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
         }
         outputs {
             item 12 mapper:ammoClipMap,
@@ -145,7 +145,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.44ClipCase;BundleUp.JS14ClipCase;BundleUp.556ClipCase;BundleUp.45ClipCase;BundleUp.M14ClipCase;BundleUp.9mmClipCase] mappers[ammoClipMap],
+            item 1 [BundleUp.44ClipCase;BundleUp.JS14ClipCase;BundleUp.556ClipCase;BundleUp.45ClipCase;BundleUp.M14ClipCase;BundleUp.9mmClipCase] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
         }
         outputs {
             item 4 mapper:ammoClipMap,

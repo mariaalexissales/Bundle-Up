@@ -47,7 +47,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] mappers[boxTypes],
+            item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] flags[IsExclusive;ItemCount] mappers[boxTypes],
         }
         outputs {
             item 25 mapper:boxTypes,
@@ -64,7 +64,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] mappers[boxTypes],
+            item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] flags[IsExclusive;ItemCount] mappers[boxTypes],
         }
         outputs {
             item 50 mapper:boxTypes,
@@ -134,7 +134,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.PenBox_Black;BundleUp.PenBox_Blue;BundleUp.PenBox_Red;BundleUp.PenBox_Green] mappers[itemTypes],
+            item 1 [BundleUp.PenBox_Black;BundleUp.PenBox_Blue;BundleUp.PenBox_Red;BundleUp.PenBox_Green] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
@@ -270,7 +270,7 @@ module BundleUp {
         onCreate = BUInv.carryFoodAge,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BBQSauceCarton;BundleUp.BalsamicVinegarCarton;BundleUp.BeefJerkyCarton;BundleUp.CandyCaramelsCarton;BundleUp.CandyCornCarton;BundleUp.CandyFruitSlicesCarton;BundleUp.CandyGummyfishCarton;BundleUp.CandyMolassesCarton;BundleUp.CandyNovapopsCarton;BundleUp.CandycaneCarton;BundleUp.ChocolateCarton;BundleUp.ChocolateChipsCarton;BundleUp.Chocolate_ButterchunkersCarton;BundleUp.Chocolate_CandyCarton;BundleUp.Chocolate_CrackleCarton;BundleUp.Chocolate_DeuxCarton;BundleUp.Chocolate_GalacticDairyCarton;BundleUp.Chocolate_RoysPBPucksCarton;BundleUp.Chocolate_SmirkersCarton;BundleUp.Chocolate_SnikSnakCarton;BundleUp.CilantroDriedCarton;BundleUp.CookieChocolateChipCarton;BundleUp.CookieJellyCarton;BundleUp.CookiesChocolateCarton;BundleUp.CookiesOatmealCarton;BundleUp.CookiesShortbreadCarton;BundleUp.Cornflour2Carton;BundleUp.Cornmeal2Carton;BundleUp.CrackersCarton;BundleUp.CrispsCarton;BundleUp.Crisps2Carton;BundleUp.Crisps3Carton;BundleUp.Crisps4Carton;BundleUp.DehydratedMeatStickCarton;BundleUp.Dip_SalsaCarton;BundleUp.DriedBlackBeansCarton;BundleUp.DriedChickpeasCarton;BundleUp.DriedKidneyBeansCarton;BundleUp.DriedLentilsCarton;BundleUp.DriedSplitPeasCarton;BundleUp.Flour2Carton;BundleUp.GrahamCrackersCarton;BundleUp.GranolaBarCarton;BundleUp.GumCarton;BundleUp.GummyBearsCarton;BundleUp.GummyWormsCarton;BundleUp.HardCandiesCarton;BundleUp.HiHisCarton;BundleUp.HoneyCarton;BundleUp.JamFruitCarton;BundleUp.JamMarmaladeCarton;BundleUp.JellyBeansCarton;BundleUp.JujubesCarton;BundleUp.KetchupCarton;BundleUp.LardCarton;BundleUp.LavenderPetalsDriedCarton;BundleUp.LicoriceBlackCarton;BundleUp.LicoriceRedCarton;BundleUp.MacaroniCarton;BundleUp.MapleSyrupCarton;BundleUp.MargarineCarton;BundleUp.MarinaraCarton;BundleUp.MarshmallowsCarton;BundleUp.MustardCarton;BundleUp.OatsRawCarton;BundleUp.OilOliveCarton;BundleUp.OilVegetableCarton;BundleUp.PeanutButterCarton;BundleUp.PepperCarton;BundleUp.PepperHabaneroCarton;BundleUp.PepperJalapenoCarton;BundleUp.PepperJalapenoDriedCarton;BundleUp.PlonkiesCarton;BundleUp.PopcornCarton;BundleUp.PorkRindsCarton;BundleUp.PowderedGarlicCarton;BundleUp.PowderedOnionCarton;BundleUp.PretzelCarton;BundleUp.RamenCarton;BundleUp.RiceVinegarCarton;BundleUp.RockCandyCarton;BundleUp.ScoutCookiesCarton;BundleUp.SeasoningSaltCarton;BundleUp.Seasoning_BasilCarton;BundleUp.Seasoning_ChivesCarton;BundleUp.Seasoning_CilantroCarton;BundleUp.Seasoning_OreganoCarton;BundleUp.Seasoning_ParsleyCarton;BundleUp.Seasoning_RosemaryCarton;BundleUp.Seasoning_SageCarton;BundleUp.Seasoning_ThymeCarton;BundleUp.SesameOilCarton;BundleUp.SnoGlobesCarton;BundleUp.SoysauceCarton;BundleUp.SugarCarton;BundleUp.SugarBrownCarton;BundleUp.Teabag2Carton;BundleUp.ThymeDriedCarton;BundleUp.YoghurtCarton] flags[AllowRottenItem;AllowFrozenItem] mappers[dryTypes],
+            item 1 [BundleUp.BBQSauceCarton;BundleUp.BalsamicVinegarCarton;BundleUp.BeefJerkyCarton;BundleUp.CandyCaramelsCarton;BundleUp.CandyCornCarton;BundleUp.CandyFruitSlicesCarton;BundleUp.CandyGummyfishCarton;BundleUp.CandyMolassesCarton;BundleUp.CandyNovapopsCarton;BundleUp.CandycaneCarton;BundleUp.ChocolateCarton;BundleUp.ChocolateChipsCarton;BundleUp.Chocolate_ButterchunkersCarton;BundleUp.Chocolate_CandyCarton;BundleUp.Chocolate_CrackleCarton;BundleUp.Chocolate_DeuxCarton;BundleUp.Chocolate_GalacticDairyCarton;BundleUp.Chocolate_RoysPBPucksCarton;BundleUp.Chocolate_SmirkersCarton;BundleUp.Chocolate_SnikSnakCarton;BundleUp.CilantroDriedCarton;BundleUp.CookieChocolateChipCarton;BundleUp.CookieJellyCarton;BundleUp.CookiesChocolateCarton;BundleUp.CookiesOatmealCarton;BundleUp.CookiesShortbreadCarton;BundleUp.Cornflour2Carton;BundleUp.Cornmeal2Carton;BundleUp.CrackersCarton;BundleUp.CrispsCarton;BundleUp.Crisps2Carton;BundleUp.Crisps3Carton;BundleUp.Crisps4Carton;BundleUp.DehydratedMeatStickCarton;BundleUp.Dip_SalsaCarton;BundleUp.DriedBlackBeansCarton;BundleUp.DriedChickpeasCarton;BundleUp.DriedKidneyBeansCarton;BundleUp.DriedLentilsCarton;BundleUp.DriedSplitPeasCarton;BundleUp.Flour2Carton;BundleUp.GrahamCrackersCarton;BundleUp.GranolaBarCarton;BundleUp.GumCarton;BundleUp.GummyBearsCarton;BundleUp.GummyWormsCarton;BundleUp.HardCandiesCarton;BundleUp.HiHisCarton;BundleUp.HoneyCarton;BundleUp.JamFruitCarton;BundleUp.JamMarmaladeCarton;BundleUp.JellyBeansCarton;BundleUp.JujubesCarton;BundleUp.KetchupCarton;BundleUp.LardCarton;BundleUp.LavenderPetalsDriedCarton;BundleUp.LicoriceBlackCarton;BundleUp.LicoriceRedCarton;BundleUp.MacaroniCarton;BundleUp.MapleSyrupCarton;BundleUp.MargarineCarton;BundleUp.MarinaraCarton;BundleUp.MarshmallowsCarton;BundleUp.MustardCarton;BundleUp.OatsRawCarton;BundleUp.OilOliveCarton;BundleUp.OilVegetableCarton;BundleUp.PeanutButterCarton;BundleUp.PepperCarton;BundleUp.PepperHabaneroCarton;BundleUp.PepperJalapenoCarton;BundleUp.PepperJalapenoDriedCarton;BundleUp.PlonkiesCarton;BundleUp.PopcornCarton;BundleUp.PorkRindsCarton;BundleUp.PowderedGarlicCarton;BundleUp.PowderedOnionCarton;BundleUp.PretzelCarton;BundleUp.RamenCarton;BundleUp.RiceVinegarCarton;BundleUp.RockCandyCarton;BundleUp.ScoutCookiesCarton;BundleUp.SeasoningSaltCarton;BundleUp.Seasoning_BasilCarton;BundleUp.Seasoning_ChivesCarton;BundleUp.Seasoning_CilantroCarton;BundleUp.Seasoning_OreganoCarton;BundleUp.Seasoning_ParsleyCarton;BundleUp.Seasoning_RosemaryCarton;BundleUp.Seasoning_SageCarton;BundleUp.Seasoning_ThymeCarton;BundleUp.SesameOilCarton;BundleUp.SnoGlobesCarton;BundleUp.SoysauceCarton;BundleUp.SugarCarton;BundleUp.SugarBrownCarton;BundleUp.Teabag2Carton;BundleUp.ThymeDriedCarton;BundleUp.YoghurtCarton] flags[AllowRottenItem;AllowFrozenItem;IsExclusive;ItemCount] mappers[dryTypes],
         }
         outputs {
             item 12 mapper:dryTypes,
@@ -469,7 +469,7 @@ module BundleUp {
         onCreate = BUInv.carryFoodAge,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BasilDriedCarton;BundleUp.BellPepperCarton;BundleUp.BlackSageDriedCarton;BundleUp.BroccoliCarton;BundleUp.ButterCarton;BundleUp.CabbageCarton;BundleUp.CarrotsCarton;BundleUp.CauliflowerCarton;BundleUp.CerealCarton;BundleUp.ChamomileDriedCarton;BundleUp.CheeseCarton;BundleUp.ChivesDriedCarton;BundleUp.ChocoCakesCarton;BundleUp.ChocolateCoveredCoffeeBeansCarton;BundleUp.CinnamonRollCarton;BundleUp.CocoaPowderCarton;BundleUp.Coffee2Carton;BundleUp.CommonMallowDriedCarton;BundleUp.CookiesSugarCarton;BundleUp.CornCarton;BundleUp.CrispyRiceSquareCarton;BundleUp.CucumberCarton;BundleUp.Dip_NachoCheeseCarton;BundleUp.Dip_RanchCarton;BundleUp.DogFoodBagCrate;BundleUp.DriedWhiteBeansCarton;BundleUp.EggplantCarton;BundleUp.GarlicCarton;BundleUp.GingerbreadmanCarton;BundleUp.GinsengCarton;BundleUp.GreenpeasCarton;BundleUp.HotsauceCarton;BundleUp.KaleCarton;BundleUp.LeekCarton;BundleUp.LettuceCarton;BundleUp.MarigoldDriedCarton;BundleUp.MayonnaiseFullCarton;BundleUp.MintHerbDriedCarton;BundleUp.OnionCarton;BundleUp.OreganoDriedCarton;BundleUp.ParsleyDriedCarton;BundleUp.PastaCarton;BundleUp.PepperHabaneroDriedCarton;BundleUp.PicklesCarton;BundleUp.PotatoCarton;BundleUp.QuaggaCakesCarton;BundleUp.RedRadishCarton;BundleUp.RemouladeFullCarton;BundleUp.RiceCarton;BundleUp.RosePetalsDriedCarton;BundleUp.RosemaryDriedCarton;BundleUp.SageDriedCarton;BundleUp.SalamiCarton;BundleUp.SaltCarton;BundleUp.SoybeansCarton;BundleUp.SpinachCarton;BundleUp.SquashCarton;BundleUp.SugarBeetCarton;BundleUp.SweetPotatoCarton;BundleUp.TomatoCarton;BundleUp.TomatoPasteCarton;BundleUp.TortillaChipsCarton;BundleUp.TurkeyEggCarton;BundleUp.TurnipCarton;BundleUp.WildEggsCarton;BundleUp.WildGarlicDriedCarton;BundleUp.ZucchiniCarton] flags[AllowRottenItem;AllowFrozenItem] mappers[freshTypes],
+            item 1 [BundleUp.BasilDriedCarton;BundleUp.BellPepperCarton;BundleUp.BlackSageDriedCarton;BundleUp.BroccoliCarton;BundleUp.ButterCarton;BundleUp.CabbageCarton;BundleUp.CarrotsCarton;BundleUp.CauliflowerCarton;BundleUp.CerealCarton;BundleUp.ChamomileDriedCarton;BundleUp.CheeseCarton;BundleUp.ChivesDriedCarton;BundleUp.ChocoCakesCarton;BundleUp.ChocolateCoveredCoffeeBeansCarton;BundleUp.CinnamonRollCarton;BundleUp.CocoaPowderCarton;BundleUp.Coffee2Carton;BundleUp.CommonMallowDriedCarton;BundleUp.CookiesSugarCarton;BundleUp.CornCarton;BundleUp.CrispyRiceSquareCarton;BundleUp.CucumberCarton;BundleUp.Dip_NachoCheeseCarton;BundleUp.Dip_RanchCarton;BundleUp.DogFoodBagCrate;BundleUp.DriedWhiteBeansCarton;BundleUp.EggplantCarton;BundleUp.GarlicCarton;BundleUp.GingerbreadmanCarton;BundleUp.GinsengCarton;BundleUp.GreenpeasCarton;BundleUp.HotsauceCarton;BundleUp.KaleCarton;BundleUp.LeekCarton;BundleUp.LettuceCarton;BundleUp.MarigoldDriedCarton;BundleUp.MayonnaiseFullCarton;BundleUp.MintHerbDriedCarton;BundleUp.OnionCarton;BundleUp.OreganoDriedCarton;BundleUp.ParsleyDriedCarton;BundleUp.PastaCarton;BundleUp.PepperHabaneroDriedCarton;BundleUp.PicklesCarton;BundleUp.PotatoCarton;BundleUp.QuaggaCakesCarton;BundleUp.RedRadishCarton;BundleUp.RemouladeFullCarton;BundleUp.RiceCarton;BundleUp.RosePetalsDriedCarton;BundleUp.RosemaryDriedCarton;BundleUp.SageDriedCarton;BundleUp.SalamiCarton;BundleUp.SaltCarton;BundleUp.SoybeansCarton;BundleUp.SpinachCarton;BundleUp.SquashCarton;BundleUp.SugarBeetCarton;BundleUp.SweetPotatoCarton;BundleUp.TomatoCarton;BundleUp.TomatoPasteCarton;BundleUp.TortillaChipsCarton;BundleUp.TurkeyEggCarton;BundleUp.TurnipCarton;BundleUp.WildEggsCarton;BundleUp.WildGarlicDriedCarton;BundleUp.ZucchiniCarton] flags[AllowRottenItem;AllowFrozenItem;IsExclusive;ItemCount] mappers[freshTypes],
         }
         outputs {
             item 12 mapper:freshTypes,
@@ -587,7 +587,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.CircularSawbladeBox;BundleUp.IronBandBox;BundleUp.IronBlockBox;BundleUp.RakeHeadBox;BundleUp.SteelBlockBox;BundleUp.PiercedIronBlockBox;BundleUp.PiercedSteelBlockBox] mappers[materialTypes],
+            item 1 [BundleUp.CircularSawbladeBox;BundleUp.IronBandBox;BundleUp.IronBlockBox;BundleUp.RakeHeadBox;BundleUp.SteelBlockBox;BundleUp.PiercedIronBlockBox;BundleUp.PiercedSteelBlockBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
         }
         outputs {
             item 10 mapper:materialTypes,
@@ -609,7 +609,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.IronBarHalfBox;BundleUp.SteelBarHalfBox;BundleUp.SteelRodHalfBox] mappers[materialTypes],
+            item 1 [BundleUp.IronBarHalfBox;BundleUp.SteelBarHalfBox;BundleUp.SteelRodHalfBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
         }
         outputs {
             item 20 mapper:materialTypes,
@@ -627,7 +627,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.IronBandSmallBox;BundleUp.IronBarQuarterBox;BundleUp.IronChunkBox;BundleUp.SteelBarQuarterBox;BundleUp.SteelChunkBox;BundleUp.SteelRodQuarterBox;BundleUp.PiercedIronChunkBox;BundleUp.PiercedSteelChunkBox] mappers[materialTypes],
+            item 1 [BundleUp.IronBandSmallBox;BundleUp.IronBarQuarterBox;BundleUp.IronChunkBox;BundleUp.SteelBarQuarterBox;BundleUp.SteelChunkBox;BundleUp.SteelRodQuarterBox;BundleUp.PiercedIronChunkBox;BundleUp.PiercedSteelChunkBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
         }
         outputs {
             item 40 mapper:materialTypes,
@@ -650,7 +650,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.IronPieceBox;BundleUp.SteelPieceBox;BundleUp.SteelSlugBox] mappers[materialTypes],
+            item 1 [BundleUp.IronPieceBox;BundleUp.SteelPieceBox;BundleUp.SteelSlugBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
         }
         outputs {
             item 200 mapper:materialTypes,
@@ -695,7 +695,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.AlcoholBandageBox;BundleUp.AlcoholWipesBox;BundleUp.AlcoholedCottonBallsBox;BundleUp.PillsBox;BundleUp.PillsAntiDepBox;BundleUp.PillsBetaBox;BundleUp.PillsSleepingTabletsBox;BundleUp.PillsVitaminsBox;BundleUp.TissueBox;BundleUp.WaterPurificationTabletsBox;BundleUp.BandageDirtyBox;BundleUp.DisinfectantBox] mappers[medicalTypes],
+            item 1 [BundleUp.AlcoholBandageBox;BundleUp.AlcoholWipesBox;BundleUp.AlcoholedCottonBallsBox;BundleUp.PillsBox;BundleUp.PillsAntiDepBox;BundleUp.PillsBetaBox;BundleUp.PillsSleepingTabletsBox;BundleUp.PillsVitaminsBox;BundleUp.TissueBox;BundleUp.WaterPurificationTabletsBox;BundleUp.BandageDirtyBox;BundleUp.DisinfectantBox] flags[IsExclusive;ItemCount] mappers[medicalTypes],
         }
         outputs {
             item 10 mapper:medicalTypes,
@@ -820,7 +820,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.AdhesiveTapeBoxCrate;BundleUp.AluminumBox;BundleUp.AmplifierBox;BundleUp.BakingSodaBox;BundleUp.BatteryBoxCrate;BundleUp.BuckleBox;BundleUp.ButterKnifeBox;BundleUp.ButtonBox;BundleUp.CandleBoxCrate;BundleUp.CorrectionFluidBox;BundleUp.DoorknobBox;BundleUp.DuctTapeBoxCrate;BundleUp.ElectricWireBox;BundleUp.EpoxyBox;BundleUp.FiberglassTapeBox;BundleUp.FishingHookBoxCrate;BundleUp.FishingLineBox;BundleUp.ForkBox;BundleUp.Garbagebag_boxBox;BundleUp.GasmaskFilterBox;BundleUp.GlueBox;BundleUp.GravyMixBox;BundleUp.HairgelBox;BundleUp.Hairspray2Box;BundleUp.HingeBox;BundleUp.InsectRepellentBox;BundleUp.JarLidBox;BundleUp.JigLureBox;BundleUp.LightBulbBlueBox;BundleUp.LightBulbBoxCrate;BundleUp.LightBulbCyanBox;BundleUp.LightBulbGreenBox;BundleUp.LightBulbMagentaBox;BundleUp.LightBulbOrangeBox;BundleUp.LightBulbPinkBox;BundleUp.LightBulbPurpleBox;BundleUp.LightBulbRedBox;BundleUp.LightBulbYellowBox;BundleUp.LighterBox;BundleUp.LighterBBQBox;BundleUp.LighterDisposableBox;BundleUp.MagnesiumFirestarterBox;BundleUp.MakeupEyeshadowBox;BundleUp.MakeupFoundationBox;BundleUp.MatchesBox;BundleUp.MinnowLureBox;BundleUp.MotionSensorBox;BundleUp.PagerBox;BundleUp.PancakeMixBox;BundleUp.PaperNapkins2Box;BundleUp.PaperclipBoxCrate;BundleUp.PillowBox;BundleUp.PremiumFishingLineBox;BundleUp.RadioReceiverBox;BundleUp.RadioTransmitterBox;BundleUp.RatPoisonBox;BundleUp.ReceiverBox;BundleUp.RemoteBox;BundleUp.SlugRepellentBox;BundleUp.SmallAnimalBoneBox;BundleUp.SmallHandleBox;BundleUp.Soap2Box;BundleUp.SparklersBox;BundleUp.SpongeBox;BundleUp.SpoonBox;BundleUp.TarpBox;BundleUp.Thread_AramidBox;BundleUp.Thread_SinewBox;BundleUp.TimerBox;BundleUp.TimerCraftedBox;BundleUp.TissueBoxCrate;BundleUp.ToiletPaperBox;BundleUp.ToothbrushBox;BundleUp.TriggerCraftedBox;BundleUp.TwineBox;BundleUp.Vinegar2Box;BundleUp.Vinegar_JugBox;BundleUp.WeldingRodsBox;BundleUp.WhetstoneBox;BundleUp.WoodglueBox;BundleUp.YeastBox;BundleUp.ZiptiesBox] mappers[itemTypes],
+            item 1 [BundleUp.AdhesiveTapeBoxCrate;BundleUp.AluminumBox;BundleUp.AmplifierBox;BundleUp.BakingSodaBox;BundleUp.BatteryBoxCrate;BundleUp.BuckleBox;BundleUp.ButterKnifeBox;BundleUp.ButtonBox;BundleUp.CandleBoxCrate;BundleUp.CorrectionFluidBox;BundleUp.DoorknobBox;BundleUp.DuctTapeBoxCrate;BundleUp.ElectricWireBox;BundleUp.EpoxyBox;BundleUp.FiberglassTapeBox;BundleUp.FishingHookBoxCrate;BundleUp.FishingLineBox;BundleUp.ForkBox;BundleUp.Garbagebag_boxBox;BundleUp.GasmaskFilterBox;BundleUp.GlueBox;BundleUp.GravyMixBox;BundleUp.HairgelBox;BundleUp.Hairspray2Box;BundleUp.HingeBox;BundleUp.InsectRepellentBox;BundleUp.JarLidBox;BundleUp.JigLureBox;BundleUp.LightBulbBlueBox;BundleUp.LightBulbBoxCrate;BundleUp.LightBulbCyanBox;BundleUp.LightBulbGreenBox;BundleUp.LightBulbMagentaBox;BundleUp.LightBulbOrangeBox;BundleUp.LightBulbPinkBox;BundleUp.LightBulbPurpleBox;BundleUp.LightBulbRedBox;BundleUp.LightBulbYellowBox;BundleUp.LighterBox;BundleUp.LighterBBQBox;BundleUp.LighterDisposableBox;BundleUp.MagnesiumFirestarterBox;BundleUp.MakeupEyeshadowBox;BundleUp.MakeupFoundationBox;BundleUp.MatchesBox;BundleUp.MinnowLureBox;BundleUp.MotionSensorBox;BundleUp.PagerBox;BundleUp.PancakeMixBox;BundleUp.PaperNapkins2Box;BundleUp.PaperclipBoxCrate;BundleUp.PillowBox;BundleUp.PremiumFishingLineBox;BundleUp.RadioReceiverBox;BundleUp.RadioTransmitterBox;BundleUp.RatPoisonBox;BundleUp.ReceiverBox;BundleUp.RemoteBox;BundleUp.SlugRepellentBox;BundleUp.SmallAnimalBoneBox;BundleUp.SmallHandleBox;BundleUp.Soap2Box;BundleUp.SparklersBox;BundleUp.SpongeBox;BundleUp.SpoonBox;BundleUp.TarpBox;BundleUp.Thread_AramidBox;BundleUp.Thread_SinewBox;BundleUp.TimerBox;BundleUp.TimerCraftedBox;BundleUp.TissueBoxCrate;BundleUp.ToiletPaperBox;BundleUp.ToothbrushBox;BundleUp.TriggerCraftedBox;BundleUp.TwineBox;BundleUp.Vinegar2Box;BundleUp.Vinegar_JugBox;BundleUp.WeldingRodsBox;BundleUp.WhetstoneBox;BundleUp.WoodglueBox;BundleUp.YeastBox;BundleUp.ZiptiesBox] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
@@ -917,7 +917,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.NutsBoltsBox],
+            item 1 [BundleUp.NutsBoltsBox] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 50 Base.NutsBolts,
