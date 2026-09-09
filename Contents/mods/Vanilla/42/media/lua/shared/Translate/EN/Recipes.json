@@ -3,6 +3,10 @@
   "Untie5": "Unbundle 5 Items",
   "Tie10": "Bundle 10 Items",
   "Untie10": "Unbundle 10 Items",
+  "TieStock5": "Bundle 5 Undamaged Items",
+  "UntieStock5": "Unbundle 5 Items",
+  "TieStock10": "Bundle 10 Undamaged Items",
+  "UntieStock10": "Unbundle 10 Items",
   "BoxSmall": "Pack Items in Box",
   "UnboxSmall": "Open Box (25 items)",
   "BoxMedium": "Pack Items in Box",
@@ -75,6 +79,7 @@
   "MergeBundle": "Combine into Large Bundle",
   "MergeSack": "Combine into Large Sack",
   "MergeTie": "Combine into Large Bundle",
+  "MergeTieStock": "Combine into Large Bundle",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
 }
