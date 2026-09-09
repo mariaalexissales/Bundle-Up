@@ -1179,3 +1179,213 @@ option BundleUp.Item_HideCrudeSmallLSR
     type = integer, min = -1, max = 100, default = -1,
     page = BundleUp, translation = BundleUp_Item_HideCrudeSmallLSR,
 }
+
+option BundleUp.Item_WhiskeyPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WhiskeyPack,
+}
+
+option BundleUp.Item_VodkaPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_VodkaPack,
+}
+
+option BundleUp.Item_RumPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_RumPack,
+}
+
+option BundleUp.Item_GinPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GinPack,
+}
+
+option BundleUp.Item_TequilaPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_TequilaPack,
+}
+
+option BundleUp.Item_BrandyPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_BrandyPack,
+}
+
+option BundleUp.Item_ScotchPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_ScotchPack,
+}
+
+option BundleUp.Item_SherryPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SherryPack,
+}
+
+option BundleUp.Item_PortPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PortPack,
+}
+
+option BundleUp.Item_VermouthPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_VermouthPack,
+}
+
+option BundleUp.Item_CiderPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CiderPack,
+}
+
+option BundleUp.Item_CuracaoPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CuracaoPack,
+}
+
+option BundleUp.Item_GrenadinePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GrenadinePack,
+}
+
+option BundleUp.Item_CoffeeLiquerPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CoffeeLiquerPack,
+}
+
+option BundleUp.Item_WineWhitePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WineWhitePack,
+}
+
+option BundleUp.Item_WineRedPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WineRedPack,
+}
+
+option BundleUp.Item_WineAgedPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WineAgedPack,
+}
+
+option BundleUp.Item_WineBoxPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WineBoxPack,
+}
+
+option BundleUp.Item_WineScrewtopPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_WineScrewtopPack,
+}
+
+option BundleUp.Item_ChampagnePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_ChampagnePack,
+}
+
+option BundleUp.Item_BeerImportedPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_BeerImportedPack,
+}
+
+option BundleUp.Item_JuiceBoxGrapePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceBoxGrapePack,
+}
+
+option BundleUp.Item_JuiceBoxApplePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceBoxApplePack,
+}
+
+option BundleUp.Item_JuiceBoxFruitpunchPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceBoxFruitpunchPack,
+}
+
+option BundleUp.Item_JuiceBoxOrangePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceBoxOrangePack,
+}
+
+option BundleUp.Item_JuiceCranberryPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceCranberryPack,
+}
+
+option BundleUp.Item_JuiceFruitpunchPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceFruitpunchPack,
+}
+
+option BundleUp.Item_JuiceGrapePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceGrapePack,
+}
+
+option BundleUp.Item_JuiceLemonPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceLemonPack,
+}
+
+option BundleUp.Item_JuiceOrangePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceOrangePack,
+}
+
+option BundleUp.Item_JuiceTomatoPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_JuiceTomatoPack,
+}
+
+option BundleUp.Item_MilkPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MilkPack,
+}
+
+option BundleUp.Item_MilkBottlePack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MilkBottlePack,
+}
+
+option BundleUp.Item_MilkSmallPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MilkSmallPack,
+}
+
+option BundleUp.Item_MilkChocSmallPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MilkChocSmallPack,
+}

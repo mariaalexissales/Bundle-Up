@@ -1695,4 +1695,321 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackReadingMiscBundle,
     }
+
+
+    item WhiskeyPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 10.2,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item VodkaPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item RumPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item GinPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item TequilaPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item BrandyPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 9.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item ScotchPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item SherryPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item PortPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item VermouthPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item CiderPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item CuracaoPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item GrenadinePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item CoffeeLiquerPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = LiquorPack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackLiquor,
+    }
+
+    item WineWhitePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 7.8,
+        Icon = WinePack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackWine,
+    }
+
+    item WineRedPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 7.8,
+        Icon = WinePack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackWine,
+    }
+
+    item WineAgedPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = WinePack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackWine,
+    }
+
+    item WineBoxPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 7.2,
+        Icon = WinePack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackWine,
+    }
+
+    item WineScrewtopPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = WinePack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackWine,
+    }
+
+    item ChampagnePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 12.0,
+        Icon = WinePack,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackWine,
+    }
+
+    item BeerImportedPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 4.2,
+        Icon = SixPack_Bottles,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnpackBeerImported,
+    }
+
+    item JuiceBoxGrapePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.8,
+        Icon = JuicePackGrape,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceBoxApplePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.8,
+        Icon = JuicePackApple,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceBoxFruitpunchPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.8,
+        Icon = JuicePackFruitpunch,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceBoxOrangePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.8,
+        Icon = JuicePackOrange,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceCranberryPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 6.6,
+        Icon = JuicePackCranberry,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceFruitpunchPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 6.6,
+        Icon = JuicePackFruitpunch,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceGrapePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 6.6,
+        Icon = JuicePackGrape,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceLemonPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 6.6,
+        Icon = JuicePackLemon,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceOrangePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 6.6,
+        Icon = JuicePackOrange,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item JuiceTomatoPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 6.6,
+        Icon = JuicePackTomato,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackJuice,
+    }
+
+    item MilkPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 7.2,
+        Icon = MilkCrate,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackMilk,
+    }
+
+    item MilkBottlePack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 6.6,
+        Icon = MilkCrate,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackMilk,
+    }
+
+    item MilkSmallPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 2.7,
+        Icon = MilkCrate,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackMilk,
+    }
+
+    item MilkChocSmallPack {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 2.7,
+        Icon = MilkCrate,
+        WorldStaticModel = BeerCanSixpack,
+        DoubleClickRecipe = UnpackMilk,
+    }
 }

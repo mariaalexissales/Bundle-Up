@@ -86,5 +86,17 @@
   "TieHide10": "Bundle 10 Hides",
   "UntieHide5": "Unbundle 5 Hides",
   "UntieHide10": "Unbundle 10 Hides",
-  "MergeTieHide": "Combine into Large Bundle"
+  "MergeTieHide": "Combine into Large Bundle",
+  "PackLiquor": "Six-Pack Spirits",
+  "UnpackLiquor": "Open Spirits Six-Pack",
+  "PackWine": "Six-Pack Wine",
+  "PackWineSealed": "Six-Pack Wine",
+  "UnpackWine": "Open Wine Six-Pack",
+  "PackBeerImportedSealed": "Six-Pack Imported Beer",
+  "UnpackBeerImported": "Open Imported Beer Six-Pack",
+  "PackJuice": "Six-Pack Juice",
+  "PackJuiceSealed": "Six-Pack Juice",
+  "UnpackJuice": "Open Juice Six-Pack",
+  "PackMilk": "Six-Pack Milk",
+  "UnpackMilk": "Open Milk Six-Pack"
 }

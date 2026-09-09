@@ -774,4 +774,255 @@ module BundleUp {
             Base.SheetPaper2 = BundleUp.SheetPaper2Bundle,
         }
     }
+
+
+    craftRecipe PackLiquor {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Whiskey;Base.Vodka;Base.Rum;Base.Gin;Base.Tequila;Base.Brandy;Base.Scotch;Base.Sherry;Base.Port;Base.Vermouth;Base.Cider;Base.Curacao;Base.Grenadine;Base.CoffeeLiquer] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WhiskeyPack = Base.Whiskey,
+            BundleUp.VodkaPack = Base.Vodka,
+            BundleUp.RumPack = Base.Rum,
+            BundleUp.GinPack = Base.Gin,
+            BundleUp.TequilaPack = Base.Tequila,
+            BundleUp.BrandyPack = Base.Brandy,
+            BundleUp.ScotchPack = Base.Scotch,
+            BundleUp.SherryPack = Base.Sherry,
+            BundleUp.PortPack = Base.Port,
+            BundleUp.VermouthPack = Base.Vermouth,
+            BundleUp.CiderPack = Base.Cider,
+            BundleUp.CuracaoPack = Base.Curacao,
+            BundleUp.GrenadinePack = Base.Grenadine,
+            BundleUp.CoffeeLiquerPack = Base.CoffeeLiquer,
+        }
+    }
+
+    craftRecipe PackWine {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Wine;Base.Wine2;Base.WineAged;Base.WineBox] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WineWhitePack = Base.Wine,
+            BundleUp.WineRedPack = Base.Wine2,
+            BundleUp.WineAgedPack = Base.WineAged,
+            BundleUp.WineBoxPack = Base.WineBox,
+        }
+    }
+
+    craftRecipe PackWineSealed {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.WineScrewtop;Base.Champagne] flags[IsFull;IsSealed;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WineScrewtopPack = Base.WineScrewtop,
+            BundleUp.ChampagnePack = Base.Champagne,
+        }
+    }
+
+    craftRecipe PackBeerImportedSealed {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.BeerImported] flags[IsFull;IsSealed;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.BeerImportedPack = Base.BeerImported,
+        }
+    }
+
+    craftRecipe PackJuice {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.JuiceBox;Base.JuiceBoxApple;Base.JuiceBoxFruitpunch;Base.JuiceBoxOrange] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.JuiceBoxGrapePack = Base.JuiceBox,
+            BundleUp.JuiceBoxApplePack = Base.JuiceBoxApple,
+            BundleUp.JuiceBoxFruitpunchPack = Base.JuiceBoxFruitpunch,
+            BundleUp.JuiceBoxOrangePack = Base.JuiceBoxOrange,
+        }
+    }
+
+    craftRecipe PackJuiceSealed {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.JuiceCranberry;Base.JuiceFruitpunch;Base.JuiceGrape;Base.JuiceLemon;Base.JuiceOrange;Base.JuiceTomato] flags[IsFull;IsSealed;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.JuiceCranberryPack = Base.JuiceCranberry,
+            BundleUp.JuiceFruitpunchPack = Base.JuiceFruitpunch,
+            BundleUp.JuiceGrapePack = Base.JuiceGrape,
+            BundleUp.JuiceLemonPack = Base.JuiceLemon,
+            BundleUp.JuiceOrangePack = Base.JuiceOrange,
+            BundleUp.JuiceTomatoPack = Base.JuiceTomato,
+        }
+    }
+
+    craftRecipe PackMilk {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Milk;Base.MilkBottle;Base.Milk_Personalsized;Base.MilkChocolate_Personalsized] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.MilkPack = Base.Milk,
+            BundleUp.MilkBottlePack = Base.MilkBottle,
+            BundleUp.MilkSmallPack = Base.Milk_Personalsized,
+            BundleUp.MilkChocSmallPack = Base.MilkChocolate_Personalsized,
+        }
+    }
+
+    craftRecipe UnpackLiquor {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.WhiskeyPack;BundleUp.VodkaPack;BundleUp.RumPack;BundleUp.GinPack;BundleUp.TequilaPack;BundleUp.BrandyPack;BundleUp.ScotchPack;BundleUp.SherryPack;BundleUp.PortPack;BundleUp.VermouthPack;BundleUp.CiderPack;BundleUp.CuracaoPack;BundleUp.GrenadinePack;BundleUp.CoffeeLiquerPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Whiskey = BundleUp.WhiskeyPack,
+            Base.Vodka = BundleUp.VodkaPack,
+            Base.Rum = BundleUp.RumPack,
+            Base.Gin = BundleUp.GinPack,
+            Base.Tequila = BundleUp.TequilaPack,
+            Base.Brandy = BundleUp.BrandyPack,
+            Base.Scotch = BundleUp.ScotchPack,
+            Base.Sherry = BundleUp.SherryPack,
+            Base.Port = BundleUp.PortPack,
+            Base.Vermouth = BundleUp.VermouthPack,
+            Base.Cider = BundleUp.CiderPack,
+            Base.Curacao = BundleUp.CuracaoPack,
+            Base.Grenadine = BundleUp.GrenadinePack,
+            Base.CoffeeLiquer = BundleUp.CoffeeLiquerPack,
+        }
+    }
+
+    craftRecipe UnpackWine {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.WineWhitePack;BundleUp.WineRedPack;BundleUp.WineAgedPack;BundleUp.WineBoxPack;BundleUp.WineScrewtopPack;BundleUp.ChampagnePack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Wine = BundleUp.WineWhitePack,
+            Base.Wine2 = BundleUp.WineRedPack,
+            Base.WineAged = BundleUp.WineAgedPack,
+            Base.WineBox = BundleUp.WineBoxPack,
+            Base.WineScrewtop = BundleUp.WineScrewtopPack,
+            Base.Champagne = BundleUp.ChampagnePack,
+        }
+    }
+
+    craftRecipe UnpackBeerImported {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.BeerImportedPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.BeerImported = BundleUp.BeerImportedPack,
+        }
+    }
+
+    craftRecipe UnpackJuice {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.JuiceBoxGrapePack;BundleUp.JuiceBoxApplePack;BundleUp.JuiceBoxFruitpunchPack;BundleUp.JuiceBoxOrangePack;BundleUp.JuiceCranberryPack;BundleUp.JuiceFruitpunchPack;BundleUp.JuiceGrapePack;BundleUp.JuiceLemonPack;BundleUp.JuiceOrangePack;BundleUp.JuiceTomatoPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.JuiceBox = BundleUp.JuiceBoxGrapePack,
+            Base.JuiceBoxApple = BundleUp.JuiceBoxApplePack,
+            Base.JuiceBoxFruitpunch = BundleUp.JuiceBoxFruitpunchPack,
+            Base.JuiceBoxOrange = BundleUp.JuiceBoxOrangePack,
+            Base.JuiceCranberry = BundleUp.JuiceCranberryPack,
+            Base.JuiceFruitpunch = BundleUp.JuiceFruitpunchPack,
+            Base.JuiceGrape = BundleUp.JuiceGrapePack,
+            Base.JuiceLemon = BundleUp.JuiceLemonPack,
+            Base.JuiceOrange = BundleUp.JuiceOrangePack,
+            Base.JuiceTomato = BundleUp.JuiceTomatoPack,
+        }
+    }
+
+    craftRecipe UnpackMilk {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.MilkPack;BundleUp.MilkBottlePack;BundleUp.MilkSmallPack;BundleUp.MilkChocSmallPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Milk = BundleUp.MilkPack,
+            Base.MilkBottle = BundleUp.MilkBottlePack,
+            Base.Milk_Personalsized = BundleUp.MilkSmallPack,
+            Base.MilkChocolate_Personalsized = BundleUp.MilkChocSmallPack,
+        }
+    }
 }
