@@ -30,7 +30,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 5 mapper:itemTypes,
@@ -64,7 +64,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
@@ -99,7 +99,7 @@ module BundleUp {
         onCreate = BUInv.unpackSodaPack,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP],
+            item 1 [BundleUp.BlueberrySP;BundleUp.BubblegumSP;BundleUp.GrapeSP;BundleUp.LimeSP;BundleUp.OrangeSP;BundleUp.PineappleSP;BundleUp.StrawberrySP] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 6 Base.SodaCan,
@@ -253,7 +253,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.SodaPack;BundleUp.DietSodaPack] mappers[sodaTypes],
+            item 1 [BundleUp.SodaPack;BundleUp.DietSodaPack] flags[IsExclusive;ItemCount] mappers[sodaTypes],
         }
         outputs {
             item 6 mapper:sodaTypes,
@@ -270,7 +270,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.VarietyPack],
+            item 1 [BundleUp.VarietyPack] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 6 Base.SodaCan,
@@ -283,7 +283,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.StoneBlock],
+            item 10 [Base.StoneBlock] flags[ItemCount],
         }
         outputs {
             item 1 BundleUp.StoneBlockPack,
@@ -296,7 +296,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.StoneBlockPack],
+            item 1 [BundleUp.StoneBlockPack] flags[IsExclusive;ItemCount],
         }
         outputs {
             item 10 Base.StoneBlock,
@@ -437,7 +437,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BookBundle;BundleUp.Book_AdventureNonFictionBundle;BundleUp.Book_ArtBundle;BundleUp.Book_BaseballBundle;BundleUp.Book_BiographyBundle;BundleUp.Book_BusinessBundle;BundleUp.Book_ChildsBundle;BundleUp.Book_CinemaBundle;BundleUp.Book_ClassicBundle;BundleUp.Book_ClassicFictionBundle;BundleUp.Book_ClassicNonfictionBundle;BundleUp.Book_ComputerBundle;BundleUp.Book_CrimeFictionBundle;BundleUp.Book_FantasyBundle;BundleUp.Book_FarmingBundle;BundleUp.Book_FashionBundle;BundleUp.Book_FictionBundle;BundleUp.Book_GeneralNonFictionBundle;BundleUp.Book_GeneralReferenceBundle;BundleUp.Book_GolfBundle;BundleUp.Book_HistoryBundle;BundleUp.Book_HorrorBundle;BundleUp.Book_LegalBundle;BundleUp.Book_LiteraryFictionBundle;BundleUp.Book_MedicalBundle;BundleUp.Book_MilitaryBundle;BundleUp.Book_MilitaryHistoryBundle;BundleUp.Book_MusicBundle;BundleUp.Book_NatureBundle;BundleUp.Book_OccultBundle;BundleUp.Book_PhilosophyBundle;BundleUp.Book_PolicingBundle;BundleUp.Book_PoliticsBundle;BundleUp.Book_QuackeryBundle;BundleUp.Book_ReligionBundle;BundleUp.Book_RichBundle;BundleUp.Book_RomanceBundle;BundleUp.Book_SadNonFictionBundle;BundleUp.Book_SchoolTextbookBundle;BundleUp.Book_ScienceBundle;BundleUp.Book_SciFiBundle;BundleUp.Book_SportsBundle;BundleUp.Book_ThrillerBundle;BundleUp.Book_TravelBundle;BundleUp.Book_WesternBundle;BundleUp.Book_BibleBundle;BundleUp.BookFancy_ClassicBundle;BundleUp.BookFancy_ClassicFictionBundle;BundleUp.BookFancy_ClassicNonfictionBundle;BundleUp.BookFancy_HistoryBundle;BundleUp.BookFancy_LegalBundle;BundleUp.BookFancy_MedicalBundle;BundleUp.BookFancy_MilitaryHistoryBundle;BundleUp.BookFancy_OccultBundle;BundleUp.BookFancy_PhilosophyBundle;BundleUp.BookFancy_PoliticsBundle;BundleUp.BookFancy_ReligionBundle;BundleUp.BookFancy_BibleBundle;BundleUp.PaperbackBundle;BundleUp.Paperback_AdventureNonFictionBundle;BundleUp.Paperback_ArtBundle;BundleUp.Paperback_BaseballBundle;BundleUp.Paperback_BiographyBundle;BundleUp.Paperback_BusinessBundle;BundleUp.Paperback_ChildsBundle;BundleUp.Paperback_CinemaBundle;BundleUp.Paperback_ClassicBundle;BundleUp.Paperback_ClassicFictionBundle;BundleUp.Paperback_ClassicNonfictionBundle;BundleUp.Paperback_ComputerBundle;BundleUp.Paperback_ConspiracyBundle;BundleUp.Paperback_CrimeFictionBundle;BundleUp.Paperback_DietBundle;BundleUp.Paperback_FantasyBundle;BundleUp.Paperback_FashionBundle;BundleUp.Paperback_FictionBundle;BundleUp.Paperback_GolfBundle;BundleUp.Paperback_HassBundle;BundleUp.Paperback_HistoryBundle;BundleUp.Paperback_HorrorBundle;BundleUp.Paperback_LegalBundle;BundleUp.Paperback_LiteraryFictionBundle;BundleUp.Paperback_MedicalBundle;BundleUp.Paperback_MilitaryBundle;BundleUp.Paperback_MilitaryHistoryBundle;BundleUp.Paperback_MusicBundle;BundleUp.Paperback_NatureBundle;BundleUp.Paperback_NewAgeBundle;BundleUp.Paperback_OccultBundle;BundleUp.Paperback_PhilosophyBundle;BundleUp.Paperback_PlayBundle;BundleUp.Paperback_PolicingBundle;BundleUp.Paperback_PoliticsBundle;BundleUp.Paperback_PoorBundle;BundleUp.Paperback_QuackeryBundle;BundleUp.Paperback_QuigleyBundle;BundleUp.Paperback_RelationshipBundle;BundleUp.Paperback_ReligionBundle;BundleUp.Paperback_RichBundle;BundleUp.Paperback_RomanceBundle;BundleUp.Paperback_SadNonFictionBundle;BundleUp.Paperback_ScaryBundle;BundleUp.Paperback_ScienceBundle;BundleUp.Paperback_SciFiBundle;BundleUp.Paperback_SelfHelpBundle;BundleUp.Paperback_SexyBundle;BundleUp.Paperback_SportsBundle;BundleUp.Paperback_TeensBundle;BundleUp.Paperback_ThrillerBundle;BundleUp.Paperback_TravelBundle;BundleUp.Paperback_TrueCrimeBundle;BundleUp.Paperback_WesternBundle;BundleUp.Paperback_BibleBundle] mappers[bookTypes],
+            item 1 [BundleUp.BookBundle;BundleUp.Book_AdventureNonFictionBundle;BundleUp.Book_ArtBundle;BundleUp.Book_BaseballBundle;BundleUp.Book_BiographyBundle;BundleUp.Book_BusinessBundle;BundleUp.Book_ChildsBundle;BundleUp.Book_CinemaBundle;BundleUp.Book_ClassicBundle;BundleUp.Book_ClassicFictionBundle;BundleUp.Book_ClassicNonfictionBundle;BundleUp.Book_ComputerBundle;BundleUp.Book_CrimeFictionBundle;BundleUp.Book_FantasyBundle;BundleUp.Book_FarmingBundle;BundleUp.Book_FashionBundle;BundleUp.Book_FictionBundle;BundleUp.Book_GeneralNonFictionBundle;BundleUp.Book_GeneralReferenceBundle;BundleUp.Book_GolfBundle;BundleUp.Book_HistoryBundle;BundleUp.Book_HorrorBundle;BundleUp.Book_LegalBundle;BundleUp.Book_LiteraryFictionBundle;BundleUp.Book_MedicalBundle;BundleUp.Book_MilitaryBundle;BundleUp.Book_MilitaryHistoryBundle;BundleUp.Book_MusicBundle;BundleUp.Book_NatureBundle;BundleUp.Book_OccultBundle;BundleUp.Book_PhilosophyBundle;BundleUp.Book_PolicingBundle;BundleUp.Book_PoliticsBundle;BundleUp.Book_QuackeryBundle;BundleUp.Book_ReligionBundle;BundleUp.Book_RichBundle;BundleUp.Book_RomanceBundle;BundleUp.Book_SadNonFictionBundle;BundleUp.Book_SchoolTextbookBundle;BundleUp.Book_ScienceBundle;BundleUp.Book_SciFiBundle;BundleUp.Book_SportsBundle;BundleUp.Book_ThrillerBundle;BundleUp.Book_TravelBundle;BundleUp.Book_WesternBundle;BundleUp.Book_BibleBundle;BundleUp.BookFancy_ClassicBundle;BundleUp.BookFancy_ClassicFictionBundle;BundleUp.BookFancy_ClassicNonfictionBundle;BundleUp.BookFancy_HistoryBundle;BundleUp.BookFancy_LegalBundle;BundleUp.BookFancy_MedicalBundle;BundleUp.BookFancy_MilitaryHistoryBundle;BundleUp.BookFancy_OccultBundle;BundleUp.BookFancy_PhilosophyBundle;BundleUp.BookFancy_PoliticsBundle;BundleUp.BookFancy_ReligionBundle;BundleUp.BookFancy_BibleBundle;BundleUp.PaperbackBundle;BundleUp.Paperback_AdventureNonFictionBundle;BundleUp.Paperback_ArtBundle;BundleUp.Paperback_BaseballBundle;BundleUp.Paperback_BiographyBundle;BundleUp.Paperback_BusinessBundle;BundleUp.Paperback_ChildsBundle;BundleUp.Paperback_CinemaBundle;BundleUp.Paperback_ClassicBundle;BundleUp.Paperback_ClassicFictionBundle;BundleUp.Paperback_ClassicNonfictionBundle;BundleUp.Paperback_ComputerBundle;BundleUp.Paperback_ConspiracyBundle;BundleUp.Paperback_CrimeFictionBundle;BundleUp.Paperback_DietBundle;BundleUp.Paperback_FantasyBundle;BundleUp.Paperback_FashionBundle;BundleUp.Paperback_FictionBundle;BundleUp.Paperback_GolfBundle;BundleUp.Paperback_HassBundle;BundleUp.Paperback_HistoryBundle;BundleUp.Paperback_HorrorBundle;BundleUp.Paperback_LegalBundle;BundleUp.Paperback_LiteraryFictionBundle;BundleUp.Paperback_MedicalBundle;BundleUp.Paperback_MilitaryBundle;BundleUp.Paperback_MilitaryHistoryBundle;BundleUp.Paperback_MusicBundle;BundleUp.Paperback_NatureBundle;BundleUp.Paperback_NewAgeBundle;BundleUp.Paperback_OccultBundle;BundleUp.Paperback_PhilosophyBundle;BundleUp.Paperback_PlayBundle;BundleUp.Paperback_PolicingBundle;BundleUp.Paperback_PoliticsBundle;BundleUp.Paperback_PoorBundle;BundleUp.Paperback_QuackeryBundle;BundleUp.Paperback_QuigleyBundle;BundleUp.Paperback_RelationshipBundle;BundleUp.Paperback_ReligionBundle;BundleUp.Paperback_RichBundle;BundleUp.Paperback_RomanceBundle;BundleUp.Paperback_SadNonFictionBundle;BundleUp.Paperback_ScaryBundle;BundleUp.Paperback_ScienceBundle;BundleUp.Paperback_SciFiBundle;BundleUp.Paperback_SelfHelpBundle;BundleUp.Paperback_SexyBundle;BundleUp.Paperback_SportsBundle;BundleUp.Paperback_TeensBundle;BundleUp.Paperback_ThrillerBundle;BundleUp.Paperback_TravelBundle;BundleUp.Paperback_TrueCrimeBundle;BundleUp.Paperback_WesternBundle;BundleUp.Paperback_BibleBundle] flags[IsExclusive;ItemCount] mappers[bookTypes],
         }
         outputs {
             item 10 mapper:bookTypes,
@@ -636,7 +636,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.HottieZ_NewBundle;BundleUp.MagazineBundle;BundleUp.Magazine_ArtBundle;BundleUp.Magazine_BusinessBundle;BundleUp.Magazine_CarBundle;BundleUp.Magazine_ChildsBundle;BundleUp.Magazine_CinemaBundle;BundleUp.Magazine_CrimeBundle;BundleUp.Magazine_FashionBundle;BundleUp.Magazine_FirearmBundle;BundleUp.Magazine_GamingBundle;BundleUp.Magazine_GolfBundle;BundleUp.Magazine_HealthBundle;BundleUp.Magazine_HobbyBundle;BundleUp.Magazine_HorrorBundle;BundleUp.Magazine_HumorBundle;BundleUp.Magazine_MilitaryBundle;BundleUp.Magazine_MusicBundle;BundleUp.Magazine_OutdoorsBundle;BundleUp.Magazine_PoliceBundle;BundleUp.Magazine_PopularBundle;BundleUp.Magazine_RichBundle;BundleUp.Magazine_ScienceBundle;BundleUp.Magazine_SportsBundle;BundleUp.Magazine_TechBundle;BundleUp.Magazine_TeensBundle;BundleUp.Magazine_NewBundle;BundleUp.Magazine_Art_NewBundle;BundleUp.Magazine_Business_NewBundle;BundleUp.Magazine_Car_NewBundle;BundleUp.Magazine_Childs_NewBundle;BundleUp.Magazine_Cinema_NewBundle;BundleUp.Magazine_Crime_NewBundle;BundleUp.Magazine_Fashion_NewBundle;BundleUp.Magazine_Firearm_NewBundle;BundleUp.Magazine_Gaming_NewBundle;BundleUp.Magazine_Golf_NewBundle;BundleUp.Magazine_Health_NewBundle;BundleUp.Magazine_Hobby_NewBundle;BundleUp.Magazine_Horror_NewBundle;BundleUp.Magazine_Humor_NewBundle;BundleUp.Magazine_Military_NewBundle;BundleUp.Magazine_Music_NewBundle;BundleUp.Magazine_Outdoors_NewBundle;BundleUp.Magazine_Police_NewBundle;BundleUp.Magazine_Popular_NewBundle;BundleUp.Magazine_Rich_NewBundle;BundleUp.Magazine_Science_NewBundle;BundleUp.Magazine_Sports_NewBundle;BundleUp.Magazine_Tech_NewBundle;BundleUp.Magazine_Teens_NewBundle;BundleUp.MagazineCrosswordBundle;BundleUp.HottieZBundle;BundleUp.TVMagazineBundle;BundleUp.TVMagazine_NewBundle;BundleUp.MagazineWordsearchBundle] mappers[magazineTypes],
+            item 1 [BundleUp.HottieZ_NewBundle;BundleUp.MagazineBundle;BundleUp.Magazine_ArtBundle;BundleUp.Magazine_BusinessBundle;BundleUp.Magazine_CarBundle;BundleUp.Magazine_ChildsBundle;BundleUp.Magazine_CinemaBundle;BundleUp.Magazine_CrimeBundle;BundleUp.Magazine_FashionBundle;BundleUp.Magazine_FirearmBundle;BundleUp.Magazine_GamingBundle;BundleUp.Magazine_GolfBundle;BundleUp.Magazine_HealthBundle;BundleUp.Magazine_HobbyBundle;BundleUp.Magazine_HorrorBundle;BundleUp.Magazine_HumorBundle;BundleUp.Magazine_MilitaryBundle;BundleUp.Magazine_MusicBundle;BundleUp.Magazine_OutdoorsBundle;BundleUp.Magazine_PoliceBundle;BundleUp.Magazine_PopularBundle;BundleUp.Magazine_RichBundle;BundleUp.Magazine_ScienceBundle;BundleUp.Magazine_SportsBundle;BundleUp.Magazine_TechBundle;BundleUp.Magazine_TeensBundle;BundleUp.Magazine_NewBundle;BundleUp.Magazine_Art_NewBundle;BundleUp.Magazine_Business_NewBundle;BundleUp.Magazine_Car_NewBundle;BundleUp.Magazine_Childs_NewBundle;BundleUp.Magazine_Cinema_NewBundle;BundleUp.Magazine_Crime_NewBundle;BundleUp.Magazine_Fashion_NewBundle;BundleUp.Magazine_Firearm_NewBundle;BundleUp.Magazine_Gaming_NewBundle;BundleUp.Magazine_Golf_NewBundle;BundleUp.Magazine_Health_NewBundle;BundleUp.Magazine_Hobby_NewBundle;BundleUp.Magazine_Horror_NewBundle;BundleUp.Magazine_Humor_NewBundle;BundleUp.Magazine_Military_NewBundle;BundleUp.Magazine_Music_NewBundle;BundleUp.Magazine_Outdoors_NewBundle;BundleUp.Magazine_Police_NewBundle;BundleUp.Magazine_Popular_NewBundle;BundleUp.Magazine_Rich_NewBundle;BundleUp.Magazine_Science_NewBundle;BundleUp.Magazine_Sports_NewBundle;BundleUp.Magazine_Tech_NewBundle;BundleUp.Magazine_Teens_NewBundle;BundleUp.MagazineCrosswordBundle;BundleUp.HottieZBundle;BundleUp.TVMagazineBundle;BundleUp.TVMagazine_NewBundle;BundleUp.MagazineWordsearchBundle] flags[IsExclusive;ItemCount] mappers[magazineTypes],
         }
         outputs {
             item 10 mapper:magazineTypes,
@@ -744,7 +744,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.CatalogBundle;BundleUp.ComicBookBundle;BundleUp.ComicBook_RetailBundle;BundleUp.Diary1Bundle;BundleUp.Diary2Bundle;BundleUp.GraphPaperBundle;BundleUp.JournalBundle;BundleUp.MenuCardBundle;BundleUp.Newspaper_RecentBundle;BundleUp.Newspaper_NewBundle;BundleUp.Newspaper_Knews_NewBundle;BundleUp.Newspaper_Times_NewBundle;BundleUp.Newspaper_Herald_NewBundle;BundleUp.Newspaper_Dispatch_NewBundle;BundleUp.NotebookBundle;BundleUp.NotepadBundle;BundleUp.NewspaperBundle;BundleUp.PhonebookBundle;BundleUp.PhotoBookBundle;BundleUp.ChildsPictureBookBundle;BundleUp.RPGmanualBundle;BundleUp.SheetPaper2Bundle] mappers[miscTypes],
+            item 1 [BundleUp.CatalogBundle;BundleUp.ComicBookBundle;BundleUp.ComicBook_RetailBundle;BundleUp.Diary1Bundle;BundleUp.Diary2Bundle;BundleUp.GraphPaperBundle;BundleUp.JournalBundle;BundleUp.MenuCardBundle;BundleUp.Newspaper_RecentBundle;BundleUp.Newspaper_NewBundle;BundleUp.Newspaper_Knews_NewBundle;BundleUp.Newspaper_Times_NewBundle;BundleUp.Newspaper_Herald_NewBundle;BundleUp.Newspaper_Dispatch_NewBundle;BundleUp.NotebookBundle;BundleUp.NotepadBundle;BundleUp.NewspaperBundle;BundleUp.PhonebookBundle;BundleUp.PhotoBookBundle;BundleUp.ChildsPictureBookBundle;BundleUp.RPGmanualBundle;BundleUp.SheetPaper2Bundle] flags[IsExclusive;ItemCount] mappers[miscTypes],
         }
         outputs {
             item 10 mapper:miscTypes,
@@ -772,6 +772,358 @@ module BundleUp {
             Base.ChildsPictureBook = BundleUp.ChildsPictureBookBundle,
             Base.RPGmanual = BundleUp.RPGmanualBundle,
             Base.SheetPaper2 = BundleUp.SheetPaper2Bundle,
+        }
+    }
+
+
+    craftRecipe PackLiquor {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Whiskey;Base.Vodka;Base.Rum;Base.Gin;Base.Tequila;Base.Brandy;Base.Scotch;Base.Sherry;Base.Port;Base.Vermouth;Base.Cider;Base.Curacao;Base.Grenadine;Base.CoffeeLiquer] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WhiskeyPack = Base.Whiskey,
+            BundleUp.VodkaPack = Base.Vodka,
+            BundleUp.RumPack = Base.Rum,
+            BundleUp.GinPack = Base.Gin,
+            BundleUp.TequilaPack = Base.Tequila,
+            BundleUp.BrandyPack = Base.Brandy,
+            BundleUp.ScotchPack = Base.Scotch,
+            BundleUp.SherryPack = Base.Sherry,
+            BundleUp.PortPack = Base.Port,
+            BundleUp.VermouthPack = Base.Vermouth,
+            BundleUp.CiderPack = Base.Cider,
+            BundleUp.CuracaoPack = Base.Curacao,
+            BundleUp.GrenadinePack = Base.Grenadine,
+            BundleUp.CoffeeLiquerPack = Base.CoffeeLiquer,
+        }
+    }
+
+    craftRecipe PackWine {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Wine;Base.Wine2;Base.WineAged;Base.WineBox] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WineWhitePack = Base.Wine,
+            BundleUp.WineRedPack = Base.Wine2,
+            BundleUp.WineAgedPack = Base.WineAged,
+            BundleUp.WineBoxPack = Base.WineBox,
+        }
+    }
+
+    craftRecipe PackWineSealed {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.WineScrewtop;Base.Champagne] flags[IsFull;IsSealed;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.WineScrewtopPack = Base.WineScrewtop,
+            BundleUp.ChampagnePack = Base.Champagne,
+        }
+    }
+
+    craftRecipe PackBeerImportedSealed {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.BeerImported] flags[IsFull;IsSealed;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.BeerImportedPack = Base.BeerImported,
+        }
+    }
+
+    craftRecipe PackJuice {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.JuiceBox;Base.JuiceBoxApple;Base.JuiceBoxFruitpunch;Base.JuiceBoxOrange] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.JuiceBoxGrapePack = Base.JuiceBox,
+            BundleUp.JuiceBoxApplePack = Base.JuiceBoxApple,
+            BundleUp.JuiceBoxFruitpunchPack = Base.JuiceBoxFruitpunch,
+            BundleUp.JuiceBoxOrangePack = Base.JuiceBoxOrange,
+        }
+    }
+
+    craftRecipe PackJuiceSealed {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.JuiceCranberry;Base.JuiceFruitpunch;Base.JuiceGrape;Base.JuiceLemon;Base.JuiceOrange;Base.JuiceTomato] flags[IsFull;IsSealed;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.JuiceCranberryPack = Base.JuiceCranberry,
+            BundleUp.JuiceFruitpunchPack = Base.JuiceFruitpunch,
+            BundleUp.JuiceGrapePack = Base.JuiceGrape,
+            BundleUp.JuiceLemonPack = Base.JuiceLemon,
+            BundleUp.JuiceOrangePack = Base.JuiceOrange,
+            BundleUp.JuiceTomatoPack = Base.JuiceTomato,
+        }
+    }
+
+    craftRecipe PackMilk {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 6 [Base.Milk;Base.MilkBottle;Base.Milk_Personalsized;Base.MilkChocolate_Personalsized] flags[IsFull;AllowFavorite;InheritFavorite;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.MilkPack = Base.Milk,
+            BundleUp.MilkBottlePack = Base.MilkBottle,
+            BundleUp.MilkSmallPack = Base.Milk_Personalsized,
+            BundleUp.MilkChocSmallPack = Base.MilkChocolate_Personalsized,
+        }
+    }
+
+    craftRecipe UnpackLiquor {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.WhiskeyPack;BundleUp.VodkaPack;BundleUp.RumPack;BundleUp.GinPack;BundleUp.TequilaPack;BundleUp.BrandyPack;BundleUp.ScotchPack;BundleUp.SherryPack;BundleUp.PortPack;BundleUp.VermouthPack;BundleUp.CiderPack;BundleUp.CuracaoPack;BundleUp.GrenadinePack;BundleUp.CoffeeLiquerPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Whiskey = BundleUp.WhiskeyPack,
+            Base.Vodka = BundleUp.VodkaPack,
+            Base.Rum = BundleUp.RumPack,
+            Base.Gin = BundleUp.GinPack,
+            Base.Tequila = BundleUp.TequilaPack,
+            Base.Brandy = BundleUp.BrandyPack,
+            Base.Scotch = BundleUp.ScotchPack,
+            Base.Sherry = BundleUp.SherryPack,
+            Base.Port = BundleUp.PortPack,
+            Base.Vermouth = BundleUp.VermouthPack,
+            Base.Cider = BundleUp.CiderPack,
+            Base.Curacao = BundleUp.CuracaoPack,
+            Base.Grenadine = BundleUp.GrenadinePack,
+            Base.CoffeeLiquer = BundleUp.CoffeeLiquerPack,
+        }
+    }
+
+    craftRecipe UnpackWine {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.WineWhitePack;BundleUp.WineRedPack;BundleUp.WineAgedPack;BundleUp.WineBoxPack;BundleUp.WineScrewtopPack;BundleUp.ChampagnePack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Wine = BundleUp.WineWhitePack,
+            Base.Wine2 = BundleUp.WineRedPack,
+            Base.WineAged = BundleUp.WineAgedPack,
+            Base.WineBox = BundleUp.WineBoxPack,
+            Base.WineScrewtop = BundleUp.WineScrewtopPack,
+            Base.Champagne = BundleUp.ChampagnePack,
+        }
+    }
+
+    craftRecipe UnpackBeerImported {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.BeerImportedPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.BeerImported = BundleUp.BeerImportedPack,
+        }
+    }
+
+    craftRecipe UnpackJuice {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.JuiceBoxGrapePack;BundleUp.JuiceBoxApplePack;BundleUp.JuiceBoxFruitpunchPack;BundleUp.JuiceBoxOrangePack;BundleUp.JuiceCranberryPack;BundleUp.JuiceFruitpunchPack;BundleUp.JuiceGrapePack;BundleUp.JuiceLemonPack;BundleUp.JuiceOrangePack;BundleUp.JuiceTomatoPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.JuiceBox = BundleUp.JuiceBoxGrapePack,
+            Base.JuiceBoxApple = BundleUp.JuiceBoxApplePack,
+            Base.JuiceBoxFruitpunch = BundleUp.JuiceBoxFruitpunchPack,
+            Base.JuiceBoxOrange = BundleUp.JuiceBoxOrangePack,
+            Base.JuiceCranberry = BundleUp.JuiceCranberryPack,
+            Base.JuiceFruitpunch = BundleUp.JuiceFruitpunchPack,
+            Base.JuiceGrape = BundleUp.JuiceGrapePack,
+            Base.JuiceLemon = BundleUp.JuiceLemonPack,
+            Base.JuiceOrange = BundleUp.JuiceOrangePack,
+            Base.JuiceTomato = BundleUp.JuiceTomatoPack,
+        }
+    }
+
+    craftRecipe UnpackMilk {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.MilkPack;BundleUp.MilkBottlePack;BundleUp.MilkSmallPack;BundleUp.MilkChocSmallPack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 6 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.Milk = BundleUp.MilkPack,
+            Base.MilkBottle = BundleUp.MilkBottlePack,
+            Base.Milk_Personalsized = BundleUp.MilkSmallPack,
+            Base.MilkChocolate_Personalsized = BundleUp.MilkChocSmallPack,
+        }
+    }
+
+
+    craftRecipe StackIngotS {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 5 [Base.IronIngot;Base.SteelIngot;Base.CopperIngot;Base.BrassIngot;Base.GoldBar;Base.SmallGoldBar;Base.SilverBar;Base.SmallSilverBar;Base.PiercedIronIngot;Base.PiercedSteelIngot] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 1 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            BundleUp.IronIngot_S = Base.IronIngot,
+            BundleUp.SteelIngot_S = Base.SteelIngot,
+            BundleUp.CopperIngot_S = Base.CopperIngot,
+            BundleUp.BrassIngot_S = Base.BrassIngot,
+            BundleUp.GoldBar_S = Base.GoldBar,
+            BundleUp.SmallGoldBar_S = Base.SmallGoldBar,
+            BundleUp.SilverBar_S = Base.SilverBar,
+            BundleUp.SmallSilverBar_S = Base.SmallSilverBar,
+            BundleUp.PiercedIronIngot_S = Base.PiercedIronIngot,
+            BundleUp.PiercedSteelIngot_S = Base.PiercedSteelIngot,
+        }
+    }
+
+    craftRecipe StackIngotL {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 10 [Base.IronIngot;Base.SteelIngot;Base.CopperIngot;Base.BrassIngot;Base.GoldBar;Base.SmallGoldBar;Base.SilverBar;Base.SmallSilverBar;Base.PiercedIronIngot;Base.PiercedSteelIngot] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 1 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            BundleUp.IronIngot_L = Base.IronIngot,
+            BundleUp.SteelIngot_L = Base.SteelIngot,
+            BundleUp.CopperIngot_L = Base.CopperIngot,
+            BundleUp.BrassIngot_L = Base.BrassIngot,
+            BundleUp.GoldBar_L = Base.GoldBar,
+            BundleUp.SmallGoldBar_L = Base.SmallGoldBar,
+            BundleUp.SilverBar_L = Base.SilverBar,
+            BundleUp.SmallSilverBar_L = Base.SmallSilverBar,
+            BundleUp.PiercedIronIngot_L = Base.PiercedIronIngot,
+            BundleUp.PiercedSteelIngot_L = Base.PiercedSteelIngot,
+        }
+    }
+
+    craftRecipe UnstackIngotS {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronIngot_S;BundleUp.SteelIngot_S;BundleUp.CopperIngot_S;BundleUp.BrassIngot_S;BundleUp.GoldBar_S;BundleUp.SmallGoldBar_S;BundleUp.SilverBar_S;BundleUp.SmallSilverBar_S;BundleUp.PiercedIronIngot_S;BundleUp.PiercedSteelIngot_S] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 5 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            Base.IronIngot = BundleUp.IronIngot_S,
+            Base.SteelIngot = BundleUp.SteelIngot_S,
+            Base.CopperIngot = BundleUp.CopperIngot_S,
+            Base.BrassIngot = BundleUp.BrassIngot_S,
+            Base.GoldBar = BundleUp.GoldBar_S,
+            Base.SmallGoldBar = BundleUp.SmallGoldBar_S,
+            Base.SilverBar = BundleUp.SilverBar_S,
+            Base.SmallSilverBar = BundleUp.SmallSilverBar_S,
+            Base.PiercedIronIngot = BundleUp.PiercedIronIngot_S,
+            Base.PiercedSteelIngot = BundleUp.PiercedSteelIngot_S,
+        }
+    }
+
+    craftRecipe UnstackIngotL {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronIngot_L;BundleUp.SteelIngot_L;BundleUp.CopperIngot_L;BundleUp.BrassIngot_L;BundleUp.GoldBar_L;BundleUp.SmallGoldBar_L;BundleUp.SilverBar_L;BundleUp.SmallSilverBar_L;BundleUp.PiercedIronIngot_L;BundleUp.PiercedSteelIngot_L] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 10 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            Base.IronIngot = BundleUp.IronIngot_L,
+            Base.SteelIngot = BundleUp.SteelIngot_L,
+            Base.CopperIngot = BundleUp.CopperIngot_L,
+            Base.BrassIngot = BundleUp.BrassIngot_L,
+            Base.GoldBar = BundleUp.GoldBar_L,
+            Base.SmallGoldBar = BundleUp.SmallGoldBar_L,
+            Base.SilverBar = BundleUp.SilverBar_L,
+            Base.SmallSilverBar = BundleUp.SmallSilverBar_L,
+            Base.PiercedIronIngot = BundleUp.PiercedIronIngot_L,
+            Base.PiercedSteelIngot = BundleUp.PiercedSteelIngot_L,
         }
     }
 }

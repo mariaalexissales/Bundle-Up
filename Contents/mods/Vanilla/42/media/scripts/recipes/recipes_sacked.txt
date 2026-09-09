@@ -13,8 +13,8 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.EmptySandbag],
-            item 5 [Base.EmptySandbag] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn],
+            item 5 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn;IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -30,7 +30,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.Sack_Sack] mappers[itemTypes],
+            item 1 [BundleUp.Sack_Sack] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 5 mapper:itemTypes,
@@ -47,7 +47,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.EmptySandbag] mappers[bagTypes],
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[bagTypes],
             item 50 [Base.GoldScrap;Base.SilverScrap;Base.Coke] flags[ItemCount;IsExclusive] mappers[bagTypes],
         }
         outputs {
@@ -66,7 +66,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small;BundleUp.Coke_Small] mappers[bagTypes],
+            item 1 [BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small;BundleUp.Coke_Small] flags[IsExclusive;ItemCount] mappers[bagTypes],
         }
         outputs {
             item 50 mapper:bagTypes,
@@ -85,7 +85,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.EmptySandbag] mappers[bagTypes],
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[bagTypes],
             item 100 [Base.GoldScrap;Base.SilverScrap;Base.Coke] flags[ItemCount;IsExclusive] mappers[bagTypes],
         }
         outputs {
@@ -104,7 +104,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.GoldScrap_Large;BundleUp.SilverScrap_Large;BundleUp.Coke_Large] mappers[bagTypes],
+            item 1 [BundleUp.GoldScrap_Large;BundleUp.SilverScrap_Large;BundleUp.Coke_Large] flags[IsExclusive;ItemCount] mappers[bagTypes],
         }
         outputs {
             item 100 mapper:bagTypes,
@@ -142,7 +142,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [Base.EmptySandbag] mappers[scrapTypes],
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[scrapTypes],
             item 25 [Base.AluminumScrap;Base.BrassScrap;Base.BrokenGlass;Base.CharcoalCrafted;Base.CopperScrap;Base.ElectronicsScrap;Base.IronScrap;Base.ScrapMetal;Base.Splinters;Base.SteelScrap;Base.UnusableWood] flags[ItemCount;IsExclusive] mappers[scrapTypes],
         }
         outputs {
@@ -169,7 +169,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.ElectronicsScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] mappers[scrapTypes],
+            item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.ElectronicsScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] flags[IsExclusive;ItemCount] mappers[scrapTypes],
         }
         outputs {
             item 25 mapper:scrapTypes,
@@ -266,7 +266,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.BarleyBagSeedPouch;BundleUp.BasilBagSeedPouch;BundleUp.BellPepperBagSeedPouch;BundleUp.BlackSageBagSeedPouch;BundleUp.BroadleafPlantainBagSeedPouch;BundleUp.BroccoliBagSeed2Pouch;BundleUp.CabbageBagSeed2Pouch;BundleUp.CarrotBagSeed2Pouch;BundleUp.CauliflowerBagSeedPouch;BundleUp.ChamomileBagSeedPouch;BundleUp.ChivesBagSeedPouch;BundleUp.CilantroBagSeedPouch;BundleUp.ComfreyBagSeedPouch;BundleUp.CommonMallowBagSeedPouch;BundleUp.CornBagSeedPouch;BundleUp.CucumberBagSeedPouch;BundleUp.FlaxBagSeedPouch;BundleUp.GarlicBagSeedPouch;BundleUp.GreenpeasBagSeedPouch;BundleUp.HabaneroBagSeedPouch;BundleUp.HempBagSeedPouch;BundleUp.HopsBagSeedPouch;BundleUp.JalapenoBagSeedPouch;BundleUp.KaleBagSeedPouch;BundleUp.LavenderBagSeedPouch;BundleUp.LeekBagSeedPouch;BundleUp.LemonGrassBagSeedPouch;BundleUp.LettuceBagSeedPouch;BundleUp.MarigoldBagSeedPouch;BundleUp.MintBagSeedPouch;BundleUp.OnionBagSeedPouch;BundleUp.OreganoBagSeedPouch;BundleUp.ParsleyBagSeedPouch;BundleUp.PoppyBagSeedPouch;BundleUp.PotatoBagSeed2Pouch;BundleUp.PumpkinBagSeedPouch;BundleUp.RedRadishBagSeed2Pouch;BundleUp.RoseBagSeedPouch;BundleUp.RosemaryBagSeedPouch;BundleUp.RyeBagSeedPouch;BundleUp.SageBagSeedPouch;BundleUp.SoybeansBagSeedPouch;BundleUp.SpinachBagSeedPouch;BundleUp.StrewberrieBagSeed2Pouch;BundleUp.SugarBeetBagSeedPouch;BundleUp.SunflowerBagSeedPouch;BundleUp.SweetPotatoBagSeedPouch;BundleUp.ThymeBagSeedPouch;BundleUp.TobaccoBagSeedPouch;BundleUp.TomatoBagSeed2Pouch;BundleUp.TurnipBagSeedPouch;BundleUp.WatermelonBagSeedPouch;BundleUp.WheatBagSeedPouch;BundleUp.WildGarlicBagSeedPouch;BundleUp.ZucchiniBagSeedPouch] mappers[seedMap],
+            item 1 [BundleUp.BarleyBagSeedPouch;BundleUp.BasilBagSeedPouch;BundleUp.BellPepperBagSeedPouch;BundleUp.BlackSageBagSeedPouch;BundleUp.BroadleafPlantainBagSeedPouch;BundleUp.BroccoliBagSeed2Pouch;BundleUp.CabbageBagSeed2Pouch;BundleUp.CarrotBagSeed2Pouch;BundleUp.CauliflowerBagSeedPouch;BundleUp.ChamomileBagSeedPouch;BundleUp.ChivesBagSeedPouch;BundleUp.CilantroBagSeedPouch;BundleUp.ComfreyBagSeedPouch;BundleUp.CommonMallowBagSeedPouch;BundleUp.CornBagSeedPouch;BundleUp.CucumberBagSeedPouch;BundleUp.FlaxBagSeedPouch;BundleUp.GarlicBagSeedPouch;BundleUp.GreenpeasBagSeedPouch;BundleUp.HabaneroBagSeedPouch;BundleUp.HempBagSeedPouch;BundleUp.HopsBagSeedPouch;BundleUp.JalapenoBagSeedPouch;BundleUp.KaleBagSeedPouch;BundleUp.LavenderBagSeedPouch;BundleUp.LeekBagSeedPouch;BundleUp.LemonGrassBagSeedPouch;BundleUp.LettuceBagSeedPouch;BundleUp.MarigoldBagSeedPouch;BundleUp.MintBagSeedPouch;BundleUp.OnionBagSeedPouch;BundleUp.OreganoBagSeedPouch;BundleUp.ParsleyBagSeedPouch;BundleUp.PoppyBagSeedPouch;BundleUp.PotatoBagSeed2Pouch;BundleUp.PumpkinBagSeedPouch;BundleUp.RedRadishBagSeed2Pouch;BundleUp.RoseBagSeedPouch;BundleUp.RosemaryBagSeedPouch;BundleUp.RyeBagSeedPouch;BundleUp.SageBagSeedPouch;BundleUp.SoybeansBagSeedPouch;BundleUp.SpinachBagSeedPouch;BundleUp.StrewberrieBagSeed2Pouch;BundleUp.SugarBeetBagSeedPouch;BundleUp.SunflowerBagSeedPouch;BundleUp.SweetPotatoBagSeedPouch;BundleUp.ThymeBagSeedPouch;BundleUp.TobaccoBagSeedPouch;BundleUp.TomatoBagSeed2Pouch;BundleUp.TurnipBagSeedPouch;BundleUp.WatermelonBagSeedPouch;BundleUp.WheatBagSeedPouch;BundleUp.WildGarlicBagSeedPouch;BundleUp.ZucchiniBagSeedPouch] flags[IsExclusive;ItemCount] mappers[seedMap],
         }
         outputs {
             item 10 mapper:seedMap,
@@ -327,6 +327,164 @@ module BundleUp {
             Base.WheatBagSeed = BundleUp.WheatBagSeedPouch,
             Base.WildGarlicBagSeed = BundleUp.WildGarlicBagSeedPouch,
             Base.ZucchiniBagSeed = BundleUp.ZucchiniBagSeedPouch,
+        }
+    }
+
+
+    craftRecipe SackBuild10 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn],
+            item 10 [Base.FlatStone;Base.LargeStone] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.FlatStoneSack = Base.FlatStone,
+            BundleUp.LargeStoneSack = Base.LargeStone,
+        }
+    }
+
+    craftRecipe SackBuild25 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn],
+            item 25 [Base.SharpedStone;Base.Clay] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.SharpedStoneSack = Base.SharpedStone,
+            BundleUp.ClaySack = Base.Clay,
+        }
+    }
+
+    craftRecipe UnsackBuild10 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.FlatStoneSack;BundleUp.LargeStoneSack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.FlatStone = BundleUp.FlatStoneSack,
+            Base.LargeStone = BundleUp.LargeStoneSack,
+        }
+    }
+
+    craftRecipe UnsackBuild25 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.SharpedStoneSack;BundleUp.ClaySack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 25 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.SharpedStone = BundleUp.SharpedStoneSack,
+            Base.Clay = BundleUp.ClaySack,
+        }
+    }
+
+
+    craftRecipe PackOreSack10 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[oreTypes],
+            item 10 [Base.IronOre;Base.CopperOre;Base.IronBloom] flags[ItemCount;IsExclusive] mappers[oreTypes],
+        }
+        outputs {
+            item 1 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            BundleUp.IronOreSack = Base.EmptySandbag;Base.IronOre,
+            BundleUp.CopperOreSack = Base.EmptySandbag;Base.CopperOre,
+            BundleUp.IronBloomSack = Base.EmptySandbag;Base.IronBloom,
+        }
+    }
+
+    craftRecipe UnpackOreSack10 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronOreSack;BundleUp.CopperOreSack;BundleUp.IronBloomSack] flags[IsExclusive;ItemCount] mappers[oreTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 10 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            Base.IronOre = BundleUp.IronOreSack,
+            Base.CopperOre = BundleUp.CopperOreSack,
+            Base.IronBloom = BundleUp.IronBloomSack,
+        }
+    }
+
+    craftRecipe PackOreSack25 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[oreTypes],
+            item 25 [Base.Hematite;Base.HematiteLarge;Base.Malachite;Base.MalachiteLarge;Base.Limestone;Base.Quicklime;Base.Charcoal] flags[ItemCount;IsExclusive] mappers[oreTypes],
+        }
+        outputs {
+            item 1 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            BundleUp.HematiteSack = Base.EmptySandbag;Base.Hematite,
+            BundleUp.HematiteLargeSack = Base.EmptySandbag;Base.HematiteLarge,
+            BundleUp.MalachiteSack = Base.EmptySandbag;Base.Malachite,
+            BundleUp.MalachiteLargeSack = Base.EmptySandbag;Base.MalachiteLarge,
+            BundleUp.LimestoneSack = Base.EmptySandbag;Base.Limestone,
+            BundleUp.QuicklimeSack = Base.EmptySandbag;Base.Quicklime,
+            BundleUp.CharcoalSack = Base.EmptySandbag;Base.Charcoal,
+        }
+    }
+
+    craftRecipe UnpackOreSack25 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.HematiteSack;BundleUp.HematiteLargeSack;BundleUp.MalachiteSack;BundleUp.MalachiteLargeSack;BundleUp.LimestoneSack;BundleUp.QuicklimeSack;BundleUp.CharcoalSack] flags[IsExclusive;ItemCount] mappers[oreTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 25 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            Base.Hematite = BundleUp.HematiteSack,
+            Base.HematiteLarge = BundleUp.HematiteLargeSack,
+            Base.Malachite = BundleUp.MalachiteSack,
+            Base.MalachiteLarge = BundleUp.MalachiteLargeSack,
+            Base.Limestone = BundleUp.LimestoneSack,
+            Base.Quicklime = BundleUp.QuicklimeSack,
+            Base.Charcoal = BundleUp.CharcoalSack,
         }
     }
 }
