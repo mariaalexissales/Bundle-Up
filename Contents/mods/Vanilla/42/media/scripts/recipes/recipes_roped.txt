@@ -907,4 +907,261 @@ module BundleUp {
             Base.SheetRope = BundleUp.HideCrudeSmallSR,
         }
     }
+
+
+    craftRecipe TieBuild5 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 5 [Base.ConcretePowder;Base.PlasterPowder;Base.WallpaperPastePowder;Base.GlassPanel;Base.LargePlank] flags[IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.ConcretePowderR = Base.Rope;Base.ConcretePowder,
+            BundleUp.ConcretePowderSR = Base.SheetRope;Base.ConcretePowder,
+            BundleUp.PlasterPowderR = Base.Rope;Base.PlasterPowder,
+            BundleUp.PlasterPowderSR = Base.SheetRope;Base.PlasterPowder,
+            BundleUp.WallpaperPasteR = Base.Rope;Base.WallpaperPastePowder,
+            BundleUp.WallpaperPasteSR = Base.SheetRope;Base.WallpaperPastePowder,
+            BundleUp.GlassPanelR = Base.Rope;Base.GlassPanel,
+            BundleUp.GlassPanelSR = Base.SheetRope;Base.GlassPanel,
+            BundleUp.LargePlankR = Base.Rope;Base.LargePlank,
+            BundleUp.LargePlankSR = Base.SheetRope;Base.LargePlank,
+        }
+    }
+
+    craftRecipe TieBuildFull5 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 5 [Base.Sandbag;Base.Dirtbag;Base.Claybag;Base.Gravelbag;Base.CompostBag;Base.GrassBag;Base.AnimalFeedBag;Base.Fertilizer] flags[IsFull;IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.SandbagR = Base.Rope;Base.Sandbag,
+            BundleUp.SandbagSR = Base.SheetRope;Base.Sandbag,
+            BundleUp.DirtbagR = Base.Rope;Base.Dirtbag,
+            BundleUp.DirtbagSR = Base.SheetRope;Base.Dirtbag,
+            BundleUp.ClaybagR = Base.Rope;Base.Claybag,
+            BundleUp.ClaybagSR = Base.SheetRope;Base.Claybag,
+            BundleUp.GravelbagR = Base.Rope;Base.Gravelbag,
+            BundleUp.GravelbagSR = Base.SheetRope;Base.Gravelbag,
+            BundleUp.CompostBagR = Base.Rope;Base.CompostBag,
+            BundleUp.CompostBagSR = Base.SheetRope;Base.CompostBag,
+            BundleUp.GrassBagR = Base.Rope;Base.GrassBag,
+            BundleUp.GrassBagSR = Base.SheetRope;Base.GrassBag,
+            BundleUp.AnimalFeedBagR = Base.Rope;Base.AnimalFeedBag,
+            BundleUp.AnimalFeedBagSR = Base.SheetRope;Base.AnimalFeedBag,
+            BundleUp.FertilizerBagR = Base.Rope;Base.Fertilizer,
+            BundleUp.FertilizerBagSR = Base.SheetRope;Base.Fertilizer,
+        }
+    }
+
+    craftRecipe TieBuild10 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 10 [Base.ConcretePowder;Base.PlasterPowder;Base.WallpaperPastePowder;Base.GlassPanel;Base.LargePlank] flags[IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.ConcretePowderLR = Base.Rope;Base.ConcretePowder,
+            BundleUp.ConcretePowderLSR = Base.SheetRope;Base.ConcretePowder,
+            BundleUp.PlasterPowderLR = Base.Rope;Base.PlasterPowder,
+            BundleUp.PlasterPowderLSR = Base.SheetRope;Base.PlasterPowder,
+            BundleUp.WallpaperPasteLR = Base.Rope;Base.WallpaperPastePowder,
+            BundleUp.WallpaperPasteLSR = Base.SheetRope;Base.WallpaperPastePowder,
+            BundleUp.GlassPanelLR = Base.Rope;Base.GlassPanel,
+            BundleUp.GlassPanelLSR = Base.SheetRope;Base.GlassPanel,
+            BundleUp.LargePlankLR = Base.Rope;Base.LargePlank,
+            BundleUp.LargePlankLSR = Base.SheetRope;Base.LargePlank,
+        }
+    }
+
+    craftRecipe TieBuildFull10 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
+            item 10 [Base.Sandbag;Base.Dirtbag;Base.Claybag;Base.Gravelbag;Base.CompostBag;Base.GrassBag;Base.AnimalFeedBag;Base.Fertilizer] flags[IsFull;IsExclusive;ItemCount] mappers[bundleTypes],
+        }
+        outputs {
+            item 1 mapper:bundleTypes,
+        }
+        itemMapper bundleTypes {
+            BundleUp.SandbagLR = Base.Rope;Base.Sandbag,
+            BundleUp.SandbagLSR = Base.SheetRope;Base.Sandbag,
+            BundleUp.DirtbagLR = Base.Rope;Base.Dirtbag,
+            BundleUp.DirtbagLSR = Base.SheetRope;Base.Dirtbag,
+            BundleUp.ClaybagLR = Base.Rope;Base.Claybag,
+            BundleUp.ClaybagLSR = Base.SheetRope;Base.Claybag,
+            BundleUp.GravelbagLR = Base.Rope;Base.Gravelbag,
+            BundleUp.GravelbagLSR = Base.SheetRope;Base.Gravelbag,
+            BundleUp.CompostBagLR = Base.Rope;Base.CompostBag,
+            BundleUp.CompostBagLSR = Base.SheetRope;Base.CompostBag,
+            BundleUp.GrassBagLR = Base.Rope;Base.GrassBag,
+            BundleUp.GrassBagLSR = Base.SheetRope;Base.GrassBag,
+            BundleUp.AnimalFeedBagLR = Base.Rope;Base.AnimalFeedBag,
+            BundleUp.AnimalFeedBagLSR = Base.SheetRope;Base.AnimalFeedBag,
+            BundleUp.FertilizerBagLR = Base.Rope;Base.Fertilizer,
+            BundleUp.FertilizerBagLSR = Base.SheetRope;Base.Fertilizer,
+        }
+    }
+
+    craftRecipe UntieBuild5 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.SandbagR;BundleUp.SandbagSR;BundleUp.DirtbagR;BundleUp.DirtbagSR;BundleUp.ClaybagR;BundleUp.ClaybagSR;BundleUp.GravelbagR;BundleUp.GravelbagSR;BundleUp.CompostBagR;BundleUp.CompostBagSR;BundleUp.GrassBagR;BundleUp.GrassBagSR;BundleUp.AnimalFeedBagR;BundleUp.AnimalFeedBagSR;BundleUp.FertilizerBagR;BundleUp.FertilizerBagSR;BundleUp.ConcretePowderR;BundleUp.ConcretePowderSR;BundleUp.PlasterPowderR;BundleUp.PlasterPowderSR;BundleUp.WallpaperPasteR;BundleUp.WallpaperPasteSR;BundleUp.GlassPanelR;BundleUp.GlassPanelSR;BundleUp.LargePlankR;BundleUp.LargePlankSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 5 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.SandbagR,
+            Base.SheetRope = BundleUp.SandbagSR,
+            Base.Rope = BundleUp.DirtbagR,
+            Base.SheetRope = BundleUp.DirtbagSR,
+            Base.Rope = BundleUp.ClaybagR,
+            Base.SheetRope = BundleUp.ClaybagSR,
+            Base.Rope = BundleUp.GravelbagR,
+            Base.SheetRope = BundleUp.GravelbagSR,
+            Base.Rope = BundleUp.CompostBagR,
+            Base.SheetRope = BundleUp.CompostBagSR,
+            Base.Rope = BundleUp.GrassBagR,
+            Base.SheetRope = BundleUp.GrassBagSR,
+            Base.Rope = BundleUp.AnimalFeedBagR,
+            Base.SheetRope = BundleUp.AnimalFeedBagSR,
+            Base.Rope = BundleUp.FertilizerBagR,
+            Base.SheetRope = BundleUp.FertilizerBagSR,
+            Base.Rope = BundleUp.ConcretePowderR,
+            Base.SheetRope = BundleUp.ConcretePowderSR,
+            Base.Rope = BundleUp.PlasterPowderR,
+            Base.SheetRope = BundleUp.PlasterPowderSR,
+            Base.Rope = BundleUp.WallpaperPasteR,
+            Base.SheetRope = BundleUp.WallpaperPasteSR,
+            Base.Rope = BundleUp.GlassPanelR,
+            Base.SheetRope = BundleUp.GlassPanelSR,
+            Base.Rope = BundleUp.LargePlankR,
+            Base.SheetRope = BundleUp.LargePlankSR,
+        }
+        itemMapper itemTypes {
+            Base.Sandbag = BundleUp.SandbagR,
+            Base.Sandbag = BundleUp.SandbagSR,
+            Base.Dirtbag = BundleUp.DirtbagR,
+            Base.Dirtbag = BundleUp.DirtbagSR,
+            Base.Claybag = BundleUp.ClaybagR,
+            Base.Claybag = BundleUp.ClaybagSR,
+            Base.Gravelbag = BundleUp.GravelbagR,
+            Base.Gravelbag = BundleUp.GravelbagSR,
+            Base.CompostBag = BundleUp.CompostBagR,
+            Base.CompostBag = BundleUp.CompostBagSR,
+            Base.GrassBag = BundleUp.GrassBagR,
+            Base.GrassBag = BundleUp.GrassBagSR,
+            Base.AnimalFeedBag = BundleUp.AnimalFeedBagR,
+            Base.AnimalFeedBag = BundleUp.AnimalFeedBagSR,
+            Base.Fertilizer = BundleUp.FertilizerBagR,
+            Base.Fertilizer = BundleUp.FertilizerBagSR,
+            Base.ConcretePowder = BundleUp.ConcretePowderR,
+            Base.ConcretePowder = BundleUp.ConcretePowderSR,
+            Base.PlasterPowder = BundleUp.PlasterPowderR,
+            Base.PlasterPowder = BundleUp.PlasterPowderSR,
+            Base.WallpaperPastePowder = BundleUp.WallpaperPasteR,
+            Base.WallpaperPastePowder = BundleUp.WallpaperPasteSR,
+            Base.GlassPanel = BundleUp.GlassPanelR,
+            Base.GlassPanel = BundleUp.GlassPanelSR,
+            Base.LargePlank = BundleUp.LargePlankR,
+            Base.LargePlank = BundleUp.LargePlankSR,
+        }
+    }
+
+    craftRecipe UntieBuild10 {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.SandbagLR;BundleUp.SandbagLSR;BundleUp.DirtbagLR;BundleUp.DirtbagLSR;BundleUp.ClaybagLR;BundleUp.ClaybagLSR;BundleUp.GravelbagLR;BundleUp.GravelbagLSR;BundleUp.CompostBagLR;BundleUp.CompostBagLSR;BundleUp.GrassBagLR;BundleUp.GrassBagLSR;BundleUp.AnimalFeedBagLR;BundleUp.AnimalFeedBagLSR;BundleUp.FertilizerBagLR;BundleUp.FertilizerBagLSR;BundleUp.ConcretePowderLR;BundleUp.ConcretePowderLSR;BundleUp.PlasterPowderLR;BundleUp.PlasterPowderLSR;BundleUp.WallpaperPasteLR;BundleUp.WallpaperPasteLSR;BundleUp.GlassPanelLR;BundleUp.GlassPanelLSR;BundleUp.LargePlankLR;BundleUp.LargePlankLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
+        }
+        outputs {
+            item 1 mapper:ropeTypes,
+            item 10 mapper:itemTypes,
+        }
+        itemMapper ropeTypes {
+            Base.Rope = BundleUp.SandbagLR,
+            Base.SheetRope = BundleUp.SandbagLSR,
+            Base.Rope = BundleUp.DirtbagLR,
+            Base.SheetRope = BundleUp.DirtbagLSR,
+            Base.Rope = BundleUp.ClaybagLR,
+            Base.SheetRope = BundleUp.ClaybagLSR,
+            Base.Rope = BundleUp.GravelbagLR,
+            Base.SheetRope = BundleUp.GravelbagLSR,
+            Base.Rope = BundleUp.CompostBagLR,
+            Base.SheetRope = BundleUp.CompostBagLSR,
+            Base.Rope = BundleUp.GrassBagLR,
+            Base.SheetRope = BundleUp.GrassBagLSR,
+            Base.Rope = BundleUp.AnimalFeedBagLR,
+            Base.SheetRope = BundleUp.AnimalFeedBagLSR,
+            Base.Rope = BundleUp.FertilizerBagLR,
+            Base.SheetRope = BundleUp.FertilizerBagLSR,
+            Base.Rope = BundleUp.ConcretePowderLR,
+            Base.SheetRope = BundleUp.ConcretePowderLSR,
+            Base.Rope = BundleUp.PlasterPowderLR,
+            Base.SheetRope = BundleUp.PlasterPowderLSR,
+            Base.Rope = BundleUp.WallpaperPasteLR,
+            Base.SheetRope = BundleUp.WallpaperPasteLSR,
+            Base.Rope = BundleUp.GlassPanelLR,
+            Base.SheetRope = BundleUp.GlassPanelLSR,
+            Base.Rope = BundleUp.LargePlankLR,
+            Base.SheetRope = BundleUp.LargePlankLSR,
+        }
+        itemMapper itemTypes {
+            Base.Sandbag = BundleUp.SandbagLR,
+            Base.Sandbag = BundleUp.SandbagLSR,
+            Base.Dirtbag = BundleUp.DirtbagLR,
+            Base.Dirtbag = BundleUp.DirtbagLSR,
+            Base.Claybag = BundleUp.ClaybagLR,
+            Base.Claybag = BundleUp.ClaybagLSR,
+            Base.Gravelbag = BundleUp.GravelbagLR,
+            Base.Gravelbag = BundleUp.GravelbagLSR,
+            Base.CompostBag = BundleUp.CompostBagLR,
+            Base.CompostBag = BundleUp.CompostBagLSR,
+            Base.GrassBag = BundleUp.GrassBagLR,
+            Base.GrassBag = BundleUp.GrassBagLSR,
+            Base.AnimalFeedBag = BundleUp.AnimalFeedBagLR,
+            Base.AnimalFeedBag = BundleUp.AnimalFeedBagLSR,
+            Base.Fertilizer = BundleUp.FertilizerBagLR,
+            Base.Fertilizer = BundleUp.FertilizerBagLSR,
+            Base.ConcretePowder = BundleUp.ConcretePowderLR,
+            Base.ConcretePowder = BundleUp.ConcretePowderLSR,
+            Base.PlasterPowder = BundleUp.PlasterPowderLR,
+            Base.PlasterPowder = BundleUp.PlasterPowderLSR,
+            Base.WallpaperPastePowder = BundleUp.WallpaperPasteLR,
+            Base.WallpaperPastePowder = BundleUp.WallpaperPasteLSR,
+            Base.GlassPanel = BundleUp.GlassPanelLR,
+            Base.GlassPanel = BundleUp.GlassPanelLSR,
+            Base.LargePlank = BundleUp.LargePlankLR,
+            Base.LargePlank = BundleUp.LargePlankLSR,
+        }
+    }
 }

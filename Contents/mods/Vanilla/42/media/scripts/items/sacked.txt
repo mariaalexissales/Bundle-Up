@@ -598,4 +598,41 @@ module BundleUp {
         WorldStaticModel = Parcel_Food_Medium,
         DoubleClickRecipe = UnpackSeedPouch,
     }
+
+
+    item FlatStoneSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 100.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnsackBuild10,
+    }
+
+    item LargeStoneSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 400.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnsackBuild10,
+    }
+
+    item SharpedStoneSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnsackBuild25,
+    }
+
+    item ClaySack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.5,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnsackBuild25,
+    }
 }

@@ -127,4 +127,29 @@ module BundleUp {
         texture = WorldItems/Hide_SheetRope,
         scale = 0.3,
     }
+
+
+    model Aggregate_Rope {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/Aggregate_Rope,
+        scale = 0.12,
+    }
+
+    model Aggregate_Rope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Aggregate_Rope,
+        scale = 0.3,
+    }
+
+    model Aggregate_SheetRope {
+        mesh = WorldItems/Firewood_Bundle,
+        texture = WorldItems/Aggregate_SheetRope,
+        scale = 0.12,
+    }
+
+    model Aggregate_SheetRope_Large {
+        mesh = WorldItems/FourLogsStack,
+        texture = WorldItems/Aggregate_SheetRope,
+        scale = 0.3,
+    }
 }

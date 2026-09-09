@@ -98,5 +98,15 @@
   "PackJuiceSealed": "Six-Pack Juice",
   "UnpackJuice": "Open Juice Six-Pack",
   "PackMilk": "Six-Pack Milk",
-  "UnpackMilk": "Open Milk Six-Pack"
+  "UnpackMilk": "Open Milk Six-Pack",
+  "TieBuild5": "Bundle 5 Building Supplies",
+  "TieBuild10": "Bundle 10 Building Supplies",
+  "TieBuildFull5": "Bundle 5 Full Bags",
+  "TieBuildFull10": "Bundle 10 Full Bags",
+  "UntieBuild5": "Unbundle 5 Building Supplies",
+  "UntieBuild10": "Unbundle 10 Building Supplies",
+  "SackBuild10": "Sack 10 Stones",
+  "SackBuild25": "Sack 25 Stones",
+  "UnsackBuild10": "Empty the Sack",
+  "UnsackBuild25": "Empty the Sack"
 }

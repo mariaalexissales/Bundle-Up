@@ -1362,4 +1362,477 @@ module BundleUp {
         WorldStaticModel = Hide_SheetRope_Large,
         DoubleClickRecipe = UntieHide10,
     }
+
+
+    item SandbagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item SandbagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item SandbagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item SandbagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item DirtbagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item DirtbagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item DirtbagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item DirtbagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item ClaybagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item ClaybagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item ClaybagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item ClaybagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item GravelbagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item GravelbagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = AggregateBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item GravelbagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item GravelbagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = AggregateBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item CompostBagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = GardenBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item CompostBagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = GardenBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item CompostBagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = GardenBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item CompostBagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = GardenBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item GrassBagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = GardenBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item GrassBagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = GardenBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item GrassBagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = GardenBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item GrassBagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = GardenBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item AnimalFeedBagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = GardenBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item AnimalFeedBagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = GardenBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item AnimalFeedBagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = GardenBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item AnimalFeedBagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = GardenBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item FertilizerBagR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = GardenBagR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item FertilizerBagSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = GardenBagSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item FertilizerBagLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = GardenBagLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item FertilizerBagLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = GardenBagLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item ConcretePowderR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = PowderSackR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item ConcretePowderSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = PowderSackSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item ConcretePowderLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = PowderSackLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item ConcretePowderLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = PowderSackLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item PlasterPowderR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = PowderSackR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item PlasterPowderSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = PowderSackSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item PlasterPowderLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = PowderSackLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item PlasterPowderLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = PowderSackLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item WallpaperPasteR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = PowderSackR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item WallpaperPasteSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = PowderSackSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item WallpaperPasteLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = PowderSackLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item WallpaperPasteLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = PowderSackLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item GlassPanelR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GlassPanelR,
+        WorldStaticModel = Aggregate_Rope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item GlassPanelSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = GlassPanelSR,
+        WorldStaticModel = Aggregate_SheetRope,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item GlassPanelLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.0,
+        Icon = GlassPanelLR,
+        WorldStaticModel = Aggregate_Rope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item GlassPanelLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.0,
+        Icon = GlassPanelLSR,
+        WorldStaticModel = Aggregate_SheetRope_Large,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item LargePlankR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = PlankR,
+        WorldStaticModel = Plank_Rope,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item LargePlankSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = PlankSR,
+        WorldStaticModel = Plank_SheetRope,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieBuild5,
+    }
+
+    item LargePlankLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 100.0,
+        Icon = PlankLR,
+        WorldStaticModel = Plank_Rope_Large,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieBuild10,
+    }
+
+    item LargePlankLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 100.0,
+        Icon = PlankLSR,
+        WorldStaticModel = Plank_SheetRope_Large,
+        Tags = base:isfirefuel,
+        DoubleClickRecipe = UntieBuild10,
+    }
 }

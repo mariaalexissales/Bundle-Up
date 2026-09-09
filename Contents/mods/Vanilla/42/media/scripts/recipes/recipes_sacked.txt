@@ -329,4 +329,77 @@ module BundleUp {
             Base.ZucchiniBagSeed = BundleUp.ZucchiniBagSeedPouch,
         }
     }
+
+
+    craftRecipe SackBuild10 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag],
+            item 10 [Base.FlatStone;Base.LargeStone] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.FlatStoneSack = Base.FlatStone,
+            BundleUp.LargeStoneSack = Base.LargeStone,
+        }
+    }
+
+    craftRecipe SackBuild25 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag],
+            item 25 [Base.SharpedStone;Base.Clay] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.SharpedStoneSack = Base.SharpedStone,
+            BundleUp.ClaySack = Base.Clay,
+        }
+    }
+
+    craftRecipe UnsackBuild10 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.FlatStoneSack;BundleUp.LargeStoneSack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.FlatStone = BundleUp.FlatStoneSack,
+            Base.LargeStone = BundleUp.LargeStoneSack,
+        }
+    }
+
+    craftRecipe UnsackBuild25 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.SharpedStoneSack;BundleUp.ClaySack] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 25 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.SharpedStone = BundleUp.SharpedStoneSack,
+            Base.Clay = BundleUp.ClaySack,
+        }
+    }
 }
