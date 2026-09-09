@@ -551,7 +551,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 10 [Base.CircularSawblade;Base.IronBand;40:Base.IronBandSmall;20:Base.IronBarHalf;40:Base.IronBarQuarter;Base.IronBlock;40:Base.IronChunk;200:Base.IronPiece;Base.RakeHead;20:Base.SteelBarHalf;40:Base.SteelBarQuarter;Base.SteelBlock;40:Base.SteelChunk;200:Base.SteelPiece] flags[IsExclusive;ItemCount] mappers[materialTypes],
+            item 10 [Base.CircularSawblade;Base.IronBand;40:Base.IronBandSmall;20:Base.IronBarHalf;40:Base.IronBarQuarter;Base.IronBlock;40:Base.IronChunk;200:Base.IronPiece;Base.RakeHead;20:Base.SteelBarHalf;40:Base.SteelBarQuarter;Base.SteelBlock;40:Base.SteelChunk;200:Base.SteelPiece;40:Base.SteelRodQuarter;20:Base.SteelRodHalf;200:Base.SteelSlug;10:Base.PiercedIronBlock;10:Base.PiercedSteelBlock;40:Base.PiercedIronChunk;40:Base.PiercedSteelChunk] flags[IsExclusive;ItemCount] mappers[materialTypes],
         }
         outputs {
             item 1 mapper:materialTypes,
@@ -571,6 +571,13 @@ module BundleUp {
             BundleUp.SteelBlockBox = Base.SteelBlock,
             BundleUp.SteelChunkBox = Base.SteelChunk,
             BundleUp.SteelPieceBox = Base.SteelPiece,
+            BundleUp.SteelRodQuarterBox = Base.SteelRodQuarter,
+            BundleUp.SteelRodHalfBox = Base.SteelRodHalf,
+            BundleUp.SteelSlugBox = Base.SteelSlug,
+            BundleUp.PiercedIronBlockBox = Base.PiercedIronBlock,
+            BundleUp.PiercedSteelBlockBox = Base.PiercedSteelBlock,
+            BundleUp.PiercedIronChunkBox = Base.PiercedIronChunk,
+            BundleUp.PiercedSteelChunkBox = Base.PiercedSteelChunk,
         }
     }
 
@@ -580,7 +587,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.CircularSawbladeBox;BundleUp.IronBandBox;BundleUp.IronBlockBox;BundleUp.RakeHeadBox;BundleUp.SteelBlockBox] mappers[materialTypes],
+            item 1 [BundleUp.CircularSawbladeBox;BundleUp.IronBandBox;BundleUp.IronBlockBox;BundleUp.RakeHeadBox;BundleUp.SteelBlockBox;BundleUp.PiercedIronBlockBox;BundleUp.PiercedSteelBlockBox] mappers[materialTypes],
         }
         outputs {
             item 10 mapper:materialTypes,
@@ -591,6 +598,8 @@ module BundleUp {
             Base.IronBlock = BundleUp.IronBlockBox,
             Base.RakeHead = BundleUp.RakeHeadBox,
             Base.SteelBlock = BundleUp.SteelBlockBox,
+            Base.PiercedIronBlock = BundleUp.PiercedIronBlockBox,
+            Base.PiercedSteelBlock = BundleUp.PiercedSteelBlockBox,
         }
     }
 
@@ -600,7 +609,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.IronBarHalfBox;BundleUp.SteelBarHalfBox] mappers[materialTypes],
+            item 1 [BundleUp.IronBarHalfBox;BundleUp.SteelBarHalfBox;BundleUp.SteelRodHalfBox] mappers[materialTypes],
         }
         outputs {
             item 20 mapper:materialTypes,
@@ -608,6 +617,7 @@ module BundleUp {
         itemMapper materialTypes {
             Base.IronBarHalf = BundleUp.IronBarHalfBox,
             Base.SteelBarHalf = BundleUp.SteelBarHalfBox,
+            Base.SteelRodHalf = BundleUp.SteelRodHalfBox,
         }
     }
 
@@ -617,7 +627,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.IronBandSmallBox;BundleUp.IronBarQuarterBox;BundleUp.IronChunkBox;BundleUp.SteelBarQuarterBox;BundleUp.SteelChunkBox] mappers[materialTypes],
+            item 1 [BundleUp.IronBandSmallBox;BundleUp.IronBarQuarterBox;BundleUp.IronChunkBox;BundleUp.SteelBarQuarterBox;BundleUp.SteelChunkBox;BundleUp.SteelRodQuarterBox;BundleUp.PiercedIronChunkBox;BundleUp.PiercedSteelChunkBox] mappers[materialTypes],
         }
         outputs {
             item 40 mapper:materialTypes,
@@ -628,6 +638,9 @@ module BundleUp {
             Base.IronChunk = BundleUp.IronChunkBox,
             Base.SteelBarQuarter = BundleUp.SteelBarQuarterBox,
             Base.SteelChunk = BundleUp.SteelChunkBox,
+            Base.SteelRodQuarter = BundleUp.SteelRodQuarterBox,
+            Base.PiercedIronChunk = BundleUp.PiercedIronChunkBox,
+            Base.PiercedSteelChunk = BundleUp.PiercedSteelChunkBox,
         }
     }
 
@@ -637,7 +650,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark,
         category = Packing,
         inputs {
-            item 1 [BundleUp.IronPieceBox;BundleUp.SteelPieceBox] mappers[materialTypes],
+            item 1 [BundleUp.IronPieceBox;BundleUp.SteelPieceBox;BundleUp.SteelSlugBox] mappers[materialTypes],
         }
         outputs {
             item 200 mapper:materialTypes,
@@ -645,6 +658,7 @@ module BundleUp {
         itemMapper materialTypes {
             Base.IronPiece = BundleUp.IronPieceBox,
             Base.SteelPiece = BundleUp.SteelPieceBox,
+            Base.SteelSlug = BundleUp.SteelSlugBox,
         }
     }
 

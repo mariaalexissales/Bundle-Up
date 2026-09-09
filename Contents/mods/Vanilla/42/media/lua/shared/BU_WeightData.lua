@@ -291,6 +291,30 @@ BU.Bundles = {
     ["BundleUp.SharpedStoneSack"]   = { base = "Base.SharpedStone", count = 25  },
     ["BundleUp.ClaySack"]           = { base = "Base.Clay", count = 25  },
 
+
+    -- ingots stack; ore and loose rock go in a sack instead.
+
+    ["BundleUp.IronIngot_S"]          = { base = "Base.IronIngot", count = 5   },
+    ["BundleUp.IronIngot_L"]          = { base = "Base.IronIngot", count = 10  },
+    ["BundleUp.SteelIngot_S"]         = { base = "Base.SteelIngot", count = 5   },
+    ["BundleUp.SteelIngot_L"]         = { base = "Base.SteelIngot", count = 10  },
+    ["BundleUp.CopperIngot_S"]        = { base = "Base.CopperIngot", count = 5   },
+    ["BundleUp.CopperIngot_L"]        = { base = "Base.CopperIngot", count = 10  },
+    ["BundleUp.BrassIngot_S"]         = { base = "Base.BrassIngot", count = 5   },
+    ["BundleUp.BrassIngot_L"]         = { base = "Base.BrassIngot", count = 10  },
+    ["BundleUp.GoldBar_S"]            = { base = "Base.GoldBar", count = 5   },
+    ["BundleUp.GoldBar_L"]            = { base = "Base.GoldBar", count = 10  },
+    ["BundleUp.SmallGoldBar_S"]       = { base = "Base.SmallGoldBar", count = 5   },
+    ["BundleUp.SmallGoldBar_L"]       = { base = "Base.SmallGoldBar", count = 10  },
+    ["BundleUp.SilverBar_S"]          = { base = "Base.SilverBar", count = 5   },
+    ["BundleUp.SilverBar_L"]          = { base = "Base.SilverBar", count = 10  },
+    ["BundleUp.SmallSilverBar_S"]     = { base = "Base.SmallSilverBar", count = 5   },
+    ["BundleUp.SmallSilverBar_L"]     = { base = "Base.SmallSilverBar", count = 10  },
+    ["BundleUp.PiercedIronIngot_S"]   = { base = "Base.PiercedIronIngot", count = 5   },
+    ["BundleUp.PiercedIronIngot_L"]   = { base = "Base.PiercedIronIngot", count = 10  },
+    ["BundleUp.PiercedSteelIngot_S"]  = { base = "Base.PiercedSteelIngot", count = 5   },
+    ["BundleUp.PiercedSteelIngot_L"]  = { base = "Base.PiercedSteelIngot", count = 10  },
+
 }
 
 BU.BaseCategory = {
@@ -395,6 +419,16 @@ BU.BaseCategory = {
     ["Base.LargeStone"]                         = "ReductionStone",
     ["Base.SharpedStone"]                       = "ReductionStone",
     ["Base.Clay"]                               = "ReductionOther",
+    ["Base.IronIngot"]                          = "ReductionMetal",
+    ["Base.SteelIngot"]                         = "ReductionMetal",
+    ["Base.CopperIngot"]                        = "ReductionMetal",
+    ["Base.BrassIngot"]                         = "ReductionMetal",
+    ["Base.GoldBar"]                            = "ReductionMetal",
+    ["Base.SmallGoldBar"]                       = "ReductionMetal",
+    ["Base.SilverBar"]                          = "ReductionMetal",
+    ["Base.SmallSilverBar"]                     = "ReductionMetal",
+    ["Base.PiercedIronIngot"]                   = "ReductionMetal",
+    ["Base.PiercedSteelIngot"]                  = "ReductionMetal",
 }
 
 -- A pack's base is usually a vanilla item, but a nested pack names another

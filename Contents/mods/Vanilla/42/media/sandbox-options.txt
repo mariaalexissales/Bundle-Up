@@ -1725,3 +1725,225 @@ option BundleUp.Item_ClaySack
     type = integer, min = -1, max = 100, default = -1,
     page = BundleUp, translation = BundleUp_Item_ClaySack,
 }
+
+option BundleUp.Item_IronIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_IronIngot_S,
+}
+
+option BundleUp.Item_IronIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_IronIngot_L,
+}
+
+option BundleUp.Item_SteelIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SteelIngot_S,
+}
+
+option BundleUp.Item_SteelIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SteelIngot_L,
+}
+
+option BundleUp.Item_CopperIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CopperIngot_S,
+}
+
+option BundleUp.Item_CopperIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CopperIngot_L,
+}
+
+option BundleUp.Item_BrassIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_BrassIngot_S,
+}
+
+option BundleUp.Item_BrassIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_BrassIngot_L,
+}
+
+option BundleUp.Item_GoldBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GoldBar_S,
+}
+
+option BundleUp.Item_GoldBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_GoldBar_L,
+}
+
+option BundleUp.Item_SmallGoldBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SmallGoldBar_S,
+}
+
+option BundleUp.Item_SmallGoldBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SmallGoldBar_L,
+}
+
+option BundleUp.Item_SilverBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SilverBar_S,
+}
+
+option BundleUp.Item_SilverBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SilverBar_L,
+}
+
+option BundleUp.Item_SmallSilverBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SmallSilverBar_S,
+}
+
+option BundleUp.Item_SmallSilverBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SmallSilverBar_L,
+}
+
+option BundleUp.Item_PiercedIronIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedIronIngot_S,
+}
+
+option BundleUp.Item_PiercedIronIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedIronIngot_L,
+}
+
+option BundleUp.Item_PiercedSteelIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedSteelIngot_S,
+}
+
+option BundleUp.Item_PiercedSteelIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedSteelIngot_L,
+}
+
+option BundleUp.Item_IronOreSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_IronOreSack,
+}
+
+option BundleUp.Item_CopperOreSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CopperOreSack,
+}
+
+option BundleUp.Item_HematiteSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HematiteSack,
+}
+
+option BundleUp.Item_HematiteLargeSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_HematiteLargeSack,
+}
+
+option BundleUp.Item_MalachiteSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MalachiteSack,
+}
+
+option BundleUp.Item_MalachiteLargeSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_MalachiteLargeSack,
+}
+
+option BundleUp.Item_LimestoneSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_LimestoneSack,
+}
+
+option BundleUp.Item_IronBloomSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_IronBloomSack,
+}
+
+option BundleUp.Item_QuicklimeSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_QuicklimeSack,
+}
+
+option BundleUp.Item_CharcoalSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_CharcoalSack,
+}
+
+option BundleUp.Item_SteelRodQuarterBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SteelRodQuarterBox,
+}
+
+option BundleUp.Item_SteelRodHalfBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SteelRodHalfBox,
+}
+
+option BundleUp.Item_SteelSlugBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_SteelSlugBox,
+}
+
+option BundleUp.Item_PiercedIronBlockBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedIronBlockBox,
+}
+
+option BundleUp.Item_PiercedSteelBlockBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedSteelBlockBox,
+}
+
+option BundleUp.Item_PiercedIronChunkBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedIronChunkBox,
+}
+
+option BundleUp.Item_PiercedSteelChunkBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUp, translation = BundleUp_Item_PiercedSteelChunkBox,
+}

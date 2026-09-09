@@ -635,4 +635,95 @@ module BundleUp {
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnsackBuild25,
     }
+
+
+    item IronOreSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 400.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack10,
+    }
+
+    item CopperOreSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 400.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack10,
+    }
+
+    item HematiteSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 62.5,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack25,
+    }
+
+    item HematiteLargeSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 125.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack25,
+    }
+
+    item MalachiteSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 62.5,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack25,
+    }
+
+    item MalachiteLargeSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 125.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack25,
+    }
+
+    item LimestoneSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack25,
+    }
+
+    item IronBloomSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 200.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack10,
+    }
+
+    item QuicklimeSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.5,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack25,
+    }
+
+    item CharcoalSack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackOreSack25,
+    }
 }

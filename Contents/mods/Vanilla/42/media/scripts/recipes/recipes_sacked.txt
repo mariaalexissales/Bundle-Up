@@ -402,4 +402,89 @@ module BundleUp {
             Base.Clay = BundleUp.ClaySack,
         }
     }
+
+
+    craftRecipe PackOreSack10 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] mappers[oreTypes],
+            item 10 [Base.IronOre;Base.CopperOre;Base.IronBloom] flags[ItemCount;IsExclusive] mappers[oreTypes],
+        }
+        outputs {
+            item 1 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            BundleUp.IronOreSack = Base.EmptySandbag;Base.IronOre,
+            BundleUp.CopperOreSack = Base.EmptySandbag;Base.CopperOre,
+            BundleUp.IronBloomSack = Base.EmptySandbag;Base.IronBloom,
+        }
+    }
+
+    craftRecipe UnpackOreSack10 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronOreSack;BundleUp.CopperOreSack;BundleUp.IronBloomSack] flags[IsExclusive;ItemCount] mappers[oreTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 10 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            Base.IronOre = BundleUp.IronOreSack,
+            Base.CopperOre = BundleUp.CopperOreSack,
+            Base.IronBloom = BundleUp.IronBloomSack,
+        }
+    }
+
+    craftRecipe PackOreSack25 {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [Base.EmptySandbag] mappers[oreTypes],
+            item 25 [Base.Hematite;Base.HematiteLarge;Base.Malachite;Base.MalachiteLarge;Base.Limestone;Base.Quicklime;Base.Charcoal] flags[ItemCount;IsExclusive] mappers[oreTypes],
+        }
+        outputs {
+            item 1 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            BundleUp.HematiteSack = Base.EmptySandbag;Base.Hematite,
+            BundleUp.HematiteLargeSack = Base.EmptySandbag;Base.HematiteLarge,
+            BundleUp.MalachiteSack = Base.EmptySandbag;Base.Malachite,
+            BundleUp.MalachiteLargeSack = Base.EmptySandbag;Base.MalachiteLarge,
+            BundleUp.LimestoneSack = Base.EmptySandbag;Base.Limestone,
+            BundleUp.QuicklimeSack = Base.EmptySandbag;Base.Quicklime,
+            BundleUp.CharcoalSack = Base.EmptySandbag;Base.Charcoal,
+        }
+    }
+
+    craftRecipe UnpackOreSack25 {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.HematiteSack;BundleUp.HematiteLargeSack;BundleUp.MalachiteSack;BundleUp.MalachiteLargeSack;BundleUp.LimestoneSack;BundleUp.QuicklimeSack;BundleUp.CharcoalSack] flags[IsExclusive;ItemCount] mappers[oreTypes],
+        }
+        outputs {
+            item 1 Base.EmptySandbag,
+            item 25 mapper:oreTypes,
+        }
+        itemMapper oreTypes {
+            Base.Hematite = BundleUp.HematiteSack,
+            Base.HematiteLarge = BundleUp.HematiteLargeSack,
+            Base.Malachite = BundleUp.MalachiteSack,
+            Base.MalachiteLarge = BundleUp.MalachiteLargeSack,
+            Base.Limestone = BundleUp.LimestoneSack,
+            Base.Quicklime = BundleUp.QuicklimeSack,
+            Base.Charcoal = BundleUp.CharcoalSack,
+        }
+    }
 }

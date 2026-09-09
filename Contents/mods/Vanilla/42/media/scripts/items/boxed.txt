@@ -2586,4 +2586,68 @@ module BundleUp {
         Tags = base:hasmetal;base:ignorezombiedensity,
         DoubleClickRecipe = UnpackAmmoClipCase,
     }
+
+
+    item SteelRodQuarterBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
+    }
+
+    item SteelRodHalfBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackPartsBoxHalves,
+    }
+
+    item SteelSlugBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 15.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackPartsBoxPieces,
+    }
+
+    item PiercedIronBlockBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackPartsBox,
+    }
+
+    item PiercedSteelBlockBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackPartsBox,
+    }
+
+    item PiercedIronChunkBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
+    }
+
+    item PiercedSteelChunkBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackPartsBoxQuarters,
+    }
 }

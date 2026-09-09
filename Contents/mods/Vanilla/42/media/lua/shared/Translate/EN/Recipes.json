@@ -108,5 +108,13 @@
   "SackBuild10": "Sack 10 Stones",
   "SackBuild25": "Sack 25 Stones",
   "UnsackBuild10": "Empty the Sack",
-  "UnsackBuild25": "Empty the Sack"
+  "UnsackBuild25": "Empty the Sack",
+  "StackIngotS": "Stack 5 Ingots",
+  "StackIngotL": "Stack 10 Ingots",
+  "UnstackIngotS": "Unstack 5 Ingots",
+  "UnstackIngotL": "Unstack 10 Ingots",
+  "PackOreSack10": "Sack 10 Ore",
+  "PackOreSack25": "Sack 25 Ore",
+  "UnpackOreSack10": "Empty the Ore Sack",
+  "UnpackOreSack25": "Empty the Ore Sack"
 }

@@ -1025,4 +1025,105 @@ module BundleUp {
             Base.MilkChocolate_Personalsized = BundleUp.MilkChocSmallPack,
         }
     }
+
+
+    craftRecipe StackIngotS {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 5 [Base.IronIngot;Base.SteelIngot;Base.CopperIngot;Base.BrassIngot;Base.GoldBar;Base.SmallGoldBar;Base.SilverBar;Base.SmallSilverBar;Base.PiercedIronIngot;Base.PiercedSteelIngot] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 1 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            BundleUp.IronIngot_S = Base.IronIngot,
+            BundleUp.SteelIngot_S = Base.SteelIngot,
+            BundleUp.CopperIngot_S = Base.CopperIngot,
+            BundleUp.BrassIngot_S = Base.BrassIngot,
+            BundleUp.GoldBar_S = Base.GoldBar,
+            BundleUp.SmallGoldBar_S = Base.SmallGoldBar,
+            BundleUp.SilverBar_S = Base.SilverBar,
+            BundleUp.SmallSilverBar_S = Base.SmallSilverBar,
+            BundleUp.PiercedIronIngot_S = Base.PiercedIronIngot,
+            BundleUp.PiercedSteelIngot_S = Base.PiercedSteelIngot,
+        }
+    }
+
+    craftRecipe StackIngotL {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 10 [Base.IronIngot;Base.SteelIngot;Base.CopperIngot;Base.BrassIngot;Base.GoldBar;Base.SmallGoldBar;Base.SilverBar;Base.SmallSilverBar;Base.PiercedIronIngot;Base.PiercedSteelIngot] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 1 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            BundleUp.IronIngot_L = Base.IronIngot,
+            BundleUp.SteelIngot_L = Base.SteelIngot,
+            BundleUp.CopperIngot_L = Base.CopperIngot,
+            BundleUp.BrassIngot_L = Base.BrassIngot,
+            BundleUp.GoldBar_L = Base.GoldBar,
+            BundleUp.SmallGoldBar_L = Base.SmallGoldBar,
+            BundleUp.SilverBar_L = Base.SilverBar,
+            BundleUp.SmallSilverBar_L = Base.SmallSilverBar,
+            BundleUp.PiercedIronIngot_L = Base.PiercedIronIngot,
+            BundleUp.PiercedSteelIngot_L = Base.PiercedSteelIngot,
+        }
+    }
+
+    craftRecipe UnstackIngotS {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronIngot_S;BundleUp.SteelIngot_S;BundleUp.CopperIngot_S;BundleUp.BrassIngot_S;BundleUp.GoldBar_S;BundleUp.SmallGoldBar_S;BundleUp.SilverBar_S;BundleUp.SmallSilverBar_S;BundleUp.PiercedIronIngot_S;BundleUp.PiercedSteelIngot_S] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 5 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            Base.IronIngot = BundleUp.IronIngot_S,
+            Base.SteelIngot = BundleUp.SteelIngot_S,
+            Base.CopperIngot = BundleUp.CopperIngot_S,
+            Base.BrassIngot = BundleUp.BrassIngot_S,
+            Base.GoldBar = BundleUp.GoldBar_S,
+            Base.SmallGoldBar = BundleUp.SmallGoldBar_S,
+            Base.SilverBar = BundleUp.SilverBar_S,
+            Base.SmallSilverBar = BundleUp.SmallSilverBar_S,
+            Base.PiercedIronIngot = BundleUp.PiercedIronIngot_S,
+            Base.PiercedSteelIngot = BundleUp.PiercedSteelIngot_S,
+        }
+    }
+
+    craftRecipe UnstackIngotL {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.IronIngot_L;BundleUp.SteelIngot_L;BundleUp.CopperIngot_L;BundleUp.BrassIngot_L;BundleUp.GoldBar_L;BundleUp.SmallGoldBar_L;BundleUp.SilverBar_L;BundleUp.SmallSilverBar_L;BundleUp.PiercedIronIngot_L;BundleUp.PiercedSteelIngot_L] flags[IsExclusive;ItemCount] mappers[ingotTypes],
+        }
+        outputs {
+            item 10 mapper:ingotTypes,
+        }
+        itemMapper ingotTypes {
+            Base.IronIngot = BundleUp.IronIngot_L,
+            Base.SteelIngot = BundleUp.SteelIngot_L,
+            Base.CopperIngot = BundleUp.CopperIngot_L,
+            Base.BrassIngot = BundleUp.BrassIngot_L,
+            Base.GoldBar = BundleUp.GoldBar_L,
+            Base.SmallGoldBar = BundleUp.SmallGoldBar_L,
+            Base.SilverBar = BundleUp.SilverBar_L,
+            Base.SmallSilverBar = BundleUp.SmallSilverBar_L,
+            Base.PiercedIronIngot = BundleUp.PiercedIronIngot_L,
+            Base.PiercedSteelIngot = BundleUp.PiercedSteelIngot_L,
+        }
+    }
 }

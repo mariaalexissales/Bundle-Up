@@ -2012,4 +2012,205 @@ module BundleUp {
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackMilk,
     }
+
+
+    item IronIngot_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = IngotIronS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item IronIngot_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 60.0,
+        Icon = IngotIronL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item SteelIngot_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = IngotSteelS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item SteelIngot_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 60.0,
+        Icon = IngotSteelL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item CopperIngot_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = IngotCopperS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item CopperIngot_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 60.0,
+        Icon = IngotCopperL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item BrassIngot_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 25.0,
+        Icon = IngotBrassS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item BrassIngot_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 50.0,
+        Icon = IngotBrassL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item GoldBar_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 80.0,
+        Icon = IngotGoldS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item GoldBar_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 160.0,
+        Icon = IngotGoldL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item SmallGoldBar_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = IngotGoldS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item SmallGoldBar_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.0,
+        Icon = IngotGoldL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item SilverBar_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = IngotSilverS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item SilverBar_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 80.0,
+        Icon = IngotSilverL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item SmallSilverBar_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 5.0,
+        Icon = IngotSilverS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item SmallSilverBar_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 10.0,
+        Icon = IngotSilverL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item PiercedIronIngot_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = IngotIronPiercedS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item PiercedIronIngot_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 60.0,
+        Icon = IngotIronPiercedL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
+
+    item PiercedSteelIngot_S {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 30.0,
+        Icon = IngotSteelPiercedS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotS,
+    }
+
+    item PiercedSteelIngot_L {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 60.0,
+        Icon = IngotSteelPiercedL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnstackIngotL,
+    }
 }
