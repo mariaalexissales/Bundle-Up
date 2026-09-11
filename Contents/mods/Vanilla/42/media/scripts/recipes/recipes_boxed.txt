@@ -10,7 +10,7 @@ module BundleUp {
     craftRecipe BoxSmall {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 25 [Base.Nails;Base.Screws] flags[ItemCount;IsExclusive] mappers[boxTypes],
@@ -27,7 +27,7 @@ module BundleUp {
     craftRecipe BoxMedium {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 50 [Base.Nails;Base.Screws] flags[ItemCount;IsExclusive] mappers[boxTypes],
@@ -44,7 +44,7 @@ module BundleUp {
     craftRecipe UnboxSmall {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] flags[IsExclusive;ItemCount] mappers[boxTypes],
@@ -61,7 +61,7 @@ module BundleUp {
     craftRecipe UnboxMedium {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] flags[IsExclusive;ItemCount] mappers[boxTypes],
@@ -78,7 +78,7 @@ module BundleUp {
     craftRecipe MergeBoxSmall {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 2 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] flags[IsExclusive;ItemCount] mappers[boxTypes],
@@ -95,7 +95,7 @@ module BundleUp {
     craftRecipe MergeBoxMedium {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 2 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] flags[IsExclusive;ItemCount] mappers[boxTypes],
@@ -112,7 +112,7 @@ module BundleUp {
     craftRecipe BoxPens {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 10 [Base.Pen;Base.BluePen;Base.RedPen;Base.GreenPen] flags[IsExclusive;ItemCount] mappers[itemTypes],
@@ -131,7 +131,7 @@ module BundleUp {
     craftRecipe UnboxPens {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.PenBox_Black;BundleUp.PenBox_Blue;BundleUp.PenBox_Red;BundleUp.PenBox_Green] flags[IsExclusive;ItemCount] mappers[itemTypes],
@@ -150,7 +150,7 @@ module BundleUp {
     craftRecipe PackDryCarton {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.carryFoodAge,
         onTest = BUInv.testPackPerishable,
         category = Packing,
@@ -266,7 +266,7 @@ module BundleUp {
     craftRecipe UnpackDryCarton {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.carryFoodAge,
         category = Packing,
         inputs {
@@ -381,7 +381,7 @@ module BundleUp {
     craftRecipe PackFreshCarton {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.carryFoodAge,
         onTest = BUInv.testPackPerishable,
         category = Packing,
@@ -465,7 +465,7 @@ module BundleUp {
     craftRecipe UnpackFreshCarton {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.carryFoodAge,
         category = Packing,
         inputs {
@@ -548,7 +548,7 @@ module BundleUp {
     craftRecipe PackPartsBox {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 10 [Base.CircularSawblade;Base.IronBand;40:Base.IronBandSmall;20:Base.IronBarHalf;40:Base.IronBarQuarter;Base.IronBlock;40:Base.IronChunk;200:Base.IronPiece;Base.RakeHead;20:Base.SteelBarHalf;40:Base.SteelBarQuarter;Base.SteelBlock;40:Base.SteelChunk;200:Base.SteelPiece;40:Base.SteelRodQuarter;20:Base.SteelRodHalf;200:Base.SteelSlug;10:Base.PiercedIronBlock;10:Base.PiercedSteelBlock;40:Base.PiercedIronChunk;40:Base.PiercedSteelChunk] flags[IsExclusive;ItemCount] mappers[materialTypes],
@@ -584,7 +584,7 @@ module BundleUp {
     craftRecipe UnpackPartsBox {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.CircularSawbladeBox;BundleUp.IronBandBox;BundleUp.IronBlockBox;BundleUp.RakeHeadBox;BundleUp.SteelBlockBox;BundleUp.PiercedIronBlockBox;BundleUp.PiercedSteelBlockBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
@@ -606,7 +606,7 @@ module BundleUp {
     craftRecipe UnpackPartsBoxHalves {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.IronBarHalfBox;BundleUp.SteelBarHalfBox;BundleUp.SteelRodHalfBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
@@ -624,7 +624,7 @@ module BundleUp {
     craftRecipe UnpackPartsBoxQuarters {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.IronBandSmallBox;BundleUp.IronBarQuarterBox;BundleUp.IronChunkBox;BundleUp.SteelBarQuarterBox;BundleUp.SteelChunkBox;BundleUp.SteelRodQuarterBox;BundleUp.PiercedIronChunkBox;BundleUp.PiercedSteelChunkBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
@@ -647,7 +647,7 @@ module BundleUp {
     craftRecipe UnpackPartsBoxPieces {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.IronPieceBox;BundleUp.SteelPieceBox;BundleUp.SteelSlugBox] flags[IsExclusive;ItemCount] mappers[materialTypes],
@@ -665,7 +665,7 @@ module BundleUp {
     craftRecipe PackMedicalBox {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 10 [Base.AlcoholBandage;Base.AlcoholWipes;Base.AlcoholedCottonBalls;Base.Pills;Base.PillsAntiDep;Base.PillsBeta;Base.PillsSleepingTablets;Base.PillsVitamins;Base.Tissue;Base.WaterPurificationTablets;Base.BandageDirty;Base.Disinfectant] flags[IsExclusive;ItemCount;IsFull] mode:destroy mappers[medicalTypes],
@@ -692,7 +692,7 @@ module BundleUp {
     craftRecipe UnpackMedicalBox {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.AlcoholBandageBox;BundleUp.AlcoholWipesBox;BundleUp.AlcoholedCottonBallsBox;BundleUp.PillsBox;BundleUp.PillsAntiDepBox;BundleUp.PillsBetaBox;BundleUp.PillsSleepingTabletsBox;BundleUp.PillsVitaminsBox;BundleUp.TissueBox;BundleUp.WaterPurificationTabletsBox;BundleUp.BandageDirtyBox;BundleUp.DisinfectantBox] flags[IsExclusive;ItemCount] mappers[medicalTypes],
@@ -719,7 +719,7 @@ module BundleUp {
     craftRecipe PackSupplyBox {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 10 [Base.AdhesiveTapeBox;Base.Aluminum;Base.Amplifier;Base.BakingSoda;Base.BatteryBox;Base.Buckle;Base.ButterKnife;Base.Button;Base.CandleBox;Base.CorrectionFluid;Base.Doorknob;Base.DuctTapeBox;Base.ElectricWire;Base.Epoxy;Base.FiberglassTape;Base.FishingHookBox;Base.FishingLine;Base.Fork;Base.Garbagebag_box;Base.GasmaskFilter;Base.Glue;Base.GravyMix;Base.Hairgel;Base.Hairspray2;Base.Hinge;Base.InsectRepellent;Base.JarLid;Base.JigLure;Base.LightBulbBlue;Base.LightBulbBox;Base.LightBulbCyan;Base.LightBulbGreen;Base.LightBulbMagenta;Base.LightBulbOrange;Base.LightBulbPink;Base.LightBulbPurple;Base.LightBulbRed;Base.LightBulbYellow;Base.Lighter;Base.LighterBBQ;Base.LighterDisposable;Base.MagnesiumFirestarter;Base.MakeupEyeshadow;Base.MakeupFoundation;Base.Matches;Base.MinnowLure;Base.MotionSensor;50:Base.NutsBolts;Base.Pager;Base.PancakeMix;Base.PaperNapkins2;Base.PaperclipBox;Base.Pillow;Base.PremiumFishingLine;Base.RadioReceiver;Base.RadioTransmitter;Base.RatPoison;Base.Receiver;Base.Remote;Base.SlugRepellent;Base.SmallAnimalBone;Base.SmallHandle;Base.Soap2;Base.Sparklers;Base.Sponge;Base.Spoon;Base.Tarp;Base.Thread_Aramid;Base.Thread_Sinew;Base.Timer;Base.TimerCrafted;Base.TissueBox;Base.ToiletPaper;Base.Toothbrush;Base.TriggerCrafted;Base.Twine;Base.Vinegar2;Base.Vinegar_Jug;Base.WeldingRods;Base.Whetstone;Base.Woodglue;Base.Yeast;Base.Zipties] flags[IsExclusive;ItemCount;IsFull] mode:destroy mappers[itemTypes],
@@ -817,7 +817,7 @@ module BundleUp {
     craftRecipe UnpackSupplyBox {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.AdhesiveTapeBoxCrate;BundleUp.AluminumBox;BundleUp.AmplifierBox;BundleUp.BakingSodaBox;BundleUp.BatteryBoxCrate;BundleUp.BuckleBox;BundleUp.ButterKnifeBox;BundleUp.ButtonBox;BundleUp.CandleBoxCrate;BundleUp.CorrectionFluidBox;BundleUp.DoorknobBox;BundleUp.DuctTapeBoxCrate;BundleUp.ElectricWireBox;BundleUp.EpoxyBox;BundleUp.FiberglassTapeBox;BundleUp.FishingHookBoxCrate;BundleUp.FishingLineBox;BundleUp.ForkBox;BundleUp.Garbagebag_boxBox;BundleUp.GasmaskFilterBox;BundleUp.GlueBox;BundleUp.GravyMixBox;BundleUp.HairgelBox;BundleUp.Hairspray2Box;BundleUp.HingeBox;BundleUp.InsectRepellentBox;BundleUp.JarLidBox;BundleUp.JigLureBox;BundleUp.LightBulbBlueBox;BundleUp.LightBulbBoxCrate;BundleUp.LightBulbCyanBox;BundleUp.LightBulbGreenBox;BundleUp.LightBulbMagentaBox;BundleUp.LightBulbOrangeBox;BundleUp.LightBulbPinkBox;BundleUp.LightBulbPurpleBox;BundleUp.LightBulbRedBox;BundleUp.LightBulbYellowBox;BundleUp.LighterBox;BundleUp.LighterBBQBox;BundleUp.LighterDisposableBox;BundleUp.MagnesiumFirestarterBox;BundleUp.MakeupEyeshadowBox;BundleUp.MakeupFoundationBox;BundleUp.MatchesBox;BundleUp.MinnowLureBox;BundleUp.MotionSensorBox;BundleUp.PagerBox;BundleUp.PancakeMixBox;BundleUp.PaperNapkins2Box;BundleUp.PaperclipBoxCrate;BundleUp.PillowBox;BundleUp.PremiumFishingLineBox;BundleUp.RadioReceiverBox;BundleUp.RadioTransmitterBox;BundleUp.RatPoisonBox;BundleUp.ReceiverBox;BundleUp.RemoteBox;BundleUp.SlugRepellentBox;BundleUp.SmallAnimalBoneBox;BundleUp.SmallHandleBox;BundleUp.Soap2Box;BundleUp.SparklersBox;BundleUp.SpongeBox;BundleUp.SpoonBox;BundleUp.TarpBox;BundleUp.Thread_AramidBox;BundleUp.Thread_SinewBox;BundleUp.TimerBox;BundleUp.TimerCraftedBox;BundleUp.TissueBoxCrate;BundleUp.ToiletPaperBox;BundleUp.ToothbrushBox;BundleUp.TriggerCraftedBox;BundleUp.TwineBox;BundleUp.Vinegar2Box;BundleUp.Vinegar_JugBox;BundleUp.WeldingRodsBox;BundleUp.WhetstoneBox;BundleUp.WoodglueBox;BundleUp.YeastBox;BundleUp.ZiptiesBox] flags[IsExclusive;ItemCount] mappers[itemTypes],
@@ -914,7 +914,7 @@ module BundleUp {
     craftRecipe UnpackNutsBoltsBox {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.NutsBoltsBox] flags[IsExclusive;ItemCount],

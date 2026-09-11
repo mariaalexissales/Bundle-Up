@@ -10,7 +10,7 @@ module BundleUp {
     craftRecipe PackAmmoClipBox {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onTest = BUInv.testPackEmptyMagazine,
         category = Packing,
         inputs {
@@ -32,7 +32,7 @@ module BundleUp {
     craftRecipe UnpackAmmoClipBox {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.44ClipBox;BundleUp.JS14ClipBox;BundleUp.556ClipBox;BundleUp.45ClipBox;BundleUp.M14ClipBox;BundleUp.9mmClipBox] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
@@ -53,7 +53,7 @@ module BundleUp {
     craftRecipe PackCapGunCapCarton {
         timedAction = PackingBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 12 [Base.CapGunCapBox] flags[ItemCount],
@@ -66,7 +66,7 @@ module BundleUp {
     craftRecipe UnpackCapGunCapCarton {
         timedAction = UnPackBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.CapGunCapCarton] flags[IsExclusive;ItemCount],
@@ -79,7 +79,7 @@ module BundleUp {
     craftRecipe PackAmmoClipCarton {
         timedAction = PackingBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 12 [BundleUp.44ClipBox;BundleUp.JS14ClipBox;BundleUp.556ClipBox;BundleUp.45ClipBox;BundleUp.M14ClipBox;BundleUp.9mmClipBox] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
@@ -100,7 +100,7 @@ module BundleUp {
     craftRecipe UnpackAmmoClipCarton {
         timedAction = UnPackBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.44ClipCarton;BundleUp.JS14ClipCarton;BundleUp.556ClipCarton;BundleUp.45ClipCarton;BundleUp.M14ClipCarton;BundleUp.9mmClipCarton] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
@@ -121,7 +121,7 @@ module BundleUp {
     craftRecipe PackAmmoClipCase {
         timedAction = PackingBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 4 [BundleUp.44ClipCarton;BundleUp.JS14ClipCarton;BundleUp.556ClipCarton;BundleUp.45ClipCarton;BundleUp.M14ClipCarton;BundleUp.9mmClipCarton] flags[IsExclusive;ItemCount] mappers[ammoClipMap],
@@ -142,7 +142,7 @@ module BundleUp {
     craftRecipe UnpackAmmoClipCase {
         timedAction = UnPackBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.44ClipCase;BundleUp.JS14ClipCase;BundleUp.556ClipCase;BundleUp.45ClipCase;BundleUp.M14ClipCase;BundleUp.9mmClipCase] flags[IsExclusive;ItemCount] mappers[ammoClipMap],

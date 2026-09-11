@@ -10,7 +10,7 @@ module BundleUp {
     craftRecipe Tie5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -40,7 +40,7 @@ module BundleUp {
     craftRecipe Tie10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -70,7 +70,7 @@ module BundleUp {
     craftRecipe Untie5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR;BundleUp.SteelRodR;BundleUp.SteelRodSR;BundleUp.CopperSheetR;BundleUp.CopperSheetSR;BundleUp.GoldSheetR;BundleUp.GoldSheetSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
@@ -116,7 +116,7 @@ module BundleUp {
     craftRecipe Untie10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.PlankLR;BundleUp.PlankLSR;BundleUp.SheetMetalLR;BundleUp.SheetMetalLSR;BundleUp.IronPipesLR;BundleUp.IronPipesLSR;BundleUp.IronBarLR;BundleUp.IronBarLSR;BundleUp.SteelRodLR;BundleUp.SteelRodLSR;BundleUp.CopperSheetLR;BundleUp.CopperSheetLSR;BundleUp.GoldSheetLR;BundleUp.GoldSheetLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
@@ -162,7 +162,7 @@ module BundleUp {
     craftRecipe MergeTie {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 2 [BundleUp.PlankR;BundleUp.PlankSR;BundleUp.SheetMetalR;BundleUp.SheetMetalSR;BundleUp.IronPipesR;BundleUp.IronPipesSR;BundleUp.IronBarR;BundleUp.IronBarSR;BundleUp.SteelRodR;BundleUp.SteelRodSR;BundleUp.CopperSheetR;BundleUp.CopperSheetSR;BundleUp.GoldSheetR;BundleUp.GoldSheetSR] flags[IsExclusive;ItemCount] mappers[bundleTypes;ropeTypes],
@@ -208,7 +208,7 @@ module BundleUp {
     craftRecipe TieStock5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -240,7 +240,7 @@ module BundleUp {
     craftRecipe TieStock10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -272,7 +272,7 @@ module BundleUp {
     craftRecipe UntieStock5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.TreeBranchR;BundleUp.TreeBranchSR;BundleUp.WoodenRodR;BundleUp.WoodenRodSR;BundleUp.LargeBranchR;BundleUp.LargeBranchSR;BundleUp.SaplingR;BundleUp.SaplingSR;BundleUp.LongStickR;BundleUp.LongStickSR;BundleUp.MediumHandleR;BundleUp.MediumHandleSR;BundleUp.LargeHandleR;BundleUp.LargeHandleSR;BundleUp.LeadPipeR;BundleUp.LeadPipeSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
@@ -322,7 +322,7 @@ module BundleUp {
     craftRecipe UntieStock10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.TreeBranchLR;BundleUp.TreeBranchLSR;BundleUp.WoodenRodLR;BundleUp.WoodenRodLSR;BundleUp.LargeBranchLR;BundleUp.LargeBranchLSR;BundleUp.SaplingLR;BundleUp.SaplingLSR;BundleUp.LongStickLR;BundleUp.LongStickLSR;BundleUp.MediumHandleLR;BundleUp.MediumHandleLSR;BundleUp.LargeHandleLR;BundleUp.LargeHandleLSR;BundleUp.LeadPipeLR;BundleUp.LeadPipeLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
@@ -372,7 +372,7 @@ module BundleUp {
     craftRecipe MergeTieStock {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 2 [BundleUp.TreeBranchR;BundleUp.TreeBranchSR;BundleUp.WoodenRodR;BundleUp.WoodenRodSR;BundleUp.LargeBranchR;BundleUp.LargeBranchSR;BundleUp.SaplingR;BundleUp.SaplingSR;BundleUp.LongStickR;BundleUp.LongStickSR;BundleUp.MediumHandleR;BundleUp.MediumHandleSR;BundleUp.LargeHandleR;BundleUp.LargeHandleSR;BundleUp.LeadPipeR;BundleUp.LeadPipeSR] flags[IsExclusive;ItemCount] mappers[bundleTypes;ropeTypes],
@@ -422,7 +422,7 @@ module BundleUp {
     craftRecipe TieCan4 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -440,7 +440,7 @@ module BundleUp {
     craftRecipe UntieCan4 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.unpackEmptyGasCans,
         category = Packing,
         inputs {
@@ -463,7 +463,7 @@ module BundleUp {
     craftRecipe TieCanFull4 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -481,7 +481,7 @@ module BundleUp {
     craftRecipe UntieCanFull4 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.unpackFullGasCans,
         category = Packing,
         inputs {
@@ -505,7 +505,7 @@ module BundleUp {
     craftRecipe TieHide5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -561,7 +561,7 @@ module BundleUp {
     craftRecipe TieHide10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -617,7 +617,7 @@ module BundleUp {
     craftRecipe UntieHide5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.HideCalfAngusR;BundleUp.HideCalfAngusSR;BundleUp.HideCowAngusR;BundleUp.HideCowAngusSR;BundleUp.HidePigBlackR;BundleUp.HidePigBlackSR;BundleUp.HidePigletBlackR;BundleUp.HidePigletBlackSR;BundleUp.HideCalfHolsteinR;BundleUp.HideCalfHolsteinSR;BundleUp.HideCowHolsteinR;BundleUp.HideCowHolsteinSR;BundleUp.HideCalfSimmentalR;BundleUp.HideCalfSimmentalSR;BundleUp.HideCowSimmentalR;BundleUp.HideCowSimmentalSR;BundleUp.HideDeerR;BundleUp.HideDeerSR;BundleUp.HideFawnR;BundleUp.HideFawnSR;BundleUp.HideRabbitR;BundleUp.HideRabbitSR;BundleUp.HidePigLandraceR;BundleUp.HidePigLandraceSR;BundleUp.HidePigletLandraceR;BundleUp.HidePigletLandraceSR;BundleUp.HideLambR;BundleUp.HideLambSR;BundleUp.HideSheepR;BundleUp.HideSheepSR;BundleUp.HideRabbitGreyR;BundleUp.HideRabbitGreySR;BundleUp.HideRaccoonR;BundleUp.HideRaccoonSR;BundleUp.HideCrudeLargeR;BundleUp.HideCrudeLargeSR;BundleUp.HideCrudeMediumR;BundleUp.HideCrudeMediumSR;BundleUp.HideCrudeSmallR;BundleUp.HideCrudeSmallSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
@@ -715,7 +715,7 @@ module BundleUp {
     craftRecipe UntieHide10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.HideCalfAngusLR;BundleUp.HideCalfAngusLSR;BundleUp.HideCowAngusLR;BundleUp.HideCowAngusLSR;BundleUp.HidePigBlackLR;BundleUp.HidePigBlackLSR;BundleUp.HidePigletBlackLR;BundleUp.HidePigletBlackLSR;BundleUp.HideCalfHolsteinLR;BundleUp.HideCalfHolsteinLSR;BundleUp.HideCowHolsteinLR;BundleUp.HideCowHolsteinLSR;BundleUp.HideCalfSimmentalLR;BundleUp.HideCalfSimmentalLSR;BundleUp.HideCowSimmentalLR;BundleUp.HideCowSimmentalLSR;BundleUp.HideDeerLR;BundleUp.HideDeerLSR;BundleUp.HideFawnLR;BundleUp.HideFawnLSR;BundleUp.HideRabbitLR;BundleUp.HideRabbitLSR;BundleUp.HidePigLandraceLR;BundleUp.HidePigLandraceLSR;BundleUp.HidePigletLandraceLR;BundleUp.HidePigletLandraceLSR;BundleUp.HideLambLR;BundleUp.HideLambLSR;BundleUp.HideSheepLR;BundleUp.HideSheepLSR;BundleUp.HideRabbitGreyLR;BundleUp.HideRabbitGreyLSR;BundleUp.HideRaccoonLR;BundleUp.HideRaccoonLSR;BundleUp.HideCrudeLargeLR;BundleUp.HideCrudeLargeLSR;BundleUp.HideCrudeMediumLR;BundleUp.HideCrudeMediumLSR;BundleUp.HideCrudeSmallLR;BundleUp.HideCrudeSmallLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
@@ -813,7 +813,7 @@ module BundleUp {
     craftRecipe MergeTieHide {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 2 [BundleUp.HideCalfAngusR;BundleUp.HideCalfAngusSR;BundleUp.HideCowAngusR;BundleUp.HideCowAngusSR;BundleUp.HidePigBlackR;BundleUp.HidePigBlackSR;BundleUp.HidePigletBlackR;BundleUp.HidePigletBlackSR;BundleUp.HideCalfHolsteinR;BundleUp.HideCalfHolsteinSR;BundleUp.HideCowHolsteinR;BundleUp.HideCowHolsteinSR;BundleUp.HideCalfSimmentalR;BundleUp.HideCalfSimmentalSR;BundleUp.HideCowSimmentalR;BundleUp.HideCowSimmentalSR;BundleUp.HideDeerR;BundleUp.HideDeerSR;BundleUp.HideFawnR;BundleUp.HideFawnSR;BundleUp.HideRabbitR;BundleUp.HideRabbitSR;BundleUp.HidePigLandraceR;BundleUp.HidePigLandraceSR;BundleUp.HidePigletLandraceR;BundleUp.HidePigletLandraceSR;BundleUp.HideLambR;BundleUp.HideLambSR;BundleUp.HideSheepR;BundleUp.HideSheepSR;BundleUp.HideRabbitGreyR;BundleUp.HideRabbitGreySR;BundleUp.HideRaccoonR;BundleUp.HideRaccoonSR;BundleUp.HideCrudeLargeR;BundleUp.HideCrudeLargeSR;BundleUp.HideCrudeMediumR;BundleUp.HideCrudeMediumSR;BundleUp.HideCrudeSmallR;BundleUp.HideCrudeSmallSR] flags[IsExclusive;ItemCount] mappers[bundleTypes;ropeTypes],
@@ -912,7 +912,7 @@ module BundleUp {
     craftRecipe TieBuild5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -938,7 +938,7 @@ module BundleUp {
     craftRecipe TieBuildFull5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -970,7 +970,7 @@ module BundleUp {
     craftRecipe TieBuild10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -996,7 +996,7 @@ module BundleUp {
     craftRecipe TieBuildFull10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -1028,7 +1028,7 @@ module BundleUp {
     craftRecipe UntieBuild5 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.SandbagR;BundleUp.SandbagSR;BundleUp.DirtbagR;BundleUp.DirtbagSR;BundleUp.ClaybagR;BundleUp.ClaybagSR;BundleUp.GravelbagR;BundleUp.GravelbagSR;BundleUp.CompostBagR;BundleUp.CompostBagSR;BundleUp.GrassBagR;BundleUp.GrassBagSR;BundleUp.AnimalFeedBagR;BundleUp.AnimalFeedBagSR;BundleUp.FertilizerBagR;BundleUp.FertilizerBagSR;BundleUp.ConcretePowderR;BundleUp.ConcretePowderSR;BundleUp.PlasterPowderR;BundleUp.PlasterPowderSR;BundleUp.WallpaperPasteR;BundleUp.WallpaperPasteSR;BundleUp.GlassPanelR;BundleUp.GlassPanelSR;BundleUp.LargePlankR;BundleUp.LargePlankSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],
@@ -1098,7 +1098,7 @@ module BundleUp {
     craftRecipe UntieBuild10 {
         timedAction = Making,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.SandbagLR;BundleUp.SandbagLSR;BundleUp.DirtbagLR;BundleUp.DirtbagLSR;BundleUp.ClaybagLR;BundleUp.ClaybagLSR;BundleUp.GravelbagLR;BundleUp.GravelbagLSR;BundleUp.CompostBagLR;BundleUp.CompostBagLSR;BundleUp.GrassBagLR;BundleUp.GrassBagLSR;BundleUp.AnimalFeedBagLR;BundleUp.AnimalFeedBagLSR;BundleUp.FertilizerBagLR;BundleUp.FertilizerBagLSR;BundleUp.ConcretePowderLR;BundleUp.ConcretePowderLSR;BundleUp.PlasterPowderLR;BundleUp.PlasterPowderLSR;BundleUp.WallpaperPasteLR;BundleUp.WallpaperPasteLSR;BundleUp.GlassPanelLR;BundleUp.GlassPanelLSR;BundleUp.LargePlankLR;BundleUp.LargePlankLSR] flags[IsExclusive;ItemCount] mappers[ropeTypes;itemTypes],

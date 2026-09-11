@@ -10,7 +10,7 @@ module BundleUp {
     craftRecipe Sack {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn],
@@ -27,7 +27,7 @@ module BundleUp {
     craftRecipe Unsack {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.Sack_Sack] flags[IsExclusive;ItemCount] mappers[itemTypes],
@@ -44,7 +44,7 @@ module BundleUp {
     craftRecipe BagSmall {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[bagTypes],
@@ -63,7 +63,7 @@ module BundleUp {
     craftRecipe UnbagSmall {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small;BundleUp.Coke_Small] flags[IsExclusive;ItemCount] mappers[bagTypes],
@@ -82,7 +82,7 @@ module BundleUp {
     craftRecipe BagLarge {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[bagTypes],
@@ -101,7 +101,7 @@ module BundleUp {
     craftRecipe UnbagLarge {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.GoldScrap_Large;BundleUp.SilverScrap_Large;BundleUp.Coke_Large] flags[IsExclusive;ItemCount] mappers[bagTypes],
@@ -120,7 +120,7 @@ module BundleUp {
     craftRecipe MergeSack {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 2 [BundleUp.GoldScrap_Small;BundleUp.SilverScrap_Small;BundleUp.Coke_Small] flags[IsExclusive;ItemCount] mappers[bagTypes],
@@ -139,7 +139,7 @@ module BundleUp {
     craftRecipe PackScrapSack {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[scrapTypes],
@@ -166,7 +166,7 @@ module BundleUp {
     craftRecipe UnpackScrapSack {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.ElectronicsScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] flags[IsExclusive;ItemCount] mappers[scrapTypes],
@@ -193,7 +193,7 @@ module BundleUp {
     craftRecipe PackSeedPouch {
         timedAction = PackingBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 10 [Base.BarleyBagSeed;Base.BasilBagSeed;Base.BellPepperBagSeed;Base.BlackSageBagSeed;Base.BroadleafPlantainBagSeed;Base.BroccoliBagSeed2;Base.CabbageBagSeed2;Base.CarrotBagSeed2;Base.CauliflowerBagSeed;Base.ChamomileBagSeed;Base.ChivesBagSeed;Base.CilantroBagSeed;Base.ComfreyBagSeed;Base.CommonMallowBagSeed;Base.CornBagSeed;Base.CucumberBagSeed;Base.FlaxBagSeed;Base.GarlicBagSeed;Base.GreenpeasBagSeed;Base.HabaneroBagSeed;Base.HempBagSeed;Base.HopsBagSeed;Base.JalapenoBagSeed;Base.KaleBagSeed;Base.LavenderBagSeed;Base.LeekBagSeed;Base.LemonGrassBagSeed;Base.LettuceBagSeed;Base.MarigoldBagSeed;Base.MintBagSeed;Base.OnionBagSeed;Base.OreganoBagSeed;Base.ParsleyBagSeed;Base.PoppyBagSeed;Base.PotatoBagSeed2;Base.PumpkinBagSeed;Base.RedRadishBagSeed2;Base.RoseBagSeed;Base.RosemaryBagSeed;Base.RyeBagSeed;Base.SageBagSeed;Base.SoybeansBagSeed;Base.SpinachBagSeed;Base.StrewberrieBagSeed2;Base.SugarBeetBagSeed;Base.SunflowerBagSeed;Base.SweetPotatoBagSeed;Base.ThymeBagSeed;Base.TobaccoBagSeed;Base.TomatoBagSeed2;Base.TurnipBagSeed;Base.WatermelonBagSeed;Base.WheatBagSeed;Base.WildGarlicBagSeed;Base.ZucchiniBagSeed] flags[IsExclusive;ItemCount] mappers[seedMap],
@@ -263,7 +263,7 @@ module BundleUp {
     craftRecipe UnpackSeedPouch {
         timedAction = UnPackBox,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.BarleyBagSeedPouch;BundleUp.BasilBagSeedPouch;BundleUp.BellPepperBagSeedPouch;BundleUp.BlackSageBagSeedPouch;BundleUp.BroadleafPlantainBagSeedPouch;BundleUp.BroccoliBagSeed2Pouch;BundleUp.CabbageBagSeed2Pouch;BundleUp.CarrotBagSeed2Pouch;BundleUp.CauliflowerBagSeedPouch;BundleUp.ChamomileBagSeedPouch;BundleUp.ChivesBagSeedPouch;BundleUp.CilantroBagSeedPouch;BundleUp.ComfreyBagSeedPouch;BundleUp.CommonMallowBagSeedPouch;BundleUp.CornBagSeedPouch;BundleUp.CucumberBagSeedPouch;BundleUp.FlaxBagSeedPouch;BundleUp.GarlicBagSeedPouch;BundleUp.GreenpeasBagSeedPouch;BundleUp.HabaneroBagSeedPouch;BundleUp.HempBagSeedPouch;BundleUp.HopsBagSeedPouch;BundleUp.JalapenoBagSeedPouch;BundleUp.KaleBagSeedPouch;BundleUp.LavenderBagSeedPouch;BundleUp.LeekBagSeedPouch;BundleUp.LemonGrassBagSeedPouch;BundleUp.LettuceBagSeedPouch;BundleUp.MarigoldBagSeedPouch;BundleUp.MintBagSeedPouch;BundleUp.OnionBagSeedPouch;BundleUp.OreganoBagSeedPouch;BundleUp.ParsleyBagSeedPouch;BundleUp.PoppyBagSeedPouch;BundleUp.PotatoBagSeed2Pouch;BundleUp.PumpkinBagSeedPouch;BundleUp.RedRadishBagSeed2Pouch;BundleUp.RoseBagSeedPouch;BundleUp.RosemaryBagSeedPouch;BundleUp.RyeBagSeedPouch;BundleUp.SageBagSeedPouch;BundleUp.SoybeansBagSeedPouch;BundleUp.SpinachBagSeedPouch;BundleUp.StrewberrieBagSeed2Pouch;BundleUp.SugarBeetBagSeedPouch;BundleUp.SunflowerBagSeedPouch;BundleUp.SweetPotatoBagSeedPouch;BundleUp.ThymeBagSeedPouch;BundleUp.TobaccoBagSeedPouch;BundleUp.TomatoBagSeed2Pouch;BundleUp.TurnipBagSeedPouch;BundleUp.WatermelonBagSeedPouch;BundleUp.WheatBagSeedPouch;BundleUp.WildGarlicBagSeedPouch;BundleUp.ZucchiniBagSeedPouch] flags[IsExclusive;ItemCount] mappers[seedMap],
@@ -334,7 +334,7 @@ module BundleUp {
     craftRecipe SackBuild10 {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn],
@@ -352,7 +352,7 @@ module BundleUp {
     craftRecipe SackBuild25 {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn],
@@ -370,7 +370,7 @@ module BundleUp {
     craftRecipe UnsackBuild10 {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.FlatStoneSack;BundleUp.LargeStoneSack] flags[IsExclusive;ItemCount] mappers[itemTypes],
@@ -388,7 +388,7 @@ module BundleUp {
     craftRecipe UnsackBuild25 {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.SharpedStoneSack;BundleUp.ClaySack] flags[IsExclusive;ItemCount] mappers[itemTypes],
@@ -407,7 +407,7 @@ module BundleUp {
     craftRecipe PackOreSack10 {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[oreTypes],
@@ -426,7 +426,7 @@ module BundleUp {
     craftRecipe UnpackOreSack10 {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.IronOreSack;BundleUp.CopperOreSack;BundleUp.IronBloomSack] flags[IsExclusive;ItemCount] mappers[oreTypes],
@@ -445,7 +445,7 @@ module BundleUp {
     craftRecipe PackOreSack25 {
         timedAction = PutInBag,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[oreTypes],
@@ -468,7 +468,7 @@ module BundleUp {
     craftRecipe UnpackOreSack25 {
         timedAction = UnPackSack,
         time = 5,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.HematiteSack;BundleUp.HematiteLargeSack;BundleUp.MalachiteSack;BundleUp.MalachiteLargeSack;BundleUp.LimestoneSack;BundleUp.QuicklimeSack;BundleUp.CharcoalSack] flags[IsExclusive;ItemCount] mappers[oreTypes],

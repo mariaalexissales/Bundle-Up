@@ -5,7 +5,7 @@ module BundleUp {
 
     craftRecipe BoxSmall {
         time = 20,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 25 [Base.Nails;Base.Screws] mappers[boxTypes],
@@ -21,7 +21,7 @@ module BundleUp {
 
     craftRecipe BoxMedium {
         time = 20,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 50 [Base.Nails;Base.Screws] mappers[boxTypes],
@@ -37,7 +37,7 @@ module BundleUp {
 
     craftRecipe UnboxSmall {
         time = 20,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.NailsBox_Small;BundleUp.ScrewsBox_Small] mappers[boxTypes],
@@ -53,7 +53,7 @@ module BundleUp {
 
     craftRecipe UnboxMedium {
         time = 20,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
             item 1 [BundleUp.NailsBox_Medium;BundleUp.ScrewsBox_Medium] mappers[boxTypes],

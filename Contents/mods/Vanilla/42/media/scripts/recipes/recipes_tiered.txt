@@ -11,7 +11,7 @@ module BundleUp {
     craftRecipe PackFoodCase {
         timedAction = PackingBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.carryFoodAge,
         onTest = BUInv.testPackPerishable,
         category = Packing,
@@ -194,7 +194,7 @@ module BundleUp {
     craftRecipe UnpackFoodCase {
         timedAction = UnPackBox,
         time = 50,
-        Tags = InHandCraft;CanBeDoneInDark,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         onCreate = BUInv.carryFoodAge,
         category = Packing,
         inputs {
