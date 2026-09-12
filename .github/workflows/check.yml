@@ -1,0 +1,42 @@
+name: checks
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+
+jobs:
+  generated-files:
+    name: generated files are current
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # generate_tiers.py is stdlib-only, so there is nothing to install.
+      # --check exits 1 and names the stale files if regenerating would change them.
+      - name: tiers are up to date
+        run: python tools/generate_tiers.py --check
+
+      # malformed translation json fails silently in game: every name just
+      # renders as its raw key. cheap to catch here instead.
+      - name: translation files parse
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+
+          failed = []
+          for path in sorted(Path("Contents").rglob("Translate/*/*.json")):
+              try:
+                  json.loads(path.read_text(encoding="utf-8"))
+              except ValueError as err:
+                  failed.append(f"{path}: {err}")
+
+          for line in failed:
+              print(line, file=sys.stderr)
+          sys.exit(1 if failed else 0)
+          PY
