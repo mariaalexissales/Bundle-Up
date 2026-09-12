@@ -135,10 +135,9 @@ local function BU_sweepShells()
 end
 
 function BUInv.stripMintedShells(craftRecipeData, character)
-    -- an ItemCount input is drained of every use, so ReplaceOnDeplete fires and
-    -- each full bag hands back its empty sack too. no recipe flag suppresses
-    -- that branch, and onCreate runs before processDestroyAndUsedItems mints
-    -- them - so note where each one will land and take it on the next tick.
+    -- no recipe flag reaches ReplaceOnDeplete, so the minted sacks have to go in
+    -- lua. onCreate runs before processDestroyAndUsedItems creates them - note
+    -- where each will land, take it next tick.
     local consumed = craftRecipeData:getAllConsumedItems()
     for i = 0, consumed:size() - 1 do
         local item = consumed:get(i)
