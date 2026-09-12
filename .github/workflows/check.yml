@@ -21,6 +21,11 @@ jobs:
       - name: tiers are up to date
         run: python tools/generate_tiers.py --check
 
+      # page assignment is derived from the weight data, so a new tier batch
+      # would otherwise land its sliders on the wrong sandbox page in silence.
+      - name: sandbox options are up to date
+        run: python tools/generate_sandbox.py --check
+
       # malformed translation json fails silently in game: every name just
       # renders as its raw key. cheap to catch here instead.
       - name: translation files parse
