@@ -43,7 +43,7 @@ function BUUI_Panel:new(x, y, width, height, player)
     o.player = player
     o.playerNum = player:getPlayerNum()
     o.title = getText("IGUI_BUUI_Title")
-    o.bundling = true
+    o.mode = BUUI.MODE.BUNDLE
     o.rows = {}
     o.ticks = 0
     o.resizable = true
@@ -66,6 +66,13 @@ function BUUI_Panel:bands()
     local footerY = self.height - self:resizeWidgetHeight() - FOOTER_HEIGHT
     return tabY, barY, listY, footerY
 end
+
+-- a third tab is one too many for "and/or", which would fold merge into the unbundle half.
+local BUUI_LABELS = {
+    [BUUI.MODE.BUNDLE]   = { items = "IGUI_BUUI_BundleItems",   all = "IGUI_BUUI_BundleAll",   empty = "IGUI_BUUI_Empty" },
+    [BUUI.MODE.UNBUNDLE] = { items = "IGUI_BUUI_UnbundleItems", all = "IGUI_BUUI_UnbundleAll", empty = "IGUI_BUUI_EmptyUnbundle" },
+    [BUUI.MODE.MERGE]    = { items = "IGUI_BUUI_MergeItems",    all = "IGUI_BUUI_MergeAll",    empty = "IGUI_BUUI_EmptyMerge" },
+}
 
 -- both footer buttons swap label with the tab and one of them turns into Stop, so each
 -- is sized for the widest text it can ever hold and the strip never reflows.
@@ -97,13 +104,18 @@ function BUUI_Panel:createChildren()
 
     self.tabBundle = BUUI_Button:new(PAD, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Bundle"), self, BUUI_Panel.onTab)
     self.tabBundle:sizeToTitle(28)
-    self.tabBundle.bundling = true
+    self.tabBundle.mode = BUUI.MODE.BUNDLE
     self:attach(self.tabBundle)
 
     self.tabUnbundle = BUUI_Button:new(self.tabBundle:getRight() + 4, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Unbundle"), self, BUUI_Panel.onTab)
     self.tabUnbundle:sizeToTitle(28)
-    self.tabUnbundle.bundling = false
+    self.tabUnbundle.mode = BUUI.MODE.UNBUNDLE
     self:attach(self.tabUnbundle)
+
+    self.tabMerge = BUUI_Button:new(self.tabUnbundle:getRight() + 4, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Merge"), self, BUUI_Panel.onTab)
+    self.tabMerge:sizeToTitle(28)
+    self.tabMerge.mode = BUUI.MODE.MERGE
+    self:attach(self.tabMerge)
 
     self.refreshButton = BUUI_Button:new(0, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_RefreshLabel"), self, BUUI_Panel.onRefresh)
     self.refreshButton:sizeToTitle(20)
@@ -129,13 +141,13 @@ function BUUI_Panel:createChildren()
 
     self.bundleAll = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleAll"), self, BUUI_Panel.onBundleAll)
     self.bundleAll:setWidth(BUUI_labelWidth(self.bundleAll,
-        "IGUI_BUUI_BundleAll", "IGUI_BUUI_UnbundleAll", "IGUI_BUUI_Stop"))
+        "IGUI_BUUI_BundleAll", "IGUI_BUUI_UnbundleAll", "IGUI_BUUI_MergeAll", "IGUI_BUUI_Stop"))
     self.bundleAll:setX(self.width - self.bundleAll:getWidth() - PAD)
     self:attach(self.bundleAll, FOOTER)
 
     self.bundleItems = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleItems"), self, BUUI_Panel.onBundleItems)
     self.bundleItems:setWidth(BUUI_labelWidth(self.bundleItems,
-        "IGUI_BUUI_BundleItems", "IGUI_BUUI_UnbundleItems", "IGUI_BUUI_Stop"))
+        "IGUI_BUUI_BundleItems", "IGUI_BUUI_UnbundleItems", "IGUI_BUUI_MergeItems", "IGUI_BUUI_Stop"))
     self.bundleItems:setX(self.bundleAll:getX() - self.bundleItems:getWidth() - GAP)
     self:attach(self.bundleItems, FOOTER)
 
@@ -143,7 +155,7 @@ function BUUI_Panel:createChildren()
 end
 
 function BUUI_Panel:onTab(button)
-    self.bundling = button.bundling
+    self.mode = button.mode
     self:refresh()
 end
 
@@ -159,7 +171,7 @@ function BUUI_Panel:refresh()
         if row.key then dialled[row.key] = row.quantity end
     end
 
-    local rows, containers = BUUI.resolveRows(self.player, self.bundling)
+    local rows, containers = BUUI.resolveRows(self.player, self.mode)
     self.rows = rows
     self.sourceText = self:describeSources(containers)
 
@@ -180,8 +192,8 @@ end
 function BUUI_Panel:updateFooter()
     if not self.bundleItems then return end
 
-    self.bundleItems.title = getText(self.bundling and "IGUI_BUUI_BundleItems" or "IGUI_BUUI_UnbundleItems")
-    self.bundleAll.title = getText(self.bundling and "IGUI_BUUI_BundleAll" or "IGUI_BUUI_UnbundleAll")
+    self.bundleItems.title = getText(BUUI_LABELS[self.mode].items)
+    self.bundleAll.title = getText(BUUI_LABELS[self.mode].all)
 
     -- only the button that started the batch becomes Stop. one that outlived its window
     -- has none, and falls to Bundle All so a reopened panel can still cancel it.
@@ -282,7 +294,7 @@ function BUUI_Panel:onBundleAll()
     end
 
     self.runningButton = self.bundleAll
-    BUUI.Queue.startAll(self.player, self.bundling,
+    BUUI.Queue.startAll(self.player, self.mode,
         function() self:refresh() end,
         function() self:onBatchFinished() end)
     self:refresh()
@@ -291,8 +303,9 @@ end
 function BUUI_Panel:prerender()
     ISCollapsableWindow.prerender(self)
 
-    self.tabBundle.selected = self.bundling
-    self.tabUnbundle.selected = not self.bundling
+    self.tabBundle.selected = self.mode == BUUI.MODE.BUNDLE
+    self.tabUnbundle.selected = self.mode == BUUI.MODE.UNBUNDLE
+    self.tabMerge.selected = self.mode == BUUI.MODE.MERGE
 
     local _, barY, listY, footerY = self:bands()
     local inner = self.width - PAD * 2
@@ -314,7 +327,7 @@ function BUUI_Panel:render()
     self:drawText(self.sourceText or "", PAD + GAP, barY + 4, COL_TEXT.r, COL_TEXT.g, COL_TEXT.b, 1, UIFont.Small)
 
     if #self.rows == 0 then
-        local empty = getText(self.bundling and "IGUI_BUUI_Empty" or "IGUI_BUUI_EmptyUnbundle")
+        local empty = getText(BUUI_LABELS[self.mode].empty)
         local width = getTextManager():MeasureStringX(UIFont.Small, empty)
         local height = footerY - listY - GAP
         self:drawText(empty, (self.width - width) / 2, listY + height / 2 - 8,

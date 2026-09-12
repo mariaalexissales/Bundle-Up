@@ -3,11 +3,13 @@
 ----------
 
 require "BUUI_Index"
+require "TimedActions/ISConsolidateDrainable"
 
 BUUI = BUUI or {}
 BUUI.Queue = BUUI.Queue or {}
 
 local BUUI_active = nil
+local BUUI_stepMerge
 
 local function BUUI_snapshot(player)
     local seen = {}
@@ -129,6 +131,11 @@ local function BUUI_step()
     end
 
     local row = job.row
+    if row.entry.merge then
+        BUUI_stepMerge(job, row)
+        return
+    end
+
     local source, sample, containers = BUUI_nextSample(job)
     if not source then
         job.remaining = 0
@@ -195,6 +202,74 @@ local function BUUI_step()
     ISCraftingUI.ReturnItemsToOriginalContainer(job.player, putBack)
 end
 
+local function BUUI_noteHome(job, item)
+    local container = item:getContainer()
+    if not container or container == job.player:getInventory() then return end
+
+    job.homes = job.homes or {}
+    for _, home in ipairs(job.homes) do
+        if home.item == item then return end
+    end
+    job.homes[#job.homes + 1] = { item = item, container = container }
+end
+
+local function BUUI_returnHomes(job)
+    for _, home in ipairs(job.homes or {}) do
+        -- whatever was poured dry is gone by now, so the transfer has to tolerate it.
+        local back = ISInventoryTransferUtil.newInventoryTransferAction(
+            job.player, home.item, job.player:getInventory(), home.container, nil)
+        back:setAllowMissingItems(true)
+        ISTimedActionQueue.add(back)
+    end
+    job.homes = nil
+end
+
+-- a merge has no recipe for HandcraftLogic to run, and it cannot be queued in bulk
+-- either: ISConsolidateDrainable reads both fill levels in its constructor, so each
+-- step is planned and built only once the one before it has finished. it carries no
+-- setOnComplete, hence the perform wrapper.
+function BUUI_stepMerge(job, row)
+    local source = row.sources[1]
+    local step = nil
+
+    if source then
+        local containers = ISInventoryPaneContextMenu.getContainers(job.player)
+        step = BU.Merge.plan(BU.Merge.gather(containers, source.fullType)).steps[1]
+    end
+
+    if not step then
+        job.remaining = 0
+        BUUI_returnHomes(job)
+        BUUI_step()
+        return
+    end
+
+    BUUI_noteHome(job, step.from)
+    BUUI_noteHome(job, step.into)
+
+    ISInventoryPaneContextMenu.transferIfNeeded(job.player, step.from)
+    ISInventoryPaneContextMenu.transferIfNeeded(job.player, step.into)
+
+    local action = ISConsolidateDrainable:new(job.player, step.from, step.into, nil)
+    local perform = action.perform
+    action.perform = function(self)
+        perform(self)
+
+        -- stopping clears the queue, but an action already under way still reports
+        -- back. without this the stale callback drives the next batch.
+        if BUUI_active ~= job then return end
+
+        job.done = job.done + 1
+        job.remaining = job.remaining - 1
+        if job.remaining <= 0 then BUUI_returnHomes(job) end
+        if job.onProgress then job.onProgress(job) end
+
+        BUUI_step()
+    end
+
+    ISTimedActionQueue.add(action)
+end
+
 function BUUI.Queue.isRunning()
     return BUUI_active ~= nil
 end
@@ -254,11 +329,11 @@ end
 -- Bundle All cannot be planned up front: Tie5 and Tie10 compete for the same planks
 -- and getPossibleCraftCount cannot see crafts that have not happened. so each batch
 -- finishes before the next row is chosen.
-function BUUI.Queue.startAll(player, bundling, onProgress, onFinished)
+function BUUI.Queue.startAll(player, mode, onProgress, onFinished)
     local attempted = {}
 
     local function nextRow(job)
-        local rows = BUUI.resolveRows(player, bundling)
+        local rows = BUUI.resolveRows(player, mode)
         for _, row in ipairs(rows) do
             -- row.key is the only thing separating the rope twins: Untie5 takes both
             -- plank bundles and they share a name, so keying on that would skip one.
