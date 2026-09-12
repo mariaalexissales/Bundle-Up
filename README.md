@@ -4,7 +4,7 @@
 
 **A Project Zomboid inventory-compaction mod — 1,020 item definitions, 118 crafting recipes and ~5,200 lines of Lua, shipped on the Steam Workshop and maintained across 49 merged PRs.**
 
-The visible half packs a thousand vanilla items into bundles, boxes, sacks and cartons, then unpacks them back. The half that took the actual work is the part nobody sees: getting weights patched into script items *before* the engine deserializes a save, keeping spoilage math honest across a reload, and injecting loot into shared tables without breaking when another mod shifts them out from under you.
+The visible half packs a thousand vanilla items into bundles, boxes, sacks and cartons, then unpacks them back. The half that took the actual work is the part nobody sees: getting weights patched into script items *before* the engine deserializes a save, keeping spoilage math honest across a reload, and injecting loot into shared tables that another mod is rewriting on the same event.
 
 Project Zomboid's modding layer has no formal API and no reference docs. Most of what follows is the record of finding out how it behaves by reading the game's own Lua and watching things break.
 
@@ -27,6 +27,8 @@ Put 99 nails in a box and half your base goes missing to server chunk rot. Sprea
 
 An optional UI add-on ships in the same subscription. The base mod has no dependencies and isn't gaining any.
 
+One load-order note, if you also run [Remove Vanilla Anything](https://github.com/mariaalexissales/Remove-Vanilla-Anything): both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Neither order is broken, but only one of them is probably what you meant.
+
 ---
 
 ## How it's put together
@@ -44,7 +46,7 @@ The `shared` / `client` / `server` split is deliberate and load-bearing:
 
 - **`shared/`** — weight and spoilage data, because a dedicated server has to arrive at the same numbers its clients do.
 - **`client/`** — inventory walks, which only ever touch what the local player can actually see.
-- **`server/`** — loot injection, 1,405 lines of it across 21 distribution calls.
+- **`server/`** — loot injection, 1,469 lines of it across 20 distribution calls.
 
 ---
 
@@ -69,6 +71,23 @@ Events.OnGameStart.Add(BU.applyWeights)
 ```
 
 Every event registration in the mod is guarded like that, so a build that doesn't have the event degrades instead of taking the whole file down with a nil index. `OnGameStart` stays on as a harmless re-run.
+
+Loot is the same lesson inverted, and it cost a lot more to learn. Spawn rates also come from sandbox sliders, so `OnPreDistributionMerge` looks like the obvious hook — it is named after the thing it wants to change and it fires before the loot tables are read. It is wrong. `IsoWorld.init()` fires the three merge events at bytecode offsets 2051–2066 but does not read `map_sand.bin` until offset 2126, where `SandboxOptions.load()` ends in `toLua()`.
+
+That gap is why the bug hid for so long. On a **new game** a merge handler sees the player's real settings, because the new-game screen already ran `toLua()`. On **every later load of that save** it sees nothing but the declared defaults — and since `SandboxVars.BundleUp` exists either way, a `if not sv then return end` guard catches none of it. Set loot to Double, play, quit, come back, and the rate silently reverts with no error anywhere.
+
+`OnInitGlobalModData` — the right answer for weights — is worse still here. It lands *after* `ItemPickerJava.Parse()` has snapshotted the tables into Java, so it can never reach loot at all.
+
+`OnGameStart` runs from `IngameState`, after `IsoWorld.init()` has returned, so it is the first event where the settings are real. The cost of arriving that late is that Java already has its copy, and rebuilding it takes the call vanilla's own admin panel makes after a sandbox change:
+
+```lua
+local rebuilt = false
+if IsoWorld and IsoWorld.parseDistributions then
+    rebuilt = pcall(function() IsoWorld.parseDistributions() end)
+end
+```
+
+Arriving after every other mod has loaded also means arriving after they have rewritten the arrays. The fix stopped recording *where* its entries went — an index another mod is free to invalidate — and started recording *what* it inserts. Every name is `BundleUp.*`, vanilla has none of them, and each lands at most once per array, so removing by name is an exact undo and the whole pass becomes re-runnable. A spawn rate of None now drops the entry instead of writing a weight of zero into a vanilla table.
 
 ### Not calling the API is sometimes the fix
 

@@ -2,35 +2,19 @@
 --ESTRAL--
 ----------
 
-local ProceduralDistributions_list = ProceduralDistributions.list
 local table_insert = table.insert
 
--- SandboxVars.BundleUp is nil at file-load time (initSandboxVars() hasn't run yet),
--- so items go in at base weight now and get recorded here for BU_applySpawnRates()
--- to rescale in place once the sandbox options actually exist.
-local registry = {}
+-- Nothing goes into ProceduralDistributions here. SandboxVars.BundleUp does not exist at
+-- file-load time, and by the time it does IsoWorld.init() has already handed these tables
+-- to Java -- see the note above the event registrations at the bottom. So these calls only
+-- record what to insert; the insert itself happens on OnGameStart at the final weight.
+local plan = {}
+local owned = {}
 
 local function BU_applyDistribution(option, items, weights)
-    local slots = registry[option]
-    if not slots then
-        slots = {}
-        registry[option] = slots
-    end
-    for tableName, weight in pairs(weights) do
-        local distribution = ProceduralDistributions_list[tableName]
-        local containerItems = distribution and distribution.items
-        if containerItems then
-            for i = 1, #items do
-                table_insert(containerItems, items[i])
-                table_insert(containerItems, weight)
-                slots[#slots + 1] = {
-                    items = containerItems,
-                    index = #containerItems,
-                    name  = items[i],
-                    base  = weight,
-                }
-            end
-        end
+    plan[#plan + 1] = { option = option, items = items, weights = weights }
+    for i = 1, #items do
+        owned[items[i]] = true
     end
 end
 
@@ -1378,28 +1362,108 @@ local function BU_multiplierFor(sv, option)
     return SCALE[sv.SpawnDefault or DEFAULT_VALUE] or 1.0
 end
 
--- Recomputed from the recorded base weight each time, so re-running never compounds.
-local function BU_applySpawnRates()
+-- Every name we insert is BundleUp.*, vanilla has none of them, and each lands at most
+-- once per array -- so removing by name is an exact undo of a previous run. That is why no
+-- array index is recorded anywhere: Remove Vanilla Anything rewrites these same arrays in
+-- place on the same event, in whichever order the mod list happens to give.
+local function BU_purge(items)
+    local n = #items
+    local kept, removed, i = {}, 0, 1
+    while i <= n do
+        local name, weight = items[i], items[i + 1]
+        if type(name) == "string" and type(weight) == "number" then
+            if owned[name] then
+                removed = removed + 1
+            else
+                kept[#kept + 1] = name
+                kept[#kept + 1] = weight
+            end
+            i = i + 2
+        else
+            kept[#kept + 1] = name
+            i = i + 1
+        end
+    end
+    if removed == 0 then return end
+    for k = n, 1, -1 do items[k] = nil end
+    for k = 1, #kept do items[k] = kept[k] end
+end
+
+local function BU_applyLootRates()
     local sv = SandboxVars and SandboxVars.BundleUp
-    if not sv then return end
-    for option, slots in pairs(registry) do
-        local multiplier = BU_multiplierFor(sv, option)
-        for i = 1, #slots do
-            local slot = slots[i]
-            -- Skip if another mod shifted our entry out from under the index.
-            if slot.items[slot.index - 1] == slot.name then
-                slot.items[slot.index] = slot.base * multiplier
+    if not sv then
+        print("[BundleUp] sandbox options missing, no loot inserted")
+        return
+    end
+
+    local list = ProceduralDistributions and ProceduralDistributions.list
+    if type(list) ~= "table" then
+        print("[BundleUp] ProceduralDistributions.list missing, no loot inserted")
+        return
+    end
+
+    -- Several table names alias the same array, so purge once per array, not per name.
+    local targets, missing, seen, tableCount = {}, {}, {}, 0
+    for p = 1, #plan do
+        for tableName in pairs(plan[p].weights) do
+            if targets[tableName] == nil then
+                local distribution = list[tableName]
+                local items = distribution and distribution.items
+                targets[tableName] = items or false
+                if not items then
+                    missing[#missing + 1] = tableName
+                elseif not seen[items] then
+                    seen[items] = true
+                    tableCount = tableCount + 1
+                    BU_purge(items)
+                end
             end
         end
     end
+
+    local inserted = 0
+    for p = 1, #plan do
+        local entry = plan[p]
+        local multiplier = BU_multiplierFor(sv, entry.option)
+        -- a zero multiplier drops the entry rather than inserting it at weight 0
+        if multiplier > 0 then
+            for tableName, weight in pairs(entry.weights) do
+                local items = targets[tableName]
+                if items then
+                    local scaled = weight * multiplier
+                    for i = 1, #entry.items do
+                        table_insert(items, entry.items[i])
+                        table_insert(items, scaled)
+                        inserted = inserted + 1
+                    end
+                end
+            end
+        end
+    end
+
+    -- ItemPickerJava.Parse() already ran during IsoWorld.init(), against these tables as
+    -- they were before any of the above, and container filling reads that Java copy rather
+    -- than these globals. Rebuilding it is what vanilla does after a sandbox change
+    -- (ISServerSandboxOptionsUI.lua:769). StoryClutter.Init() is deliberately not called
+    -- alongside it: that UI needs it, nothing here touches clutter, and re-running it
+    -- would double-register.
+    local rebuilt = false
+    if IsoWorld and IsoWorld.parseDistributions then
+        rebuilt = pcall(function() IsoWorld.parseDistributions() end)
+    end
+
+    if #missing > 0 then
+        print("[BundleUp] loot tables not found: " .. table.concat(missing, ", "))
+    end
+    print("[BundleUp] loot: " .. inserted .. " entries across " .. tableCount .. " tables"
+        .. (rebuilt and "" or " -- IsoWorld.parseDistributions() failed, loot unchanged this session"))
 end
 
--- Whichever of these fires first with the sandbox options loaded wins; the
--- other is a harmless no-op re-run. Guarded so an event missing on some build
--- degrades to base weights instead of erroring.
-if Events.OnInitGlobalModData then
-    Events.OnInitGlobalModData.Add(BU_applySpawnRates)
-end
-if Events.OnPreDistributionMerge then
-    Events.OnPreDistributionMerge.Add(BU_applySpawnRates)
-end
+-- Not the merge events. IsoWorld.init() fires those at offsets 2051-2066 but does not read
+-- map_sand.bin until offset 2126, where SandboxOptions.load() ends in toLua(): a merge
+-- handler sees the player's real settings on a new game -- the new-game screen ran toLua()
+-- first -- and nothing but declared defaults on every later load of that save.
+-- OnInitGlobalModData is later still, past the ItemPickerJava.Parse() that snapshots these
+-- tables into Java, so it cannot reach loot at all.
+Events.OnGameStart.Add(BU_applyLootRates)
+Events.OnServerStarted.Add(BU_applyLootRates)
