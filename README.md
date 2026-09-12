@@ -23,7 +23,7 @@ Put 99 nails in a box and half your base goes missing to server chunk rot. Sprea
 - **Tiered packing.** Cartons pack into Cases, so a hoard that used to bottom out at "a shelf of cartons" collapses one more time. A Food Case takes four of any of the 166 food cartons — 48 items in a single slot.
 - **Everything you drop is visible.** All 1,020 items carry a world model, so a dropped pack is an actual pile instead of thin air, and the 10-count bundles look bigger than the 5-count ones.
 - **Food keeps rotting while it's packed.** A carton is storage, not a stasis pod — it chills, freezes and thaws on the same schedule as the loose food beside it.
-- **322 sandbox options**, including per-category and per-item weight sliders, so servers can tune the whole thing without touching a file.
+- **322 sandbox options** across eight pages — loot spawn rates, then per-category and per-item weight sliders grouped by the category each one inherits from, so servers can tune the whole thing without touching a file.
 
 An optional UI add-on ships in the same subscription. The base mod has no dependencies and isn't gaining any.
 
@@ -195,6 +195,8 @@ It filters that diff by resolved output types so anything picked up mid-craft do
 
 `tools/generate_tiers.py` reads `BU_WeightData_Packs.lua` and emits five files, all committed and stamped *do not edit by hand*. The contract is in the docstring: **re-running with no source change must produce no diff**, and `--check` enforces it on every PR.
 
+`tools/generate_sandbox.py` does the same job for `sandbox-options.txt`. Splitting 322 options across eight pages by hand is one typo away from a slider that silently reads the wrong var, and the page a per-item slider belongs on isn't a matter of taste — it's whichever category slider that item actually inherits from, which means walking `resolve_base` down to the vanilla item exactly as `BU_ApplyWeights.lua` does at runtime. Deriving it is the only way the two stay in agreement when a new tier batch lands. Labels and tooltips are hand-written prose and the generator rewrites none of them; it owns block order, `page =` values and the eight page titles, nothing else.
+
 It raises rather than warns on anything that would silently produce wrong output — a carton packed by a recipe with no weight row, or one resolving to a non-food reduction category. It also determines tier membership from the *recipes* rather than item-name suffixes, because `DogFoodBagCrate` doesn't end in "Carton" and would have been dropped without a word.
 
 ---
@@ -206,16 +208,16 @@ The repo is the mod folder — it lives at `Zomboid/Workshop/Bundle Up` and the 
 Check that the generated files are current:
 
 ```bash
-python tools/generate_tiers.py --check
+python tools/generate_tiers.py --check && python tools/generate_sandbox.py --check
 ```
 
 Regenerate them after changing a pack ladder:
 
 ```bash
-python tools/generate_tiers.py
+python tools/generate_tiers.py && python tools/generate_sandbox.py
 ```
 
-Both are stdlib-only — no install, no virtualenv. CI runs the first one on every push and PR.
+Both are stdlib-only — no install, no virtualenv — and CI runs both on every push and PR. Neither may import `tools/sync_weights.py`, which is gitignored and absent on CI.
 
 Branching is `dev` → `main` with a topic branch per bug or feature, and `main` mirrors the published Workshop build. `tools/sync_weights.py` and `tools/base_weights.json` are gitignored: they resolve script weights for dedicated servers (which read script values rather than the client Lua) and need a Project Zomboid install to regenerate, so they stay local.
 
