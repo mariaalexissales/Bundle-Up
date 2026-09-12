@@ -22,6 +22,6 @@
     "IGUI_BUUI_MergeItems": "Merge Items",
     "IGUI_BUUI_MergeAll": "Merge All",
     "IGUI_BUUI_EmptyMerge": "Nothing here can be merged",
-    "IGUI_BUUI_MergeResult": "%1 full, frees %2",
+    "IGUI_BUUI_MergeResult": "%1 from %2",
     "IGUI_BUUI_MergePartial": "Part-used"
 }
