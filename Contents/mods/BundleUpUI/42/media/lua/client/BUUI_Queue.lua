@@ -267,6 +267,19 @@ function BUUI_stepMerge(job, row)
         BUUI_step()
     end
 
+    -- walking off or a missing item ends it in stop, or in forceCancel while it still
+    -- waits behind a transfer. perform never fires then, and the batch would hang on Stop.
+    local stop = action.stop
+    action.stop = function(self)
+        stop(self)
+        if BUUI_active == job then BUUI_finish(true) end
+    end
+    local forceCancel = action.forceCancel
+    action.forceCancel = function(self)
+        forceCancel(self)
+        if BUUI_active == job then BUUI_finish(true) end
+    end
+
     ISTimedActionQueue.add(action)
 end
 
