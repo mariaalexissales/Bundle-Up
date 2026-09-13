@@ -29,11 +29,13 @@ description=*Listen, I know that the plank bundle is just a log bundle but now w
 description=
 description=** There is no budget/funding. But if you’d like to, support see below!
 description=
+description=[b]Tidying part-used stock:[/b] half-empty spools, rolls and bottles merge back into whole ones. The base game only ever looks at what is loose in your own inventory, so a bag of part-picked aramid thread offers you nothing at all - now [b]Add to[/b] and [b]Consolidate all[/b] read every container in reach. Nothing is lost in the pour, and what survives goes back where it came from.
+description=
 description=[hr][/hr]
 description=[h2]Optional: The Packing Panel[/h2]
 description=[b]Bundle Up! - UI Add-on[/b] rides along inside this same subscription as a separate, entirely optional mod. Tick it on in the [b]Mods[/b] menu and a button appears next to your crafting one.
 description=
-description=One window that reads every container in reach - your bags, that crate, the shelf behind you - and lists everything you could pack right now, with a [b]-[/b] / [b]+[/b] / [b]MAX[/b] dial on each row. Tabs flip between [b]Bundle[/b] and [b]Unbundle[/b], [b]Bundle All[/b] maxes out everything that’s ready, and [b]Stop[/b] is there for when you think better of it halfway through 400 planks. Bundles go back into the container they came out of.
+description=One window that reads every container in reach - your bags, that crate, the shelf behind you - and lists everything you could pack right now, with a [b]-[/b] / [b]+[/b] / [b]MAX[/b] dial on each row. Tabs flip between [b]Bundle[/b], [b]Unbundle[/b] and [b]Merge[/b], [b]Bundle All[/b] maxes out everything that’s ready, and [b]Stop[/b] is there for when you think better of it halfway through 400 planks. Bundles go back into the container they came out of.
 description=
 description=[b][u]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032]NeatUI Framework[/url][/u][/b] by Rocco & Afyrmo - subscribe to it as well or the panel won’t load, and it fails silently, so you’d get no button and no clue why.
 description=
