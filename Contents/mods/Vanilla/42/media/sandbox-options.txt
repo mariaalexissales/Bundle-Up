@@ -4,1946 +4,1962 @@
 
 VERSION = 1,
 
+/* ---- Bundle Up: Loot Spawns ---- */
+
 option BundleUp.SpawnDefault
 {
     type = enum, numValues = 6, default = 4,
-    page = BundleUp, translation = BundleUp_SpawnDefault,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnDefault,
     valueTranslation = BundleUp_SpawnLevel,
 }
 
 option BundleUp.SpawnSixPacks
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnSixPacks,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnSixPacks,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnFood
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnFood,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnFood,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnMaterials
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnMaterials,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnMaterials,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnSupplies
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnSupplies,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnSupplies,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnFishing
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnFishing,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnFishing,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnMedical
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnMedical,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnMedical,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnAmmo
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnAmmo,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnAmmo,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnSeeds
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnSeeds,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnSeeds,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnScrap
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnScrap,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnScrap,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnJewelry
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnJewelry,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnJewelry,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
 
 option BundleUp.SpawnLiterature
 {
     type = enum, numValues = 7, default = 1,
-    page = BundleUp, translation = BundleUp_SpawnLiterature,
+    page = BundleUpPage_Spawns, translation = BundleUp_SpawnLiterature,
     valueTranslation = BundleUp_SpawnLevelInherit,
 }
+
+/* ---- Bundle Up: Weight & Spoilage ---- */
 
 option BundleUp.ReductionDefault
 {
     type = integer, min = 0, max = 100, default = 17,
-    page = BundleUp, translation = BundleUp_ReductionDefault,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionDefault,
 }
 
 option BundleUp.ReductionMetal
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_ReductionMetal,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionMetal,
 }
 
 option BundleUp.ReductionWood
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_ReductionWood,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionWood,
 }
 
 option BundleUp.ReductionStone
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_ReductionStone,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionStone,
 }
 
 option BundleUp.ReductionFood
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_ReductionFood,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionFood,
 }
 
 option BundleUp.ReductionMedical
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_ReductionMedical,
-}
-
-option BundleUp.ReductionOther
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_ReductionOther,
-}
-
-option BundleUp.CartonSpoilRate
-{
-    type = integer, min = 0, max = 100, default = 100,
-    page = BundleUp, translation = BundleUp_CartonSpoilRate,
-}
-
-option BundleUp.Item_PlankR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlankR,
-}
-
-option BundleUp.Item_PlankSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlankSR,
-}
-
-option BundleUp.Item_SheetMetalR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SheetMetalR,
-}
-
-option BundleUp.Item_SheetMetalSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SheetMetalSR,
-}
-
-option BundleUp.Item_IronPipesR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronPipesR,
-}
-
-option BundleUp.Item_IronPipesSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronPipesSR,
-}
-
-option BundleUp.Item_IronBarR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronBarR,
-}
-
-option BundleUp.Item_IronBarSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronBarSR,
-}
-
-option BundleUp.Item_SteelRodR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelRodR,
-}
-
-option BundleUp.Item_SteelRodSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelRodSR,
-}
-
-option BundleUp.Item_SteelRodLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelRodLR,
-}
-
-option BundleUp.Item_SteelRodLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelRodLSR,
-}
-
-option BundleUp.Item_PlankLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlankLR,
-}
-
-option BundleUp.Item_PlankLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlankLSR,
-}
-
-option BundleUp.Item_SheetMetalLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SheetMetalLR,
-}
-
-option BundleUp.Item_SheetMetalLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SheetMetalLSR,
-}
-
-option BundleUp.Item_IronPipesLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronPipesLR,
-}
-
-option BundleUp.Item_IronPipesLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronPipesLSR,
-}
-
-option BundleUp.Item_IronBarLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronBarLR,
-}
-
-option BundleUp.Item_IronBarLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronBarLSR,
-}
-
-option BundleUp.Item_TreeBranchR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_TreeBranchR,
-}
-
-option BundleUp.Item_TreeBranchSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_TreeBranchSR,
-}
-
-option BundleUp.Item_WoodenRodR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WoodenRodR,
-}
-
-option BundleUp.Item_WoodenRodSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WoodenRodSR,
-}
-
-option BundleUp.Item_LargeBranchR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeBranchR,
-}
-
-option BundleUp.Item_LargeBranchSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeBranchSR,
-}
-
-option BundleUp.Item_SaplingR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SaplingR,
-}
-
-option BundleUp.Item_SaplingSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SaplingSR,
-}
-
-option BundleUp.Item_LongStickR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LongStickR,
-}
-
-option BundleUp.Item_LongStickSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LongStickSR,
-}
-
-option BundleUp.Item_MediumHandleR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MediumHandleR,
-}
-
-option BundleUp.Item_MediumHandleSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MediumHandleSR,
-}
-
-option BundleUp.Item_LargeHandleR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeHandleR,
-}
-
-option BundleUp.Item_LargeHandleSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeHandleSR,
-}
-
-option BundleUp.Item_LeadPipeR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LeadPipeR,
-}
-
-option BundleUp.Item_LeadPipeSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LeadPipeSR,
-}
-
-option BundleUp.Item_CopperSheetR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CopperSheetR,
-}
-
-option BundleUp.Item_CopperSheetSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CopperSheetSR,
-}
-
-option BundleUp.Item_GoldSheetR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldSheetR,
-}
-
-option BundleUp.Item_GoldSheetSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldSheetSR,
-}
-
-option BundleUp.Item_TreeBranchLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_TreeBranchLR,
-}
-
-option BundleUp.Item_TreeBranchLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_TreeBranchLSR,
-}
-
-option BundleUp.Item_WoodenRodLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WoodenRodLR,
-}
-
-option BundleUp.Item_WoodenRodLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WoodenRodLSR,
-}
-
-option BundleUp.Item_LargeBranchLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeBranchLR,
-}
-
-option BundleUp.Item_LargeBranchLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeBranchLSR,
-}
-
-option BundleUp.Item_SaplingLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SaplingLR,
-}
-
-option BundleUp.Item_SaplingLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SaplingLSR,
-}
-
-option BundleUp.Item_LongStickLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LongStickLR,
-}
-
-option BundleUp.Item_LongStickLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LongStickLSR,
-}
-
-option BundleUp.Item_MediumHandleLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MediumHandleLR,
-}
-
-option BundleUp.Item_MediumHandleLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MediumHandleLSR,
-}
-
-option BundleUp.Item_LargeHandleLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeHandleLR,
-}
-
-option BundleUp.Item_LargeHandleLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeHandleLSR,
-}
-
-option BundleUp.Item_LeadPipeLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LeadPipeLR,
-}
-
-option BundleUp.Item_LeadPipeLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LeadPipeLSR,
-}
-
-option BundleUp.Item_CopperSheetLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CopperSheetLR,
-}
-
-option BundleUp.Item_CopperSheetLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CopperSheetLSR,
-}
-
-option BundleUp.Item_GoldSheetLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldSheetLR,
-}
-
-option BundleUp.Item_GoldSheetLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldSheetLSR,
-}
-
-option BundleUp.Item_GasCanR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GasCanR,
-}
-
-option BundleUp.Item_GasCanSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GasCanSR,
-}
-
-option BundleUp.Item_NailsBox_Small
-{
-    type = integer, min = -1, max = 100, default = 60,
-    page = BundleUp, translation = BundleUp_Item_NailsBox_Small,
-}
-
-option BundleUp.Item_NailsBox_Medium
-{
-    type = integer, min = -1, max = 100, default = 60,
-    page = BundleUp, translation = BundleUp_Item_NailsBox_Medium,
-}
-
-option BundleUp.Item_ScrewsBox_Small
-{
-    type = integer, min = -1, max = 100, default = 60,
-    page = BundleUp, translation = BundleUp_Item_ScrewsBox_Small,
-}
-
-option BundleUp.Item_ScrewsBox_Medium
-{
-    type = integer, min = -1, max = 100, default = 60,
-    page = BundleUp, translation = BundleUp_Item_ScrewsBox_Medium,
-}
-
-option BundleUp.Item_GoldScrap_Small
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldScrap_Small,
-}
-
-option BundleUp.Item_GoldScrap_Large
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldScrap_Large,
-}
-
-option BundleUp.Item_SilverScrap_Small
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SilverScrap_Small,
-}
-
-option BundleUp.Item_SilverScrap_Large
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SilverScrap_Large,
-}
-
-option BundleUp.Item_Coke_Small
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_Coke_Small,
-}
-
-option BundleUp.Item_Coke_Large
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_Coke_Large,
-}
-
-option BundleUp.Item_PenBox_Black
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PenBox_Black,
-}
-
-option BundleUp.Item_PenBox_Blue
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PenBox_Blue,
-}
-
-option BundleUp.Item_PenBox_Red
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PenBox_Red,
-}
-
-option BundleUp.Item_PenBox_Green
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PenBox_Green,
-}
-
-option BundleUp.Item_WireCable_Small
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WireCable_Small,
-}
-
-option BundleUp.Item_WireCable_Large
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WireCable_Large,
-}
-
-option BundleUp.Item_SmallMetalSheetS
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SmallMetalSheetS,
-}
-
-option BundleUp.Item_SmallMetalSheetL
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SmallMetalSheetL,
-}
-
-option BundleUp.Item_GingerAleSP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GingerAleSP,
-}
-
-option BundleUp.Item_SodaPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SodaPack,
-}
-
-option BundleUp.Item_DietSodaPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_DietSodaPack,
-}
-
-option BundleUp.Item_BlueberrySP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_BlueberrySP,
-}
-
-option BundleUp.Item_BubblegumSP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_BubblegumSP,
-}
-
-option BundleUp.Item_GrapeSP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GrapeSP,
-}
-
-option BundleUp.Item_LimeSP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LimeSP,
-}
-
-option BundleUp.Item_OrangeSP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_OrangeSP,
-}
-
-option BundleUp.Item_PineappleSP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PineappleSP,
-}
-
-option BundleUp.Item_StrawberrySP
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_StrawberrySP,
-}
-
-option BundleUp.Item_VarietyPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_VarietyPack,
-}
-
-option BundleUp.Item_StoneBlockPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_StoneBlockPack,
-}
-
-option BundleUp.Item_Sack_Sack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_Sack_Sack,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionMedical,
 }
 
 option BundleUp.ReductionLeather
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_ReductionLeather,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionLeather,
 }
 
-option BundleUp.Item_HideCalfAngusR
+option BundleUp.ReductionOther
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfAngusR,
+    page = BundleUpPage_Weights, translation = BundleUp_ReductionOther,
 }
 
-option BundleUp.Item_HideCalfAngusSR
+option BundleUp.CartonSpoilRate
 {
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfAngusSR,
-}
-
-option BundleUp.Item_HideCalfAngusLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfAngusLR,
-}
-
-option BundleUp.Item_HideCalfAngusLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfAngusLSR,
-}
-
-option BundleUp.Item_HideCowAngusR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowAngusR,
-}
-
-option BundleUp.Item_HideCowAngusSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowAngusSR,
-}
-
-option BundleUp.Item_HideCowAngusLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowAngusLR,
-}
-
-option BundleUp.Item_HideCowAngusLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowAngusLSR,
-}
-
-option BundleUp.Item_HidePigBlackR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigBlackR,
-}
-
-option BundleUp.Item_HidePigBlackSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigBlackSR,
-}
-
-option BundleUp.Item_HidePigBlackLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigBlackLR,
-}
-
-option BundleUp.Item_HidePigBlackLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigBlackLSR,
-}
-
-option BundleUp.Item_HidePigletBlackR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletBlackR,
-}
-
-option BundleUp.Item_HidePigletBlackSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletBlackSR,
-}
-
-option BundleUp.Item_HidePigletBlackLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletBlackLR,
-}
-
-option BundleUp.Item_HidePigletBlackLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletBlackLSR,
-}
-
-option BundleUp.Item_HideCalfHolsteinR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinR,
-}
-
-option BundleUp.Item_HideCalfHolsteinSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinSR,
-}
-
-option BundleUp.Item_HideCalfHolsteinLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinLR,
-}
-
-option BundleUp.Item_HideCalfHolsteinLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfHolsteinLSR,
-}
-
-option BundleUp.Item_HideCowHolsteinR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinR,
-}
-
-option BundleUp.Item_HideCowHolsteinSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinSR,
-}
-
-option BundleUp.Item_HideCowHolsteinLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinLR,
-}
-
-option BundleUp.Item_HideCowHolsteinLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowHolsteinLSR,
-}
-
-option BundleUp.Item_HideCalfSimmentalR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalR,
-}
-
-option BundleUp.Item_HideCalfSimmentalSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalSR,
-}
-
-option BundleUp.Item_HideCalfSimmentalLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalLR,
-}
-
-option BundleUp.Item_HideCalfSimmentalLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCalfSimmentalLSR,
-}
-
-option BundleUp.Item_HideCowSimmentalR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalR,
-}
-
-option BundleUp.Item_HideCowSimmentalSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalSR,
-}
-
-option BundleUp.Item_HideCowSimmentalLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalLR,
-}
-
-option BundleUp.Item_HideCowSimmentalLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCowSimmentalLSR,
-}
-
-option BundleUp.Item_HideDeerR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideDeerR,
-}
-
-option BundleUp.Item_HideDeerSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideDeerSR,
-}
-
-option BundleUp.Item_HideDeerLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideDeerLR,
-}
-
-option BundleUp.Item_HideDeerLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideDeerLSR,
-}
-
-option BundleUp.Item_HideFawnR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideFawnR,
-}
-
-option BundleUp.Item_HideFawnSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideFawnSR,
-}
-
-option BundleUp.Item_HideFawnLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideFawnLR,
-}
-
-option BundleUp.Item_HideFawnLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideFawnLSR,
-}
-
-option BundleUp.Item_HideRabbitR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitR,
-}
-
-option BundleUp.Item_HideRabbitSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitSR,
-}
-
-option BundleUp.Item_HideRabbitLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitLR,
-}
-
-option BundleUp.Item_HideRabbitLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitLSR,
-}
-
-option BundleUp.Item_HidePigLandraceR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigLandraceR,
-}
-
-option BundleUp.Item_HidePigLandraceSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigLandraceSR,
-}
-
-option BundleUp.Item_HidePigLandraceLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigLandraceLR,
-}
-
-option BundleUp.Item_HidePigLandraceLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigLandraceLSR,
-}
-
-option BundleUp.Item_HidePigletLandraceR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceR,
-}
-
-option BundleUp.Item_HidePigletLandraceSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceSR,
-}
-
-option BundleUp.Item_HidePigletLandraceLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceLR,
-}
-
-option BundleUp.Item_HidePigletLandraceLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HidePigletLandraceLSR,
-}
-
-option BundleUp.Item_HideLambR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideLambR,
-}
-
-option BundleUp.Item_HideLambSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideLambSR,
-}
-
-option BundleUp.Item_HideLambLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideLambLR,
-}
-
-option BundleUp.Item_HideLambLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideLambLSR,
-}
-
-option BundleUp.Item_HideSheepR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideSheepR,
-}
-
-option BundleUp.Item_HideSheepSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideSheepSR,
-}
-
-option BundleUp.Item_HideSheepLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideSheepLR,
-}
-
-option BundleUp.Item_HideSheepLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideSheepLSR,
-}
-
-option BundleUp.Item_HideRabbitGreyR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitGreyR,
-}
-
-option BundleUp.Item_HideRabbitGreySR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitGreySR,
-}
-
-option BundleUp.Item_HideRabbitGreyLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitGreyLR,
-}
-
-option BundleUp.Item_HideRabbitGreyLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRabbitGreyLSR,
-}
-
-option BundleUp.Item_HideRaccoonR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRaccoonR,
-}
-
-option BundleUp.Item_HideRaccoonSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRaccoonSR,
-}
-
-option BundleUp.Item_HideRaccoonLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRaccoonLR,
-}
-
-option BundleUp.Item_HideRaccoonLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideRaccoonLSR,
-}
-
-option BundleUp.Item_HideCrudeLargeR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeR,
-}
-
-option BundleUp.Item_HideCrudeLargeSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeSR,
-}
-
-option BundleUp.Item_HideCrudeLargeLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeLR,
-}
-
-option BundleUp.Item_HideCrudeLargeLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeLargeLSR,
-}
-
-option BundleUp.Item_HideCrudeMediumR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumR,
-}
-
-option BundleUp.Item_HideCrudeMediumSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumSR,
-}
-
-option BundleUp.Item_HideCrudeMediumLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumLR,
-}
-
-option BundleUp.Item_HideCrudeMediumLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeMediumLSR,
-}
-
-option BundleUp.Item_HideCrudeSmallR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallR,
-}
-
-option BundleUp.Item_HideCrudeSmallSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallSR,
-}
-
-option BundleUp.Item_HideCrudeSmallLR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallLR,
-}
-
-option BundleUp.Item_HideCrudeSmallLSR
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HideCrudeSmallLSR,
-}
-
-option BundleUp.Item_WhiskeyPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WhiskeyPack,
-}
-
-option BundleUp.Item_VodkaPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_VodkaPack,
-}
-
-option BundleUp.Item_RumPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_RumPack,
-}
-
-option BundleUp.Item_GinPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GinPack,
+    type = integer, min = 0, max = 100, default = 100,
+    page = BundleUpPage_Weights, translation = BundleUp_CartonSpoilRate,
 }
 
-option BundleUp.Item_TequilaPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_TequilaPack,
-}
-
-option BundleUp.Item_BrandyPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_BrandyPack,
-}
-
-option BundleUp.Item_ScotchPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ScotchPack,
-}
-
-option BundleUp.Item_SherryPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SherryPack,
-}
-
-option BundleUp.Item_PortPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PortPack,
-}
-
-option BundleUp.Item_VermouthPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_VermouthPack,
-}
-
-option BundleUp.Item_CiderPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CiderPack,
-}
-
-option BundleUp.Item_CuracaoPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CuracaoPack,
-}
-
-option BundleUp.Item_GrenadinePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GrenadinePack,
-}
-
-option BundleUp.Item_CoffeeLiquerPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CoffeeLiquerPack,
-}
-
-option BundleUp.Item_WineWhitePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WineWhitePack,
-}
-
-option BundleUp.Item_WineRedPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WineRedPack,
-}
+/* ---- Bundle Up: Weight - Food & Drink ---- */
 
-option BundleUp.Item_WineAgedPack
+option BundleUp.Item_JuiceBoxApplePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WineAgedPack,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceBoxApplePack,
 }
 
 option BundleUp.Item_WineBoxPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WineBoxPack,
+    page = BundleUpPage_Food, translation = BundleUp_Item_WineBoxPack,
 }
 
-option BundleUp.Item_WineScrewtopPack
+option BundleUp.Item_BrandyPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WineScrewtopPack,
+    page = BundleUpPage_Food, translation = BundleUp_Item_BrandyPack,
 }
 
 option BundleUp.Item_ChampagnePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ChampagnePack,
+    page = BundleUpPage_Food, translation = BundleUp_Item_ChampagnePack,
 }
 
-option BundleUp.Item_BeerImportedPack
+option BundleUp.Item_WineScrewtopPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_BeerImportedPack,
-}
-
-option BundleUp.Item_JuiceBoxGrapePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceBoxGrapePack,
-}
-
-option BundleUp.Item_JuiceBoxApplePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceBoxApplePack,
-}
-
-option BundleUp.Item_JuiceBoxFruitpunchPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceBoxFruitpunchPack,
-}
-
-option BundleUp.Item_JuiceBoxOrangePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceBoxOrangePack,
-}
-
-option BundleUp.Item_JuiceCranberryPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceCranberryPack,
-}
-
-option BundleUp.Item_JuiceFruitpunchPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceFruitpunchPack,
-}
-
-option BundleUp.Item_JuiceGrapePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceGrapePack,
-}
-
-option BundleUp.Item_JuiceLemonPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceLemonPack,
-}
-
-option BundleUp.Item_JuiceOrangePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceOrangePack,
-}
-
-option BundleUp.Item_JuiceTomatoPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_JuiceTomatoPack,
-}
-
-option BundleUp.Item_MilkPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MilkPack,
-}
-
-option BundleUp.Item_MilkBottlePack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MilkBottlePack,
-}
-
-option BundleUp.Item_MilkSmallPack
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MilkSmallPack,
+    page = BundleUpPage_Food, translation = BundleUp_Item_WineScrewtopPack,
 }
 
 option BundleUp.Item_MilkChocSmallPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MilkChocSmallPack,
+    page = BundleUpPage_Food, translation = BundleUp_Item_MilkChocSmallPack,
 }
 
-option BundleUp.Item_SandbagR
+option BundleUp.Item_CiderPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SandbagR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_CiderPack,
 }
 
-option BundleUp.Item_SandbagSR
+option BundleUp.Item_CoffeeLiquerPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SandbagSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_CoffeeLiquerPack,
 }
 
-option BundleUp.Item_SandbagLR
+option BundleUp.Item_JuiceCranberryPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SandbagLR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceCranberryPack,
 }
 
-option BundleUp.Item_SandbagLSR
+option BundleUp.Item_CuracaoPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SandbagLSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_CuracaoPack,
 }
 
-option BundleUp.Item_DirtbagR
+option BundleUp.Item_WineAgedPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_DirtbagR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_WineAgedPack,
 }
 
-option BundleUp.Item_DirtbagSR
+option BundleUp.Item_JuiceFruitpunchPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_DirtbagSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceFruitpunchPack,
 }
 
-option BundleUp.Item_DirtbagLR
+option BundleUp.Item_JuiceBoxFruitpunchPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_DirtbagLR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceBoxFruitpunchPack,
 }
 
-option BundleUp.Item_DirtbagLSR
+option BundleUp.Item_GinPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_DirtbagLSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_GinPack,
 }
 
-option BundleUp.Item_ClaybagR
+option BundleUp.Item_JuiceGrapePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ClaybagR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceGrapePack,
 }
 
-option BundleUp.Item_ClaybagSR
+option BundleUp.Item_JuiceBoxGrapePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ClaybagSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceBoxGrapePack,
 }
 
-option BundleUp.Item_ClaybagLR
+option BundleUp.Item_GrenadinePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ClaybagLR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_GrenadinePack,
 }
 
-option BundleUp.Item_ClaybagLSR
+option BundleUp.Item_JuiceLemonPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ClaybagLSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceLemonPack,
 }
 
-option BundleUp.Item_GravelbagR
+option BundleUp.Item_MilkBottlePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GravelbagR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_MilkBottlePack,
 }
 
-option BundleUp.Item_GravelbagSR
+option BundleUp.Item_MilkPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GravelbagSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_MilkPack,
 }
 
-option BundleUp.Item_GravelbagLR
+option BundleUp.Item_JuiceOrangePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GravelbagLR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceOrangePack,
 }
 
-option BundleUp.Item_GravelbagLSR
+option BundleUp.Item_JuiceBoxOrangePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GravelbagLSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceBoxOrangePack,
 }
 
-option BundleUp.Item_CompostBagR
+option BundleUp.Item_MilkSmallPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CompostBagR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_MilkSmallPack,
 }
 
-option BundleUp.Item_CompostBagSR
+option BundleUp.Item_PortPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CompostBagSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_PortPack,
 }
 
-option BundleUp.Item_CompostBagLR
+option BundleUp.Item_WineRedPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CompostBagLR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_WineRedPack,
 }
 
-option BundleUp.Item_CompostBagLSR
+option BundleUp.Item_RumPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CompostBagLSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_RumPack,
 }
 
-option BundleUp.Item_GrassBagR
+option BundleUp.Item_ScotchPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GrassBagR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_ScotchPack,
 }
 
-option BundleUp.Item_GrassBagSR
+option BundleUp.Item_SherryPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GrassBagSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_SherryPack,
 }
 
-option BundleUp.Item_GrassBagLR
+option BundleUp.Item_TequilaPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GrassBagLR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_TequilaPack,
 }
 
-option BundleUp.Item_GrassBagLSR
+option BundleUp.Item_JuiceTomatoPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GrassBagLSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_JuiceTomatoPack,
 }
 
-option BundleUp.Item_AnimalFeedBagR
+option BundleUp.Item_VermouthPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_AnimalFeedBagR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_VermouthPack,
 }
 
-option BundleUp.Item_AnimalFeedBagSR
+option BundleUp.Item_VodkaPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_AnimalFeedBagSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_VodkaPack,
 }
 
-option BundleUp.Item_AnimalFeedBagLR
+option BundleUp.Item_WhiskeyPack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_AnimalFeedBagLR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_WhiskeyPack,
 }
 
-option BundleUp.Item_AnimalFeedBagLSR
+option BundleUp.Item_WineWhitePack
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_AnimalFeedBagLSR,
+    page = BundleUpPage_Food, translation = BundleUp_Item_WineWhitePack,
 }
 
-option BundleUp.Item_FertilizerBagR
+/* ---- Bundle Up: Weight - Leather & Hides ---- */
+
+option BundleUp.Item_HideCalfAngusR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfAngusR,
+}
+
+option BundleUp.Item_HideCalfAngusSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfAngusSR,
+}
+
+option BundleUp.Item_HideCowAngusR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowAngusR,
+}
+
+option BundleUp.Item_HideCowAngusSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowAngusSR,
+}
+
+option BundleUp.Item_HidePigletBlackR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletBlackR,
+}
+
+option BundleUp.Item_HidePigletBlackSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletBlackSR,
+}
+
+option BundleUp.Item_HidePigBlackR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigBlackR,
+}
+
+option BundleUp.Item_HidePigBlackSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigBlackSR,
+}
+
+option BundleUp.Item_HideDeerR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideDeerR,
+}
+
+option BundleUp.Item_HideDeerSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideDeerSR,
+}
+
+option BundleUp.Item_HideFawnR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideFawnR,
+}
+
+option BundleUp.Item_HideFawnSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideFawnSR,
+}
+
+option BundleUp.Item_HideRabbitGreyR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitGreyR,
+}
+
+option BundleUp.Item_HideRabbitGreySR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitGreySR,
+}
+
+option BundleUp.Item_HideCalfHolsteinR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfHolsteinR,
+}
+
+option BundleUp.Item_HideCalfHolsteinSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfHolsteinSR,
+}
+
+option BundleUp.Item_HideCowHolsteinR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowHolsteinR,
+}
+
+option BundleUp.Item_HideCowHolsteinSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowHolsteinSR,
+}
+
+option BundleUp.Item_HideLambR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideLambR,
+}
+
+option BundleUp.Item_HideLambSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideLambSR,
+}
+
+option BundleUp.Item_HidePigletLandraceR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletLandraceR,
+}
+
+option BundleUp.Item_HidePigletLandraceSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_FertilizerBagR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletLandraceSR,
 }
 
-option BundleUp.Item_FertilizerBagSR
+option BundleUp.Item_HidePigLandraceR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_FertilizerBagSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigLandraceR,
 }
 
-option BundleUp.Item_FertilizerBagLR
+option BundleUp.Item_HidePigLandraceSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_FertilizerBagLR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigLandraceSR,
 }
 
-option BundleUp.Item_FertilizerBagLSR
+option BundleUp.Item_HideCrudeLargeR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_FertilizerBagLSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeLargeR,
 }
 
-option BundleUp.Item_ConcretePowderR
+option BundleUp.Item_HideCrudeLargeSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ConcretePowderR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeLargeSR,
 }
 
-option BundleUp.Item_ConcretePowderSR
+option BundleUp.Item_HideCrudeMediumR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ConcretePowderSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeMediumR,
 }
 
-option BundleUp.Item_ConcretePowderLR
+option BundleUp.Item_HideCrudeMediumSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ConcretePowderLR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeMediumSR,
 }
 
-option BundleUp.Item_ConcretePowderLSR
+option BundleUp.Item_HideRabbitR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ConcretePowderLSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitR,
 }
 
-option BundleUp.Item_PlasterPowderR
+option BundleUp.Item_HideRabbitSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlasterPowderR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitSR,
 }
 
-option BundleUp.Item_PlasterPowderSR
+option BundleUp.Item_HideRaccoonR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlasterPowderSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRaccoonR,
 }
 
-option BundleUp.Item_PlasterPowderLR
+option BundleUp.Item_HideRaccoonSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlasterPowderLR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRaccoonSR,
 }
 
-option BundleUp.Item_PlasterPowderLSR
+option BundleUp.Item_HideSheepR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PlasterPowderLSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideSheepR,
 }
 
-option BundleUp.Item_WallpaperPasteR
+option BundleUp.Item_HideSheepSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WallpaperPasteR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideSheepSR,
 }
 
-option BundleUp.Item_WallpaperPasteSR
+option BundleUp.Item_HideCalfSimmentalR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WallpaperPasteSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfSimmentalR,
 }
 
-option BundleUp.Item_WallpaperPasteLR
+option BundleUp.Item_HideCalfSimmentalSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WallpaperPasteLR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfSimmentalSR,
 }
 
-option BundleUp.Item_WallpaperPasteLSR
+option BundleUp.Item_HideCowSimmentalR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_WallpaperPasteLSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowSimmentalR,
 }
 
-option BundleUp.Item_GlassPanelR
+option BundleUp.Item_HideCowSimmentalSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GlassPanelR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowSimmentalSR,
 }
 
-option BundleUp.Item_GlassPanelSR
+option BundleUp.Item_HideCrudeSmallR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GlassPanelSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeSmallR,
 }
 
-option BundleUp.Item_GlassPanelLR
+option BundleUp.Item_HideCrudeSmallSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GlassPanelLR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeSmallSR,
 }
 
-option BundleUp.Item_GlassPanelLSR
+option BundleUp.Item_HideCalfAngusLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GlassPanelLSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfAngusLR,
 }
 
-option BundleUp.Item_LargePlankR
+option BundleUp.Item_HideCalfAngusLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargePlankR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfAngusLSR,
 }
 
-option BundleUp.Item_LargePlankSR
+option BundleUp.Item_HideCowAngusLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargePlankSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowAngusLR,
 }
 
-option BundleUp.Item_LargePlankLR
+option BundleUp.Item_HideCowAngusLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargePlankLR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowAngusLSR,
 }
 
-option BundleUp.Item_LargePlankLSR
+option BundleUp.Item_HidePigletBlackLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargePlankLSR,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletBlackLR,
 }
 
-option BundleUp.Item_FlatStoneSack
+option BundleUp.Item_HidePigletBlackLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_FlatStoneSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletBlackLSR,
 }
 
-option BundleUp.Item_LargeStoneSack
+option BundleUp.Item_HidePigBlackLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LargeStoneSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigBlackLR,
 }
 
-option BundleUp.Item_SharpedStoneSack
+option BundleUp.Item_HidePigBlackLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SharpedStoneSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigBlackLSR,
 }
 
-option BundleUp.Item_ClaySack
+option BundleUp.Item_HideDeerLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_ClaySack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideDeerLR,
 }
 
-option BundleUp.Item_IronIngot_S
+option BundleUp.Item_HideDeerLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronIngot_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideDeerLSR,
 }
 
-option BundleUp.Item_IronIngot_L
+option BundleUp.Item_HideFawnLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronIngot_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideFawnLR,
 }
 
-option BundleUp.Item_SteelIngot_S
+option BundleUp.Item_HideFawnLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelIngot_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideFawnLSR,
 }
 
-option BundleUp.Item_SteelIngot_L
+option BundleUp.Item_HideRabbitGreyLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelIngot_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitGreyLR,
 }
 
-option BundleUp.Item_CopperIngot_S
+option BundleUp.Item_HideRabbitGreyLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CopperIngot_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitGreyLSR,
 }
 
-option BundleUp.Item_CopperIngot_L
+option BundleUp.Item_HideCalfHolsteinLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CopperIngot_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfHolsteinLR,
 }
 
-option BundleUp.Item_BrassIngot_S
+option BundleUp.Item_HideCalfHolsteinLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_BrassIngot_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfHolsteinLSR,
 }
 
-option BundleUp.Item_BrassIngot_L
+option BundleUp.Item_HideCowHolsteinLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_BrassIngot_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowHolsteinLR,
 }
 
-option BundleUp.Item_GoldBar_S
+option BundleUp.Item_HideCowHolsteinLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldBar_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowHolsteinLSR,
 }
 
-option BundleUp.Item_GoldBar_L
+option BundleUp.Item_HideLambLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_GoldBar_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideLambLR,
 }
 
-option BundleUp.Item_SmallGoldBar_S
+option BundleUp.Item_HideLambLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SmallGoldBar_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideLambLSR,
 }
 
-option BundleUp.Item_SmallGoldBar_L
+option BundleUp.Item_HidePigletLandraceLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SmallGoldBar_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletLandraceLR,
 }
 
-option BundleUp.Item_SilverBar_S
+option BundleUp.Item_HidePigletLandraceLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SilverBar_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigletLandraceLSR,
 }
 
-option BundleUp.Item_SilverBar_L
+option BundleUp.Item_HidePigLandraceLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SilverBar_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigLandraceLR,
 }
 
-option BundleUp.Item_SmallSilverBar_S
+option BundleUp.Item_HidePigLandraceLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SmallSilverBar_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HidePigLandraceLSR,
 }
 
-option BundleUp.Item_SmallSilverBar_L
+option BundleUp.Item_HideCrudeLargeLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SmallSilverBar_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeLargeLR,
 }
 
-option BundleUp.Item_PiercedIronIngot_S
+option BundleUp.Item_HideCrudeLargeLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedIronIngot_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeLargeLSR,
 }
 
-option BundleUp.Item_PiercedIronIngot_L
+option BundleUp.Item_HideCrudeMediumLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedIronIngot_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeMediumLR,
 }
 
-option BundleUp.Item_PiercedSteelIngot_S
+option BundleUp.Item_HideCrudeMediumLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedSteelIngot_S,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeMediumLSR,
 }
 
-option BundleUp.Item_PiercedSteelIngot_L
+option BundleUp.Item_HideRabbitLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedSteelIngot_L,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitLR,
 }
 
-option BundleUp.Item_IronOreSack
+option BundleUp.Item_HideRabbitLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronOreSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRabbitLSR,
 }
 
-option BundleUp.Item_CopperOreSack
+option BundleUp.Item_HideRaccoonLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CopperOreSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRaccoonLR,
 }
 
-option BundleUp.Item_HematiteSack
+option BundleUp.Item_HideRaccoonLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HematiteSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideRaccoonLSR,
 }
 
-option BundleUp.Item_HematiteLargeSack
+option BundleUp.Item_HideSheepLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_HematiteLargeSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideSheepLR,
 }
 
-option BundleUp.Item_MalachiteSack
+option BundleUp.Item_HideSheepLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MalachiteSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideSheepLSR,
 }
 
-option BundleUp.Item_MalachiteLargeSack
+option BundleUp.Item_HideCalfSimmentalLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_MalachiteLargeSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfSimmentalLR,
 }
 
-option BundleUp.Item_LimestoneSack
+option BundleUp.Item_HideCalfSimmentalLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_LimestoneSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCalfSimmentalLSR,
 }
 
-option BundleUp.Item_IronBloomSack
+option BundleUp.Item_HideCowSimmentalLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_IronBloomSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowSimmentalLR,
 }
 
-option BundleUp.Item_QuicklimeSack
+option BundleUp.Item_HideCowSimmentalLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_QuicklimeSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCowSimmentalLSR,
 }
 
-option BundleUp.Item_CharcoalSack
+option BundleUp.Item_HideCrudeSmallLR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_CharcoalSack,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeSmallLR,
 }
 
-option BundleUp.Item_SteelRodQuarterBox
+option BundleUp.Item_HideCrudeSmallLSR
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelRodQuarterBox,
+    page = BundleUpPage_Leather, translation = BundleUp_Item_HideCrudeSmallLSR,
 }
+
+/* ---- Bundle Up: Weight - Metal ---- */
 
 option BundleUp.Item_SteelRodHalfBox
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelRodHalfBox,
-}
-
-option BundleUp.Item_SteelSlugBox
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_SteelSlugBox,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelRodHalfBox,
 }
 
 option BundleUp.Item_PiercedIronBlockBox
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedIronBlockBox,
-}
-
-option BundleUp.Item_PiercedSteelBlockBox
-{
-    type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedSteelBlockBox,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedIronBlockBox,
 }
 
 option BundleUp.Item_PiercedIronChunkBox
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedIronChunkBox,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedIronChunkBox,
+}
+
+option BundleUp.Item_PiercedSteelBlockBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedSteelBlockBox,
 }
 
 option BundleUp.Item_PiercedSteelChunkBox
 {
     type = integer, min = -1, max = 100, default = -1,
-    page = BundleUp, translation = BundleUp_Item_PiercedSteelChunkBox,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedSteelChunkBox,
+}
+
+option BundleUp.Item_SteelRodQuarterBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelRodQuarterBox,
+}
+
+option BundleUp.Item_SteelSlugBox
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelSlugBox,
+}
+
+option BundleUp.Item_BrassIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_BrassIngot_S,
+}
+
+option BundleUp.Item_CopperSheetSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_CopperSheetSR,
+}
+
+option BundleUp.Item_CopperSheetR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_CopperSheetR,
+}
+
+option BundleUp.Item_GoldSheetSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldSheetSR,
+}
+
+option BundleUp.Item_GoldSheetR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldSheetR,
+}
+
+option BundleUp.Item_IronBarSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronBarSR,
+}
+
+option BundleUp.Item_IronBarR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronBarR,
+}
+
+option BundleUp.Item_IronPipesSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronPipesSR,
+}
+
+option BundleUp.Item_IronPipesR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronPipesR,
+}
+
+option BundleUp.Item_LeadPipeSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_LeadPipeSR,
+}
+
+option BundleUp.Item_LeadPipeR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_LeadPipeR,
+}
+
+option BundleUp.Item_SheetMetalSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SheetMetalSR,
+}
+
+option BundleUp.Item_SheetMetalR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SheetMetalR,
+}
+
+option BundleUp.Item_SmallMetalSheetS
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SmallMetalSheetS,
+}
+
+option BundleUp.Item_SteelRodSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelRodSR,
+}
+
+option BundleUp.Item_SteelRodR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelRodR,
+}
+
+option BundleUp.Item_WireCable_Small
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_WireCable_Small,
+}
+
+option BundleUp.Item_CopperIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_CopperIngot_S,
+}
+
+option BundleUp.Item_GoldBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldBar_S,
+}
+
+option BundleUp.Item_IronIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronIngot_S,
+}
+
+option BundleUp.Item_BrassIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_BrassIngot_L,
+}
+
+option BundleUp.Item_CopperSheetLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_CopperSheetLSR,
+}
+
+option BundleUp.Item_CopperSheetLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_CopperSheetLR,
+}
+
+option BundleUp.Item_GoldSheetLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldSheetLSR,
+}
+
+option BundleUp.Item_GoldSheetLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldSheetLR,
+}
+
+option BundleUp.Item_IronBarLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronBarLSR,
+}
+
+option BundleUp.Item_IronBarLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronBarLR,
+}
+
+option BundleUp.Item_IronPipesLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronPipesLSR,
+}
+
+option BundleUp.Item_IronPipesLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronPipesLR,
+}
+
+option BundleUp.Item_LeadPipeLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_LeadPipeLSR,
+}
+
+option BundleUp.Item_LeadPipeLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_LeadPipeLR,
+}
+
+option BundleUp.Item_SheetMetalLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SheetMetalLSR,
+}
+
+option BundleUp.Item_SheetMetalLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SheetMetalLR,
+}
+
+option BundleUp.Item_SmallMetalSheetL
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SmallMetalSheetL,
+}
+
+option BundleUp.Item_SteelRodLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelRodLSR,
+}
+
+option BundleUp.Item_SteelRodLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelRodLR,
+}
+
+option BundleUp.Item_WireCable_Large
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_WireCable_Large,
+}
+
+option BundleUp.Item_CopperIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_CopperIngot_L,
+}
+
+option BundleUp.Item_GoldBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldBar_L,
+}
+
+option BundleUp.Item_IronIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_IronIngot_L,
+}
+
+option BundleUp.Item_PiercedIronIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedIronIngot_L,
+}
+
+option BundleUp.Item_PiercedSteelIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedSteelIngot_L,
+}
+
+option BundleUp.Item_GoldScrap_Large
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldScrap_Large,
+}
+
+option BundleUp.Item_SilverScrap_Large
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SilverScrap_Large,
+}
+
+option BundleUp.Item_SilverBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SilverBar_L,
+}
+
+option BundleUp.Item_SmallGoldBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SmallGoldBar_L,
+}
+
+option BundleUp.Item_SmallSilverBar_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SmallSilverBar_L,
+}
+
+option BundleUp.Item_SteelIngot_L
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelIngot_L,
+}
+
+option BundleUp.Item_NailsBox_Medium
+{
+    type = integer, min = -1, max = 100, default = 60,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_NailsBox_Medium,
+}
+
+option BundleUp.Item_ScrewsBox_Medium
+{
+    type = integer, min = -1, max = 100, default = 60,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_ScrewsBox_Medium,
+}
+
+option BundleUp.Item_PiercedIronIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedIronIngot_S,
+}
+
+option BundleUp.Item_PiercedSteelIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PiercedSteelIngot_S,
+}
+
+option BundleUp.Item_SilverBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SilverBar_S,
+}
+
+option BundleUp.Item_VarietyPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_VarietyPack,
+}
+
+option BundleUp.Item_BlueberrySP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_BlueberrySP,
+}
+
+option BundleUp.Item_BubblegumSP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_BubblegumSP,
+}
+
+option BundleUp.Item_SodaPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SodaPack,
+}
+
+option BundleUp.Item_DietSodaPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_DietSodaPack,
+}
+
+option BundleUp.Item_GingerAleSP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GingerAleSP,
+}
+
+option BundleUp.Item_GrapeSP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GrapeSP,
+}
+
+option BundleUp.Item_BeerImportedPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_BeerImportedPack,
+}
+
+option BundleUp.Item_LimeSP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_LimeSP,
+}
+
+option BundleUp.Item_OrangeSP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_OrangeSP,
+}
+
+option BundleUp.Item_PineappleSP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_PineappleSP,
+}
+
+option BundleUp.Item_StrawberrySP
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_StrawberrySP,
+}
+
+option BundleUp.Item_NailsBox_Small
+{
+    type = integer, min = -1, max = 100, default = 60,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_NailsBox_Small,
+}
+
+option BundleUp.Item_ScrewsBox_Small
+{
+    type = integer, min = -1, max = 100, default = 60,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_ScrewsBox_Small,
+}
+
+option BundleUp.Item_SmallGoldBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SmallGoldBar_S,
+}
+
+option BundleUp.Item_GoldScrap_Small
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_GoldScrap_Small,
+}
+
+option BundleUp.Item_SilverScrap_Small
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SilverScrap_Small,
+}
+
+option BundleUp.Item_SmallSilverBar_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SmallSilverBar_S,
+}
+
+option BundleUp.Item_SteelIngot_S
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Metal, translation = BundleUp_Item_SteelIngot_S,
+}
+
+/* ---- Bundle Up: Weight - Stone ---- */
+
+option BundleUp.Item_StoneBlockPack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_StoneBlockPack,
+}
+
+option BundleUp.Item_CopperOreSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_CopperOreSack,
+}
+
+option BundleUp.Item_FlatStoneSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_FlatStoneSack,
+}
+
+option BundleUp.Item_HematiteSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_HematiteSack,
+}
+
+option BundleUp.Item_IronBloomSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_IronBloomSack,
+}
+
+option BundleUp.Item_IronOreSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_IronOreSack,
+}
+
+option BundleUp.Item_HematiteLargeSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_HematiteLargeSack,
+}
+
+option BundleUp.Item_MalachiteLargeSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_MalachiteLargeSack,
+}
+
+option BundleUp.Item_LargeStoneSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_LargeStoneSack,
+}
+
+option BundleUp.Item_LimestoneSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_LimestoneSack,
+}
+
+option BundleUp.Item_MalachiteSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_MalachiteSack,
+}
+
+option BundleUp.Item_QuicklimeSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_QuicklimeSack,
+}
+
+option BundleUp.Item_SharpedStoneSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Stone, translation = BundleUp_Item_SharpedStoneSack,
+}
+
+/* ---- Bundle Up: Weight - Wood ---- */
+
+option BundleUp.Item_LargeBranchSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeBranchSR,
+}
+
+option BundleUp.Item_LargeBranchR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeBranchR,
+}
+
+option BundleUp.Item_LargeHandleSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeHandleSR,
+}
+
+option BundleUp.Item_LargeHandleR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeHandleR,
+}
+
+option BundleUp.Item_LongStickSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LongStickSR,
+}
+
+option BundleUp.Item_LongStickR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LongStickR,
+}
+
+option BundleUp.Item_MediumHandleSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_MediumHandleSR,
+}
+
+option BundleUp.Item_MediumHandleR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_MediumHandleR,
+}
+
+option BundleUp.Item_PlankSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_PlankSR,
+}
+
+option BundleUp.Item_PlankR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_PlankR,
+}
+
+option BundleUp.Item_LargePlankR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargePlankR,
+}
+
+option BundleUp.Item_LargePlankSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargePlankSR,
+}
+
+option BundleUp.Item_SaplingSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_SaplingSR,
+}
+
+option BundleUp.Item_SaplingR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_SaplingR,
+}
+
+option BundleUp.Item_TreeBranchSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_TreeBranchSR,
+}
+
+option BundleUp.Item_TreeBranchR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_TreeBranchR,
+}
+
+option BundleUp.Item_WoodenRodSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_WoodenRodSR,
+}
+
+option BundleUp.Item_WoodenRodR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_WoodenRodR,
+}
+
+option BundleUp.Item_LargeBranchLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeBranchLSR,
+}
+
+option BundleUp.Item_LargeBranchLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeBranchLR,
+}
+
+option BundleUp.Item_LargeHandleLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeHandleLSR,
+}
+
+option BundleUp.Item_LargeHandleLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargeHandleLR,
+}
+
+option BundleUp.Item_LongStickLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LongStickLSR,
+}
+
+option BundleUp.Item_LongStickLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LongStickLR,
+}
+
+option BundleUp.Item_MediumHandleLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_MediumHandleLSR,
+}
+
+option BundleUp.Item_MediumHandleLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_MediumHandleLR,
+}
+
+option BundleUp.Item_PlankLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_PlankLSR,
+}
+
+option BundleUp.Item_PlankLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_PlankLR,
+}
+
+option BundleUp.Item_LargePlankLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargePlankLR,
+}
+
+option BundleUp.Item_LargePlankLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_LargePlankLSR,
+}
+
+option BundleUp.Item_SaplingLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_SaplingLSR,
+}
+
+option BundleUp.Item_SaplingLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_SaplingLR,
+}
+
+option BundleUp.Item_TreeBranchLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_TreeBranchLSR,
+}
+
+option BundleUp.Item_TreeBranchLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_TreeBranchLR,
+}
+
+option BundleUp.Item_WoodenRodLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_WoodenRodLSR,
+}
+
+option BundleUp.Item_WoodenRodLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_WoodenRodLR,
+}
+
+option BundleUp.Item_Coke_Large
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_Coke_Large,
+}
+
+option BundleUp.Item_CharcoalSack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_CharcoalSack,
+}
+
+option BundleUp.Item_Coke_Small
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Wood, translation = BundleUp_Item_Coke_Small,
+}
+
+/* ---- Bundle Up: Weight - Everything Else ---- */
+
+option BundleUp.Item_PenBox_Black
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PenBox_Black,
+}
+
+option BundleUp.Item_PenBox_Blue
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PenBox_Blue,
+}
+
+option BundleUp.Item_PenBox_Green
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PenBox_Green,
+}
+
+option BundleUp.Item_PenBox_Red
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PenBox_Red,
+}
+
+option BundleUp.Item_AnimalFeedBagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_AnimalFeedBagR,
+}
+
+option BundleUp.Item_AnimalFeedBagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_AnimalFeedBagSR,
+}
+
+option BundleUp.Item_ClaybagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ClaybagR,
+}
+
+option BundleUp.Item_ClaybagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ClaybagSR,
+}
+
+option BundleUp.Item_CompostBagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_CompostBagR,
+}
+
+option BundleUp.Item_CompostBagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_CompostBagSR,
+}
+
+option BundleUp.Item_ConcretePowderR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ConcretePowderR,
+}
+
+option BundleUp.Item_ConcretePowderSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ConcretePowderSR,
+}
+
+option BundleUp.Item_DirtbagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_DirtbagR,
+}
+
+option BundleUp.Item_DirtbagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_DirtbagSR,
+}
+
+option BundleUp.Item_FertilizerBagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_FertilizerBagR,
+}
+
+option BundleUp.Item_FertilizerBagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_FertilizerBagSR,
+}
+
+option BundleUp.Item_GasCanSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GasCanSR,
+}
+
+option BundleUp.Item_GasCanR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GasCanR,
+}
+
+option BundleUp.Item_GlassPanelR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GlassPanelR,
+}
+
+option BundleUp.Item_GlassPanelSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GlassPanelSR,
+}
+
+option BundleUp.Item_GrassBagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GrassBagR,
+}
+
+option BundleUp.Item_GrassBagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GrassBagSR,
+}
+
+option BundleUp.Item_GravelbagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GravelbagR,
+}
+
+option BundleUp.Item_GravelbagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GravelbagSR,
+}
+
+option BundleUp.Item_PlasterPowderR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PlasterPowderR,
+}
+
+option BundleUp.Item_PlasterPowderSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PlasterPowderSR,
+}
+
+option BundleUp.Item_SandbagR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_SandbagR,
+}
+
+option BundleUp.Item_SandbagSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_SandbagSR,
+}
+
+option BundleUp.Item_WallpaperPasteR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_WallpaperPasteR,
+}
+
+option BundleUp.Item_WallpaperPasteSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_WallpaperPasteSR,
+}
+
+option BundleUp.Item_AnimalFeedBagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_AnimalFeedBagLR,
+}
+
+option BundleUp.Item_AnimalFeedBagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_AnimalFeedBagLSR,
+}
+
+option BundleUp.Item_ClaybagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ClaybagLR,
+}
+
+option BundleUp.Item_ClaybagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ClaybagLSR,
+}
+
+option BundleUp.Item_CompostBagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_CompostBagLR,
+}
+
+option BundleUp.Item_CompostBagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_CompostBagLSR,
+}
+
+option BundleUp.Item_ConcretePowderLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ConcretePowderLR,
+}
+
+option BundleUp.Item_ConcretePowderLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ConcretePowderLSR,
+}
+
+option BundleUp.Item_DirtbagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_DirtbagLR,
+}
+
+option BundleUp.Item_DirtbagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_DirtbagLSR,
+}
+
+option BundleUp.Item_FertilizerBagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_FertilizerBagLR,
+}
+
+option BundleUp.Item_FertilizerBagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_FertilizerBagLSR,
+}
+
+option BundleUp.Item_GlassPanelLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GlassPanelLR,
+}
+
+option BundleUp.Item_GlassPanelLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GlassPanelLSR,
+}
+
+option BundleUp.Item_GrassBagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GrassBagLR,
+}
+
+option BundleUp.Item_GrassBagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GrassBagLSR,
+}
+
+option BundleUp.Item_GravelbagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GravelbagLR,
+}
+
+option BundleUp.Item_GravelbagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_GravelbagLSR,
+}
+
+option BundleUp.Item_PlasterPowderLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PlasterPowderLR,
+}
+
+option BundleUp.Item_PlasterPowderLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_PlasterPowderLSR,
+}
+
+option BundleUp.Item_SandbagLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_SandbagLR,
+}
+
+option BundleUp.Item_SandbagLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_SandbagLSR,
+}
+
+option BundleUp.Item_WallpaperPasteLR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_WallpaperPasteLR,
+}
+
+option BundleUp.Item_WallpaperPasteLSR
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_WallpaperPasteLSR,
+}
+
+option BundleUp.Item_ClaySack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_ClaySack,
+}
+
+option BundleUp.Item_Sack_Sack
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_Other, translation = BundleUp_Item_Sack_Sack,
 }

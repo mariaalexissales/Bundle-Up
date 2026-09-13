@@ -80,8 +80,6 @@
   "MergeSack": "Combine into Large Sack",
   "MergeTie": "Combine into Large Bundle",
   "MergeTieStock": "Combine into Large Bundle",
-  "PackFoodCase": "Pack Food Cartons in Case",
-  "UnpackFoodCase": "Open Food Case (4 cartons)",
   "TieHide5": "Bundle 5 Hides",
   "TieHide10": "Bundle 10 Hides",
   "UntieHide5": "Unbundle 5 Hides",
@@ -116,5 +114,7 @@
   "PackOreSack10": "Sack 10 Ore",
   "PackOreSack25": "Sack 25 Ore",
   "UnpackOreSack10": "Empty the Ore Sack",
-  "UnpackOreSack25": "Empty the Ore Sack"
+  "UnpackOreSack25": "Empty the Ore Sack",
+  "PackFoodCase": "Pack Food Cartons in Case",
+  "UnpackFoodCase": "Open Food Case (4 cartons)"
 }

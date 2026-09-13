@@ -233,7 +233,7 @@ def recipe_pair(tier, pack, unpack, rows):
         "        onCreate = " + tier["on_create"] + ",\n"
         "        category = Packing,\n"
         "        inputs {\n"
-        "            item 1 [" + upper + "] flags[AllowRottenItem;AllowFrozenItem] mappers[tierMap],\n"
+        "            item 1 [" + upper + "] flags[AllowRottenItem;AllowFrozenItem;IsExclusive;ItemCount] mappers[tierMap],\n"
         "        }\n"
         "        outputs {\n"
         "            item " + per + " mapper:tierMap,\n"

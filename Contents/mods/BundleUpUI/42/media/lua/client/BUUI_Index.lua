@@ -4,6 +4,14 @@
 
 BUUI = BUUI or {}
 
+require "BU_MergeData"
+
+BUUI.MODE = {
+    BUNDLE   = "bundle",
+    UNBUNDLE = "unbundle",
+    MERGE    = "merge",
+}
+
 -- keyed off the recipe's module prefix rather than a tag, so the base mod's 67 recipes
 -- need no edits and another packing mod only has to name its module here.
 BUUI.modules = BUUI.modules or { BundleUp = true }
@@ -250,7 +258,61 @@ local function BUUI_outputLabel(outputs)
     return table.concat(parts, " + ")
 end
 
-function BUUI.resolveRows(player, bundling)
+-- a merge row stands in for a recipe it does not have: BUUI_Queue branches on
+-- entry.merge, and the sort at the foot of resolveRows reads entry.count.
+function BUUI.resolveMergeRows(player)
+    local containers = ISInventoryPaneContextMenu.getContainers(player)
+    local rows = {}
+
+    for fullType, items in pairs(BU.Merge.collect(containers)) do
+        local plan = BU.Merge.plan(items)
+        if #plan.steps > 0 then
+            local item = items[1]
+
+            local sources, seen = {}, {}
+            for _, candidate in ipairs(items) do
+                local container = candidate:getContainer()
+                if container and not seen[container] then
+                    seen[container] = true
+                    sources[#sources + 1] = { fullType = fullType, container = container }
+                end
+            end
+
+            rows[#rows + 1] = {
+                key = "merge|" .. fullType,
+                entry = { merge = true, count = plan.total },
+                sources = sources,
+                sourceCount = plan.count,
+                inputs = { {
+                    label = getText("IGUI_BUUI_MergePartial"),
+                    have = plan.count - plan.full,
+                    need = plan.count,
+                    satisfied = true,
+                } },
+                ready = true,
+                max = #plan.steps,
+                quantity = #plan.steps,
+                name = item:getDisplayName(),
+                result = getText("IGUI_BUUI_MergeResult", tostring(plan.full + plan.partial), tostring(plan.count)),
+                texture = item:getTexture(),
+            }
+        end
+    end
+
+    table.sort(rows, function(a, b)
+        if a.sourceCount ~= b.sourceCount then return a.sourceCount > b.sourceCount end
+        return (a.name or "") < (b.name or "")
+    end)
+
+    return rows, containers
+end
+
+function BUUI.resolveRows(player, mode)
+    if mode == BUUI.MODE.MERGE then
+        return BUUI.resolveMergeRows(player)
+    end
+
+    local bundling = mode == BUUI.MODE.BUNDLE
     local index = BUUI.getIndex()
     local containers, tally, sample = BUUI.scanContainers(player)
     local rows, byKey = {}, {}

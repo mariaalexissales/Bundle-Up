@@ -75,6 +75,89 @@ function BUInv.unpackEmptyGasCans(craftRecipeData, character)
     BU_refillCreatedCans(craftRecipeData, nil)
 end
 
+local BU_pendingShells = {}
+local BU_shellSweepQueued = false
+
+local function BU_shellType(item)
+    local script = item:getScriptItem()
+    if not script then
+        return nil
+    end
+    local shell = script:getReplaceOnDeplete()
+    if not shell or shell == "" then
+        return nil
+    end
+    if not string.find(shell, ".", 1, true) then
+        shell = item:getModule() .. "." .. shell
+    end
+    return shell
+end
+
+local function BU_takeShellFromSquare(square, fullType)
+    local worldObjects = square:getWorldObjects()
+    for i = worldObjects:size() - 1, 0, -1 do
+        local worldObject = worldObjects:get(i)
+        local item = worldObject:getItem()
+        if item and item:getFullType() == fullType then
+            square:transmitRemoveItemFromSquare(worldObject)
+            square:removeWorldObject(worldObject)
+            return true
+        end
+    end
+    return false
+end
+
+local function BU_takeShellFromContainer(container, fullType)
+    local items = container:getItems()
+    for i = items:size() - 1, 0, -1 do
+        local item = items:get(i)
+        if item:getFullType() == fullType then
+            container:DoRemoveItem(item)
+            sendRemoveItemFromContainer(container, item)
+            return true
+        end
+    end
+    return false
+end
+
+local function BU_sweepShells()
+    Events.OnTick.Remove(BU_sweepShells)
+    BU_shellSweepQueued = false
+
+    local pending = BU_pendingShells
+    BU_pendingShells = {}
+    for _, shell in ipairs(pending) do
+        local taken = shell.square ~= nil and BU_takeShellFromSquare(shell.square, shell.type)
+        if not taken and shell.container then
+            BU_takeShellFromContainer(shell.container, shell.type)
+        end
+    end
+end
+
+function BUInv.stripMintedShells(craftRecipeData, character)
+    -- no recipe flag reaches ReplaceOnDeplete, so the minted sacks have to go in
+    -- lua. onCreate runs before processDestroyAndUsedItems creates them - note
+    -- where each will land, take it next tick.
+    local consumed = craftRecipeData:getAllConsumedItems()
+    for i = 0, consumed:size() - 1 do
+        local item = consumed:get(i)
+        local shellType = item and BU_shellType(item)
+        if shellType then
+            local worldItem = item:getWorldItem()
+            BU_pendingShells[#BU_pendingShells + 1] = {
+                type = shellType,
+                square = worldItem and worldItem:getSquare() or nil,
+                container = item:getContainer(),
+            }
+        end
+    end
+
+    if #BU_pendingShells > 0 and not BU_shellSweepQueued then
+        BU_shellSweepQueued = true
+        Events.OnTick.Add(BU_sweepShells)
+    end
+end
+
 local function BU_isCanOfFlavor(can, fluidName)
     local fluidContainer = can:getFluidContainer()
     if not fluidContainer or not fluidContainer:isFull() then

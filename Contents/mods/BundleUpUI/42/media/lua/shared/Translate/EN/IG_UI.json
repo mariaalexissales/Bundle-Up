@@ -17,5 +17,11 @@
     "IGUI_BUUI_Inventory": "Inventory",
     "IGUI_BUUI_Empty": "Nothing here can be bundled",
     "IGUI_BUUI_EmptyUnbundle": "Nothing here can be unbundled",
-    "IGUI_BUUI_Summary": "%1 ready, %2 blocked"
+    "IGUI_BUUI_Summary": "%1 ready, %2 blocked",
+    "IGUI_BUUI_Merge": "Merge",
+    "IGUI_BUUI_MergeItems": "Merge Items",
+    "IGUI_BUUI_MergeAll": "Merge All",
+    "IGUI_BUUI_EmptyMerge": "Nothing here can be merged",
+    "IGUI_BUUI_MergeResult": "%1 from %2",
+    "IGUI_BUUI_MergePartial": "Part-used"
 }

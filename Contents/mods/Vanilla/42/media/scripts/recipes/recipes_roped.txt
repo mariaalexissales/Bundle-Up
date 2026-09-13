@@ -939,6 +939,7 @@ module BundleUp {
         timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        onCreate = BUInv.stripMintedShells,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
@@ -997,6 +998,7 @@ module BundleUp {
         timedAction = Making,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        onCreate = BUInv.stripMintedShells,
         category = Packing,
         inputs {
             item 1 [Base.Rope;Base.SheetRope] mappers[bundleTypes],
