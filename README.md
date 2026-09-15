@@ -81,11 +81,15 @@ That gap is why the bug hid for so long. On a **new game** a merge handler sees 
 `OnGameStart` runs from `IngameState`, after `IsoWorld.init()` has returned, so it is the first event where the settings are real. The cost of arriving that late is that Java already has its copy, and rebuilding it takes the call vanilla's own admin panel makes after a sandbox change:
 
 ```lua
+-- fillContainer returns straight away on a client, so the java copy there is never read.
+local needed = (removed > 0 or inserted > 0) and not isClient()
 local rebuilt = false
-if IsoWorld and IsoWorld.parseDistributions then
+if needed and IsoWorld and IsoWorld.parseDistributions then
     rebuilt = pcall(function() IsoWorld.parseDistributions() end)
 end
 ```
+
+That rebuild re-reads every loot table in the game, other mods' included, so it only runs when the pass actually changed an array, and never on a multiplayer client.
 
 Arriving after every other mod has loaded also means arriving after they have rewritten the arrays. The fix stopped recording *where* its entries went — an index another mod is free to invalidate — and started recording *what* it inserts. Every name is `BundleUp.*`, vanilla has none of them, and each lands at most once per array, so removing by name is an exact undo and the whole pass becomes re-runnable. A spawn rate of None now drops the entry instead of writing a weight of zero into a vanilla table.
 
