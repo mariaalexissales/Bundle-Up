@@ -19,6 +19,7 @@ local TAB_HEIGHT = 22
 local BAR_HEIGHT = 22
 local FOOTER_HEIGHT = 30
 local REFRESH_TICKS = 90
+local STALE_REFRESHES = 10
 
 local COL_BAR = { r = 0, g = 0, b = 0, a = 0.35 }
 local COL_FRAME = { r = 1, g = 1, b = 1, a = 0.09 }
@@ -46,6 +47,7 @@ function BUUI_Panel:new(x, y, width, height, player)
     o.mode = BUUI.MODE.BUNDLE
     o.rows = {}
     o.ticks = 0
+    o.skipped = 0
     o.resizable = true
     o.minimumWidth = 600
     o.minimumHeight = 320
@@ -163,7 +165,36 @@ function BUUI_Panel:onRefresh()
     self:refresh()
 end
 
-function BUUI_Panel:refresh()
+local function BUUI_sameScan(a, b)
+    if not a or not b or a.square ~= b.square then return false end
+
+    local ca, cb = a.containers, b.containers
+    if ca:size() ~= cb:size() then return false end
+    for i = 0, ca:size() - 1 do
+        if ca:get(i) ~= cb:get(i) then return false end
+    end
+
+    for fullType, count in pairs(a.tally) do
+        if b.tally[fullType] ~= count then return false end
+    end
+    for fullType in pairs(b.tally) do
+        if a.tally[fullType] == nil then return false end
+    end
+
+    return true
+end
+
+function BUUI_Panel:scanReach()
+    local containers, tally, sample = BUUI.scanContainers(self.player)
+    return {
+        square = self.player:getCurrentSquare(),
+        containers = containers,
+        tally = tally,
+        sample = sample,
+    }
+end
+
+function BUUI_Panel:refresh(scan)
     -- the auto-refresh rebuilds every row, so a dialled quantity has to be carried
     -- across by key or the timer wipes it before the player reaches the button.
     local dialled = {}
@@ -171,7 +202,15 @@ function BUUI_Panel:refresh()
         if row.key then dialled[row.key] = row.quantity end
     end
 
-    local rows, containers = BUUI.resolveRows(self.player, self.mode)
+    if self.mode == BUUI.MODE.MERGE then
+        scan = nil
+    else
+        scan = scan or self:scanReach()
+    end
+    self.lastScan = scan
+    self.skipped = 0
+
+    local rows, containers = BUUI.resolveRows(self.player, self.mode, scan)
     self.rows = rows
     self.sourceText = self:describeSources(containers)
 
@@ -348,10 +387,22 @@ function BUUI_Panel:update()
     if BUUI.Queue.isRunning() then return end
 
     self.ticks = self.ticks + 1
-    if self.ticks >= REFRESH_TICKS then
-        self.ticks = 0
-        self:refresh()
+    if self.ticks < REFRESH_TICKS then return end
+    self.ticks = 0
+
+    -- fill levels, wear and rot change a row without moving the tally, so merge is never
+    -- gated and the other tabs still re-probe after STALE_REFRESHES skipped checks.
+    if self.mode ~= BUUI.MODE.MERGE and self.skipped < STALE_REFRESHES then
+        local scan = self:scanReach()
+        if BUUI_sameScan(scan, self.lastScan) then
+            self.skipped = self.skipped + 1
+            return
+        end
+        self:refresh(scan)
+        return
     end
+
+    self:refresh()
 end
 
 function BUUI_Panel:onResize()
