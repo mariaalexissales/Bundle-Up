@@ -152,11 +152,15 @@ end
 
 -- mirrors ISInventoryPaneContextMenu.OnNewCraft: every vanilla caller builds a fresh
 -- logic and gives it a craft surface before asking whether the recipe can run.
-local function BUUI_probeLogic(player, containers)
+local function BUUI_probeLogic(player, containers, surface)
     local logic = HandcraftLogic.new(player, nil, nil)
-    logic:setIsoObject(logic:findCraftSurface(player, 2))
+    -- findCraftSurface reads only the player's square, so one lookup covers a whole pass.
+    if surface == nil then
+        surface = logic:findCraftSurface(player, 2) or false
+    end
+    logic:setIsoObject(surface or nil)
     logic:setContainers(containers)
-    return logic
+    return logic, surface
 end
 
 -- an input can accept a whole family - PackFoodCase lists all 166 cartons - so the
@@ -316,7 +320,7 @@ function BUUI.resolveRows(player, mode)
     local bundling = mode == BUUI.MODE.BUNDLE
     local index = BUUI.getIndex()
     local containers, tally, sample = BUUI.scanContainers(player)
-    local rows, byKey = {}, {}
+    local rows, byKey, surface = {}, {}, nil
 
     for fullType, count in pairs(tally) do
         local bucket = index[fullType]
@@ -324,7 +328,8 @@ function BUUI.resolveRows(player, mode)
             for _, entry in ipairs(bucket) do
                 if entry.bundling == bundling then
                     local item = sample[fullType]
-                    local logic = BUUI_probeLogic(player, containers)
+                    local logic
+                    logic, surface = BUUI_probeLogic(player, containers, surface)
                     logic:setRecipeFromContextClick(entry.recipe, item)
 
                     local inputs, satisfied = BUUI_describeInputs(logic, entry, fullType)
