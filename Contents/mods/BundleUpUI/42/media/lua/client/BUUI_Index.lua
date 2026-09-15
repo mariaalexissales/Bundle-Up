@@ -29,15 +29,17 @@ end
 
 local function BUUI_largestAmount(input)
     local possible = input:getPossibleInputItems()
-    if not possible or possible:size() == 0 then return input:getIntAmount() end
+    if not possible or possible:size() == 0 then return input:getIntAmount(), nil, nil end
 
-    local largest = 0
+    local largest, names, amounts = 0, {}, {}
     for i = 0, possible:size() - 1 do
-        local amount = BUUI_amountFor(input, possible:get(i):getFullName())
+        local fullName = possible:get(i):getFullName()
+        local amount = BUUI_amountFor(input, fullName)
+        names[i + 1], amounts[i + 1] = fullName, amount
         if amount > largest then largest = amount end
     end
 
-    return largest
+    return largest, names, amounts
 end
 
 -- the bulk material is the input asking for the most of something - Tie5 wants one
@@ -47,21 +49,21 @@ local function BUUI_splitInputs(recipe)
     local inputs = recipe:getInputs()
     if not inputs or inputs:size() == 0 then return nil, nil, 0 end
 
-    local pivot, bulk, others = nil, 0, {}
+    local pivot, bulk, others, names, amounts = nil, 0, {}, nil, nil
     for i = 0, inputs:size() - 1 do
         local input = inputs:get(i)
         if input:getResourceType() == ResourceType.Item and not input:isAutomationOnly() then
-            local amount = BUUI_largestAmount(input)
+            local amount, inputNames, inputAmounts = BUUI_largestAmount(input)
             if not pivot or amount > bulk then
                 if pivot then others[#others + 1] = pivot end
-                pivot, bulk = input, amount
+                pivot, bulk, names, amounts = input, amount, inputNames, inputAmounts
             else
                 others[#others + 1] = input
             end
         end
     end
 
-    return pivot, others, bulk
+    return pivot, others, bulk, names, amounts
 end
 
 local function BUUI_moduleOf(recipe)
@@ -81,16 +83,15 @@ function BUUI.buildIndex()
         local recipe = all:get(i)
         local module = BUUI_moduleOf(recipe)
         if module and BUUI.modules[module] then
-            local pivot, others, bulk = BUUI_splitInputs(recipe)
+            local pivot, others, bulk, names, amounts = BUUI_splitInputs(recipe)
             if pivot then
                 -- packing consumes many to make one and unpacking does the reverse, so
                 -- the bulk amount sorts the two without matching on recipe names.
                 local bundling = bulk >= 2
 
-                local possible = pivot:getPossibleInputItems()
-                if possible then
-                    for n = 0, possible:size() - 1 do
-                        local fullName = possible:get(n):getFullName()
+                if names then
+                    for n = 1, #names do
+                        local fullName = names[n]
                         local bucket = index[fullName]
                         if not bucket then
                             bucket = {}
@@ -103,7 +104,7 @@ function BUUI.buildIndex()
                             recipe = recipe,
                             pivot = pivot,
                             secondaries = others,
-                            count = BUUI_amountFor(pivot, fullName),
+                            count = amounts[n],
                             bundling = bundling,
                         }
                     end
