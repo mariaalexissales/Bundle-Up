@@ -21,15 +21,17 @@ local function BU_reductionFor(fullType, def, sv)
     return sv.ReductionDefault or 0
 end
 
-function BU.applyWeights()
-    local sv = SandboxVars and SandboxVars.BundleUp
-    if not sv then return end
+local BU_order, BU_orderSource, BU_orderCount = nil, nil, 0
 
-    local sm = getScriptManager()
-    if not sm then return end
+-- A nested pack reads its base's weight, so the base has to be final
+-- first. Depth is measured once up front rather than per comparison.
+local function BU_sortedBundles()
+    local count = 0
+    for _ in pairs(BU.Bundles) do count = count + 1 end
+    if BU_order and BU_orderSource == BU.Bundles and BU_orderCount == count then
+        return BU_order
+    end
 
-    -- A nested pack reads its base's weight, so the base has to be final
-    -- first. Depth is measured once up front rather than per comparison.
     local order, depth = {}, {}
     for fullType in pairs(BU.Bundles) do
         order[#order + 1] = fullType
@@ -40,6 +42,18 @@ function BU.applyWeights()
         return a < b
     end)
 
+    BU_order, BU_orderSource, BU_orderCount = order, BU.Bundles, count
+    return order
+end
+
+function BU.applyWeights()
+    local sv = SandboxVars and SandboxVars.BundleUp
+    if not sv then return end
+
+    local sm = getScriptManager()
+    if not sm then return end
+
+    local order = BU_sortedBundles()
     for i = 1, #order do
         local fullType = order[i]
         local def = BU.Bundles[fullType]
