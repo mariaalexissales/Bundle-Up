@@ -1448,7 +1448,8 @@ local function BU_applyLootRates()
     -- (ISServerSandboxOptionsUI.lua:769). StoryClutter.Init() is deliberately not called
     -- alongside it: that UI needs it, nothing here touches clutter, and re-running it
     -- would double-register.
-    local needed = removed > 0 or inserted > 0
+    -- fillContainer returns straight away on a client, so the java copy there is never read.
+    local needed = (removed > 0 or inserted > 0) and not isClient()
     local rebuilt = false
     if needed and IsoWorld and IsoWorld.parseDistributions then
         rebuilt = pcall(function() IsoWorld.parseDistributions() end)
