@@ -312,14 +312,19 @@ function BUUI.resolveMergeRows(player)
     return rows, containers
 end
 
-function BUUI.resolveRows(player, mode)
+function BUUI.resolveRows(player, mode, scan)
     if mode == BUUI.MODE.MERGE then
         return BUUI.resolveMergeRows(player)
     end
 
     local bundling = mode == BUUI.MODE.BUNDLE
     local index = BUUI.getIndex()
-    local containers, tally, sample = BUUI.scanContainers(player)
+    local containers, tally, sample
+    if scan then
+        containers, tally, sample = scan.containers, scan.tally, scan.sample
+    else
+        containers, tally, sample = BUUI.scanContainers(player)
+    end
     local rows, byKey, surface = {}, {}, nil
 
     for fullType, count in pairs(tally) do
