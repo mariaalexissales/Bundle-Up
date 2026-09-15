@@ -2,8 +2,6 @@
 --ESTRAL--
 ----------
 
-local table_insert = table.insert
-
 -- Nothing goes into ProceduralDistributions here. SandboxVars.BundleUp does not exist at
 -- file-load time, and by the time it does IsoWorld.init() has already handed these tables
 -- to Java -- see the note above the event registrations at the bottom. So these calls only
@@ -1368,25 +1366,38 @@ end
 -- place on the same event, in whichever order the mod list happens to give.
 local function BU_purge(items)
     local n = #items
-    local kept, removed, i = {}, 0, 1
+    local removed, i = 0, 1
     while i <= n do
         local name, weight = items[i], items[i + 1]
         if type(name) == "string" and type(weight) == "number" then
-            if owned[name] then
-                removed = removed + 1
-            else
-                kept[#kept + 1] = name
-                kept[#kept + 1] = weight
-            end
+            if owned[name] then removed = removed + 1 end
             i = i + 2
         else
-            kept[#kept + 1] = name
             i = i + 1
         end
     end
     if removed == 0 then return 0 end
-    for k = n, 1, -1 do items[k] = nil end
-    for k = 1, #kept do items[k] = kept[k] end
+
+    local kept, k = {}, 0
+    i = 1
+    while i <= n do
+        local name, weight = items[i], items[i + 1]
+        if type(name) == "string" and type(weight) == "number" then
+            if not owned[name] then
+                kept[k + 1], kept[k + 2] = name, weight
+                k = k + 2
+            end
+            i = i + 2
+        else
+            if name ~= nil then
+                k = k + 1
+                kept[k] = name
+            end
+            i = i + 1
+        end
+    end
+    for j = n, 1, -1 do items[j] = nil end
+    for j = 1, k do items[j] = kept[j] end
     return removed
 end
 
@@ -1422,7 +1433,7 @@ local function BU_applyLootRates()
         end
     end
 
-    local inserted = 0
+    local inserted, ends = 0, {}
     for p = 1, #plan do
         local entry = plan[p]
         local multiplier = BU_multiplierFor(sv, entry.option)
@@ -1432,11 +1443,13 @@ local function BU_applyLootRates()
                 local items = targets[tableName]
                 if items then
                     local scaled = weight * multiplier
+                    local n = ends[items] or #items
                     for i = 1, #entry.items do
-                        table_insert(items, entry.items[i])
-                        table_insert(items, scaled)
+                        items[n + 1], items[n + 2] = entry.items[i], scaled
+                        n = n + 2
                         inserted = inserted + 1
                     end
+                    ends[items] = n
                 end
             end
         end
