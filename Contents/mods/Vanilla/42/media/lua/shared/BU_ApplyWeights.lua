@@ -5,11 +5,15 @@
 require "BU_WeightData"
 
 local MIN_WEIGHT = 0.01
+local MAX_WEIGHT = 40
 
 local function BU_reductionFor(fullType, def, sv)
     local short = fullType:match("%.(.+)$") or fullType
     local per = sv["Item_" .. short]
     if per and per >= 0 then return per end
+
+    local built = BU.BaseReduction and BU.BaseReduction[def.base]
+    if built then return built end
 
     local baseType = BU.resolveBase(fullType) or def.base
     local catVar = BU.BaseCategory[baseType]
@@ -65,6 +69,7 @@ function BU.applyWeights()
             local raw = (baseItem:getActualWeight() + (def.fluid or 0)) * def.count
             local weight = raw * (1 - BU_reductionFor(fullType, def, sv) / 100)
             if weight < MIN_WEIGHT then weight = MIN_WEIGHT end
+            if weight > MAX_WEIGHT then weight = MAX_WEIGHT end
             bundle:setActualWeight(weight)
         end
     end

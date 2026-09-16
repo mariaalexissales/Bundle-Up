@@ -431,6 +431,52 @@ BU.BaseCategory = {
     ["Base.PiercedSteelIngot"]                  = "ReductionMetal",
 }
 
+-- keyed by the pack's own base, not resolveBase, or a case's cut lands on its carton too.
+BU.BaseReduction = {
+    ["Base.IronOre"]                      = 90,
+    ["Base.CopperOre"]                    = 90,
+    ["Base.LargeStone"]                   = 90,
+    ["Base.IronBloom"]                    = 80,
+    ["Base.GoldBar"]                      = 75,
+    ["Base.HematiteLarge"]                = 70,
+    ["Base.MalachiteLarge"]               = 70,
+    ["Base.FlatStone"]                    = 60,
+    ["Base.LargePlank"]                   = 60,
+    ["Base.SilverBar"]                    = 50,
+    ["BundleUp.Cornflour2Carton"]         = 50,
+    ["BundleUp.Cornmeal2Carton"]          = 50,
+    ["BundleUp.DriedBlackBeansCarton"]    = 50,
+    ["BundleUp.DriedChickpeasCarton"]     = 50,
+    ["BundleUp.DriedKidneyBeansCarton"]   = 50,
+    ["BundleUp.DriedLentilsCarton"]       = 50,
+    ["BundleUp.DriedSplitPeasCarton"]     = 50,
+    ["BundleUp.DriedWhiteBeansCarton"]    = 50,
+    ["BundleUp.Flour2Carton"]             = 50,
+    ["BundleUp.MacaroniCarton"]           = 50,
+    ["BundleUp.PastaCarton"]              = 50,
+    ["BundleUp.RiceCarton"]               = 50,
+    ["BundleUp.DogFoodBagCrate"]          = 50,
+    ["Base.Hematite"]                     = 40,
+    ["Base.Malachite"]                    = 40,
+    ["Base.IronIngot"]                    = 35,
+    ["Base.SteelIngot"]                   = 35,
+    ["Base.CopperIngot"]                  = 35,
+    ["Base.PiercedIronIngot"]             = 35,
+    ["Base.PiercedSteelIngot"]            = 35,
+    ["Base.LargeBranch"]                  = 35,
+    ["Base.BrassIngot"]                   = 20,
+    ["Base.Coke"]                         = 20,
+    ["Base.CompostBag"]                   = 20,
+    ["Base.ConcretePowder"]               = 20,
+    ["Base.PlasterPowder"]                = 20,
+    ["Base.Fertilizer"]                   = 20,
+    ["Base.DuctTapeBox"]                  = 20,
+    ["Base.CowLeather_Angus_Fur_Tan"]     = 20,
+    ["Base.CowLeather_Holstein_Fur_Tan"]  = 20,
+    ["Base.CowLeather_Simmental_Fur_Tan"] = 20,
+    ["Base.Leather_Crude_Large_Tan"]      = 20,
+}
+
 -- A pack's base is usually a vanilla item, but a nested pack names another
 -- pack instead. Walking down to the vanilla item at the bottom gives the
 -- category lookup something it can match.

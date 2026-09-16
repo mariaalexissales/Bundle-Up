@@ -113,6 +113,7 @@ def food_cartons(bundles, category):
 
 
 DEFAULT_REDUCTION = 17
+MAX_WEIGHT = 40
 
 # Rung names that already appear as item suffixes, longest first so that a
 # name ending in both is trimmed by the more specific one.
@@ -172,7 +173,7 @@ def weight_for(new, carton, tier, settled, cartons):
     below = cartons.get(carton)
     if below is None:
         raise RuntimeError(carton + " has no weight to size " + new + " from")
-    return "%g" % round(below * tier["per"] * (1 - DEFAULT_REDUCTION / 100), 2)
+    return "%g" % round(min(below * tier["per"] * (1 - DEFAULT_REDUCTION / 100), MAX_WEIGHT), 2)
 
 
 def item_block(stem, tier, icon, model, unpack, weight, rot):
