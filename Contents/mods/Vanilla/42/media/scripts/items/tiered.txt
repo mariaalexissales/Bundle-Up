@@ -492,7 +492,7 @@ module BundleUp {
     item Cornflour2Case {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -502,7 +502,7 @@ module BundleUp {
     item Cornmeal2Case {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -637,7 +637,7 @@ module BundleUp {
         CantEat = true,
         DaysFresh = 365,
         DaysTotallyRotten = 547,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -647,7 +647,7 @@ module BundleUp {
     item DriedBlackBeansCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -657,7 +657,7 @@ module BundleUp {
     item DriedChickpeasCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -667,7 +667,7 @@ module BundleUp {
     item DriedKidneyBeansCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -677,7 +677,7 @@ module BundleUp {
     item DriedLentilsCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -687,7 +687,7 @@ module BundleUp {
     item DriedSplitPeasCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -697,7 +697,7 @@ module BundleUp {
     item DriedWhiteBeansCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -720,7 +720,7 @@ module BundleUp {
     item Flour2Case {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -998,7 +998,7 @@ module BundleUp {
     item MacaroniCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Food,
         WorldStaticModel = Parcel_Food_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -1157,7 +1157,7 @@ module BundleUp {
     item PastaCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -1365,7 +1365,7 @@ module BundleUp {
     item RiceCase {
         DisplayCategory = Food,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 39.84,
         Icon = Parcel_ExtraLarge_Fruit,
         WorldStaticModel = Parcel_Produce_ExtraLarge,
         Tags = base:ignorezombiedensity,

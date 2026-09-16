@@ -54,7 +54,7 @@ module BundleUp {
     item Coke_Small {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = CokeS,
         WorldStaticModel = Parcel_ExtraSmall,
         Tags = base:charcoal;base:isfirefuel,
@@ -658,7 +658,7 @@ module BundleUp {
     item HematiteSack {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 37.5,
         Icon = Sack_Laundry,
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackOreSack25,
@@ -667,7 +667,7 @@ module BundleUp {
     item HematiteLargeSack {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 37.5,
         Icon = Sack_Laundry,
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackOreSack25,
@@ -676,7 +676,7 @@ module BundleUp {
     item MalachiteSack {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 37.5,
         Icon = Sack_Laundry,
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackOreSack25,
@@ -685,7 +685,7 @@ module BundleUp {
     item MalachiteLargeSack {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 37.5,
         Icon = Sack_Laundry,
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackOreSack25,
