@@ -1700,7 +1700,7 @@ module BundleUp {
     item WhiskeyPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 10.2,
+        Weight = 8.47,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1709,7 +1709,7 @@ module BundleUp {
     item VodkaPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1718,7 +1718,7 @@ module BundleUp {
     item RumPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1727,7 +1727,7 @@ module BundleUp {
     item GinPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1736,7 +1736,7 @@ module BundleUp {
     item TequilaPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1745,7 +1745,7 @@ module BundleUp {
     item BrandyPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 9.0,
+        Weight = 7.47,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1754,7 +1754,7 @@ module BundleUp {
     item ScotchPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1763,7 +1763,7 @@ module BundleUp {
     item SherryPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1772,7 +1772,7 @@ module BundleUp {
     item PortPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1781,7 +1781,7 @@ module BundleUp {
     item VermouthPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1790,7 +1790,7 @@ module BundleUp {
     item CiderPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1799,7 +1799,7 @@ module BundleUp {
     item CuracaoPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1808,7 +1808,7 @@ module BundleUp {
     item GrenadinePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1817,7 +1817,7 @@ module BundleUp {
     item CoffeeLiquerPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackLiquor,
@@ -1826,7 +1826,7 @@ module BundleUp {
     item WineWhitePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 7.8,
+        Weight = 6.47,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackWine,
@@ -1835,7 +1835,7 @@ module BundleUp {
     item WineRedPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 7.8,
+        Weight = 6.47,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackWine,
@@ -1844,7 +1844,7 @@ module BundleUp {
     item WineAgedPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackWine,
@@ -1853,7 +1853,7 @@ module BundleUp {
     item WineBoxPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 7.2,
+        Weight = 5.98,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackWine,
@@ -1862,7 +1862,7 @@ module BundleUp {
     item WineScrewtopPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackWine,
@@ -1871,7 +1871,7 @@ module BundleUp {
     item ChampagnePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 12.0,
+        Weight = 9.96,
         Icon = Parcel_Large_Liquor,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackWine,
@@ -1880,7 +1880,7 @@ module BundleUp {
     item BeerImportedPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 4.2,
+        Weight = 3.49,
         Icon = SixPack_Bottles,
         WorldStaticModel = BeerCanSixpack,
         Tags = base:hasmetal,
@@ -1890,7 +1890,7 @@ module BundleUp {
     item JuiceBoxGrapePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.8,
+        Weight = 1.49,
         Icon = JuiceBox,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1899,7 +1899,7 @@ module BundleUp {
     item JuiceBoxApplePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.8,
+        Weight = 1.49,
         Icon = JuiceBox_Apple,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1908,7 +1908,7 @@ module BundleUp {
     item JuiceBoxFruitpunchPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.8,
+        Weight = 1.49,
         Icon = JuiceBox_FruitPunch,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1917,7 +1917,7 @@ module BundleUp {
     item JuiceBoxOrangePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 1.8,
+        Weight = 1.49,
         Icon = JuiceBox_Orange,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1926,7 +1926,7 @@ module BundleUp {
     item JuiceCranberryPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 6.6,
+        Weight = 5.48,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1935,7 +1935,7 @@ module BundleUp {
     item JuiceFruitpunchPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 6.6,
+        Weight = 5.48,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1944,7 +1944,7 @@ module BundleUp {
     item JuiceGrapePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 6.6,
+        Weight = 5.48,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1953,7 +1953,7 @@ module BundleUp {
     item JuiceLemonPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 6.6,
+        Weight = 5.48,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1962,7 +1962,7 @@ module BundleUp {
     item JuiceOrangePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 6.6,
+        Weight = 5.48,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1971,7 +1971,7 @@ module BundleUp {
     item JuiceTomatoPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 6.6,
+        Weight = 5.48,
         Icon = Parcel_Small_Fruit,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackJuice,
@@ -1980,7 +1980,7 @@ module BundleUp {
     item MilkPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 7.2,
+        Weight = 5.98,
         Icon = Milk,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackMilk,
@@ -1989,7 +1989,7 @@ module BundleUp {
     item MilkBottlePack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 6.6,
+        Weight = 5.48,
         Icon = MilkBottle,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackMilk,
@@ -1998,7 +1998,7 @@ module BundleUp {
     item MilkSmallPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 2.7,
+        Weight = 2.24,
         Icon = Milk_Personalsized,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackMilk,
@@ -2007,7 +2007,7 @@ module BundleUp {
     item MilkChocSmallPack {
         DisplayCategory = Cooking,
         ItemType = base:normal,
-        Weight = 2.7,
+        Weight = 2.24,
         Icon = MilkChocolate_Personalsized,
         WorldStaticModel = BeerCanSixpack,
         DoubleClickRecipe = UnpackMilk,
@@ -2017,7 +2017,7 @@ module BundleUp {
     item IronIngot_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 30.0,
+        Weight = 19.5,
         Icon = Ingot_Iron,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2027,7 +2027,7 @@ module BundleUp {
     item IronIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 60.0,
+        Weight = 39.0,
         Icon = Ingot_Iron,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2037,7 +2037,7 @@ module BundleUp {
     item SteelIngot_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 30.0,
+        Weight = 19.5,
         Icon = Ingot_Steel,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2047,7 +2047,7 @@ module BundleUp {
     item SteelIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 60.0,
+        Weight = 39.0,
         Icon = Ingot_Steel,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2057,7 +2057,7 @@ module BundleUp {
     item CopperIngot_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 30.0,
+        Weight = 19.5,
         Icon = Ingot_Copper,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2067,7 +2067,7 @@ module BundleUp {
     item CopperIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 60.0,
+        Weight = 39.0,
         Icon = Ingot_Copper,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2077,7 +2077,7 @@ module BundleUp {
     item BrassIngot_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 25.0,
+        Weight = 20.0,
         Icon = Ingot_Brass,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2087,7 +2087,7 @@ module BundleUp {
     item BrassIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 50.0,
+        Weight = 40.0,
         Icon = Ingot_Brass,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2097,7 +2097,7 @@ module BundleUp {
     item GoldBar_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 80.0,
+        Weight = 20.0,
         Icon = Ingot_Gold,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2107,7 +2107,7 @@ module BundleUp {
     item GoldBar_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 160.0,
+        Weight = 40.0,
         Icon = Ingot_Gold,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2117,7 +2117,7 @@ module BundleUp {
     item SmallGoldBar_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.3,
         Icon = Ingot_Gold,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2127,7 +2127,7 @@ module BundleUp {
     item SmallGoldBar_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.0,
+        Weight = 16.6,
         Icon = Ingot_Gold,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2137,7 +2137,7 @@ module BundleUp {
     item SilverBar_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 40.0,
+        Weight = 20.0,
         Icon = Ingot_Silver,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2147,7 +2147,7 @@ module BundleUp {
     item SilverBar_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 80.0,
+        Weight = 40.0,
         Icon = Ingot_Silver,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2157,7 +2157,7 @@ module BundleUp {
     item SmallSilverBar_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 5.0,
+        Weight = 4.15,
         Icon = Ingot_Silver,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2167,7 +2167,7 @@ module BundleUp {
     item SmallSilverBar_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 10.0,
+        Weight = 8.3,
         Icon = Ingot_Silver,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2177,7 +2177,7 @@ module BundleUp {
     item PiercedIronIngot_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 30.0,
+        Weight = 19.5,
         Icon = Ingot_Iron_Hole,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2187,7 +2187,7 @@ module BundleUp {
     item PiercedIronIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 60.0,
+        Weight = 39.0,
         Icon = Ingot_Iron_Hole,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2197,7 +2197,7 @@ module BundleUp {
     item PiercedSteelIngot_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 30.0,
+        Weight = 19.5,
         Icon = Ingot_Steel_Hole,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2207,7 +2207,7 @@ module BundleUp {
     item PiercedSteelIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 60.0,
+        Weight = 39.0,
         Icon = Ingot_Steel_Hole,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
