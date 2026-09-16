@@ -12,6 +12,9 @@ local function BU_reductionFor(fullType, def, sv)
     local per = sv["Item_" .. short]
     if per and per >= 0 then return per end
 
+    local built = BU.BaseReduction and BU.BaseReduction[def.base]
+    if built then return built end
+
     local baseType = BU.resolveBase(fullType) or def.base
     local catVar = BU.BaseCategory[baseType]
     if catVar then
