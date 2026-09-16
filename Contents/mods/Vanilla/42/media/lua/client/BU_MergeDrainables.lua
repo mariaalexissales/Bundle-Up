@@ -154,12 +154,13 @@ function ISInventoryPaneContextMenu.checkConsolidate(drainable, playerObj, conte
     local submenu = context:getNew(context)
     context:addSubMenu(option, submenu)
 
-    if #targets > 1 then
-        submenu:addOption(getText("ContextMenu_MergeAll"), playerObj, BU_onMergeAll,
-            drainable:getFullType(), #BU.Merge.plan(candidates).steps)
-    end
-
     for _, into in ipairs(targets) do
         submenu:addOption(BU_fillLabel(into), playerObj, BU_onMerge, drainable, into)
+    end
+
+    local steps = #BU.Merge.plan(candidates).steps
+    if steps > 0 then
+        context:addOption(getText("ContextMenu_BU_MergeAll"), playerObj, BU_onMergeAll,
+            drainable:getFullType(), steps)
     end
 end
