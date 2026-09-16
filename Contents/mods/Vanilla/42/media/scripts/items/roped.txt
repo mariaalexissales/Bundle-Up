@@ -448,7 +448,7 @@ module BundleUp {
     item LargeBranchLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 49.8,
+        Weight = 40.0,
         Icon = Firewood_Bundle,
         WorldStaticModel = FourLogsStack,
         Tags = base:isfirefuel,
@@ -458,7 +458,7 @@ module BundleUp {
     item LargeBranchLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 49.8,
+        Weight = 40.0,
         Icon = Firewood_Bundle,
         WorldStaticModel = FourLogsStack,
         Tags = base:isfirefuel,
@@ -700,7 +700,7 @@ module BundleUp {
     item HideCowAngusLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_Rope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -709,7 +709,7 @@ module BundleUp {
     item HideCowAngusLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_SheetRope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -844,7 +844,7 @@ module BundleUp {
     item HideCowHolsteinLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_Rope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -853,7 +853,7 @@ module BundleUp {
     item HideCowHolsteinLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_SheetRope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -916,7 +916,7 @@ module BundleUp {
     item HideCowSimmentalLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_Rope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -925,7 +925,7 @@ module BundleUp {
     item HideCowSimmentalLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_SheetRope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -1276,7 +1276,7 @@ module BundleUp {
     item HideCrudeLargeLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CrudeTainted,
         WorldStaticModel = Hide_Rope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -1285,7 +1285,7 @@ module BundleUp {
     item HideCrudeLargeLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = LeatherHide_CrudeTainted,
         WorldStaticModel = Hide_SheetRope_Large,
         DoubleClickRecipe = UntieHide10,
@@ -1529,7 +1529,7 @@ module BundleUp {
     item CompostBagLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Compost,
         WorldStaticModel = Aggregate_Rope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1538,7 +1538,7 @@ module BundleUp {
     item CompostBagLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Compost,
         WorldStaticModel = Aggregate_SheetRope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1637,7 +1637,7 @@ module BundleUp {
     item FertilizerBagLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = TZ_IndieStoneNPK,
         WorldStaticModel = Aggregate_Rope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1646,7 +1646,7 @@ module BundleUp {
     item FertilizerBagLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = TZ_IndieStoneNPK,
         WorldStaticModel = Aggregate_SheetRope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1673,7 +1673,7 @@ module BundleUp {
     item ConcretePowderLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Concrete_Powder,
         WorldStaticModel = Aggregate_Rope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1682,7 +1682,7 @@ module BundleUp {
     item ConcretePowderLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Concrete_Powder,
         WorldStaticModel = Aggregate_SheetRope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1709,7 +1709,7 @@ module BundleUp {
     item PlasterPowderLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Plaster_Powder,
         WorldStaticModel = Aggregate_Rope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1718,7 +1718,7 @@ module BundleUp {
     item PlasterPowderLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Plaster_Powder,
         WorldStaticModel = Aggregate_SheetRope_Large,
         DoubleClickRecipe = UntieBuild10,
@@ -1799,7 +1799,7 @@ module BundleUp {
     item LargePlankR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = PlankR,
         WorldStaticModel = Plank_Rope,
         Tags = base:isfirefuel,
@@ -1809,7 +1809,7 @@ module BundleUp {
     item LargePlankSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = PlankSR,
         WorldStaticModel = Plank_SheetRope,
         Tags = base:isfirefuel,
@@ -1819,7 +1819,7 @@ module BundleUp {
     item LargePlankLR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 83.0,
+        Weight = 40.0,
         Icon = PlankLR,
         WorldStaticModel = Plank_Rope_Large,
         Tags = base:isfirefuel,
@@ -1829,7 +1829,7 @@ module BundleUp {
     item LargePlankLSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 83.0,
+        Weight = 40.0,
         Icon = PlankLSR,
         WorldStaticModel = Plank_SheetRope_Large,
         Tags = base:isfirefuel,

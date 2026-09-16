@@ -1834,7 +1834,7 @@ module BundleUp {
     item DuctTapeBoxCrate {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Parcel_Large_Hardware,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,

@@ -2027,7 +2027,7 @@ module BundleUp {
     item IronIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 49.8,
+        Weight = 40.0,
         Icon = Ingot_Iron,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2047,7 +2047,7 @@ module BundleUp {
     item SteelIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 49.8,
+        Weight = 40.0,
         Icon = Ingot_Steel,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2067,7 +2067,7 @@ module BundleUp {
     item CopperIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 49.8,
+        Weight = 40.0,
         Icon = Ingot_Copper,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2087,7 +2087,7 @@ module BundleUp {
     item BrassIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 41.5,
+        Weight = 40.0,
         Icon = Ingot_Brass,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2097,7 +2097,7 @@ module BundleUp {
     item GoldBar_S {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 66.4,
+        Weight = 40.0,
         Icon = Ingot_Gold,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2107,7 +2107,7 @@ module BundleUp {
     item GoldBar_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 132.8,
+        Weight = 40.0,
         Icon = Ingot_Gold,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2147,7 +2147,7 @@ module BundleUp {
     item SilverBar_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 66.4,
+        Weight = 40.0,
         Icon = Ingot_Silver,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2187,7 +2187,7 @@ module BundleUp {
     item PiercedIronIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 49.8,
+        Weight = 40.0,
         Icon = Ingot_Iron_Hole,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
@@ -2207,7 +2207,7 @@ module BundleUp {
     item PiercedSteelIngot_L {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 49.8,
+        Weight = 40.0,
         Icon = Ingot_Steel_Hole,
         WorldStaticModel = Parcel_Small,
         Tags = base:hasmetal,
