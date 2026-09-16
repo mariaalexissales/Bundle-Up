@@ -9,7 +9,7 @@ module BundleUp {
 
     craftRecipe PickThreadStrips {
         timedAction = SewingCloth,
-        time = 1000,
+        time = 200,
         Tags = AnySurfaceCraft,
         category = Tailoring,
         SkillRequired = Tailoring:1,
