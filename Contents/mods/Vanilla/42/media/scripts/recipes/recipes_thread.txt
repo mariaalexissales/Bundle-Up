@@ -1,0 +1,24 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    craftRecipe PickThreadStrips {
+        timedAction = SewingCloth,
+        time = 1000,
+        Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        inputs {
+            item 20 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] flags[Prop2;IsExclusive] mode:destroy,
+            item 1 tags[base:sewingneedle;base:tweezers;base:awl] mode:keep flags[Prop1],
+        }
+        outputs {
+            item 1 Base.Thread,
+        }
+    }
+}

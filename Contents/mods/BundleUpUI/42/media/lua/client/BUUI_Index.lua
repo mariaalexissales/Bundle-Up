@@ -82,7 +82,7 @@ function BUUI.buildIndex()
     for i = 0, all:size() - 1 do
         local recipe = all:get(i)
         local module = BUUI_moduleOf(recipe)
-        if module and BUUI.modules[module] then
+        if module and BUUI.modules[module] and recipe:getCategory() == "Packing" then
             local pivot, others, bulk, names, amounts = BUUI_splitInputs(recipe)
             if pivot then
                 -- packing consumes many to make one and unpacking does the reverse, so

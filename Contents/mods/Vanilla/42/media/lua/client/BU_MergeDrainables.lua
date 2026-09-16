@@ -8,15 +8,17 @@ require "TimedActions/ISConsolidateDrainable"
 
 local BU_vanillaCheckConsolidate = ISInventoryPaneContextMenu.checkConsolidate
 
-local function BU_homesOf(playerObj, items)
-    local homes = {}
-    for _, item in ipairs(items) do
-        local container = item:getContainer()
-        if container and container ~= playerObj:getInventory() then
-            homes[#homes + 1] = { item = item, container = container }
-        end
+local BU_jobs = {}
+local BU_pump
+
+local function BU_noteHome(playerObj, job, item)
+    local container = item:getContainer()
+    if not container or container == playerObj:getInventory() then return end
+
+    for _, home in ipairs(job.homes) do
+        if home.item == item then return end
     end
-    return homes
+    job.homes[#job.homes + 1] = { item = item, container = container }
 end
 
 local function BU_returnHome(playerObj, homes)
@@ -29,39 +31,99 @@ local function BU_returnHome(playerObj, homes)
     end
 end
 
--- one step at a time: ISConsolidateDrainable reads both fill levels in its constructor,
--- so a whole chain queued up front would lerp every later merge from stale numbers and
--- undo the earlier ones. it carries no setOnComplete either, hence the perform wrapper.
-local function BU_chainMerge(playerObj, steps, index, homes)
-    local step = steps[index]
+local function BU_inReach(containers, item)
+    local container = item:getContainer()
+    return container ~= nil and containers:contains(container)
+end
+
+local function BU_stillPours(containers, from, into)
+    return BU_inReach(containers, from) and BU_inReach(containers, into)
+        and BU.Merge.uses(from) > 0 and BU.Merge.uses(into) < BU.Merge.maxUses(into)
+end
+
+local function BU_nextStep(playerObj, job)
+    local containers = ISInventoryPaneContextMenu.getContainers(playerObj)
+
+    while job.requests[1] do
+        local request = job.requests[1]
+        local step = nil
+
+        if request.fullType then
+            if request.remaining > 0 then
+                request.remaining = request.remaining - 1
+                step = BU.Merge.plan(BU.Merge.gather(containers, request.fullType)).steps[1]
+            end
+            if not step then table.remove(job.requests, 1) end
+        else
+            table.remove(job.requests, 1)
+            if BU_stillPours(containers, request.from, request.into) then step = request end
+        end
+
+        if step then return step end
+    end
+
+    return nil
+end
+
+function BU_pump(playerObj, job)
+    local step = BU_nextStep(playerObj, job)
     if not step then
-        BU_returnHome(playerObj, homes)
+        if BU_jobs[playerObj] == job then BU_jobs[playerObj] = nil end
+        BU_returnHome(playerObj, job.homes)
         return
     end
+
+    BU_noteHome(playerObj, job, step.from)
+    BU_noteHome(playerObj, job, step.into)
 
     ISInventoryPaneContextMenu.transferIfNeeded(playerObj, step.from)
     ISInventoryPaneContextMenu.transferIfNeeded(playerObj, step.into)
 
     local action = ISConsolidateDrainable:new(playerObj, step.from, step.into, nil)
+
     local perform = action.perform
     action.perform = function(self)
         perform(self)
-        BU_chainMerge(playerObj, steps, index + 1, homes)
+        if BU_jobs[playerObj] == job then BU_pump(playerObj, job) end
     end
 
+    local stop = action.stop
+    action.stop = function(self)
+        stop(self)
+        if BU_jobs[playerObj] == job then BU_jobs[playerObj] = nil end
+    end
+
+    local forceCancel = action.forceCancel
+    action.forceCancel = function(self)
+        forceCancel(self)
+        if BU_jobs[playerObj] == job then BU_jobs[playerObj] = nil end
+    end
+
+    job.action = action
     ISTimedActionQueue.add(action)
 end
 
-local function BU_onMerge(playerObj, from, into)
-    local homes = BU_homesOf(playerObj, { from, into })
-    BU_chainMerge(playerObj, { { from = from, into = into } }, 1, homes)
+-- ISConsolidateDrainable reads both fill levels in new(), so a pour queued behind another
+-- runs from stale numbers and undoes it. only one is ever queued, built as the last finishes.
+local function BU_request(playerObj, request)
+    local job = BU_jobs[playerObj]
+    -- hasAction, not just the job, since a cleared queue can drop the pour without a stop.
+    if job and ISTimedActionQueue.hasAction(job.action) then
+        job.requests[#job.requests + 1] = request
+        return
+    end
+
+    job = { requests = { request }, homes = {} }
+    BU_jobs[playerObj] = job
+    BU_pump(playerObj, job)
 end
 
-local function BU_onMergeAll(playerObj, candidates)
-    local plan = BU.Merge.plan(candidates)
-    if #plan.steps == 0 then return end
+local function BU_onMerge(playerObj, from, into)
+    BU_request(playerObj, { from = from, into = into })
+end
 
-    BU_chainMerge(playerObj, plan.steps, 1, BU_homesOf(playerObj, candidates))
+local function BU_onMergeAll(playerObj, fullType, steps)
+    BU_request(playerObj, { fullType = fullType, remaining = steps })
 end
 
 local function BU_fillLabel(item)
@@ -92,11 +154,13 @@ function ISInventoryPaneContextMenu.checkConsolidate(drainable, playerObj, conte
     local submenu = context:getNew(context)
     context:addSubMenu(option, submenu)
 
-    if #targets > 1 then
-        submenu:addOption(getText("ContextMenu_MergeAll"), playerObj, BU_onMergeAll, candidates)
-    end
-
     for _, into in ipairs(targets) do
         submenu:addOption(BU_fillLabel(into), playerObj, BU_onMerge, drainable, into)
+    end
+
+    local steps = #BU.Merge.plan(candidates).steps
+    if steps > 0 then
+        context:addOption(getText("ContextMenu_BU_MergeAll"), playerObj, BU_onMergeAll,
+            drainable:getFullType(), steps)
     end
 end
