@@ -337,14 +337,13 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn],
-            item 10 [Base.FlatStone;Base.LargeStone] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 10 [Base.FlatStone] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
         }
         itemMapper itemTypes {
             BundleUp.FlatStoneSack = Base.FlatStone,
-            BundleUp.LargeStoneSack = Base.LargeStone,
         }
     }
 
