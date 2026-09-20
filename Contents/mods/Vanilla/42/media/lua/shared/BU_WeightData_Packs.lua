@@ -15,6 +15,7 @@ BU.Bundles["BundleUp.CharcoalCraftedSack"] = { base = "Base.CharcoalCrafted", co
 BU.Bundles["BundleUp.CharcoalCraftedPack"] = { base = "Base.CharcoalCrafted", count = 12 }
 BU.Bundles["BundleUp.CopperScrapSack"] = { base = "Base.CopperScrap", count = 25 }
 BU.Bundles["BundleUp.ElectronicsScrapSack"] = { base = "Base.ElectronicsScrap", count = 25 }
+BU.Bundles["BundleUp.ElectronicsScrapBox"] = { base = "Base.ElectronicsScrap", count = 20 }
 BU.Bundles["BundleUp.IronScrapSack"] = { base = "Base.IronScrap", count = 25 }
 BU.Bundles["BundleUp.ScrapMetalSack"] = { base = "Base.ScrapMetal", count = 25 }
 BU.Bundles["BundleUp.SplintersSack"] = { base = "Base.Splinters", count = 25 }
