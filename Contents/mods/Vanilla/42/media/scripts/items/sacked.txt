@@ -101,6 +101,15 @@ module BundleUp {
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
+    item CharcoalCraftedPack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.97,
+        Icon = CharcoalCraftedPack,
+        WorldStaticModel = Parcel_Large,
+        Tags = base:charcoal;base:isfirefuel,
+        DoubleClickRecipe = UnpackWoodCharcoal,
+    }
     item CopperScrapSack {
         DisplayCategory = Material,
         ItemType = base:normal,

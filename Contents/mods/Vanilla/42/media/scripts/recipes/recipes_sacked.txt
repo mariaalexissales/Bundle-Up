@@ -487,4 +487,30 @@ module BundleUp {
             Base.Charcoal = BundleUp.CharcoalSack,
         }
     }
+
+    craftRecipe PackWoodCharcoal {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 12 [Base.CharcoalCrafted] flags[ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.CharcoalCraftedPack,
+        }
+    }
+
+    craftRecipe UnpackWoodCharcoal {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.CharcoalCraftedPack] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 12 Base.CharcoalCrafted,
+        }
+    }
 }
