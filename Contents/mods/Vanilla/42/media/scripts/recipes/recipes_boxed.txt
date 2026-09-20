@@ -925,6 +925,32 @@ module BundleUp {
         }
     }
 
+    craftRecipe PackStoneCrate {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 10 [Base.LargeStone] flags[ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.LargeStoneCrate,
+        }
+    }
+
+    craftRecipe UnpackStoneCrate {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.LargeStoneCrate] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 10 Base.LargeStone,
+        }
+    }
+
     craftRecipe UnpackNutsBoltsBox {
         timedAction = UnPackBox,
         time = 5,

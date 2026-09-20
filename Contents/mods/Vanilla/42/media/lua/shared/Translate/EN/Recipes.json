@@ -119,6 +119,8 @@
   "PackWoodCharcoal": "Pack Wood Charcoal",
   "UnpackWoodCharcoal": "Unpack Wood Charcoal (12 items)",
   "UnpackElectronicsScrapBox": "Open Scrap Electronics Box (20 items)",
+  "PackStoneCrate": "Pack Stones in Crate",
+  "UnpackStoneCrate": "Open Stone Crate (10 items)",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
 }
