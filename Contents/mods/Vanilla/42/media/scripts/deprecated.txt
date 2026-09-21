@@ -1,0 +1,36 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+/* unpack-only leftovers. deleting this file also means deleting their rows in
+   BU_WeightData_Packs.lua, ItemName.json and Recipes.json. sync_weights.py
+   doesn't scan here. */
+
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    item ElectronicsScrapSack {
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Sack_Laundry,
+        WorldStaticModel = Bag_Laundry_Ground,
+        DoubleClickRecipe = UnpackElectronicsScrapSack,
+    }
+
+    craftRecipe UnpackElectronicsScrapSack {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.ElectronicsScrapSack] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 25 Base.ElectronicsScrap,
+            item 1 Base.EmptySandbag,
+        }
+    }
+}
