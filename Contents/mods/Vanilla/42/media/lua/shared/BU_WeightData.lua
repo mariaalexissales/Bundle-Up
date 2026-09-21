@@ -288,7 +288,7 @@ BU.Bundles = {
     ["BundleUp.LargePlankLSR"]      = { base = "Base.LargePlank", count = 10  },
     ["BundleUp.FlatStoneSack"]      = { base = "Base.FlatStone", count = 10  },
     ["BundleUp.LargeStoneSack"]     = { base = "Base.LargeStone", count = 10  },
-    ["BundleUp.LargeStoneCrate"]    = { base = "Base.LargeStone", count = 10  },
+    ["BundleUp.StoneCrate"]         = { base = "Base.Stone2", count = 10  },
     ["BundleUp.SharpedStoneSack"]   = { base = "Base.SharpedStone", count = 25  },
     ["BundleUp.ClaySack"]           = { base = "Base.Clay", count = 25  },
 
@@ -418,6 +418,7 @@ BU.BaseCategory = {
     ["Base.LargePlank"]                         = "ReductionWood",
     ["Base.FlatStone"]                          = "ReductionStone",
     ["Base.LargeStone"]                         = "ReductionStone",
+    ["Base.Stone2"]                             = "ReductionStone",
     ["Base.SharpedStone"]                       = "ReductionStone",
     ["Base.Clay"]                               = "ReductionOther",
     ["Base.IronIngot"]                          = "ReductionMetal",

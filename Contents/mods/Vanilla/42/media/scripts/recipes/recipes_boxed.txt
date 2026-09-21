@@ -931,10 +931,10 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 10 [Base.LargeStone] flags[ItemCount],
+            item 10 [Base.Stone2] flags[IsUndamaged;ItemCount],
         }
         outputs {
-            item 1 BundleUp.LargeStoneCrate,
+            item 1 BundleUp.StoneCrate,
         }
     }
 
@@ -944,10 +944,10 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 1 [BundleUp.LargeStoneCrate] flags[IsExclusive;ItemCount],
+            item 1 [BundleUp.StoneCrate] flags[IsExclusive;ItemCount],
         }
         outputs {
-            item 10 Base.LargeStone,
+            item 10 Base.Stone2,
         }
     }
 

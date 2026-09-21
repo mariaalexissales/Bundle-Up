@@ -2055,11 +2055,11 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
     }
-    item LargeStoneCrate {
+    item StoneCrate {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 40.0,
-        Icon = LargeStoneCrate,
+        Weight = 8.3,
+        Icon = StoneCrate,
         WorldStaticModel = Crate_Ammo,
         Tags = base:stone,
         DoubleClickRecipe = UnpackStoneCrate,
