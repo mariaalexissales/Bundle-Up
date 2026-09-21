@@ -594,7 +594,7 @@ local SCRAP_ITEMS = {
     "BundleUp.BrokenGlassSack",
     "BundleUp.CharcoalCraftedSack",
     "BundleUp.CopperScrapSack",
-    "BundleUp.ElectronicsScrapSack",
+    "BundleUp.ElectronicsScrapBox",
     "BundleUp.IronScrapSack",
     "BundleUp.ScrapMetalSack",
     "BundleUp.SplintersSack",

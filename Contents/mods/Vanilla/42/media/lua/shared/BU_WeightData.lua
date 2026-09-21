@@ -288,6 +288,7 @@ BU.Bundles = {
     ["BundleUp.LargePlankLSR"]      = { base = "Base.LargePlank", count = 10  },
     ["BundleUp.FlatStoneSack"]      = { base = "Base.FlatStone", count = 10  },
     ["BundleUp.LargeStoneSack"]     = { base = "Base.LargeStone", count = 10  },
+    ["BundleUp.LargeStoneCrate"]    = { base = "Base.LargeStone", count = 10  },
     ["BundleUp.SharpedStoneSack"]   = { base = "Base.SharpedStone", count = 25  },
     ["BundleUp.ClaySack"]           = { base = "Base.Clay", count = 25  },
 
