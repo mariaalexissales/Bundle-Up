@@ -143,7 +143,7 @@ module BundleUp {
         category = Packing,
         inputs {
             item 1 [Base.EmptySandbag] flags[IsEmpty;IsNotWorn] mappers[scrapTypes],
-            item 25 [Base.AluminumScrap;Base.BrassScrap;Base.BrokenGlass;Base.CharcoalCrafted;Base.CopperScrap;Base.ElectronicsScrap;Base.IronScrap;Base.ScrapMetal;Base.Splinters;Base.SteelScrap;Base.UnusableWood] flags[ItemCount;IsExclusive] mappers[scrapTypes],
+            item 25 [Base.AluminumScrap;Base.BrassScrap;Base.BrokenGlass;Base.CharcoalCrafted;Base.CopperScrap;Base.IronScrap;Base.ScrapMetal;Base.Splinters;Base.SteelScrap;Base.UnusableWood] flags[ItemCount;IsExclusive] mappers[scrapTypes],
         }
         outputs {
             item 1 mapper:scrapTypes,
@@ -154,7 +154,6 @@ module BundleUp {
             BundleUp.BrokenGlassSack = Base.EmptySandbag;Base.BrokenGlass,
             BundleUp.CharcoalCraftedSack = Base.EmptySandbag;Base.CharcoalCrafted,
             BundleUp.CopperScrapSack = Base.EmptySandbag;Base.CopperScrap,
-            BundleUp.ElectronicsScrapSack = Base.EmptySandbag;Base.ElectronicsScrap,
             BundleUp.IronScrapSack = Base.EmptySandbag;Base.IronScrap,
             BundleUp.ScrapMetalSack = Base.EmptySandbag;Base.ScrapMetal,
             BundleUp.SplintersSack = Base.EmptySandbag;Base.Splinters,
@@ -169,7 +168,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.ElectronicsScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] flags[IsExclusive;ItemCount] mappers[scrapTypes],
+            item 1 [BundleUp.AluminumScrapSack;BundleUp.BrassScrapSack;BundleUp.BrokenGlassSack;BundleUp.CharcoalCraftedSack;BundleUp.CopperScrapSack;BundleUp.IronScrapSack;BundleUp.ScrapMetalSack;BundleUp.SplintersSack;BundleUp.SteelScrapSack;BundleUp.UnusableWoodSack] flags[IsExclusive;ItemCount] mappers[scrapTypes],
         }
         outputs {
             item 25 mapper:scrapTypes,
@@ -181,7 +180,6 @@ module BundleUp {
             Base.BrokenGlass = BundleUp.BrokenGlassSack,
             Base.CharcoalCrafted = BundleUp.CharcoalCraftedSack,
             Base.CopperScrap = BundleUp.CopperScrapSack,
-            Base.ElectronicsScrap = BundleUp.ElectronicsScrapSack,
             Base.IronScrap = BundleUp.IronScrapSack,
             Base.ScrapMetal = BundleUp.ScrapMetalSack,
             Base.Splinters = BundleUp.SplintersSack,
@@ -485,6 +483,32 @@ module BundleUp {
             Base.Limestone = BundleUp.LimestoneSack,
             Base.Quicklime = BundleUp.QuicklimeSack,
             Base.Charcoal = BundleUp.CharcoalSack,
+        }
+    }
+
+    craftRecipe PackWoodCharcoal {
+        timedAction = PutInBag,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 12 [Base.CharcoalCrafted] flags[ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.CharcoalCraftedPack,
+        }
+    }
+
+    craftRecipe UnpackWoodCharcoal {
+        timedAction = UnPackSack,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.CharcoalCraftedPack] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 12 Base.CharcoalCrafted,
         }
     }
 }

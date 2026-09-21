@@ -101,18 +101,19 @@ module BundleUp {
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
     }
+    item CharcoalCraftedPack {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 7.97,
+        Icon = CharcoalCraftedPack,
+        WorldStaticModel = Parcel_Large,
+        Tags = base:charcoal;base:isfirefuel,
+        DoubleClickRecipe = UnpackWoodCharcoal,
+    }
     item CopperScrapSack {
         DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 10.38,
-        Icon = Sack_Laundry,
-        WorldStaticModel = Bag_Laundry_Ground,
-        DoubleClickRecipe = UnpackScrapSack,
-    }
-    item ElectronicsScrapSack {
-        DisplayCategory = Electronics,
-        ItemType = base:normal,
-        Weight = 2.07,
         Icon = Sack_Laundry,
         WorldStaticModel = Bag_Laundry_Ground,
         DoubleClickRecipe = UnpackScrapSack,
