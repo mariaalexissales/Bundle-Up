@@ -1847,6 +1847,14 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
     }
+    item ElectronicsScrapBox {
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackElectronicsScrapBox,
+    }
     item EpoxyBox {
         DisplayCategory = Material,
         ItemType = base:normal,

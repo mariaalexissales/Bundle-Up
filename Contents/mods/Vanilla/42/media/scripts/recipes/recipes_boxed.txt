@@ -722,7 +722,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 10 [Base.AdhesiveTapeBox;Base.Aluminum;Base.Amplifier;Base.BakingSoda;Base.BatteryBox;Base.Buckle;Base.ButterKnife;Base.Button;Base.CandleBox;Base.CorrectionFluid;Base.Doorknob;Base.DuctTapeBox;Base.ElectricWire;Base.Epoxy;Base.FiberglassTape;Base.FishingHookBox;Base.FishingLine;Base.Fork;Base.Garbagebag_box;Base.GasmaskFilter;Base.Glue;Base.GravyMix;Base.Hairgel;Base.Hairspray2;Base.Hinge;Base.InsectRepellent;Base.JarLid;Base.JigLure;Base.LightBulbBlue;Base.LightBulbBox;Base.LightBulbCyan;Base.LightBulbGreen;Base.LightBulbMagenta;Base.LightBulbOrange;Base.LightBulbPink;Base.LightBulbPurple;Base.LightBulbRed;Base.LightBulbYellow;Base.Lighter;Base.LighterBBQ;Base.LighterDisposable;Base.MagnesiumFirestarter;Base.MakeupEyeshadow;Base.MakeupFoundation;Base.Matches;Base.MinnowLure;Base.MotionSensor;50:Base.NutsBolts;Base.Pager;Base.PancakeMix;Base.PaperNapkins2;Base.PaperclipBox;Base.Pillow;Base.PremiumFishingLine;Base.RadioReceiver;Base.RadioTransmitter;Base.RatPoison;Base.Receiver;Base.Remote;Base.SlugRepellent;Base.SmallAnimalBone;Base.SmallHandle;Base.Soap2;Base.Sparklers;Base.Sponge;Base.Spoon;Base.Tarp;Base.Thread_Aramid;Base.Thread_Sinew;Base.Timer;Base.TimerCrafted;Base.TissueBox;Base.ToiletPaper;Base.Toothbrush;Base.TriggerCrafted;Base.Twine;Base.Vinegar2;Base.Vinegar_Jug;Base.WeldingRods;Base.Whetstone;Base.Woodglue;Base.Yeast;Base.Zipties] flags[IsExclusive;ItemCount;IsFull] mode:destroy mappers[itemTypes],
+            item 10 [Base.AdhesiveTapeBox;Base.Aluminum;Base.Amplifier;Base.BakingSoda;Base.BatteryBox;Base.Buckle;Base.ButterKnife;Base.Button;Base.CandleBox;Base.CorrectionFluid;Base.Doorknob;Base.DuctTapeBox;Base.ElectricWire;20:Base.ElectronicsScrap;Base.Epoxy;Base.FiberglassTape;Base.FishingHookBox;Base.FishingLine;Base.Fork;Base.Garbagebag_box;Base.GasmaskFilter;Base.Glue;Base.GravyMix;Base.Hairgel;Base.Hairspray2;Base.Hinge;Base.InsectRepellent;Base.JarLid;Base.JigLure;Base.LightBulbBlue;Base.LightBulbBox;Base.LightBulbCyan;Base.LightBulbGreen;Base.LightBulbMagenta;Base.LightBulbOrange;Base.LightBulbPink;Base.LightBulbPurple;Base.LightBulbRed;Base.LightBulbYellow;Base.Lighter;Base.LighterBBQ;Base.LighterDisposable;Base.MagnesiumFirestarter;Base.MakeupEyeshadow;Base.MakeupFoundation;Base.Matches;Base.MinnowLure;Base.MotionSensor;50:Base.NutsBolts;Base.Pager;Base.PancakeMix;Base.PaperNapkins2;Base.PaperclipBox;Base.Pillow;Base.PremiumFishingLine;Base.RadioReceiver;Base.RadioTransmitter;Base.RatPoison;Base.Receiver;Base.Remote;Base.SlugRepellent;Base.SmallAnimalBone;Base.SmallHandle;Base.Soap2;Base.Sparklers;Base.Sponge;Base.Spoon;Base.Tarp;Base.Thread_Aramid;Base.Thread_Sinew;Base.Timer;Base.TimerCrafted;Base.TissueBox;Base.ToiletPaper;Base.Toothbrush;Base.TriggerCrafted;Base.Twine;Base.Vinegar2;Base.Vinegar_Jug;Base.WeldingRods;Base.Whetstone;Base.Woodglue;Base.Yeast;Base.Zipties] flags[IsExclusive;ItemCount;IsFull] mode:destroy mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -741,6 +741,7 @@ module BundleUp {
             BundleUp.DoorknobBox = Base.Doorknob,
             BundleUp.DuctTapeBoxCrate = Base.DuctTapeBox,
             BundleUp.ElectricWireBox = Base.ElectricWire,
+            BundleUp.ElectronicsScrapBox = Base.ElectronicsScrap,
             BundleUp.EpoxyBox = Base.Epoxy,
             BundleUp.FiberglassTapeBox = Base.FiberglassTape,
             BundleUp.FishingHookBoxCrate = Base.FishingHookBox,
@@ -908,6 +909,19 @@ module BundleUp {
             Base.Woodglue = BundleUp.WoodglueBox,
             Base.Yeast = BundleUp.YeastBox,
             Base.Zipties = BundleUp.ZiptiesBox,
+        }
+    }
+
+    craftRecipe UnpackElectronicsScrapBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.ElectronicsScrapBox] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 20 Base.ElectronicsScrap,
         }
     }
 
