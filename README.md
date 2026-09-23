@@ -34,7 +34,7 @@ Put 99 nails in a box and half your base goes missing to server chunk rot. Sprea
 
 An optional UI add-on ships in the same subscription. The base mod has no dependencies and isn't gaining any.
 
-One load-order note, if you also run [Remove Vanilla Anything](https://github.com/mariaalexissales/Remove-Vanilla-Anything): both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Neither order is broken, but only one of them is probably what you meant.
+One load-order note, if you also run Remove Vanilla Anything: both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Neither order is broken, but only one of them is probably what you meant.
 
 ---
 
