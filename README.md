@@ -214,9 +214,9 @@ It errors instead of warning on anything that would quietly produce wrong output
 
 ## Working on it
 
-The repo is the mod folder — it lives at `Zomboid/Workshop/Bundle Up` and the game loads it in place, so there's no build step and no packaging.
+The repo is the mod folder. It lives at `Zomboid/Workshop/Bundle Up` and the game loads it in place, so there's no build step.
 
-Check that the generated files are current:
+Check the generated files are current:
 
 ```bash
 python tools/generate_tiers.py --check && python tools/generate_sandbox.py --check
@@ -228,9 +228,13 @@ Regenerate them after changing a pack ladder:
 python tools/generate_tiers.py && python tools/generate_sandbox.py
 ```
 
-Both are stdlib-only — no install, no virtualenv — and CI runs both on every push and PR. Neither may import `tools/sync_weights.py`, which is gitignored and absent on CI.
+Both are stdlib-only, no install needed. Neither may import `tools/sync_weights.py`, which is gitignored and missing on CI.
 
-Branching is `dev` → `main` with a topic branch per bug or feature, and `main` mirrors the published Workshop build. `tools/sync_weights.py` and `tools/base_weights.json` are gitignored: they resolve script weights for dedicated servers (which read script values rather than the client Lua) and need a Project Zomboid install to regenerate, so they stay local.
+CI runs both checks on every push and PR. It also fails if a translation file isn't valid JSON or a Lua file doesn't parse. Broken JSON fails silently in game, and broken Lua only shows up once the game loads it, so both are cheap to catch here.
+
+A topic branch per bug or feature goes into `dev`, and `dev` goes into `main` at release. `main` matches the published Workshop build byte for byte, because Project Zomboid won't let you join a server whose mod files differ. Releases are [tagged](https://github.com/mariaalexissales/Bundle-Up/tags), and the [change notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3746632343) say what changed in each.
+
+`tools/sync_weights.py` and `tools/base_weights.json` are gitignored: they work out script weights for dedicated servers (which read the script values, not the client Lua) and need a Project Zomboid install to regenerate, so they stay local.
 
 ---
 
