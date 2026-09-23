@@ -77,7 +77,7 @@ end
 Events.OnGameStart.Add(BU.applyWeights)
 ```
 
-Every event registration in the mod is guarded like that, so a build that doesn't have the event degrades instead of taking the whole file down with a nil index. `OnGameStart` stays on as a harmless re-run.
+Only the `OnInitGlobalModData` registration is guarded, so a build without that event keeps going instead of dying on a nil index, and `OnGameStart` still runs it. `OnGameStart` stays on as a harmless re-run.
 
 Loot is the same lesson inverted, and it cost a lot more to learn. Spawn rates also come from sandbox sliders, so `OnPreDistributionMerge` looks like the obvious hook — it is named after the thing it wants to change and it fires before the loot tables are read. It is wrong. `IsoWorld.init()` fires the three merge events at bytecode offsets 2051–2066 but does not read `map_sand.bin` until offset 2126, where `SandboxOptions.load()` ends in `toLua()`.
 
