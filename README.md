@@ -42,18 +42,18 @@ One load-order note, if you also run [Remove Vanilla Anything](https://github.co
 
 | Path | What lives there |
 | --- | --- |
-| `Contents/mods/Vanilla/42/` | The base mod. 13,632 lines of zedscript, 3,685 of Lua, 322 sandbox options. |
-| `Contents/mods/BundleUpUI/42/` | Optional UI add-on. 1,587 lines of Lua, opt-in, hard-requires NeatUI Framework. |
-| `Contents/mods/Vanilla/media/` | Legacy B41-era tree kept as a fallback for pre-B42 loads. |
-| `tools/` | Python codegen and art tooling. |
+| `Contents/mods/Vanilla/42/` | The base mod. ~14,000 lines of zedscript, ~4,000 of Lua, 322 sandbox options. |
+| `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,800 lines of Lua, off by default, needs NeatUI Framework. |
+| `Contents/mods/Vanilla/media/` | Old B41 files, kept for pre-B42 loads. |
+| `tools/` | Python generators and art tooling. |
 
-Three languages, each doing the thing it's least bad at. **zedscript** declares content — items, recipes, the flags the engine already knows how to enforce. **Lua** covers behaviour the scripts can't express. **Python** generates the content that would be unreviewable by hand.
+Three languages. **zedscript** declares items, recipes and the flags the engine already enforces. **Lua** does what the scripts can't. **Python** generates the files too big to review by hand.
 
-The `shared` / `client` / `server` split is deliberate and load-bearing:
+The `shared` / `client` / `server` split matters:
 
-- **`shared/`** — weight and spoilage data, because a dedicated server has to arrive at the same numbers its clients do.
-- **`client/`** — inventory walks, which only ever touch what the local player can actually see.
-- **`server/`** — loot injection, 1,469 lines of it across 20 distribution calls.
+- **`shared/`**: weight and spoilage data, because a dedicated server has to get the same numbers its clients do.
+- **`client/`**: inventory walks, which only touch what the local player can see.
+- **`server/`**: loot injection. ~1,500 lines, mostly item and weight tables.
 
 ---
 
