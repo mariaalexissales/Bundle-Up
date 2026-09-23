@@ -100,13 +100,13 @@ That rebuild re-reads every loot table in the game, other mods' too, so it only 
 
 Running that late also means running after every other mod has edited the same arrays. So instead of remembering *where* its entries went (an index another mod can shift), it remembers *what* it put in. Every name starts with `BundleUp.`, vanilla has none of them, and each goes in at most once per array, so removing by name is an exact undo and the pass can safely run again. A spawn rate of None now leaves the entry out instead of writing a weight of 0 into a vanilla table.
 
-### Not calling the API is sometimes the fix
+### Sometimes the fix is not calling the API
 
-`BU.refreshWeight` restamps bundles restored from a save, and deliberately never calls `setCustomWeight`. Setting a custom weight would pin the number permanently; leaving it unset keeps the weight script-derived, so the *next* sandbox change still reaches bundles already sitting in someone's save file.
+`BU.refreshWeight` restamps bundles loaded from a save and never calls `setCustomWeight`. A custom weight is pinned for good. Leaving it unset keeps the weight coming from the script, so the *next* sandbox change still reaches bundles already in someone's save.
 
-### The same problem, needing the opposite solution
+### Same problem, opposite fix
 
-Weights patch cleanly at the script level because an item copies its weight from the script when it's built. Food doesn't work that way — it serializes its own `offAge` and `offAgeMax`, so patching the script never reaches anything already saved. Packed food needed a migration path instead, and the order matters:
+Weights patch cleanly on the script because an item copies its weight from the script when it's built. Food doesn't. It saves its own `offAge` and `offAgeMax`, so patching the script never reaches food that's already saved. Packed food needed a migration instead, and the order matters:
 
 ```lua
 -- settle the age under the old thresholds first, or the days since lastAged
@@ -115,11 +115,11 @@ item:updateAge()
 item:setAge(item:getAge() * (rotten / current))
 ```
 
-Rescale before settling and every hour the item spent in a crate gets retroactively recounted at the new spoil rate.
+Rescale first and every hour the item already spent in a crate gets recounted at the new spoil rate.
 
-### `ReplaceOnDeplete` can't be reached from a recipe flag
+### No recipe flag reaches `ReplaceOnDeplete`
 
-Some containers mint a replacement when consumed — use up a sack of gravel and the engine hands you the empty sack. Correct for cooking, an infinite sack duplicator for a packing mod. No recipe flag suppresses it, so it has to be undone in Lua, and `onCreate` runs *before* the engine creates them. The fix records where each replacement is going to land and sweeps them on the next tick:
+Some containers leave a replacement behind when used up. Use up a sack of gravel and the game hands you the empty sack. Fine for cooking, a sack dupe for a packing mod. No recipe flag turns it off, so it gets undone in Lua, but `onCreate` runs *before* the game makes them. So it writes down where each one will land and sweeps them up next tick:
 
 ```lua
 -- no recipe flag reaches ReplaceOnDeplete, so the minted sacks have to go in
@@ -127,12 +127,12 @@ Some containers mint a replacement when consumed — use up a sack of gravel and
 -- where each will land, take it next tick.
 ```
 
-### Some of it is just trivia you have to have been bitten by
+### Stuff you only know after it bites you
 
-- **`PetrolCan`'s `Fluids` block is initial contents, not capacity.** A freshly created can spawns holding a full 10 litres, so unpacking a bundle of *empty* cans mints petrol unless you explicitly empty them.
-- **New `Food` has `lastFrozenUpdate = 0`.** Stamp a frozen state onto it and it melts on the next tick, because the engine reads that zero as "frozen since the beginning of time". `updateAge()` first, *then* `copyFrozenFrom()`.
-- **`getResultTexture()` dereferences `getFirstInputItem()` on every input**, so asking a blocked row for its icon throws. Read the output mapper instead.
-- **A whole family of test functions is built by string concatenation**, which means grepping for `testPackOrangeSodaCan` finds nothing at all. That one has a comment pointing at where the callers live, because I lost twenty minutes to it and wasn't going to do that twice.
+- **`PetrolCan`'s `Fluids` block is what it starts with, not how much it holds.** A new can spawns with a full 10 litres, so unpacking *empty* cans handed out free petrol until the unpack started emptying them.
+- **New `Food` has `lastFrozenUpdate = 0`.** Stamp it frozen and it melts next tick, because the game reads that 0 as frozen since the beginning of time. `updateAge()` first, *then* `copyFrozenFrom()`.
+- **`getResultTexture()` calls `getFirstInputItem()` on every input**, so asking a row that's short an ingredient for its icon throws. Read the output mapper instead.
+- **The soda test functions are built by string**, so grepping for `testPackOrangeSodaCan` finds nothing. That one has a comment pointing at the callers, because I lost twenty minutes to it and wasn't doing that twice.
 
 ---
 
