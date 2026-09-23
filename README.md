@@ -57,15 +57,15 @@ The `shared` / `client` / `server` split matters:
 
 ---
 
-## Reading an engine that doesn't document itself
+## Figuring out an engine with no docs
 
-Most of the interesting bugs here weren't logic errors. They were cases where the engine did something reasonable that I hadn't accounted for, and finding out meant reading the game's Lua and watching what actually happened.
+Most of the bugs here weren't logic errors. The engine did something reasonable I didn't know about, and the only way to find out was reading the game's code and watching what happened.
 
-### The event you register on decides whether your mod works after a reload
+### Which event you hook decides whether it works after a reload
 
-Bundle weights come from sandbox sliders, so they have to be stamped onto script items at load. The obvious hook is `OnGameStart`. `OnGameStart` is wrong — by then the cell has already deserialized the player's inventory, and every bundle in that save was built from an unpatched script.
+Bundle weights come from sandbox sliders, so they have to be stamped onto the script items at load. `OnGameStart` looks right and isn't. By then the player's inventory is already loaded, so every bundle in the save was built from the unpatched script.
 
-`OnInitGlobalModData` is the first event that fires after `SandboxOptions.load()` and still lands *before* inventory deserialization, which makes it the only window where both facts are true.
+`OnInitGlobalModData` fires after the sandbox options load and before the inventory does. It's the only event where both are true.
 
 ```lua
 -- OnInitGlobalModData is the first event to fire after SandboxOptions.load(),
@@ -77,15 +77,15 @@ end
 Events.OnGameStart.Add(BU.applyWeights)
 ```
 
-Only the `OnInitGlobalModData` registration is guarded, so a build without that event keeps going instead of dying on a nil index, and `OnGameStart` still runs it. `OnGameStart` stays on as a harmless re-run.
+Only the `OnInitGlobalModData` registration is guarded, so a build without that event keeps going instead of dying on a nil index. `OnGameStart` still runs it either way.
 
-Loot is the same lesson inverted, and it cost a lot more to learn. Spawn rates also come from sandbox sliders, so `OnPreDistributionMerge` looks like the obvious hook — it is named after the thing it wants to change and it fires before the loot tables are read. It is wrong. `IsoWorld.init()` fires the three merge events at bytecode offsets 2051–2066 but does not read `map_sand.bin` until offset 2126, where `SandboxOptions.load()` ends in `toLua()`.
+Loot was the same problem backwards, and it took a lot longer. Spawn rates also come from sliders, so `OnPreDistributionMerge` looks right: it's named after the thing I want to change and fires before the loot tables are read. It's wrong. `IsoWorld.init()` fires the merge events at bytecode offsets 2051–2066 and doesn't load the sandbox settings (`map_sand.bin`, via `SandboxOptions.load()`) until 2126.
 
-That gap is why the bug hid for so long. On a **new game** a merge handler sees the player's real settings, because the new-game screen already ran `toLua()`. On **every later load of that save** it sees nothing but the declared defaults — and since `SandboxVars.BundleUp` exists either way, a `if not sv then return end` guard catches none of it. Set loot to Double, play, quit, come back, and the rate silently reverts with no error anywhere.
+That's why it hid for so long. On a new game the merge handler sees your real settings, because the new-game screen already loaded them. On every load after that it only sees the defaults, and since `SandboxVars.BundleUp` exists either way, `if not sv then return end` doesn't catch it. Set loot to Double, play, quit, come back, and it's quietly back to default. No error anywhere.
 
-`OnInitGlobalModData` — the right answer for weights — is worse still here. It lands *after* `ItemPickerJava.Parse()` has snapshotted the tables into Java, so it can never reach loot at all.
+`OnInitGlobalModData`, the right answer for weights, is worse for loot. It fires after `ItemPickerJava.Parse()` has already copied the tables into Java, so it can't reach loot at all.
 
-`OnGameStart` runs from `IngameState`, after `IsoWorld.init()` has returned, so it is the first event where the settings are real. The cost of arriving that late is that Java already has its copy, and rebuilding it takes the call vanilla's own admin panel makes after a sandbox change:
+`OnGameStart` is the first event where the settings are real. The catch is Java already has its copy, so it has to be rebuilt, with the same call vanilla's admin panel makes after a sandbox change:
 
 ```lua
 -- fillContainer returns straight away on a client, so the java copy there is never read.
@@ -96,9 +96,9 @@ if needed and IsoWorld and IsoWorld.parseDistributions then
 end
 ```
 
-That rebuild re-reads every loot table in the game, other mods' included, so it only runs when the pass actually changed an array, and never on a multiplayer client.
+That rebuild re-reads every loot table in the game, other mods' too, so it only runs when something actually changed, and never on a multiplayer client.
 
-Arriving after every other mod has loaded also means arriving after they have rewritten the arrays. The fix stopped recording *where* its entries went — an index another mod is free to invalidate — and started recording *what* it inserts. Every name is `BundleUp.*`, vanilla has none of them, and each lands at most once per array, so removing by name is an exact undo and the whole pass becomes re-runnable. A spawn rate of None now drops the entry instead of writing a weight of zero into a vanilla table.
+Running that late also means running after every other mod has edited the same arrays. So instead of remembering *where* its entries went (an index another mod can shift), it remembers *what* it put in. Every name starts with `BundleUp.`, vanilla has none of them, and each goes in at most once per array, so removing by name is an exact undo and the pass can safely run again. A spawn rate of None now leaves the entry out instead of writing a weight of 0 into a vanilla table.
 
 ### Not calling the API is sometimes the fix
 
