@@ -2,11 +2,17 @@
 
 [![checks](https://github.com/mariaalexissales/Bundle-Up/actions/workflows/check.yml/badge.svg)](https://github.com/mariaalexissales/Bundle-Up/actions/workflows/check.yml)
 
-**A Project Zomboid inventory-compaction mod — 1,020 item definitions, 118 crafting recipes and ~5,200 lines of Lua, shipped on the Steam Workshop and maintained across 49 merged PRs.**
+Packing mod for Project Zomboid. Live on the Steam Workshop: 1,000+ items, 120+ recipes, ~6,000 lines of Lua, 60+ merged PRs.
 
-The visible half packs a thousand vanilla items into bundles, boxes, sacks and cartons, then unpacks them back. The half that took the actual work is the part nobody sees: getting weights patched into script items *before* the engine deserializes a save, keeping spoilage math honest across a reload, and injecting loot into shared tables that another mod is rewriting on the same event.
+Project Zomboid is a zombie survival game. You loot everything, every item has weight and takes a slot, and a big base turns into shelves of half-full crates. Bundle Up packs those items into bundles, boxes, sacks and cartons and unpacks them exactly as they went in.
 
-Project Zomboid's modding layer has no formal API and no reference docs. Most of what follows is the record of finding out how it behaves by reading the game's own Lua and watching things break.
+The packing is the easy part. The hard part:
+
+- weights have to land before the save loads, or every saved bundle keeps the old weight
+- packed food has to keep rotting at the right rate across a reload
+- loot goes into tables another mod may be rewriting on the same event
+
+The modding layer has no docs. Most of this README is what I found out by reading the game's code and breaking things.
 
 ![Bundle Up preview](preview.png)
 
