@@ -173,30 +173,30 @@ end
 
 ## The optional UI add-on
 
-`BundleUpUI` adds a panel that reads every container in reach and lists everything you could pack right now, with a `-` / `+` / `MAX` dial per row and a **Bundle All** that maxes out everything ready at once. It's a separate mod in the same subscription, off by default, and the base mod neither knows nor cares whether it's installed.
+`BundleUpUI` adds a panel that reads every container in reach and lists everything you could pack, unpack or merge right now, with a `-` / `+` / `MAX` dial per row and a **Bundle All** that runs everything ready at once. It's a separate mod in the same subscription, off by default, and the base mod doesn't know or care if it's there.
 
-**Indexed by module prefix, not by recipe name.** The panel builds its index from `ScriptManager.instance:getAllCraftRecipes()` filtered on one table:
+**It finds recipes by module name.** The panel builds its list from `ScriptManager.instance:getAllCraftRecipes()`, filtered on one table:
 
 ```lua
 BUUI.modules = BUUI.modules or { BundleUp = true }
 ```
 
-That's the entire integration contract. The base mod needed no changes to be supported, and another packing mod only has to add its module name to be picked up for free.
+That's the whole integration. The base mod needed no changes, and another packing mod only has to add its module name to show up.
 
-**Outputs are detected by diffing inventory item IDs.** `CraftRecipeData` exposes no created-items list to Lua, so the queue snapshots inventory IDs before the craft and takes the difference after:
+**It finds what a craft made by diffing item IDs.** `CraftRecipeData` doesn't give Lua a list of what it created, so the queue snapshots inventory IDs before the craft and diffs after:
 
 ```lua
 -- CraftRecipeData exposes no created-items list to Lua, so what the craft made is
 -- whatever is in the player's inventory that was not there when it started.
 ```
 
-It filters that diff by resolved output types so anything picked up mid-craft doesn't get swept into a container. When the mapper can't be resolved, it deliberately falls back to the raw diff rather than filtering on a guess — a guess would strand the real outputs in the player's inventory, and a slightly over-broad diff is the better failure.
+It filters that diff to the expected output types, so anything you picked up mid-craft doesn't get moved into a container. If it can't work out the output types, it uses the raw diff instead of guessing. A wrong guess would leave the real outputs stuck in your inventory. A slightly too-wide diff is the better way to fail.
 
-**Monkey-patching vanilla UI, idempotently.** The sidebar button wraps four `ISEquippedItem` methods behind a `BUUI_PatchApplied` flag so a double-load can't double-wrap, and applies on `OnGameStart` rather than at file load, because wrapping during UI boot catches the class half-built.
+**It patches vanilla UI once.** The sidebar button wraps four `ISEquippedItem` methods behind a `BUUI_PatchApplied` flag so loading twice can't wrap twice. It patches on `OnGameStart`, not at file load, because the sidebar isn't finished building at file load.
 
-**Measuring instead of assuming.** The sidebar cell's position depends on how wide the crafting popup is, and Project Cook makes it two cells wide. Rather than special-casing that mod or depending on load order, the patch measures the popup's width every frame and computes the offset. Works against mods that don't exist yet.
+**It measures instead of assuming.** Where the sidebar button goes depends on how wide the crafting popup is, and Project Cook makes it two cells wide. Instead of special-casing that mod or relying on load order, it measures the popup every frame. Works with mods that don't exist yet.
 
-**Trusting the data over the metadata.** The panel picks each recipe's pivot input by largest amount rather than by `flags[ItemCount]`, because those flags turned out to be inconsistent across the recipe files — `BoxSmall` carries none at all. The amounts were always right; the flags weren't.
+**It trusts the amounts over the flags.** The panel picks each recipe's main input by the biggest amount, not by `flags[ItemCount]`, because the flags aren't consistent across the recipe files. `BoxSmall` has none at all. The amounts were always right.
 
 ---
 
