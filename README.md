@@ -136,15 +136,15 @@ Some containers leave a replacement behind when used up. Use up a sack of gravel
 
 ---
 
-## Packing must never launder an item
+## Packing never launders an item
 
-One invariant holds the whole mod up:
+One rule holds the whole mod up:
 
-> What goes in comes back out exactly as it went in, and nothing is created or destroyed on the way.
+> What goes in comes back out exactly as it went in. Nothing gets made or lost on the way.
 
-Every violation is an item duplicator or an item shredder, and players find those immediately. Once I'd fixed the second one it was obvious they weren't unrelated bugs — they were one bug wearing different hats, so I went looking for the rest of the family instead of waiting for the reports.
+Break it and you've built an item dupe or an item shredder, and players find those fast. After fixing the second one I realised they were the same bug in different places, so I went looking for the rest instead of waiting for reports.
 
-| What broke | Which direction it broke |
+| What broke | Which way |
 | --- | --- |
 | Part-used food packed into a carton and came back whole ([`4b9663c`](https://github.com/mariaalexissales/Bundle-Up/commit/4b9663c)) | Created value |
 | Sack recipes consumed sacks that still had things in them ([`3cdb472`](https://github.com/mariaalexissales/Bundle-Up/commit/3cdb472)) | Destroyed value |
@@ -153,11 +153,11 @@ Every violation is an item duplicator or an item shredder, and players find thos
 | Empty gas can bundles unpacked as full cans ([`c7eba3a`](https://github.com/mariaalexissales/Bundle-Up/commit/c7eba3a)) | Created value |
 | Loaded magazines packed at all, losing the ammo ([`f4c7b10`](https://github.com/mariaalexissales/Bundle-Up/commit/f4c7b10)) | Destroyed value |
 
-The generalising pass was [PR #48](https://github.com/mariaalexissales/Bundle-Up/pull/48) — *give every unpack input the exclusivity flags* — which closed the remaining holes by rule rather than by report.
+The pass that closed the rest by rule instead of by report was [`7a9af17`](https://github.com/mariaalexissales/Bundle-Up/commit/7a9af17) in [PR #48](https://github.com/mariaalexissales/Bundle-Up/pull/48): every unpack input got the exclusivity flags.
 
-**The design lesson I'd actually repeat:** put the guard in the script flags wherever the engine offers one. `IsEmpty`, `IsFull`, `IsUndamaged`, `IsExclusive` and `ItemCount` are enforced by the engine, work identically on a dedicated server, and can't be bypassed by a code path I forgot about. Only drop to a Lua `onTest` callback when there's genuinely no flag for it.
+**What I'd do again:** put the guard in the script flags whenever the engine has one. `IsEmpty`, `IsFull`, `IsUndamaged`, `IsExclusive` and `ItemCount` are enforced by the engine, work the same on a dedicated server, and can't be skipped by some code path I forgot. Only fall back to a Lua `onTest` when there's no flag for it.
 
-`testPackPerishable` is one of the few that earned it, and it's a good illustration of why these are worth being careful with:
+`testPackPerishable` is one that needed Lua, and it shows why these need care:
 
 ```lua
 function BUInv.testPackPerishable(item, character)
@@ -167,7 +167,7 @@ function BUInv.testPackPerishable(item, character)
 end
 ```
 
-`isRotten()` only exists on `Food`. The non-perishable cartons are `base:normal`. Before that type guard existed, opening the crafting window near the wrong carton took the whole UI down — it shipped as a crash before it shipped as a check.
+`isRotten()` only exists on `Food`. The non-perishable cartons are `base:normal`. Before that type check, opening the crafting window near the wrong carton crashed the whole UI. It shipped as a crash before it shipped as a check.
 
 ---
 
