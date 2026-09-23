@@ -202,13 +202,13 @@ It filters that diff to the expected output types, so anything you picked up mid
 
 ## Generated content
 
-166 food cartons, each needing an item block, both halves of a pack/unpack recipe, a weight row and a display name. That's not reviewable by hand, so the upper tiers are generated from the ladders the mod already declares.
+166 food cartons, each needing an item block, a pack and an unpack recipe, a weight row and a display name. Nobody can review that by hand, so the upper tiers are generated from the pack ladders the mod already declares.
 
-`tools/generate_tiers.py` reads `BU_WeightData_Packs.lua` and emits five files, all committed and stamped *do not edit by hand*. The contract is in the docstring: **re-running with no source change must produce no diff**, and `--check` enforces it on every PR.
+`tools/generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes five files, all committed and marked *do not edit by hand*. The rule: **running it again with no source change must produce no diff**, and `--check` enforces that on every PR.
 
-`tools/generate_sandbox.py` does the same job for `sandbox-options.txt`. Splitting 322 options across eight pages by hand is one typo away from a slider that silently reads the wrong var, and the page a per-item slider belongs on isn't a matter of taste — it's whichever category slider that item actually inherits from, which means walking `resolve_base` down to the vanilla item exactly as `BU_ApplyWeights.lua` does at runtime. Deriving it is the only way the two stay in agreement when a new tier batch lands. Labels and tooltips are hand-written prose and the generator rewrites none of them; it owns block order, `page =` values and the eight page titles, nothing else.
+`tools/generate_sandbox.py` does the same for `sandbox-options.txt`. Splitting 322 options across eight pages by hand is one typo away from a slider quietly reading the wrong setting. The page a per-item slider belongs on is whichever category slider that item actually inherits from, which means walking `resolve_base` down to the vanilla item the same way `BU_ApplyWeights.lua` does in game. Deriving it is the only way the two stay in sync when new tiers land. Labels and tooltips are written by hand and the generator doesn't touch them. It owns block order, `page =` values and the eight page titles, nothing else.
 
-It raises rather than warns on anything that would silently produce wrong output — a carton packed by a recipe with no weight row, or one resolving to a non-food reduction category. It also determines tier membership from the *recipes* rather than item-name suffixes, because `DogFoodBagCrate` doesn't end in "Carton" and would have been dropped without a word.
+It errors instead of warning on anything that would quietly produce wrong output, like a carton packed by a recipe with no weight row, or one that resolves to a non-food category. It also decides tier membership from the *recipes*, not item-name suffixes, because `DogFoodBagCrate` doesn't end in "Carton" and would have been dropped without a word.
 
 ---
 
