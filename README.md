@@ -45,7 +45,10 @@ One load-order note, if you also run Remove Vanilla Anything: both mods edit the
 | `Contents/mods/Vanilla/42/` | The base mod. ~14,000 lines of zedscript, ~4,000 of Lua, 322 sandbox options. |
 | `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,800 lines of Lua, off by default, needs NeatUI Framework. |
 | `Contents/mods/Vanilla/media/` | Old B41 files, kept for pre-B42 loads. |
-| `tools/` | Python generators and art tooling. |
+
+The Python lives in [estral-tools](https://github.com/mariaalexissales/estral-tools),
+cloned next to this folder, one folder per mod. It reads the mod out of the working
+directory, so it runs from here.
 
 Three languages. **zedscript** declares items, recipes and the flags the engine already enforces. **Lua** does what the scripts can't. **Python** generates the files too big to review by hand.
 
@@ -204,9 +207,9 @@ It filters that diff to the expected output types, so anything you picked up mid
 
 166 food cartons, each needing an item block, a pack and an unpack recipe, a weight row and a display name. Nobody can review that by hand, so the upper tiers are generated from the pack ladders the mod already declares.
 
-`tools/generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes five files, all committed and marked *do not edit by hand*. The rule: **running it again with no source change must produce no diff**, and `--check` enforces that on every PR.
+`generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes five files, all committed and marked *do not edit by hand*. The rule: **running it again with no source change must produce no diff**, and `--check` enforces that on every PR.
 
-`tools/generate_sandbox.py` does the same for `sandbox-options.txt`. Splitting 322 options across eight pages by hand is one typo away from a slider quietly reading the wrong setting. The page a per-item slider belongs on is whichever category slider that item actually inherits from, which means walking `resolve_base` down to the vanilla item the same way `BU_ApplyWeights.lua` does in game. Deriving it is the only way the two stay in sync when new tiers land. Labels and tooltips are written by hand and the generator doesn't touch them. It owns block order, `page =` values and the eight page titles, nothing else.
+`generate_sandbox.py` does the same for `sandbox-options.txt`. Splitting 322 options across eight pages by hand is one typo away from a slider quietly reading the wrong setting. The page a per-item slider belongs on is whichever category slider that item actually inherits from, which means walking `resolve_base` down to the vanilla item the same way `BU_ApplyWeights.lua` does in game. Deriving it is the only way the two stay in sync when new tiers land. Labels and tooltips are written by hand and the generator doesn't touch them. It owns block order, `page =` values and the eight page titles, nothing else.
 
 It errors instead of warning on anything that would quietly produce wrong output, like a carton packed by a recipe with no weight row, or one that resolves to a non-food category. It also decides tier membership from the *recipes*, not item-name suffixes, because `DogFoodBagCrate` doesn't end in "Carton" and would have been dropped without a word.
 
@@ -219,22 +222,22 @@ The repo is the mod folder. It lives at `Zomboid/Workshop/Bundle Up` and the gam
 Check the generated files are current:
 
 ```bash
-python tools/generate_tiers.py --check && python tools/generate_sandbox.py --check
+python ../estral-tools/bundle-up/generate_tiers.py --check && python ../estral-tools/bundle-up/generate_sandbox.py --check
 ```
 
 Regenerate them after changing a pack ladder:
 
 ```bash
-python tools/generate_tiers.py && python tools/generate_sandbox.py
+python ../estral-tools/bundle-up/generate_tiers.py && python ../estral-tools/bundle-up/generate_sandbox.py
 ```
 
-Both are stdlib-only, no install needed. Neither may import `tools/sync_weights.py`, which is gitignored and missing on CI.
+Both are stdlib-only, no install needed. Neither imports `sync_weights.py`, which sits beside them: the two patterns it shares are repeated rather than imported.
 
 CI runs both checks on every push and PR. It also fails if a translation file isn't valid JSON or a Lua file doesn't parse. Broken JSON fails silently in game, and broken Lua only shows up once the game loads it, so both are cheap to catch here.
 
 A topic branch per bug or feature goes into `dev`, and `dev` goes into `main` at release. `main` matches the published Workshop build byte for byte, because Project Zomboid won't let you join a server whose mod files differ. Releases are [tagged](https://github.com/mariaalexissales/Bundle-Up/tags), and the [change notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3746632343) say what changed in each.
 
-`tools/sync_weights.py` and `tools/base_weights.json` are gitignored: they work out script weights for dedicated servers (which read the script values, not the client Lua) and need a Project Zomboid install to regenerate, so they stay local.
+`sync_weights.py` and its `base_weights.json` live in estral-tools with the rest: they work out script weights for dedicated servers (which read the script values, not the client Lua) and need a Project Zomboid install to regenerate.
 
 ---
 
