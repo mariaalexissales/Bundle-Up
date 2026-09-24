@@ -45,3 +45,24 @@ jobs:
               print(line, file=sys.stderr)
           sys.exit(1 if failed else 0)
           PY
+
+      # a lua syntax error only shows up once the game loads the file.
+      - name: lua files parse
+        run: |
+          pip install --quiet luaparser==4.2.0
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          from luaparser import ast
+
+          failed = []
+          for path in sorted(Path("Contents").rglob("*.lua")):
+              try:
+                  ast.parse(path.read_text(encoding="utf-8"))
+              except Exception as err:
+                  failed.append(f"{path}: {err}")
+
+          for line in failed:
+              print(line, file=sys.stderr)
+          sys.exit(1 if failed else 0)
+          PY
