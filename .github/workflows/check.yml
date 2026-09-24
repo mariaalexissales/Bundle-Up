@@ -12,6 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # the generators live in estral-tools, which is private, so this needs the
+      # read-only deploy key. it lands beside the mod rather than in it, and they
+      # read the mod out of the working directory, not their own location.
+      - uses: actions/checkout@v4
+        with:
+          repository: mariaalexissales/estral-tools
+          ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
+          path: estral-tools
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -19,12 +28,12 @@ jobs:
       # generate_tiers.py is stdlib-only, so there is nothing to install.
       # --check exits 1 and names the stale files if regenerating would change them.
       - name: tiers are up to date
-        run: python tools/generate_tiers.py --check
+        run: python estral-tools/bundle-up/generate_tiers.py --check
 
       # page assignment is derived from the weight data, so a new tier batch
       # would otherwise land its sliders on the wrong sandbox page in silence.
       - name: sandbox options are up to date
-        run: python tools/generate_sandbox.py --check
+        run: python estral-tools/bundle-up/generate_sandbox.py --check
 
       # malformed translation json fails silently in game: every name just
       # renders as its raw key. cheap to catch here instead.
