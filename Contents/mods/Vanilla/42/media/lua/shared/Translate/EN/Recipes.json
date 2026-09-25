@@ -122,7 +122,10 @@
   "UnpackElectronicsScrapSack": "Empty Scrap Electronics Sack (25 items)",
   "PackStoneCrate": "Pack Stones in Crate",
   "UnpackStoneCrate": "Open Stone Crate (10 items)",
+  "BulkSmeltIronScrap": "Bulk Smelt Iron Scrap",
   "BulkSmeltIronPieces": "Bulk Smelt Iron Pieces",
+  "BulkSmeltSteelScrap": "Bulk Smelt Steel Scrap",
+  "BulkSmeltSteelPieces": "Bulk Smelt Steel Pieces",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
 }
