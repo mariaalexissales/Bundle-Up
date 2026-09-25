@@ -1,0 +1,30 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    craftRecipe BulkSmeltIronPieces {
+        time = 400,
+        Tags = AdvancedFurnace,
+        onCreate = BUInv.bulkSmelt,
+        category = Blacksmithing,
+        inputs {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[crucibleTypes],
+            item 1 tags[base:crudetongs;base:tongs] mode:keep flags[MayDegradeLight],
+            item 10 tags[base:charcoal],
+            item variable[5:100] [Base.IronPiece] mode:destroy flags[ItemCount;AllowDestroyedItem],
+        }
+        outputs {
+            item 1 mapper:crucibleTypes,
+        }
+        itemMapper crucibleTypes {
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall_Iron,
+            default = Base.CeramicCrucible_Iron,
+        }
+    }
+}
