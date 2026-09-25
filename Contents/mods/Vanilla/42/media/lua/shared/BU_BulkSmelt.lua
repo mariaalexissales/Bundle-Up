@@ -51,6 +51,11 @@ local function BU_giveBack(sample, count, character)
     end
 end
 
+function BUInv.bulkForgeClamp(craftRecipeData, character)
+    -- variable outputs round the ratio up, so 10 scrap would make 3 sheets
+    craftRecipeData:setTargetVariableInputRatio(math.floor(craftRecipeData:getCalculatedVariableInputRatio()))
+end
+
 function BUInv.bulkSmelt(craftRecipeData, character)
     local input, data = BU_meltLine(craftRecipeData)
     if not input or data:getAppliedItemsCount() == 0 then
