@@ -128,5 +128,11 @@
   "PackSuspensionBox": "Pack Suspensions in Box",
   "UnpackSuspensionBox": "Open Suspension Box (4 items)",
   "PackFoodCase": "Pack Food Cartons in Case",
-  "UnpackFoodCase": "Open Food Case (4 cartons)"
+  "PackFoodCrate": "Pack Cases in Crate",
+  "PackFoodCrate2": "Pack Cases in Crate",
+  "PackFoodCrate3": "Pack Cases in Crate",
+  "UnpackFoodCase": "Open Food Case (4 cartons)",
+  "UnpackFoodCrate": "Open Crate (4 cases)",
+  "UnpackFoodCrate2": "Open Crate (2 cases)",
+  "UnpackFoodCrate3": "Open Crate (3 cases)"
 }

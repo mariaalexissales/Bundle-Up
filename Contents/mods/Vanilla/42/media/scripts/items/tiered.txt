@@ -1787,4 +1787,1618 @@ module BundleUp {
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackFoodCase,
     }
+
+    item BBQSauceCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BalsamicVinegarCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BasilDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BeefJerkyCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BellPepperCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BlackSageDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BroccoliCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ButterCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CabbageCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 2,
+        DaysTotallyRotten = 4,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CandyCaramelsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CandyCornCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CandyFruitSlicesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CandyGummyfishCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CandyMolassesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CandyNovapopsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CandycaneCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CarrotsCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 8,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CauliflowerCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CerealCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ChamomileDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CheeseCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 20,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ChivesDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ChocoCakesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ChocolateCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ChocolateChipsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ChocolateCoveredCoffeeBeansCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_ButterchunkersCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_CandyCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_CrackleCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_DeuxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_GalacticDairyCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_RoysPBPucksCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_SmirkersCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Chocolate_SnikSnakCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CilantroDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CinnamonRollCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CommonMallowDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CookieChocolateChipCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CookieJellyCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CookiesChocolateCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CookiesOatmealCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CookiesShortbreadCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CookiesSugarCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CornCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CrackersCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Crisps2Crate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Crisps3Crate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Crisps4Crate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CrispsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CrispyRiceSquareCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CucumberCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 14,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item DehydratedMeatStickCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Dip_NachoCheeseCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Dip_RanchCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Dip_SalsaCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 60,
+        DaysTotallyRotten = 75,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item EggplantCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GarlicCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GingerbreadmanCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GinsengCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GrahamCrackersCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GranolaBarCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GreenpeasCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GumCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GummyBearsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GummyWormsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item HardCandiesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item HiHisCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item HoneyCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item HotsauceCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JamFruitCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JamMarmaladeCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JellyBeansCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JujubesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item KaleCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item KetchupCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item LardCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item LavenderPetalsDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item LeekCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item LettuceCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item LicoriceBlackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item LicoriceRedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MapleSyrupCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MargarineCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MarigoldDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MarinaraCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MarshmallowsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MayonnaiseFullCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 13,
+        Weight = 27.45,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item MintHerbDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MustardCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item OilOliveCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item OilVegetableCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item OnionCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item OreganoDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ParsleyDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PeanutButterCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PepperCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PepperHabaneroCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PepperHabaneroDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PepperJalapenoCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 5,
+        DaysTotallyRotten = 8,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PepperJalapenoDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PicklesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PlonkiesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PopcornCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PorkRindsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PotatoCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PowderedGarlicCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PowderedOnionCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PretzelCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item QuaggaCakesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item RamenCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 365,
+        DaysTotallyRotten = 730,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item RedRadishCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 7,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item RemouladeFullCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 8,
+        DaysTotallyRotten = 11,
+        Weight = 27.45,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item RiceVinegarCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item RockCandyCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item RosePetalsDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item RosemaryDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SageDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SalamiCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 15,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SaltCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ScoutCookiesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SeasoningSaltCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_BasilCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_ChivesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_CilantroCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_OreganoCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_ParsleyCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_RosemaryCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_SageCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Seasoning_ThymeCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SesameOilCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SnoGlobesCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SoybeansCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SoysauceCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SpinachCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SquashCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 28,
+        Weight = 27.45,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item SugarBeetCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 6,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item SugarBrownCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item SugarCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item SweetPotatoCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item Teabag2Crate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ThymeDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item TomatoCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 4,
+        DaysTotallyRotten = 12,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item TomatoPasteCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item TortillaChipsCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item TurkeyEggCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item TurnipCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 28,
+        DaysTotallyRotten = 280,
+        Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item WildEggsCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item WildGarlicDriedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item YoghurtCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 15,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item ZucchiniCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 14,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
 }
