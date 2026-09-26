@@ -137,6 +137,10 @@ BU.Bundles["BundleUp.AppleCarton"] = { base = "Base.Apple", count = 12 }
 BU.Bundles["BundleUp.AvocadoCarton"] = { base = "Base.Avocado", count = 12 }
 BU.Bundles["BundleUp.BaconCarton"] = { base = "Base.Bacon", count = 12 }
 BU.Bundles["BundleUp.BaconRashersCarton"] = { base = "Base.BaconRashers", count = 12 }
+BU.Bundles["BundleUp.BagelPlainCarton"] = { base = "Base.BagelPlain", count = 12 }
+BU.Bundles["BundleUp.BagelPoppyCarton"] = { base = "Base.BagelPoppy", count = 12 }
+BU.Bundles["BundleUp.BagelSesameCarton"] = { base = "Base.BagelSesame", count = 12 }
+BU.Bundles["BundleUp.BaguetteCarton"] = { base = "Base.Baguette", count = 12 }
 BU.Bundles["BundleUp.BaloneyCarton"] = { base = "Base.Baloney", count = 12 }
 BU.Bundles["BundleUp.BananaCarton"] = { base = "Base.Banana", count = 12 }
 BU.Bundles["BundleUp.BasilCarton"] = { base = "Base.Basil", count = 12 }
@@ -145,9 +149,13 @@ BU.Bundles["BundleUp.BeefCarton"] = { base = "Base.Beef", count = 12 }
 BU.Bundles["BundleUp.BellPepperCarton"] = { base = "Base.BellPepper", count = 12 }
 BU.Bundles["BundleUp.BerryBlackCarton"] = { base = "Base.BerryBlack", count = 12 }
 BU.Bundles["BundleUp.BerryBlueCarton"] = { base = "Base.BerryBlue", count = 12 }
+BU.Bundles["BundleUp.BiscuitCarton"] = { base = "Base.Biscuit", count = 12 }
 BU.Bundles["BundleUp.BlackSageDriedCarton"] = { base = "Base.BlackSageDried", count = 12 }
+BU.Bundles["BundleUp.BreadCarton"] = { base = "Base.Bread", count = 12 }
 BU.Bundles["BundleUp.BroccoliCarton"] = { base = "Base.Broccoli", count = 12 }
 BU.Bundles["BundleUp.BrusselSproutsCarton"] = { base = "Base.BrusselSprouts", count = 12 }
+BU.Bundles["BundleUp.BunsHamburgerCarton"] = { base = "Base.BunsHamburger", count = 12 }
+BU.Bundles["BundleUp.BunsHotdogCarton"] = { base = "Base.BunsHotdog", count = 12 }
 BU.Bundles["BundleUp.ButterCarton"] = { base = "Base.Butter", count = 12 }
 BU.Bundles["BundleUp.CabbageCarton"] = { base = "Base.Cabbage", count = 12 }
 BU.Bundles["BundleUp.CarrotsCarton"] = { base = "Base.Carrots", count = 12 }
@@ -170,17 +178,32 @@ BU.Bundles["BundleUp.Coffee2Carton"] = { base = "Base.Coffee2", count = 12 }
 BU.Bundles["BundleUp.CommonMallowDriedCarton"] = { base = "Base.CommonMallowDried", count = 12 }
 BU.Bundles["BundleUp.CookiesSugarCarton"] = { base = "Base.CookiesSugar", count = 12 }
 BU.Bundles["BundleUp.CornCarton"] = { base = "Base.Corn", count = 12 }
+BU.Bundles["BundleUp.CornbreadCarton"] = { base = "Base.Cornbread", count = 12 }
+BU.Bundles["BundleUp.CornFrozenCarton"] = { base = "Base.CornFrozen", count = 12 }
+BU.Bundles["BundleUp.CreamocleCarton"] = { base = "Base.Creamocle", count = 12 }
 BU.Bundles["BundleUp.CrispyRiceSquareCarton"] = { base = "Base.CrispyRiceSquare", count = 12 }
+BU.Bundles["BundleUp.CroissantCarton"] = { base = "Base.Croissant", count = 12 }
 BU.Bundles["BundleUp.CucumberCarton"] = { base = "Base.Cucumber", count = 12 }
+BU.Bundles["BundleUp.CupcakeCarton"] = { base = "Base.Cupcake", count = 12 }
 BU.Bundles["BundleUp.DaikonCarton"] = { base = "Base.Daikon", count = 12 }
+BU.Bundles["BundleUp.DanishCarton"] = { base = "Base.Danish", count = 12 }
 BU.Bundles["BundleUp.Dip_NachoCheeseCarton"] = { base = "Base.Dip_NachoCheese", count = 12 }
 BU.Bundles["BundleUp.Dip_RanchCarton"] = { base = "Base.Dip_Ranch", count = 12 }
 BU.Bundles["BundleUp.DogFoodBagCrate"] = { base = "Base.DogFoodBag", count = 12 }
+BU.Bundles["BundleUp.DoughnutChocolateCarton"] = { base = "Base.DoughnutChocolate", count = 12 }
+BU.Bundles["BundleUp.DoughnutFrostedCarton"] = { base = "Base.DoughnutFrosted", count = 12 }
+BU.Bundles["BundleUp.DoughnutJellyCarton"] = { base = "Base.DoughnutJelly", count = 12 }
+BU.Bundles["BundleUp.DoughnutPlainCarton"] = { base = "Base.DoughnutPlain", count = 12 }
 BU.Bundles["BundleUp.DriedWhiteBeansCarton"] = { base = "Base.DriedWhiteBeans", count = 12 }
 BU.Bundles["BundleUp.EdamameCarton"] = { base = "Base.Edamame", count = 12 }
 BU.Bundles["BundleUp.EggplantCarton"] = { base = "Base.Eggplant", count = 12 }
 BU.Bundles["BundleUp.FishFilletCarton"] = { base = "Base.FishFillet", count = 12 }
 BU.Bundles["BundleUp.FrogMeatCarton"] = { base = "Base.FrogMeat", count = 12 }
+BU.Bundles["BundleUp.Frozen_ChickenNuggetsCarton"] = { base = "Base.Frozen_ChickenNuggets", count = 12 }
+BU.Bundles["BundleUp.Frozen_FishFingersCarton"] = { base = "Base.Frozen_FishFingers", count = 12 }
+BU.Bundles["BundleUp.Frozen_FrenchFriesCarton"] = { base = "Base.Frozen_FrenchFries", count = 12 }
+BU.Bundles["BundleUp.Frozen_TatoDotsCarton"] = { base = "Base.Frozen_TatoDots", count = 12 }
+BU.Bundles["BundleUp.FudgeePopCarton"] = { base = "Base.FudgeePop", count = 12 }
 BU.Bundles["BundleUp.GarlicCarton"] = { base = "Base.Garlic", count = 12 }
 BU.Bundles["BundleUp.GingerPickledCarton"] = { base = "Base.GingerPickled", count = 12 }
 BU.Bundles["BundleUp.GingerRootCarton"] = { base = "Base.GingerRoot", count = 12 }
@@ -194,8 +217,12 @@ BU.Bundles["BundleUp.GreenpeasCarton"] = { base = "Base.Greenpeas", count = 12 }
 BU.Bundles["BundleUp.HamCarton"] = { base = "Base.Ham", count = 12 }
 BU.Bundles["BundleUp.HotdogPackCarton"] = { base = "Base.HotdogPack", count = 12 }
 BU.Bundles["BundleUp.HotsauceCarton"] = { base = "Base.Hotsauce", count = 12 }
+BU.Bundles["BundleUp.JellyRollCarton"] = { base = "Base.JellyRoll", count = 12 }
+BU.Bundles["BundleUp.IcecreamCarton"] = { base = "Base.Icecream", count = 12 }
+BU.Bundles["BundleUp.IcecreamSandwichCarton"] = { base = "Base.IcecreamSandwich", count = 12 }
 BU.Bundles["BundleUp.KaleCarton"] = { base = "Base.Kale", count = 12 }
 BU.Bundles["BundleUp.LeekCarton"] = { base = "Base.Leek", count = 12 }
+BU.Bundles["BundleUp.LemonBarCarton"] = { base = "Base.LemonBar", count = 12 }
 BU.Bundles["BundleUp.LemonCarton"] = { base = "Base.Lemon", count = 12 }
 BU.Bundles["BundleUp.LemonGrassCarton"] = { base = "Base.LemonGrass", count = 12 }
 BU.Bundles["BundleUp.LettuceCarton"] = { base = "Base.Lettuce", count = 12 }
@@ -208,6 +235,9 @@ BU.Bundles["BundleUp.MeatPattyCarton"] = { base = "Base.MeatPatty", count = 12 }
 BU.Bundles["BundleUp.MincedMeatCarton"] = { base = "Base.MincedMeat", count = 12 }
 BU.Bundles["BundleUp.MintHerbCarton"] = { base = "Base.MintHerb", count = 12 }
 BU.Bundles["BundleUp.MintHerbDriedCarton"] = { base = "Base.MintHerbDried", count = 12 }
+BU.Bundles["BundleUp.MuffinFruitCarton"] = { base = "Base.MuffinFruit", count = 12 }
+BU.Bundles["BundleUp.MuffinGenericCarton"] = { base = "Base.MuffinGeneric", count = 12 }
+BU.Bundles["BundleUp.MixedVegetablesCarton"] = { base = "Base.MixedVegetables", count = 12 }
 BU.Bundles["BundleUp.MushroomsButtonCarton"] = { base = "Base.MushroomsButton", count = 12 }
 BU.Bundles["BundleUp.MusselsCarton"] = { base = "Base.Mussels", count = 12 }
 BU.Bundles["BundleUp.MuttonChopCarton"] = { base = "Base.MuttonChop", count = 12 }
@@ -216,15 +246,18 @@ BU.Bundles["BundleUp.OrangeCarton"] = { base = "Base.Orange", count = 12 }
 BU.Bundles["BundleUp.OreganoCarton"] = { base = "Base.Oregano", count = 12 }
 BU.Bundles["BundleUp.OreganoDriedCarton"] = { base = "Base.OreganoDried", count = 12 }
 BU.Bundles["BundleUp.OystersCarton"] = { base = "Base.Oysters", count = 12 }
+BU.Bundles["BundleUp.PainauchocolatCarton"] = { base = "Base.Painauchocolat", count = 12 }
 BU.Bundles["BundleUp.ParsleyCarton"] = { base = "Base.Parsley", count = 12 }
 BU.Bundles["BundleUp.ParsleyDriedCarton"] = { base = "Base.ParsleyDried", count = 12 }
 BU.Bundles["BundleUp.PastaCarton"] = { base = "Base.Pasta", count = 12 }
 BU.Bundles["BundleUp.PeachCarton"] = { base = "Base.Peach", count = 12 }
 BU.Bundles["BundleUp.PearCarton"] = { base = "Base.Pear", count = 12 }
+BU.Bundles["BundleUp.PeasCarton"] = { base = "Base.Peas", count = 12 }
 BU.Bundles["BundleUp.PepperHabaneroDriedCarton"] = { base = "Base.PepperHabaneroDried", count = 12 }
 BU.Bundles["BundleUp.PepperoniCarton"] = { base = "Base.Pepperoni", count = 12 }
 BU.Bundles["BundleUp.PicklesCarton"] = { base = "Base.Pickles", count = 12 }
 BU.Bundles["BundleUp.PineappleCarton"] = { base = "Base.Pineapple", count = 12 }
+BU.Bundles["BundleUp.PopsicleCarton"] = { base = "Base.Popsicle", count = 12 }
 BU.Bundles["BundleUp.PorkCarton"] = { base = "Base.Pork", count = 12 }
 BU.Bundles["BundleUp.PorkChopCarton"] = { base = "Base.PorkChop", count = 12 }
 BU.Bundles["BundleUp.PotatoCarton"] = { base = "Base.Potato", count = 12 }
@@ -255,10 +288,12 @@ BU.Bundles["BundleUp.SteakCarton"] = { base = "Base.Steak", count = 12 }
 BU.Bundles["BundleUp.StrewberrieCarton"] = { base = "Base.Strewberrie", count = 12 }
 BU.Bundles["BundleUp.SugarBeetCarton"] = { base = "Base.SugarBeet", count = 12 }
 BU.Bundles["BundleUp.SweetPotatoCarton"] = { base = "Base.SweetPotato", count = 12 }
+BU.Bundles["BundleUp.TacoShellCarton"] = { base = "Base.TacoShell", count = 12 }
 BU.Bundles["BundleUp.ThymeCarton"] = { base = "Base.Thyme", count = 12 }
 BU.Bundles["BundleUp.TofuCarton"] = { base = "Base.Tofu", count = 12 }
 BU.Bundles["BundleUp.TomatoCarton"] = { base = "Base.Tomato", count = 12 }
 BU.Bundles["BundleUp.TomatoPasteCarton"] = { base = "Base.TomatoPaste", count = 12 }
+BU.Bundles["BundleUp.TortillaCarton"] = { base = "Base.Tortilla", count = 12 }
 BU.Bundles["BundleUp.TortillaChipsCarton"] = { base = "Base.TortillaChips", count = 12 }
 BU.Bundles["BundleUp.TurkeyEggCarton"] = { base = "Base.TurkeyEgg", count = 12 }
 BU.Bundles["BundleUp.TurkeyFilletCarton"] = { base = "Base.TurkeyFillet", count = 12 }
@@ -395,6 +430,10 @@ BU.BaseCategory["Base.Avocado"] = "ReductionFood"
 BU.BaseCategory["Base.BBQSauce"] = "ReductionFood"
 BU.BaseCategory["Base.Bacon"] = "ReductionFood"
 BU.BaseCategory["Base.BaconRashers"] = "ReductionFood"
+BU.BaseCategory["Base.BagelPlain"] = "ReductionFood"
+BU.BaseCategory["Base.BagelPoppy"] = "ReductionFood"
+BU.BaseCategory["Base.BagelSesame"] = "ReductionFood"
+BU.BaseCategory["Base.Baguette"] = "ReductionFood"
 BU.BaseCategory["Base.Baloney"] = "ReductionFood"
 BU.BaseCategory["Base.BalsamicVinegar"] = "ReductionFood"
 BU.BaseCategory["Base.Banana"] = "ReductionFood"
@@ -403,7 +442,11 @@ BU.BaseCategory["Base.Beef"] = "ReductionFood"
 BU.BaseCategory["Base.BeefJerky"] = "ReductionFood"
 BU.BaseCategory["Base.BerryBlack"] = "ReductionFood"
 BU.BaseCategory["Base.BerryBlue"] = "ReductionFood"
+BU.BaseCategory["Base.Biscuit"] = "ReductionFood"
+BU.BaseCategory["Base.Bread"] = "ReductionFood"
 BU.BaseCategory["Base.BrusselSprouts"] = "ReductionFood"
+BU.BaseCategory["Base.BunsHamburger"] = "ReductionFood"
+BU.BaseCategory["Base.BunsHotdog"] = "ReductionFood"
 BU.BaseCategory["Base.CandyCaramels"] = "ReductionFood"
 BU.BaseCategory["Base.CandyCorn"] = "ReductionFood"
 BU.BaseCategory["Base.CandyFruitSlices"] = "ReductionFood"
@@ -433,16 +476,26 @@ BU.BaseCategory["Base.CookieJelly"] = "ReductionFood"
 BU.BaseCategory["Base.CookiesChocolate"] = "ReductionFood"
 BU.BaseCategory["Base.CookiesOatmeal"] = "ReductionFood"
 BU.BaseCategory["Base.CookiesShortbread"] = "ReductionFood"
+BU.BaseCategory["Base.CornFrozen"] = "ReductionFood"
+BU.BaseCategory["Base.Cornbread"] = "ReductionFood"
 BU.BaseCategory["Base.Cornflour2"] = "ReductionFood"
 BU.BaseCategory["Base.Cornmeal2"] = "ReductionFood"
 BU.BaseCategory["Base.Crackers"] = "ReductionFood"
+BU.BaseCategory["Base.Creamocle"] = "ReductionFood"
 BU.BaseCategory["Base.Crisps"] = "ReductionFood"
 BU.BaseCategory["Base.Crisps2"] = "ReductionFood"
 BU.BaseCategory["Base.Crisps3"] = "ReductionFood"
 BU.BaseCategory["Base.Crisps4"] = "ReductionFood"
+BU.BaseCategory["Base.Croissant"] = "ReductionFood"
+BU.BaseCategory["Base.Cupcake"] = "ReductionFood"
 BU.BaseCategory["Base.Daikon"] = "ReductionFood"
+BU.BaseCategory["Base.Danish"] = "ReductionFood"
 BU.BaseCategory["Base.DehydratedMeatStick"] = "ReductionFood"
 BU.BaseCategory["Base.Dip_Salsa"] = "ReductionFood"
+BU.BaseCategory["Base.DoughnutChocolate"] = "ReductionFood"
+BU.BaseCategory["Base.DoughnutFrosted"] = "ReductionFood"
+BU.BaseCategory["Base.DoughnutJelly"] = "ReductionFood"
+BU.BaseCategory["Base.DoughnutPlain"] = "ReductionFood"
 BU.BaseCategory["Base.DriedBlackBeans"] = "ReductionFood"
 BU.BaseCategory["Base.DriedChickpeas"] = "ReductionFood"
 BU.BaseCategory["Base.DriedKidneyBeans"] = "ReductionFood"
@@ -452,6 +505,11 @@ BU.BaseCategory["Base.Edamame"] = "ReductionFood"
 BU.BaseCategory["Base.FishFillet"] = "ReductionFood"
 BU.BaseCategory["Base.Flour2"] = "ReductionFood"
 BU.BaseCategory["Base.FrogMeat"] = "ReductionFood"
+BU.BaseCategory["Base.Frozen_ChickenNuggets"] = "ReductionFood"
+BU.BaseCategory["Base.Frozen_FishFingers"] = "ReductionFood"
+BU.BaseCategory["Base.Frozen_FrenchFries"] = "ReductionFood"
+BU.BaseCategory["Base.Frozen_TatoDots"] = "ReductionFood"
+BU.BaseCategory["Base.FudgeePop"] = "ReductionFood"
 BU.BaseCategory["Base.GingerPickled"] = "ReductionFood"
 BU.BaseCategory["Base.GingerRoot"] = "ReductionFood"
 BU.BaseCategory["Base.GrahamCrackers"] = "ReductionFood"
@@ -468,14 +526,18 @@ BU.BaseCategory["Base.HardCandies"] = "ReductionFood"
 BU.BaseCategory["Base.HiHis"] = "ReductionFood"
 BU.BaseCategory["Base.Honey"] = "ReductionFood"
 BU.BaseCategory["Base.HotdogPack"] = "ReductionFood"
+BU.BaseCategory["Base.Icecream"] = "ReductionFood"
+BU.BaseCategory["Base.IcecreamSandwich"] = "ReductionFood"
 BU.BaseCategory["Base.JamFruit"] = "ReductionFood"
 BU.BaseCategory["Base.JamMarmalade"] = "ReductionFood"
 BU.BaseCategory["Base.JellyBeans"] = "ReductionFood"
+BU.BaseCategory["Base.JellyRoll"] = "ReductionFood"
 BU.BaseCategory["Base.Jujubes"] = "ReductionFood"
 BU.BaseCategory["Base.Ketchup"] = "ReductionFood"
 BU.BaseCategory["Base.Lard"] = "ReductionFood"
 BU.BaseCategory["Base.LavenderPetalsDried"] = "ReductionFood"
 BU.BaseCategory["Base.Lemon"] = "ReductionFood"
+BU.BaseCategory["Base.LemonBar"] = "ReductionFood"
 BU.BaseCategory["Base.LemonGrass"] = "ReductionFood"
 BU.BaseCategory["Base.LicoriceBlack"] = "ReductionFood"
 BU.BaseCategory["Base.LicoriceRed"] = "ReductionFood"
@@ -490,6 +552,9 @@ BU.BaseCategory["Base.Marshmallows"] = "ReductionFood"
 BU.BaseCategory["Base.MeatPatty"] = "ReductionFood"
 BU.BaseCategory["Base.MincedMeat"] = "ReductionFood"
 BU.BaseCategory["Base.MintHerb"] = "ReductionFood"
+BU.BaseCategory["Base.MixedVegetables"] = "ReductionFood"
+BU.BaseCategory["Base.MuffinFruit"] = "ReductionFood"
+BU.BaseCategory["Base.MuffinGeneric"] = "ReductionFood"
 BU.BaseCategory["Base.MushroomsButton"] = "ReductionFood"
 BU.BaseCategory["Base.Mussels"] = "ReductionFood"
 BU.BaseCategory["Base.Mustard"] = "ReductionFood"
@@ -500,10 +565,12 @@ BU.BaseCategory["Base.OilVegetable"] = "ReductionFood"
 BU.BaseCategory["Base.Orange"] = "ReductionFood"
 BU.BaseCategory["Base.Oregano"] = "ReductionFood"
 BU.BaseCategory["Base.Oysters"] = "ReductionFood"
+BU.BaseCategory["Base.Painauchocolat"] = "ReductionFood"
 BU.BaseCategory["Base.Parsley"] = "ReductionFood"
 BU.BaseCategory["Base.Peach"] = "ReductionFood"
 BU.BaseCategory["Base.PeanutButter"] = "ReductionFood"
 BU.BaseCategory["Base.Pear"] = "ReductionFood"
+BU.BaseCategory["Base.Peas"] = "ReductionFood"
 BU.BaseCategory["Base.Pepper"] = "ReductionFood"
 BU.BaseCategory["Base.PepperHabanero"] = "ReductionFood"
 BU.BaseCategory["Base.PepperJalapeno"] = "ReductionFood"
@@ -512,6 +579,7 @@ BU.BaseCategory["Base.Pepperoni"] = "ReductionFood"
 BU.BaseCategory["Base.Pineapple"] = "ReductionFood"
 BU.BaseCategory["Base.Plonkies"] = "ReductionFood"
 BU.BaseCategory["Base.Popcorn"] = "ReductionFood"
+BU.BaseCategory["Base.Popsicle"] = "ReductionFood"
 BU.BaseCategory["Base.Pork"] = "ReductionFood"
 BU.BaseCategory["Base.PorkChop"] = "ReductionFood"
 BU.BaseCategory["Base.PorkRinds"] = "ReductionFood"
@@ -549,10 +617,12 @@ BU.BaseCategory["Base.Steak"] = "ReductionFood"
 BU.BaseCategory["Base.Strewberrie"] = "ReductionFood"
 BU.BaseCategory["Base.Sugar"] = "ReductionFood"
 BU.BaseCategory["Base.SugarBrown"] = "ReductionFood"
+BU.BaseCategory["Base.TacoShell"] = "ReductionFood"
 BU.BaseCategory["Base.Teabag2"] = "ReductionFood"
 BU.BaseCategory["Base.Thyme"] = "ReductionFood"
 BU.BaseCategory["Base.ThymeDried"] = "ReductionFood"
 BU.BaseCategory["Base.Tofu"] = "ReductionFood"
+BU.BaseCategory["Base.Tortilla"] = "ReductionFood"
 BU.BaseCategory["Base.TurkeyFillet"] = "ReductionFood"
 BU.BaseCategory["Base.TurkeyLegs"] = "ReductionFood"
 BU.BaseCategory["Base.TurkeyWings"] = "ReductionFood"
