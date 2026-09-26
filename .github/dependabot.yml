@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    # main only ever holds what is live on the Workshop
+    target-branch: dev
+    commit-message:
+      prefix: chore
