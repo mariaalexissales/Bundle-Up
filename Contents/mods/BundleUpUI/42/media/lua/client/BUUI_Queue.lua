@@ -3,6 +3,7 @@
 ----------
 
 require "BUUI_Index"
+require "BU_Transfer"
 require "TimedActions/ISConsolidateDrainable"
 
 BUUI = BUUI or {}
@@ -46,10 +47,7 @@ local function BUUI_returnOutputs(player, before, types, container)
         local isOutput = (not types) or types[item:getFullType()]
 
         if isNew and isOutput then
-            local action = ISInventoryTransferUtil.newInventoryTransferAction(
-                player, item, player:getInventory(), container, nil)
-            action:setAllowMissingItems(true)
-            ISTimedActionQueue.add(action)
+            BU.sendBack(player, item, container)
         end
     end
 end
@@ -196,25 +194,8 @@ local function BUUI_step()
     ISCraftingUI.ReturnItemsToOriginalContainer(job.player, putBack)
 end
 
-local function BUUI_noteHome(job, item)
-    local container = item:getContainer()
-    if not container or container == job.player:getInventory() then return end
-
-    job.homes = job.homes or {}
-    for _, home in ipairs(job.homes) do
-        if home.item == item then return end
-    end
-    job.homes[#job.homes + 1] = { item = item, container = container }
-end
-
 local function BUUI_returnHomes(job)
-    for _, home in ipairs(job.homes or {}) do
-        -- whatever was poured dry is gone by now, so the transfer has to tolerate it.
-        local back = ISInventoryTransferUtil.newInventoryTransferAction(
-            job.player, home.item, job.player:getInventory(), home.container, nil)
-        back:setAllowMissingItems(true)
-        ISTimedActionQueue.add(back)
-    end
+    BU.sendHomes(job.player, job.homes)
     job.homes = nil
 end
 
@@ -236,8 +217,8 @@ function BUUI_stepMerge(job, row)
         return
     end
 
-    BUUI_noteHome(job, step.from)
-    BUUI_noteHome(job, step.into)
+    job.homes = BU.noteHome(job.player, job.homes, step.from)
+    job.homes = BU.noteHome(job.player, job.homes, step.into)
 
     ISInventoryPaneContextMenu.transferIfNeeded(job.player, step.from)
     ISInventoryPaneContextMenu.transferIfNeeded(job.player, step.into)
