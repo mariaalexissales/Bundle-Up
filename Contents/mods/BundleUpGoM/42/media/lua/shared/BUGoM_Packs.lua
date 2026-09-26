@@ -70,6 +70,22 @@ BUGoM.Drums = {
     "9x19Magazine100_MP5",
 }
 
+BUGoM.HighCap = {
+    ["12GMagazine20_AA12"] = true,
+    ["45Magazine100_THOMPSON"] = true,
+    ["545x39Magazine100_Drum"] = true,
+    ["556x45Magazine100_STANAG"] = true,
+    ["556x45Magazine150_STANAG"] = true,
+    ["556x45Magazine50_STANAG"] = true,
+    ["556x45Magazine60_STANAG"] = true,
+    ["556x45Magazine75_STANAG"] = true,
+    ["762x39Magazine75"] = true,
+    ["9x19Magazine100_MP5"] = true,
+    ["9x19Magazine50_M92FS"] = true,
+    ["9x19Magazine60_M93R"] = true,
+    ["9x19Magazine60_MP5"] = true,
+}
+
 BUGoM.Grenades = {
     { base = "40mm_Box_Buckshot", short = "40mm_Buckshot" },
     { base = "40mm_Box_HE", short = "40mm_HE" },
