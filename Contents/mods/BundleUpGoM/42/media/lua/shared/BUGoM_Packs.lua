@@ -56,8 +56,23 @@ BUGoM.Magazines = {
     "45Magazine40_MAC10",
 }
 
+BUGoM.Drums = {
+    "556x45Magazine60_STANAG",
+    "556x45Magazine50_STANAG",
+    "556x45Magazine75_STANAG",
+    "556x45Magazine100_STANAG",
+    "556x45Magazine150_STANAG",
+    "545x39Magazine100_Drum",
+    "762x39Magazine75",
+    "762x51Box100_M60",
+    "12GMagazine20_AA12",
+    "45Magazine100_THOMPSON",
+    "9x19Magazine100_MP5",
+}
+
 BUGoM.Tiers = {
     Magazine   = { { "Box", 5 }, { "Carton", 12 }, { "Crate", 4 } },
+    Drum       = { { "Box", 2 }, { "Carton", 6 }, { "Crate", 4 } },
 }
 
 -- pack names are built by string, short .. tier, so grepping for 9x19Magazine15_M92FSBox
@@ -78,4 +93,8 @@ end
 
 for i = 1, #BUGoM.Magazines do
     BUGoM_addLadder(BUGoM.Magazines[i], BUGoM.Magazines[i], BUGoM.Tiers.Magazine)
+end
+
+for i = 1, #BUGoM.Drums do
+    BUGoM_addLadder(BUGoM.Drums[i], BUGoM.Drums[i], BUGoM.Tiers.Drum)
 end

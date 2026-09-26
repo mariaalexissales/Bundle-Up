@@ -1153,4 +1153,293 @@ module BundleUp {
         Tags = base:hasmetal;base:ignorezombiedensity,
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
+
+    item 556x45Magazine60_STANAGBox {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 0.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 556x45Magazine50_STANAGBox {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 556x45Magazine75_STANAGBox {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 0.91,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 556x45Magazine100_STANAGBox {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 556x45Magazine150_STANAGBox {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 1.16,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 545x39Magazine100_DrumBox {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 762x39Magazine75Box {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 762x51Box100_M60Box {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 1.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 12GMagazine20_AA12Box {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 45Magazine100_THOMPSONBox {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 0.58,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+    item 9x19Magazine100_MP5Box {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 0.55,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMDrumBox,
+    }
+
+    item 556x45Magazine60_STANAGCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 3.31,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 556x45Magazine50_STANAGCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 4.13,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 556x45Magazine75_STANAGCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 4.55,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 556x45Magazine100_STANAGCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 556x45Magazine150_STANAGCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 5.79,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 545x39Magazine100_DrumCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 762x39Magazine75Carton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 762x51Box100_M60Carton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 12GMagazine20_AA12Carton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 2.48,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 45Magazine100_THOMPSONCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 2.89,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+    item 9x19Magazine100_MP5Carton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 2.73,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCarton,
+    }
+
+    item 556x45Magazine60_STANAGCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 10.98,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 556x45Magazine50_STANAGCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 13.72,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 556x45Magazine75_STANAGCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 15.1,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 556x45Magazine100_STANAGCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 556x45Magazine150_STANAGCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 19.21,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 545x39Magazine100_DrumCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 762x39Magazine75Crate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 762x51Box100_M60Crate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 12GMagazine20_AA12Crate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 8.23,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 45Magazine100_THOMPSONCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 9.61,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
+    item 9x19Magazine100_MP5Crate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 9.06,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMDrumCrate,
+    }
 }

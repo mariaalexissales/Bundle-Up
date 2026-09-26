@@ -4,5 +4,11 @@
   "PackGoMMagazineCarton": "Pack Magazine Boxes in Carton",
   "UnpackGoMMagazineCarton": "Open Carton of Magazines (12 boxes)",
   "PackGoMMagazineCrate": "Pack Magazine Cartons in Crate",
-  "UnpackGoMMagazineCrate": "Open Crate of Magazines (4 cartons)"
+  "UnpackGoMMagazineCrate": "Open Crate of Magazines (4 cartons)",
+  "PackGoMDrumBox": "Pack Drum Magazines in Box",
+  "UnpackGoMDrumBox": "Open Box of Drum Magazines (2 items)",
+  "PackGoMDrumCarton": "Pack Drum Magazine Boxes in Carton",
+  "UnpackGoMDrumCarton": "Open Carton of Drum Magazines (6 boxes)",
+  "PackGoMDrumCrate": "Pack Drum Magazine Cartons in Crate",
+  "UnpackGoMDrumCrate": "Open Crate of Drum Magazines (4 cartons)"
 }

@@ -361,4 +361,161 @@ module BundleUp {
             BundleUp.45Magazine40_MAC10Carton = BundleUp.45Magazine40_MAC10Crate,
         }
     }
+
+    craftRecipe PackGoMDrumBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        onTest = BUInv.testPackEmptyMagazine,
+        category = Packing,
+        inputs {
+            item 2 [MarzGuns.556x45Magazine60_STANAG;MarzGuns.556x45Magazine50_STANAG;MarzGuns.556x45Magazine75_STANAG;MarzGuns.556x45Magazine100_STANAG;MarzGuns.556x45Magazine150_STANAG;MarzGuns.545x39Magazine100_Drum;MarzGuns.762x39Magazine75;MarzGuns.762x51Box100_M60;MarzGuns.12GMagazine20_AA12;MarzGuns.45Magazine100_THOMPSON;MarzGuns.9x19Magazine100_MP5] flags[IsExclusive;ItemCount] mappers[gomDrumBoxMap],
+        }
+        outputs {
+            item 1 mapper:gomDrumBoxMap,
+        }
+        itemMapper gomDrumBoxMap {
+            BundleUp.556x45Magazine60_STANAGBox = MarzGuns.556x45Magazine60_STANAG,
+            BundleUp.556x45Magazine50_STANAGBox = MarzGuns.556x45Magazine50_STANAG,
+            BundleUp.556x45Magazine75_STANAGBox = MarzGuns.556x45Magazine75_STANAG,
+            BundleUp.556x45Magazine100_STANAGBox = MarzGuns.556x45Magazine100_STANAG,
+            BundleUp.556x45Magazine150_STANAGBox = MarzGuns.556x45Magazine150_STANAG,
+            BundleUp.545x39Magazine100_DrumBox = MarzGuns.545x39Magazine100_Drum,
+            BundleUp.762x39Magazine75Box = MarzGuns.762x39Magazine75,
+            BundleUp.762x51Box100_M60Box = MarzGuns.762x51Box100_M60,
+            BundleUp.12GMagazine20_AA12Box = MarzGuns.12GMagazine20_AA12,
+            BundleUp.45Magazine100_THOMPSONBox = MarzGuns.45Magazine100_THOMPSON,
+            BundleUp.9x19Magazine100_MP5Box = MarzGuns.9x19Magazine100_MP5,
+        }
+    }
+
+    craftRecipe UnpackGoMDrumBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.556x45Magazine60_STANAGBox;BundleUp.556x45Magazine50_STANAGBox;BundleUp.556x45Magazine75_STANAGBox;BundleUp.556x45Magazine100_STANAGBox;BundleUp.556x45Magazine150_STANAGBox;BundleUp.545x39Magazine100_DrumBox;BundleUp.762x39Magazine75Box;BundleUp.762x51Box100_M60Box;BundleUp.12GMagazine20_AA12Box;BundleUp.45Magazine100_THOMPSONBox;BundleUp.9x19Magazine100_MP5Box] flags[IsExclusive;ItemCount] mappers[gomDrumBoxMap],
+        }
+        outputs {
+            item 2 mapper:gomDrumBoxMap,
+        }
+        itemMapper gomDrumBoxMap {
+            MarzGuns.556x45Magazine60_STANAG = BundleUp.556x45Magazine60_STANAGBox,
+            MarzGuns.556x45Magazine50_STANAG = BundleUp.556x45Magazine50_STANAGBox,
+            MarzGuns.556x45Magazine75_STANAG = BundleUp.556x45Magazine75_STANAGBox,
+            MarzGuns.556x45Magazine100_STANAG = BundleUp.556x45Magazine100_STANAGBox,
+            MarzGuns.556x45Magazine150_STANAG = BundleUp.556x45Magazine150_STANAGBox,
+            MarzGuns.545x39Magazine100_Drum = BundleUp.545x39Magazine100_DrumBox,
+            MarzGuns.762x39Magazine75 = BundleUp.762x39Magazine75Box,
+            MarzGuns.762x51Box100_M60 = BundleUp.762x51Box100_M60Box,
+            MarzGuns.12GMagazine20_AA12 = BundleUp.12GMagazine20_AA12Box,
+            MarzGuns.45Magazine100_THOMPSON = BundleUp.45Magazine100_THOMPSONBox,
+            MarzGuns.9x19Magazine100_MP5 = BundleUp.9x19Magazine100_MP5Box,
+        }
+    }
+
+    craftRecipe PackGoMDrumCarton {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 6 [BundleUp.556x45Magazine60_STANAGBox;BundleUp.556x45Magazine50_STANAGBox;BundleUp.556x45Magazine75_STANAGBox;BundleUp.556x45Magazine100_STANAGBox;BundleUp.556x45Magazine150_STANAGBox;BundleUp.545x39Magazine100_DrumBox;BundleUp.762x39Magazine75Box;BundleUp.762x51Box100_M60Box;BundleUp.12GMagazine20_AA12Box;BundleUp.45Magazine100_THOMPSONBox;BundleUp.9x19Magazine100_MP5Box] flags[IsExclusive;ItemCount] mappers[gomDrumCartonMap],
+        }
+        outputs {
+            item 1 mapper:gomDrumCartonMap,
+        }
+        itemMapper gomDrumCartonMap {
+            BundleUp.556x45Magazine60_STANAGCarton = BundleUp.556x45Magazine60_STANAGBox,
+            BundleUp.556x45Magazine50_STANAGCarton = BundleUp.556x45Magazine50_STANAGBox,
+            BundleUp.556x45Magazine75_STANAGCarton = BundleUp.556x45Magazine75_STANAGBox,
+            BundleUp.556x45Magazine100_STANAGCarton = BundleUp.556x45Magazine100_STANAGBox,
+            BundleUp.556x45Magazine150_STANAGCarton = BundleUp.556x45Magazine150_STANAGBox,
+            BundleUp.545x39Magazine100_DrumCarton = BundleUp.545x39Magazine100_DrumBox,
+            BundleUp.762x39Magazine75Carton = BundleUp.762x39Magazine75Box,
+            BundleUp.762x51Box100_M60Carton = BundleUp.762x51Box100_M60Box,
+            BundleUp.12GMagazine20_AA12Carton = BundleUp.12GMagazine20_AA12Box,
+            BundleUp.45Magazine100_THOMPSONCarton = BundleUp.45Magazine100_THOMPSONBox,
+            BundleUp.9x19Magazine100_MP5Carton = BundleUp.9x19Magazine100_MP5Box,
+        }
+    }
+
+    craftRecipe UnpackGoMDrumCarton {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.556x45Magazine60_STANAGCarton;BundleUp.556x45Magazine50_STANAGCarton;BundleUp.556x45Magazine75_STANAGCarton;BundleUp.556x45Magazine100_STANAGCarton;BundleUp.556x45Magazine150_STANAGCarton;BundleUp.545x39Magazine100_DrumCarton;BundleUp.762x39Magazine75Carton;BundleUp.762x51Box100_M60Carton;BundleUp.12GMagazine20_AA12Carton;BundleUp.45Magazine100_THOMPSONCarton;BundleUp.9x19Magazine100_MP5Carton] flags[IsExclusive;ItemCount] mappers[gomDrumCartonMap],
+        }
+        outputs {
+            item 6 mapper:gomDrumCartonMap,
+        }
+        itemMapper gomDrumCartonMap {
+            BundleUp.556x45Magazine60_STANAGBox = BundleUp.556x45Magazine60_STANAGCarton,
+            BundleUp.556x45Magazine50_STANAGBox = BundleUp.556x45Magazine50_STANAGCarton,
+            BundleUp.556x45Magazine75_STANAGBox = BundleUp.556x45Magazine75_STANAGCarton,
+            BundleUp.556x45Magazine100_STANAGBox = BundleUp.556x45Magazine100_STANAGCarton,
+            BundleUp.556x45Magazine150_STANAGBox = BundleUp.556x45Magazine150_STANAGCarton,
+            BundleUp.545x39Magazine100_DrumBox = BundleUp.545x39Magazine100_DrumCarton,
+            BundleUp.762x39Magazine75Box = BundleUp.762x39Magazine75Carton,
+            BundleUp.762x51Box100_M60Box = BundleUp.762x51Box100_M60Carton,
+            BundleUp.12GMagazine20_AA12Box = BundleUp.12GMagazine20_AA12Carton,
+            BundleUp.45Magazine100_THOMPSONBox = BundleUp.45Magazine100_THOMPSONCarton,
+            BundleUp.9x19Magazine100_MP5Box = BundleUp.9x19Magazine100_MP5Carton,
+        }
+    }
+
+    craftRecipe PackGoMDrumCrate {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 4 [BundleUp.556x45Magazine60_STANAGCarton;BundleUp.556x45Magazine50_STANAGCarton;BundleUp.556x45Magazine75_STANAGCarton;BundleUp.556x45Magazine100_STANAGCarton;BundleUp.556x45Magazine150_STANAGCarton;BundleUp.545x39Magazine100_DrumCarton;BundleUp.762x39Magazine75Carton;BundleUp.762x51Box100_M60Carton;BundleUp.12GMagazine20_AA12Carton;BundleUp.45Magazine100_THOMPSONCarton;BundleUp.9x19Magazine100_MP5Carton] flags[IsExclusive;ItemCount] mappers[gomDrumCrateMap],
+        }
+        outputs {
+            item 1 mapper:gomDrumCrateMap,
+        }
+        itemMapper gomDrumCrateMap {
+            BundleUp.556x45Magazine60_STANAGCrate = BundleUp.556x45Magazine60_STANAGCarton,
+            BundleUp.556x45Magazine50_STANAGCrate = BundleUp.556x45Magazine50_STANAGCarton,
+            BundleUp.556x45Magazine75_STANAGCrate = BundleUp.556x45Magazine75_STANAGCarton,
+            BundleUp.556x45Magazine100_STANAGCrate = BundleUp.556x45Magazine100_STANAGCarton,
+            BundleUp.556x45Magazine150_STANAGCrate = BundleUp.556x45Magazine150_STANAGCarton,
+            BundleUp.545x39Magazine100_DrumCrate = BundleUp.545x39Magazine100_DrumCarton,
+            BundleUp.762x39Magazine75Crate = BundleUp.762x39Magazine75Carton,
+            BundleUp.762x51Box100_M60Crate = BundleUp.762x51Box100_M60Carton,
+            BundleUp.12GMagazine20_AA12Crate = BundleUp.12GMagazine20_AA12Carton,
+            BundleUp.45Magazine100_THOMPSONCrate = BundleUp.45Magazine100_THOMPSONCarton,
+            BundleUp.9x19Magazine100_MP5Crate = BundleUp.9x19Magazine100_MP5Carton,
+        }
+    }
+
+    craftRecipe UnpackGoMDrumCrate {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.556x45Magazine60_STANAGCrate;BundleUp.556x45Magazine50_STANAGCrate;BundleUp.556x45Magazine75_STANAGCrate;BundleUp.556x45Magazine100_STANAGCrate;BundleUp.556x45Magazine150_STANAGCrate;BundleUp.545x39Magazine100_DrumCrate;BundleUp.762x39Magazine75Crate;BundleUp.762x51Box100_M60Crate;BundleUp.12GMagazine20_AA12Crate;BundleUp.45Magazine100_THOMPSONCrate;BundleUp.9x19Magazine100_MP5Crate] flags[IsExclusive;ItemCount] mappers[gomDrumCrateMap],
+        }
+        outputs {
+            item 4 mapper:gomDrumCrateMap,
+        }
+        itemMapper gomDrumCrateMap {
+            BundleUp.556x45Magazine60_STANAGCarton = BundleUp.556x45Magazine60_STANAGCrate,
+            BundleUp.556x45Magazine50_STANAGCarton = BundleUp.556x45Magazine50_STANAGCrate,
+            BundleUp.556x45Magazine75_STANAGCarton = BundleUp.556x45Magazine75_STANAGCrate,
+            BundleUp.556x45Magazine100_STANAGCarton = BundleUp.556x45Magazine100_STANAGCrate,
+            BundleUp.556x45Magazine150_STANAGCarton = BundleUp.556x45Magazine150_STANAGCrate,
+            BundleUp.545x39Magazine100_DrumCarton = BundleUp.545x39Magazine100_DrumCrate,
+            BundleUp.762x39Magazine75Carton = BundleUp.762x39Magazine75Crate,
+            BundleUp.762x51Box100_M60Carton = BundleUp.762x51Box100_M60Crate,
+            BundleUp.12GMagazine20_AA12Carton = BundleUp.12GMagazine20_AA12Crate,
+            BundleUp.45Magazine100_THOMPSONCarton = BundleUp.45Magazine100_THOMPSONCrate,
+            BundleUp.9x19Magazine100_MP5Carton = BundleUp.9x19Magazine100_MP5Crate,
+        }
+    }
 }
