@@ -20,9 +20,11 @@ jobs:
     steps:
       # a schedule would check main, which only ever holds the last upload. the next
       # upload comes from dev, so dev is the one that has to keep up with the page.
+      # main stays in the history as the base the page's edits are merged against.
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event_name != 'pull_request' && 'dev' || '' }}
+          fetch-depth: 0
           persist-credentials: false
 
       - uses: actions/checkout@v4
@@ -50,6 +52,6 @@ jobs:
           if [ "$status" -eq 2 ]; then
             echo "::error::steam's api didn't answer, so nothing was compared. re-run the job."
           elif [ "$status" -ne 0 ]; then
-            echo "::error::the workshop page changed outside the repo. run python ../estral-tools/workshop/sync_workshop.py from the Bundle Up folder and commit what it writes."
+            echo "::error::the workshop page has edits workshop.txt doesn't. run python ../estral-tools/workshop/sync_workshop.py from the Bundle Up folder and commit what it writes."
           fi
           exit "$status"
