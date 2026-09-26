@@ -256,6 +256,15 @@ local function BUUI_outputLabel(outputs)
     return table.concat(parts, " + ")
 end
 
+local function BUUI_byName(a, b)
+    return (a.name or "") < (b.name or "")
+end
+
+local function BUUI_mergeOrder(a, b)
+    if a.sourceCount ~= b.sourceCount then return a.sourceCount > b.sourceCount end
+    return BUUI_byName(a, b)
+end
+
 -- a merge row stands in for a recipe it does not have: BUUI_Queue branches on
 -- entry.merge, and the sort at the foot of resolveRows reads entry.count.
 function BUUI.resolveMergeRows(player)
@@ -298,13 +307,79 @@ function BUUI.resolveMergeRows(player)
         end
     end
 
-    table.sort(rows, function(a, b)
-        if a.sourceCount ~= b.sourceCount then return a.sourceCount > b.sourceCount end
-        return (a.name or "") < (b.name or "")
-    end)
-
+    table.sort(rows, BUUI_mergeOrder)
     return rows, containers
 end
+
+local function BUUI_probeRow(player, containers, surface, entry, fullType, item)
+    local logic
+    logic, surface = BUUI_probeLogic(player, containers, surface)
+    logic:setRecipeFromContextClick(entry.recipe, item)
+
+    local inputs, satisfied = BUUI_describeInputs(logic, entry, fullType)
+    -- the flag is forceRecache: this logic was built a line ago and has
+    -- no cache to read, so asking for the cached count answers zero.
+    local max = logic:getPossibleCraftCount(true)
+    local outputs = BUUI.describeOutputs(logic, entry.recipe)
+    local ready = satisfied and logic:canPerformCurrentRecipe() and max > 0
+    local name = item:getDisplayName()
+    local result = BUUI_outputLabel(outputs)
+
+    local probe = {
+        inputs = inputs,
+        max = max,
+        outputs = outputs,
+        ready = ready and true or false,
+        name = name,
+        result = result,
+    }
+    return probe, surface
+end
+
+-- dozens of items share a display name. keying on recipe, name and output
+-- folds those together but keeps rows that give back different rope apart.
+local function BUUI_rowKey(entry, probe)
+    return entry.recipe:getScriptObjectFullType() .. "|" .. probe.name .. "|" .. tostring(probe.result)
+end
+
+local function BUUI_foldRow(row, source, count, probe)
+    row.sources[#row.sources + 1] = source
+    row.sourceCount = row.sourceCount + count
+    row.max = row.max + probe.max
+
+    -- show the checks of a source that can run, so a ready row never
+    -- lists a blocked variant's ingredients.
+    if probe.ready and not row.ready then
+        row.ready = true
+        row.inputs = probe.inputs
+    end
+end
+
+local function BUUI_newRow(key, entry, source, count, probe, item)
+    return {
+        key = key,
+        entry = entry,
+        sources = { source },
+        sourceCount = count,
+        inputs = probe.inputs,
+        ready = probe.ready,
+        max = probe.max,
+        quantity = 1,
+        name = probe.name,
+        result = probe.result,
+        -- getResultTexture derefs getFirstInputItem() on every input, so a
+        -- row short an ingredient throws. describeOutputs already has the icon.
+        texture = (probe.outputs[1] and probe.outputs[1].texture) or item:getTexture(),
+    }
+end
+
+local function BUUI_rowOrder(a, b)
+    if a.ready ~= b.ready then return a.ready end
+    if a.entry.count ~= b.entry.count then return a.entry.count > b.entry.count end
+    return BUUI_byName(a, b)
+end
+
+local NO_ENTRIES = {}
 
 function BUUI.resolveRows(player, mode, scan)
     if mode == BUUI.MODE.MERGE then
@@ -322,78 +397,27 @@ function BUUI.resolveRows(player, mode, scan)
     local rows, byKey, surface = {}, {}, nil
 
     for fullType, count in pairs(tally) do
-        local bucket = index[fullType]
-        if bucket then
-            for _, entry in ipairs(bucket) do
-                if entry.bundling == bundling then
-                    local item = sample[fullType]
-                    local logic
-                    logic, surface = BUUI_probeLogic(player, containers, surface)
-                    logic:setRecipeFromContextClick(entry.recipe, item)
+        for _, entry in ipairs(index[fullType] or NO_ENTRIES) do
+            if entry.bundling == bundling then
+                local item = sample[fullType]
+                local probe
+                probe, surface = BUUI_probeRow(player, containers, surface, entry, fullType, item)
 
-                    local inputs, satisfied = BUUI_describeInputs(logic, entry, fullType)
-                    -- the flag is forceRecache: this logic was built a line ago and has
-                    -- no cache to read, so asking for the cached count answers zero.
-                    local max = logic:getPossibleCraftCount(true)
-                    local outputs = BUUI.describeOutputs(logic, entry.recipe)
-                    local ready = (satisfied and logic:canPerformCurrentRecipe() and max > 0) and true or false
-
-                    local name = item:getDisplayName()
-                    local result = BUUI_outputLabel(outputs)
-
-                    -- dozens of items share a display name. keying on recipe, name and output
-                    -- folds those together but keeps rows that give back different rope apart.
-                    local key = entry.recipe:getScriptObjectFullType()
-                        .. "|" .. name .. "|" .. tostring(result)
-
-                    local source = {
-                        fullType = fullType,
-                        container = item:getContainer(),
-                    }
-
-                    local row = byKey[key]
-                    if row then
-                        row.sources[#row.sources + 1] = source
-                        row.sourceCount = row.sourceCount + count
-                        row.max = row.max + max
-
-                        -- show the checks of a source that can run, so a ready row never
-                        -- lists a blocked variant's ingredients.
-                        if ready and not row.ready then
-                            row.ready = true
-                            row.inputs = inputs
-                        end
-                    else
-                        row = {
-                            key = key,
-                            entry = entry,
-                            sources = { source },
-                            sourceCount = count,
-                            inputs = inputs,
-                            ready = ready,
-                            max = max,
-                            quantity = 1,
-                            name = name,
-                            result = result,
-                            -- getResultTexture derefs getFirstInputItem() on every input, so a
-                            -- row short an ingredient throws. describeOutputs already has the icon.
-                            texture = (outputs[1] and outputs[1].texture)
-                                or item:getTexture(),
-                        }
-                        byKey[key] = row
-                        rows[#rows + 1] = row
-                    end
+                local key = BUUI_rowKey(entry, probe)
+                local source = { fullType = fullType, container = item:getContainer() }
+                local row = byKey[key]
+                if row then
+                    BUUI_foldRow(row, source, count, probe)
+                else
+                    row = BUUI_newRow(key, entry, source, count, probe, item)
+                    byKey[key] = row
+                    rows[#rows + 1] = row
                 end
             end
         end
     end
 
-    table.sort(rows, function(a, b)
-        if a.ready ~= b.ready then return a.ready end
-        if a.entry.count ~= b.entry.count then return a.entry.count > b.entry.count end
-        return (a.name or "") < (b.name or "")
-    end)
-
+    table.sort(rows, BUUI_rowOrder)
     return rows, containers
 end
 
