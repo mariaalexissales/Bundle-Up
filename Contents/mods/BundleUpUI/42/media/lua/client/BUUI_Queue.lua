@@ -20,10 +20,8 @@ local function BUUI_snapshot(player)
     return seen
 end
 
--- the concrete output types are only knowable once the mapper is pinned. collecting
--- them up front lets the diff below reject anything picked up mid-craft. an unresolved
--- output is describeOutputs guessing at the family, so filtering on it would strand the
--- real ones in the player's inventory - hand back nil and let the diff stand alone.
+-- an unresolved output is describeOutputs guessing at the family. filtering on a guess
+-- strands the real outputs in the player's inventory, so return nil and trust the diff.
 local function BUUI_outputTypes(logic, recipe)
     local types, any = {}, false
 
@@ -45,7 +43,6 @@ local function BUUI_returnOutputs(player, before, types, container)
     for i = 0, items:size() - 1 do
         local item = items:get(i)
         local isNew = not before[item:getID()]
-        -- without a resolved output list, trust the diff alone.
         local isOutput = (not types) or types[item:getFullType()]
 
         if isNew and isOutput then
@@ -91,8 +88,6 @@ local function BUUI_liveSample(player, fullType)
     return nil, containers
 end
 
--- a row can stand for several item types the game names alike, so a batch that
--- exhausts one carries on into the next instead of stopping short.
 local function BUUI_nextSample(job)
     local sources = job.row.sources
 
@@ -224,10 +219,8 @@ local function BUUI_returnHomes(job)
     job.homes = nil
 end
 
--- a merge has no recipe for HandcraftLogic to run, and it cannot be queued in bulk
--- either: ISConsolidateDrainable reads both fill levels in its constructor, so each
--- step is planned and built only once the one before it has finished. it carries no
--- setOnComplete, hence the perform wrapper.
+-- ISConsolidateDrainable reads both fill levels in its constructor, so each pour is built
+-- only after the last one finished. it has no setOnComplete, hence the perform wrapper.
 function BUUI_stepMerge(job, row)
     local source = row.sources[1]
     local step = nil
@@ -287,8 +280,6 @@ function BUUI.Queue.isRunning()
     return BUUI_active ~= nil
 end
 
--- nextRow is the only thing that differs between a fixed list and Bundle All: it
--- hands back the next row to run, or nil to finish.
 local function BUUI_begin(player, nextRow, onProgress, onFinished)
     if BUUI_active then return false end
 
@@ -316,9 +307,8 @@ function BUUI.Queue.stop()
     ISTimedActionQueue.clear(player)
 end
 
--- the list is fixed when the button is pressed, so an earlier row can eat what a later
--- one counted on - Tie10 and Tie5 want the same planks. not an error: the step loop
--- looks each source up by type and skips a spent one, so the batch just makes fewer.
+-- the list is fixed at the click, so an earlier row can eat a later one's planks. the
+-- step loop skips a spent source, so the batch just makes fewer.
 function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
     local index = 0
 
@@ -339,9 +329,8 @@ function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
     return BUUI_begin(player, nextRow, onProgress, onFinished)
 end
 
--- Bundle All cannot be planned up front: Tie5 and Tie10 compete for the same planks
--- and getPossibleCraftCount cannot see crafts that have not happened. so each batch
--- finishes before the next row is chosen.
+-- each row is picked after the last batch finishes. Tie5 and Tie10 share planks and
+-- getPossibleCraftCount can't see crafts that haven't happened yet.
 function BUUI.Queue.startAll(player, mode, onProgress, onFinished)
     local attempted = {}
 

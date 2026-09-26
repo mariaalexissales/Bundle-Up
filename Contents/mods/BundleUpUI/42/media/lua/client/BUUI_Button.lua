@@ -6,8 +6,6 @@ require "ISUI/ISButton"
 
 BUUI_Button = ISButton:derive("BUUI_Button")
 
--- NeatUI's end caps take a tint and the body does not, so state is carried by tinting
--- the caps and filling the body behind them.
 local BUUI_TEXTURES = nil
 
 local function BUUI_textures()
@@ -21,6 +19,7 @@ local function BUUI_textures()
     return BUUI_TEXTURES
 end
 
+-- neatui's middle patch ignores tint, so state shows on the caps plus a body fill.
 local STATES = {
     disabled = { cap = { 0.45, 0.45, 0.45 }, alpha = 0.45, fill = nil,
                  text = { 0.42, 0.42, 0.42 } },

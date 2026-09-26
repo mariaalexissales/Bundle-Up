@@ -12,15 +12,14 @@ BUUI.MODE = {
     MERGE    = "merge",
 }
 
--- keyed off the recipe's module prefix rather than a tag, so the base mod's 67 recipes
--- need no edits and another packing mod only has to name its module here.
+-- recipes are picked up by module prefix, not a tag. another packing mod only has to
+-- add its module here.
 BUUI.modules = BUUI.modules or { BundleUp = true }
 
 BUUI.recipes = nil
 
--- one input covers a whole family and each member can carry its own amount - the
--- boxed recipes write "item 10 [...;50:Base.NutsBolts;...]". the scalar getIntAmount
--- reads 1 for those, so the keyed lookup is the real number and the scalar a fallback.
+-- family members can carry their own amount ("item 10 [...;50:Base.NutsBolts]") and the
+-- plain getIntAmount reads 1 for those, so the keyed lookup is the real count.
 local function BUUI_amountFor(input, fullName)
     local amount = fullName and input:getIntAmount(fullName) or 0
     if amount < 1 then amount = input:getIntAmount() end
@@ -42,9 +41,8 @@ local function BUUI_largestAmount(input)
     return largest, names, amounts
 end
 
--- the bulk material is the input asking for the most of something - Tie5 wants one
--- rope and five planks. going by amount rather than flags[ItemCount] matters because
--- the flags are inconsistent across the recipe files: BoxSmall carries none at all.
+-- the bulk input is whichever asks for the most (Tie5: 1 rope, 5 planks). flags[ItemCount]
+-- can't tell you, BoxSmall carries none.
 local function BUUI_splitInputs(recipe)
     local inputs = recipe:getInputs()
     if not inputs or inputs:size() == 0 then return nil, nil, 0 end
@@ -85,8 +83,7 @@ function BUUI.buildIndex()
         if module and BUUI.modules[module] and recipe:getCategory() == "Packing" then
             local pivot, others, bulk, names, amounts = BUUI_splitInputs(recipe)
             if pivot then
-                -- packing consumes many to make one and unpacking does the reverse, so
-                -- the bulk amount sorts the two without matching on recipe names.
+                -- many in is packing, one in is unpacking. no recipe names involved.
                 local bundling = bulk >= 2
 
                 if names then
@@ -130,8 +127,6 @@ function BUUI.getIndex()
     return BUUI.recipes or BUUI.buildIndex()
 end
 
--- the same container list the vanilla crafting window works from, so "nearby" means
--- what it means everywhere else in the game.
 function BUUI.scanContainers(player)
     local containers = ISInventoryPaneContextMenu.getContainers(player)
     local tally, sample = {}, {}
@@ -150,8 +145,8 @@ function BUUI.scanContainers(player)
     return containers, tally, sample
 end
 
--- mirrors ISInventoryPaneContextMenu.OnNewCraft: every vanilla caller builds a fresh
--- logic and gives it a craft surface before asking whether the recipe can run.
+-- same order as ISInventoryPaneContextMenu.OnNewCraft: a fresh logic gets its craft
+-- surface before anything asks whether the recipe can run.
 local function BUUI_probeLogic(player, containers, surface)
     local logic = HandcraftLogic.new(player, nil, nil)
     -- findCraftSurface reads only the player's square, so one lookup covers a whole pass.
@@ -163,12 +158,11 @@ local function BUUI_probeLogic(player, containers, surface)
     return logic, surface
 end
 
--- an input can accept a whole family - PackFoodCase lists all 166 cartons - so the
--- first possible item is a coin toss, not the one in front of the player. wanted is
--- the type the row was built from; only the pivot knows it, a secondary passes nil.
+-- PackFoodCase takes all 166 cartons, so the first possible item is a coin toss. wanted is
+-- the type the row was built from, and secondaries pass nil.
 local function BUUI_inputNames(logic, input, wanted)
-    -- both lists hold the same kind of object, so vanilla swaps one for the other and
-    -- reads them alike (ISWidgetInput:197). the fallback is the missing-rope case.
+    -- vanilla swaps these two lists freely, they hold the same object type. the fallback
+    -- is for an input with nothing in reach, like the rope.
     local objects = logic:getSatisfiedInputItems(input)
     if not objects or objects:size() == 0 then
         objects = input:getPossibleInputItems()
@@ -214,9 +208,8 @@ local function BUUI_describeInputs(logic, entry, fullType)
     return parts, satisfied
 end
 
--- untying hands back the rope as well as the planks, so reading only the first output
--- drops half of what the recipe makes. the mapper cannot resolve until every input is
--- in reach, so the script's own result list covers a row still short an ingredient.
+-- untying gives back the rope as well as the planks, so read every output. the mapper only
+-- resolves with every input in reach, so a short row falls back to the script's list.
 function BUUI.describeOutputs(logic, recipe)
     local outputs, described = recipe:getOutputs(), {}
     if not outputs then return described end
@@ -250,8 +243,7 @@ function BUUI.describeOutputs(logic, recipe)
     return described
 end
 
--- what the row promises the player, and part of the key that keeps two bundles of the
--- same name apart.
+-- part of the row key, so two bundles with the same name stay apart.
 local function BUUI_outputLabel(outputs)
     if #outputs == 0 then return nil end
 
@@ -347,9 +339,8 @@ function BUUI.resolveRows(player, mode, scan)
                     local name = item:getDisplayName()
                     local result = BUUI_outputLabel(outputs)
 
-                    -- dozens of these items share a display name, so merging on what is
-                    -- drawn - recipe, name, output - folds the duplicates together while
-                    -- keeping rows that hand back different rope apart.
+                    -- dozens of items share a display name. keying on recipe, name and output
+                    -- folds those together but keeps rows that give back different rope apart.
                     local key = entry.recipe:getScriptObjectFullType()
                         .. "|" .. name .. "|" .. tostring(result)
 

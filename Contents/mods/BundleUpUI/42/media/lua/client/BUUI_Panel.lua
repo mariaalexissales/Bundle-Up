@@ -58,9 +58,8 @@ function BUUI_Panel:new(x, y, width, height, player)
     return o
 end
 
--- one place for the vertical bands so createChildren and onResize cannot drift. a
--- resizable ISCollapsableWindow paints a status bar over its own bottom edge and lays
--- a resize widget across it that swallows clicks, so the footer sits above that.
+-- a resizable ISCollapsableWindow draws a status bar and a click-swallowing resize widget
+-- over its bottom edge, so the footer sits above both.
 function BUUI_Panel:bands()
     local tabY = self:titleBarHeight() + PAD
     local barY = tabY + TAB_HEIGHT + GAP
@@ -69,7 +68,6 @@ function BUUI_Panel:bands()
     return tabY, barY, listY, footerY
 end
 
--- a third tab is one too many for "and/or", which would fold merge into the unbundle half.
 local BUUI_LABELS = {
     [BUUI.MODE.BUNDLE]   = { items = "IGUI_BUUI_BundleItems",   all = "IGUI_BUUI_BundleAll",   empty = "IGUI_BUUI_Empty" },
     [BUUI.MODE.UNBUNDLE] = { items = "IGUI_BUUI_UnbundleItems", all = "IGUI_BUUI_UnbundleAll", empty = "IGUI_BUUI_EmptyUnbundle" },
@@ -253,9 +251,7 @@ function BUUI_Panel:updateFooter()
     self.bundleAll.enable = (self.ready or 0) > 0
 end
 
--- follows the inventory UI's convention so the labels read the same and come out
--- translated: a bag by the item holding it, everything else by its container type.
--- the player's own inventory has neither and would print its raw type of "none".
+-- the player's own inventory has no holder and its raw type reads "none".
 local function BUUI_containerName(container)
     local holder = container:getContainingItem()
     if holder then return holder:getName() end
@@ -303,8 +299,7 @@ function BUUI_Panel:onBatchFinished()
     self:refresh()
 end
 
--- runs the rows as they stand. Bundle All re-reads the containers between recipes;
--- this deliberately does not.
+-- no rescan between rows on purpose. Bundle All is the one that rescans.
 function BUUI_Panel:onBundleItems()
     if BUUI.Queue.isRunning() then
         self:stopBatch()
@@ -381,9 +376,8 @@ end
 function BUUI_Panel:update()
     ISCollapsableWindow.update(self)
 
-    -- containers open and empty while the panel is up, but resolving a row probes the
-    -- recipe and is far too costly to do every frame. while a batch runs, the queue's
-    -- own progress callback covers this.
+    -- probing rows every frame is far too slow. while a batch runs, the queue's progress
+    -- callback does the refreshing.
     if BUUI.Queue.isRunning() then return end
 
     self.ticks = self.ticks + 1
