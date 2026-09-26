@@ -20,6 +20,11 @@ local BAR_HEIGHT = 22
 local FOOTER_HEIGHT = 30
 local REFRESH_TICKS = 90
 local STALE_REFRESHES = 10
+local ROW_GAP = 4
+local LABEL_PAD = 24
+local SOURCES_SHOWN = 3
+local WINDOW_WIDTH, WINDOW_HEIGHT = 720, 560
+local SCREEN_MARGIN = 40
 
 local COL_BAR = { r = 0, g = 0, b = 0, a = 0.35 }
 local COL_FRAME = { r = 1, g = 1, b = 1, a = 0.09 }
@@ -81,7 +86,7 @@ local function BUUI_labelWidth(button, ...)
     for _, key in ipairs({ ... }) do
         widest = math.max(widest, getTextManager():MeasureStringX(button.font, getText(key)))
     end
-    return 24 + widest
+    return LABEL_PAD + widest
 end
 
 -- anchors are applied by instantiate(), so they have to be assigned before it runs.
@@ -136,7 +141,7 @@ function BUUI_Panel:createChildren()
         widget:setWidth(self.list:getWidth())
         widget:setRow(data)
     end)
-    self.list:setConfig(BUUI_Row.HEIGHT, 4)
+    self.list:setConfig(BUUI_Row.HEIGHT, ROW_GAP)
     self:addChild(self.list)
 
     self.bundleAll = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleAll"), self, BUUI_Panel.onBundleAll)
@@ -278,11 +283,11 @@ function BUUI_Panel:describeSources(containers)
     if #names == 0 then return getText("IGUI_BUUI_NoSources") end
 
     local shown = {}
-    for i = 1, math.min(3, #names) do shown[i] = names[i] end
+    for i = 1, math.min(SOURCES_SHOWN, #names) do shown[i] = names[i] end
 
     local text = getText("IGUI_BUUI_Sources") .. " " .. table.concat(shown, ", ")
-    if #names > 3 then
-        text = text .. " (+" .. tostring(#names - 3) .. ")"
+    if #names > SOURCES_SHOWN then
+        text = text .. " (+" .. tostring(#names - SOURCES_SHOWN) .. ")"
     end
 
     return text
@@ -414,7 +419,7 @@ function BUUI_Panel:onResize()
     -- drag, so only reconfigure when the height actually moved.
     if self.listHeight ~= listHeight then
         self.listHeight = listHeight
-        self.list:setConfig(BUUI_Row.HEIGHT, 4)
+        self.list:setConfig(BUUI_Row.HEIGHT, ROW_GAP)
     end
 
     self.list:setDataSource(self.rows, true)
@@ -452,9 +457,9 @@ function BUUI.openPanel(player)
         BUUI.players[playerNum] = data
     end
 
-    local width, height = 720, 560
+    local width, height = WINDOW_WIDTH, WINDOW_HEIGHT
     local x = data.x or 0
-    local y = data.y or (getCore():getScreenHeight() - height - 40)
+    local y = data.y or (getCore():getScreenHeight() - height - SCREEN_MARGIN)
 
     local window = BUUI_Panel:new(x, y, width, height, player)
     window:initialise()

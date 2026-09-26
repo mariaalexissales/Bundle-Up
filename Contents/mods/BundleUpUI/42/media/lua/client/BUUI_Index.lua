@@ -18,6 +18,8 @@ BUUI.modules = BUUI.modules or { BundleUp = true }
 
 BUUI.recipes = nil
 
+local SURFACE_RADIUS = 2
+
 -- family members can carry their own amount ("item 10 [...;50:Base.NutsBolts]") and the
 -- plain getIntAmount reads 1 for those, so the keyed lookup is the real count.
 local function BUUI_amountFor(input, fullName)
@@ -151,7 +153,7 @@ local function BUUI_probeLogic(player, containers, surface)
     local logic = HandcraftLogic.new(player, nil, nil)
     -- findCraftSurface reads only the player's square, so one lookup covers a whole pass.
     if surface == nil then
-        surface = logic:findCraftSurface(player, 2) or false
+        surface = logic:findCraftSurface(player, SURFACE_RADIUS) or false
     end
     logic:setIsoObject(surface or nil)
     logic:setContainers(containers)

@@ -14,6 +14,8 @@ local ACCENT = 2
 local CONTROL_HEIGHT = 20
 local LINE_ONE = 8
 local LINE_TWO = 30
+local ROW_ALPHA = 0.03
+local HOVER_ALPHA = 0.08
 
 local COL_NAME = { r = 0.90, g = 0.91, b = 0.90 }
 local COL_COUNT = { r = 0.80, g = 0.74, b = 0.50 }
@@ -28,7 +30,7 @@ function BUUI_Row:new(x, y, width, height, panel)
 
     o.panel = panel
     o.background = true
-    o.backgroundColor = { r = 1, g = 1, b = 1, a = 0.03 }
+    o.backgroundColor = { r = 1, g = 1, b = 1, a = ROW_ALPHA }
     o.borderColor = { r = 1, g = 1, b = 1, a = 0.06 }
 
     return o
@@ -85,7 +87,7 @@ function BUUI_Row:onResize()
 end
 
 function BUUI_Row:prerender()
-    self.backgroundColor.a = self:isMouseOver() and 0.08 or 0.03
+    self.backgroundColor.a = self:isMouseOver() and HOVER_ALPHA or ROW_ALPHA
     ISPanel.prerender(self)
 end
 

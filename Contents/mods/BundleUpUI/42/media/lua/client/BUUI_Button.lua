@@ -6,6 +6,8 @@ require "ISUI/ISButton"
 
 BUUI_Button = ISButton:derive("BUUI_Button")
 
+local DEFAULT_PADDING = 20
+
 local BUUI_TEXTURES = nil
 
 local function BUUI_textures()
@@ -48,7 +50,7 @@ function BUUI_Button:new(x, y, width, height, title, target, onclick)
 end
 
 function BUUI_Button:sizeToTitle(padding)
-    self:setWidth(getTextManager():MeasureStringX(self.font, self.title) + (padding or 20))
+    self:setWidth(getTextManager():MeasureStringX(self.font, self.title) + (padding or DEFAULT_PADDING))
     return self
 end
 

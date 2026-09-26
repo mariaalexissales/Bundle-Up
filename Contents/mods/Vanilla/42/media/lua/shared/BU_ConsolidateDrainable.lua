@@ -6,11 +6,12 @@ require "TimedActions/ISConsolidateDrainable"
 
 local BU_vanillaComplete = ISConsolidateDrainable.complete
 local BU_vanillaRunAgain = ISConsolidateDrainable.runAgain
+local BU_EMPTY_SLACK = 0.0001
 
 -- perform chains before complete() nils a poured-dry source, so vanilla pours into a spool
 -- about to be deleted and the queue resets. take vanilla's last branch: pour into this one.
 function ISConsolidateDrainable:runAgain(drainable, intoItem)
-    if intoItem and intoItem == self.drainable and self.fromTarget <= 0.0001 then
+    if intoItem and intoItem == self.drainable and self.fromTarget <= BU_EMPTY_SLACK then
         return BU_vanillaRunAgain(self, self:nextItem(), drainable)
     end
     return BU_vanillaRunAgain(self, drainable, intoItem)
