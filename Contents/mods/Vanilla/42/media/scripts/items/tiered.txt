@@ -3509,6 +3509,249 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCase,
     }
 
+    item EggCase {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
+        Weight = 3.32,
+        Icon = Parcel_ExtraLarge_Fruit,
+        WorldStaticModel = Parcel_Produce_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCase,
+    }
+
+    item CannedBologneseBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedCarrotsBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedChiliBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedCornBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedCornedBeefBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedFruitBeverageBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedFruitCocktailBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedMilkBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedMushroomSoupBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedPeachesBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedPeasBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedPineappleBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedPotatoBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedSardinesBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item CannedTomatoBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item DentedCanBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item DogfoodBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item MacandcheeseBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item MysteryCanBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item TinnedBeansBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item TinnedSoupBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item TunaTinBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
+    item WaterRationCanBoxCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 13.28,
+        Icon = Parcel_ExtraLarge_Food,
+        WorldStaticModel = Parcel_Food_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackBoxCase,
+    }
+
     item AllsortsCrate {
         DisplayCategory = Food,
         ItemType = base:normal,
@@ -3953,6 +4196,156 @@ module BundleUp {
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CannedBologneseBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedCarrotsBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedChiliBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedCornBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedCornedBeefBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedFruitBeverageBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedFruitCocktailBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedMilkBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedMushroomSoupBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedPeachesBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedPeasBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedPineappleBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedPotatoBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item CannedSardinesBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.53,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item CannedTomatoBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
     }
 
     item CapersCrate {
@@ -4555,6 +4948,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item DentedCanBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
     item Dip_NachoCheeseCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -4592,6 +4995,16 @@ module BundleUp {
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item DogfoodBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
     }
 
     item DoughnutChocolateCrate {
@@ -4663,6 +5076,19 @@ module BundleUp {
         DaysFresh = 3,
         DaysTotallyRotten = 5,
         Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item EggCrate {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 14,
+        DaysTotallyRotten = 21,
+        Weight = 11.02,
         Icon = Parcel_ExtraLarge,
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -5194,6 +5620,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item MacandcheeseBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 27.56,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item MangoCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -5425,6 +5861,16 @@ module BundleUp {
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MysteryCanBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
     }
 
     item OilOliveCrate {
@@ -6440,6 +6886,26 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item TinnedBeansBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
+    item TinnedSoupBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
+    }
+
     item TofuCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -6493,6 +6959,16 @@ module BundleUp {
         DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item TunaTinBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.53,
         Icon = Parcel_ExtraLarge,
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -6588,6 +7064,16 @@ module BundleUp {
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item WaterRationCanBoxCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate3,
     }
 
     item WildEggsCrate {
