@@ -55,7 +55,7 @@ Most files are written by hand. These come out of the generators in estral-tools
 - the sorted block at the end of `ItemName.json` and `Recipes.json`
 - the block order and pages of `sandbox-options.txt` (labels and tooltips stay hand-written)
 - every pack's `Weight =` line, so the script agrees with the Lua
-- `workshop.txt`, pulled from the live Workshop page, with the "More From Estral" list filled in from one list of all my mods
+- `workshop.txt`, which takes in edits made on the live Workshop page since the last upload, and whose "More From Estral" list comes from one list of all my mods
 
 ## Module map
 
@@ -149,7 +149,7 @@ Every PR runs three required jobs:
 - **mod files are valid:** translations, script references, Lua parsing, line endings
 - **lua does what it did before:** the behaviour check under Testing
 
-PRs into `main` also need **workshop.txt matches the live page**. I write the Workshop page on Steam and the upload pushes `workshop.txt` over it, so a release can't merge while the file is behind the page. It runs on every PR and daily against `dev` as well, but only `main` requires it, so editing the page never blocks a topic PR.
+PRs into `main` also need **workshop.txt matches the live page**. I write the Workshop page on Steam and the upload pushes `workshop.txt` over it, so a release can't merge while the page has edits the file doesn't. It runs on every PR and daily against `dev` as well, but only `main` requires it, so editing the page never blocks a topic PR.
 
 The scripts behind all of them live in estral-tools, a private repo CI checks out with a read-only deploy key.
 
