@@ -58,7 +58,7 @@ function BU.Merge.canMerge(item)
     return BU.Merge.canFill(item)
 end
 
-local function BU_eachMergeable(containers, fn)
+local function BU_eachMergeable(containers, fn, fullType)
     if not containers then return end
 
     for i = 0, containers:size() - 1 do
@@ -67,7 +67,7 @@ local function BU_eachMergeable(containers, fn)
         if items then
             for n = 0, items:size() - 1 do
                 local item = items:get(n)
-                if BU.Merge.canMerge(item) then
+                if item and (not fullType or item:getFullType() == fullType) and BU.Merge.canMerge(item) then
                     fn(item)
                 end
             end
@@ -77,20 +77,7 @@ end
 
 function BU.Merge.gather(containers, fullType)
     local found = {}
-    if not containers then return found end
-
-    for i = 0, containers:size() - 1 do
-        local container = containers:get(i)
-        local items = container and container:getItems()
-        if items then
-            for n = 0, items:size() - 1 do
-                local item = items:get(n)
-                if item and item:getFullType() == fullType and BU.Merge.canMerge(item) then
-                    found[#found + 1] = item
-                end
-            end
-        end
-    end
+    BU_eachMergeable(containers, function(item) found[#found + 1] = item end, fullType)
     return found
 end
 
