@@ -7,7 +7,7 @@ require "BU_ApplySpoilage"
 BU = BU or {}
 BUInv = BUInv or {}
 
-PACK_FLAVORS = {
+local PACK_FLAVORS = {
     ["BundleUp.BlueberrySP"]  = "SodaBlueberry",
     ["BundleUp.BubblegumSP"]  = "SodaBubblegum",
     ["BundleUp.LimeSP"]       = "SodaLime",
