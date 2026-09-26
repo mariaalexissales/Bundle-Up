@@ -154,6 +154,12 @@ Pushing a `v*` tag publishes the GitHub release with that version's patch notes 
 
 There's no unit test suite. Most of the logic only means something inside the running game, so behaviour changes get tested in game, on a local dedicated server when it touches multiplayer.
 
-What does run on every PR is the checks above, all of them static.
+What does run on every PR is the checks above, plus one behaviour check.
 
-For a refactor that shouldn't change behaviour, I run the old and new Lua side by side in Python with [lupa](https://github.com/scoder/lupa). Game objects are stubbed, both versions get the same fixtures, and every result and engine call is compared. The loot file runs against vanilla's real tables the same way. That setup stays local, because the loot run needs a game install.
+The `behaviour` workflow runs the base branch's Lua and the PR's Lua side by side in Python with [lupa](https://github.com/scoder/lupa). Game objects are stubbed, both versions get the same fixtures, and every result and engine call is compared.
+
+- A `refactor:` PR fails on any difference.
+- Any other PR gets the diff as a warning.
+- New Lua that throws fails any PR.
+
+The loot file gets the same comparison against vanilla's real tables, but only locally, because that needs a game install.
