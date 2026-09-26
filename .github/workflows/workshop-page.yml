@@ -1,0 +1,55 @@
+name: workshop page
+
+on:
+  pull_request:
+  schedule:
+    - cron: '27 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: workshop-page-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  workshop-page:
+    name: workshop.txt matches the live page
+    runs-on: ubuntu-latest
+    steps:
+      # a schedule would check main, which only ever holds the last upload. the next
+      # upload comes from dev, so dev is the one that has to keep up with the page.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name != 'pull_request' && 'dev' || '' }}
+          persist-credentials: false
+
+      - uses: actions/checkout@v4
+        with:
+          repository: mariaalexissales/estral-tools
+          ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
+          path: estral-tools
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: compare with the live page
+        run: |
+          status=0
+          python estral-tools/workshop/sync_workshop.py --check > "$RUNNER_TEMP/page.txt" 2>&1 || status=$?
+          cat "$RUNNER_TEMP/page.txt"
+          {
+            echo '### workshop.txt against the live workshop page'
+            echo '```diff'
+            cat "$RUNNER_TEMP/page.txt"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$status" -eq 2 ]; then
+            echo "::error::steam's api didn't answer, so nothing was compared. re-run the job."
+          elif [ "$status" -ne 0 ]; then
+            echo "::error::the workshop page changed outside the repo. run python ../estral-tools/workshop/sync_workshop.py from the Bundle Up folder and commit what it writes."
+          fi
+          exit "$status"
