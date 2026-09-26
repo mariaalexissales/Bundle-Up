@@ -32,9 +32,8 @@ local function BUUI_isCurrentPanel(panel)
     return true
 end
 
--- cell 0 is the vanilla crafting button; anything already flying out of it claims the
--- cells after. measuring every frame rather than assuming means load order against
--- Project Cook, whose popup is two cells wide, does not matter.
+-- other fly-outs take the cells after vanilla crafting. measured every frame so load
+-- order against Project Cook, two cells wide, doesn't matter.
 local function BUUI_cellOffset(panel, textureWidth)
     local cells = 1
 
@@ -65,8 +64,9 @@ function BUUI_Popup:setTextures(textureWidth)
     if self.textureWidth == textureWidth then return end
 
     self.textureWidth = textureWidth
-    self.iconOff = getTexture("media/ui/Sidebar/" .. textureWidth .. "/BundleUp_Off_" .. textureWidth .. ".png")
-    self.iconOn = getTexture("media/ui/Sidebar/" .. textureWidth .. "/BundleUp_On_" .. textureWidth .. ".png")
+    local folder = "media/ui/Sidebar/" .. textureWidth .. "/BundleUp_"
+    self.iconOff = getTexture(folder .. "Off_" .. textureWidth .. ".png")
+    self.iconOn = getTexture(folder .. "On_" .. textureWidth .. ".png")
 end
 
 function BUUI_Popup:render()
@@ -75,7 +75,7 @@ function BUUI_Popup:render()
         texture = self.iconOn or texture
     end
 
-    -- a missing texture should cost us our icon, not the whole sidebar render pass.
+    -- a missing texture skips our icon instead of breaking the sidebar render.
     if texture then
         self:drawTexture(texture, 0, 0, 1, 1, 1, 1)
     end
@@ -94,8 +94,9 @@ end
 function BUUI_Popup:onMouseDown(x, y)
     self:hideTooltip()
 
-    if BUUI.isWindowOpen(self.playerNum) then
-        BUUI.getWindow(self.playerNum):onCloseClick()
+    local window = BUUI.getWindow(self.playerNum)
+    if window then
+        window:onCloseClick()
     else
         BUUI.openPanel(self.chr)
     end
@@ -158,8 +159,7 @@ local function BUUI_updateVisibility(panel)
         or panel.BUUI_popup:isMouseOver()
         or BUUI.isWindowOpen(panel.chr:getPlayerNum())
 
-    -- without this the cursor loses us halfway: travelling right from the crafting
-    -- button to our cell crosses whatever else is flying out in between.
+    -- the cursor crosses other fly-outs on its way from the crafting button to our cell.
     if not show and panel.craftingPopup and panel.craftingPopup.isMouseOver then
         show = panel.craftingPopup:isMouseOver()
     end

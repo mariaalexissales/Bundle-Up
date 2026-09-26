@@ -6,6 +6,8 @@ require "BUpacking"
 
 BUInv = BUInv or {}
 
+local BU_UNIT_SLACK = 0.0001
+
 local BU_pendingMelts = {}
 local BU_meltSweepQueued = false
 
@@ -104,10 +106,10 @@ function BUInv.bulkSmelt(craftRecipeData, character)
     end
 
     local uses = BU_crucibleUses(craftRecipeData)
-    local units = math.min(math.floor(total + 0.0001), molten:getMaxUses() - uses)
+    local units = math.min(math.floor(total + BU_UNIT_SLACK), molten:getMaxUses() - uses)
     local melted = 0
     for _, entry in ipairs(entries) do
-        entry.melts = melted + entry.worth <= units + 0.0001
+        entry.melts = melted + entry.worth <= units + BU_UNIT_SLACK
         if entry.melts then
             melted = melted + entry.worth
         end

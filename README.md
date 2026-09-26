@@ -5,7 +5,7 @@
 [![latest release](https://img.shields.io/github/v/release/mariaalexissales/Bundle-Up?label=release)](https://github.com/mariaalexissales/Bundle-Up/releases/latest)
 [![workshop subscribers](https://img.shields.io/steam/subscriptions/3746632343?label=workshop%20subscribers)](https://steamcommunity.com/sharedfiles/filedetails/?id=3746632343)
 
-Packing mod for Project Zomboid. Live on the Steam Workshop: 1,000+ items, 130+ recipes, ~6,000 lines of Lua, 70+ merged PRs.
+Packing mod for Project Zomboid. Live on the Steam Workshop: 1,000+ packs covering ~700 vanilla items, 130 recipes, ~6,000 lines of Lua, 70+ merged PRs.
 
 Project Zomboid is a zombie survival game. You loot everything, every item has weight and takes a slot, and a big base turns into shelves of half-full crates. Bundle Up packs those items into bundles, boxes, sacks and cartons and unpacks them exactly as they went in.
 
@@ -27,7 +27,7 @@ The modding layer has no docs. Most of this README is what I found out by readin
 
 Put 99 nails in a box and half your base goes missing to server chunk rot. Sheet metal ends up spread across 20 crates because it won't fit in one. Bundle Up packs all of it down.
 
-- **1,000+ items covered** across old and new B42 stock: rope bundles, boxes, bags, sacks, six-packs, cartons and cases.
+- **1,000+ packs covering ~700 vanilla items** across old and new B42 stock: rope bundles, boxes, bags, sacks, six-packs, cartons and cases.
 - **Packing never launders an item.** Part-used, damaged, wet, loaded or rotten stock stays out, and what goes in comes back out exactly as it was, down to the colour of the wine.
 - **Tiered packing.** Cartons pack into Cases, so a hoard that used to bottom out at "a shelf of cartons" collapses one more time. A Food Case takes four of any of the 166 food cartons, 48 items in a single slot.
 - **Everything you drop is visible.** Every item carries a world model, so a dropped pack is an actual pile instead of thin air, and the 10-count bundles look bigger than the 5-count ones.
@@ -45,13 +45,14 @@ One load-order note, if you also run Remove Vanilla Anything: both mods edit the
 
 | Path | What lives there |
 | --- | --- |
-| `Contents/mods/Vanilla/42/` | The base mod. ~16,000 lines of zedscript, ~4,000 of Lua, 322 sandbox options. |
+| `Contents/mods/Vanilla/42/` | The base mod. ~16,000 lines of zedscript, ~4,300 of Lua, 322 sandbox options. |
 | `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,800 lines of Lua, off by default, needs NeatUI Framework. |
-| `Contents/mods/Vanilla/media/` | Old B41 files, kept for pre-B42 loads. |
 
-The Python lives in [estral-tools](https://github.com/mariaalexissales/estral-tools),
-cloned next to this folder, one folder per mod. It reads the mod out of the working
-directory, so it runs from here.
+The base mod's folder is called `Vanilla` because that's what it was named on the first day, and renaming it now would change every file path the Workshop has. Its id is `BundleUp`. B42 only reads the `42/` folder.
+
+The Python lives in estral-tools, a private repo cloned next to this folder, one folder per mod. CI checks it out with a read-only deploy key. It reads the mod out of the working directory, so it runs from here.
+
+[ARCHITECTURE.md](ARCHITECTURE.md) has the file-by-file map, the load order and how a change gets from here to the Workshop.
 
 It's written in three languages. **zedscript** declares items, recipes and the flags the engine already enforces. **Lua** does what the scripts can't. **Python** generates the files too big to review by hand and checks the rest.
 
@@ -74,16 +75,16 @@ Bundle weights come from sandbox sliders, so they have to be stamped onto the sc
 `OnInitGlobalModData` fires after the sandbox options load and before the inventory does. It's the only event where both are true.
 
 ```lua
--- OnInitGlobalModData is the first event to fire after SandboxOptions.load(),
--- and it lands before the cell deserializes any inventory, so a saved bundle is
--- built from an already-patched script item.
+-- OnInitGlobalModData is the only event after the sandbox loads and before any inventory
+-- does. the other two are re-runs. guarded so a build without it keeps the rest.
 if Events.OnInitGlobalModData then
     Events.OnInitGlobalModData.Add(BU.applyWeights)
 end
 Events.OnGameStart.Add(BU.applyWeights)
+Events.OnServerStarted.Add(BU.applyWeights)
 ```
 
-Only the `OnInitGlobalModData` registration is guarded, so a build without that event keeps going instead of dying on a nil index. `OnGameStart` still runs it either way.
+Only the `OnInitGlobalModData` registration is guarded, so a build without that event keeps going instead of dying on a nil index. `OnGameStart` still runs it either way, and `OnServerStarted` is the one a dedicated server fires.
 
 Loot had the opposite problem and took a lot longer to find. Spawn rates also come from sliders, and `OnPreDistributionMerge` seemed like the right hook: it's named after the thing I want to change and fires before the loot tables are read. But `IsoWorld.init()` fires the merge events at bytecode offsets 2051 to 2066 and doesn't load the sandbox settings (`map_sand.bin`, via `SandboxOptions.load()`) until 2126.
 
@@ -94,7 +95,8 @@ It took so long to find because a new game works. The new-game screen has alread
 `OnGameStart` is the first event where the settings are loaded. Java already has its copy of the tables by then, so it has to be rebuilt with the same call vanilla's admin panel makes after a sandbox change:
 
 ```lua
--- fillContainer returns straight away on a client, so the java copy there is never read.
+-- loot is filled from the java copy taken at world init, before any of this, so rebuild
+-- it. clients never read that copy. no StoryClutter.Init(), it would double-register.
 local needed = (removed > 0 or inserted > 0) and not isClient()
 local rebuilt = false
 if needed and IsoWorld and IsoWorld.parseDistributions then
@@ -128,9 +130,8 @@ Rescale first and every hour the item already spent in a crate gets recounted at
 Some items leave a replacement behind when used up: use up a sack of gravel and the game hands you the empty sack. For a packing mod that's a sack dupe. No recipe flag turns it off, so it gets undone in Lua, but `onCreate` runs *before* the game makes the replacements. So it notes where each one will land and removes them next tick:
 
 ```lua
--- no recipe flag reaches ReplaceOnDeplete, so the minted sacks have to go in
--- lua. onCreate runs before processDestroyAndUsedItems creates them - note
--- where each will land, take it next tick.
+-- no recipe flag reaches ReplaceOnDeplete and onCreate runs before the sacks are
+-- minted, so note where each will land and take it next tick.
 ```
 
 ### Other things I learned the hard way
@@ -210,7 +211,7 @@ It filters that diff to the expected output types, so anything you picked up mid
 
 There are 166 food cartons, each needing an item block, a pack and an unpack recipe, a weight row and a display name. That's too much to review by hand, so the upper tiers are generated from the pack ladders the mod already declares.
 
-`generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes five files, all committed and marked *do not edit by hand*. Running it again with no source change must produce no diff, and `--check` enforces that on every PR.
+`generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes three whole files stamped *do not edit by hand*, plus a sorted block at the end of `ItemName.json` and `Recipes.json`. All of it is committed. Running it again with no source change must produce no diff, and `--check` enforces that on every PR.
 
 `generate_sandbox.py` does the same for `sandbox-options.txt`. A per-item slider belongs on the page of the category slider that item inherits from, which means walking `resolve_base` down to the vanilla item the same way `BU_ApplyWeights.lua` does in game. Doing that by hand for 322 options is where typos come from, and deriving it keeps the pages right when new tiers land. Labels and tooltips are written by hand and the generator doesn't touch them. It owns block order, `page =` values and the eight page titles, nothing else.
 

@@ -6,8 +6,8 @@ require "ISUI/ISButton"
 
 BUUI_Button = ISButton:derive("BUUI_Button")
 
--- NeatUI's end caps take a tint and the body does not, so state is carried by tinting
--- the caps and filling the body behind them.
+local DEFAULT_PADDING = 20
+
 local BUUI_TEXTURES = nil
 
 local function BUUI_textures()
@@ -21,6 +21,7 @@ local function BUUI_textures()
     return BUUI_TEXTURES
 end
 
+-- neatui's middle patch ignores tint, so state shows on the caps plus a body fill.
 local STATES = {
     disabled = { cap = { 0.45, 0.45, 0.45 }, alpha = 0.45, fill = nil,
                  text = { 0.42, 0.42, 0.42 } },
@@ -49,7 +50,7 @@ function BUUI_Button:new(x, y, width, height, title, target, onclick)
 end
 
 function BUUI_Button:sizeToTitle(padding)
-    self:setWidth(getTextManager():MeasureStringX(self.font, self.title) + (padding or 20))
+    self:setWidth(getTextManager():MeasureStringX(self.font, self.title) + (padding or DEFAULT_PADDING))
     return self
 end
 
@@ -70,7 +71,8 @@ function BUUI_Button:prerender()
     self.textColor.a = 1
 
     if state.fill then
-        self:drawRect(0, 0, self.width, self.height, state.fill[4], state.fill[1], state.fill[2], state.fill[3])
+        local fill = state.fill
+        self:drawRect(0, 0, self.width, self.height, fill[4], fill[1], fill[2], fill[3])
     end
 
     local textures = BUUI_textures()

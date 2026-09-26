@@ -7,7 +7,7 @@ require "BU_ApplySpoilage"
 BU = BU or {}
 BUInv = BUInv or {}
 
-PACK_FLAVORS = {
+local PACK_FLAVORS = {
     ["BundleUp.BlueberrySP"]  = "SodaBlueberry",
     ["BundleUp.BubblegumSP"]  = "SodaBubblegum",
     ["BundleUp.LimeSP"]       = "SodaLime",
@@ -135,9 +135,8 @@ local function BU_sweepShells()
 end
 
 function BUInv.stripMintedShells(craftRecipeData, character)
-    -- no recipe flag reaches ReplaceOnDeplete, so the minted sacks have to go in
-    -- lua. onCreate runs before processDestroyAndUsedItems creates them - note
-    -- where each will land, take it next tick.
+    -- no recipe flag reaches ReplaceOnDeplete and onCreate runs before the sacks are
+    -- minted, so note where each will land and take it next tick.
     local consumed = craftRecipeData:getAllConsumedItems()
     for i = 0, consumed:size() - 1 do
         local item = consumed:get(i)
@@ -223,9 +222,8 @@ function BUInv.carryFoodAge(craftRecipeData, character)
     for i = 0, created:size() - 1 do
         local item = created:get(i)
         if item and item:IsFood() then
-            -- a carton's rot thresholds are stretched by the spoilage rate and its
-            -- contents' are not, so raw days leak the stretch across the boundary.
-            -- carry the fraction of shelf life instead.
+            -- the spoilage rate stretches a carton's rot thresholds but not its contents',
+            -- so carry the fraction of shelf life, not raw days.
             local life = BU_shelfLife(item)
             local age = oldest:getAge()
             if life and sourceLife then

@@ -15,8 +15,6 @@ local function BU_applyToContainer(container, fn)
     end
 end
 
--- every player's own inventory plus whatever loot container they have open --
--- the items the UI is asking about right now, and the only ones worth walking.
 function BU.forEachWatchedItem(fn)
     for playerNum = 0, getNumActivePlayers() - 1 do
         local player = getSpecificPlayer(playerNum)
