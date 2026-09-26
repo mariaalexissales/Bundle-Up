@@ -293,7 +293,6 @@ BU.Bundles = {
     ["BundleUp.ClaySack"]           = { base = "Base.Clay", count = 25  },
 
 
-    -- ingots stack; ore and loose rock go in a sack instead.
 
     ["BundleUp.IronIngot_S"]          = { base = "Base.IronIngot", count = 5   },
     ["BundleUp.IronIngot_L"]          = { base = "Base.IronIngot", count = 10  },
@@ -479,9 +478,6 @@ BU.BaseReduction = {
     ["Base.Leather_Crude_Large_Tan"]      = 20,
 }
 
--- A pack's base is usually a vanilla item, but a nested pack names another
--- pack instead. Walking down to the vanilla item at the bottom gives the
--- category lookup something it can match.
 local MAX_DEPTH = 16
 
 function BU.resolveBase(fullType)

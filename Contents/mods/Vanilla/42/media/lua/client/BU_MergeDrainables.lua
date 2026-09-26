@@ -76,9 +76,8 @@ function ISInventoryPaneContextMenu.checkConsolidate(drainable, playerObj, conte
         return BU_vanillaCheckConsolidate(drainable, playerObj, context, previousPourInto)
     end
 
-    -- vanilla asks the main inventory with the non-recursive getItemsFromType, so spools
-    -- in a worn bag or the crate you are standing at never show up. same list the packing
-    -- panel reads, so "in reach" means one thing across the mod.
+    -- vanilla's getItemsFromType skips worn bags and nearby crates. this is the same
+    -- container list the packing panel reads.
     local candidates = BU.Merge.gather(ISInventoryPaneContextMenu.getContainers(playerObj),
         drainable:getFullType())
 
