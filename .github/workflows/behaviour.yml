@@ -1,0 +1,71 @@
+name: behaviour
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: behaviour-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lua-behaviour:
+    name: lua does what it did before
+    runs-on: ubuntu-latest
+    steps:
+      # the harness reads the base branch's lua out of git, so it needs the history.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/checkout@v4
+        with:
+          repository: mariaalexissales/estral-tools
+          ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
+          path: estral-tools
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install --quiet lupa==2.8 luaparser==4.2.0
+
+      # reports go to RUNNER_TEMP: compare_tokens lists untracked files, so a report
+      # written into the checkout would show up in itself. the title goes in through
+      # env, same as pr-title.yml.
+      - name: compare with the base branch
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+          BASE: origin/${{ github.base_ref }}
+        run: |
+          python estral-tools/bundle-up/harness/compare_tokens.py "$BASE" > "$RUNNER_TEMP/tokens.txt" || true
+          status=0
+          python estral-tools/bundle-up/harness/compare_lua.py "$BASE" > "$RUNNER_TEMP/behaviour.txt" || status=$?
+          cat "$RUNNER_TEMP/behaviour.txt"
+          {
+            echo "### lua behaviour against \`$BASE\`"
+            echo '```'
+            cat "$RUNNER_TEMP/behaviour.txt"
+            echo '```'
+            echo '### files changed'
+            echo '```'
+            cat "$RUNNER_TEMP/tokens.txt"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$status" -eq 2 ]; then
+            echo "::error::the new lua threw in a harness scenario. if it calls something the stubs don't know, add it to estral-tools' prelude.lua."
+            exit 1
+          fi
+          if [ "$status" -ne 0 ]; then
+            if printf '%s' "$TITLE" | grep -q '^refactor: '; then
+              echo "::error::a refactor changed what the lua does. the diff is in the job summary."
+              exit 1
+            fi
+            echo "::warning::this changes what the lua does. check the diff in the job summary is the change you meant."
+          fi
