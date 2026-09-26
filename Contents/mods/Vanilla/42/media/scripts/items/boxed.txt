@@ -2667,4 +2667,85 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
+
+    item OldBrake1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item NormalBrake1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item ModernBrake1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item OldBrake2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item NormalBrake2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item ModernBrake2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item OldBrake3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item NormalBrake3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item ModernBrake3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
 }

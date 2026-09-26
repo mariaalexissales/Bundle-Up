@@ -1124,6 +1124,15 @@ BU.Bundles["BundleUp.PiercedIronBlockBox"] = { base = "Base.PiercedIronBlock", c
 BU.Bundles["BundleUp.PiercedSteelBlockBox"] = { base = "Base.PiercedSteelBlock", count = 10 }
 BU.Bundles["BundleUp.PiercedIronChunkBox"] = { base = "Base.PiercedIronChunk", count = 40 }
 BU.Bundles["BundleUp.PiercedSteelChunkBox"] = { base = "Base.PiercedSteelChunk", count = 40 }
+BU.Bundles["BundleUp.OldBrake1Box"] = { base = "Base.OldBrake1", count = 4 }
+BU.Bundles["BundleUp.NormalBrake1Box"] = { base = "Base.NormalBrake1", count = 4 }
+BU.Bundles["BundleUp.ModernBrake1Box"] = { base = "Base.ModernBrake1", count = 4 }
+BU.Bundles["BundleUp.OldBrake2Box"] = { base = "Base.OldBrake2", count = 4 }
+BU.Bundles["BundleUp.NormalBrake2Box"] = { base = "Base.NormalBrake2", count = 4 }
+BU.Bundles["BundleUp.ModernBrake2Box"] = { base = "Base.ModernBrake2", count = 4 }
+BU.Bundles["BundleUp.OldBrake3Box"] = { base = "Base.OldBrake3", count = 4 }
+BU.Bundles["BundleUp.NormalBrake3Box"] = { base = "Base.NormalBrake3", count = 4 }
+BU.Bundles["BundleUp.ModernBrake3Box"] = { base = "Base.ModernBrake3", count = 4 }
 
 BU.BaseCategory["Base.IronOre"] = "ReductionStone"
 BU.BaseCategory["Base.CopperOre"] = "ReductionStone"
@@ -1142,3 +1151,12 @@ BU.BaseCategory["Base.PiercedIronBlock"] = "ReductionMetal"
 BU.BaseCategory["Base.PiercedSteelBlock"] = "ReductionMetal"
 BU.BaseCategory["Base.PiercedIronChunk"] = "ReductionMetal"
 BU.BaseCategory["Base.PiercedSteelChunk"] = "ReductionMetal"
+BU.BaseCategory["Base.OldBrake1"] = "ReductionMetal"
+BU.BaseCategory["Base.NormalBrake1"] = "ReductionMetal"
+BU.BaseCategory["Base.ModernBrake1"] = "ReductionMetal"
+BU.BaseCategory["Base.OldBrake2"] = "ReductionMetal"
+BU.BaseCategory["Base.NormalBrake2"] = "ReductionMetal"
+BU.BaseCategory["Base.ModernBrake2"] = "ReductionMetal"
+BU.BaseCategory["Base.OldBrake3"] = "ReductionMetal"
+BU.BaseCategory["Base.NormalBrake3"] = "ReductionMetal"
+BU.BaseCategory["Base.ModernBrake3"] = "ReductionMetal"
