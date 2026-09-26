@@ -16,28 +16,7 @@ module BundleUp {
             item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[crucibleTypes],
             item 1 tags[base:crudetongs;base:tongs] mode:keep flags[MayDegradeLight],
             item 10 tags[base:charcoal],
-            item variable[1:20] [Base.IronBandSmall;Base.IronChunk;Base.IronScrap] mode:destroy flags[ItemCount;AllowDestroyedItem],
-        }
-        outputs {
-            item 1 mapper:crucibleTypes,
-        }
-        itemMapper crucibleTypes {
-            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall,
-            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall_Iron,
-            default = Base.CeramicCrucible_Iron,
-        }
-    }
-
-    craftRecipe BulkSmeltIronPieces {
-        time = 400,
-        Tags = AdvancedFurnace,
-        onCreate = BUInv.bulkSmelt,
-        category = Blacksmithing,
-        inputs {
-            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[crucibleTypes],
-            item 1 tags[base:crudetongs;base:tongs] mode:keep flags[MayDegradeLight],
-            item 10 tags[base:charcoal],
-            item variable[5:100] [Base.IronPiece] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            item variable[1:20] [Base.IronBandSmall;Base.IronChunk;Base.IronScrap;5:Base.IronPiece] mode:destroy flags[ItemCount;AllowDestroyedItem],
         }
         outputs {
             item 1 mapper:crucibleTypes,
@@ -58,28 +37,7 @@ module BundleUp {
             item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel] mode:destroy flags[NotFull;ItemCount] mappers[crucibleTypes],
             item 1 tags[base:crudetongs;base:tongs] mode:keep flags[MayDegradeLight],
             item 10 tags[base:charcoal],
-            item variable[1:20] [Base.SteelChunk;Base.SteelScrap] mode:destroy flags[ItemCount;AllowDestroyedItem],
-        }
-        outputs {
-            item 1 mapper:crucibleTypes,
-        }
-        itemMapper crucibleTypes {
-            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall,
-            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall_Steel,
-            default = Base.CeramicCrucible_Steel,
-        }
-    }
-
-    craftRecipe BulkSmeltSteelPieces {
-        time = 400,
-        Tags = AdvancedFurnace,
-        onCreate = BUInv.bulkSmelt,
-        category = Blacksmithing,
-        inputs {
-            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel] mode:destroy flags[NotFull;ItemCount] mappers[crucibleTypes],
-            item 1 tags[base:crudetongs;base:tongs] mode:keep flags[MayDegradeLight],
-            item 10 tags[base:charcoal],
-            item variable[5:100] [Base.SteelPiece] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            item variable[1:20] [Base.SteelChunk;Base.SteelScrap;5:Base.SteelPiece] mode:destroy flags[ItemCount;AllowDestroyedItem],
         }
         outputs {
             item 1 mapper:crucibleTypes,
