@@ -124,6 +124,10 @@
   "UnpackStoneCrate": "Open Stone Crate (10 items)",
   "BulkSmeltIronScrap": "Bulk Smelt Iron Scrap",
   "BulkSmeltSteelScrap": "Bulk Smelt Steel Scrap",
+  "PackBrakeBox": "Pack Brakes in Box",
+  "UnpackBrakeBox": "Open Brake Box (4 items)",
+  "PackSuspensionBox": "Pack Suspensions in Box",
+  "UnpackSuspensionBox": "Open Suspension Box (4 items)",
   "PackFoodCase": "Pack Food Cartons in Case",
   "UnpackFoodCase": "Open Food Case (4 cartons)"
 }

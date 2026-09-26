@@ -963,4 +963,94 @@ module BundleUp {
             item 50 Base.NutsBolts,
         }
     }
+
+    craftRecipe PackBrakeBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 4 [Base.OldBrake1;Base.NormalBrake1;Base.ModernBrake1;Base.OldBrake2;Base.NormalBrake2;Base.ModernBrake2;Base.OldBrake3;Base.NormalBrake3;Base.ModernBrake3] flags[IsUndamaged;IsExclusive;ItemCount] mappers[brakeTypes],
+        }
+        outputs {
+            item 1 mapper:brakeTypes,
+        }
+        itemMapper brakeTypes {
+            BundleUp.OldBrake1Box = Base.OldBrake1,
+            BundleUp.NormalBrake1Box = Base.NormalBrake1,
+            BundleUp.ModernBrake1Box = Base.ModernBrake1,
+            BundleUp.OldBrake2Box = Base.OldBrake2,
+            BundleUp.NormalBrake2Box = Base.NormalBrake2,
+            BundleUp.ModernBrake2Box = Base.ModernBrake2,
+            BundleUp.OldBrake3Box = Base.OldBrake3,
+            BundleUp.NormalBrake3Box = Base.NormalBrake3,
+            BundleUp.ModernBrake3Box = Base.ModernBrake3,
+        }
+    }
+
+    craftRecipe UnpackBrakeBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.OldBrake1Box;BundleUp.NormalBrake1Box;BundleUp.ModernBrake1Box;BundleUp.OldBrake2Box;BundleUp.NormalBrake2Box;BundleUp.ModernBrake2Box;BundleUp.OldBrake3Box;BundleUp.NormalBrake3Box;BundleUp.ModernBrake3Box] flags[IsExclusive;ItemCount] mappers[brakeTypes],
+        }
+        outputs {
+            item 4 mapper:brakeTypes,
+        }
+        itemMapper brakeTypes {
+            Base.OldBrake1 = BundleUp.OldBrake1Box,
+            Base.NormalBrake1 = BundleUp.NormalBrake1Box,
+            Base.ModernBrake1 = BundleUp.ModernBrake1Box,
+            Base.OldBrake2 = BundleUp.OldBrake2Box,
+            Base.NormalBrake2 = BundleUp.NormalBrake2Box,
+            Base.ModernBrake2 = BundleUp.ModernBrake2Box,
+            Base.OldBrake3 = BundleUp.OldBrake3Box,
+            Base.NormalBrake3 = BundleUp.NormalBrake3Box,
+            Base.ModernBrake3 = BundleUp.ModernBrake3Box,
+        }
+    }
+
+    craftRecipe PackSuspensionBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 4 [Base.NormalSuspension1;Base.ModernSuspension1;Base.NormalSuspension2;Base.ModernSuspension2;Base.NormalSuspension3;Base.ModernSuspension3] flags[IsUndamaged;IsExclusive;ItemCount] mappers[suspensionTypes],
+        }
+        outputs {
+            item 1 mapper:suspensionTypes,
+        }
+        itemMapper suspensionTypes {
+            BundleUp.NormalSuspension1Box = Base.NormalSuspension1,
+            BundleUp.ModernSuspension1Box = Base.ModernSuspension1,
+            BundleUp.NormalSuspension2Box = Base.NormalSuspension2,
+            BundleUp.ModernSuspension2Box = Base.ModernSuspension2,
+            BundleUp.NormalSuspension3Box = Base.NormalSuspension3,
+            BundleUp.ModernSuspension3Box = Base.ModernSuspension3,
+        }
+    }
+
+    craftRecipe UnpackSuspensionBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.NormalSuspension1Box;BundleUp.ModernSuspension1Box;BundleUp.NormalSuspension2Box;BundleUp.ModernSuspension2Box;BundleUp.NormalSuspension3Box;BundleUp.ModernSuspension3Box] flags[IsExclusive;ItemCount] mappers[suspensionTypes],
+        }
+        outputs {
+            item 4 mapper:suspensionTypes,
+        }
+        itemMapper suspensionTypes {
+            Base.NormalSuspension1 = BundleUp.NormalSuspension1Box,
+            Base.ModernSuspension1 = BundleUp.ModernSuspension1Box,
+            Base.NormalSuspension2 = BundleUp.NormalSuspension2Box,
+            Base.ModernSuspension2 = BundleUp.ModernSuspension2Box,
+            Base.NormalSuspension3 = BundleUp.NormalSuspension3Box,
+            Base.ModernSuspension3 = BundleUp.ModernSuspension3Box,
+        }
+    }
 }

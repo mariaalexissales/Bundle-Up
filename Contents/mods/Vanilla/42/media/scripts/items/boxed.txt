@@ -2667,4 +2667,139 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
+
+    item OldBrake1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item NormalBrake1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item ModernBrake1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item OldBrake2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item NormalBrake2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item ModernBrake2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item OldBrake3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item NormalBrake3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item ModernBrake3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = BrakeBox,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackBrakeBox,
+    }
+
+    item NormalSuspension1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item ModernSuspension1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item NormalSuspension2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item ModernSuspension2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item NormalSuspension3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item ModernSuspension3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
 }
