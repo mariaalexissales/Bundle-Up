@@ -5,12 +5,21 @@ on:
     branches: [main, dev]
   pull_request:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   generated-files:
     name: generated files are current
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       # the generators live in estral-tools, which is private, so this needs the
       # read-only deploy key. it lands beside the mod rather than in it, and they
@@ -20,12 +29,13 @@ jobs:
           repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
           path: estral-tools
+          persist-credentials: false
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # generate_tiers.py is stdlib-only, so there is nothing to install.
+      # the generators are stdlib-only, so there is nothing to install.
       # --check exits 1 and names the stale files if regenerating would change them.
       - name: tiers are up to date
         run: python estral-tools/bundle-up/generate_tiers.py --check
@@ -39,6 +49,25 @@ jobs:
       # one is the wrong weight for everyone on a server.
       - name: script weights are up to date
         run: python estral-tools/bundle-up/sync_weights.py --check
+
+  mod-files:
+    name: mod files are valid
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/checkout@v4
+        with:
+          repository: mariaalexissales/estral-tools
+          ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
+          path: estral-tools
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
       # broken json and a missing name both fail silently in game: the label
       # just renders as its raw key.
