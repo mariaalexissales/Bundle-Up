@@ -35,43 +35,13 @@ jobs:
       - name: sandbox options are up to date
         run: python estral-tools/bundle-up/generate_sandbox.py --check
 
-      # malformed translation json fails silently in game: every name just
-      # renders as its raw key. cheap to catch here instead.
-      - name: translation files parse
-        run: |
-          python - <<'PY'
-          import json, sys
-          from pathlib import Path
-
-          failed = []
-          for path in sorted(Path("Contents").rglob("Translate/*/*.json")):
-              try:
-                  json.loads(path.read_text(encoding="utf-8"))
-              except ValueError as err:
-                  failed.append(f"{path}: {err}")
-
-          for line in failed:
-              print(line, file=sys.stderr)
-          sys.exit(1 if failed else 0)
-          PY
+      # broken json and a missing name both fail silently in game: the label
+      # just renders as its raw key.
+      - name: every item, recipe and label has a name
+        run: python estral-tools/bundle-up/check_translations.py
 
       # a lua syntax error only shows up once the game loads the file.
       - name: lua files parse
         run: |
           pip install --quiet luaparser==4.2.0
-          python - <<'PY'
-          import sys
-          from pathlib import Path
-          from luaparser import ast
-
-          failed = []
-          for path in sorted(Path("Contents").rglob("*.lua")):
-              try:
-                  ast.parse(path.read_text(encoding="utf-8"))
-              except Exception as err:
-                  failed.append(f"{path}: {err}")
-
-          for line in failed:
-              print(line, file=sys.stderr)
-          sys.exit(1 if failed else 0)
-          PY
+          python estral-tools/bundle-up/check_lua.py
