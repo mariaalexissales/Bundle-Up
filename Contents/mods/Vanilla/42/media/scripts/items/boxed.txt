@@ -2748,4 +2748,58 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackBrakeBox,
     }
+
+    item NormalSuspension1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item ModernSuspension1Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item NormalSuspension2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item ModernSuspension2Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item NormalSuspension3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
+
+    item ModernSuspension3Box {
+        DisplayCategory = VehicleMaintenance,
+        ItemType = base:normal,
+        Weight = 9.96,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSuspensionBox,
+    }
 }

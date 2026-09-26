@@ -1133,6 +1133,12 @@ BU.Bundles["BundleUp.ModernBrake2Box"] = { base = "Base.ModernBrake2", count = 4
 BU.Bundles["BundleUp.OldBrake3Box"] = { base = "Base.OldBrake3", count = 4 }
 BU.Bundles["BundleUp.NormalBrake3Box"] = { base = "Base.NormalBrake3", count = 4 }
 BU.Bundles["BundleUp.ModernBrake3Box"] = { base = "Base.ModernBrake3", count = 4 }
+BU.Bundles["BundleUp.NormalSuspension1Box"] = { base = "Base.NormalSuspension1", count = 4 }
+BU.Bundles["BundleUp.ModernSuspension1Box"] = { base = "Base.ModernSuspension1", count = 4 }
+BU.Bundles["BundleUp.NormalSuspension2Box"] = { base = "Base.NormalSuspension2", count = 4 }
+BU.Bundles["BundleUp.ModernSuspension2Box"] = { base = "Base.ModernSuspension2", count = 4 }
+BU.Bundles["BundleUp.NormalSuspension3Box"] = { base = "Base.NormalSuspension3", count = 4 }
+BU.Bundles["BundleUp.ModernSuspension3Box"] = { base = "Base.ModernSuspension3", count = 4 }
 
 BU.BaseCategory["Base.IronOre"] = "ReductionStone"
 BU.BaseCategory["Base.CopperOre"] = "ReductionStone"
@@ -1160,3 +1166,9 @@ BU.BaseCategory["Base.ModernBrake2"] = "ReductionMetal"
 BU.BaseCategory["Base.OldBrake3"] = "ReductionMetal"
 BU.BaseCategory["Base.NormalBrake3"] = "ReductionMetal"
 BU.BaseCategory["Base.ModernBrake3"] = "ReductionMetal"
+BU.BaseCategory["Base.NormalSuspension1"] = "ReductionMetal"
+BU.BaseCategory["Base.ModernSuspension1"] = "ReductionMetal"
+BU.BaseCategory["Base.NormalSuspension2"] = "ReductionMetal"
+BU.BaseCategory["Base.ModernSuspension2"] = "ReductionMetal"
+BU.BaseCategory["Base.NormalSuspension3"] = "ReductionMetal"
+BU.BaseCategory["Base.ModernSuspension3"] = "ReductionMetal"

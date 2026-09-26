@@ -1011,4 +1011,46 @@ module BundleUp {
             Base.ModernBrake3 = BundleUp.ModernBrake3Box,
         }
     }
+
+    craftRecipe PackSuspensionBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 4 [Base.NormalSuspension1;Base.ModernSuspension1;Base.NormalSuspension2;Base.ModernSuspension2;Base.NormalSuspension3;Base.ModernSuspension3] flags[IsUndamaged;IsExclusive;ItemCount] mappers[suspensionTypes],
+        }
+        outputs {
+            item 1 mapper:suspensionTypes,
+        }
+        itemMapper suspensionTypes {
+            BundleUp.NormalSuspension1Box = Base.NormalSuspension1,
+            BundleUp.ModernSuspension1Box = Base.ModernSuspension1,
+            BundleUp.NormalSuspension2Box = Base.NormalSuspension2,
+            BundleUp.ModernSuspension2Box = Base.ModernSuspension2,
+            BundleUp.NormalSuspension3Box = Base.NormalSuspension3,
+            BundleUp.ModernSuspension3Box = Base.ModernSuspension3,
+        }
+    }
+
+    craftRecipe UnpackSuspensionBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.NormalSuspension1Box;BundleUp.ModernSuspension1Box;BundleUp.NormalSuspension2Box;BundleUp.ModernSuspension2Box;BundleUp.NormalSuspension3Box;BundleUp.ModernSuspension3Box] flags[IsExclusive;ItemCount] mappers[suspensionTypes],
+        }
+        outputs {
+            item 4 mapper:suspensionTypes,
+        }
+        itemMapper suspensionTypes {
+            Base.NormalSuspension1 = BundleUp.NormalSuspension1Box,
+            Base.ModernSuspension1 = BundleUp.ModernSuspension1Box,
+            Base.NormalSuspension2 = BundleUp.NormalSuspension2Box,
+            Base.ModernSuspension2 = BundleUp.ModernSuspension2Box,
+            Base.NormalSuspension3 = BundleUp.NormalSuspension3Box,
+            Base.ModernSuspension3 = BundleUp.ModernSuspension3Box,
+        }
+    }
 }
