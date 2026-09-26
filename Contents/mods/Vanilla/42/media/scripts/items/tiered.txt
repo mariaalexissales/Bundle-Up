@@ -3752,6 +3752,506 @@ module BundleUp {
         DoubleClickRecipe = UnpackBoxCase,
     }
 
+    item BeerImportedPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 11.57,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item BlueberrySPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item BrandyPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 24.8,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item BubblegumSPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item ChampagnePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item CiderPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item CoffeeLiquerPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item CuracaoPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item DietSodaPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item GinPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item GingerAleSPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item GrapeSPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item GrenadinePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceBoxApplePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceBoxFruitpunchPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceBoxGrapePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceBoxOrangePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceCranberryPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 18.19,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceFruitpunchPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 18.19,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceGrapePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 18.19,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceLemonPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 18.19,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceOrangePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 18.19,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item JuiceTomatoPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 18.19,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item LimeSPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item MilkBottlePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 18.19,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item MilkChocSmallPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 7.44,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item MilkPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 19.84,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item MilkSmallPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 7.44,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item OrangeSPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item PineappleSPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item PortPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item RumPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item ScotchPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item SherryPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item SodaPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item StrawberrySPCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item TequilaPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item VarietyPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.96,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item VermouthPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item VodkaPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WhiskeyPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 28.11,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WineAgedPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WineBoxPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 19.84,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WineRedPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.49,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WineScrewtopPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 33.07,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WineWhitePackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.49,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item BeerCanPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 5.98,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item BeerPackCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 5.98,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WineRed_BoxedCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.58,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
+    item WineWhite_BoxedCase {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 21.58,
+        Icon = Parcel_Large_Liquor,
+        WorldStaticModel = Parcel_Liquor_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackDrinkCase,
+    }
+
     item AllsortsCrate {
         DisplayCategory = Food,
         ItemType = base:normal,
@@ -3958,6 +4458,36 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item BeerCanPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 19.84,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BeerImportedPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 38.42,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item BeerPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 19.84,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item BellPepperCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -4020,6 +4550,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item BlueberrySPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item BouillonCubeCrate {
         DisplayCategory = Food,
         ItemType = base:normal,
@@ -4067,6 +4607,16 @@ module BundleUp {
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item BubblegumSPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
     }
 
     item BunsHamburgerCrate {
@@ -4958,6 +5508,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate3,
     }
 
+    item DietSodaPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item Dip_NachoCheeseCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -5160,6 +5720,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item GingerAleSPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item GingerPickledCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -5236,6 +5806,16 @@ module BundleUp {
         DaysFresh = 6,
         DaysTotallyRotten = 10,
         Weight = 10.98,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item GrapeSPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
         Icon = Parcel_ExtraLarge,
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -5446,6 +6026,106 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item JuiceBoxApplePackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JuiceBoxFruitpunchPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JuiceBoxGrapePackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JuiceBoxOrangePackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item JuiceCranberryPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 30.19,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item JuiceFruitpunchPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 30.19,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item JuiceGrapePackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 30.19,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item JuiceLemonPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 30.19,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item JuiceOrangePackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 30.19,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item JuiceTomatoPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 30.19,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
     item JujubesCrate {
         DisplayCategory = Food,
         ItemType = base:normal,
@@ -5597,6 +6277,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item LimeSPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item LobsterCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -5713,6 +6403,46 @@ module BundleUp {
         DaysFresh = 2,
         DaysTotallyRotten = 4,
         Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MilkBottlePackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 30.19,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item MilkChocSmallPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 24.7,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item MilkPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item MilkSmallPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 24.7,
         Icon = Parcel_ExtraLarge,
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -5923,6 +6653,16 @@ module BundleUp {
         DaysFresh = 6,
         DaysTotallyRotten = 9,
         Weight = 21.96,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item OrangeSPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
         Icon = Parcel_ExtraLarge,
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -6156,6 +6896,16 @@ module BundleUp {
         DaysFresh = 6,
         DaysTotallyRotten = 14,
         Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item PineappleSPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
         Icon = Parcel_ExtraLarge,
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -6663,6 +7413,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item SodaPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item SourCreamCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -6745,6 +7505,16 @@ module BundleUp {
         DaysFresh = 2,
         DaysTotallyRotten = 4,
         Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item StrawberrySPCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
         Icon = Parcel_ExtraLarge,
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
@@ -7040,6 +7810,16 @@ module BundleUp {
         DoubleClickRecipe = UnpackFoodCrate,
     }
 
+    item VarietyPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 16.47,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate,
+    }
+
     item VenisonCrate {
         DisplayCategory = Food,
         ItemType = base:food,
@@ -7097,6 +7877,56 @@ module BundleUp {
         WorldStaticModel = Parcel_ExtraLarge,
         Tags = base:ignorezombiedensity,
         DoubleClickRecipe = UnpackFoodCrate,
+    }
+
+    item WineBoxPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 32.93,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item WineRedPackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 35.68,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item WineRed_BoxedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 35.82,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item WineWhitePackCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 35.68,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
+    }
+
+    item WineWhite_BoxedCrate {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 35.82,
+        Icon = Parcel_ExtraLarge,
+        WorldStaticModel = Parcel_ExtraLarge,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackFoodCrate2,
     }
 
     item YoghurtCrate {

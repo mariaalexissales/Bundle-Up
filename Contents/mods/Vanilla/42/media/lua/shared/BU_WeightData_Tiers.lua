@@ -336,6 +336,56 @@ BU.Bundles["BundleUp.TinnedBeansBoxCase"] = { base = "Base.TinnedBeans_Box", cou
 BU.Bundles["BundleUp.TinnedSoupBoxCase"] = { base = "Base.TinnedSoup_Box", count = 4 }
 BU.Bundles["BundleUp.TunaTinBoxCase"] = { base = "Base.TunaTin_Box", count = 4 }
 BU.Bundles["BundleUp.WaterRationCanBoxCase"] = { base = "Base.WaterRationCan_Box", count = 4 }
+BU.Bundles["BundleUp.BeerImportedPackCase"] = { base = "BundleUp.BeerImportedPack", count = 4 }
+BU.Bundles["BundleUp.BlueberrySPCase"] = { base = "BundleUp.BlueberrySP", count = 4 }
+BU.Bundles["BundleUp.BrandyPackCase"] = { base = "BundleUp.BrandyPack", count = 4 }
+BU.Bundles["BundleUp.BubblegumSPCase"] = { base = "BundleUp.BubblegumSP", count = 4 }
+BU.Bundles["BundleUp.ChampagnePackCase"] = { base = "BundleUp.ChampagnePack", count = 4 }
+BU.Bundles["BundleUp.CiderPackCase"] = { base = "BundleUp.CiderPack", count = 4 }
+BU.Bundles["BundleUp.CoffeeLiquerPackCase"] = { base = "BundleUp.CoffeeLiquerPack", count = 4 }
+BU.Bundles["BundleUp.CuracaoPackCase"] = { base = "BundleUp.CuracaoPack", count = 4 }
+BU.Bundles["BundleUp.DietSodaPackCase"] = { base = "BundleUp.DietSodaPack", count = 4 }
+BU.Bundles["BundleUp.GinPackCase"] = { base = "BundleUp.GinPack", count = 4 }
+BU.Bundles["BundleUp.GingerAleSPCase"] = { base = "BundleUp.GingerAleSP", count = 4 }
+BU.Bundles["BundleUp.GrapeSPCase"] = { base = "BundleUp.GrapeSP", count = 4 }
+BU.Bundles["BundleUp.GrenadinePackCase"] = { base = "BundleUp.GrenadinePack", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxApplePackCase"] = { base = "BundleUp.JuiceBoxApplePack", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxFruitpunchPackCase"] = { base = "BundleUp.JuiceBoxFruitpunchPack", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxGrapePackCase"] = { base = "BundleUp.JuiceBoxGrapePack", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxOrangePackCase"] = { base = "BundleUp.JuiceBoxOrangePack", count = 4 }
+BU.Bundles["BundleUp.JuiceCranberryPackCase"] = { base = "BundleUp.JuiceCranberryPack", count = 4 }
+BU.Bundles["BundleUp.JuiceFruitpunchPackCase"] = { base = "BundleUp.JuiceFruitpunchPack", count = 4 }
+BU.Bundles["BundleUp.JuiceGrapePackCase"] = { base = "BundleUp.JuiceGrapePack", count = 4 }
+BU.Bundles["BundleUp.JuiceLemonPackCase"] = { base = "BundleUp.JuiceLemonPack", count = 4 }
+BU.Bundles["BundleUp.JuiceOrangePackCase"] = { base = "BundleUp.JuiceOrangePack", count = 4 }
+BU.Bundles["BundleUp.JuiceTomatoPackCase"] = { base = "BundleUp.JuiceTomatoPack", count = 4 }
+BU.Bundles["BundleUp.LimeSPCase"] = { base = "BundleUp.LimeSP", count = 4 }
+BU.Bundles["BundleUp.MilkBottlePackCase"] = { base = "BundleUp.MilkBottlePack", count = 4 }
+BU.Bundles["BundleUp.MilkChocSmallPackCase"] = { base = "BundleUp.MilkChocSmallPack", count = 4 }
+BU.Bundles["BundleUp.MilkPackCase"] = { base = "BundleUp.MilkPack", count = 4 }
+BU.Bundles["BundleUp.MilkSmallPackCase"] = { base = "BundleUp.MilkSmallPack", count = 4 }
+BU.Bundles["BundleUp.OrangeSPCase"] = { base = "BundleUp.OrangeSP", count = 4 }
+BU.Bundles["BundleUp.PineappleSPCase"] = { base = "BundleUp.PineappleSP", count = 4 }
+BU.Bundles["BundleUp.PortPackCase"] = { base = "BundleUp.PortPack", count = 4 }
+BU.Bundles["BundleUp.RumPackCase"] = { base = "BundleUp.RumPack", count = 4 }
+BU.Bundles["BundleUp.ScotchPackCase"] = { base = "BundleUp.ScotchPack", count = 4 }
+BU.Bundles["BundleUp.SherryPackCase"] = { base = "BundleUp.SherryPack", count = 4 }
+BU.Bundles["BundleUp.SodaPackCase"] = { base = "BundleUp.SodaPack", count = 4 }
+BU.Bundles["BundleUp.StrawberrySPCase"] = { base = "BundleUp.StrawberrySP", count = 4 }
+BU.Bundles["BundleUp.TequilaPackCase"] = { base = "BundleUp.TequilaPack", count = 4 }
+BU.Bundles["BundleUp.VarietyPackCase"] = { base = "BundleUp.VarietyPack", count = 4 }
+BU.Bundles["BundleUp.VermouthPackCase"] = { base = "BundleUp.VermouthPack", count = 4 }
+BU.Bundles["BundleUp.VodkaPackCase"] = { base = "BundleUp.VodkaPack", count = 4 }
+BU.Bundles["BundleUp.WhiskeyPackCase"] = { base = "BundleUp.WhiskeyPack", count = 4 }
+BU.Bundles["BundleUp.WineAgedPackCase"] = { base = "BundleUp.WineAgedPack", count = 4 }
+BU.Bundles["BundleUp.WineBoxPackCase"] = { base = "BundleUp.WineBoxPack", count = 4 }
+BU.Bundles["BundleUp.WineRedPackCase"] = { base = "BundleUp.WineRedPack", count = 4 }
+BU.Bundles["BundleUp.WineScrewtopPackCase"] = { base = "BundleUp.WineScrewtopPack", count = 4 }
+BU.Bundles["BundleUp.WineWhitePackCase"] = { base = "BundleUp.WineWhitePack", count = 4 }
+BU.Bundles["BundleUp.BeerCanPackCase"] = { base = "Base.BeerCanPack", count = 4 }
+BU.Bundles["BundleUp.BeerPackCase"] = { base = "Base.BeerPack", count = 4 }
+BU.Bundles["BundleUp.WineRed_BoxedCase"] = { base = "Base.WineRed_Boxed", count = 4 }
+BU.Bundles["BundleUp.WineWhite_BoxedCase"] = { base = "Base.WineWhite_Boxed", count = 4 }
 BU.Bundles["BundleUp.AllsortsCrate"] = { base = "BundleUp.AllsortsCase", count = 4 }
 BU.Bundles["BundleUp.AppleCrate"] = { base = "BundleUp.AppleCase", count = 4 }
 BU.Bundles["BundleUp.AvocadoCrate"] = { base = "BundleUp.AvocadoCase", count = 4 }
@@ -353,15 +403,20 @@ BU.Bundles["BundleUp.BasilCrate"] = { base = "BundleUp.BasilCase", count = 4 }
 BU.Bundles["BundleUp.BasilDriedCrate"] = { base = "BundleUp.BasilDriedCase", count = 4 }
 BU.Bundles["BundleUp.BeefCrate"] = { base = "BundleUp.BeefCase", count = 2 }
 BU.Bundles["BundleUp.BeefJerkyCrate"] = { base = "BundleUp.BeefJerkyCase", count = 4 }
+BU.Bundles["BundleUp.BeerCanPackCrate"] = { base = "BundleUp.BeerCanPackCase", count = 4 }
+BU.Bundles["BundleUp.BeerImportedPackCrate"] = { base = "BundleUp.BeerImportedPackCase", count = 4 }
+BU.Bundles["BundleUp.BeerPackCrate"] = { base = "BundleUp.BeerPackCase", count = 4 }
 BU.Bundles["BundleUp.BellPepperCrate"] = { base = "BundleUp.BellPepperCase", count = 4 }
 BU.Bundles["BundleUp.BerryBlackCrate"] = { base = "BundleUp.BerryBlackCase", count = 4 }
 BU.Bundles["BundleUp.BerryBlueCrate"] = { base = "BundleUp.BerryBlueCase", count = 4 }
 BU.Bundles["BundleUp.BiscuitCrate"] = { base = "BundleUp.BiscuitCase", count = 4 }
 BU.Bundles["BundleUp.BlackSageDriedCrate"] = { base = "BundleUp.BlackSageDriedCase", count = 4 }
+BU.Bundles["BundleUp.BlueberrySPCrate"] = { base = "BundleUp.BlueberrySPCase", count = 4 }
 BU.Bundles["BundleUp.BouillonCubeCrate"] = { base = "BundleUp.BouillonCubeCase", count = 4 }
 BU.Bundles["BundleUp.BreadCrate"] = { base = "BundleUp.BreadCase", count = 4 }
 BU.Bundles["BundleUp.BroccoliCrate"] = { base = "BundleUp.BroccoliCase", count = 4 }
 BU.Bundles["BundleUp.BrusselSproutsCrate"] = { base = "BundleUp.BrusselSproutsCase", count = 2 }
+BU.Bundles["BundleUp.BubblegumSPCrate"] = { base = "BundleUp.BubblegumSPCase", count = 4 }
 BU.Bundles["BundleUp.BunsHamburgerCrate"] = { base = "BundleUp.BunsHamburgerCase", count = 3 }
 BU.Bundles["BundleUp.BunsHotdogCrate"] = { base = "BundleUp.BunsHotdogCase", count = 4 }
 BU.Bundles["BundleUp.ButterCrate"] = { base = "BundleUp.ButterCase", count = 4 }
@@ -444,6 +499,7 @@ BU.Bundles["BundleUp.DaikonCrate"] = { base = "BundleUp.DaikonCase", count = 4 }
 BU.Bundles["BundleUp.DanishCrate"] = { base = "BundleUp.DanishCase", count = 4 }
 BU.Bundles["BundleUp.DehydratedMeatStickCrate"] = { base = "BundleUp.DehydratedMeatStickCase", count = 4 }
 BU.Bundles["BundleUp.DentedCanBoxCrate"] = { base = "BundleUp.DentedCanBoxCase", count = 3 }
+BU.Bundles["BundleUp.DietSodaPackCrate"] = { base = "BundleUp.DietSodaPackCase", count = 4 }
 BU.Bundles["BundleUp.Dip_NachoCheeseCrate"] = { base = "BundleUp.Dip_NachoCheeseCase", count = 4 }
 BU.Bundles["BundleUp.Dip_RanchCrate"] = { base = "BundleUp.Dip_RanchCase", count = 4 }
 BU.Bundles["BundleUp.Dip_SalsaCrate"] = { base = "BundleUp.Dip_SalsaCase", count = 4 }
@@ -460,6 +516,7 @@ BU.Bundles["BundleUp.FishFilletCrate"] = { base = "BundleUp.FishFilletCase", cou
 BU.Bundles["BundleUp.FrogMeatCrate"] = { base = "BundleUp.FrogMeatCase", count = 4 }
 BU.Bundles["BundleUp.FudgeePopCrate"] = { base = "BundleUp.FudgeePopCase", count = 4 }
 BU.Bundles["BundleUp.GarlicCrate"] = { base = "BundleUp.GarlicCase", count = 4 }
+BU.Bundles["BundleUp.GingerAleSPCrate"] = { base = "BundleUp.GingerAleSPCase", count = 4 }
 BU.Bundles["BundleUp.GingerPickledCrate"] = { base = "BundleUp.GingerPickledCase", count = 4 }
 BU.Bundles["BundleUp.GingerRootCrate"] = { base = "BundleUp.GingerRootCase", count = 4 }
 BU.Bundles["BundleUp.GingerbreadmanCrate"] = { base = "BundleUp.GingerbreadmanCase", count = 4 }
@@ -467,6 +524,7 @@ BU.Bundles["BundleUp.GinsengCrate"] = { base = "BundleUp.GinsengCase", count = 4
 BU.Bundles["BundleUp.GrahamCrackersCrate"] = { base = "BundleUp.GrahamCrackersCase", count = 4 }
 BU.Bundles["BundleUp.GranolaBarCrate"] = { base = "BundleUp.GranolaBarCase", count = 4 }
 BU.Bundles["BundleUp.GrapeLeavesCrate"] = { base = "BundleUp.GrapeLeavesCase", count = 4 }
+BU.Bundles["BundleUp.GrapeSPCrate"] = { base = "BundleUp.GrapeSPCase", count = 4 }
 BU.Bundles["BundleUp.GrapefruitCrate"] = { base = "BundleUp.GrapefruitCase", count = 4 }
 BU.Bundles["BundleUp.GrapesCrate"] = { base = "BundleUp.GrapesCase", count = 4 }
 BU.Bundles["BundleUp.GreenOnionsCrate"] = { base = "BundleUp.GreenOnionsCase", count = 4 }
@@ -485,6 +543,16 @@ BU.Bundles["BundleUp.JamFruitCrate"] = { base = "BundleUp.JamFruitCase", count =
 BU.Bundles["BundleUp.JamMarmaladeCrate"] = { base = "BundleUp.JamMarmaladeCase", count = 4 }
 BU.Bundles["BundleUp.JellyBeansCrate"] = { base = "BundleUp.JellyBeansCase", count = 4 }
 BU.Bundles["BundleUp.JellyRollCrate"] = { base = "BundleUp.JellyRollCase", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxApplePackCrate"] = { base = "BundleUp.JuiceBoxApplePackCase", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxFruitpunchPackCrate"] = { base = "BundleUp.JuiceBoxFruitpunchPackCase", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxGrapePackCrate"] = { base = "BundleUp.JuiceBoxGrapePackCase", count = 4 }
+BU.Bundles["BundleUp.JuiceBoxOrangePackCrate"] = { base = "BundleUp.JuiceBoxOrangePackCase", count = 4 }
+BU.Bundles["BundleUp.JuiceCranberryPackCrate"] = { base = "BundleUp.JuiceCranberryPackCase", count = 2 }
+BU.Bundles["BundleUp.JuiceFruitpunchPackCrate"] = { base = "BundleUp.JuiceFruitpunchPackCase", count = 2 }
+BU.Bundles["BundleUp.JuiceGrapePackCrate"] = { base = "BundleUp.JuiceGrapePackCase", count = 2 }
+BU.Bundles["BundleUp.JuiceLemonPackCrate"] = { base = "BundleUp.JuiceLemonPackCase", count = 2 }
+BU.Bundles["BundleUp.JuiceOrangePackCrate"] = { base = "BundleUp.JuiceOrangePackCase", count = 2 }
+BU.Bundles["BundleUp.JuiceTomatoPackCrate"] = { base = "BundleUp.JuiceTomatoPackCase", count = 2 }
 BU.Bundles["BundleUp.JujubesCrate"] = { base = "BundleUp.JujubesCase", count = 4 }
 BU.Bundles["BundleUp.KaleCrate"] = { base = "BundleUp.KaleCase", count = 4 }
 BU.Bundles["BundleUp.KetchupCrate"] = { base = "BundleUp.KetchupCase", count = 4 }
@@ -498,6 +566,7 @@ BU.Bundles["BundleUp.LettuceCrate"] = { base = "BundleUp.LettuceCase", count = 4
 BU.Bundles["BundleUp.LicoriceBlackCrate"] = { base = "BundleUp.LicoriceBlackCase", count = 4 }
 BU.Bundles["BundleUp.LicoriceRedCrate"] = { base = "BundleUp.LicoriceRedCase", count = 4 }
 BU.Bundles["BundleUp.LimeCrate"] = { base = "BundleUp.LimeCase", count = 4 }
+BU.Bundles["BundleUp.LimeSPCrate"] = { base = "BundleUp.LimeSPCase", count = 4 }
 BU.Bundles["BundleUp.LobsterCrate"] = { base = "BundleUp.LobsterCase", count = 3 }
 BU.Bundles["BundleUp.LollipopCrate"] = { base = "BundleUp.LollipopCase", count = 4 }
 BU.Bundles["BundleUp.MacandcheeseBoxCrate"] = { base = "BundleUp.MacandcheeseBoxCase", count = 4 }
@@ -509,6 +578,10 @@ BU.Bundles["BundleUp.MarinaraCrate"] = { base = "BundleUp.MarinaraCase", count =
 BU.Bundles["BundleUp.MarshmallowsCrate"] = { base = "BundleUp.MarshmallowsCase", count = 4 }
 BU.Bundles["BundleUp.MayonnaiseFullCrate"] = { base = "BundleUp.MayonnaiseFullCase", count = 2 }
 BU.Bundles["BundleUp.MeatPattyCrate"] = { base = "BundleUp.MeatPattyCase", count = 4 }
+BU.Bundles["BundleUp.MilkBottlePackCrate"] = { base = "BundleUp.MilkBottlePackCase", count = 2 }
+BU.Bundles["BundleUp.MilkChocSmallPackCrate"] = { base = "BundleUp.MilkChocSmallPackCase", count = 4 }
+BU.Bundles["BundleUp.MilkPackCrate"] = { base = "BundleUp.MilkPackCase", count = 2 }
+BU.Bundles["BundleUp.MilkSmallPackCrate"] = { base = "BundleUp.MilkSmallPackCase", count = 4 }
 BU.Bundles["BundleUp.MincedMeatCrate"] = { base = "BundleUp.MincedMeatCase", count = 4 }
 BU.Bundles["BundleUp.MintCandyCrate"] = { base = "BundleUp.MintCandyCase", count = 4 }
 BU.Bundles["BundleUp.MintHerbCrate"] = { base = "BundleUp.MintHerbCase", count = 4 }
@@ -527,6 +600,7 @@ BU.Bundles["BundleUp.OilVegetableCrate"] = { base = "BundleUp.OilVegetableCase",
 BU.Bundles["BundleUp.OlivesCrate"] = { base = "BundleUp.OlivesCase", count = 4 }
 BU.Bundles["BundleUp.OnionCrate"] = { base = "BundleUp.OnionCase", count = 4 }
 BU.Bundles["BundleUp.OrangeCrate"] = { base = "BundleUp.OrangeCase", count = 4 }
+BU.Bundles["BundleUp.OrangeSPCrate"] = { base = "BundleUp.OrangeSPCase", count = 4 }
 BU.Bundles["BundleUp.OreganoCrate"] = { base = "BundleUp.OreganoCase", count = 4 }
 BU.Bundles["BundleUp.OreganoDriedCrate"] = { base = "BundleUp.OreganoDriedCase", count = 4 }
 BU.Bundles["BundleUp.OystersCrate"] = { base = "BundleUp.OystersCase", count = 4 }
@@ -547,6 +621,7 @@ BU.Bundles["BundleUp.PeppermintCrate"] = { base = "BundleUp.PeppermintCase", cou
 BU.Bundles["BundleUp.PepperoniCrate"] = { base = "BundleUp.PepperoniCase", count = 4 }
 BU.Bundles["BundleUp.PicklesCrate"] = { base = "BundleUp.PicklesCase", count = 4 }
 BU.Bundles["BundleUp.PineappleCrate"] = { base = "BundleUp.PineappleCase", count = 4 }
+BU.Bundles["BundleUp.PineappleSPCrate"] = { base = "BundleUp.PineappleSPCase", count = 4 }
 BU.Bundles["BundleUp.PlonkiesCrate"] = { base = "BundleUp.PlonkiesCase", count = 4 }
 BU.Bundles["BundleUp.PopcornCrate"] = { base = "BundleUp.PopcornCase", count = 4 }
 BU.Bundles["BundleUp.PopsicleCrate"] = { base = "BundleUp.PopsicleCase", count = 4 }
@@ -592,6 +667,7 @@ BU.Bundles["BundleUp.ShrimpCrate"] = { base = "BundleUp.ShrimpCase", count = 4 }
 BU.Bundles["BundleUp.SmallanimalmeatCrate"] = { base = "BundleUp.SmallanimalmeatCase", count = 4 }
 BU.Bundles["BundleUp.SmallbirdmeatCrate"] = { base = "BundleUp.SmallbirdmeatCase", count = 4 }
 BU.Bundles["BundleUp.SnoGlobesCrate"] = { base = "BundleUp.SnoGlobesCase", count = 4 }
+BU.Bundles["BundleUp.SodaPackCrate"] = { base = "BundleUp.SodaPackCase", count = 4 }
 BU.Bundles["BundleUp.SourCreamCrate"] = { base = "BundleUp.SourCreamCase", count = 4 }
 BU.Bundles["BundleUp.SoybeansCrate"] = { base = "BundleUp.SoybeansCase", count = 4 }
 BU.Bundles["BundleUp.SoysauceCrate"] = { base = "BundleUp.SoysauceCase", count = 4 }
@@ -599,6 +675,7 @@ BU.Bundles["BundleUp.SpinachCrate"] = { base = "BundleUp.SpinachCase", count = 4
 BU.Bundles["BundleUp.SquashCrate"] = { base = "BundleUp.SquashCase", count = 2 }
 BU.Bundles["BundleUp.SquidCrate"] = { base = "BundleUp.SquidCase", count = 4 }
 BU.Bundles["BundleUp.SteakCrate"] = { base = "BundleUp.SteakCase", count = 4 }
+BU.Bundles["BundleUp.StrawberrySPCrate"] = { base = "BundleUp.StrawberrySPCase", count = 4 }
 BU.Bundles["BundleUp.StrewberrieCrate"] = { base = "BundleUp.StrewberrieCase", count = 4 }
 BU.Bundles["BundleUp.SugarBeetCrate"] = { base = "BundleUp.SugarBeetCase", count = 4 }
 BU.Bundles["BundleUp.SugarBrownCrate"] = { base = "BundleUp.SugarBrownCase", count = 2 }
@@ -624,15 +701,23 @@ BU.Bundles["BundleUp.TurkeyFilletCrate"] = { base = "BundleUp.TurkeyFilletCase",
 BU.Bundles["BundleUp.TurkeyLegsCrate"] = { base = "BundleUp.TurkeyLegsCase", count = 4 }
 BU.Bundles["BundleUp.TurkeyWingsCrate"] = { base = "BundleUp.TurkeyWingsCase", count = 4 }
 BU.Bundles["BundleUp.TurnipCrate"] = { base = "BundleUp.TurnipCase", count = 4 }
+BU.Bundles["BundleUp.VarietyPackCrate"] = { base = "BundleUp.VarietyPackCase", count = 4 }
 BU.Bundles["BundleUp.VenisonCrate"] = { base = "BundleUp.VenisonCase", count = 2 }
 BU.Bundles["BundleUp.WasabiCrate"] = { base = "BundleUp.WasabiCase", count = 4 }
 BU.Bundles["BundleUp.WaterRationCanBoxCrate"] = { base = "BundleUp.WaterRationCanBoxCase", count = 3 }
 BU.Bundles["BundleUp.WildEggsCrate"] = { base = "BundleUp.WildEggsCase", count = 4 }
 BU.Bundles["BundleUp.WildGarlicDriedCrate"] = { base = "BundleUp.WildGarlicDriedCase", count = 4 }
+BU.Bundles["BundleUp.WineBoxPackCrate"] = { base = "BundleUp.WineBoxPackCase", count = 2 }
+BU.Bundles["BundleUp.WineRedPackCrate"] = { base = "BundleUp.WineRedPackCase", count = 2 }
+BU.Bundles["BundleUp.WineRed_BoxedCrate"] = { base = "BundleUp.WineRed_BoxedCase", count = 2 }
+BU.Bundles["BundleUp.WineWhitePackCrate"] = { base = "BundleUp.WineWhitePackCase", count = 2 }
+BU.Bundles["BundleUp.WineWhite_BoxedCrate"] = { base = "BundleUp.WineWhite_BoxedCase", count = 2 }
 BU.Bundles["BundleUp.YoghurtCrate"] = { base = "BundleUp.YoghurtCase", count = 4 }
 BU.Bundles["BundleUp.ZucchiniCrate"] = { base = "BundleUp.ZucchiniCase", count = 4 }
 BU.Bundles["BundleUp.cheese_powderedCrate"] = { base = "BundleUp.cheese_powderedCase", count = 4 }
 
+BU.BaseCategory["Base.BeerCanPack"] = "ReductionFood"
+BU.BaseCategory["Base.BeerPack"] = "ReductionFood"
 BU.BaseCategory["Base.CannedBolognese_Box"] = "ReductionFood"
 BU.BaseCategory["Base.CannedCarrots_Box"] = "ReductionFood"
 BU.BaseCategory["Base.CannedChili_Box"] = "ReductionFood"
@@ -657,3 +742,5 @@ BU.BaseCategory["Base.TinnedBeans_Box"] = "ReductionFood"
 BU.BaseCategory["Base.TinnedSoup_Box"] = "ReductionFood"
 BU.BaseCategory["Base.TunaTin_Box"] = "ReductionFood"
 BU.BaseCategory["Base.WaterRationCan_Box"] = "ReductionFood"
+BU.BaseCategory["Base.WineRed_Boxed"] = "ReductionFood"
+BU.BaseCategory["Base.WineWhite_Boxed"] = "ReductionFood"
