@@ -10,7 +10,7 @@ BUUI = BUUI or {}
 BUUI.Queue = BUUI.Queue or {}
 
 local BUUI_active = nil
-local BUUI_stepMerge
+local BUUI_step
 
 local function BUUI_snapshot(player)
     local seen = {}
@@ -105,30 +105,63 @@ local function BUUI_finish(cancelled)
     if job and job.onFinished then job.onFinished(cancelled) end
 end
 
-local function BUUI_step()
-    local job = BUUI_active
-    if not job then return end
+local function BUUI_returnHomes(job)
+    BU.sendHomes(job.player, job.homes)
+    job.homes = nil
+end
 
-    if job.remaining <= 0 then
-        if job.nextRow then
-            local row = job.nextRow(job)
-            if row then
-                job.row = row
-                job.remaining = row.quantity
-            end
-        end
-        if job.remaining <= 0 then
-            BUUI_finish(false)
-            return
+local function BUUI_stepDone(job, settle)
+    -- stopping clears the queue, but an action already under way still reports
+    -- back. without this the stale callback drives the next batch.
+    if BUUI_active ~= job then return end
+    if settle then settle() end
+
+    job.remaining = job.remaining - 1
+    if job.remaining <= 0 then BUUI_returnHomes(job) end
+    if job.onProgress then job.onProgress(job) end
+
+    BUUI_step()
+end
+
+local function BUUI_hasWork(job)
+    if job.remaining <= 0 and job.nextRow then
+        local row = job.nextRow(job)
+        if row then
+            job.row = row
+            job.remaining = row.quantity
         end
     end
+    return job.remaining > 0
+end
 
-    local row = job.row
-    if row.entry.merge then
-        BUUI_stepMerge(job, row)
-        return
+local function BUUI_queueCraft(job, logic, actions, recipe, home)
+    local outputTypes = BUUI_outputTypes(logic, recipe)
+
+    for _, action in ipairs(actions) do
+        local before = nil
+
+        action:setOnStart(function()
+            before = BUUI_snapshot(job.player)
+            logic:startCraftAction(action)
+        end)
+
+        action:setOnComplete(function()
+            logic:stopCraftAction()
+            BUUI_stepDone(job, function()
+                BUUI_returnOutputs(job.player, before or {}, outputTypes, home)
+            end)
+        end)
+
+        action:setOnCancel(function()
+            logic:stopCraftAction(true)
+            if BUUI_active == job then BUUI_finish(true) end
+        end)
+
+        ISTimedActionQueue.add(action)
     end
+end
 
+local function BUUI_stepCraft(job, row)
     local source, sample, containers = BUUI_nextSample(job)
     if not source then
         job.remaining = 0
@@ -136,9 +169,7 @@ local function BUUI_step()
         return
     end
 
-    local logic = HandcraftLogic.new(job.player, nil, nil)
-    logic:setIsoObject(logic:findCraftSurface(job.player, 2))
-    logic:setContainers(containers)
+    local logic = BUUI.probeLogic(job.player, containers)
     logic:setRecipeFromContextClick(row.entry.recipe, sample)
 
     if not logic:canPerformCurrentRecipe() or logic:getPossibleCraftCount(true) < 1 then
@@ -158,50 +189,13 @@ local function BUUI_step()
         return
     end
 
-    local outputTypes = BUUI_outputTypes(logic, row.entry.recipe)
-
-    for _, action in ipairs(actions) do
-        local before = nil
-
-        action:setOnStart(function()
-            before = BUUI_snapshot(job.player)
-            logic:startCraftAction(action)
-        end)
-
-        action:setOnComplete(function()
-            logic:stopCraftAction()
-
-            -- stopping clears the queue, but an action already under way still reports
-            -- back. without this the stale callback drives the next batch.
-            if BUUI_active ~= job then return end
-
-            BUUI_returnOutputs(job.player, before or {}, outputTypes, source.container)
-
-            job.remaining = job.remaining - 1
-            if job.onProgress then job.onProgress(job) end
-
-            BUUI_step()
-        end)
-
-        action:setOnCancel(function()
-            logic:stopCraftAction(true)
-            if BUUI_active == job then BUUI_finish(true) end
-        end)
-
-        ISTimedActionQueue.add(action)
-    end
-
+    BUUI_queueCraft(job, logic, actions, row.entry.recipe, source.container)
     ISCraftingUI.ReturnItemsToOriginalContainer(job.player, putBack)
-end
-
-local function BUUI_returnHomes(job)
-    BU.sendHomes(job.player, job.homes)
-    job.homes = nil
 end
 
 -- ISConsolidateDrainable reads both fill levels in its constructor, so each pour is built
 -- only after the last one finished. it has no setOnComplete, hence the perform wrapper.
-function BUUI_stepMerge(job, row)
+local function BUUI_stepMerge(job, row)
     local source = row.sources[1]
     local step = nil
 
@@ -227,16 +221,7 @@ function BUUI_stepMerge(job, row)
     local perform = action.perform
     action.perform = function(self)
         perform(self)
-
-        -- stopping clears the queue, but an action already under way still reports
-        -- back. without this the stale callback drives the next batch.
-        if BUUI_active ~= job then return end
-
-        job.remaining = job.remaining - 1
-        if job.remaining <= 0 then BUUI_returnHomes(job) end
-        if job.onProgress then job.onProgress(job) end
-
-        BUUI_step()
+        BUUI_stepDone(job)
     end
 
     -- walking off or a missing item ends it in stop, or in forceCancel while it still
@@ -253,6 +238,22 @@ function BUUI_stepMerge(job, row)
     end
 
     ISTimedActionQueue.add(action)
+end
+
+BUUI_step = function()
+    local job = BUUI_active
+    if not job then return end
+
+    if not BUUI_hasWork(job) then
+        BUUI_finish(false)
+        return
+    end
+
+    if job.row.entry.merge then
+        BUUI_stepMerge(job, job.row)
+    else
+        BUUI_stepCraft(job, job.row)
+    end
 end
 
 function BUUI.Queue.isRunning()

@@ -148,7 +148,7 @@ end
 
 -- same order as ISInventoryPaneContextMenu.OnNewCraft: a fresh logic gets its craft
 -- surface before anything asks whether the recipe can run.
-local function BUUI_probeLogic(player, containers, surface)
+function BUUI.probeLogic(player, containers, surface)
     local logic = HandcraftLogic.new(player, nil, nil)
     -- findCraftSurface reads only the player's square, so one lookup covers a whole pass.
     if surface == nil then
@@ -313,7 +313,7 @@ end
 
 local function BUUI_probeRow(player, containers, surface, entry, fullType, item)
     local logic
-    logic, surface = BUUI_probeLogic(player, containers, surface)
+    logic, surface = BUUI.probeLogic(player, containers, surface)
     logic:setRecipeFromContextClick(entry.recipe, item)
 
     local inputs, satisfied = BUUI_describeInputs(logic, entry, fullType)
