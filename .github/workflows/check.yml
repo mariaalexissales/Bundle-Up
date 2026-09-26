@@ -40,8 +40,14 @@ jobs:
       - name: every item, recipe and label has a name
         run: python estral-tools/bundle-up/check_translations.py
 
+      - name: scripts only point at things that exist
+        run: python estral-tools/bundle-up/check_scripts.py
+
       # a lua syntax error only shows up once the game loads the file.
       - name: lua files parse
         run: |
           pip install --quiet luaparser==4.2.0
           python estral-tools/bundle-up/check_lua.py
+
+      - name: no file mixes line endings
+        run: python estral-tools/bundle-up/check_line_endings.py
