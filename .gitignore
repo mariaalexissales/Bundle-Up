@@ -1,5 +1,4 @@
 .vscode/
-__pycache__/
 
 # CI checks the tools repo out here; locally it is a sibling folder.
 /estral-tools/
