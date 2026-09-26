@@ -112,3 +112,10 @@ for i = 1, #BUGoM.Grenades do
 end
 
 BUGoM_addLadder("RepairPack", "RepairPack", BUGoM.Tiers.RepairPack)
+
+-- guns of marz swaps every new vanilla clip for one of its mags, so unpacking a clip box
+-- rolls. packing mags back into one would be a free reroll.
+BU.vanillaMagazinesOff = function()
+    local sv = SandboxVars and SandboxVars.MarzGuns
+    return sv ~= nil and sv.VanillaWeaponReplacement == true
+end
