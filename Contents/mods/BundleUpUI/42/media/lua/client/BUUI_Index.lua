@@ -71,54 +71,53 @@ local function BUUI_moduleOf(recipe)
     return fullType and fullType:match("^([^%.]+)%.") or nil
 end
 
+local function BUUI_indexRecipe(index, recipe)
+    local module = BUUI_moduleOf(recipe)
+    if not (module and BUUI.modules[module] and recipe:getCategory() == "Packing") then return end
+
+    local pivot, others, bulk, names, amounts = BUUI_splitInputs(recipe)
+    if not (pivot and names) then return end
+
+    -- many in is packing, one in is unpacking. no recipe names involved.
+    local bundling = bulk >= 2
+
+    for n = 1, #names do
+        local bucket = index[names[n]]
+        if not bucket then
+            bucket = {}
+            index[names[n]] = bucket
+        end
+
+        -- an entry per item rather than per recipe, because the family
+        -- members disagree: a box takes 10 remotes but 50 nuts and bolts.
+        bucket[#bucket + 1] = {
+            recipe = recipe,
+            pivot = pivot,
+            secondaries = others,
+            count = amounts[n],
+            bundling = bundling,
+        }
+    end
+end
+
+-- deepest compaction first, so Bundle All reaches for Tie10 before Tie5 competes
+-- for the same planks.
+local function BUUI_byDepth(a, b)
+    if a.count ~= b.count then return a.count > b.count end
+    return a.recipe:getName() < b.recipe:getName()
+end
+
 function BUUI.buildIndex()
     local index = {}
     local all = ScriptManager.instance:getAllCraftRecipes()
-    if not all then
-        BUUI.recipes = index
-        return index
-    end
-
-    for i = 0, all:size() - 1 do
-        local recipe = all:get(i)
-        local module = BUUI_moduleOf(recipe)
-        if module and BUUI.modules[module] and recipe:getCategory() == "Packing" then
-            local pivot, others, bulk, names, amounts = BUUI_splitInputs(recipe)
-            if pivot then
-                -- many in is packing, one in is unpacking. no recipe names involved.
-                local bundling = bulk >= 2
-
-                if names then
-                    for n = 1, #names do
-                        local fullName = names[n]
-                        local bucket = index[fullName]
-                        if not bucket then
-                            bucket = {}
-                            index[fullName] = bucket
-                        end
-
-                        -- an entry per item rather than per recipe, because the family
-                        -- members disagree: a box takes 10 remotes but 50 nuts and bolts.
-                        bucket[#bucket + 1] = {
-                            recipe = recipe,
-                            pivot = pivot,
-                            secondaries = others,
-                            count = amounts[n],
-                            bundling = bundling,
-                        }
-                    end
-                end
-            end
+    if all then
+        for i = 0, all:size() - 1 do
+            BUUI_indexRecipe(index, all:get(i))
         end
     end
 
-    -- deepest compaction first, so Bundle All reaches for Tie10 before Tie5 competes
-    -- for the same planks.
     for _, bucket in pairs(index) do
-        table.sort(bucket, function(a, b)
-            if a.count ~= b.count then return a.count > b.count end
-            return a.recipe:getName() < b.recipe:getName()
-        end)
+        table.sort(bucket, BUUI_byDepth)
     end
 
     BUUI.recipes = index
