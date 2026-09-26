@@ -35,6 +35,11 @@ jobs:
       - name: sandbox options are up to date
         run: python estral-tools/bundle-up/generate_sandbox.py --check
 
+      # dedicated servers read the script Weight, not the client lua, so a stale
+      # one is the wrong weight for everyone on a server.
+      - name: script weights are up to date
+        run: python estral-tools/bundle-up/sync_weights.py --check
+
       # broken json and a missing name both fail silently in game: the label
       # just renders as its raw key.
       - name: every item, recipe and label has a name
