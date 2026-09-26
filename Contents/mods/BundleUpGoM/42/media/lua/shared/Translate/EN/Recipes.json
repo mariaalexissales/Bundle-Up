@@ -1,0 +1,8 @@
+{
+  "PackGoMMagazineBox": "Pack Magazines in Box",
+  "UnpackGoMMagazineBox": "Open Box of Magazines (5 items)",
+  "PackGoMMagazineCarton": "Pack Magazine Boxes in Carton",
+  "UnpackGoMMagazineCarton": "Open Carton of Magazines (12 boxes)",
+  "PackGoMMagazineCrate": "Pack Magazine Cartons in Crate",
+  "UnpackGoMMagazineCrate": "Open Crate of Magazines (4 cartons)"
+}
