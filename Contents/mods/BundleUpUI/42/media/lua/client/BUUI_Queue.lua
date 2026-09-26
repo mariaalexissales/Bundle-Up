@@ -179,7 +179,6 @@ local function BUUI_step()
 
             BUUI_returnOutputs(job.player, before or {}, outputTypes, source.container)
 
-            job.done = job.done + 1
             job.remaining = job.remaining - 1
             if job.onProgress then job.onProgress(job) end
 
@@ -252,7 +251,6 @@ function BUUI_stepMerge(job, row)
         -- back. without this the stale callback drives the next batch.
         if BUUI_active ~= job then return end
 
-        job.done = job.done + 1
         job.remaining = job.remaining - 1
         if job.remaining <= 0 then BUUI_returnHomes(job) end
         if job.onProgress then job.onProgress(job) end
@@ -288,8 +286,6 @@ local function BUUI_begin(player, nextRow, onProgress, onFinished)
         row = nil,
         sourceIndex = 1,
         remaining = 0,
-        total = 0,
-        done = 0,
         onProgress = onProgress,
         onFinished = onFinished,
         nextRow = nextRow,
@@ -319,7 +315,6 @@ function BUUI.Queue.startRows(player, rows, onProgress, onFinished)
             if not row then return nil end
 
             if (row.quantity or 0) > 0 then
-                job.total = job.total + row.quantity
                 job.sourceIndex = 1
                 return row
             end
@@ -342,7 +337,6 @@ function BUUI.Queue.startAll(player, mode, onProgress, onFinished)
             if row.ready and row.max > 0 and not attempted[row.key] then
                 attempted[row.key] = true
                 row.quantity = row.max
-                job.total = job.total + row.max
                 job.sourceIndex = 1
                 return row
             end

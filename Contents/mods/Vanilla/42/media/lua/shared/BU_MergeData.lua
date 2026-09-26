@@ -159,9 +159,7 @@ function BU.Merge.plan(items)
         steps   = steps,
         full    = full,
         partial = partial,
-        removed = #pool - full - partial,
         count   = #pool,
         total   = total,
-        maxUses = maxUses,
     }
 end

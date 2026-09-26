@@ -30,7 +30,6 @@ function BUUI_Row:new(x, y, width, height, panel)
     o.background = true
     o.backgroundColor = { r = 1, g = 1, b = 1, a = 0.03 }
     o.borderColor = { r = 1, g = 1, b = 1, a = 0.06 }
-    o.row = nil
 
     return o
 end
