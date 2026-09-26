@@ -518,4 +518,76 @@ module BundleUp {
             BundleUp.9x19Magazine100_MP5Carton = BundleUp.9x19Magazine100_MP5Crate,
         }
     }
+
+    craftRecipe PackGoM40mmCarton {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 6 [MarzGuns.40mm_Box_Buckshot;MarzGuns.40mm_Box_HE;MarzGuns.40mm_Box_Incendiary] flags[IsExclusive;ItemCount] mappers[gom40mmCartonMap],
+        }
+        outputs {
+            item 1 mapper:gom40mmCartonMap,
+        }
+        itemMapper gom40mmCartonMap {
+            BundleUp.40mm_BuckshotCarton = MarzGuns.40mm_Box_Buckshot,
+            BundleUp.40mm_HECarton = MarzGuns.40mm_Box_HE,
+            BundleUp.40mm_IncendiaryCarton = MarzGuns.40mm_Box_Incendiary,
+        }
+    }
+
+    craftRecipe UnpackGoM40mmCarton {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.40mm_BuckshotCarton;BundleUp.40mm_HECarton;BundleUp.40mm_IncendiaryCarton] flags[IsExclusive;ItemCount] mappers[gom40mmCartonMap],
+        }
+        outputs {
+            item 6 mapper:gom40mmCartonMap,
+        }
+        itemMapper gom40mmCartonMap {
+            MarzGuns.40mm_Box_Buckshot = BundleUp.40mm_BuckshotCarton,
+            MarzGuns.40mm_Box_HE = BundleUp.40mm_HECarton,
+            MarzGuns.40mm_Box_Incendiary = BundleUp.40mm_IncendiaryCarton,
+        }
+    }
+
+    craftRecipe PackGoM40mmCrate {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 4 [BundleUp.40mm_BuckshotCarton;BundleUp.40mm_HECarton;BundleUp.40mm_IncendiaryCarton] flags[IsExclusive;ItemCount] mappers[gom40mmCrateMap],
+        }
+        outputs {
+            item 1 mapper:gom40mmCrateMap,
+        }
+        itemMapper gom40mmCrateMap {
+            BundleUp.40mm_BuckshotCrate = BundleUp.40mm_BuckshotCarton,
+            BundleUp.40mm_HECrate = BundleUp.40mm_HECarton,
+            BundleUp.40mm_IncendiaryCrate = BundleUp.40mm_IncendiaryCarton,
+        }
+    }
+
+    craftRecipe UnpackGoM40mmCrate {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.40mm_BuckshotCrate;BundleUp.40mm_HECrate;BundleUp.40mm_IncendiaryCrate] flags[IsExclusive;ItemCount] mappers[gom40mmCrateMap],
+        }
+        outputs {
+            item 4 mapper:gom40mmCrateMap,
+        }
+        itemMapper gom40mmCrateMap {
+            BundleUp.40mm_BuckshotCarton = BundleUp.40mm_BuckshotCrate,
+            BundleUp.40mm_HECarton = BundleUp.40mm_HECrate,
+            BundleUp.40mm_IncendiaryCarton = BundleUp.40mm_IncendiaryCrate,
+        }
+    }
 }

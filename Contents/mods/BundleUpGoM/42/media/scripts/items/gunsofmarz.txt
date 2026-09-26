@@ -1442,4 +1442,60 @@ module BundleUp {
         Tags = base:hasmetal;base:ignorezombiedensity,
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
+
+    item 40mm_BuckshotCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 7.17,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoM40mmCarton,
+    }
+    item 40mm_HECarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 7.17,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoM40mmCarton,
+    }
+    item 40mm_IncendiaryCarton {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 7.17,
+        Icon = Parcel_Medium_Ammo,
+        WorldStaticModel = Parcel_Ammo_Medium,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoM40mmCarton,
+    }
+
+    item 40mm_BuckshotCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 23.81,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoM40mmCrate,
+    }
+    item 40mm_HECrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 23.81,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoM40mmCrate,
+    }
+    item 40mm_IncendiaryCrate {
+        DisplayCategory = Weapon,
+        ItemType = base:normal,
+        Weight = 23.81,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:hasmetal;base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoM40mmCrate,
+    }
 }

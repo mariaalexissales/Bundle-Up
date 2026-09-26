@@ -10,5 +10,9 @@
   "PackGoMDrumCarton": "Pack Drum Magazine Boxes in Carton",
   "UnpackGoMDrumCarton": "Open Carton of Drum Magazines (6 boxes)",
   "PackGoMDrumCrate": "Pack Drum Magazine Cartons in Crate",
-  "UnpackGoMDrumCrate": "Open Crate of Drum Magazines (4 cartons)"
+  "UnpackGoMDrumCrate": "Open Crate of Drum Magazines (4 cartons)",
+  "PackGoM40mmCarton": "Pack 40mm Boxes in Carton",
+  "UnpackGoM40mmCarton": "Open Carton of 40mm Rounds (6 boxes)",
+  "PackGoM40mmCrate": "Pack 40mm Cartons in Crate",
+  "UnpackGoM40mmCrate": "Open Crate of 40mm Rounds (4 cartons)"
 }

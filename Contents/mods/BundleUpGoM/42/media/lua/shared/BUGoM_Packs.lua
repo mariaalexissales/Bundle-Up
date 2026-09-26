@@ -70,9 +70,16 @@ BUGoM.Drums = {
     "9x19Magazine100_MP5",
 }
 
+BUGoM.Grenades = {
+    { base = "40mm_Box_Buckshot", short = "40mm_Buckshot" },
+    { base = "40mm_Box_HE", short = "40mm_HE" },
+    { base = "40mm_Box_Incendiary", short = "40mm_Incendiary" },
+}
+
 BUGoM.Tiers = {
     Magazine   = { { "Box", 5 }, { "Carton", 12 }, { "Crate", 4 } },
     Drum       = { { "Box", 2 }, { "Carton", 6 }, { "Crate", 4 } },
+    Grenade    = { { "Carton", 6 }, { "Crate", 4 } },
 }
 
 -- pack names are built by string, short .. tier, so grepping for 9x19Magazine15_M92FSBox
@@ -97,4 +104,8 @@ end
 
 for i = 1, #BUGoM.Drums do
     BUGoM_addLadder(BUGoM.Drums[i], BUGoM.Drums[i], BUGoM.Tiers.Drum)
+end
+
+for i = 1, #BUGoM.Grenades do
+    BUGoM_addLadder(BUGoM.Grenades[i].base, BUGoM.Grenades[i].short, BUGoM.Tiers.Grenade)
 end

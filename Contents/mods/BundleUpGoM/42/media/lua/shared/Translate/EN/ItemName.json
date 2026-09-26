@@ -163,5 +163,11 @@
   "BundleUp.762x51Box100_M60Crate": "Crate of M60 100Rds 7.62x51mm Belt Boxes",
   "BundleUp.12GMagazine20_AA12Crate": "Crate of 12 Gauge AA-12 Drum 20Rds Magazines",
   "BundleUp.45Magazine100_THOMPSONCrate": "Crate of Thompson 100Rds .45 ACP Drum Magazines",
-  "BundleUp.9x19Magazine100_MP5Crate": "Crate of MP5 100Rds Drum 9x19mm Magazines"
+  "BundleUp.9x19Magazine100_MP5Crate": "Crate of MP5 100Rds Drum 9x19mm Magazines",
+  "BundleUp.40mm_BuckshotCarton": "Carton of 40mm Buckshot Rounds",
+  "BundleUp.40mm_HECarton": "Carton of 40mm High Explosive Rounds",
+  "BundleUp.40mm_IncendiaryCarton": "Carton of 40mm Incendiary Rounds",
+  "BundleUp.40mm_BuckshotCrate": "Crate of 40mm Buckshot Rounds",
+  "BundleUp.40mm_HECrate": "Crate of 40mm High Explosive Rounds",
+  "BundleUp.40mm_IncendiaryCrate": "Crate of 40mm Incendiary Rounds"
 }
