@@ -55,10 +55,10 @@ local function BU_onFillInventoryContextMenu(playerNum, context, items)
 
     local playerObj = getSpecificPlayer(playerNum)
     local option = context:addOption(getText("ContextMenu_BU_RelabelSeedPacket"))
-    if not BU.SeedPackets.hasPencil(playerObj) then
+    if not BU.SeedPackets.canWrite(playerObj) then
         option.notAvailable = true
         local tooltip = ISInventoryPaneContextMenu.addToolTip()
-        tooltip.description = getText("ContextMenu_BU_RelabelNeedsPencil")
+        tooltip.description = getText("ContextMenu_BU_RelabelNeedsWriting")
         option.toolTip = tooltip
         return
     end

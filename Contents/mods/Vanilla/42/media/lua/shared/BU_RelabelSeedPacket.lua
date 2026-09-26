@@ -14,7 +14,7 @@ function BURelabelSeedPacket:isValid()
             and BU.SeedPackets.isEmpty(self.newType)) then
         return false
     end
-    if not BU.SeedPackets.hasPencil(self.character) then return false end
+    if not BU.SeedPackets.canWrite(self.character) then return false end
     return isClient() or self.character:getInventory():contains(self.item)
 end
 

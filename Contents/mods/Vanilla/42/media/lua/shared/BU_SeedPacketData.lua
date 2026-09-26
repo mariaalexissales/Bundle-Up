@@ -69,6 +69,6 @@ function BU.SeedPackets.isEmpty(fullType)
     return BU.SeedPackets.Empty[fullType] == true
 end
 
-function BU.SeedPackets.hasPencil(character)
-    return character:getInventory():containsTagRecurse(ItemTag.PENCIL)
+function BU.SeedPackets.canWrite(character)
+    return character:getInventory():containsTagRecurse(ItemTag.WRITE)
 end
