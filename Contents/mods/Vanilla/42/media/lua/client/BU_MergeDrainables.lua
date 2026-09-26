@@ -98,12 +98,14 @@ function ISInventoryPaneContextMenu.checkConsolidate(drainable, playerObj, conte
     end
     if #consolidateList == 0 then return end
 
-    local option = context:addOption(getText(drainable:getConsolidateOption() or "ContextMenu_Pour_into"), nil, nil)
+    local label = getText(drainable:getConsolidateOption() or "ContextMenu_Pour_into")
+    local option = context:addOption(label, nil, nil)
     local submenu = context:getNew(context)
     context:addSubMenu(option, submenu)
 
     if #consolidateList > 1 then
-        submenu:addOption(getText("ContextMenu_MergeAll"), playerObj, BU_onConsolidateAll, drainable, consolidateList)
+        submenu:addOption(getText("ContextMenu_MergeAll"), playerObj, BU_onConsolidateAll,
+            drainable, consolidateList)
     end
 
     for _, intoItem in ipairs(consolidateList) do

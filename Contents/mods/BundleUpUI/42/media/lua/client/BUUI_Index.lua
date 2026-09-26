@@ -292,7 +292,8 @@ function BUUI.resolveMergeRows(player)
                 max = #plan.steps,
                 quantity = #plan.steps,
                 name = item:getDisplayName(),
-                result = getText("IGUI_BUUI_MergeResult", tostring(plan.full + plan.partial), tostring(plan.count)),
+                result = getText("IGUI_BUUI_MergeResult",
+                    tostring(plan.full + plan.partial), tostring(plan.count)),
                 texture = item:getTexture(),
             }
         end

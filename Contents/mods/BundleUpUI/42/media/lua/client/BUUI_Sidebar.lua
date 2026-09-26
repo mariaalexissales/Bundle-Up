@@ -64,8 +64,9 @@ function BUUI_Popup:setTextures(textureWidth)
     if self.textureWidth == textureWidth then return end
 
     self.textureWidth = textureWidth
-    self.iconOff = getTexture("media/ui/Sidebar/" .. textureWidth .. "/BundleUp_Off_" .. textureWidth .. ".png")
-    self.iconOn = getTexture("media/ui/Sidebar/" .. textureWidth .. "/BundleUp_On_" .. textureWidth .. ".png")
+    local folder = "media/ui/Sidebar/" .. textureWidth .. "/BundleUp_"
+    self.iconOff = getTexture(folder .. "Off_" .. textureWidth .. ".png")
+    self.iconOn = getTexture(folder .. "On_" .. textureWidth .. ".png")
 end
 
 function BUUI_Popup:render()

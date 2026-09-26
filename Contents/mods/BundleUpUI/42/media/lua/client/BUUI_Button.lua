@@ -71,7 +71,8 @@ function BUUI_Button:prerender()
     self.textColor.a = 1
 
     if state.fill then
-        self:drawRect(0, 0, self.width, self.height, state.fill[4], state.fill[1], state.fill[2], state.fill[3])
+        local fill = state.fill
+        self:drawRect(0, 0, self.width, self.height, fill[4], fill[1], fill[2], fill[3])
     end
 
     local textures = BUUI_textures()

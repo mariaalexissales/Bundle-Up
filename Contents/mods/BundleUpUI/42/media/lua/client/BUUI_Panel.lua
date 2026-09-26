@@ -74,9 +74,15 @@ function BUUI_Panel:bands()
 end
 
 local BUUI_LABELS = {
-    [BUUI.MODE.BUNDLE]   = { items = "IGUI_BUUI_BundleItems",   all = "IGUI_BUUI_BundleAll",   empty = "IGUI_BUUI_Empty" },
-    [BUUI.MODE.UNBUNDLE] = { items = "IGUI_BUUI_UnbundleItems", all = "IGUI_BUUI_UnbundleAll", empty = "IGUI_BUUI_EmptyUnbundle" },
-    [BUUI.MODE.MERGE]    = { items = "IGUI_BUUI_MergeItems",    all = "IGUI_BUUI_MergeAll",    empty = "IGUI_BUUI_EmptyMerge" },
+    [BUUI.MODE.BUNDLE] = {
+        items = "IGUI_BUUI_BundleItems", all = "IGUI_BUUI_BundleAll", empty = "IGUI_BUUI_Empty",
+    },
+    [BUUI.MODE.UNBUNDLE] = {
+        items = "IGUI_BUUI_UnbundleItems", all = "IGUI_BUUI_UnbundleAll", empty = "IGUI_BUUI_EmptyUnbundle",
+    },
+    [BUUI.MODE.MERGE] = {
+        items = "IGUI_BUUI_MergeItems", all = "IGUI_BUUI_MergeAll", empty = "IGUI_BUUI_EmptyMerge",
+    },
 }
 
 -- both footer buttons swap label with the tab and one of them turns into Stop, so each
@@ -129,7 +135,8 @@ function BUUI_Panel:createChildren()
 
     -- the scroll view paints nothing of its own, so it sits a pixel inside the frame
     -- the panel draws for it.
-    self.list = NIVirtualScrollView:new(PAD + 1, listY + 1, self.width - PAD * 2 - 2, footerY - listY - GAP - 2)
+    self.list = NIVirtualScrollView:new(PAD + 1, listY + 1,
+        self.width - PAD * 2 - 2, footerY - listY - GAP - 2)
     self.list:initialise()
     self.list:instantiate()
     self.list:setOnCreateItem(function()
@@ -363,7 +370,8 @@ function BUUI_Panel:render()
 
     local _, barY, listY, footerY = self:bands()
 
-    self:drawText(self.sourceText or "", PAD + GAP, barY + 4, COL_TEXT.r, COL_TEXT.g, COL_TEXT.b, 1, UIFont.Small)
+    self:drawText(self.sourceText or "", PAD + GAP, barY + 4,
+        COL_TEXT.r, COL_TEXT.g, COL_TEXT.b, 1, UIFont.Small)
 
     if #self.rows == 0 then
         local empty = getText(BUUI_LABELS[self.mode].empty)

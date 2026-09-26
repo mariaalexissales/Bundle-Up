@@ -838,7 +838,9 @@ local LITERATURE_GROUPS = {
             "BundleUp.Magazine_MilitaryBundle",
             "BundleUp.Magazine_Military_NewBundle",
         },
-        weights = { BookstoreMilitaryHistory = 0.2, LibraryMilitaryHistory = 0.15, ArmySurplusLiterature = 0.2 },
+        weights = {
+            BookstoreMilitaryHistory = 0.2, LibraryMilitaryHistory = 0.15, ArmySurplusLiterature = 0.2,
+        },
     },
     {
         items = {
@@ -1461,8 +1463,9 @@ local function BU_applyLootRates()
     if #missing > 0 then
         print("[BundleUp] loot tables not found: " .. table.concat(missing, ", "))
     end
-    print("[BundleUp] loot: " .. inserted .. " entries across " .. tableCount .. " tables"
-        .. ((rebuilt or not needed) and "" or " -- IsoWorld.parseDistributions() failed, loot unchanged this session"))
+    local failed = (rebuilt or not needed) and ""
+        or " -- IsoWorld.parseDistributions() failed, loot unchanged this session"
+    print("[BundleUp] loot: " .. inserted .. " entries across " .. tableCount .. " tables" .. failed)
 end
 
 -- not the merge events: on a reload they fire before the save's sandbox settings load and
