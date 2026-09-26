@@ -590,4 +590,82 @@ module BundleUp {
             BundleUp.40mm_IncendiaryCarton = BundleUp.40mm_IncendiaryCrate,
         }
     }
+
+    craftRecipe PackGoMRepairPackBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 4 [MarzGuns.RepairPack] flags[IsExclusive;ItemCount;IsFull],
+        }
+        outputs {
+            item 1 BundleUp.RepairPackBox,
+        }
+    }
+
+    craftRecipe UnpackGoMRepairPackBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.RepairPackBox] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 4 MarzGuns.RepairPack,
+        }
+    }
+
+    craftRecipe PackGoMRepairPackCarton {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 4 [BundleUp.RepairPackBox] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.RepairPackCarton,
+        }
+    }
+
+    craftRecipe UnpackGoMRepairPackCarton {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.RepairPackCarton] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 4 BundleUp.RepairPackBox,
+        }
+    }
+
+    craftRecipe PackGoMRepairPackCrate {
+        timedAction = PackingBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 3 [BundleUp.RepairPackCarton] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 1 BundleUp.RepairPackCrate,
+        }
+    }
+
+    craftRecipe UnpackGoMRepairPackCrate {
+        timedAction = UnPackBox,
+        time = 50,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.RepairPackCrate] flags[IsExclusive;ItemCount],
+        }
+        outputs {
+            item 3 BundleUp.RepairPackCarton,
+        }
+    }
 }

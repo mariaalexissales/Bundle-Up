@@ -14,5 +14,11 @@
   "PackGoM40mmCarton": "Pack 40mm Boxes in Carton",
   "UnpackGoM40mmCarton": "Open Carton of 40mm Rounds (6 boxes)",
   "PackGoM40mmCrate": "Pack 40mm Cartons in Crate",
-  "UnpackGoM40mmCrate": "Open Crate of 40mm Rounds (4 cartons)"
+  "UnpackGoM40mmCrate": "Open Crate of 40mm Rounds (4 cartons)",
+  "PackGoMRepairPackBox": "Pack Repair Packs in Box",
+  "UnpackGoMRepairPackBox": "Open Box of Repair Packs (4 items)",
+  "PackGoMRepairPackCarton": "Pack Repair Pack Boxes in Carton",
+  "UnpackGoMRepairPackCarton": "Open Carton of Repair Packs (4 boxes)",
+  "PackGoMRepairPackCrate": "Pack Repair Pack Cartons in Crate",
+  "UnpackGoMRepairPackCrate": "Open Crate of Repair Packs (3 cartons)"
 }

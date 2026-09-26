@@ -169,5 +169,8 @@
   "BundleUp.40mm_IncendiaryCarton": "Carton of 40mm Incendiary Rounds",
   "BundleUp.40mm_BuckshotCrate": "Crate of 40mm Buckshot Rounds",
   "BundleUp.40mm_HECrate": "Crate of 40mm High Explosive Rounds",
-  "BundleUp.40mm_IncendiaryCrate": "Crate of 40mm Incendiary Rounds"
+  "BundleUp.40mm_IncendiaryCrate": "Crate of 40mm Incendiary Rounds",
+  "BundleUp.RepairPackBox": "Box of Weapon Repair Packs",
+  "BundleUp.RepairPackCarton": "Carton of Weapon Repair Packs",
+  "BundleUp.RepairPackCrate": "Crate of Weapon Repair Packs"
 }

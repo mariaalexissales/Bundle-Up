@@ -1,5 +1,5 @@
 {
   "Sandbox_BundleUpPage_GunsOfMarz": "Bundle Up: Guns of Marz",
   "Sandbox_BundleUp_ReductionGoM": "Guns of Marz reduction %%",
-  "Sandbox_BundleUp_ReductionGoM_tooltip": "Reduction for Guns of Marz magazine and 40mm boxes, cartons and crates. -1 = inherit the default."
+  "Sandbox_BundleUp_ReductionGoM_tooltip": "Reduction for Guns of Marz magazine, 40mm and repair pack boxes, cartons and crates. -1 = inherit the default."
 }

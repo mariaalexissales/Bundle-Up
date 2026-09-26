@@ -1498,4 +1498,33 @@ module BundleUp {
         Tags = base:hasmetal;base:ignorezombiedensity,
         DoubleClickRecipe = UnpackGoM40mmCrate,
     }
+
+    item RepairPackBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackGoMRepairPackBox,
+    }
+
+    item RepairPackCarton {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 11.02,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMRepairPackCarton,
+    }
+
+    item RepairPackCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 27.45,
+        Icon = AmmoCase,
+        WorldStaticModel = Crate_Ammo,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackGoMRepairPackCrate,
+    }
 }

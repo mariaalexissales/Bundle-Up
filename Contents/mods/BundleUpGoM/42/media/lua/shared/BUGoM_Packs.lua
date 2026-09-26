@@ -80,6 +80,7 @@ BUGoM.Tiers = {
     Magazine   = { { "Box", 5 }, { "Carton", 12 }, { "Crate", 4 } },
     Drum       = { { "Box", 2 }, { "Carton", 6 }, { "Crate", 4 } },
     Grenade    = { { "Carton", 6 }, { "Crate", 4 } },
+    RepairPack = { { "Box", 4 }, { "Carton", 4 }, { "Crate", 3 } },
 }
 
 -- pack names are built by string, short .. tier, so grepping for 9x19Magazine15_M92FSBox
@@ -109,3 +110,5 @@ end
 for i = 1, #BUGoM.Grenades do
     BUGoM_addLadder(BUGoM.Grenades[i].base, BUGoM.Grenades[i].short, BUGoM.Tiers.Grenade)
 end
+
+BUGoM_addLadder("RepairPack", "RepairPack", BUGoM.Tiers.RepairPack)
