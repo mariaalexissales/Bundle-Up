@@ -35,7 +35,7 @@ Put 99 nails in a box and half your base goes missing to server chunk rot. Sheet
 - **Part-used stock merges back.** Half-empty spools, rolls and bottles merge into whole ones, and *Add to* / *Consolidate all* read every container in reach, not just your main inventory.
 - **322 sandbox options** across eight pages: loot spawn rates, then per-category and per-item weight sliders grouped by the category each one inherits from, so servers can tune the whole thing without touching a file.
 
-An optional UI add-on ships in the same subscription. The base mod has no dependencies and isn't gaining any.
+Two optional add-ons ship in the same subscription: the packing panel, and Guns of Marz support. The base mod has no dependencies and isn't gaining any.
 
 One load-order note, if you also run Remove Vanilla Anything: both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Both work, so pick the one you want.
 
@@ -47,6 +47,7 @@ One load-order note, if you also run Remove Vanilla Anything: both mods edit the
 | --- | --- |
 | `Contents/mods/Vanilla/42/` | The base mod. ~16,000 lines of zedscript, ~4,300 of Lua, 322 sandbox options. |
 | `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,800 lines of Lua, off by default, needs NeatUI Framework. |
+| `Contents/mods/BundleUpGoM/42/` | Optional Guns of Marz add-on. Packs its 55 magazines, 40mm rounds and weapon repair packs up to crates. Needs Guns of Marz. |
 
 The base mod's folder is called `Vanilla` because that's what it was named on the first day, and renaming it now would change every file path the Workshop has. Its id is `BundleUp`. B42 only reads the `42/` folder.
 
@@ -188,7 +189,7 @@ end
 BUUI.modules = BUUI.modules or { BundleUp = true }
 ```
 
-The base mod needed no changes for it, and another packing mod only has to add its module name to that table to show up.
+The base mod needed no changes for it, and another packing mod only has to add its module name to that table to show up. Single recipes go in `BUUI.extraRecipes` by full type instead, which is how the Guns of Marz add-on lists GoM's own ammo recipes without pulling in the rest of module `Base`.
 
 **It finds what a craft made by diffing item IDs.** `CraftRecipeData` doesn't give Lua a list of what it created, so the queue snapshots inventory IDs before the craft and diffs after:
 

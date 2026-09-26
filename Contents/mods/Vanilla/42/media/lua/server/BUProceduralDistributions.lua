@@ -7,12 +7,16 @@
 local plan = {}
 local owned = {}
 
-local function BU_applyDistribution(option, items, weights)
-    plan[#plan + 1] = { option = option, items = items, weights = weights }
+local function BU_applyDistribution(option, items, weights, when)
+    plan[#plan + 1] = { option = option, items = items, weights = weights, when = when }
     for i = 1, #items do
         owned[items[i]] = true
     end
 end
+
+-- add-ons call this at file load. anything added after OnGameStart misses the pass.
+BU = BU or {}
+BU.addLoot = BU_applyDistribution
 
 local PACK_ITEMS = {
     "BundleUp.BlueberrySP",
@@ -1435,7 +1439,7 @@ local function BU_applyLootRates()
         local entry = plan[p]
         local multiplier = BU_multiplierFor(sv, entry.option)
         -- a zero multiplier drops the entry rather than inserting it at weight 0
-        if multiplier > 0 then
+        if multiplier > 0 and (entry.when == nil or entry.when()) then
             for tableName, weight in pairs(entry.weights) do
                 local items = targets[tableName]
                 if items then

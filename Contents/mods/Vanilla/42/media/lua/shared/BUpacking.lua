@@ -185,6 +185,12 @@ function BUInv.testPackEmptyMagazine(item, character)
     return item == nil or item:getCurrentAmmoCount() <= 0
 end
 
+BU.vanillaMagazinesOff = BU.vanillaMagazinesOff or function() return false end
+
+function BUInv.testPackVanillaMagazine(item, character)
+    return not BU.vanillaMagazinesOff() and BUInv.testPackEmptyMagazine(item, character)
+end
+
 local function BU_shelfLife(item)
     local life = item:getOffAgeMax()
     if life == nil or life <= 0 then

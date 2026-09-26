@@ -1,0 +1,32 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+VERSION = 1,
+
+option BundleUp.SpawnGoMMagazines
+{
+    type = enum, numValues = 7, default = 1,
+    page = BundleUpPage_GunsOfMarz, translation = BundleUp_SpawnGoMMagazines,
+    valueTranslation = BundleUp_SpawnLevelInherit,
+}
+
+option BundleUp.SpawnGoMGrenades
+{
+    type = enum, numValues = 7, default = 1,
+    page = BundleUpPage_GunsOfMarz, translation = BundleUp_SpawnGoMGrenades,
+    valueTranslation = BundleUp_SpawnLevelInherit,
+}
+
+option BundleUp.SpawnGoMRepairPacks
+{
+    type = enum, numValues = 7, default = 1,
+    page = BundleUpPage_GunsOfMarz, translation = BundleUp_SpawnGoMRepairPacks,
+    valueTranslation = BundleUp_SpawnLevelInherit,
+}
+
+option BundleUp.ReductionGoM
+{
+    type = integer, min = -1, max = 100, default = -1,
+    page = BundleUpPage_GunsOfMarz, translation = BundleUp_ReductionGoM,
+}

@@ -42,6 +42,14 @@ description=
 description=[i]The base mod needs none of it.[/i] Bundle Up! has no dependencies and isn’t gaining any - leave the add-on off and nothing about your game changes.
 description=
 description=[hr][/hr]
+description=[h2]Optional: Guns of Marz Support[/h2]
+description=[b]Bundle Up! - Guns of Marz Add-on[/b] is in this subscription too. Tick it on next to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990]Guns of Marz[/url] and all 55 of its magazines pack into boxes, cartons and crates, 40mm rounds go from GoM’s boxes into cartons and crates, and Weapon Repair Packs box up too. Drums and belt boxes get a smaller box, so a crate of them doesn’t weigh as much as a car.
+description=
+description=Loaded mags and half-used repair packs stay out. The packs spawn in gun stores, army storage and tool shelves, follow GoM’s own high-cap and explosives settings, and get their own page in Sandbox Options. With the Packing Panel on, GoM’s own ammo boxes, cartons and crates show up in it as well.
+description=
+description=[i]GoM swaps vanilla magazines for its own, so a Bundle Up magazine box you loot unpacks into GoM mags. It’s a loot box now.[/i] No packing mags back into one for a reroll though :D
+description=
+description=[hr][/hr]
 description=[h2]On the Way[/h2]
 description=[list]
 description=[*] Engine Parts

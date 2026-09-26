@@ -2,14 +2,17 @@
 
 The [README](README.md) covers what the mod does and the engine surprises behind it. This is the map: which file does what, when each piece runs, the rules the code keeps, and how a change gets from a branch to the Workshop.
 
-## Two mods, one subscription
+## Three mods, one subscription
 
 | Folder | Mod id | What it is |
 | --- | --- | --- |
 | `Contents/mods/Vanilla/42/` | `BundleUp` | Everything that matters in play: items, recipes, weights, loot, spoilage, merging. No dependencies. |
 | `Contents/mods/BundleUpUI/42/` | `BundleUpUI` | The optional Packing panel. Requires `BundleUp` and NeatUI Framework. |
+| `Contents/mods/BundleUpGoM/42/` | `BundleUpGoM` | Optional Guns of Marz support: its magazines, 40mm rounds and weapon repair packs, up to crates. Requires `BundleUp` and Guns of Marz. |
 
 The UI add-on reads the base mod (its recipes, `BU.Merge`, the transfer helpers). The base mod never calls the UI, so it plays the same with the add-on off.
+
+The Guns of Marz add-on plugs into the base mod through three hooks: its pack rows go into `BU.Bundles`, its loot goes into the base mod's plan through `BU.addLoot`, and it sets `BU.vanillaMagazinesOff` so nobody can pack mags into a vanilla magazine box while GoM is swapping those for its own. If the panel is on too, it lists GoM's own ammo recipes in `BUUI.extraRecipes`. Its items and recipes are in module `BundleUp`, so the panel and the checks treat them like the base mod's.
 
 Build 42 only reads a `common/` folder or a version folder like `42/`. Nothing at the mod root is loaded, so there isn't anything there.
 
@@ -24,6 +27,9 @@ flowchart LR
     subgraph ui["BundleUpUI (BundleUpUI/42)"]
         panel["Packing panel<br/>index, queue, window, sidebar button"]
     end
+    subgraph gom["BundleUpGoM (BundleUpGoM/42)"]
+        gompacks["magazine, 40mm and repair pack ladders<br/>loot, sandbox page"]
+    end
     engine(("Project Zomboid<br/>engine"))
     scripts --> engine
     shared --> engine
@@ -31,6 +37,9 @@ flowchart LR
     server --> engine
     panel -->|"recipes, BU.Merge, BU.sendBack"| base
     panel --> engine
+    gompacks -->|"BU.Bundles, BU.addLoot, BU.vanillaMagazinesOff"| base
+    gompacks -.->|"BUUI.extraRecipes"| ui
+    gompacks --> engine
 ```
 
 ## Data and behaviour
@@ -90,6 +99,17 @@ UI add-on, `Contents/mods/BundleUpUI/42/media/lua/client/`:
 | `BUUI_Button.lua` | The NeatUI-skinned button |
 | `BUUI_Sidebar.lua` | The sidebar fly-out that opens the panel |
 
+Guns of Marz add-on, `Contents/mods/BundleUpGoM/42/media/`:
+
+| File | Job |
+| --- | --- |
+| `scripts/items/gunsofmarz.txt` | 174 packs: a box, carton and crate for each of the 55 magazines, a carton and crate per 40mm round, and the repair pack ladder |
+| `scripts/recipes/recipes_gunsofmarz.txt` | Pack and unpack for each tier |
+| `sandbox-options.txt` | The Guns of Marz page: three spawn sliders and a weight cut, all in the `BundleUp` namespace |
+| `lua/shared/BUGoM_Packs.lua` | Which magazine goes on which ladder, the `BU.Bundles` rows, and the vanilla magazine switch |
+| `lua/client/BUGoM_UI.lua` | Lists GoM's own ammo recipes for the panel |
+| `lua/server/BUGoM_Distributions.lua` | The add-on's loot, behind GoM's high-cap and explosives settings |
+
 ## When things run
 
 Most of the bugs in this mod's history came from doing the right thing at the wrong moment, so the order is worth drawing.
@@ -125,7 +145,7 @@ The README has the long version of why weights need `OnInitGlobalModData` and lo
 
 **Servers and clients get the same numbers.** Weight and spoilage live in `shared/`, and each pack's script `Weight` is kept equal to what the Lua works out, because a dedicated server reads the script.
 
-**Loot is changed by name, never by index.** Every name the mod inserts starts with `BundleUp.`, so removing by name undoes the last pass exactly, even after another mod has rewritten the same arrays.
+**Loot is changed by name, never by index.** Every name the mod inserts starts with `BundleUp.`, so removing by name undoes the last pass exactly, even after another mod has rewritten the same arrays. Add-ons register through `BU.addLoot` at file load, so their packs go in the same pass.
 
 **`main` is the Workshop build, byte for byte.** Project Zomboid won't let you join a server whose mod files differ, so what's on `main` is exactly what was uploaded, line endings included.
 
