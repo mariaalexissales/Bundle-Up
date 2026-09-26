@@ -254,6 +254,242 @@ local FOOD_WEIGHTS = {
 
 BU_applyDistribution("SpawnFood", FOOD_ITEMS, FOOD_WEIGHTS)
 
+local FRUIT_CARTON_ITEMS = {
+    "BundleUp.AppleCarton",
+    "BundleUp.AvocadoCarton",
+    "BundleUp.BananaCarton",
+    "BundleUp.BerryBlackCarton",
+    "BundleUp.BerryBlueCarton",
+    "BundleUp.CherryCarton",
+    "BundleUp.GrapefruitCarton",
+    "BundleUp.GrapesCarton",
+    "BundleUp.LemonCarton",
+    "BundleUp.LimeCarton",
+    "BundleUp.MangoCarton",
+    "BundleUp.OrangeCarton",
+    "BundleUp.PeachCarton",
+    "BundleUp.PearCarton",
+    "BundleUp.PineappleCarton",
+    "BundleUp.StrewberrieCarton",
+    "BundleUp.WatermelonCarton",
+}
+
+local FRUIT_CARTON_WEIGHTS = {
+    GroceryStandFruits1      = 0.15,
+    GroceryStandFruits2      = 0.15,
+    GroceryStandFruits3      = 0.15,
+    ProduceStorageLooseFruit = 0.4,
+}
+
+BU_applyDistribution("SpawnFood", FRUIT_CARTON_ITEMS, FRUIT_CARTON_WEIGHTS)
+
+local VEGETABLE_CARTON_ITEMS = {
+    "BundleUp.BasilCarton",
+    "BundleUp.BrusselSproutsCarton",
+    "BundleUp.ChivesCarton",
+    "BundleUp.CilantroCarton",
+    "BundleUp.DaikonCarton",
+    "BundleUp.EdamameCarton",
+    "BundleUp.GingerPickledCarton",
+    "BundleUp.GingerRootCarton",
+    "BundleUp.GrapeLeavesCarton",
+    "BundleUp.GreenOnionsCarton",
+    "BundleUp.LemonGrassCarton",
+    "BundleUp.MintHerbCarton",
+    "BundleUp.MushroomsButtonCarton",
+    "BundleUp.OreganoCarton",
+    "BundleUp.ParsleyCarton",
+    "BundleUp.RosemaryCarton",
+    "BundleUp.SageCarton",
+    "BundleUp.ThymeCarton",
+    "BundleUp.WasabiCarton",
+}
+
+local VEGETABLE_CARTON_WEIGHTS = {
+    GroceryStandVegetables1 = 0.15,
+    GroceryStandVegetables2 = 0.15,
+    GroceryStandVegetables3 = 0.15,
+    GroceryStandVegetables4 = 0.15,
+    GroceryStandVegetables5 = 0.15,
+    GroceryStandLettuce     = 0.15,
+    GroceryStorageCrate1    = 0.4,
+    GroceryStorageCrate2    = 0.4,
+    GroceryStorageCrate3    = 0.4,
+}
+
+BU_applyDistribution("SpawnFood", VEGETABLE_CARTON_ITEMS, VEGETABLE_CARTON_WEIGHTS)
+
+local MEAT_CARTON_ITEMS = {
+    "BundleUp.BaconCarton",
+    "BundleUp.BaconRashersCarton",
+    "BundleUp.BaloneyCarton",
+    "BundleUp.BeefCarton",
+    "BundleUp.ChickenCarton",
+    "BundleUp.ChickenFilletCarton",
+    "BundleUp.ChickenWingsCarton",
+    "BundleUp.FishFilletCarton",
+    "BundleUp.FrogMeatCarton",
+    "BundleUp.HamCarton",
+    "BundleUp.HotdogPackCarton",
+    "BundleUp.LobsterCarton",
+    "BundleUp.MeatPattyCarton",
+    "BundleUp.MincedMeatCarton",
+    "BundleUp.MusselsCarton",
+    "BundleUp.MuttonChopCarton",
+    "BundleUp.OystersCarton",
+    "BundleUp.PepperoniCarton",
+    "BundleUp.PorkCarton",
+    "BundleUp.PorkChopCarton",
+    "BundleUp.ProcessedcheeseCarton",
+    "BundleUp.RabbitmeatCarton",
+    "BundleUp.SalmonCarton",
+    "BundleUp.SausageCarton",
+    "BundleUp.ShrimpCarton",
+    "BundleUp.SmallanimalmeatCarton",
+    "BundleUp.SmallbirdmeatCarton",
+    "BundleUp.SourCreamCarton",
+    "BundleUp.SquidCarton",
+    "BundleUp.SteakCarton",
+    "BundleUp.TofuCarton",
+    "BundleUp.TurkeyFilletCarton",
+    "BundleUp.TurkeyLegsCarton",
+    "BundleUp.TurkeyWingsCarton",
+    "BundleUp.VenisonCarton",
+}
+
+local MEAT_CARTON_WEIGHTS = {
+    ButcherChops   = 0.15,
+    ButcherChicken = 0.15,
+    ButcherGround  = 0.15,
+    ButcherSmoked  = 0.15,
+    ButcherFish    = 0.15,
+    ButcherFreezer = 0.15,
+}
+
+BU_applyDistribution("SpawnFood", MEAT_CARTON_ITEMS, MEAT_CARTON_WEIGHTS)
+
+local BAKERY_CARTON_ITEMS = {
+    "BundleUp.BagelPlainCarton",
+    "BundleUp.BagelPoppyCarton",
+    "BundleUp.BagelSesameCarton",
+    "BundleUp.BaguetteCarton",
+    "BundleUp.BiscuitCarton",
+    "BundleUp.BreadCarton",
+    "BundleUp.BunsHamburgerCarton",
+    "BundleUp.BunsHotdogCarton",
+    "BundleUp.CornbreadCarton",
+    "BundleUp.CroissantCarton",
+    "BundleUp.CupcakeCarton",
+    "BundleUp.DanishCarton",
+    "BundleUp.DoughnutChocolateCarton",
+    "BundleUp.DoughnutFrostedCarton",
+    "BundleUp.DoughnutJellyCarton",
+    "BundleUp.DoughnutPlainCarton",
+    "BundleUp.JellyRollCarton",
+    "BundleUp.LemonBarCarton",
+    "BundleUp.MuffinFruitCarton",
+    "BundleUp.MuffinGenericCarton",
+    "BundleUp.PainauchocolatCarton",
+    "BundleUp.TacoShellCarton",
+    "BundleUp.TortillaCarton",
+}
+
+local BAKERY_CARTON_WEIGHTS = {
+    BakeryBread     = 0.2,
+    BakeryDoughnuts = 0.2,
+    BakeryMisc      = 0.2,
+}
+
+BU_applyDistribution("SpawnFood", BAKERY_CARTON_ITEMS, BAKERY_CARTON_WEIGHTS)
+
+local FROZEN_CARTON_ITEMS = {
+    "BundleUp.CornFrozenCarton",
+    "BundleUp.CreamocleCarton",
+    "BundleUp.Frozen_ChickenNuggetsCarton",
+    "BundleUp.Frozen_FishFingersCarton",
+    "BundleUp.Frozen_FrenchFriesCarton",
+    "BundleUp.Frozen_TatoDotsCarton",
+    "BundleUp.FudgeePopCarton",
+    "BundleUp.IcecreamCarton",
+    "BundleUp.IcecreamSandwichCarton",
+    "BundleUp.MixedVegetablesCarton",
+    "BundleUp.PeasCarton",
+    "BundleUp.PopsicleCarton",
+}
+
+local FROZEN_CARTON_WEIGHTS = {
+    FreezerFrozenFood = 0.3,
+    FreezerIceCream   = 0.3,
+}
+
+BU_applyDistribution("SpawnFood", FROZEN_CARTON_ITEMS, FROZEN_CARTON_WEIGHTS)
+
+local PANTRY_CARTON_ITEMS = {
+    "BundleUp.AllsortsCarton",
+    "BundleUp.BouillonCubeCarton",
+    "BundleUp.CandyPackageCarton",
+    "BundleUp.CapersCarton",
+    "BundleUp.CaviarCarton",
+    "BundleUp.Chocolate_HeartBoxCarton",
+    "BundleUp.CinnamonCarton",
+    "BundleUp.DriedApricotsCarton",
+    "BundleUp.LollipopCarton",
+    "BundleUp.MintCandyCarton",
+    "BundleUp.ModjeskaCarton",
+    "BundleUp.OlivesCarton",
+    "BundleUp.PeanutsCarton",
+    "BundleUp.PeppermintCarton",
+    "BundleUp.PumpkinSeedCarton",
+    "BundleUp.RicePaperCarton",
+    "BundleUp.SeaweedCarton",
+    "BundleUp.SugarCubesCarton",
+    "BundleUp.SugarPacketCarton",
+    "BundleUp.SunflowerSeedsCarton",
+    "BundleUp.cheese_powderedCarton",
+}
+
+local PANTRY_CARTON_WEIGHTS = {
+    GigamartCandy      = 0.2,
+    GigamartCrisps     = 0.2,
+    GigamartDryGoods   = 0.2,
+    GigamartSpices     = 0.15,
+    GigamartBakingMisc = 0.15,
+}
+
+BU_applyDistribution("SpawnFood", PANTRY_CARTON_ITEMS, PANTRY_CARTON_WEIGHTS)
+
+local PET_CARTON_ITEMS = {
+    "BundleUp.CatFoodBagCarton",
+    "BundleUp.CatTreatsCarton",
+}
+
+local PET_CARTON_WEIGHTS = {
+    PetShopShelf     = 0.3,
+    CratePetSupplies = 0.4,
+}
+
+BU_applyDistribution("SpawnFood", PET_CARTON_ITEMS, PET_CARTON_WEIGHTS)
+
+local JAR_CARTON_ITEMS = {
+    "BundleUp.CannedBellPepperCarton",
+    "BundleUp.CannedBroccoliCarton",
+    "BundleUp.CannedCabbageCarton",
+    "BundleUp.CannedCarrotsCarton",
+    "BundleUp.CannedEggplantCarton",
+    "BundleUp.CannedLeekCarton",
+    "BundleUp.CannedPotatoCarton",
+    "BundleUp.CannedRedRadishCarton",
+    "BundleUp.CannedRoeCarton",
+    "BundleUp.CannedTomatoCarton",
+}
+
+local JAR_CARTON_WEIGHTS = {
+    Homesteading = 0.2,
+    FoodGourmet  = 0.1,
+}
+
+BU_applyDistribution("SpawnFood", JAR_CARTON_ITEMS, JAR_CARTON_WEIGHTS)
+
 local MATERIALS_ITEMS = {
     "BundleUp.PlankR",
     "BundleUp.PlankSR",
