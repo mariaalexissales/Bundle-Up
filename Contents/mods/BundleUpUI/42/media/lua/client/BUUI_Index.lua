@@ -13,8 +13,9 @@ BUUI.MODE = {
 }
 
 -- recipes are picked up by module prefix, not a tag. another packing mod only has to
--- add its module here.
+-- add its module here, or single recipes by full type to extraRecipes.
 BUUI.modules = BUUI.modules or { BundleUp = true }
+BUUI.extraRecipes = BUUI.extraRecipes or {}
 
 BUUI.recipes = nil
 
@@ -66,14 +67,15 @@ local function BUUI_splitInputs(recipe)
     return pivot, others, bulk, names, amounts
 end
 
-local function BUUI_moduleOf(recipe)
+local function BUUI_isListed(recipe)
     local fullType = recipe:getScriptObjectFullType()
-    return fullType and fullType:match("^([^%.]+)%.") or nil
+    if not fullType then return false end
+    local module = fullType:match("^([^%.]+)%.")
+    return (module and BUUI.modules[module]) or BUUI.extraRecipes[fullType]
 end
 
 local function BUUI_indexRecipe(index, recipe)
-    local module = BUUI_moduleOf(recipe)
-    if not (module and BUUI.modules[module] and recipe:getCategory() == "Packing") then return end
+    if not (BUUI_isListed(recipe) and recipe:getCategory() == "Packing") then return end
 
     local pivot, others, bulk, names, amounts = BUUI_splitInputs(recipe)
     if not (pivot and names) then return end
