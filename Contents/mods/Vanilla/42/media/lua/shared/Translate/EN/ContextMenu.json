@@ -3,5 +3,6 @@
     "ContextMenu_BU_RelabelSeedPacket": "Relabel Seed Packet",
     "ContextMenu_BU_RelabelOne": "One",
     "ContextMenu_BU_RelabelHalf": "Half (%1)",
-    "ContextMenu_BU_RelabelAll": "All (%1)"
+    "ContextMenu_BU_RelabelAll": "All (%1)",
+    "ContextMenu_BU_RelabelNeedsPencil": "Requires a pencil."
 }
