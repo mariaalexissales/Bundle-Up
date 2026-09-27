@@ -1,0 +1,7 @@
+name=Bundle Up! - Vanilla Foods Expanded Add-on
+id=BundleUpVFX
+author=Estral
+description=Packs Vanilla Foods Expanded food and drinks into cartons, six-packs, cases and crates - by Estral
+poster=poster.png
+require=BundleUp,VanillaFoodsExpanded
+versionMin=42.18
