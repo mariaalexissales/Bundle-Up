@@ -40,6 +40,10 @@ jobs:
       - name: tiers are up to date
         run: python estral-tools/bundle-up/generate_tiers.py --check
 
+      # reads only vfx_families.json, so no vanilla foods expanded install is needed.
+      - name: vfx packs are up to date
+        run: python estral-tools/bundle-up/generate_vfx.py --check
+
       # page assignment is derived from the weight data, so a new tier batch
       # would otherwise land its sliders on the wrong sandbox page in silence.
       - name: sandbox options are up to date
