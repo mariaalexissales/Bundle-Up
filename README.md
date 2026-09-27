@@ -223,6 +223,8 @@ There are 305 food cartons, each needing a Case and a Crate: an item block, a pa
 
 `sync_weights.py` works out each pack's script `Weight`. The Lua sets weights on the client, but a dedicated server reads the script value, so the two have to agree.
 
+`sync_categories.py` does the same for `DisplayCategory`. Nothing ties a pack's category to what's in it, so a box of foundation makeup ended up under Food. It follows each pack down to the item it's built from and gives the pack that item's category. Vanilla's "Material / Weapon" kind loses the weapon half, the same as vanilla's own Firewood Bundle, because you can't swing a bundle of planks.
+
 `workshop.txt` also takes in edits from the live Workshop page. I often write the page on Steam, and the in-game upload pushes `workshop.txt` over it, so `sync_workshop.py` merges whatever changed on the page since the last upload (`main`'s copy) into `workshop.txt`. Text written here for something not uploaded yet stays. The one part the repo decides is "More From Estral", which comes from a single list of all my mods, shared with the section at the end of this README.
 
 ---
@@ -238,6 +240,7 @@ python ../estral-tools/bundle-up/generate_tiers.py --check
 python ../estral-tools/bundle-up/generate_vfx.py --check
 python ../estral-tools/bundle-up/generate_sandbox.py --check
 python ../estral-tools/bundle-up/sync_weights.py --check
+python ../estral-tools/bundle-up/sync_categories.py --check
 ```
 
 Run the rest of what CI runs:
@@ -249,7 +252,7 @@ python ../estral-tools/bundle-up/check_lua.py
 python ../estral-tools/bundle-up/check_line_endings.py
 ```
 
-All of them are stdlib-only except `check_lua.py`, which needs `luaparser`. `sync_weights.py --refresh` needs a Project Zomboid install to rebuild the vanilla weights it starts from; `--check` doesn't.
+All of them are stdlib-only except `check_lua.py`, which needs `luaparser`. `sync_weights.py --refresh` needs a Project Zomboid install to rebuild the vanilla weights it starts from, and `sync_categories.py --refresh` needs the game, VFE and Guns of Marz installed; `--check` doesn't need any of them.
 
 A topic branch per bug or feature goes into `dev`, and `dev` goes into `main` at release. `main` matches the published Workshop build byte for byte, because Project Zomboid won't let you join a server whose mod files differ.
 
@@ -265,6 +268,7 @@ Every push and PR runs these, and `dev` and `main` only take a merge when they p
 | VFX packs are up to date | The Vanilla Foods Expanded add-on drifted from `vfx_families.json`, or one of its generated files was edited by hand. |
 | Sandbox options are up to date | A new slider with no label, or on the page of a category it doesn't inherit from. |
 | Script weights are up to date | A pack whose script `Weight` disagrees with the Lua. Dedicated servers read the script, so everyone on a server gets the wrong weight. |
+| Pack categories match what they hold | A pack filed under a different category than what's inside it, like a box of foundation makeup under Food. |
 | Every item, recipe and label has a name | Broken JSON, a missing name, or a name left over from a deleted item. None of these error in game; the label just shows its raw key. |
 | Scripts only point at things that exist | A recipe that outputs an undeclared item never shows up, and a typo in `DoubleClickRecipe` makes double click do nothing. |
 | Lua files parse | A syntax error only shows up once the game loads the file, and then the whole file is skipped. |
