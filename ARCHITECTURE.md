@@ -178,9 +178,9 @@ The README has the long version of why weights need `OnInitGlobalModData` and lo
 flowchart LR
     topic["topic branch"] -->|PR| dev
     dev -->|"checks pass"| test["in-game test"]
-    test -->|"[Patch 2.x] PR"| upload["Workshop upload<br/>(by hand)"]
+    test -->|"[Patch x.y] PR"| upload["Workshop upload<br/>(by hand)"]
     upload --> main
-    main -->|"v2.x tag"| release["GitHub release<br/>notes + zip"]
+    main -->|"vx.y tag"| release["GitHub release<br/>notes + zip"]
     ws[("live Workshop build")] -.->|"daily diff"| main
     page[("live Workshop page")] -.->|"workshop.txt check"| dev
 ```

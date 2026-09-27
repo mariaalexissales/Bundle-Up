@@ -280,7 +280,7 @@ The checks are scripts in estral-tools, the same ones I run locally.
 
 **Releases.** Pushing a version tag publishes a [GitHub release](https://github.com/mariaalexissales/Bundle-Up/releases) with the patch notes from that version's release PRs, every PR and commit that went into it, and the Workshop build zipped. Every version back to 1.21 has one. The Workshop upload itself is still done by hand, because it needs a Steam login. Steam has its own [change notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3746632343) for each upload.
 
-**PR titles** have to start with `fix:`, `feat:`, `chore:`, `refactor:`, `docs:` or `[Patch 2.x] -`, so the history says what changed. **Dependabot** keeps the workflow actions current and opens its PRs against `dev`, never `main`.
+**PR titles** have to start with `fix:`, `feat:`, `chore:`, `refactor:`, `docs:` or `[Patch x.y] -`, any version number, so the history says what changed. **Dependabot** keeps the workflow actions current and opens its PRs against `dev`, never `main`.
 
 ---
 
