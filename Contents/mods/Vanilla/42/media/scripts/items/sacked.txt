@@ -8,7 +8,7 @@ module BundleUp {
     }
 
     item Sack_Sack {
-        DisplayCategory = Material,
+        DisplayCategory = Container,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = SackSack,
@@ -86,7 +86,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackScrapSack,
     }
     item BrokenGlassSack {
-        DisplayCategory = Furniture,
+        DisplayCategory = Junk,
         ItemType = base:normal,
         Weight = 10.38,
         Icon = Sack_Laundry,
@@ -135,7 +135,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackScrapSack,
     }
     item SplintersSack {
-        DisplayCategory = SkillBook,
+        DisplayCategory = Junk,
         ItemType = base:normal,
         Weight = 4.15,
         Icon = Sack_Laundry,
@@ -160,7 +160,7 @@ module BundleUp {
     }
 
     item BarleyBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -168,7 +168,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BasilBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -176,7 +176,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BellPepperBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -184,7 +184,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BlackSageBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -192,7 +192,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BroadleafPlantainBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -200,7 +200,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item BroccoliBagSeed2Pouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -208,7 +208,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CabbageBagSeed2Pouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -216,7 +216,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CarrotBagSeed2Pouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -224,7 +224,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CauliflowerBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -232,7 +232,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ChamomileBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -240,7 +240,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ChivesBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -248,7 +248,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CilantroBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -256,7 +256,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ComfreyBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -264,7 +264,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CommonMallowBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -272,7 +272,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CornBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -280,7 +280,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item CucumberBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -288,7 +288,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item FlaxBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -296,7 +296,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item GarlicBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -304,7 +304,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item GreenpeasBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -312,7 +312,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item HabaneroBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -320,7 +320,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item HempBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -328,7 +328,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item HopsBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -336,7 +336,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item JalapenoBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -344,7 +344,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item KaleBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -352,7 +352,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LavenderBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -360,7 +360,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LeekBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -368,7 +368,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LemonGrassBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -376,7 +376,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item LettuceBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -384,7 +384,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item MarigoldBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -392,7 +392,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item MintBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -400,7 +400,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item OnionBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -408,7 +408,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item OreganoBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -416,7 +416,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ParsleyBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -424,7 +424,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item PoppyBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -432,7 +432,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item PotatoBagSeed2Pouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -440,7 +440,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item PumpkinBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -448,7 +448,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RedRadishBagSeed2Pouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -456,7 +456,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RoseBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -464,7 +464,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RosemaryBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -472,7 +472,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item RyeBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -480,7 +480,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SageBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -488,7 +488,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SoybeansBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -496,7 +496,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SpinachBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -504,7 +504,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item StrewberrieBagSeed2Pouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -512,7 +512,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SugarBeetBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -520,7 +520,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SunflowerBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -528,7 +528,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item SweetPotatoBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -536,7 +536,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ThymeBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -544,7 +544,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item TobaccoBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -552,7 +552,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item TomatoBagSeed2Pouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -560,7 +560,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item TurnipBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -568,7 +568,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item WatermelonBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -576,7 +576,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item WheatBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -584,7 +584,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item WildGarlicBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
@@ -592,7 +592,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSeedPouch,
     }
     item ZucchiniBagSeedPouch {
-        DisplayCategory = Farming,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Medium_Food,
