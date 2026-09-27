@@ -50,6 +50,12 @@ description=
 description=[i]GoM swaps vanilla magazines for its own, so a Bundle Up magazine box you loot unpacks into GoM mags. It’s a loot box now.[/i] No packing mags back into one for a reroll though :D
 description=
 description=[hr][/hr]
+description=[h2]Optional: Vanilla Foods Expanded Support[/h2]
+description=[b]Bundle Up! - Vanilla Foods Expanded Add-on[/b] is in this subscription too. Tick it on next to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3577903007]Vanilla Foods Expanded[/url] and 887 of its store foods and drinks climb the same ladder as the base game’s: cartons of 12, six-packs of drinks, then cases and crates. VFE’s own canned boxes, snack boxes and beer packs go straight into cases.
+description=
+description=Only what VFE actually stocks in stores packs - dishes, dough, opened cans and homemade stuff stay out. The cartons and six-packs spawn wherever VFE spawns the loose food, and get their own page in Sandbox Options.
+description=
+description=[hr][/hr]
 description=[h2]On the Way[/h2]
 description=[list]
 description=[*] Engine Parts

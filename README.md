@@ -35,7 +35,7 @@ Put 99 nails in a box and half your base goes missing to server chunk rot. Sheet
 - **Part-used stock merges back.** Half-empty spools, rolls and bottles merge into whole ones, and *Add to* / *Consolidate all* read every container in reach, not just your main inventory.
 - **322 sandbox options** across eight pages: loot spawn rates, then per-category and per-item weight sliders grouped by the category each one inherits from, so servers can tune the whole thing without touching a file.
 
-Two optional add-ons ship in the same subscription: the packing panel, and Guns of Marz support. The base mod has no dependencies and isn't gaining any.
+Three optional add-ons ship in the same subscription: the packing panel, Guns of Marz support and Vanilla Foods Expanded support. The base mod has no dependencies and isn't gaining any.
 
 One load-order note, if you also run Remove Vanilla Anything: both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Both work, so pick the one you want.
 
@@ -48,6 +48,7 @@ One load-order note, if you also run Remove Vanilla Anything: both mods edit the
 | `Contents/mods/Vanilla/42/` | The base mod. ~16,000 lines of zedscript, ~4,300 of Lua, 322 sandbox options. |
 | `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,800 lines of Lua, off by default, needs NeatUI Framework. |
 | `Contents/mods/BundleUpGoM/42/` | Optional Guns of Marz add-on. Packs its 55 magazines, 40mm rounds and weapon repair packs up to crates. Needs Guns of Marz. |
+| `Contents/mods/BundleUpVFX/42/` | Optional Vanilla Foods Expanded add-on. Packs 887 of its store foods and drinks up to crates. Needs Vanilla Foods Expanded. |
 
 The base mod's folder is called `Vanilla` because that's what it was named on the first day, and renaming it now would change every file path the Workshop has. Its id is `BundleUp`. B42 only reads the `42/` folder.
 
@@ -218,6 +219,8 @@ There are 305 food cartons, each needing a Case and a Crate: an item block, a pa
 
 `generate_tiers.py` stops with an error, not a warning, on anything that would produce wrong output, like a carton packed by a recipe with no weight row, one that resolves to a non-food category, two rungs that would get the same name, or a rung that already ships and would no longer fit under the weight cap. It decides tier membership from the *recipes*, not item-name suffixes, because `DogFoodBagCrate` doesn't end in "Carton" and would have been skipped.
 
+`generate_vfx.py` writes the Vanilla Foods Expanded add-on. VFE has close to two thousand items and most of them are dishes, dough, opened cans or homemade, so `--refresh` reads a VFE install once and keeps what VFE's own loot actually spawns in `vfx_families.json`. Everything after that reads only the json, so CI doesn't need VFE installed.
+
 `sync_weights.py` works out each pack's script `Weight`. The Lua sets weights on the client, but a dedicated server reads the script value, so the two have to agree.
 
 `workshop.txt` also takes in edits from the live Workshop page. I often write the page on Steam, and the in-game upload pushes `workshop.txt` over it, so `sync_workshop.py` merges whatever changed on the page since the last upload (`main`'s copy) into `workshop.txt`. Text written here for something not uploaded yet stays. The one part the repo decides is "More From Estral", which comes from a single list of all my mods, shared with the section at the end of this README.
@@ -232,6 +235,7 @@ Check the generated files are current (drop `--check` to regenerate after changi
 
 ```bash
 python ../estral-tools/bundle-up/generate_tiers.py --check
+python ../estral-tools/bundle-up/generate_vfx.py --check
 python ../estral-tools/bundle-up/generate_sandbox.py --check
 python ../estral-tools/bundle-up/sync_weights.py --check
 ```
@@ -258,6 +262,7 @@ Every push and PR runs these, and `dev` and `main` only take a merge when they p
 | Check | What it catches |
 | --- | --- |
 | Tiers are up to date | A pack ladder changed and the generated tiers weren't regenerated, or a generated file was edited by hand and the next regenerate would undo it. |
+| VFX packs are up to date | The Vanilla Foods Expanded add-on drifted from `vfx_families.json`, or one of its generated files was edited by hand. |
 | Sandbox options are up to date | A new slider with no label, or on the page of a category it doesn't inherit from. |
 | Script weights are up to date | A pack whose script `Weight` disagrees with the Lua. Dedicated servers read the script, so everyone on a server gets the wrong weight. |
 | Every item, recipe and label has a name | Broken JSON, a missing name, or a name left over from a deleted item. None of these error in game; the label just shows its raw key. |

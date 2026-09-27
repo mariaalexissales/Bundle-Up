@@ -2,17 +2,20 @@
 
 The [README](README.md) covers what the mod does and the engine surprises behind it. This is the map: which file does what, when each piece runs, the rules the code keeps, and how a change gets from a branch to the Workshop.
 
-## Three mods, one subscription
+## Four mods, one subscription
 
 | Folder | Mod id | What it is |
 | --- | --- | --- |
 | `Contents/mods/Vanilla/42/` | `BundleUp` | Everything that matters in play: items, recipes, weights, loot, spoilage, merging. No dependencies. |
 | `Contents/mods/BundleUpUI/42/` | `BundleUpUI` | The optional Packing panel. Requires `BundleUp` and NeatUI Framework. |
 | `Contents/mods/BundleUpGoM/42/` | `BundleUpGoM` | Optional Guns of Marz support: its magazines, 40mm rounds and weapon repair packs, up to crates. Requires `BundleUp` and Guns of Marz. |
+| `Contents/mods/BundleUpVFX/42/` | `BundleUpVFX` | Optional Vanilla Foods Expanded support: 887 of its store foods and drinks, up to crates. Requires `BundleUp` and Vanilla Foods Expanded. |
 
 The UI add-on reads the base mod (its recipes, `BU.Merge`, the transfer helpers). The base mod never calls the UI, so it plays the same with the add-on off.
 
 The Guns of Marz add-on plugs into the base mod through three hooks: its pack rows go into `BU.Bundles`, its loot goes into the base mod's plan through `BU.addLoot`, and it sets `BU.vanillaMagazinesOff` so nobody can pack mags into a vanilla magazine box while GoM is swapping those for its own. If the panel is on too, it lists GoM's own ammo recipes in `BUUI.extraRecipes`. Its items and recipes are in module `BundleUp`, so the panel and the checks treat them like the base mod's.
+
+The Vanilla Foods Expanded add-on uses the same hooks minus the magazine switch: its pack rows go into `BU.Bundles`, its loot through `BU.addLoot`, and VFE's small can box recipes into `BUUI.extraRecipes`. All of it except `mod.info`, the sandbox page and those two small Lua files is written by `generate_vfx.py`.
 
 Build 42 only reads a `common/` folder or a version folder like `42/`. Nothing at the mod root is loaded, so there isn't anything there.
 
@@ -30,6 +33,9 @@ flowchart LR
     subgraph gom["BundleUpGoM (BundleUpGoM/42)"]
         gompacks["magazine, 40mm and repair pack ladders<br/>loot, sandbox page"]
     end
+    subgraph vfx["BundleUpVFX (BundleUpVFX/42)"]
+        vfxpacks["carton, six-pack, case and crate ladders<br/>loot, sandbox page"]
+    end
     engine(("Project Zomboid<br/>engine"))
     scripts --> engine
     shared --> engine
@@ -40,6 +46,9 @@ flowchart LR
     gompacks -->|"BU.Bundles, BU.addLoot, BU.vanillaMagazinesOff"| base
     gompacks -.->|"BUUI.extraRecipes"| ui
     gompacks --> engine
+    vfxpacks -->|"BU.Bundles, BU.addLoot"| base
+    vfxpacks -.->|"BUUI.extraRecipes"| ui
+    vfxpacks --> engine
 ```
 
 ## Data and behaviour
@@ -62,6 +71,7 @@ Most files are written by hand. These come out of the generators in estral-tools
 
 - `items/tiered.txt`, `recipes/recipes_tiered.txt` and `BU_WeightData_Tiers.lua`, whole, from the pack ladders
 - the sorted block at the end of `ItemName.json` and `Recipes.json`
+- everything in the Vanilla Foods Expanded add-on's scripts, its `BUVFX_WeightData.lua` and its `ItemName.json` / `Recipes.json`, from `vfx_families.json`
 - the block order and pages of `sandbox-options.txt` (labels and tooltips stay hand-written)
 - every pack's `Weight =` line, so the script agrees with the Lua
 - `workshop.txt`, which takes in edits made on the live Workshop page since the last upload, and whose "More From Estral" list comes from one list of all my mods
@@ -110,6 +120,18 @@ Guns of Marz add-on, `Contents/mods/BundleUpGoM/42/media/`:
 | `lua/shared/BUGoM_Packs.lua` | Which magazine goes on which ladder, the `BU.Bundles` rows, and the vanilla magazine switch |
 | `lua/client/BUGoM_UI.lua` | Lists GoM's own ammo recipes for the panel |
 | `lua/server/BUGoM_Distributions.lua` | The add-on's loot, behind GoM's high-cap and explosives settings |
+
+Vanilla Foods Expanded add-on, `Contents/mods/BundleUpVFX/42/media/`:
+
+| File | Job |
+| --- | --- |
+| `scripts/items/vfx_packs.txt` | The lowest pack of each family: a carton of 12, a six-pack, or a carton of 10 full drainables. Generated |
+| `scripts/items/vfx_tiers.txt` | The Case and Crate above each of those, and above VFE's own boxes and beer packs. Generated |
+| `scripts/recipes/recipes_vfx.txt` | Pack and unpack for each rung. Generated |
+| `lua/shared/BUVFX_WeightData.lua` | The `BU.Bundles` rows, the food weight slider for every VFE base, and the loot lists. Generated |
+| `sandbox-options.txt` | The Vanilla Foods Expanded page: a food and a drink spawn slider in the `BundleUp` namespace |
+| `lua/client/BUVFX_UI.lua` | Lists VFE's small can box recipes for the panel |
+| `lua/server/BUVFX_Distributions.lua` | Hands the generated loot lists to `BU.addLoot` |
 
 ## When things run
 
@@ -165,7 +187,7 @@ flowchart LR
 
 Every PR runs three required jobs:
 
-- **generated files are current:** the three generators with `--check`
+- **generated files are current:** the four generators with `--check`
 - **mod files are valid:** translations, script references, Lua parsing, line endings
 - **lua does what it did before:** the behaviour check under Testing
 
