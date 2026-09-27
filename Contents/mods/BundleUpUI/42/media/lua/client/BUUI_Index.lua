@@ -17,6 +17,10 @@ BUUI.MODE = {
 BUUI.modules = BUUI.modules or { BundleUp = true }
 BUUI.extraRecipes = BUUI.extraRecipes or {}
 
+-- vanilla packs cans into the boxes that food cases take.
+BUUI.extraRecipes["Base.PackCannedFood"] = true
+BUUI.extraRecipes["Base.OpenBoxOfCannedFood"] = true
+
 BUUI.recipes = nil
 
 local SURFACE_RADIUS = 2
