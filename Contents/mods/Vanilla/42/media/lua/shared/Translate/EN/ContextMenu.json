@@ -1,3 +1,8 @@
 {
-    "ContextMenu_BU_ReapplyWeights": "Bundle Up: Re-apply bundle weights"
+    "ContextMenu_BU_ReapplyWeights": "Bundle Up: Re-apply bundle weights",
+    "ContextMenu_BU_RelabelSeedPacket": "Relabel Seed Packet",
+    "ContextMenu_BU_RelabelOne": "One",
+    "ContextMenu_BU_RelabelHalf": "Half (%1)",
+    "ContextMenu_BU_RelabelAll": "All (%1)",
+    "ContextMenu_BU_RelabelNeedsWriting": "Requires a pen or pencil."
 }
