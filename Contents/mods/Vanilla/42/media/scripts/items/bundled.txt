@@ -48,7 +48,7 @@ module BundleUp {
     }
 
     item SodaPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = GingerSP,
@@ -58,7 +58,7 @@ module BundleUp {
     }
 
     item DietSodaPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = GingerSP,
@@ -68,7 +68,7 @@ module BundleUp {
     }
 
     item GingerAleSP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = GingerSP,
@@ -78,7 +78,7 @@ module BundleUp {
     }
 
     item BlueberrySP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = BlueberrySP,
@@ -88,7 +88,7 @@ module BundleUp {
     }
 
     item BubblegumSP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = BubblegumSP,
@@ -98,7 +98,7 @@ module BundleUp {
     }
 
     item GrapeSP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = GrapeSP,
@@ -108,7 +108,7 @@ module BundleUp {
     }
 
     item LimeSP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = LimeSP,
@@ -118,7 +118,7 @@ module BundleUp {
     }
 
     item OrangeSP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = OrangeSP,
@@ -128,7 +128,7 @@ module BundleUp {
     }
 
     item PineappleSP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = PineappleSP,
@@ -138,7 +138,7 @@ module BundleUp {
     }
 
     item StrawberrySP {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = StrawberrySP,
@@ -148,7 +148,7 @@ module BundleUp {
     }
 
     item VarietyPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = VarietyPack,
@@ -1698,7 +1698,7 @@ module BundleUp {
 
 
     item WhiskeyPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 8.47,
         Icon = Parcel_Large_Liquor,
@@ -1707,7 +1707,7 @@ module BundleUp {
     }
 
     item VodkaPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1716,7 +1716,7 @@ module BundleUp {
     }
 
     item RumPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1725,7 +1725,7 @@ module BundleUp {
     }
 
     item GinPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1734,7 +1734,7 @@ module BundleUp {
     }
 
     item TequilaPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1743,7 +1743,7 @@ module BundleUp {
     }
 
     item BrandyPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.47,
         Icon = Parcel_Large_Liquor,
@@ -1752,7 +1752,7 @@ module BundleUp {
     }
 
     item ScotchPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1761,7 +1761,7 @@ module BundleUp {
     }
 
     item SherryPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1770,7 +1770,7 @@ module BundleUp {
     }
 
     item PortPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1779,7 +1779,7 @@ module BundleUp {
     }
 
     item VermouthPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1788,7 +1788,7 @@ module BundleUp {
     }
 
     item CiderPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1797,7 +1797,7 @@ module BundleUp {
     }
 
     item CuracaoPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1806,7 +1806,7 @@ module BundleUp {
     }
 
     item GrenadinePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1815,7 +1815,7 @@ module BundleUp {
     }
 
     item CoffeeLiquerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1824,7 +1824,7 @@ module BundleUp {
     }
 
     item WineWhitePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -1833,7 +1833,7 @@ module BundleUp {
     }
 
     item WineRedPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -1842,7 +1842,7 @@ module BundleUp {
     }
 
     item WineAgedPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1851,7 +1851,7 @@ module BundleUp {
     }
 
     item WineBoxPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -1860,7 +1860,7 @@ module BundleUp {
     }
 
     item WineScrewtopPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1869,7 +1869,7 @@ module BundleUp {
     }
 
     item ChampagnePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 9.96,
         Icon = Parcel_Large_Liquor,
@@ -1878,7 +1878,7 @@ module BundleUp {
     }
 
     item BeerImportedPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = SixPack_Bottles,
@@ -1888,7 +1888,7 @@ module BundleUp {
     }
 
     item JuiceBoxGrapePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = JuiceBox,
@@ -1897,7 +1897,7 @@ module BundleUp {
     }
 
     item JuiceBoxApplePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = JuiceBox_Apple,
@@ -1906,7 +1906,7 @@ module BundleUp {
     }
 
     item JuiceBoxFruitpunchPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = JuiceBox_FruitPunch,
@@ -1915,7 +1915,7 @@ module BundleUp {
     }
 
     item JuiceBoxOrangePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.49,
         Icon = JuiceBox_Orange,
@@ -1924,7 +1924,7 @@ module BundleUp {
     }
 
     item JuiceCranberryPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Small_Fruit,
@@ -1933,7 +1933,7 @@ module BundleUp {
     }
 
     item JuiceFruitpunchPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Small_Fruit,
@@ -1942,7 +1942,7 @@ module BundleUp {
     }
 
     item JuiceGrapePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Small_Fruit,
@@ -1951,7 +1951,7 @@ module BundleUp {
     }
 
     item JuiceLemonPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Small_Fruit,
@@ -1960,7 +1960,7 @@ module BundleUp {
     }
 
     item JuiceOrangePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Small_Fruit,
@@ -1969,7 +1969,7 @@ module BundleUp {
     }
 
     item JuiceTomatoPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Small_Fruit,
@@ -1978,7 +1978,7 @@ module BundleUp {
     }
 
     item MilkPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Milk,
@@ -1987,7 +1987,7 @@ module BundleUp {
     }
 
     item MilkBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = MilkBottle,
@@ -1996,7 +1996,7 @@ module BundleUp {
     }
 
     item MilkSmallPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.24,
         Icon = Milk_Personalsized,
@@ -2005,7 +2005,7 @@ module BundleUp {
     }
 
     item MilkChocSmallPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.24,
         Icon = MilkChocolate_Personalsized,
