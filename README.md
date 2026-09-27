@@ -220,6 +220,8 @@ There are 166 food cartons, each needing an item block, a pack and an unpack rec
 
 `sync_weights.py` works out each pack's script `Weight`. The Lua sets weights on the client, but a dedicated server reads the script value, so the two have to agree.
 
+`workshop.txt` also takes in edits from the live Workshop page. I often write the page on Steam, and the in-game upload pushes `workshop.txt` over it, so `sync_workshop.py` merges whatever changed on the page since the last upload (`main`'s copy) into `workshop.txt`. Text written here for something not uploaded yet stays. The one part the repo decides is "More From Estral", which comes from a single list of all my mods, shared with the section at the end of this README.
+
 ---
 
 ## Working on it
@@ -269,6 +271,8 @@ The checks are scripts in estral-tools, the same ones I run locally.
 
 **Workshop parity.** Every morning CI downloads the live Workshop build with steamcmd and diffs it against `main`. Any file that differs turns it red.
 
+**Workshop page.** Every PR, and a daily run against `dev`, fails when the live Workshop page has an edit `workshop.txt` doesn't. Only `main` requires it, so editing the page doesn't block topic PRs, but the release PR can't merge until the page's edits are in the file the upload will push.
+
 **Releases.** Pushing a version tag publishes a [GitHub release](https://github.com/mariaalexissales/Bundle-Up/releases) with the patch notes from that version's release PRs, every PR and commit that went into it, and the Workshop build zipped. Every version back to 1.21 has one. The Workshop upload itself is still done by hand, because it needs a Steam login. Steam has its own [change notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3746632343) for each upload.
 
 **PR titles** have to start with `fix:`, `feat:`, `chore:`, `refactor:`, `docs:` or `[Patch 2.x] -`, so the history says what changed. **Dependabot** keeps the workflow actions current and opens its PRs against `dev`, never `main`.
@@ -288,5 +292,8 @@ Found a bug or want something packed? Use the [bug report or coverage form](http
 
 ## More from Estral
 
-- **[Pinoy Pantry](https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305)**: sarap ng Pinas in Knox Country
-- **[Quest System Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412)**: add quests to your multiplayer servers
+- **[Pinoy Pantry](https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305)**: sarap ng Pinas in Knox Country ([source](https://github.com/mariaalexissales/Pinoy-Pantry))
+- **[Quest System Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412)**: add quests to your multiplayer servers ([source](https://github.com/mariaalexissales/Quest-System-Framework))
+- **[Player Leaderboard System](https://steamcommunity.com/sharedfiles/filedetails/?id=3795596462)**: have your players fight for first place, or keep track of your best lives in solo ([source](https://github.com/mariaalexissales/Leaderboard-Framework))
+- **[Remove Vanilla Anything](https://steamcommunity.com/sharedfiles/filedetails/?id=3799346338)**: for those who are tired of seeing vanilla items in their heavily modded servers
+- **[Dead Court Deck](https://steamcommunity.com/sharedfiles/filedetails/?id=3800241753)**: for your ~~scalper~~ collectable needs! ([source](https://github.com/mariaalexissales/Dead-Court-Deck))
