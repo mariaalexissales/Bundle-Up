@@ -1,0 +1,19 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+VERSION = 1,
+
+option BundleUp.SpawnVFXFood
+{
+    type = enum, numValues = 7, default = 1,
+    page = BundleUpPage_VanillaFoodsExpanded, translation = BundleUp_SpawnVFXFood,
+    valueTranslation = BundleUp_SpawnLevelInherit,
+}
+
+option BundleUp.SpawnVFXDrinks
+{
+    type = enum, numValues = 7, default = 1,
+    page = BundleUpPage_VanillaFoodsExpanded, translation = BundleUp_SpawnVFXDrinks,
+    valueTranslation = BundleUp_SpawnLevelInherit,
+}
