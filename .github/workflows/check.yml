@@ -54,6 +54,9 @@ jobs:
       - name: script weights are up to date
         run: python estral-tools/bundle-up/sync_weights.py --check
 
+      - name: pack categories match what they hold
+        run: python estral-tools/bundle-up/sync_categories.py --check
+
   mod-files:
     name: mod files are valid
     runs-on: ubuntu-latest
