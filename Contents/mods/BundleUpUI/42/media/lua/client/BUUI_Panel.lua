@@ -20,6 +20,14 @@ local BAR_HEIGHT = 22
 local FOOTER_HEIGHT = 30
 local REFRESH_TICKS = 90
 local STALE_REFRESHES = 10
+local ROW_GAP = 4
+local TAB_GAP = 4
+local TAB_TITLE_PAD = 28
+local FOOTER_INSET = 4
+local LABEL_PAD = 24
+local SOURCES_SHOWN = 3
+local WINDOW_WIDTH, WINDOW_HEIGHT = 720, 560
+local SCREEN_MARGIN = 40
 
 local COL_BAR = { r = 0, g = 0, b = 0, a = 0.35 }
 local COL_FRAME = { r = 1, g = 1, b = 1, a = 0.09 }
@@ -58,9 +66,8 @@ function BUUI_Panel:new(x, y, width, height, player)
     return o
 end
 
--- one place for the vertical bands so createChildren and onResize cannot drift. a
--- resizable ISCollapsableWindow paints a status bar over its own bottom edge and lays
--- a resize widget across it that swallows clicks, so the footer sits above that.
+-- a resizable ISCollapsableWindow draws a status bar and a click-swallowing resize widget
+-- over its bottom edge, so the footer sits above both.
 function BUUI_Panel:bands()
     local tabY = self:titleBarHeight() + PAD
     local barY = tabY + TAB_HEIGHT + GAP
@@ -69,11 +76,16 @@ function BUUI_Panel:bands()
     return tabY, barY, listY, footerY
 end
 
--- a third tab is one too many for "and/or", which would fold merge into the unbundle half.
 local BUUI_LABELS = {
-    [BUUI.MODE.BUNDLE]   = { items = "IGUI_BUUI_BundleItems",   all = "IGUI_BUUI_BundleAll",   empty = "IGUI_BUUI_Empty" },
-    [BUUI.MODE.UNBUNDLE] = { items = "IGUI_BUUI_UnbundleItems", all = "IGUI_BUUI_UnbundleAll", empty = "IGUI_BUUI_EmptyUnbundle" },
-    [BUUI.MODE.MERGE]    = { items = "IGUI_BUUI_MergeItems",    all = "IGUI_BUUI_MergeAll",    empty = "IGUI_BUUI_EmptyMerge" },
+    [BUUI.MODE.BUNDLE] = {
+        items = "IGUI_BUUI_BundleItems", all = "IGUI_BUUI_BundleAll", empty = "IGUI_BUUI_Empty",
+    },
+    [BUUI.MODE.UNBUNDLE] = {
+        items = "IGUI_BUUI_UnbundleItems", all = "IGUI_BUUI_UnbundleAll", empty = "IGUI_BUUI_EmptyUnbundle",
+    },
+    [BUUI.MODE.MERGE] = {
+        items = "IGUI_BUUI_MergeItems", all = "IGUI_BUUI_MergeAll", empty = "IGUI_BUUI_EmptyMerge",
+    },
 }
 
 -- both footer buttons swap label with the tab and one of them turns into Stop, so each
@@ -83,7 +95,14 @@ local function BUUI_labelWidth(button, ...)
     for _, key in ipairs({ ... }) do
         widest = math.max(widest, getTextManager():MeasureStringX(button.font, getText(key)))
     end
-    return 24 + widest
+    return LABEL_PAD + widest
+end
+
+local function BUUI_footerButton(panel, y, right, onClick, label, ...)
+    local button = BUUI_Button:new(0, y, 10, TAB_HEIGHT, getText(label), panel, onClick)
+    button:setWidth(BUUI_labelWidth(button, label, ...))
+    button:setX(right - button:getWidth())
+    return button
 end
 
 -- anchors are applied by instantiate(), so they have to be assigned before it runs.
@@ -104,29 +123,30 @@ function BUUI_Panel:createChildren()
     local RIGHT = { anchorRight = true, anchorLeft = false }
     local FOOTER = { anchorTop = false, anchorBottom = true, anchorRight = true, anchorLeft = false }
 
-    self.tabBundle = BUUI_Button:new(PAD, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Bundle"), self, BUUI_Panel.onTab)
-    self.tabBundle:sizeToTitle(28)
-    self.tabBundle.mode = BUUI.MODE.BUNDLE
-    self:attach(self.tabBundle)
+    local tabX = PAD
+    for _, tab in ipairs({
+        { field = "tabBundle", label = "IGUI_BUUI_Bundle", mode = BUUI.MODE.BUNDLE },
+        { field = "tabUnbundle", label = "IGUI_BUUI_Unbundle", mode = BUUI.MODE.UNBUNDLE },
+        { field = "tabMerge", label = "IGUI_BUUI_Merge", mode = BUUI.MODE.MERGE },
+    }) do
+        local button = BUUI_Button:new(tabX, tabY, 10, TAB_HEIGHT, getText(tab.label), self, BUUI_Panel.onTab)
+        self[tab.field] = button
+        button:sizeToTitle(TAB_TITLE_PAD)
+        button.mode = tab.mode
+        self:attach(button)
+        tabX = button:getRight() + TAB_GAP
+    end
 
-    self.tabUnbundle = BUUI_Button:new(self.tabBundle:getRight() + 4, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Unbundle"), self, BUUI_Panel.onTab)
-    self.tabUnbundle:sizeToTitle(28)
-    self.tabUnbundle.mode = BUUI.MODE.UNBUNDLE
-    self:attach(self.tabUnbundle)
-
-    self.tabMerge = BUUI_Button:new(self.tabUnbundle:getRight() + 4, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_Merge"), self, BUUI_Panel.onTab)
-    self.tabMerge:sizeToTitle(28)
-    self.tabMerge.mode = BUUI.MODE.MERGE
-    self:attach(self.tabMerge)
-
-    self.refreshButton = BUUI_Button:new(0, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_RefreshLabel"), self, BUUI_Panel.onRefresh)
-    self.refreshButton:sizeToTitle(20)
+    self.refreshButton = BUUI_Button:new(0, tabY, 10, TAB_HEIGHT, getText("IGUI_BUUI_RefreshLabel"),
+        self, BUUI_Panel.onRefresh)
+    self.refreshButton:sizeToTitle()
     self.refreshButton:setX(self.width - self.refreshButton:getWidth() - PAD)
     self:attach(self.refreshButton, RIGHT)
 
     -- the scroll view paints nothing of its own, so it sits a pixel inside the frame
     -- the panel draws for it.
-    self.list = NIVirtualScrollView:new(PAD + 1, listY + 1, self.width - PAD * 2 - 2, footerY - listY - GAP - 2)
+    self.list = NIVirtualScrollView:new(PAD + 1, listY + 1,
+        self.width - PAD * 2 - 2, footerY - listY - GAP - 2)
     self.list:initialise()
     self.list:instantiate()
     self.list:setOnCreateItem(function()
@@ -138,19 +158,17 @@ function BUUI_Panel:createChildren()
         widget:setWidth(self.list:getWidth())
         widget:setRow(data)
     end)
-    self.list:setConfig(BUUI_Row.HEIGHT, 4)
+    self.list:setConfig(BUUI_Row.HEIGHT, ROW_GAP)
     self:addChild(self.list)
 
-    self.bundleAll = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleAll"), self, BUUI_Panel.onBundleAll)
-    self.bundleAll:setWidth(BUUI_labelWidth(self.bundleAll,
-        "IGUI_BUUI_BundleAll", "IGUI_BUUI_UnbundleAll", "IGUI_BUUI_MergeAll", "IGUI_BUUI_Stop"))
-    self.bundleAll:setX(self.width - self.bundleAll:getWidth() - PAD)
+    local footerButtonY = footerY + FOOTER_INSET
+    self.bundleAll = BUUI_footerButton(self, footerButtonY, self.width - PAD, BUUI_Panel.onBundleAll,
+        "IGUI_BUUI_BundleAll", "IGUI_BUUI_UnbundleAll", "IGUI_BUUI_MergeAll", "IGUI_BUUI_Stop")
     self:attach(self.bundleAll, FOOTER)
 
-    self.bundleItems = BUUI_Button:new(0, footerY + 4, 10, TAB_HEIGHT, getText("IGUI_BUUI_BundleItems"), self, BUUI_Panel.onBundleItems)
-    self.bundleItems:setWidth(BUUI_labelWidth(self.bundleItems,
-        "IGUI_BUUI_BundleItems", "IGUI_BUUI_UnbundleItems", "IGUI_BUUI_MergeItems", "IGUI_BUUI_Stop"))
-    self.bundleItems:setX(self.bundleAll:getX() - self.bundleItems:getWidth() - GAP)
+    local itemsRight = self.bundleAll:getX() - GAP
+    self.bundleItems = BUUI_footerButton(self, footerButtonY, itemsRight, BUUI_Panel.onBundleItems,
+        "IGUI_BUUI_BundleItems", "IGUI_BUUI_UnbundleItems", "IGUI_BUUI_MergeItems", "IGUI_BUUI_Stop")
     self:attach(self.bundleItems, FOOTER)
 
     self:refresh()
@@ -253,9 +271,7 @@ function BUUI_Panel:updateFooter()
     self.bundleAll.enable = (self.ready or 0) > 0
 end
 
--- follows the inventory UI's convention so the labels read the same and come out
--- translated: a bag by the item holding it, everything else by its container type.
--- the player's own inventory has neither and would print its raw type of "none".
+-- the player's own inventory has no holder and its raw type reads "none".
 local function BUUI_containerName(container)
     local holder = container:getContainingItem()
     if holder then return holder:getName() end
@@ -282,11 +298,11 @@ function BUUI_Panel:describeSources(containers)
     if #names == 0 then return getText("IGUI_BUUI_NoSources") end
 
     local shown = {}
-    for i = 1, math.min(3, #names) do shown[i] = names[i] end
+    for i = 1, math.min(SOURCES_SHOWN, #names) do shown[i] = names[i] end
 
     local text = getText("IGUI_BUUI_Sources") .. " " .. table.concat(shown, ", ")
-    if #names > 3 then
-        text = text .. " (+" .. tostring(#names - 3) .. ")"
+    if #names > SOURCES_SHOWN then
+        text = text .. " (+" .. tostring(#names - SOURCES_SHOWN) .. ")"
     end
 
     return text
@@ -303,8 +319,7 @@ function BUUI_Panel:onBatchFinished()
     self:refresh()
 end
 
--- runs the rows as they stand. Bundle All re-reads the containers between recipes;
--- this deliberately does not.
+-- no rescan between rows on purpose. Bundle All is the one that rescans.
 function BUUI_Panel:onBundleItems()
     if BUUI.Queue.isRunning() then
         self:stopBatch()
@@ -363,7 +378,8 @@ function BUUI_Panel:render()
 
     local _, barY, listY, footerY = self:bands()
 
-    self:drawText(self.sourceText or "", PAD + GAP, barY + 4, COL_TEXT.r, COL_TEXT.g, COL_TEXT.b, 1, UIFont.Small)
+    self:drawText(self.sourceText or "", PAD + GAP, barY + 4,
+        COL_TEXT.r, COL_TEXT.g, COL_TEXT.b, 1, UIFont.Small)
 
     if #self.rows == 0 then
         local empty = getText(BUUI_LABELS[self.mode].empty)
@@ -381,9 +397,8 @@ end
 function BUUI_Panel:update()
     ISCollapsableWindow.update(self)
 
-    -- containers open and empty while the panel is up, but resolving a row probes the
-    -- recipe and is far too costly to do every frame. while a batch runs, the queue's
-    -- own progress callback covers this.
+    -- probing rows every frame is far too slow. while a batch runs, the queue's progress
+    -- callback does the refreshing.
     if BUUI.Queue.isRunning() then return end
 
     self.ticks = self.ticks + 1
@@ -420,7 +435,7 @@ function BUUI_Panel:onResize()
     -- drag, so only reconfigure when the height actually moved.
     if self.listHeight ~= listHeight then
         self.listHeight = listHeight
-        self.list:setConfig(BUUI_Row.HEIGHT, 4)
+        self.list:setConfig(BUUI_Row.HEIGHT, ROW_GAP)
     end
 
     self.list:setDataSource(self.rows, true)
@@ -445,8 +460,8 @@ end
 function BUUI.openPanel(player)
     local playerNum = player:getPlayerNum()
 
-    if BUUI.isWindowOpen(playerNum) then
-        local existing = BUUI.getWindow(playerNum)
+    local existing = BUUI.getWindow(playerNum)
+    if existing then
         existing:setVisible(true)
         existing:bringToTop()
         return
@@ -458,9 +473,9 @@ function BUUI.openPanel(player)
         BUUI.players[playerNum] = data
     end
 
-    local width, height = 720, 560
+    local width, height = WINDOW_WIDTH, WINDOW_HEIGHT
     local x = data.x or 0
-    local y = data.y or (getCore():getScreenHeight() - height - 40)
+    local y = data.y or (getCore():getScreenHeight() - height - SCREEN_MARGIN)
 
     local window = BUUI_Panel:new(x, y, width, height, player)
     window:initialise()
@@ -471,8 +486,6 @@ function BUUI.openPanel(player)
 end
 
 Events.OnPlayerDeath.Add(function(player)
-    local playerNum = player:getPlayerNum()
-    if BUUI.isWindowOpen(playerNum) then
-        BUUI.getWindow(playerNum):close()
-    end
+    local window = BUUI.getWindow(player:getPlayerNum())
+    if window then window:close() end
 end)

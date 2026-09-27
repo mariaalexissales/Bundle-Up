@@ -27,8 +27,7 @@ end
 
 local BU_order, BU_orderSource, BU_orderCount = nil, nil, 0
 
--- A nested pack reads its base's weight, so the base has to be final
--- first. Depth is measured once up front rather than per comparison.
+-- a nested pack reads its base's weight, so bases have to be patched first.
 local function BU_sortedBundles()
     local count = 0
     for _ in pairs(BU.Bundles) do count = count + 1 end
@@ -75,10 +74,8 @@ function BU.applyWeights()
     end
 end
 
--- an item copies the script weight when it is built, so one restored from a
--- save predates the patch below and has to be restamped. deliberately no
--- setCustomWeight: leaving it unset keeps the weight script-derived, so the
--- next sandbox change still reaches bundles already sitting in a save.
+-- an item copies the script weight when built, so saved ones get restamped. no
+-- setCustomWeight on purpose: the next sandbox change has to reach them too.
 function BU.refreshWeight(item)
     if not item or not BU.Bundles[item:getFullType()] then
         return
@@ -94,11 +91,8 @@ function BU.refreshWeight(item)
     item:setWeight(script:getActualWeight())
 end
 
--- OnInitGlobalModData is the first event to fire after SandboxOptions.load(),
--- and it lands before the cell deserializes any inventory, so a saved bundle is
--- built from an already-patched script item. OnGameStart is far too late for
--- that; it stays on as a harmless re-run, as does OnServerStarted. Guarded so a
--- build missing the event degrades instead of taking the whole file down.
+-- OnInitGlobalModData is the only event after the sandbox loads and before any inventory
+-- does. the other two are re-runs. guarded so a build without it keeps the rest.
 if Events.OnInitGlobalModData then
     Events.OnInitGlobalModData.Add(BU.applyWeights)
 end

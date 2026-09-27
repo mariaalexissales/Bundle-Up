@@ -1,0 +1,7 @@
+{
+  "Sandbox_BundleUpPage_VanillaFoodsExpanded": "Bundle Up: Vanilla Foods Expanded",
+  "Sandbox_BundleUp_SpawnVFXFood": "Vanilla Foods Expanded Cartons spawn rate",
+  "Sandbox_BundleUp_SpawnVFXFood_tooltip": "Cartons of Vanilla Foods Expanded food, in the stores and storage crates that already stock it. Inherit default follows the Bundle Up master setting.",
+  "Sandbox_BundleUp_SpawnVFXDrinks": "Vanilla Foods Expanded Six-Packs spawn rate",
+  "Sandbox_BundleUp_SpawnVFXDrinks_tooltip": "Six-packs of Vanilla Foods Expanded drinks, in the stores, bars and storage crates that already stock them. Inherit default follows the Bundle Up master setting."
+}

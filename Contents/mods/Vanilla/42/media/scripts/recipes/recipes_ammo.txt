@@ -11,7 +11,7 @@ module BundleUp {
         timedAction = PackingBox,
         time = 5,
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
-        onTest = BUInv.testPackEmptyMagazine,
+        onTest = BUInv.testPackVanillaMagazine,
         category = Packing,
         inputs {
             item 5 [Base.44Clip;Base.JS14_Clip;Base.556Clip;Base.45Clip;Base.M14Clip;Base.9mmClip] flags[IsExclusive;ItemCount] mappers[ammoClipMap],

@@ -1,0 +1,54 @@
+name: Bug report
+description: Something packed, unpacked, weighed or spawned wrong.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, and what the game did.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Bundle Up version
+      description: The latest change note on the Workshop page when you last updated, like 2.8.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where you played
+      options:
+        - Singleplayer
+        - Hosted from the game
+        - Dedicated server
+    validations:
+      required: true
+  - type: dropdown
+    id: ui
+    attributes:
+      label: UI add-on on?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: At least anything that touches items, recipes, loot or crafting.
+  - type: textarea
+    id: console
+    attributes:
+      label: console.txt
+      description: The lines around the error, from Zomboid/console.txt. Pasted as is.
+      render: shell

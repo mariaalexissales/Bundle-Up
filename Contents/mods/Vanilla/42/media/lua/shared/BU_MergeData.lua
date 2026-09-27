@@ -5,8 +5,6 @@
 BU = BU or {}
 BU.Merge = BU.Merge or {}
 
--- powered or refillable kit that happens to be a drainable. pouring one flashlight
--- into another reads as nonsense, and the gas bottles have their own refill flow.
 BU.Merge.Deny = {
     ["Base.BlowTorch"]       = true,
     ["Base.Bullhorn"]        = true,
@@ -24,10 +22,8 @@ BU.Merge.DenyCategory = {
     VehicleMaintenance = true,
 }
 
--- getMaxUses is floor(1 / useDelta) while getCurrentUsesFloat is uses * useDelta, so
--- anything whose uses do not divide 1.0 evenly reports short of full forever - every
--- lantern, torch and candle. topping one off is a no-op that still costs 90 ticks.
--- java does that multiply in float and lua in double, so the compare needs the slack.
+-- getMaxUses is floor(1 / useDelta), so a lantern or candle whose uses don't divide 1.0
+-- never reads full. java multiplies in float and lua in double, hence the slack.
 local BU_FULL_SLACK = 0.000001
 
 function BU.Merge.maxUses(item)
@@ -62,7 +58,7 @@ function BU.Merge.canMerge(item)
     return BU.Merge.canFill(item)
 end
 
-local function BU_eachMergeable(containers, fn)
+local function BU_eachMergeable(containers, fn, fullType)
     if not containers then return end
 
     for i = 0, containers:size() - 1 do
@@ -71,7 +67,7 @@ local function BU_eachMergeable(containers, fn)
         if items then
             for n = 0, items:size() - 1 do
                 local item = items:get(n)
-                if BU.Merge.canMerge(item) then
+                if item and (not fullType or item:getFullType() == fullType) and BU.Merge.canMerge(item) then
                     fn(item)
                 end
             end
@@ -81,20 +77,7 @@ end
 
 function BU.Merge.gather(containers, fullType)
     local found = {}
-    if not containers then return found end
-
-    for i = 0, containers:size() - 1 do
-        local container = containers:get(i)
-        local items = container and container:getItems()
-        if items then
-            for n = 0, items:size() - 1 do
-                local item = items:get(n)
-                if item and item:getFullType() == fullType and BU.Merge.canMerge(item) then
-                    found[#found + 1] = item
-                end
-            end
-        end
-    end
+    BU_eachMergeable(containers, function(item) found[#found + 1] = item end, fullType)
     return found
 end
 
@@ -112,10 +95,8 @@ function BU.Merge.collect(containers)
     return byType
 end
 
--- pours the emptiest into the fullest and walks inward, so every step either finishes a
--- spool or empties one. the pairs are ordered but must be built into actions one at a
--- time: ISConsolidateDrainable reads both levels in its constructor, so a whole chain
--- queued up front would lerp from stale numbers and overwrite the earlier merges.
+-- build each step's action only after the last one ran. ISConsolidateDrainable reads both
+-- levels in its constructor, so a chain queued up front overwrites the earlier pours.
 function BU.Merge.plan(items)
     local pool, total, maxUses = {}, 0, 0
 
@@ -165,9 +146,7 @@ function BU.Merge.plan(items)
         steps   = steps,
         full    = full,
         partial = partial,
-        removed = #pool - full - partial,
         count   = #pool,
         total   = total,
-        maxUses = maxUses,
     }
 end

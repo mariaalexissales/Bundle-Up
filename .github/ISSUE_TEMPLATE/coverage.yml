@@ -1,0 +1,16 @@
+name: Pack something new
+description: An item you hoard that Bundle Up doesn't pack yet.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: items
+    attributes:
+      label: Items
+      description: The names as the game shows them. One per line is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How many you end up with
+      description: Roughly how many pile up, and where they come from.

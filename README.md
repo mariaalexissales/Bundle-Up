@@ -1,33 +1,43 @@
 # Bundle Up!
 
 [![checks](https://github.com/mariaalexissales/Bundle-Up/actions/workflows/check.yml/badge.svg)](https://github.com/mariaalexissales/Bundle-Up/actions/workflows/check.yml)
+[![workshop parity](https://github.com/mariaalexissales/Bundle-Up/actions/workflows/parity.yml/badge.svg)](https://github.com/mariaalexissales/Bundle-Up/actions/workflows/parity.yml)
+[![latest release](https://img.shields.io/github/v/release/mariaalexissales/Bundle-Up?label=release)](https://github.com/mariaalexissales/Bundle-Up/releases/latest)
+[![workshop subscribers](https://img.shields.io/steam/subscriptions/3746632343?label=workshop%20subscribers)](https://steamcommunity.com/sharedfiles/filedetails/?id=3746632343)
 
-**A Project Zomboid inventory-compaction mod — 1,020 item definitions, 118 crafting recipes and ~5,200 lines of Lua, shipped on the Steam Workshop and maintained across 49 merged PRs.**
+Packing mod for Project Zomboid. Live on the Steam Workshop: 1,700+ packs covering ~850 vanilla items, 140 recipes, ~6,000 lines of Lua, 70+ merged PRs.
 
-The visible half packs a thousand vanilla items into bundles, boxes, sacks and cartons, then unpacks them back. The half that took the actual work is the part nobody sees: getting weights patched into script items *before* the engine deserializes a save, keeping spoilage math honest across a reload, and injecting loot into shared tables that another mod is rewriting on the same event.
+Project Zomboid is a zombie survival game. You loot everything, every item has weight and takes a slot, and a big base turns into shelves of half-full crates. Bundle Up packs those items into bundles, boxes, sacks and cartons and unpacks them exactly as they went in.
 
-Project Zomboid's modding layer has no formal API and no reference docs. Most of what follows is the record of finding out how it behaves by reading the game's own Lua and watching things break.
+Packing is the simple part. Most of the work went into these:
+
+- weights have to land before the save loads, or every saved bundle keeps the old weight
+- packed food has to keep rotting at the right rate across a reload
+- loot goes into tables another mod may be rewriting on the same event
+
+The modding layer has no docs. Most of this README is what I found out by reading the game's code and breaking things.
 
 ![Bundle Up preview](preview.png)
 
-**[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3746632343)** · [Ko-fi](https://ko-fi.com/estralexe) · [Twitch](https://www.twitch.tv/itsestral)
+**[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3746632343)** · [Releases](https://github.com/mariaalexissales/Bundle-Up/releases) · [Ko-fi](https://ko-fi.com/estralexe) · [Twitch](https://www.twitch.tv/itsestral)
 
 ---
 
 ## What it does
 
-Put 99 nails in a box and half your base goes missing to server chunk rot. Spread sheet metal across 20 crates because it won't fit in one. That's the problem this solves.
+Put 99 nails in a box and half your base goes missing to server chunk rot. Sheet metal ends up spread across 20 crates because it won't fit in one. Bundle Up packs all of it down.
 
-- **1,000+ items covered** across old and new B42 stock — rope bundles, boxes, bags, sacks, six-packs, cartons and cases.
+- **1,700+ packs covering ~850 vanilla items** across old and new B42 stock: rope bundles, boxes, bags, sacks, six-packs, cartons, cases and crates.
 - **Packing never launders an item.** Part-used, damaged, wet, loaded or rotten stock stays out, and what goes in comes back out exactly as it was, down to the colour of the wine.
-- **Tiered packing.** Cartons pack into Cases, so a hoard that used to bottom out at "a shelf of cartons" collapses one more time. A Food Case takes four of any of the 166 food cartons — 48 items in a single slot.
-- **Everything you drop is visible.** All 1,020 items carry a world model, so a dropped pack is an actual pile instead of thin air, and the 10-count bundles look bigger than the 5-count ones.
-- **Food keeps rotting while it's packed.** A carton is storage, not a stasis pod — it chills, freezes and thaws on the same schedule as the loose food beside it.
-- **322 sandbox options** across eight pages — loot spawn rates, then per-category and per-item weight sliders grouped by the category each one inherits from, so servers can tune the whole thing without touching a file.
+- **Tiered packing.** Cartons pack into Cases and Cases into Crates, so a hoard that used to bottom out at "a shelf of cartons" collapses twice more. A Food Case takes four of any of the 305 food cartons, and a Crate takes up to four Cases: 192 items in a single slot. Vanilla's canned food boxes, egg cartons and the drink six-packs climb the same ladder, and a Crate only takes as many Cases as stay under the weight cap.
+- **Everything you drop is visible.** Every item carries a world model, so a dropped pack is an actual pile instead of thin air, and the 10-count bundles look bigger than the 5-count ones.
+- **Food keeps rotting while it's packed.** A carton is storage, not a stasis pod. It chills, freezes and thaws on the same schedule as the loose food beside it.
+- **Part-used stock merges back.** Half-empty spools, rolls and bottles merge into whole ones, and *Add to* / *Consolidate all* read every container in reach, not just your main inventory.
+- **322 sandbox options** across eight pages: loot spawn rates, then per-category and per-item weight sliders grouped by the category each one inherits from, so servers can tune the whole thing without touching a file.
 
-An optional UI add-on ships in the same subscription. The base mod has no dependencies and isn't gaining any.
+Three optional add-ons ship in the same subscription: the packing panel, Guns of Marz support and Vanilla Foods Expanded support. The base mod has no dependencies and isn't gaining any.
 
-One load-order note, if you also run [Remove Vanilla Anything](https://github.com/mariaalexissales/Remove-Vanilla-Anything): both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Neither order is broken, but only one of them is probably what you meant.
+One load-order note, if you also run Remove Vanilla Anything: both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Both work, so pick the one you want.
 
 ---
 
@@ -35,53 +45,60 @@ One load-order note, if you also run [Remove Vanilla Anything](https://github.co
 
 | Path | What lives there |
 | --- | --- |
-| `Contents/mods/Vanilla/42/` | The base mod. 13,632 lines of zedscript, 3,685 of Lua, 322 sandbox options. |
-| `Contents/mods/BundleUpUI/42/` | Optional UI add-on. 1,587 lines of Lua, opt-in, hard-requires NeatUI Framework. |
-| `Contents/mods/Vanilla/media/` | Legacy B41-era tree kept as a fallback for pre-B42 loads. |
-| `tools/` | Python codegen and art tooling. |
+| `Contents/mods/Vanilla/42/` | The base mod. ~16,000 lines of zedscript, ~4,300 of Lua, 322 sandbox options. |
+| `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,800 lines of Lua, off by default, needs NeatUI Framework. |
+| `Contents/mods/BundleUpGoM/42/` | Optional Guns of Marz add-on. Packs its 55 magazines, 40mm rounds and weapon repair packs up to crates. Needs Guns of Marz. |
+| `Contents/mods/BundleUpVFX/42/` | Optional Vanilla Foods Expanded add-on. Packs 887 of its store foods and drinks up to crates. Needs Vanilla Foods Expanded. |
 
-Three languages, each doing the thing it's least bad at. **zedscript** declares content — items, recipes, the flags the engine already knows how to enforce. **Lua** covers behaviour the scripts can't express. **Python** generates the content that would be unreviewable by hand.
+The base mod's folder is called `Vanilla` because that's what it was named on the first day, and renaming it now would change every file path the Workshop has. Its id is `BundleUp`. B42 only reads the `42/` folder.
 
-The `shared` / `client` / `server` split is deliberate and load-bearing:
+The Python lives in estral-tools, a private repo cloned next to this folder, one folder per mod. CI checks it out with a read-only deploy key. It reads the mod out of the working directory, so it runs from here.
 
-- **`shared/`** — weight and spoilage data, because a dedicated server has to arrive at the same numbers its clients do.
-- **`client/`** — inventory walks, which only ever touch what the local player can actually see.
-- **`server/`** — loot injection, 1,469 lines of it across 20 distribution calls.
+[ARCHITECTURE.md](ARCHITECTURE.md) has the file-by-file map, the load order and how a change gets from here to the Workshop.
+
+It's written in three languages. **zedscript** declares items, recipes and the flags the engine already enforces. **Lua** does what the scripts can't. **Python** generates the files too big to review by hand and checks the rest.
+
+The `shared` / `client` / `server` split matters:
+
+- **`shared/`**: weight and spoilage data, because a dedicated server has to get the same numbers its clients do.
+- **`client/`**: inventory walks, which only touch what the local player can see.
+- **`server/`**: loot injection. ~1,500 lines, mostly item and weight tables.
 
 ---
 
-## Reading an engine that doesn't document itself
+## Figuring out an engine with no docs
 
-Most of the interesting bugs here weren't logic errors. They were cases where the engine did something reasonable that I hadn't accounted for, and finding out meant reading the game's Lua and watching what actually happened.
+Most of the bugs here weren't logic errors. The engine did something I didn't know it did, and I found out by reading the game's code and testing in game.
 
-### The event you register on decides whether your mod works after a reload
+### Which event you hook decides whether it works after a reload
 
-Bundle weights come from sandbox sliders, so they have to be stamped onto script items at load. The obvious hook is `OnGameStart`. `OnGameStart` is wrong — by then the cell has already deserialized the player's inventory, and every bundle in that save was built from an unpatched script.
+Bundle weights come from sandbox sliders, so they have to be stamped onto the script items at load. `OnGameStart` is too late: by then the player's inventory is already loaded, so every bundle in the save was built from the unpatched script.
 
-`OnInitGlobalModData` is the first event that fires after `SandboxOptions.load()` and still lands *before* inventory deserialization, which makes it the only window where both facts are true.
+`OnInitGlobalModData` fires after the sandbox options load and before the inventory does. It's the only event where both are true.
 
 ```lua
--- OnInitGlobalModData is the first event to fire after SandboxOptions.load(),
--- and it lands before the cell deserializes any inventory, so a saved bundle is
--- built from an already-patched script item.
+-- OnInitGlobalModData is the only event after the sandbox loads and before any inventory
+-- does. the other two are re-runs. guarded so a build without it keeps the rest.
 if Events.OnInitGlobalModData then
     Events.OnInitGlobalModData.Add(BU.applyWeights)
 end
 Events.OnGameStart.Add(BU.applyWeights)
+Events.OnServerStarted.Add(BU.applyWeights)
 ```
 
-Every event registration in the mod is guarded like that, so a build that doesn't have the event degrades instead of taking the whole file down with a nil index. `OnGameStart` stays on as a harmless re-run.
+Only the `OnInitGlobalModData` registration is guarded, so a build without that event keeps going instead of dying on a nil index. `OnGameStart` still runs it either way, and `OnServerStarted` is the one a dedicated server fires.
 
-Loot is the same lesson inverted, and it cost a lot more to learn. Spawn rates also come from sandbox sliders, so `OnPreDistributionMerge` looks like the obvious hook — it is named after the thing it wants to change and it fires before the loot tables are read. It is wrong. `IsoWorld.init()` fires the three merge events at bytecode offsets 2051–2066 but does not read `map_sand.bin` until offset 2126, where `SandboxOptions.load()` ends in `toLua()`.
+Loot had the opposite problem and took a lot longer to find. Spawn rates also come from sliders, and `OnPreDistributionMerge` seemed like the right hook: it's named after the thing I want to change and fires before the loot tables are read. But `IsoWorld.init()` fires the merge events at bytecode offsets 2051 to 2066 and doesn't load the sandbox settings (`map_sand.bin`, via `SandboxOptions.load()`) until 2126.
 
-That gap is why the bug hid for so long. On a **new game** a merge handler sees the player's real settings, because the new-game screen already ran `toLua()`. On **every later load of that save** it sees nothing but the declared defaults — and since `SandboxVars.BundleUp` exists either way, a `if not sv then return end` guard catches none of it. Set loot to Double, play, quit, come back, and the rate silently reverts with no error anywhere.
+It took so long to find because a new game works. The new-game screen has already loaded your settings, so the merge handler sees them. Every load after that only sees the defaults, and since `SandboxVars.BundleUp` exists either way, `if not sv then return end` doesn't catch it. Set loot to Double, play, quit, come back, and it's back to default with no error.
 
-`OnInitGlobalModData` — the right answer for weights — is worse still here. It lands *after* `ItemPickerJava.Parse()` has snapshotted the tables into Java, so it can never reach loot at all.
+`OnInitGlobalModData`, the fix for weights, doesn't work for loot either. It fires after `ItemPickerJava.Parse()` has already copied the tables into Java, so it can't reach loot at all.
 
-`OnGameStart` runs from `IngameState`, after `IsoWorld.init()` has returned, so it is the first event where the settings are real. The cost of arriving that late is that Java already has its copy, and rebuilding it takes the call vanilla's own admin panel makes after a sandbox change:
+`OnGameStart` is the first event where the settings are loaded. Java already has its copy of the tables by then, so it has to be rebuilt with the same call vanilla's admin panel makes after a sandbox change:
 
 ```lua
--- fillContainer returns straight away on a client, so the java copy there is never read.
+-- loot is filled from the java copy taken at world init, before any of this, so rebuild
+-- it. clients never read that copy. no StoryClutter.Init(), it would double-register.
 local needed = (removed > 0 or inserted > 0) and not isClient()
 local rebuilt = false
 if needed and IsoWorld and IsoWorld.parseDistributions then
@@ -89,17 +106,17 @@ if needed and IsoWorld and IsoWorld.parseDistributions then
 end
 ```
 
-That rebuild re-reads every loot table in the game, other mods' included, so it only runs when the pass actually changed an array, and never on a multiplayer client.
+That rebuild re-reads every loot table in the game, other mods' too, so it only runs when something actually changed, and never on a multiplayer client.
 
-Arriving after every other mod has loaded also means arriving after they have rewritten the arrays. The fix stopped recording *where* its entries went — an index another mod is free to invalidate — and started recording *what* it inserts. Every name is `BundleUp.*`, vanilla has none of them, and each lands at most once per array, so removing by name is an exact undo and the whole pass becomes re-runnable. A spawn rate of None now drops the entry instead of writing a weight of zero into a vanilla table.
+Running that late also means running after every other mod has edited the same arrays. So instead of remembering *where* its entries went (an index another mod can shift), it remembers *what* it put in. Every name starts with `BundleUp.`, vanilla has none of them, and each goes in at most once per array, so removing by name is an exact undo and the pass can safely run again. A spawn rate of None now leaves the entry out instead of writing a weight of 0 into a vanilla table.
 
-### Not calling the API is sometimes the fix
+### Not calling `setCustomWeight`
 
-`BU.refreshWeight` restamps bundles restored from a save, and deliberately never calls `setCustomWeight`. Setting a custom weight would pin the number permanently; leaving it unset keeps the weight script-derived, so the *next* sandbox change still reaches bundles already sitting in someone's save file.
+`BU.refreshWeight` restamps bundles loaded from a save. It doesn't call `setCustomWeight`, because a custom weight stays on the item for good. Leaving it unset keeps the weight coming from the script, so the next sandbox change still reaches bundles already in someone's save.
 
-### The same problem, needing the opposite solution
+### Food keeps its own spoil timers
 
-Weights patch cleanly at the script level because an item copies its weight from the script when it's built. Food doesn't work that way — it serializes its own `offAge` and `offAgeMax`, so patching the script never reaches anything already saved. Packed food needed a migration path instead, and the order matters:
+Patching the script works for weight because an item copies its weight from the script when it's built. Food saves its own `offAge` and `offAgeMax`, so patching the script never reaches food that's already saved. Packed food needed a migration instead, and the order matters:
 
 ```lua
 -- settle the age under the old thresholds first, or the days since lastAged
@@ -108,36 +125,35 @@ item:updateAge()
 item:setAge(item:getAge() * (rotten / current))
 ```
 
-Rescale before settling and every hour the item spent in a crate gets retroactively recounted at the new spoil rate.
+Rescale first and every hour the item already spent in a crate gets recounted at the new spoil rate.
 
-### `ReplaceOnDeplete` can't be reached from a recipe flag
+### No recipe flag reaches `ReplaceOnDeplete`
 
-Some containers mint a replacement when consumed — use up a sack of gravel and the engine hands you the empty sack. Correct for cooking, an infinite sack duplicator for a packing mod. No recipe flag suppresses it, so it has to be undone in Lua, and `onCreate` runs *before* the engine creates them. The fix records where each replacement is going to land and sweeps them on the next tick:
+Some items leave a replacement behind when used up: use up a sack of gravel and the game hands you the empty sack. For a packing mod that's a sack dupe. No recipe flag turns it off, so it gets undone in Lua, but `onCreate` runs *before* the game makes the replacements. So it notes where each one will land and removes them next tick:
 
 ```lua
--- no recipe flag reaches ReplaceOnDeplete, so the minted sacks have to go in
--- lua. onCreate runs before processDestroyAndUsedItems creates them - note
--- where each will land, take it next tick.
+-- no recipe flag reaches ReplaceOnDeplete and onCreate runs before the sacks are
+-- minted, so note where each will land and take it next tick.
 ```
 
-### Some of it is just trivia you have to have been bitten by
+### Other things I learned the hard way
 
-- **`PetrolCan`'s `Fluids` block is initial contents, not capacity.** A freshly created can spawns holding a full 10 litres, so unpacking a bundle of *empty* cans mints petrol unless you explicitly empty them.
-- **New `Food` has `lastFrozenUpdate = 0`.** Stamp a frozen state onto it and it melts on the next tick, because the engine reads that zero as "frozen since the beginning of time". `updateAge()` first, *then* `copyFrozenFrom()`.
-- **`getResultTexture()` dereferences `getFirstInputItem()` on every input**, so asking a blocked row for its icon throws. Read the output mapper instead.
-- **A whole family of test functions is built by string concatenation**, which means grepping for `testPackOrangeSodaCan` finds nothing at all. That one has a comment pointing at where the callers live, because I lost twenty minutes to it and wasn't going to do that twice.
+- **`PetrolCan`'s `Fluids` block is what it starts with, not how much it holds.** A new can spawns with a full 10 litres, so unpacking *empty* cans handed out free petrol until the unpack started emptying them.
+- **New `Food` has `lastFrozenUpdate = 0`.** Stamp it frozen and it melts next tick, because the game reads that 0 as a freeze long enough ago to have thawed. `updateAge()` first, *then* `copyFrozenFrom()`.
+- **`getResultTexture()` calls `getFirstInputItem()` on every input**, so asking a row that's short an ingredient for its icon throws. Read the output mapper instead.
+- **The soda test functions are built by string**, so grepping for `testPackOrangeSodaCan` finds nothing. That one has a comment pointing at the callers, because I lost twenty minutes to it.
 
 ---
 
-## Packing must never launder an item
+## Packing never launders an item
 
-One invariant holds the whole mod up:
+The one rule the whole mod follows:
 
-> What goes in comes back out exactly as it went in, and nothing is created or destroyed on the way.
+> What goes in comes back out exactly as it went in. Nothing gets made or lost on the way.
 
-Every violation is an item duplicator or an item shredder, and players find those immediately. Once I'd fixed the second one it was obvious they weren't unrelated bugs — they were one bug wearing different hats, so I went looking for the rest of the family instead of waiting for the reports.
+Breaking it means an item dupe or an item shredder, and players find those fast. After fixing the second one I realised they were the same bug in different places, so I went looking for the rest instead of waiting for reports.
 
-| What broke | Which direction it broke |
+| What broke | Which way |
 | --- | --- |
 | Part-used food packed into a carton and came back whole ([`4b9663c`](https://github.com/mariaalexissales/Bundle-Up/commit/4b9663c)) | Created value |
 | Sack recipes consumed sacks that still had things in them ([`3cdb472`](https://github.com/mariaalexissales/Bundle-Up/commit/3cdb472)) | Destroyed value |
@@ -146,11 +162,11 @@ Every violation is an item duplicator or an item shredder, and players find thos
 | Empty gas can bundles unpacked as full cans ([`c7eba3a`](https://github.com/mariaalexissales/Bundle-Up/commit/c7eba3a)) | Created value |
 | Loaded magazines packed at all, losing the ammo ([`f4c7b10`](https://github.com/mariaalexissales/Bundle-Up/commit/f4c7b10)) | Destroyed value |
 
-The generalising pass was [PR #48](https://github.com/mariaalexissales/Bundle-Up/pull/48) — *give every unpack input the exclusivity flags* — which closed the remaining holes by rule rather than by report.
+The pass that closed the rest by rule instead of by report was [`7a9af17`](https://github.com/mariaalexissales/Bundle-Up/commit/7a9af17) in [PR #48](https://github.com/mariaalexissales/Bundle-Up/pull/48): every unpack input got the exclusivity flags.
 
-**The design lesson I'd actually repeat:** put the guard in the script flags wherever the engine offers one. `IsEmpty`, `IsFull`, `IsUndamaged`, `IsExclusive` and `ItemCount` are enforced by the engine, work identically on a dedicated server, and can't be bypassed by a code path I forgot about. Only drop to a Lua `onTest` callback when there's genuinely no flag for it.
+Where the engine has a flag for a guard, the guard goes in the script. `IsEmpty`, `IsFull`, `IsUndamaged`, `IsExclusive` and `ItemCount` are enforced by the engine, work the same on a dedicated server, and no Lua code path can skip them. A Lua `onTest` is only for when there's no flag.
 
-`testPackPerishable` is one of the few that earned it, and it's a good illustration of why these are worth being careful with:
+`testPackPerishable` needed Lua:
 
 ```lua
 function BUInv.testPackPerishable(item, character)
@@ -160,70 +176,115 @@ function BUInv.testPackPerishable(item, character)
 end
 ```
 
-`isRotten()` only exists on `Food`. The non-perishable cartons are `base:normal`. Before that type guard existed, opening the crafting window near the wrong carton took the whole UI down — it shipped as a crash before it shipped as a check.
+`isRotten()` only exists on `Food`, and the non-perishable cartons are `base:normal`. Before that type check went in, opening the crafting window near one of them crashed the whole UI.
 
 ---
 
 ## The optional UI add-on
 
-`BundleUpUI` adds a panel that reads every container in reach and lists everything you could pack right now, with a `-` / `+` / `MAX` dial per row and a **Bundle All** that maxes out everything ready at once. It's a separate mod in the same subscription, off by default, and the base mod neither knows nor cares whether it's installed.
+`BundleUpUI` adds a panel that reads every container in reach and lists everything you could pack, unpack or merge right now, with a `-` / `+` / `MAX` dial per row and a **Bundle All** that runs everything ready at once. It's a separate mod in the same subscription, off by default, and the base mod works the same with or without it.
 
-**Indexed by module prefix, not by recipe name.** The panel builds its index from `ScriptManager.instance:getAllCraftRecipes()` filtered on one table:
+**It finds recipes by module name.** The panel builds its list from `ScriptManager.instance:getAllCraftRecipes()`, filtered on one table:
 
 ```lua
 BUUI.modules = BUUI.modules or { BundleUp = true }
 ```
 
-That's the entire integration contract. The base mod needed no changes to be supported, and another packing mod only has to add its module name to be picked up for free.
+The base mod needed no changes for it, and another packing mod only has to add its module name to that table to show up. Single recipes go in `BUUI.extraRecipes` by full type instead, which is how the Guns of Marz add-on lists GoM's own ammo recipes without pulling in the rest of module `Base`.
 
-**Outputs are detected by diffing inventory item IDs.** `CraftRecipeData` exposes no created-items list to Lua, so the queue snapshots inventory IDs before the craft and takes the difference after:
+**It finds what a craft made by diffing item IDs.** `CraftRecipeData` doesn't give Lua a list of what it created, so the queue snapshots inventory IDs before the craft and diffs after:
 
 ```lua
 -- CraftRecipeData exposes no created-items list to Lua, so what the craft made is
 -- whatever is in the player's inventory that was not there when it started.
 ```
 
-It filters that diff by resolved output types so anything picked up mid-craft doesn't get swept into a container. When the mapper can't be resolved, it deliberately falls back to the raw diff rather than filtering on a guess — a guess would strand the real outputs in the player's inventory, and a slightly over-broad diff is the better failure.
+It filters that diff to the expected output types, so anything you picked up mid-craft doesn't get moved into a container. If it can't work out the output types, it uses the raw diff instead of guessing. A wrong guess would leave the real outputs stuck in your inventory, while a diff that's slightly too wide only moves one extra item.
 
-**Monkey-patching vanilla UI, idempotently.** The sidebar button wraps four `ISEquippedItem` methods behind a `BUUI_PatchApplied` flag so a double-load can't double-wrap, and applies on `OnGameStart` rather than at file load, because wrapping during UI boot catches the class half-built.
+**It patches vanilla UI once.** The sidebar button wraps four `ISEquippedItem` methods behind a `BUUI_PatchApplied` flag so loading twice can't wrap twice. It patches on `OnGameStart`, not at file load, because the sidebar isn't finished building at file load.
 
-**Measuring instead of assuming.** The sidebar cell's position depends on how wide the crafting popup is, and Project Cook makes it two cells wide. Rather than special-casing that mod or depending on load order, the patch measures the popup's width every frame and computes the offset. Works against mods that don't exist yet.
+**It measures the crafting popup.** Where the sidebar button goes depends on how wide the crafting popup is, and Project Cook makes it two cells wide. Instead of special-casing that mod or relying on load order, it measures the popup every frame, so any other mod that widens it works too.
 
-**Trusting the data over the metadata.** The panel picks each recipe's pivot input by largest amount rather than by `flags[ItemCount]`, because those flags turned out to be inconsistent across the recipe files — `BoxSmall` carries none at all. The amounts were always right; the flags weren't.
+**It picks the main input by amount.** The panel picks each recipe's main input by the biggest amount, not by `flags[ItemCount]`, because the flags aren't consistent across the recipe files. `BoxSmall` has none at all, but every recipe has amounts.
 
 ---
 
 ## Generated content
 
-166 food cartons, each needing an item block, both halves of a pack/unpack recipe, a weight row and a display name. That's not reviewable by hand, so the upper tiers are generated from the ladders the mod already declares.
+There are 305 food cartons, each needing a Case and a Crate: an item block, a pack and an unpack recipe, a weight row and a display name per rung. That's too much to review by hand, so the upper tiers are generated from the pack ladders the mod already declares.
 
-`tools/generate_tiers.py` reads `BU_WeightData_Packs.lua` and emits five files, all committed and stamped *do not edit by hand*. The contract is in the docstring: **re-running with no source change must produce no diff**, and `--check` enforces it on every PR.
+`generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes three whole files stamped *do not edit by hand*, plus a sorted block at the end of `ItemName.json` and `Recipes.json`. All of it is committed. Running it again with no source change must produce no diff, and `--check` enforces that on every PR.
 
-`tools/generate_sandbox.py` does the same job for `sandbox-options.txt`. Splitting 322 options across eight pages by hand is one typo away from a slider that silently reads the wrong var, and the page a per-item slider belongs on isn't a matter of taste — it's whichever category slider that item actually inherits from, which means walking `resolve_base` down to the vanilla item exactly as `BU_ApplyWeights.lua` does at runtime. Deriving it is the only way the two stay in agreement when a new tier batch lands. Labels and tooltips are hand-written prose and the generator rewrites none of them; it owns block order, `page =` values and the eight page titles, nothing else.
+`generate_sandbox.py` does the same for `sandbox-options.txt`. A per-item slider belongs on the page of the category slider that item inherits from, which means walking `resolve_base` down to the vanilla item the same way `BU_ApplyWeights.lua` does in game. Doing that by hand for 322 options is where typos come from, and deriving it keeps the pages right when new tiers land. Labels and tooltips are written by hand and the generator doesn't touch them. It owns block order, `page =` values and the eight page titles, nothing else.
 
-It raises rather than warns on anything that would silently produce wrong output — a carton packed by a recipe with no weight row, or one resolving to a non-food reduction category. It also determines tier membership from the *recipes* rather than item-name suffixes, because `DogFoodBagCrate` doesn't end in "Carton" and would have been dropped without a word.
+`generate_tiers.py` stops with an error, not a warning, on anything that would produce wrong output, like a carton packed by a recipe with no weight row, one that resolves to a non-food category, two rungs that would get the same name, or a rung that already ships and would no longer fit under the weight cap. It decides tier membership from the *recipes*, not item-name suffixes, because `DogFoodBagCrate` doesn't end in "Carton" and would have been skipped.
+
+`generate_vfx.py` writes the Vanilla Foods Expanded add-on. VFE has close to two thousand items and most of them are dishes, dough, opened cans or homemade, so `--refresh` reads a VFE install once and keeps what VFE's own loot actually spawns in `vfx_families.json`. Everything after that reads only the json, so CI doesn't need VFE installed.
+
+`sync_weights.py` works out each pack's script `Weight`. The Lua sets weights on the client, but a dedicated server reads the script value, so the two have to agree.
+
+`sync_categories.py` does the same for `DisplayCategory`. Nothing ties a pack's category to what's in it, so a box of foundation makeup ended up under Food. It follows each pack down to the item it's built from and gives the pack that item's category. Vanilla's "Material / Weapon" kind loses the weapon half, the same as vanilla's own Firewood Bundle, because you can't swing a bundle of planks.
+
+`workshop.txt` also takes in edits from the live Workshop page. I often write the page on Steam, and the in-game upload pushes `workshop.txt` over it, so `sync_workshop.py` merges whatever changed on the page since the last upload (`main`'s copy) into `workshop.txt`. Text written here for something not uploaded yet stays. The one part the repo decides is "More From Estral", which comes from a single list of all my mods, shared with the section at the end of this README.
 
 ---
 
 ## Working on it
 
-The repo is the mod folder — it lives at `Zomboid/Workshop/Bundle Up` and the game loads it in place, so there's no build step and no packaging.
+The repo is the mod folder. It lives at `Zomboid/Workshop/Bundle Up` and the game loads it in place, so there's no build step.
 
-Check that the generated files are current:
-
-```bash
-python tools/generate_tiers.py --check && python tools/generate_sandbox.py --check
-```
-
-Regenerate them after changing a pack ladder:
+Check the generated files are current (drop `--check` to regenerate after changing a pack ladder):
 
 ```bash
-python tools/generate_tiers.py && python tools/generate_sandbox.py
+python ../estral-tools/bundle-up/generate_tiers.py --check
+python ../estral-tools/bundle-up/generate_vfx.py --check
+python ../estral-tools/bundle-up/generate_sandbox.py --check
+python ../estral-tools/bundle-up/sync_weights.py --check
+python ../estral-tools/bundle-up/sync_categories.py --check
 ```
 
-Both are stdlib-only — no install, no virtualenv — and CI runs both on every push and PR. Neither may import `tools/sync_weights.py`, which is gitignored and absent on CI.
+Run the rest of what CI runs:
 
-Branching is `dev` → `main` with a topic branch per bug or feature, and `main` mirrors the published Workshop build. `tools/sync_weights.py` and `tools/base_weights.json` are gitignored: they resolve script weights for dedicated servers (which read script values rather than the client Lua) and need a Project Zomboid install to regenerate, so they stay local.
+```bash
+python ../estral-tools/bundle-up/check_translations.py
+python ../estral-tools/bundle-up/check_scripts.py
+python ../estral-tools/bundle-up/check_lua.py
+python ../estral-tools/bundle-up/check_line_endings.py
+```
+
+All of them are stdlib-only except `check_lua.py`, which needs `luaparser`. `sync_weights.py --refresh` needs a Project Zomboid install to rebuild the vanilla weights it starts from, and `sync_categories.py --refresh` needs the game, VFE and Guns of Marz installed; `--check` doesn't need any of them.
+
+A topic branch per bug or feature goes into `dev`, and `dev` goes into `main` at release. `main` matches the published Workshop build byte for byte, because Project Zomboid won't let you join a server whose mod files differ.
+
+---
+
+## Checks and releases
+
+Every push and PR runs these, and `dev` and `main` only take a merge when they pass:
+
+| Check | What it catches |
+| --- | --- |
+| Tiers are up to date | A pack ladder changed and the generated tiers weren't regenerated, or a generated file was edited by hand and the next regenerate would undo it. |
+| VFX packs are up to date | The Vanilla Foods Expanded add-on drifted from `vfx_families.json`, or one of its generated files was edited by hand. |
+| Sandbox options are up to date | A new slider with no label, or on the page of a category it doesn't inherit from. |
+| Script weights are up to date | A pack whose script `Weight` disagrees with the Lua. Dedicated servers read the script, so everyone on a server gets the wrong weight. |
+| Pack categories match what they hold | A pack filed under a different category than what's inside it, like a box of foundation makeup under Food. |
+| Every item, recipe and label has a name | Broken JSON, a missing name, or a name left over from a deleted item. None of these error in game; the label just shows its raw key. |
+| Scripts only point at things that exist | A recipe that outputs an undeclared item never shows up, and a typo in `DoubleClickRecipe` makes double click do nothing. |
+| Lua files parse | A syntax error only shows up once the game loads the file, and then the whole file is skipped. |
+| No file mixes line endings | Files are CRLF or LF one by one and nothing normalises them. A patch that writes LF lines into a CRLF file doesn't show in most editors, but it changes the bytes the Workshop compares. |
+
+The checks are scripts in estral-tools, the same ones I run locally.
+
+**Behaviour.** Every PR also runs the mod's Lua twice, once from the base branch and once from the PR, behind a stub of the game's API, and diffs every result and engine call. That covers the Packing panel's rows, the batch queue, merging, *Pour into* and the panel layout. A `refactor:` PR fails if anything differs. Any other PR gets the diff as a warning to check against what it meant to change. Loot gets the same comparison, but only locally, because it needs the game's own loot tables.
+
+**Workshop parity.** Every morning CI downloads the live Workshop build with steamcmd and diffs it against `main`. Any file that differs turns it red.
+
+**Workshop page.** Every PR, and a daily run against `dev`, fails when the live Workshop page has an edit `workshop.txt` doesn't. Only `main` requires it, so editing the page doesn't block topic PRs, but the release PR can't merge until the page's edits are in the file the upload will push.
+
+**Releases.** Pushing a version tag publishes a [GitHub release](https://github.com/mariaalexissales/Bundle-Up/releases) with the patch notes from that version's release PRs, every PR and commit that went into it, and the Workshop build zipped. Every version back to 1.21 has one. The Workshop upload itself is still done by hand, because it needs a Steam login. Steam has its own [change notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3746632343) for each upload.
+
+**PR titles** have to start with `fix:`, `feat:`, `chore:`, `refactor:`, `docs:` or `[Patch x.y] -`, any version number, so the history says what changed. **Dependabot** keeps the workflow actions current and opens its PRs against `dev`, never `main`.
 
 ---
 
@@ -236,9 +297,12 @@ Branching is `dev` → `main` with a topic branch per bug or feature, and `main`
 
 By **Estral**. The UI add-on is built on [NeatUI Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032) by Rocco & Afyrmo.
 
-Bug reports and coverage suggestions are welcome, in the Workshop comments or as an issue here.
+Found a bug or want something packed? Use the [bug report or coverage form](https://github.com/mariaalexissales/Bundle-Up/issues/new/choose), or leave a comment on the Workshop page.
 
 ## More from Estral
 
-- **[Pinoy Pantry](https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305)** — sarap ng Pinas in Knox Country
-- **[Quest System Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412)** — add quests to your multiplayer servers
+- **[Pinoy Pantry](https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305)**: sarap ng Pinas in Knox Country ([source](https://github.com/mariaalexissales/Pinoy-Pantry))
+- **[Quest System Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412)**: add quests to your multiplayer servers ([source](https://github.com/mariaalexissales/Quest-System-Framework))
+- **[Player Leaderboard System](https://steamcommunity.com/sharedfiles/filedetails/?id=3795596462)**: have your players fight for first place, or keep track of your best lives in solo ([source](https://github.com/mariaalexissales/Leaderboard-Framework))
+- **[Remove Vanilla Anything](https://steamcommunity.com/sharedfiles/filedetails/?id=3799346338)**: for those who are tired of seeing vanilla items in their heavily modded servers
+- **[Dead Court Deck](https://steamcommunity.com/sharedfiles/filedetails/?id=3800241753)**: for your ~~scalper~~ collectable needs! ([source](https://github.com/mariaalexissales/Dead-Court-Deck))

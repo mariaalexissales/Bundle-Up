@@ -11,11 +11,11 @@ description=[b][i]Item weights for each bundle/box can be adjusted in the Sandbo
 description=
 description=[hr][/hr]
 description=[h2]What’s Inside[/h2]
-description=This mod bundles, boxes and bags up the clutter so your base (and your sanity) can breathe. [b]1000+ items covered[/b] across old and new B42 stock - rope bundles, boxes, bags and sacks, six-packs, cartons and cases - all of it packable and stackable.
+description=This mod bundles, boxes and bags up the clutter so your base (and your sanity) can breathe. [b]1700+ items covered[/b] across old and new B42 stock - rope bundles, boxes, bags and sacks, six-packs, cartons, cases and crates - all of it packable and stackable.
 description=
 description=[i]Packing never launders an item - part-used, damaged, wet, loaded or rotten stock stays out, and what goes in comes back out exactly as it was, right down to the colour of the wine.[/i]
 description=
-description=[b]Tiered packing:[/b] cartons pack into Cases, so a hoard that used to bottom out at “a shelf of cartons” collapses one more time. A [b]Food Case[/b] takes four of any of the 166 food cartons - 48 items in a single slot - and a [b]Magazine Case[/b] takes four magazine cartons, up to 240 mags.
+description=[b]Tiered packing:[/b] cartons pack into Cases and Cases into Crates, so a hoard that used to bottom out at “a shelf of cartons” collapses twice more. A [b]Food Case[/b] takes four of any of the 305 food cartons - 48 items in a single slot - a [b]Crate[/b] takes up to four Cases, and a [b]Magazine Case[/b] takes four magazine cartons, up to 240 mags. Canned food boxes, egg cartons and the drink six-packs go up the same ladder. Fruit, meat, fish, bread, pastries and frozen food all have cartons now too.
 description=
 description=[b]Everything you drop is visible.[/b] Every last one of them has a world model, so a dropped pack is an actual pile on the ground instead of thin air. Tied bundles render as real strapped bundles*, and the 10-count ones look bigger than the 5-count ones.
 description=
@@ -23,7 +23,7 @@ description=[b]Perishable Timer:[/b] food keeps spoiling while it’s packed awa
 description=
 description=[quote][b]You can’t eat a carton[/b], only open it. [b]PLEASE DO NOT ATTEMPT TO EAT THE CARTON.[/b] Do note that anywhere you’d already explored before updating keeps its old cartons as they were.[/quote]
 description=
-description=[b]Loot:[/b] everything spawns where you’d expect it - magazine cartons in gun stores and army storage, cap cartons in the Wild West sheriff furniture, hides in leather crates and tanneries, ingots and ore in metalwork and blacksmith crates, building supplies in masonry and gardening crates, and the drink packs behind bars and in liquor crates.
+description=[b]Loot:[/b] everything spawns where you’d expect it - magazine cartons in gun stores and army storage, cap cartons in the Wild West sheriff furniture, hides in leather crates and tanneries, ingots and ore in metalwork and blacksmith crates, building supplies in masonry and gardening crates, the drink packs behind bars and in liquor crates, and the new food cartons at grocer stands, butchers, bakeries and freezers.
 description=
 description=*Listen, I know that the plank bundle is just a log bundle but now with the plank texture. The budget** didn’t include Blender courses.
 description=
@@ -40,6 +40,20 @@ description=
 description=[b][u]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032]NeatUI Framework[/url][/u][/b] by Rocco & Afyrmo - subscribe to it as well or the panel won’t load, and it fails silently, so you’d get no button and no clue why.
 description=
 description=[i]The base mod needs none of it.[/i] Bundle Up! has no dependencies and isn’t gaining any - leave the add-on off and nothing about your game changes.
+description=
+description=[hr][/hr]
+description=[h2]Optional: Guns of Marz Support[/h2]
+description=[b]Bundle Up! - Guns of Marz Add-on[/b] is in this subscription too. Tick it on next to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990]Guns of Marz[/url] and all 55 of its magazines pack into boxes, cartons and crates, 40mm rounds go from GoM’s boxes into cartons and crates, and Weapon Repair Packs box up too. Drums and belt boxes get a smaller box, so a crate of them doesn’t weigh as much as a car.
+description=
+description=Loaded mags and half-used repair packs stay out. The packs spawn in gun stores, army storage and tool shelves, follow GoM’s own high-cap and explosives settings, and get their own page in Sandbox Options. With the Packing Panel on, GoM’s own ammo boxes, cartons and crates show up in it as well.
+description=
+description=[i]GoM swaps vanilla magazines for its own, so a Bundle Up magazine box you loot unpacks into GoM mags. It’s a loot box now.[/i] No packing mags back into one for a reroll though :D
+description=
+description=[hr][/hr]
+description=[h2]Optional: Vanilla Foods Expanded Support[/h2]
+description=[b]Bundle Up! - Vanilla Foods Expanded Add-on[/b] is in this subscription too. Tick it on next to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3577903007]Vanilla Foods Expanded[/url] and 887 of its store foods and drinks climb the same ladder as the base game’s: cartons of 12, six-packs of drinks, then cases and crates. VFE’s own canned boxes, snack boxes and beer packs go straight into cases.
+description=
+description=Only what VFE actually stocks in stores packs - dishes, dough, opened cans and homemade stuff stay out. The cartons and six-packs spawn wherever VFE spawns the loose food, and get their own page in Sandbox Options.
 description=
 description=[hr][/hr]
 description=[h2]On the Way[/h2]
@@ -60,16 +74,31 @@ description=Got ideas, bug reports, or want to help expand item coverage? We wel
 description=
 description=[i]We are actively updating this as Project Zomboid blooms into its new B42 era. Good luck out there, survivors :D[/i]
 description=
+description=[hr][/hr]
 description=[h2]More From Estral[/h2]
 description=Check out my other mods while you’re at it:
 description=
 description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305][img]https://images.steamusercontent.com/ugc/11843508093091308261/A79EED3FC204D4945A5842ACFCD964749B4F39EE/[/img][/url]
 description=[b]Pinoy Pantry[/b]
-description=sarap ng Pinas in Knox Country
+description=Sarap ng Pinas in Knox Country
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412][img]https://images.steamusercontent.com/ugc/12446045936225687270/CC23BD518588F9117F37B405BF1824B00CA7B8CE/[/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412][img]https://images.steamusercontent.com/ugc/16519464503512792082/F7CF881FECD1834E972FCA7CD23BB82DC1773C6C/[/img][/url]
 description=[b]Quest System Framework[/b]
 description=Add quests to your multiplayer servers
+description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3795596462][img]https://images.steamusercontent.com/ugc/9301914339822316022/1FC53AA043BDEE17026A1E48AD903EAB3B9BEF2D/[/img][/url]
+description=[b]Player Leaderboard System[/b]
+description=Have your players fight for first place, or keep track of your best lives in solo
+description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3799346338]
+description=[img]https://images.steamusercontent.com/ugc/17612910413526835277/09B7859AB47474217FC3504E07DA9493103F542C/[/img][/url]
+description=[b]Remove Vanilla Anything[/b]
+description=For those who are tired of seeing vanilla items in their heavily modded servers
+description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3800241753][img]https://images.steamusercontent.com/ugc/15205727337797343502/96977B7CB045B7166D5FCBB970FC886F2A322EE5/[/img]
+description=[/url]
+description=[b]Dead Court Deck[/b]
+description=For your [strike]scalper[/strike] collectable needs!
 description=
 description=[hr][/hr]
 tags=Build 42;Balance;Food;Framework;Items;Literature;Misc;Multiplayer;Realistic;Silly/Fun;Skills;Vehicles;QoL;WIP

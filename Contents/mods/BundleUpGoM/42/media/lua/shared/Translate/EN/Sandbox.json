@@ -1,0 +1,11 @@
+{
+  "Sandbox_BundleUpPage_GunsOfMarz": "Bundle Up: Guns of Marz",
+  "Sandbox_BundleUp_SpawnGoMMagazines": "Guns of Marz Magazine Boxes spawn rate",
+  "Sandbox_BundleUp_SpawnGoMMagazines_tooltip": "Boxes and cartons of Guns of Marz magazines in gun stores, army storage and police armouries. High capacity ones only spawn while Guns of Marz spawns high capacity mags. Inherit default follows the Bundle Up master setting.",
+  "Sandbox_BundleUp_SpawnGoMGrenades": "Guns of Marz 40mm Cartons spawn rate",
+  "Sandbox_BundleUp_SpawnGoMGrenades_tooltip": "Cartons of 40mm rounds in army storage. Only spawns while Guns of Marz spawns explosives. Inherit default follows the Bundle Up master setting.",
+  "Sandbox_BundleUp_SpawnGoMRepairPacks": "Weapon Repair Pack Boxes spawn rate",
+  "Sandbox_BundleUp_SpawnGoMRepairPacks_tooltip": "Boxes and cartons of weapon repair packs in gun stores, tool stores, mechanics and army bunkers. Inherit default follows the Bundle Up master setting.",
+  "Sandbox_BundleUp_ReductionGoM": "Guns of Marz reduction %%",
+  "Sandbox_BundleUp_ReductionGoM_tooltip": "Reduction for Guns of Marz magazine, 40mm and repair pack boxes, cartons and crates. -1 = inherit the default."
+}

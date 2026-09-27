@@ -2,19 +2,21 @@
 --ESTRAL--
 ----------
 
--- Nothing goes into ProceduralDistributions here. SandboxVars.BundleUp does not exist at
--- file-load time, and by the time it does IsoWorld.init() has already handed these tables
--- to Java -- see the note above the event registrations at the bottom. So these calls only
--- record what to insert; the insert itself happens on OnGameStart at the final weight.
+-- nothing is inserted at file load, SandboxVars.BundleUp doesn't exist yet. these calls
+-- only record the plan, and OnGameStart inserts it at the final weight.
 local plan = {}
 local owned = {}
 
-local function BU_applyDistribution(option, items, weights)
-    plan[#plan + 1] = { option = option, items = items, weights = weights }
+local function BU_applyDistribution(option, items, weights, when)
+    plan[#plan + 1] = { option = option, items = items, weights = weights, when = when }
     for i = 1, #items do
         owned[items[i]] = true
     end
 end
+
+-- add-ons call this at file load. anything added after OnGameStart misses the pass.
+BU = BU or {}
+BU.addLoot = BU_applyDistribution
 
 local PACK_ITEMS = {
     "BundleUp.BlueberrySP",
@@ -251,6 +253,242 @@ local FOOD_WEIGHTS = {
 }
 
 BU_applyDistribution("SpawnFood", FOOD_ITEMS, FOOD_WEIGHTS)
+
+local FRUIT_CARTON_ITEMS = {
+    "BundleUp.AppleCarton",
+    "BundleUp.AvocadoCarton",
+    "BundleUp.BananaCarton",
+    "BundleUp.BerryBlackCarton",
+    "BundleUp.BerryBlueCarton",
+    "BundleUp.CherryCarton",
+    "BundleUp.GrapefruitCarton",
+    "BundleUp.GrapesCarton",
+    "BundleUp.LemonCarton",
+    "BundleUp.LimeCarton",
+    "BundleUp.MangoCarton",
+    "BundleUp.OrangeCarton",
+    "BundleUp.PeachCarton",
+    "BundleUp.PearCarton",
+    "BundleUp.PineappleCarton",
+    "BundleUp.StrewberrieCarton",
+    "BundleUp.WatermelonCarton",
+}
+
+local FRUIT_CARTON_WEIGHTS = {
+    GroceryStandFruits1      = 0.15,
+    GroceryStandFruits2      = 0.15,
+    GroceryStandFruits3      = 0.15,
+    ProduceStorageLooseFruit = 0.4,
+}
+
+BU_applyDistribution("SpawnFood", FRUIT_CARTON_ITEMS, FRUIT_CARTON_WEIGHTS)
+
+local VEGETABLE_CARTON_ITEMS = {
+    "BundleUp.BasilCarton",
+    "BundleUp.BrusselSproutsCarton",
+    "BundleUp.ChivesCarton",
+    "BundleUp.CilantroCarton",
+    "BundleUp.DaikonCarton",
+    "BundleUp.EdamameCarton",
+    "BundleUp.GingerPickledCarton",
+    "BundleUp.GingerRootCarton",
+    "BundleUp.GrapeLeavesCarton",
+    "BundleUp.GreenOnionsCarton",
+    "BundleUp.LemonGrassCarton",
+    "BundleUp.MintHerbCarton",
+    "BundleUp.MushroomsButtonCarton",
+    "BundleUp.OreganoCarton",
+    "BundleUp.ParsleyCarton",
+    "BundleUp.RosemaryCarton",
+    "BundleUp.SageCarton",
+    "BundleUp.ThymeCarton",
+    "BundleUp.WasabiCarton",
+}
+
+local VEGETABLE_CARTON_WEIGHTS = {
+    GroceryStandVegetables1 = 0.15,
+    GroceryStandVegetables2 = 0.15,
+    GroceryStandVegetables3 = 0.15,
+    GroceryStandVegetables4 = 0.15,
+    GroceryStandVegetables5 = 0.15,
+    GroceryStandLettuce     = 0.15,
+    GroceryStorageCrate1    = 0.4,
+    GroceryStorageCrate2    = 0.4,
+    GroceryStorageCrate3    = 0.4,
+}
+
+BU_applyDistribution("SpawnFood", VEGETABLE_CARTON_ITEMS, VEGETABLE_CARTON_WEIGHTS)
+
+local MEAT_CARTON_ITEMS = {
+    "BundleUp.BaconCarton",
+    "BundleUp.BaconRashersCarton",
+    "BundleUp.BaloneyCarton",
+    "BundleUp.BeefCarton",
+    "BundleUp.ChickenCarton",
+    "BundleUp.ChickenFilletCarton",
+    "BundleUp.ChickenWingsCarton",
+    "BundleUp.FishFilletCarton",
+    "BundleUp.FrogMeatCarton",
+    "BundleUp.HamCarton",
+    "BundleUp.HotdogPackCarton",
+    "BundleUp.LobsterCarton",
+    "BundleUp.MeatPattyCarton",
+    "BundleUp.MincedMeatCarton",
+    "BundleUp.MusselsCarton",
+    "BundleUp.MuttonChopCarton",
+    "BundleUp.OystersCarton",
+    "BundleUp.PepperoniCarton",
+    "BundleUp.PorkCarton",
+    "BundleUp.PorkChopCarton",
+    "BundleUp.ProcessedcheeseCarton",
+    "BundleUp.RabbitmeatCarton",
+    "BundleUp.SalmonCarton",
+    "BundleUp.SausageCarton",
+    "BundleUp.ShrimpCarton",
+    "BundleUp.SmallanimalmeatCarton",
+    "BundleUp.SmallbirdmeatCarton",
+    "BundleUp.SourCreamCarton",
+    "BundleUp.SquidCarton",
+    "BundleUp.SteakCarton",
+    "BundleUp.TofuCarton",
+    "BundleUp.TurkeyFilletCarton",
+    "BundleUp.TurkeyLegsCarton",
+    "BundleUp.TurkeyWingsCarton",
+    "BundleUp.VenisonCarton",
+}
+
+local MEAT_CARTON_WEIGHTS = {
+    ButcherChops   = 0.15,
+    ButcherChicken = 0.15,
+    ButcherGround  = 0.15,
+    ButcherSmoked  = 0.15,
+    ButcherFish    = 0.15,
+    ButcherFreezer = 0.15,
+}
+
+BU_applyDistribution("SpawnFood", MEAT_CARTON_ITEMS, MEAT_CARTON_WEIGHTS)
+
+local BAKERY_CARTON_ITEMS = {
+    "BundleUp.BagelPlainCarton",
+    "BundleUp.BagelPoppyCarton",
+    "BundleUp.BagelSesameCarton",
+    "BundleUp.BaguetteCarton",
+    "BundleUp.BiscuitCarton",
+    "BundleUp.BreadCarton",
+    "BundleUp.BunsHamburgerCarton",
+    "BundleUp.BunsHotdogCarton",
+    "BundleUp.CornbreadCarton",
+    "BundleUp.CroissantCarton",
+    "BundleUp.CupcakeCarton",
+    "BundleUp.DanishCarton",
+    "BundleUp.DoughnutChocolateCarton",
+    "BundleUp.DoughnutFrostedCarton",
+    "BundleUp.DoughnutJellyCarton",
+    "BundleUp.DoughnutPlainCarton",
+    "BundleUp.JellyRollCarton",
+    "BundleUp.LemonBarCarton",
+    "BundleUp.MuffinFruitCarton",
+    "BundleUp.MuffinGenericCarton",
+    "BundleUp.PainauchocolatCarton",
+    "BundleUp.TacoShellCarton",
+    "BundleUp.TortillaCarton",
+}
+
+local BAKERY_CARTON_WEIGHTS = {
+    BakeryBread     = 0.2,
+    BakeryDoughnuts = 0.2,
+    BakeryMisc      = 0.2,
+}
+
+BU_applyDistribution("SpawnFood", BAKERY_CARTON_ITEMS, BAKERY_CARTON_WEIGHTS)
+
+local FROZEN_CARTON_ITEMS = {
+    "BundleUp.CornFrozenCarton",
+    "BundleUp.CreamocleCarton",
+    "BundleUp.Frozen_ChickenNuggetsCarton",
+    "BundleUp.Frozen_FishFingersCarton",
+    "BundleUp.Frozen_FrenchFriesCarton",
+    "BundleUp.Frozen_TatoDotsCarton",
+    "BundleUp.FudgeePopCarton",
+    "BundleUp.IcecreamCarton",
+    "BundleUp.IcecreamSandwichCarton",
+    "BundleUp.MixedVegetablesCarton",
+    "BundleUp.PeasCarton",
+    "BundleUp.PopsicleCarton",
+}
+
+local FROZEN_CARTON_WEIGHTS = {
+    FreezerFrozenFood = 0.3,
+    FreezerIceCream   = 0.3,
+}
+
+BU_applyDistribution("SpawnFood", FROZEN_CARTON_ITEMS, FROZEN_CARTON_WEIGHTS)
+
+local PANTRY_CARTON_ITEMS = {
+    "BundleUp.AllsortsCarton",
+    "BundleUp.BouillonCubeCarton",
+    "BundleUp.CandyPackageCarton",
+    "BundleUp.CapersCarton",
+    "BundleUp.CaviarCarton",
+    "BundleUp.Chocolate_HeartBoxCarton",
+    "BundleUp.CinnamonCarton",
+    "BundleUp.DriedApricotsCarton",
+    "BundleUp.LollipopCarton",
+    "BundleUp.MintCandyCarton",
+    "BundleUp.ModjeskaCarton",
+    "BundleUp.OlivesCarton",
+    "BundleUp.PeanutsCarton",
+    "BundleUp.PeppermintCarton",
+    "BundleUp.PumpkinSeedCarton",
+    "BundleUp.RicePaperCarton",
+    "BundleUp.SeaweedCarton",
+    "BundleUp.SugarCubesCarton",
+    "BundleUp.SugarPacketCarton",
+    "BundleUp.SunflowerSeedsCarton",
+    "BundleUp.cheese_powderedCarton",
+}
+
+local PANTRY_CARTON_WEIGHTS = {
+    GigamartCandy      = 0.2,
+    GigamartCrisps     = 0.2,
+    GigamartDryGoods   = 0.2,
+    GigamartSpices     = 0.15,
+    GigamartBakingMisc = 0.15,
+}
+
+BU_applyDistribution("SpawnFood", PANTRY_CARTON_ITEMS, PANTRY_CARTON_WEIGHTS)
+
+local PET_CARTON_ITEMS = {
+    "BundleUp.CatFoodBagCarton",
+    "BundleUp.CatTreatsCarton",
+}
+
+local PET_CARTON_WEIGHTS = {
+    PetShopShelf     = 0.3,
+    CratePetSupplies = 0.4,
+}
+
+BU_applyDistribution("SpawnFood", PET_CARTON_ITEMS, PET_CARTON_WEIGHTS)
+
+local JAR_CARTON_ITEMS = {
+    "BundleUp.CannedBellPepperCarton",
+    "BundleUp.CannedBroccoliCarton",
+    "BundleUp.CannedCabbageCarton",
+    "BundleUp.CannedCarrotsCarton",
+    "BundleUp.CannedEggplantCarton",
+    "BundleUp.CannedLeekCarton",
+    "BundleUp.CannedPotatoCarton",
+    "BundleUp.CannedRedRadishCarton",
+    "BundleUp.CannedRoeCarton",
+    "BundleUp.CannedTomatoCarton",
+}
+
+local JAR_CARTON_WEIGHTS = {
+    Homesteading = 0.2,
+    FoodGourmet  = 0.1,
+}
+
+BU_applyDistribution("SpawnFood", JAR_CARTON_ITEMS, JAR_CARTON_WEIGHTS)
 
 local MATERIALS_ITEMS = {
     "BundleUp.PlankR",
@@ -840,7 +1078,9 @@ local LITERATURE_GROUPS = {
             "BundleUp.Magazine_MilitaryBundle",
             "BundleUp.Magazine_Military_NewBundle",
         },
-        weights = { BookstoreMilitaryHistory = 0.2, LibraryMilitaryHistory = 0.15, ArmySurplusLiterature = 0.2 },
+        weights = {
+            BookstoreMilitaryHistory = 0.2, LibraryMilitaryHistory = 0.15, ArmySurplusLiterature = 0.2,
+        },
     },
     {
         items = {
@@ -1346,8 +1586,7 @@ local SOFT_DRINK_PACK_WEIGHTS = {
 
 BU_applyDistribution("SpawnSixPacks", SOFT_DRINK_PACK_ITEMS, SOFT_DRINK_PACK_WEIGHTS)
 
--- Sandbox enum values are 1-based. The master option (SpawnDefault) maps
--- straight onto SCALE; the per-category options carry an extra leading
+-- SpawnDefault maps straight onto SCALE. the per-category options start with an extra
 -- "Inherit default" entry, so their value is offset by one.
 local SCALE = { 0, 0.25, 0.5, 1.0, 1.5, 2.0 }
 local DEFAULT_VALUE = 4
@@ -1360,10 +1599,8 @@ local function BU_multiplierFor(sv, option)
     return SCALE[sv.SpawnDefault or DEFAULT_VALUE] or 1.0
 end
 
--- Every name we insert is BundleUp.*, vanilla has none of them, and each lands at most
--- once per array -- so removing by name is an exact undo of a previous run. That is why no
--- array index is recorded anywhere: Remove Vanilla Anything rewrites these same arrays in
--- place on the same event, in whichever order the mod list happens to give.
+-- every inserted name is BundleUp.* and lands once per array, so removing by name undoes a
+-- run exactly. never by index: Remove Vanilla Anything rewrites these arrays on the same event.
 local function BU_purge(items)
     local n = #items
     local removed, i = 0, 1
@@ -1414,7 +1651,7 @@ local function BU_applyLootRates()
         return
     end
 
-    -- Several table names alias the same array, so purge once per array, not per name.
+    -- several table names alias one array, so purge per array, not per name.
     local targets, missing, seen, tableCount, removed = {}, {}, {}, 0, 0
     for p = 1, #plan do
         for tableName in pairs(plan[p].weights) do
@@ -1438,7 +1675,7 @@ local function BU_applyLootRates()
         local entry = plan[p]
         local multiplier = BU_multiplierFor(sv, entry.option)
         -- a zero multiplier drops the entry rather than inserting it at weight 0
-        if multiplier > 0 then
+        if multiplier > 0 and (entry.when == nil or entry.when()) then
             for tableName, weight in pairs(entry.weights) do
                 local items = targets[tableName]
                 if items then
@@ -1455,13 +1692,8 @@ local function BU_applyLootRates()
         end
     end
 
-    -- ItemPickerJava.Parse() already ran during IsoWorld.init(), against these tables as
-    -- they were before any of the above, and container filling reads that Java copy rather
-    -- than these globals. Rebuilding it is what vanilla does after a sandbox change
-    -- (ISServerSandboxOptionsUI.lua:769). StoryClutter.Init() is deliberately not called
-    -- alongside it: that UI needs it, nothing here touches clutter, and re-running it
-    -- would double-register.
-    -- fillContainer returns straight away on a client, so the java copy there is never read.
+    -- loot is filled from the java copy taken at world init, before any of this, so rebuild
+    -- it. clients never read that copy. no StoryClutter.Init(), it would double-register.
     local needed = (removed > 0 or inserted > 0) and not isClient()
     local rebuilt = false
     if needed and IsoWorld and IsoWorld.parseDistributions then
@@ -1471,15 +1703,12 @@ local function BU_applyLootRates()
     if #missing > 0 then
         print("[BundleUp] loot tables not found: " .. table.concat(missing, ", "))
     end
-    print("[BundleUp] loot: " .. inserted .. " entries across " .. tableCount .. " tables"
-        .. ((rebuilt or not needed) and "" or " -- IsoWorld.parseDistributions() failed, loot unchanged this session"))
+    local failed = (rebuilt or not needed) and ""
+        or " -- IsoWorld.parseDistributions() failed, loot unchanged this session"
+    print("[BundleUp] loot: " .. inserted .. " entries across " .. tableCount .. " tables" .. failed)
 end
 
--- Not the merge events. IsoWorld.init() fires those at offsets 2051-2066 but does not read
--- map_sand.bin until offset 2126, where SandboxOptions.load() ends in toLua(): a merge
--- handler sees the player's real settings on a new game -- the new-game screen ran toLua()
--- first -- and nothing but declared defaults on every later load of that save.
--- OnInitGlobalModData is later still, past the ItemPickerJava.Parse() that snapshots these
--- tables into Java, so it cannot reach loot at all.
+-- not the merge events: on a reload they fire before the save's sandbox settings load and
+-- only see defaults. OnInitGlobalModData comes after the java loot snapshot, too late.
 Events.OnGameStart.Add(BU_applyLootRates)
 Events.OnServerStarted.Add(BU_applyLootRates)

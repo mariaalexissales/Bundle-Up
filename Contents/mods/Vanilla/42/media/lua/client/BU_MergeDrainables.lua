@@ -3,30 +3,18 @@
 ----------
 
 require "BU_MergeData"
+require "BU_Transfer"
 require "ISUI/ISInventoryPaneContextMenu"
 require "TimedActions/ISConsolidateDrainable"
 
 local BU_vanillaCheckConsolidate = ISInventoryPaneContextMenu.checkConsolidate
-
-local function BU_returnHome(playerObj, homes)
-    for _, home in ipairs(homes) do
-        -- whatever was poured dry is gone by now, so the transfer has to tolerate it.
-        local action = ISInventoryTransferUtil.newInventoryTransferAction(
-            playerObj, home.item, playerObj:getInventory(), home.container, nil)
-        action:setAllowMissingItems(true)
-        ISTimedActionQueue.add(action)
-    end
-end
 
 -- vanilla's isValid and nextItem only look in the main inventory, so every spool has to be
 -- pulled in before the pour starts. runAgain slots each chained pour ahead of the returns.
 local function BU_pullIn(playerObj, items)
     local homes = {}
     for _, item in ipairs(items) do
-        local container = item:getContainer()
-        if container and container ~= playerObj:getInventory() then
-            homes[#homes + 1] = { item = item, container = container }
-        end
+        homes = BU.noteHome(playerObj, homes, item)
         ISInventoryPaneContextMenu.transferIfNeeded(playerObj, item)
     end
     return homes
@@ -35,7 +23,7 @@ end
 local function BU_onConsolidate(playerObj, drainable, intoItem)
     local homes = BU_pullIn(playerObj, { drainable, intoItem })
     ISTimedActionQueue.add(ISConsolidateDrainable:new(playerObj, drainable, intoItem, nil))
-    BU_returnHome(playerObj, homes)
+    BU.sendHomes(playerObj, homes)
 end
 
 local function BU_onConsolidateAll(playerObj, drainable, consolidateList)
@@ -53,7 +41,7 @@ local function BU_onConsolidateAll(playerObj, drainable, consolidateList)
         intoItem = table.remove(consolidateList, 1)
     end
     ISTimedActionQueue.add(ISConsolidateDrainable:new(playerObj, drainable, intoItem, consolidateList))
-    BU_returnHome(playerObj, homes)
+    BU.sendHomes(playerObj, homes)
 end
 
 local function BU_fillLabel(item)
@@ -76,9 +64,8 @@ function ISInventoryPaneContextMenu.checkConsolidate(drainable, playerObj, conte
         return BU_vanillaCheckConsolidate(drainable, playerObj, context, previousPourInto)
     end
 
-    -- vanilla asks the main inventory with the non-recursive getItemsFromType, so spools
-    -- in a worn bag or the crate you are standing at never show up. same list the packing
-    -- panel reads, so "in reach" means one thing across the mod.
+    -- vanilla's getItemsFromType skips worn bags and nearby crates. this is the same
+    -- container list the packing panel reads.
     local candidates = BU.Merge.gather(ISInventoryPaneContextMenu.getContainers(playerObj),
         drainable:getFullType())
 
@@ -99,12 +86,14 @@ function ISInventoryPaneContextMenu.checkConsolidate(drainable, playerObj, conte
     end
     if #consolidateList == 0 then return end
 
-    local option = context:addOption(getText(drainable:getConsolidateOption() or "ContextMenu_Pour_into"), nil, nil)
+    local label = getText(drainable:getConsolidateOption() or "ContextMenu_Pour_into")
+    local option = context:addOption(label, nil, nil)
     local submenu = context:getNew(context)
     context:addSubMenu(option, submenu)
 
     if #consolidateList > 1 then
-        submenu:addOption(getText("ContextMenu_MergeAll"), playerObj, BU_onConsolidateAll, drainable, consolidateList)
+        submenu:addOption(getText("ContextMenu_MergeAll"), playerObj, BU_onConsolidateAll,
+            drainable, consolidateList)
     end
 
     for _, intoItem in ipairs(consolidateList) do

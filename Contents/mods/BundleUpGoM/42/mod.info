@@ -1,0 +1,7 @@
+name=Bundle Up! - Guns of Marz Add-on
+id=BundleUpGoM
+author=Estral
+description=Packs Guns of Marz magazines, 40mm rounds and weapon repair packs - by Estral
+poster=poster.png
+require=BundleUp,GunsOfMarz
+versionMin=42.16
