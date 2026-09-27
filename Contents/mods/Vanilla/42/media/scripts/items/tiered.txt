@@ -267,7 +267,7 @@ module BundleUp {
     }
 
     item BlackSageDriedCase {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 3.31,
         Icon = Parcel_ExtraLarge_Fruit,
@@ -948,7 +948,7 @@ module BundleUp {
     }
 
     item CommonMallowDriedCase {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 3.31,
         Icon = Parcel_ExtraLarge_Fruit,
@@ -1575,7 +1575,7 @@ module BundleUp {
     }
 
     item GinsengCase {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:food,
         CantEat = true,
         DaysFresh = 14,
@@ -3464,7 +3464,7 @@ module BundleUp {
     }
 
     item WildGarlicDriedCase {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 3.31,
         Icon = Parcel_ExtraLarge_Fruit,
@@ -4213,7 +4213,7 @@ module BundleUp {
     }
 
     item BeerCanPackCase {
-        DisplayCategory = Food,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -4223,7 +4223,7 @@ module BundleUp {
     }
 
     item BeerPackCase {
-        DisplayCategory = Food,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -4459,7 +4459,7 @@ module BundleUp {
     }
 
     item BeerCanPackCrate {
-        DisplayCategory = Food,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 19.84,
         Icon = Parcel_ExtraLarge,
@@ -4479,7 +4479,7 @@ module BundleUp {
     }
 
     item BeerPackCrate {
-        DisplayCategory = Food,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 19.84,
         Icon = Parcel_ExtraLarge,
@@ -4541,7 +4541,7 @@ module BundleUp {
     }
 
     item BlackSageDriedCrate {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 10.98,
         Icon = Parcel_ExtraLarge,
@@ -5242,7 +5242,7 @@ module BundleUp {
     }
 
     item CommonMallowDriedCrate {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 10.98,
         Icon = Parcel_ExtraLarge,
@@ -5767,7 +5767,7 @@ module BundleUp {
     }
 
     item GinsengCrate {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:food,
         CantEat = true,
         DaysFresh = 14,
@@ -7870,7 +7870,7 @@ module BundleUp {
     }
 
     item WildGarlicDriedCrate {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 10.98,
         Icon = Parcel_ExtraLarge,

@@ -187,7 +187,7 @@ flowchart LR
 
 Every PR runs three required jobs:
 
-- **generated files are current:** the four generators with `--check`
+- **generated files are current:** the five generators with `--check`
 - **mod files are valid:** translations, script references, Lua parsing, line endings
 - **lua does what it did before:** the behaviour check under Testing
 

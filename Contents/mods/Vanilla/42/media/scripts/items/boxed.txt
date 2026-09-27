@@ -48,7 +48,7 @@ module BundleUp {
     }
 
     item PenBox_Black {
-        DisplayCategory = Material,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = PenBox,
@@ -57,7 +57,7 @@ module BundleUp {
     }
 
     item PenBox_Blue {
-        DisplayCategory = Material,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = PenBox,
@@ -66,7 +66,7 @@ module BundleUp {
     }
 
     item PenBox_Red {
-        DisplayCategory = Material,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = PenBox,
@@ -75,7 +75,7 @@ module BundleUp {
     }
 
     item PenBox_Green {
-        DisplayCategory = Material,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = PenBox,
@@ -583,7 +583,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackDryCarton,
     }
     item LavenderPetalsDriedCarton {
-        DisplayCategory = Gardening,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.0,
         Icon = Parcel_Medium_Food,
@@ -2594,7 +2594,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackFreshCarton,
     }
     item RosePetalsDriedCarton {
-        DisplayCategory = Gardening,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.0,
         Icon = Parcel_Small_Fruit,
@@ -2884,7 +2884,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackFreshCarton,
     }
     item TurkeyEggCarton {
-        DisplayCategory = AnimalPart,
+        DisplayCategory = Food,
         ItemType = base:food,
         CantEat = true,
         DaysFresh = 14,
@@ -2983,7 +2983,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackFreshCarton,
     }
     item WildGarlicDriedCarton {
-        DisplayCategory = Food,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 1.0,
         Icon = Parcel_Small_Fruit,
@@ -3019,7 +3019,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackPartsBox,
     }
     item IronBandSmallBox {
-        DisplayCategory = Tool,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = Parcel_Large_Hardware,
@@ -3027,7 +3027,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackPartsBoxQuarters,
     }
     item IronBarHalfBox {
-        DisplayCategory = AnimalPartWeapon,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = Parcel_Large_Hardware,
@@ -3075,7 +3075,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackPartsBox,
     }
     item SteelBarHalfBox {
-        DisplayCategory = MaterialWeapon,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = Parcel_Large_Hardware,
@@ -3188,7 +3188,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackMedicalBox,
     }
     item WaterPurificationTabletsBox {
-        DisplayCategory = Material,
+        DisplayCategory = Camping,
         ItemType = base:normal,
         Weight = 1.66,
         Icon = GenericMedicalParcel1,
@@ -3213,7 +3213,7 @@ module BundleUp {
     }
 
     item AdhesiveTapeBoxCrate {
-        DisplayCategory = Junk,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 24.9,
         Icon = Parcel_Large_Hardware,
@@ -3237,7 +3237,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item BakingSodaBox {
-        DisplayCategory = Food,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 2.49,
         Icon = Parcel_Large_Hardware,
@@ -3261,7 +3261,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item ButterKnifeBox {
-        DisplayCategory = CookingWeapon,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Large_Hardware,
@@ -3269,7 +3269,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item ButtonBox {
-        DisplayCategory = Household,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3277,7 +3277,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item CandleBoxCrate {
-        DisplayCategory = Material,
+        DisplayCategory = LightSource,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Parcel_Large_Hardware,
@@ -3285,7 +3285,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item CorrectionFluidBox {
-        DisplayCategory = FireSource,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 1.66,
         Icon = Parcel_Large_Hardware,
@@ -3357,7 +3357,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item ForkBox {
-        DisplayCategory = CookingWeapon,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Large_Hardware,
@@ -3365,7 +3365,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item Garbagebag_boxBox {
-        DisplayCategory = Material,
+        DisplayCategory = Container,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Parcel_Large_Hardware,
@@ -3413,7 +3413,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item HingeBox {
-        DisplayCategory = Junk,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.15,
         Icon = Parcel_Large_Hardware,
@@ -3429,7 +3429,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item JarLidBox {
-        DisplayCategory = Material,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3542,7 +3542,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item LighterBBQBox {
-        DisplayCategory = Junk,
+        DisplayCategory = FireSource,
         ItemType = base:normal,
         Weight = 2.49,
         Icon = Parcel_Large_Hardware,
@@ -3550,7 +3550,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item LighterDisposableBox {
-        DisplayCategory = Household,
+        DisplayCategory = FireSource,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3558,7 +3558,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item MagnesiumFirestarterBox {
-        DisplayCategory = FireSource,
+        DisplayCategory = Camping,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3574,7 +3574,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item MakeupFoundationBox {
-        DisplayCategory = Food,
+        DisplayCategory = Appearance,
         ItemType = base:normal,
         Weight = 1.66,
         Icon = Parcel_Large_Hardware,
@@ -3582,7 +3582,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item MatchesBox {
-        DisplayCategory = Junk,
+        DisplayCategory = FireSource,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3630,7 +3630,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item PaperNapkins2Box {
-        DisplayCategory = LightSource,
+        DisplayCategory = Junk,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3638,7 +3638,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item PaperclipBoxCrate {
-        DisplayCategory = Junk,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 2.49,
         Icon = Parcel_Large_Hardware,
@@ -3654,7 +3654,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item PremiumFishingLineBox {
-        DisplayCategory = Food,
+        DisplayCategory = Fishing,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3678,7 +3678,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item RatPoisonBox {
-        DisplayCategory = Accessory,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Parcel_Large_Hardware,
@@ -3702,7 +3702,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item SlugRepellentBox {
-        DisplayCategory = Household,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Parcel_Large_Hardware,
@@ -3726,7 +3726,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item Soap2Box {
-        DisplayCategory = Material,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 1.66,
         Icon = Parcel_Large_Hardware,
@@ -3734,7 +3734,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item SparklersBox {
-        DisplayCategory = Bug,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 2.49,
         Icon = Parcel_Large_Hardware,
@@ -3742,7 +3742,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item SpongeBox {
-        DisplayCategory = Material,
+        DisplayCategory = Household,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3750,7 +3750,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item SpoonBox {
-        DisplayCategory = CookingWeapon,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Large_Hardware,
@@ -3774,7 +3774,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item Thread_SinewBox {
-        DisplayCategory = Tool,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 1.66,
         Icon = Parcel_Large_Hardware,
@@ -3798,7 +3798,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item TissueBoxCrate {
-        DisplayCategory = Material,
+        DisplayCategory = FirstAid,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Parcel_Large_Hardware,
@@ -3806,7 +3806,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item ToiletPaperBox {
-        DisplayCategory = Household,
+        DisplayCategory = Junk,
         ItemType = base:normal,
         Weight = 4.15,
         Icon = Parcel_Large_Hardware,
@@ -3830,7 +3830,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item TwineBox {
-        DisplayCategory = Paint,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 4.15,
         Icon = Parcel_Large_Hardware,
@@ -3846,7 +3846,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item Vinegar_JugBox {
-        DisplayCategory = Gardening,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = Parcel_Large_Hardware,
@@ -3854,7 +3854,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item WeldingRodsBox {
-        DisplayCategory = Tool,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 12.45,
         Icon = Parcel_Large_Hardware,
@@ -3870,7 +3870,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item WoodglueBox {
-        DisplayCategory = Household,
+        DisplayCategory = Material,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Parcel_Large_Hardware,
@@ -3878,7 +3878,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackSupplyBox,
     }
     item YeastBox {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.66,
         Icon = Parcel_Large_Hardware,
@@ -3895,7 +3895,7 @@ module BundleUp {
     }
 
     item 44ClipBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3903,7 +3903,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackAmmoClipBox,
     }
     item JS14ClipBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3911,7 +3911,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackAmmoClipBox,
     }
     item 556ClipBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3919,7 +3919,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackAmmoClipBox,
     }
     item 45ClipBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3927,7 +3927,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackAmmoClipBox,
     }
     item M14ClipBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3935,7 +3935,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackAmmoClipBox,
     }
     item 9mmClipBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -3954,7 +3954,7 @@ module BundleUp {
     }
 
     item 44ClipCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -3964,7 +3964,7 @@ module BundleUp {
     }
 
     item JS14ClipCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -3974,7 +3974,7 @@ module BundleUp {
     }
 
     item 556ClipCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -3984,7 +3984,7 @@ module BundleUp {
     }
 
     item 45ClipCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -3994,7 +3994,7 @@ module BundleUp {
     }
 
     item M14ClipCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -4004,7 +4004,7 @@ module BundleUp {
     }
 
     item 9mmClipCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -4014,7 +4014,7 @@ module BundleUp {
     }
 
     item 44ClipCase {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -4024,7 +4024,7 @@ module BundleUp {
     }
 
     item JS14ClipCase {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -4034,7 +4034,7 @@ module BundleUp {
     }
 
     item 556ClipCase {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -4044,7 +4044,7 @@ module BundleUp {
     }
 
     item 45ClipCase {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -4054,7 +4054,7 @@ module BundleUp {
     }
 
     item M14ClipCase {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -4064,7 +4064,7 @@ module BundleUp {
     }
 
     item 9mmClipCase {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,

@@ -1509,7 +1509,7 @@ module BundleUp {
     }
 
     item CompostBagR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 20.0,
         Icon = Compost,
@@ -1518,7 +1518,7 @@ module BundleUp {
     }
 
     item CompostBagSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 20.0,
         Icon = Compost,
@@ -1527,7 +1527,7 @@ module BundleUp {
     }
 
     item CompostBagLR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 40.0,
         Icon = Compost,
@@ -1536,7 +1536,7 @@ module BundleUp {
     }
 
     item CompostBagLSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 40.0,
         Icon = Compost,
@@ -1545,7 +1545,7 @@ module BundleUp {
     }
 
     item GrassBagR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Compost,
@@ -1554,7 +1554,7 @@ module BundleUp {
     }
 
     item GrassBagSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 8.3,
         Icon = Compost,
@@ -1563,7 +1563,7 @@ module BundleUp {
     }
 
     item GrassBagLR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = Compost,
@@ -1572,7 +1572,7 @@ module BundleUp {
     }
 
     item GrassBagLSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = Compost,
@@ -1581,7 +1581,7 @@ module BundleUp {
     }
 
     item AnimalFeedBagR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = AnimalFeed,
@@ -1590,7 +1590,7 @@ module BundleUp {
     }
 
     item AnimalFeedBagSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 16.6,
         Icon = AnimalFeed,
@@ -1599,7 +1599,7 @@ module BundleUp {
     }
 
     item AnimalFeedBagLR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 33.2,
         Icon = AnimalFeed,
@@ -1608,7 +1608,7 @@ module BundleUp {
     }
 
     item AnimalFeedBagLSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 33.2,
         Icon = AnimalFeed,
@@ -1617,7 +1617,7 @@ module BundleUp {
     }
 
     item FertilizerBagR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 20.0,
         Icon = TZ_IndieStoneNPK,
@@ -1626,7 +1626,7 @@ module BundleUp {
     }
 
     item FertilizerBagSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 20.0,
         Icon = TZ_IndieStoneNPK,
@@ -1635,7 +1635,7 @@ module BundleUp {
     }
 
     item FertilizerBagLR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 40.0,
         Icon = TZ_IndieStoneNPK,
@@ -1644,7 +1644,7 @@ module BundleUp {
     }
 
     item FertilizerBagLSR {
-        DisplayCategory = Material,
+        DisplayCategory = Gardening,
         ItemType = base:normal,
         Weight = 40.0,
         Icon = TZ_IndieStoneNPK,

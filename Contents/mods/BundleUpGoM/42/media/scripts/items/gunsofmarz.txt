@@ -8,7 +8,7 @@ module BundleUp {
     }
 
     item 556x45Magazine20_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -16,7 +16,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 556x45Magazine25_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.62,
         Icon = Parcel_Large_Hardware,
@@ -24,7 +24,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 556x45Magazine30_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -32,7 +32,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 556x45Magazine30_G36Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.62,
         Icon = Parcel_Large_Hardware,
@@ -40,7 +40,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 545x39Magazine30_BakeliteBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -48,7 +48,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 545x39Magazine45_BakeliteBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.04,
         Icon = Parcel_Large_Hardware,
@@ -56,7 +56,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x39Magazine30Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -64,7 +64,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 762x39Magazine30Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -72,7 +72,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 3006Clip8Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -80,7 +80,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 762x51Magazine20_M14Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -88,7 +88,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 762x51Magazine20_FALBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -96,7 +96,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 762x51Magazine20_G3Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -104,7 +104,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 762x54StripperClip5_MOSINBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -112,7 +112,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 3006Magazine20_BARBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -120,7 +120,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine15_M92FSBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -128,7 +128,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine30_M92FSBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -136,7 +136,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine50_M92FSBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.04,
         Icon = Parcel_Large_Hardware,
@@ -144,7 +144,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine18_M93RBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -152,7 +152,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine60_M93RBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -160,7 +160,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine13_HIPOWERBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -168,7 +168,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine10_P226Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -176,7 +176,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 45Magazine7_M1911Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.17,
         Icon = Parcel_Large_Hardware,
@@ -184,7 +184,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 45Magazine12_USPBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -192,7 +192,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 45Magazine20_USPBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -200,7 +200,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 50Magazine8_DEAGLEBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -208,7 +208,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 50Magazine12_DEAGLEBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.5,
         Icon = Parcel_Large_Hardware,
@@ -216,7 +216,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine18_VP70MBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.5,
         Icon = Parcel_Large_Hardware,
@@ -224,7 +224,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine30_VP70MBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.5,
         Icon = Parcel_Large_Hardware,
@@ -232,7 +232,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 38357SpeedLoader6Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.21,
         Icon = Parcel_Large_Hardware,
@@ -240,7 +240,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 762x54Magazine10_SVDBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.62,
         Icon = Parcel_Large_Hardware,
@@ -248,7 +248,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 762x51Magazine5_PSG1Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -256,7 +256,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 223Magazine10_Mini14Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -264,7 +264,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 223Magazine20_Mini14Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -272,7 +272,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 223Magazine30_Mini14Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.04,
         Icon = Parcel_Large_Hardware,
@@ -280,7 +280,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 12GMagazine8_AA12Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -288,7 +288,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 45Magazine30_THOMPSONBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.62,
         Icon = Parcel_Large_Hardware,
@@ -296,7 +296,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 45Magazine20_THOMPSONBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -304,7 +304,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine20_MP5Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.33,
         Icon = Parcel_Large_Hardware,
@@ -312,7 +312,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine25_MP5Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -320,7 +320,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine30_MP5Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.75,
         Icon = Parcel_Large_Hardware,
@@ -328,7 +328,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine60_MP5Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.91,
         Icon = Parcel_Large_Hardware,
@@ -336,7 +336,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 9x19Magazine20_TEC9Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -344,7 +344,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 45Magazine30_MAC10Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -352,7 +352,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineBox,
     }
     item 45Magazine40_MAC10Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.41,
         Icon = Parcel_Large_Hardware,
@@ -361,7 +361,7 @@ module BundleUp {
     }
 
     item 556x45Magazine20_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -370,7 +370,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 556x45Magazine25_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.2,
         Icon = Parcel_Medium_Ammo,
@@ -379,7 +379,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 556x45Magazine30_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -388,7 +388,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 556x45Magazine30_G36Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.2,
         Icon = Parcel_Medium_Ammo,
@@ -397,7 +397,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 545x39Magazine30_BakeliteCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -406,7 +406,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 545x39Magazine45_BakeliteCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 10.33,
         Icon = Parcel_Medium_Ammo,
@@ -415,7 +415,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x39Magazine30Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -424,7 +424,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 762x39Magazine30Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -433,7 +433,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 3006Clip8Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -442,7 +442,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 762x51Magazine20_M14Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -451,7 +451,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 762x51Magazine20_FALCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -460,7 +460,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 762x51Magazine20_G3Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -469,7 +469,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 762x54StripperClip5_MOSINCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -478,7 +478,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 3006Magazine20_BARCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -487,7 +487,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine15_M92FSCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -496,7 +496,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine30_M92FSCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -505,7 +505,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine50_M92FSCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 10.33,
         Icon = Parcel_Medium_Ammo,
@@ -514,7 +514,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine18_M93RCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -523,7 +523,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine60_M93RCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -532,7 +532,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine13_HIPOWERCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -541,7 +541,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine10_P226Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -550,7 +550,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 45Magazine7_M1911Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.65,
         Icon = Parcel_Medium_Ammo,
@@ -559,7 +559,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 45Magazine12_USPCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -568,7 +568,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 45Magazine20_USPCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -577,7 +577,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 50Magazine8_DEAGLECarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -586,7 +586,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 50Magazine12_DEAGLECarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.96,
         Icon = Parcel_Medium_Ammo,
@@ -595,7 +595,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine18_VP70MCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.96,
         Icon = Parcel_Medium_Ammo,
@@ -604,7 +604,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine30_VP70MCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.96,
         Icon = Parcel_Medium_Ammo,
@@ -613,7 +613,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 38357SpeedLoader6Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.07,
         Icon = Parcel_Medium_Ammo,
@@ -622,7 +622,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 762x54Magazine10_SVDCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.2,
         Icon = Parcel_Medium_Ammo,
@@ -631,7 +631,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 762x51Magazine5_PSG1Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -640,7 +640,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 223Magazine10_Mini14Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -649,7 +649,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 223Magazine20_Mini14Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -658,7 +658,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 223Magazine30_Mini14Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 10.33,
         Icon = Parcel_Medium_Ammo,
@@ -667,7 +667,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 12GMagazine8_AA12Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.27,
         Icon = Parcel_Medium_Ammo,
@@ -676,7 +676,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 45Magazine30_THOMPSONCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.2,
         Icon = Parcel_Medium_Ammo,
@@ -685,7 +685,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 45Magazine20_THOMPSONCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -694,7 +694,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine20_MP5Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 3.31,
         Icon = Parcel_Medium_Ammo,
@@ -703,7 +703,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine25_MP5Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -712,7 +712,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine30_MP5Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 7.44,
         Icon = Parcel_Medium_Ammo,
@@ -721,7 +721,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine60_MP5Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 9.09,
         Icon = Parcel_Medium_Ammo,
@@ -730,7 +730,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 9x19Magazine20_TEC9Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -739,7 +739,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 45Magazine30_MAC10Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -748,7 +748,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCarton,
     }
     item 45Magazine40_MAC10Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -758,7 +758,7 @@ module BundleUp {
     }
 
     item 556x45Magazine20_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -767,7 +767,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 556x45Magazine25_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 20.58,
         Icon = AmmoCase,
@@ -776,7 +776,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 556x45Magazine30_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -785,7 +785,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 556x45Magazine30_G36Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 20.58,
         Icon = AmmoCase,
@@ -794,7 +794,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 545x39Magazine30_BakeliteCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -803,7 +803,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 545x39Magazine45_BakeliteCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 34.31,
         Icon = AmmoCase,
@@ -812,7 +812,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x39Magazine30Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -821,7 +821,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 762x39Magazine30Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -830,7 +830,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 3006Clip8Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -839,7 +839,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 762x51Magazine20_M14Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -848,7 +848,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 762x51Magazine20_FALCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -857,7 +857,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 762x51Magazine20_G3Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -866,7 +866,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 762x54StripperClip5_MOSINCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -875,7 +875,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 3006Magazine20_BARCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -884,7 +884,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine15_M92FSCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -893,7 +893,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine30_M92FSCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -902,7 +902,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine50_M92FSCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 34.31,
         Icon = AmmoCase,
@@ -911,7 +911,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine18_M93RCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -920,7 +920,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine60_M93RCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -929,7 +929,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine13_HIPOWERCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -938,7 +938,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine10_P226Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -947,7 +947,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 45Magazine7_M1911Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 5.49,
         Icon = AmmoCase,
@@ -956,7 +956,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 45Magazine12_USPCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -965,7 +965,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 45Magazine20_USPCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -974,7 +974,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 50Magazine8_DEAGLECrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -983,7 +983,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 50Magazine12_DEAGLECrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 16.47,
         Icon = AmmoCase,
@@ -992,7 +992,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine18_VP70MCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 16.47,
         Icon = AmmoCase,
@@ -1001,7 +1001,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine30_VP70MCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 16.47,
         Icon = AmmoCase,
@@ -1010,7 +1010,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 38357SpeedLoader6Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 6.86,
         Icon = AmmoCase,
@@ -1019,7 +1019,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 762x54Magazine10_SVDCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 20.58,
         Icon = AmmoCase,
@@ -1028,7 +1028,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 762x51Magazine5_PSG1Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1037,7 +1037,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 223Magazine10_Mini14Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1046,7 +1046,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 223Magazine20_Mini14Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -1055,7 +1055,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 223Magazine30_Mini14Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 34.31,
         Icon = AmmoCase,
@@ -1064,7 +1064,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 12GMagazine8_AA12Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 27.45,
         Icon = AmmoCase,
@@ -1073,7 +1073,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 45Magazine30_THOMPSONCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 20.58,
         Icon = AmmoCase,
@@ -1082,7 +1082,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 45Magazine20_THOMPSONCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1091,7 +1091,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine20_MP5Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 10.98,
         Icon = AmmoCase,
@@ -1100,7 +1100,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine25_MP5Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1109,7 +1109,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine30_MP5Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 24.7,
         Icon = AmmoCase,
@@ -1118,7 +1118,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine60_MP5Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 30.19,
         Icon = AmmoCase,
@@ -1127,7 +1127,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 9x19Magazine20_TEC9Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1136,7 +1136,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 45Magazine30_MAC10Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1145,7 +1145,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMMagazineCrate,
     }
     item 45Magazine40_MAC10Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1155,7 +1155,7 @@ module BundleUp {
     }
 
     item 556x45Magazine60_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.66,
         Icon = Parcel_Large_Hardware,
@@ -1163,7 +1163,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 556x45Magazine50_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.83,
         Icon = Parcel_Large_Hardware,
@@ -1171,7 +1171,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 556x45Magazine75_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.91,
         Icon = Parcel_Large_Hardware,
@@ -1179,7 +1179,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 556x45Magazine100_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.0,
         Icon = Parcel_Large_Hardware,
@@ -1187,7 +1187,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 556x45Magazine150_STANAGBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.16,
         Icon = Parcel_Large_Hardware,
@@ -1195,7 +1195,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 545x39Magazine100_DrumBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.0,
         Icon = Parcel_Large_Hardware,
@@ -1203,7 +1203,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 762x39Magazine75Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.0,
         Icon = Parcel_Large_Hardware,
@@ -1211,7 +1211,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 762x51Box100_M60Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 1.0,
         Icon = Parcel_Large_Hardware,
@@ -1219,7 +1219,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 12GMagazine20_AA12Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.5,
         Icon = Parcel_Large_Hardware,
@@ -1227,7 +1227,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 45Magazine100_THOMPSONBox {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.58,
         Icon = Parcel_Large_Hardware,
@@ -1235,7 +1235,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumBox,
     }
     item 9x19Magazine100_MP5Box {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 0.55,
         Icon = Parcel_Large_Hardware,
@@ -1244,7 +1244,7 @@ module BundleUp {
     }
 
     item 556x45Magazine60_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 3.31,
         Icon = Parcel_Medium_Ammo,
@@ -1253,7 +1253,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 556x45Magazine50_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.13,
         Icon = Parcel_Medium_Ammo,
@@ -1262,7 +1262,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 556x45Magazine75_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.55,
         Icon = Parcel_Medium_Ammo,
@@ -1271,7 +1271,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 556x45Magazine100_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.96,
         Icon = Parcel_Medium_Ammo,
@@ -1280,7 +1280,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 556x45Magazine150_STANAGCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 5.79,
         Icon = Parcel_Medium_Ammo,
@@ -1289,7 +1289,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 545x39Magazine100_DrumCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.96,
         Icon = Parcel_Medium_Ammo,
@@ -1298,7 +1298,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 762x39Magazine75Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.96,
         Icon = Parcel_Medium_Ammo,
@@ -1307,7 +1307,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 762x51Box100_M60Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 4.96,
         Icon = Parcel_Medium_Ammo,
@@ -1316,7 +1316,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 12GMagazine20_AA12Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.48,
         Icon = Parcel_Medium_Ammo,
@@ -1325,7 +1325,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 45Magazine100_THOMPSONCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.89,
         Icon = Parcel_Medium_Ammo,
@@ -1334,7 +1334,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCarton,
     }
     item 9x19Magazine100_MP5Carton {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 2.73,
         Icon = Parcel_Medium_Ammo,
@@ -1344,7 +1344,7 @@ module BundleUp {
     }
 
     item 556x45Magazine60_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 10.98,
         Icon = AmmoCase,
@@ -1353,7 +1353,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 556x45Magazine50_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 13.72,
         Icon = AmmoCase,
@@ -1362,7 +1362,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 556x45Magazine75_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 15.1,
         Icon = AmmoCase,
@@ -1371,7 +1371,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 556x45Magazine100_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 16.47,
         Icon = AmmoCase,
@@ -1380,7 +1380,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 556x45Magazine150_STANAGCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 19.21,
         Icon = AmmoCase,
@@ -1389,7 +1389,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 545x39Magazine100_DrumCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 16.47,
         Icon = AmmoCase,
@@ -1398,7 +1398,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 762x39Magazine75Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 16.47,
         Icon = AmmoCase,
@@ -1407,7 +1407,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 762x51Box100_M60Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 16.47,
         Icon = AmmoCase,
@@ -1416,7 +1416,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 12GMagazine20_AA12Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 8.23,
         Icon = AmmoCase,
@@ -1425,7 +1425,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 45Magazine100_THOMPSONCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 9.61,
         Icon = AmmoCase,
@@ -1434,7 +1434,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoMDrumCrate,
     }
     item 9x19Magazine100_MP5Crate {
-        DisplayCategory = Weapon,
+        DisplayCategory = WeaponMagazine,
         ItemType = base:normal,
         Weight = 9.06,
         Icon = AmmoCase,
@@ -1444,7 +1444,7 @@ module BundleUp {
     }
 
     item 40mm_BuckshotCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 7.17,
         Icon = Parcel_Medium_Ammo,
@@ -1453,7 +1453,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoM40mmCarton,
     }
     item 40mm_HECarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 7.17,
         Icon = Parcel_Medium_Ammo,
@@ -1462,7 +1462,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoM40mmCarton,
     }
     item 40mm_IncendiaryCarton {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 7.17,
         Icon = Parcel_Medium_Ammo,
@@ -1472,7 +1472,7 @@ module BundleUp {
     }
 
     item 40mm_BuckshotCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 23.81,
         Icon = AmmoCase,
@@ -1481,7 +1481,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoM40mmCrate,
     }
     item 40mm_HECrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 23.81,
         Icon = AmmoCase,
@@ -1490,7 +1490,7 @@ module BundleUp {
         DoubleClickRecipe = UnpackGoM40mmCrate,
     }
     item 40mm_IncendiaryCrate {
-        DisplayCategory = Weapon,
+        DisplayCategory = Ammo,
         ItemType = base:normal,
         Weight = 23.81,
         Icon = AmmoCase,

@@ -207,7 +207,7 @@ module BundleUp {
     }
 
     item VFX_BananaMilkPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.99,
         Icon = Parcel_Large_Liquor,
@@ -606,7 +606,7 @@ module BundleUp {
     }
 
     item VFX_BottleAmberAlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -615,7 +615,7 @@ module BundleUp {
     }
 
     item VFX_BottleAmericanLagerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -624,7 +624,7 @@ module BundleUp {
     }
 
     item VFX_BottleAmericanLightLagerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -633,7 +633,7 @@ module BundleUp {
     }
 
     item VFX_BottleAmericanWheatBeerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -642,7 +642,7 @@ module BundleUp {
     }
 
     item VFX_BottlePaleAlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -651,7 +651,7 @@ module BundleUp {
     }
 
     item VFX_BottlePilsnerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -660,7 +660,7 @@ module BundleUp {
     }
 
     item VFX_BottlePorterPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -669,7 +669,7 @@ module BundleUp {
     }
 
     item VFX_BottleStoutPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -687,7 +687,7 @@ module BundleUp {
     }
 
     item VFX_BottleViennaLagerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 3.49,
         Icon = Parcel_Large_Liquor,
@@ -1005,7 +1005,7 @@ module BundleUp {
     }
 
     item VFX_CanAmberAlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1014,7 +1014,7 @@ module BundleUp {
     }
 
     item VFX_CanAmericanLagerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1023,7 +1023,7 @@ module BundleUp {
     }
 
     item VFX_CanAmericanLightLagerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1032,7 +1032,7 @@ module BundleUp {
     }
 
     item VFX_CanAmericanWheatBeerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1041,7 +1041,7 @@ module BundleUp {
     }
 
     item VFX_CanPaleAlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1050,7 +1050,7 @@ module BundleUp {
     }
 
     item VFX_CanPilsnerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1059,7 +1059,7 @@ module BundleUp {
     }
 
     item VFX_CanPorterPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1068,7 +1068,7 @@ module BundleUp {
     }
 
     item VFX_CanStoutPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1077,7 +1077,7 @@ module BundleUp {
     }
 
     item VFX_CanViennaLagerPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1332,7 +1332,7 @@ module BundleUp {
     }
 
     item VFX_CherryColaBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 10.46,
         Icon = Parcel_Large_Liquor,
@@ -1341,7 +1341,7 @@ module BundleUp {
     }
 
     item VFX_CherryColaCanPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -1698,7 +1698,7 @@ module BundleUp {
     }
 
     item VFX_ChocolateMilkPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.99,
         Icon = Parcel_Large_Liquor,
@@ -2103,7 +2103,7 @@ module BundleUp {
     }
 
     item VFX_CreamSodaBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 10.46,
         Icon = Parcel_Large_Liquor,
@@ -2112,7 +2112,7 @@ module BundleUp {
     }
 
     item VFX_CreamSodaCanPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -3216,7 +3216,7 @@ module BundleUp {
     }
 
     item VFX_GrapefruitJuicePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Large_Liquor,
@@ -3666,7 +3666,7 @@ module BundleUp {
     }
 
     item VFX_IcedTeaGreenPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 4.48,
         Icon = Parcel_Large_Liquor,
@@ -3675,7 +3675,7 @@ module BundleUp {
     }
 
     item VFX_IcedTeaLemonPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 4.48,
         Icon = Parcel_Large_Liquor,
@@ -3684,7 +3684,7 @@ module BundleUp {
     }
 
     item VFX_IcedTeaPeachPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 4.48,
         Icon = Parcel_Large_Liquor,
@@ -3693,7 +3693,7 @@ module BundleUp {
     }
 
     item VFX_IcedTeaRaspberryPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 4.48,
         Icon = Parcel_Large_Liquor,
@@ -3702,7 +3702,7 @@ module BundleUp {
     }
 
     item VFX_IcedTeaSweetPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 4.48,
         Icon = Parcel_Large_Liquor,
@@ -4020,7 +4020,7 @@ module BundleUp {
     }
 
     item VFX_JuiceBoxCranberryPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.99,
         Icon = Parcel_Large_Liquor,
@@ -4029,7 +4029,7 @@ module BundleUp {
     }
 
     item VFX_JuiceBoxGrapefruitPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.99,
         Icon = Parcel_Large_Liquor,
@@ -4038,7 +4038,7 @@ module BundleUp {
     }
 
     item VFX_JuiceBoxPineapplePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.99,
         Icon = Parcel_Large_Liquor,
@@ -4047,7 +4047,7 @@ module BundleUp {
     }
 
     item VFX_JuiceBoxTropicalPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.99,
         Icon = Parcel_Large_Liquor,
@@ -4125,7 +4125,7 @@ module BundleUp {
     }
 
     item VFX_LemonLimeSodaBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 10.46,
         Icon = Parcel_Large_Liquor,
@@ -4134,7 +4134,7 @@ module BundleUp {
     }
 
     item VFX_LemonLimeSodaCanPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -4182,7 +4182,7 @@ module BundleUp {
     }
 
     item VFX_LemonSodaBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 10.46,
         Icon = Parcel_Large_Liquor,
@@ -4191,7 +4191,7 @@ module BundleUp {
     }
 
     item VFX_LemonSodaCanPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -4746,7 +4746,7 @@ module BundleUp {
     }
 
     item VFX_OrangeSodaBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 10.46,
         Icon = Parcel_Large_Liquor,
@@ -4755,7 +4755,7 @@ module BundleUp {
     }
 
     item VFX_OrangeSodaCanPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -5187,7 +5187,7 @@ module BundleUp {
     }
 
     item VFX_PineappleJuicePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Large_Liquor,
@@ -5421,7 +5421,7 @@ module BundleUp {
     }
 
     item VFX_PruneJuicePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Large_Liquor,
@@ -5751,7 +5751,7 @@ module BundleUp {
     }
 
     item VFX_RennetCarton {
-        DisplayCategory = Food,
+        DisplayCategory = Cooking,
         ItemType = base:normal,
         Weight = 4.15,
         Icon = Parcel_Medium_Food,
@@ -5922,7 +5922,7 @@ module BundleUp {
     }
 
     item VFX_RootBeerBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 10.46,
         Icon = Parcel_Large_Liquor,
@@ -5931,7 +5931,7 @@ module BundleUp {
     }
 
     item VFX_RootBeerCanPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -6219,7 +6219,7 @@ module BundleUp {
     }
 
     item VFX_SoyMilkPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -6324,7 +6324,7 @@ module BundleUp {
     }
 
     item VFX_SportsBerryBlastPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.97,
         Icon = Parcel_Large_Liquor,
@@ -6333,7 +6333,7 @@ module BundleUp {
     }
 
     item VFX_SportsFruitPunchPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.97,
         Icon = Parcel_Large_Liquor,
@@ -6342,7 +6342,7 @@ module BundleUp {
     }
 
     item VFX_SportsGrapePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.97,
         Icon = Parcel_Large_Liquor,
@@ -6351,7 +6351,7 @@ module BundleUp {
     }
 
     item VFX_SportsLemonLimePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.97,
         Icon = Parcel_Large_Liquor,
@@ -6360,7 +6360,7 @@ module BundleUp {
     }
 
     item VFX_SportsMelonPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.97,
         Icon = Parcel_Large_Liquor,
@@ -6369,7 +6369,7 @@ module BundleUp {
     }
 
     item VFX_SportsOrangePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.97,
         Icon = Parcel_Large_Liquor,
@@ -6378,7 +6378,7 @@ module BundleUp {
     }
 
     item VFX_SportsWhiteCherryPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 7.97,
         Icon = Parcel_Large_Liquor,
@@ -6477,7 +6477,7 @@ module BundleUp {
     }
 
     item VFX_StrawberryMilkPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.99,
         Icon = Parcel_Large_Liquor,
@@ -6681,7 +6681,7 @@ module BundleUp {
     }
 
     item VFX_TropicalJuicePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.48,
         Icon = Parcel_Large_Liquor,
@@ -6732,7 +6732,7 @@ module BundleUp {
     }
 
     item VFX_VanillaColaBottlePack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 10.46,
         Icon = Parcel_Large_Liquor,
@@ -6741,7 +6741,7 @@ module BundleUp {
     }
 
     item VFX_VanillaColaCanPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 2.99,
         Icon = Parcel_Large_Liquor,
@@ -7017,7 +7017,7 @@ module BundleUp {
     }
 
     item VFX_WineBoxCabernetSauvignonPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -7026,7 +7026,7 @@ module BundleUp {
     }
 
     item VFX_WineBoxChardonnayPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -7035,7 +7035,7 @@ module BundleUp {
     }
 
     item VFX_WineBoxMerlotPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -7044,7 +7044,7 @@ module BundleUp {
     }
 
     item VFX_WineBoxPinotGrisPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -7053,7 +7053,7 @@ module BundleUp {
     }
 
     item VFX_WineBoxPinotNoirPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -7062,7 +7062,7 @@ module BundleUp {
     }
 
     item VFX_WineBoxRieslingPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -7071,7 +7071,7 @@ module BundleUp {
     }
 
     item VFX_WineBoxSauvignonBlancPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 5.98,
         Icon = Parcel_Large_Liquor,
@@ -7080,7 +7080,7 @@ module BundleUp {
     }
 
     item VFX_WineCabernetSauvignonPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -7089,7 +7089,7 @@ module BundleUp {
     }
 
     item VFX_WineChardonnayPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -7098,7 +7098,7 @@ module BundleUp {
     }
 
     item VFX_WineMerlotPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -7107,7 +7107,7 @@ module BundleUp {
     }
 
     item VFX_WinePinotGrisPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -7116,7 +7116,7 @@ module BundleUp {
     }
 
     item VFX_WinePinotNoirPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -7125,7 +7125,7 @@ module BundleUp {
     }
 
     item VFX_WineRieslingPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
@@ -7134,7 +7134,7 @@ module BundleUp {
     }
 
     item VFX_WineSauvignonBlancPack {
-        DisplayCategory = Cooking,
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 6.47,
         Icon = Parcel_Large_Liquor,
