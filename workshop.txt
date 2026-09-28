@@ -1,78 +1,40 @@
 version=1
 id=3746632343
 title=Bundle Up! - A Packing Mod
+description=[img]https://i.imgur.com/lja52Fs.gif[/img]
+description=[url=https://ko-fi.com/U7U41FUY1O][img]https://storage.ko-fi.com/cdn/kofi5.png?v=3[/img][/url]
+description=[url=https://www.twitch.tv/estralexe]🔴 Follow me on Twitch[/url]
+description=
 description=[h1]Bundle Up[/h1]
-description=[h2]Ready for B42.20+!![/h2]
-description=[b]Meant to organize our excessive amounts of stuff![/b]
-description=
-description=Put 99 Nails in a box and now half your base is missing from server chunk rot? Got a shit ton of sheet metal spread among 20 crates because you just can’t fit it into one? No More!
-description=
-description=[b][i]Item weights for each bundle/box can be adjusted in the Sandbox Options menu if the defaults don’t suit your game :D[/i][/b]
+description=[b]Packs your loot into bundles, boxes, sacks, cartons, cases and crates, and unpacks it exactly as it went in.[/b] For Build 42.20+, single player and multiplayer.
 description=
 description=[hr][/hr]
 description=[h2]What’s Inside[/h2]
-description=This mod bundles, boxes and bags up the clutter so your base (and your sanity) can breathe. [b]1700+ items covered[/b] across old and new B42 stock - rope bundles, boxes, bags and sacks, six-packs, cartons, cases and crates - all of it packable and stackable.
-description=
-description=[i]Packing never launders an item - part-used, damaged, wet, loaded or rotten stock stays out, and what goes in comes back out exactly as it was, right down to the colour of the wine.[/i]
-description=
-description=[b]Tiered packing:[/b] cartons pack into Cases and Cases into Crates, so a hoard that used to bottom out at “a shelf of cartons” collapses twice more. A [b]Food Case[/b] takes four of any of the 305 food cartons - 48 items in a single slot - a [b]Crate[/b] takes up to four Cases, and a [b]Magazine Case[/b] takes four magazine cartons, up to 240 mags. Canned food boxes, egg cartons and the drink six-packs go up the same ladder. Fruit, meat, fish, bread, pastries and frozen food all have cartons now too.
-description=
-description=[b]Everything you drop is visible.[/b] Every last one of them has a world model, so a dropped pack is an actual pile on the ground instead of thin air. Tied bundles render as real strapped bundles*, and the 10-count ones look bigger than the 5-count ones.
-description=
-description=[b]Perishable Timer:[/b] food keeps spoiling while it’s packed away, so a carton is storage, not a stasis pod. A packed carton is food in its own right - it chills, freezes and thaws on the same schedule as the loose food beside it, frost and all - and age carries up and down the stack, so a rotten carton can’t be laundered into a fresh-looking case. Spoilage rate is adjustable in Sandbox Options.
-description=
-description=[quote][b]You can’t eat a carton[/b], only open it. [b]PLEASE DO NOT ATTEMPT TO EAT THE CARTON.[/b] Do note that anywhere you’d already explored before updating keeps its old cartons as they were.[/quote]
-description=
-description=[b]Loot:[/b] everything spawns where you’d expect it - magazine cartons in gun stores and army storage, cap cartons in the Wild West sheriff furniture, hides in leather crates and tanneries, ingots and ore in metalwork and blacksmith crates, building supplies in masonry and gardening crates, the drink packs behind bars and in liquor crates, and the new food cartons at grocer stands, butchers, bakeries and freezers.
-description=
-description=*Listen, I know that the plank bundle is just a log bundle but now with the plank texture. The budget** didn’t include Blender courses.
-description=
-description=** There is no budget/funding. But if you’d like to, support see below!
-description=
-description=[b]Tidying part-used stock:[/b] half-empty spools, rolls and bottles merge back into whole ones. The base game only ever looks at what is loose in your own inventory, so a bag of part-picked aramid thread offers you nothing at all - now [b]Add to[/b] and [b]Consolidate all[/b] read every container in reach. Nothing is lost in the pour, and what survives goes back where it came from.
-description=
-description=[hr][/hr]
-description=[h2]Optional: The Packing Panel[/h2]
-description=[b]Bundle Up! - UI Add-on[/b] rides along inside this same subscription as a separate, entirely optional mod. Tick it on in the [b]Mods[/b] menu and a button appears next to your crafting one.
-description=
-description=One window that reads every container in reach - your bags, that crate, the shelf behind you - and lists everything you could pack right now, with a [b]-[/b] / [b]+[/b] / [b]MAX[/b] dial on each row. Tabs flip between [b]Bundle[/b], [b]Unbundle[/b] and [b]Merge[/b], [b]Bundle All[/b] maxes out everything that’s ready, and [b]Stop[/b] is there for when you think better of it halfway through 400 planks. Bundles go back into the container they came out of.
-description=
-description=[b][u]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032]NeatUI Framework[/url][/u][/b] by Rocco & Afyrmo - subscribe to it as well or the panel won’t load, and it fails silently, so you’d get no button and no clue why.
-description=
-description=[i]The base mod needs none of it.[/i] Bundle Up! has no dependencies and isn’t gaining any - leave the add-on off and nothing about your game changes.
-description=
-description=[hr][/hr]
-description=[h2]Optional: Guns of Marz Support[/h2]
-description=[b]Bundle Up! - Guns of Marz Add-on[/b] is in this subscription too. Tick it on next to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990]Guns of Marz[/url] and all 55 of its magazines pack into boxes, cartons and crates, 40mm rounds go from GoM’s boxes into cartons and crates, and Weapon Repair Packs box up too. Drums and belt boxes get a smaller box, so a crate of them doesn’t weigh as much as a car.
-description=
-description=Loaded mags and half-used repair packs stay out. The packs spawn in gun stores, army storage and tool shelves, follow GoM’s own high-cap and explosives settings, and get their own page in Sandbox Options. With the Packing Panel on, GoM’s own ammo boxes, cartons and crates show up in it as well.
-description=
-description=[i]GoM swaps vanilla magazines for its own, so a Bundle Up magazine box you loot unpacks into GoM mags. It’s a loot box now.[/i] No packing mags back into one for a reroll though :D
-description=
-description=[hr][/hr]
-description=[h2]Optional: Vanilla Foods Expanded Support[/h2]
-description=[b]Bundle Up! - Vanilla Foods Expanded Add-on[/b] is in this subscription too. Tick it on next to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3577903007]Vanilla Foods Expanded[/url] and 887 of its store foods and drinks climb the same ladder as the base game’s: cartons of 12, six-packs of drinks, then cases and crates. VFE’s own canned boxes, snack boxes and beer packs go straight into cases.
-description=
-description=Only what VFE actually stocks in stores packs - dishes, dough, opened cans and homemade stuff stay out. The cartons and six-packs spawn wherever VFE spawns the loose food, and get their own page in Sandbox Options.
-description=
-description=[hr][/hr]
-description=[h2]On the Way[/h2]
 description=[list]
-description=[*] Engine Parts
-description=[*] Clay Bricks
+description=[*][b]1,700+ packs[/b] covering ~850 vanilla items: rope bundles, boxes, bags, sacks, six-packs and cartons
+description=[*][b]Tiered packing:[/b] cartons into Cases, Cases into Crates, up to 192 items in one slot
+description=[*][b]No laundering:[/b] part-used, damaged, wet, loaded and rotten items stay out
+description=[*][b]Food keeps spoiling[/b] in its carton, on the same clock as the loose food next to it
+description=[*][b]Merging:[/b] half-used spools, rolls and bottles merge into whole ones across every container in reach
+description=[*][b]Bulk smelting:[/b] iron and steel scrap at the Advanced Furnace
+description=[*][b]Seed packets:[/b] relabel an empty one with a pen, pencil, crayon or marker
+description=[*][b]Loot:[/b] packs spawn where what’s inside them does
+description=[*][b]322 sandbox options[/b] for spawn rates, weights and spoilage
 description=[/list]
 description=
 description=[hr][/hr]
-description=[h2]Support the Mod[/h2]
-description=If Bundle Up! has decluttered your life (or at least your storage crate), consider tossing a coin toward more B42 updates & following my Twitch to see me update the mod or just code :D:
-description=[url=https://ko-fi.com/estralexe]☕ Ko-fi[/url]
-description=[url=https://www.twitch.tv/itsestral]🔴 Twitch[/url]
+description=[h2]Optional Add-ons[/h2]
+description=All three come with this subscription. Tick them on in the Mods menu. The base mod needs none of them.
+description=[list]
+description=[*][b]Packing Panel:[/b] one window to pack, unpack and merge everything in reach, with Bundle All. Needs [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032]NeatUI Framework[/url].
+description=[*][b]Guns of Marz:[/b] its 55 magazines, 40mm rounds and repair packs, up to crates. Needs [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990]Guns of Marz[/url].
+description=[*][b]Vanilla Foods Expanded:[/b] 887 of its store foods and drinks, up to crates. Needs [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3577903007]Vanilla Foods Expanded[/url].
+description=[/list]
 description=
 description=[hr][/hr]
-description=[h2]Contributions[/h2]
-description=Got ideas, bug reports, or want to help expand item coverage? We welcome contributions!! Drop suggestions in the Workshop comments or reach out directly, and we’ll credit contributors here as the mod grows.
-description=
-description=[i]We are actively updating this as Project Zomboid blooms into its new B42 era. Good luck out there, survivors :D[/i]
+description=[h1]Join Our Community![/h1]
+description=Have questions, suggestions, or need support? Join the official Discord server to stay updated on future releases and connect with other players!
+description=👉 [url=https://discord.gg/heXQBtYUZb]Click here to join the Discord server[/url]
 description=
 description=[hr][/hr]
 description=[h2]More From Estral[/h2]
