@@ -2,7 +2,7 @@ version=1
 id=3746632343
 title=Bundle Up! - A Packing Mod
 description=[img]https://i.imgur.com/lja52Fs.gif[/img]
-description=[url=https://ko-fi.com/U7U41FUY1O][img]https://storage.ko-fi.com/cdn/kofi5.png?v=3[/img][/url]
+description=[url=https://ko-fi.com/U7U41FUY1O][img]https://raster.shields.io/badge/Ko--fi-Support%20me-72a4f2?style=for-the-badge&logo=kofi&logoColor=white[/img][/url]
 description=[url=https://www.twitch.tv/estralexe]🔴 Follow me on Twitch[/url]
 description=
 description=[h1]Bundle Up[/h1]
