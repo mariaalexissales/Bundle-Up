@@ -2,8 +2,7 @@ version=1
 id=3746632343
 title=Bundle Up! - A Packing Mod
 description=[img]https://i.imgur.com/lja52Fs.gif[/img]
-description=[url=https://ko-fi.com/U7U41FUY1O][img]https://images.steamusercontent.com/ugc/12963336889886684255/0F49527E51B3BD542F7C77EE7BA573F9012E850E/?imw=128&imh=128&impolicy=Letterbox[/img][/url]
-description=[url=https://www.twitch.tv/estralexe]🔴 Follow me on Twitch[/url]
+description=
 description=[h1]Bundle Up[/h1]
 description=[b]Packs your loot into bundles, boxes, sacks, cartons, cases and crates, and unpacks it exactly as it went in.[/b] For Build 42.20+, single player and multiplayer.
 description=[hr][/hr]
@@ -30,33 +29,36 @@ description=[/list]
 description=[hr][/hr]
 description=[h1]Join Our Community![/h1]
 description=Have questions, suggestions, or need support? Join the official Discord server to stay updated on future releases and connect with other players!
-description=👉 [url=https://discord.gg/heXQBtYUZb]Click here to join the Discord server[/url]
-description=
+description=👉[url=https://discord.gg/heXQBtYUZb]Click here to join the Discord server[/url]
+description=[url=https://ko-fi.com/estralexe][img]https://i.imgur.com/S6apsIQ.gif[/img][/url]
+description=[url=https://www.twitch.tv/estralexe][img]https://i.imgur.com/FabN9Nh.gif[/img][/url]
 description=[hr][/hr]
 description=[h2]More From Estral[/h2]
 description=Check out my other mods while you’re at it:
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305][img]https://images.steamusercontent.com/ugc/11843508093091308261/A79EED3FC204D4945A5842ACFCD964749B4F39EE/[/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791631305][img]https://images.steamusercontent.com/ugc/10550109030485225665/A79EED3FC204D4945A5842ACFCD964749B4F39EE/[/img][/url]
 description=[b]Pinoy Pantry[/b]
 description=Sarap ng Pinas in Knox Country
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412][img]https://images.steamusercontent.com/ugc/16519464503512792082/F7CF881FECD1834E972FCA7CD23BB82DC1773C6C/[/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3794717412][img]https://images.steamusercontent.com/ugc/10017484433944652614/60E3AF0B951E328D2880E7363BF820701BB54E2F/[/img][/url]
 description=[b]Quest System Framework[/b]
 description=Add quests to your multiplayer servers
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3795596462][img]https://images.steamusercontent.com/ugc/9301914339822316022/1FC53AA043BDEE17026A1E48AD903EAB3B9BEF2D/[/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3795596462][img]https://images.steamusercontent.com/ugc/17894628963991674168/9F2F1791EF6C7891106FABB38FE7D35F7BECF314/[/img][/url]
 description=[b]Player Leaderboard System[/b]
 description=Have your players fight for first place, or keep track of your best lives in solo
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3799346338]
-description=[img]https://images.steamusercontent.com/ugc/17612910413526835277/09B7859AB47474217FC3504E07DA9493103F542C/[/img][/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3799346338][img]https://images.steamusercontent.com/ugc/16978772379826731736/09B7859AB47474217FC3504E07DA9493103F542C/[/img][/url]
 description=[b]Remove Vanilla Anything[/b]
 description=For those who are tired of seeing vanilla items in their heavily modded servers
 description=
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3800241753][img]https://images.steamusercontent.com/ugc/15205727337797343502/96977B7CB045B7166D5FCBB970FC886F2A322EE5/[/img]
-description=[/url]
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3800241753][img]https://images.steamusercontent.com/ugc/16485154806146051588/96977B7CB045B7166D5FCBB970FC886F2A322EE5/[/img][/url]
 description=[b]Dead Court Deck[/b]
 description=For your [strike]scalper[/strike] collectable needs!
+description=
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3809376465][img]https://images.steamusercontent.com/ugc/14562058275516331001/A6E0C864A8C7DFCDAA20888EA3F10CACEE49586B/[/img][/url]
+description=[b]LAPLACE//DAEMON[/b]
+description=Every blade you forge rolls a rarity, and a fortune
 description=
 description=[hr][/hr]
 tags=Build 42;Balance;Food;Framework;Items;Literature;Misc;Multiplayer;Realistic;Silly/Fun;Skills;Vehicles;QoL;WIP
