@@ -19,7 +19,7 @@ The modding layer has no docs. Most of this README is what I found out by readin
 
 ![Bundle Up preview](preview.png)
 
-**[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3746632343)** · [Releases](https://github.com/mariaalexissales/Bundle-Up/releases) · [Ko-fi](https://ko-fi.com/estralexe) · [Twitch](https://www.twitch.tv/itsestral)
+**[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3746632343)** · [Releases](https://github.com/mariaalexissales/Bundle-Up/releases) · [Ko-fi](https://ko-fi.com/estralexe) · [Twitch](https://www.twitch.tv/estralexe)
 
 ---
 
@@ -306,3 +306,4 @@ Found a bug or want something packed? Use the [bug report or coverage form](http
 - **[Player Leaderboard System](https://steamcommunity.com/sharedfiles/filedetails/?id=3795596462)**: have your players fight for first place, or keep track of your best lives in solo ([source](https://github.com/mariaalexissales/Leaderboard-Framework))
 - **[Remove Vanilla Anything](https://steamcommunity.com/sharedfiles/filedetails/?id=3799346338)**: for those who are tired of seeing vanilla items in their heavily modded servers
 - **[Dead Court Deck](https://steamcommunity.com/sharedfiles/filedetails/?id=3800241753)**: for your ~~scalper~~ collectable needs! ([source](https://github.com/mariaalexissales/Dead-Court-Deck))
+- **[LAPLACE//DAEMON](https://steamcommunity.com/sharedfiles/filedetails/?id=3809376465)**: every blade you forge rolls a rarity, and a fortune ([source](https://github.com/mariaalexissales/LAPLACE-DAEMON))
