@@ -22,6 +22,7 @@ BU.Bundles["BundleUp.BaguetteCase"] = { base = "BundleUp.BaguetteCarton", count 
 BU.Bundles["BundleUp.BaloneyCase"] = { base = "BundleUp.BaloneyCarton", count = 4 }
 BU.Bundles["BundleUp.BalsamicVinegarCase"] = { base = "BundleUp.BalsamicVinegarCarton", count = 4 }
 BU.Bundles["BundleUp.BananaCase"] = { base = "BundleUp.BananaCarton", count = 4 }
+BU.Bundles["BundleUp.BarleySheafCase"] = { base = "BundleUp.BarleySheafCarton", count = 4 }
 BU.Bundles["BundleUp.BasilCase"] = { base = "BundleUp.BasilCarton", count = 4 }
 BU.Bundles["BundleUp.BasilDriedCase"] = { base = "BundleUp.BasilDriedCarton", count = 4 }
 BU.Bundles["BundleUp.BeefCase"] = { base = "BundleUp.BeefCarton", count = 4 }
@@ -30,6 +31,7 @@ BU.Bundles["BundleUp.BellPepperCase"] = { base = "BundleUp.BellPepperCarton", co
 BU.Bundles["BundleUp.BerryBlackCase"] = { base = "BundleUp.BerryBlackCarton", count = 4 }
 BU.Bundles["BundleUp.BerryBlueCase"] = { base = "BundleUp.BerryBlueCarton", count = 4 }
 BU.Bundles["BundleUp.BiscuitCase"] = { base = "BundleUp.BiscuitCarton", count = 4 }
+BU.Bundles["BundleUp.BlackSageCase"] = { base = "BundleUp.BlackSageCarton", count = 4 }
 BU.Bundles["BundleUp.BlackSageDriedCase"] = { base = "BundleUp.BlackSageDriedCarton", count = 4 }
 BU.Bundles["BundleUp.BouillonCubeCase"] = { base = "BundleUp.BouillonCubeCarton", count = 4 }
 BU.Bundles["BundleUp.BreadCase"] = { base = "BundleUp.BreadCarton", count = 4 }
@@ -63,6 +65,7 @@ BU.Bundles["BundleUp.CatTreatsCase"] = { base = "BundleUp.CatTreatsCarton", coun
 BU.Bundles["BundleUp.CauliflowerCase"] = { base = "BundleUp.CauliflowerCarton", count = 4 }
 BU.Bundles["BundleUp.CaviarCase"] = { base = "BundleUp.CaviarCarton", count = 4 }
 BU.Bundles["BundleUp.CerealCase"] = { base = "BundleUp.CerealCarton", count = 4 }
+BU.Bundles["BundleUp.ChamomileCase"] = { base = "BundleUp.ChamomileCarton", count = 4 }
 BU.Bundles["BundleUp.ChamomileDriedCase"] = { base = "BundleUp.ChamomileDriedCarton", count = 4 }
 BU.Bundles["BundleUp.CheeseCase"] = { base = "BundleUp.CheeseCarton", count = 4 }
 BU.Bundles["BundleUp.CherryCase"] = { base = "BundleUp.CherryCarton", count = 4 }
@@ -90,6 +93,8 @@ BU.Bundles["BundleUp.CinnamonCase"] = { base = "BundleUp.CinnamonCarton", count 
 BU.Bundles["BundleUp.CinnamonRollCase"] = { base = "BundleUp.CinnamonRollCarton", count = 4 }
 BU.Bundles["BundleUp.CocoaPowderCase"] = { base = "BundleUp.CocoaPowderCarton", count = 4 }
 BU.Bundles["BundleUp.Coffee2Case"] = { base = "BundleUp.Coffee2Carton", count = 4 }
+BU.Bundles["BundleUp.ComfreyCase"] = { base = "BundleUp.ComfreyCarton", count = 4 }
+BU.Bundles["BundleUp.CommonMallowCase"] = { base = "BundleUp.CommonMallowCarton", count = 4 }
 BU.Bundles["BundleUp.CommonMallowDriedCase"] = { base = "BundleUp.CommonMallowDriedCarton", count = 4 }
 BU.Bundles["BundleUp.CookieChocolateChipCase"] = { base = "BundleUp.CookieChocolateChipCarton", count = 4 }
 BU.Bundles["BundleUp.CookieJellyCase"] = { base = "BundleUp.CookieJellyCarton", count = 4 }
@@ -133,6 +138,7 @@ BU.Bundles["BundleUp.DriedWhiteBeansCase"] = { base = "BundleUp.DriedWhiteBeansC
 BU.Bundles["BundleUp.EdamameCase"] = { base = "BundleUp.EdamameCarton", count = 4 }
 BU.Bundles["BundleUp.EggplantCase"] = { base = "BundleUp.EggplantCarton", count = 4 }
 BU.Bundles["BundleUp.FishFilletCase"] = { base = "BundleUp.FishFilletCarton", count = 4 }
+BU.Bundles["BundleUp.FlaxCase"] = { base = "BundleUp.FlaxCarton", count = 4 }
 BU.Bundles["BundleUp.Flour2Case"] = { base = "BundleUp.Flour2Carton", count = 4 }
 BU.Bundles["BundleUp.FrogMeatCase"] = { base = "BundleUp.FrogMeatCarton", count = 4 }
 BU.Bundles["BundleUp.Frozen_ChickenNuggetsCase"] = { base = "BundleUp.Frozen_ChickenNuggetsCarton", count = 4 }
@@ -157,8 +163,10 @@ BU.Bundles["BundleUp.GummyBearsCase"] = { base = "BundleUp.GummyBearsCarton", co
 BU.Bundles["BundleUp.GummyWormsCase"] = { base = "BundleUp.GummyWormsCarton", count = 4 }
 BU.Bundles["BundleUp.HamCase"] = { base = "BundleUp.HamCarton", count = 4 }
 BU.Bundles["BundleUp.HardCandiesCase"] = { base = "BundleUp.HardCandiesCarton", count = 4 }
+BU.Bundles["BundleUp.HempBundleCase"] = { base = "BundleUp.HempBundleCarton", count = 4 }
 BU.Bundles["BundleUp.HiHisCase"] = { base = "BundleUp.HiHisCarton", count = 4 }
 BU.Bundles["BundleUp.HoneyCase"] = { base = "BundleUp.HoneyCarton", count = 4 }
+BU.Bundles["BundleUp.HopsCase"] = { base = "BundleUp.HopsCarton", count = 4 }
 BU.Bundles["BundleUp.HotdogPackCase"] = { base = "BundleUp.HotdogPackCarton", count = 4 }
 BU.Bundles["BundleUp.HotsauceCase"] = { base = "BundleUp.HotsauceCarton", count = 4 }
 BU.Bundles["BundleUp.IcecreamCase"] = { base = "BundleUp.IcecreamCarton", count = 4 }
@@ -171,6 +179,7 @@ BU.Bundles["BundleUp.JujubesCase"] = { base = "BundleUp.JujubesCarton", count = 
 BU.Bundles["BundleUp.KaleCase"] = { base = "BundleUp.KaleCarton", count = 4 }
 BU.Bundles["BundleUp.KetchupCase"] = { base = "BundleUp.KetchupCarton", count = 4 }
 BU.Bundles["BundleUp.LardCase"] = { base = "BundleUp.LardCarton", count = 4 }
+BU.Bundles["BundleUp.LavenderCase"] = { base = "BundleUp.LavenderCarton", count = 4 }
 BU.Bundles["BundleUp.LavenderPetalsDriedCase"] = { base = "BundleUp.LavenderPetalsDriedCarton", count = 4 }
 BU.Bundles["BundleUp.LeekCase"] = { base = "BundleUp.LeekCarton", count = 4 }
 BU.Bundles["BundleUp.LemonBarCase"] = { base = "BundleUp.LemonBarCarton", count = 4 }
@@ -186,6 +195,7 @@ BU.Bundles["BundleUp.MacaroniCase"] = { base = "BundleUp.MacaroniCarton", count 
 BU.Bundles["BundleUp.MangoCase"] = { base = "BundleUp.MangoCarton", count = 4 }
 BU.Bundles["BundleUp.MapleSyrupCase"] = { base = "BundleUp.MapleSyrupCarton", count = 4 }
 BU.Bundles["BundleUp.MargarineCase"] = { base = "BundleUp.MargarineCarton", count = 4 }
+BU.Bundles["BundleUp.MarigoldCase"] = { base = "BundleUp.MarigoldCarton", count = 4 }
 BU.Bundles["BundleUp.MarigoldDriedCase"] = { base = "BundleUp.MarigoldDriedCarton", count = 4 }
 BU.Bundles["BundleUp.MarinaraCase"] = { base = "BundleUp.MarinaraCarton", count = 4 }
 BU.Bundles["BundleUp.MarshmallowsCase"] = { base = "BundleUp.MarshmallowsCarton", count = 4 }
@@ -230,8 +240,11 @@ BU.Bundles["BundleUp.PeppermintCase"] = { base = "BundleUp.PeppermintCarton", co
 BU.Bundles["BundleUp.PepperoniCase"] = { base = "BundleUp.PepperoniCarton", count = 4 }
 BU.Bundles["BundleUp.PicklesCase"] = { base = "BundleUp.PicklesCarton", count = 4 }
 BU.Bundles["BundleUp.PineappleCase"] = { base = "BundleUp.PineappleCarton", count = 4 }
+BU.Bundles["BundleUp.PlantainCase"] = { base = "BundleUp.PlantainCarton", count = 4 }
 BU.Bundles["BundleUp.PlonkiesCase"] = { base = "BundleUp.PlonkiesCarton", count = 4 }
 BU.Bundles["BundleUp.PopcornCase"] = { base = "BundleUp.PopcornCarton", count = 4 }
+BU.Bundles["BundleUp.PoppiesCase"] = { base = "BundleUp.PoppiesCarton", count = 4 }
+BU.Bundles["BundleUp.PoppyPodsCase"] = { base = "BundleUp.PoppyPodsCarton", count = 4 }
 BU.Bundles["BundleUp.PopsicleCase"] = { base = "BundleUp.PopsicleCarton", count = 4 }
 BU.Bundles["BundleUp.PorkCase"] = { base = "BundleUp.PorkCarton", count = 4 }
 BU.Bundles["BundleUp.PorkChopCase"] = { base = "BundleUp.PorkChopCarton", count = 4 }
@@ -254,6 +267,8 @@ BU.Bundles["BundleUp.RockCandyCase"] = { base = "BundleUp.RockCandyCarton", coun
 BU.Bundles["BundleUp.RosePetalsDriedCase"] = { base = "BundleUp.RosePetalsDriedCarton", count = 4 }
 BU.Bundles["BundleUp.RosemaryCase"] = { base = "BundleUp.RosemaryCarton", count = 4 }
 BU.Bundles["BundleUp.RosemaryDriedCase"] = { base = "BundleUp.RosemaryDriedCarton", count = 4 }
+BU.Bundles["BundleUp.RosesCase"] = { base = "BundleUp.RosesCarton", count = 4 }
+BU.Bundles["BundleUp.RyeSheafCase"] = { base = "BundleUp.RyeSheafCarton", count = 4 }
 BU.Bundles["BundleUp.SageCase"] = { base = "BundleUp.SageCarton", count = 4 }
 BU.Bundles["BundleUp.SageDriedCase"] = { base = "BundleUp.SageDriedCarton", count = 4 }
 BU.Bundles["BundleUp.SalamiCase"] = { base = "BundleUp.SalamiCarton", count = 4 }
@@ -289,12 +304,14 @@ BU.Bundles["BundleUp.SugarBrownCase"] = { base = "BundleUp.SugarBrownCarton", co
 BU.Bundles["BundleUp.SugarCase"] = { base = "BundleUp.SugarCarton", count = 4 }
 BU.Bundles["BundleUp.SugarCubesCase"] = { base = "BundleUp.SugarCubesCarton", count = 4 }
 BU.Bundles["BundleUp.SugarPacketCase"] = { base = "BundleUp.SugarPacketCarton", count = 4 }
+BU.Bundles["BundleUp.SunflowerHeadCase"] = { base = "BundleUp.SunflowerHeadCarton", count = 4 }
 BU.Bundles["BundleUp.SunflowerSeedsCase"] = { base = "BundleUp.SunflowerSeedsCarton", count = 4 }
 BU.Bundles["BundleUp.SweetPotatoCase"] = { base = "BundleUp.SweetPotatoCarton", count = 4 }
 BU.Bundles["BundleUp.TacoShellCase"] = { base = "BundleUp.TacoShellCarton", count = 4 }
 BU.Bundles["BundleUp.Teabag2Case"] = { base = "BundleUp.Teabag2Carton", count = 4 }
 BU.Bundles["BundleUp.ThymeCase"] = { base = "BundleUp.ThymeCarton", count = 4 }
 BU.Bundles["BundleUp.ThymeDriedCase"] = { base = "BundleUp.ThymeDriedCarton", count = 4 }
+BU.Bundles["BundleUp.TobaccoCase"] = { base = "BundleUp.TobaccoCarton", count = 4 }
 BU.Bundles["BundleUp.TofuCase"] = { base = "BundleUp.TofuCarton", count = 4 }
 BU.Bundles["BundleUp.TomatoCase"] = { base = "BundleUp.TomatoCarton", count = 4 }
 BU.Bundles["BundleUp.TomatoPasteCase"] = { base = "BundleUp.TomatoPasteCarton", count = 4 }
@@ -307,7 +324,9 @@ BU.Bundles["BundleUp.TurkeyWingsCase"] = { base = "BundleUp.TurkeyWingsCarton", 
 BU.Bundles["BundleUp.TurnipCase"] = { base = "BundleUp.TurnipCarton", count = 4 }
 BU.Bundles["BundleUp.VenisonCase"] = { base = "BundleUp.VenisonCarton", count = 4 }
 BU.Bundles["BundleUp.WasabiCase"] = { base = "BundleUp.WasabiCarton", count = 4 }
+BU.Bundles["BundleUp.WheatSheafCase"] = { base = "BundleUp.WheatSheafCarton", count = 4 }
 BU.Bundles["BundleUp.WildEggsCase"] = { base = "BundleUp.WildEggsCarton", count = 4 }
+BU.Bundles["BundleUp.WildGarlic2Case"] = { base = "BundleUp.WildGarlic2Carton", count = 4 }
 BU.Bundles["BundleUp.WildGarlicDriedCase"] = { base = "BundleUp.WildGarlicDriedCarton", count = 4 }
 BU.Bundles["BundleUp.YoghurtCase"] = { base = "BundleUp.YoghurtCarton", count = 4 }
 BU.Bundles["BundleUp.ZucchiniCase"] = { base = "BundleUp.ZucchiniCarton", count = 4 }
@@ -410,6 +429,7 @@ BU.Bundles["BundleUp.BellPepperCrate"] = { base = "BundleUp.BellPepperCase", cou
 BU.Bundles["BundleUp.BerryBlackCrate"] = { base = "BundleUp.BerryBlackCase", count = 4 }
 BU.Bundles["BundleUp.BerryBlueCrate"] = { base = "BundleUp.BerryBlueCase", count = 4 }
 BU.Bundles["BundleUp.BiscuitCrate"] = { base = "BundleUp.BiscuitCase", count = 4 }
+BU.Bundles["BundleUp.BlackSageCrate"] = { base = "BundleUp.BlackSageCase", count = 4 }
 BU.Bundles["BundleUp.BlackSageDriedCrate"] = { base = "BundleUp.BlackSageDriedCase", count = 4 }
 BU.Bundles["BundleUp.BlueberrySPCrate"] = { base = "BundleUp.BlueberrySPCase", count = 4 }
 BU.Bundles["BundleUp.BouillonCubeCrate"] = { base = "BundleUp.BouillonCubeCase", count = 4 }
@@ -450,6 +470,7 @@ BU.Bundles["BundleUp.CatTreatsCrate"] = { base = "BundleUp.CatTreatsCase", count
 BU.Bundles["BundleUp.CauliflowerCrate"] = { base = "BundleUp.CauliflowerCase", count = 4 }
 BU.Bundles["BundleUp.CaviarCrate"] = { base = "BundleUp.CaviarCase", count = 4 }
 BU.Bundles["BundleUp.CerealCrate"] = { base = "BundleUp.CerealCase", count = 4 }
+BU.Bundles["BundleUp.ChamomileCrate"] = { base = "BundleUp.ChamomileCase", count = 4 }
 BU.Bundles["BundleUp.ChamomileDriedCrate"] = { base = "BundleUp.ChamomileDriedCase", count = 4 }
 BU.Bundles["BundleUp.CheeseCrate"] = { base = "BundleUp.CheeseCase", count = 4 }
 BU.Bundles["BundleUp.CherryCrate"] = { base = "BundleUp.CherryCase", count = 4 }
@@ -475,6 +496,8 @@ BU.Bundles["BundleUp.CilantroCrate"] = { base = "BundleUp.CilantroCase", count =
 BU.Bundles["BundleUp.CilantroDriedCrate"] = { base = "BundleUp.CilantroDriedCase", count = 4 }
 BU.Bundles["BundleUp.CinnamonCrate"] = { base = "BundleUp.CinnamonCase", count = 4 }
 BU.Bundles["BundleUp.CinnamonRollCrate"] = { base = "BundleUp.CinnamonRollCase", count = 4 }
+BU.Bundles["BundleUp.ComfreyCrate"] = { base = "BundleUp.ComfreyCase", count = 4 }
+BU.Bundles["BundleUp.CommonMallowCrate"] = { base = "BundleUp.CommonMallowCase", count = 4 }
 BU.Bundles["BundleUp.CommonMallowDriedCrate"] = { base = "BundleUp.CommonMallowDriedCase", count = 4 }
 BU.Bundles["BundleUp.CookieChocolateChipCrate"] = { base = "BundleUp.CookieChocolateChipCase", count = 4 }
 BU.Bundles["BundleUp.CookieJellyCrate"] = { base = "BundleUp.CookieJellyCase", count = 4 }
@@ -513,6 +536,7 @@ BU.Bundles["BundleUp.EdamameCrate"] = { base = "BundleUp.EdamameCase", count = 4
 BU.Bundles["BundleUp.EggCrate"] = { base = "BundleUp.EggCase", count = 4 }
 BU.Bundles["BundleUp.EggplantCrate"] = { base = "BundleUp.EggplantCase", count = 4 }
 BU.Bundles["BundleUp.FishFilletCrate"] = { base = "BundleUp.FishFilletCase", count = 4 }
+BU.Bundles["BundleUp.FlaxCrate"] = { base = "BundleUp.FlaxCase", count = 4 }
 BU.Bundles["BundleUp.FrogMeatCrate"] = { base = "BundleUp.FrogMeatCase", count = 4 }
 BU.Bundles["BundleUp.FudgeePopCrate"] = { base = "BundleUp.FudgeePopCase", count = 4 }
 BU.Bundles["BundleUp.GarlicCrate"] = { base = "BundleUp.GarlicCase", count = 4 }
@@ -535,6 +559,7 @@ BU.Bundles["BundleUp.GummyWormsCrate"] = { base = "BundleUp.GummyWormsCase", cou
 BU.Bundles["BundleUp.HardCandiesCrate"] = { base = "BundleUp.HardCandiesCase", count = 4 }
 BU.Bundles["BundleUp.HiHisCrate"] = { base = "BundleUp.HiHisCase", count = 4 }
 BU.Bundles["BundleUp.HoneyCrate"] = { base = "BundleUp.HoneyCase", count = 3 }
+BU.Bundles["BundleUp.HopsCrate"] = { base = "BundleUp.HopsCase", count = 4 }
 BU.Bundles["BundleUp.HotdogPackCrate"] = { base = "BundleUp.HotdogPackCase", count = 2 }
 BU.Bundles["BundleUp.HotsauceCrate"] = { base = "BundleUp.HotsauceCase", count = 4 }
 BU.Bundles["BundleUp.IcecreamCrate"] = { base = "BundleUp.IcecreamCase", count = 4 }
@@ -557,6 +582,7 @@ BU.Bundles["BundleUp.JujubesCrate"] = { base = "BundleUp.JujubesCase", count = 4
 BU.Bundles["BundleUp.KaleCrate"] = { base = "BundleUp.KaleCase", count = 4 }
 BU.Bundles["BundleUp.KetchupCrate"] = { base = "BundleUp.KetchupCase", count = 4 }
 BU.Bundles["BundleUp.LardCrate"] = { base = "BundleUp.LardCase", count = 4 }
+BU.Bundles["BundleUp.LavenderCrate"] = { base = "BundleUp.LavenderCase", count = 4 }
 BU.Bundles["BundleUp.LavenderPetalsDriedCrate"] = { base = "BundleUp.LavenderPetalsDriedCase", count = 4 }
 BU.Bundles["BundleUp.LeekCrate"] = { base = "BundleUp.LeekCase", count = 4 }
 BU.Bundles["BundleUp.LemonBarCrate"] = { base = "BundleUp.LemonBarCase", count = 4 }
@@ -573,6 +599,7 @@ BU.Bundles["BundleUp.MacandcheeseBoxCrate"] = { base = "BundleUp.MacandcheeseBox
 BU.Bundles["BundleUp.MangoCrate"] = { base = "BundleUp.MangoCase", count = 4 }
 BU.Bundles["BundleUp.MapleSyrupCrate"] = { base = "BundleUp.MapleSyrupCase", count = 4 }
 BU.Bundles["BundleUp.MargarineCrate"] = { base = "BundleUp.MargarineCase", count = 4 }
+BU.Bundles["BundleUp.MarigoldCrate"] = { base = "BundleUp.MarigoldCase", count = 4 }
 BU.Bundles["BundleUp.MarigoldDriedCrate"] = { base = "BundleUp.MarigoldDriedCase", count = 4 }
 BU.Bundles["BundleUp.MarinaraCrate"] = { base = "BundleUp.MarinaraCase", count = 4 }
 BU.Bundles["BundleUp.MarshmallowsCrate"] = { base = "BundleUp.MarshmallowsCase", count = 4 }
@@ -622,8 +649,11 @@ BU.Bundles["BundleUp.PepperoniCrate"] = { base = "BundleUp.PepperoniCase", count
 BU.Bundles["BundleUp.PicklesCrate"] = { base = "BundleUp.PicklesCase", count = 4 }
 BU.Bundles["BundleUp.PineappleCrate"] = { base = "BundleUp.PineappleCase", count = 4 }
 BU.Bundles["BundleUp.PineappleSPCrate"] = { base = "BundleUp.PineappleSPCase", count = 4 }
+BU.Bundles["BundleUp.PlantainCrate"] = { base = "BundleUp.PlantainCase", count = 4 }
 BU.Bundles["BundleUp.PlonkiesCrate"] = { base = "BundleUp.PlonkiesCase", count = 4 }
 BU.Bundles["BundleUp.PopcornCrate"] = { base = "BundleUp.PopcornCase", count = 4 }
+BU.Bundles["BundleUp.PoppiesCrate"] = { base = "BundleUp.PoppiesCase", count = 4 }
+BU.Bundles["BundleUp.PoppyPodsCrate"] = { base = "BundleUp.PoppyPodsCase", count = 4 }
 BU.Bundles["BundleUp.PopsicleCrate"] = { base = "BundleUp.PopsicleCase", count = 4 }
 BU.Bundles["BundleUp.PorkCrate"] = { base = "BundleUp.PorkCase", count = 2 }
 BU.Bundles["BundleUp.PorkChopCrate"] = { base = "BundleUp.PorkChopCase", count = 4 }
@@ -645,6 +675,7 @@ BU.Bundles["BundleUp.RockCandyCrate"] = { base = "BundleUp.RockCandyCase", count
 BU.Bundles["BundleUp.RosePetalsDriedCrate"] = { base = "BundleUp.RosePetalsDriedCase", count = 4 }
 BU.Bundles["BundleUp.RosemaryCrate"] = { base = "BundleUp.RosemaryCase", count = 4 }
 BU.Bundles["BundleUp.RosemaryDriedCrate"] = { base = "BundleUp.RosemaryDriedCase", count = 4 }
+BU.Bundles["BundleUp.RosesCrate"] = { base = "BundleUp.RosesCase", count = 4 }
 BU.Bundles["BundleUp.SageCrate"] = { base = "BundleUp.SageCase", count = 4 }
 BU.Bundles["BundleUp.SageDriedCrate"] = { base = "BundleUp.SageDriedCase", count = 4 }
 BU.Bundles["BundleUp.SalamiCrate"] = { base = "BundleUp.SalamiCase", count = 4 }
@@ -682,6 +713,7 @@ BU.Bundles["BundleUp.SugarBrownCrate"] = { base = "BundleUp.SugarBrownCase", cou
 BU.Bundles["BundleUp.SugarCrate"] = { base = "BundleUp.SugarCase", count = 2 }
 BU.Bundles["BundleUp.SugarCubesCrate"] = { base = "BundleUp.SugarCubesCase", count = 4 }
 BU.Bundles["BundleUp.SugarPacketCrate"] = { base = "BundleUp.SugarPacketCase", count = 4 }
+BU.Bundles["BundleUp.SunflowerHeadCrate"] = { base = "BundleUp.SunflowerHeadCase", count = 4 }
 BU.Bundles["BundleUp.SunflowerSeedsCrate"] = { base = "BundleUp.SunflowerSeedsCase", count = 4 }
 BU.Bundles["BundleUp.SweetPotatoCrate"] = { base = "BundleUp.SweetPotatoCase", count = 4 }
 BU.Bundles["BundleUp.TacoShellCrate"] = { base = "BundleUp.TacoShellCase", count = 4 }
@@ -690,6 +722,7 @@ BU.Bundles["BundleUp.ThymeCrate"] = { base = "BundleUp.ThymeCase", count = 4 }
 BU.Bundles["BundleUp.ThymeDriedCrate"] = { base = "BundleUp.ThymeDriedCase", count = 4 }
 BU.Bundles["BundleUp.TinnedBeansBoxCrate"] = { base = "BundleUp.TinnedBeansBoxCase", count = 3 }
 BU.Bundles["BundleUp.TinnedSoupBoxCrate"] = { base = "BundleUp.TinnedSoupBoxCase", count = 3 }
+BU.Bundles["BundleUp.TobaccoCrate"] = { base = "BundleUp.TobaccoCase", count = 4 }
 BU.Bundles["BundleUp.TofuCrate"] = { base = "BundleUp.TofuCase", count = 4 }
 BU.Bundles["BundleUp.TomatoCrate"] = { base = "BundleUp.TomatoCase", count = 4 }
 BU.Bundles["BundleUp.TomatoPasteCrate"] = { base = "BundleUp.TomatoPasteCase", count = 4 }
@@ -706,6 +739,7 @@ BU.Bundles["BundleUp.VenisonCrate"] = { base = "BundleUp.VenisonCase", count = 2
 BU.Bundles["BundleUp.WasabiCrate"] = { base = "BundleUp.WasabiCase", count = 4 }
 BU.Bundles["BundleUp.WaterRationCanBoxCrate"] = { base = "BundleUp.WaterRationCanBoxCase", count = 3 }
 BU.Bundles["BundleUp.WildEggsCrate"] = { base = "BundleUp.WildEggsCase", count = 4 }
+BU.Bundles["BundleUp.WildGarlic2Crate"] = { base = "BundleUp.WildGarlic2Case", count = 4 }
 BU.Bundles["BundleUp.WildGarlicDriedCrate"] = { base = "BundleUp.WildGarlicDriedCase", count = 4 }
 BU.Bundles["BundleUp.WineBoxPackCrate"] = { base = "BundleUp.WineBoxPackCase", count = 2 }
 BU.Bundles["BundleUp.WineRedPackCrate"] = { base = "BundleUp.WineRedPackCase", count = 2 }

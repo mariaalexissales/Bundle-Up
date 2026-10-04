@@ -1515,3 +1515,42 @@ BU.BaseCategory["Base.ClayBarMold"] = "ReductionStone"
 BU.BaseCategory["Base.ClayIngotMold"] = "ReductionStone"
 BU.BaseCategory["Base.ClaySheetMold"] = "ReductionStone"
 BU.BaseCategory["Base.ClayBlacksmithAnvilMold"] = "ReductionStone"
+
+BU.Bundles["BundleUp.FlaxCarton"] = { base = "Base.Flax", count = 12 }
+BU.Bundles["BundleUp.HempBundleCarton"] = { base = "Base.HempBundle", count = 12 }
+BU.Bundles["BundleUp.WheatSheafCarton"] = { base = "Base.WheatSheaf", count = 12 }
+BU.Bundles["BundleUp.BarleySheafCarton"] = { base = "Base.BarleySheaf", count = 12 }
+BU.Bundles["BundleUp.RyeSheafCarton"] = { base = "Base.RyeSheaf", count = 12 }
+BU.Bundles["BundleUp.TobaccoCarton"] = { base = "Base.Tobacco", count = 12 }
+BU.Bundles["BundleUp.HopsCarton"] = { base = "Base.Hops", count = 12 }
+BU.Bundles["BundleUp.PoppyPodsCarton"] = { base = "Base.PoppyPods", count = 12 }
+BU.Bundles["BundleUp.PoppiesCarton"] = { base = "Base.Poppies", count = 12 }
+BU.Bundles["BundleUp.SunflowerHeadCarton"] = { base = "Base.SunflowerHead", count = 12 }
+BU.Bundles["BundleUp.BlackSageCarton"] = { base = "Base.BlackSage", count = 12 }
+BU.Bundles["BundleUp.ComfreyCarton"] = { base = "Base.Comfrey", count = 12 }
+BU.Bundles["BundleUp.CommonMallowCarton"] = { base = "Base.CommonMallow", count = 12 }
+BU.Bundles["BundleUp.PlantainCarton"] = { base = "Base.Plantain", count = 12 }
+BU.Bundles["BundleUp.WildGarlic2Carton"] = { base = "Base.WildGarlic2", count = 12 }
+BU.Bundles["BundleUp.ChamomileCarton"] = { base = "Base.Chamomile", count = 12 }
+BU.Bundles["BundleUp.LavenderCarton"] = { base = "Base.Lavender", count = 12 }
+BU.Bundles["BundleUp.MarigoldCarton"] = { base = "Base.Marigold", count = 12 }
+BU.Bundles["BundleUp.RosesCarton"] = { base = "Base.Roses", count = 12 }
+BU.BaseCategory["Base.Flax"] = "ReductionFood"
+BU.BaseCategory["Base.HempBundle"] = "ReductionFood"
+BU.BaseCategory["Base.WheatSheaf"] = "ReductionFood"
+BU.BaseCategory["Base.BarleySheaf"] = "ReductionFood"
+BU.BaseCategory["Base.RyeSheaf"] = "ReductionFood"
+BU.BaseCategory["Base.Tobacco"] = "ReductionFood"
+BU.BaseCategory["Base.Hops"] = "ReductionFood"
+BU.BaseCategory["Base.PoppyPods"] = "ReductionFood"
+BU.BaseCategory["Base.Poppies"] = "ReductionFood"
+BU.BaseCategory["Base.SunflowerHead"] = "ReductionFood"
+BU.BaseCategory["Base.BlackSage"] = "ReductionFood"
+BU.BaseCategory["Base.Comfrey"] = "ReductionFood"
+BU.BaseCategory["Base.CommonMallow"] = "ReductionFood"
+BU.BaseCategory["Base.Plantain"] = "ReductionFood"
+BU.BaseCategory["Base.WildGarlic2"] = "ReductionFood"
+BU.BaseCategory["Base.Chamomile"] = "ReductionFood"
+BU.BaseCategory["Base.Lavender"] = "ReductionFood"
+BU.BaseCategory["Base.Marigold"] = "ReductionFood"
+BU.BaseCategory["Base.Roses"] = "ReductionFood"
