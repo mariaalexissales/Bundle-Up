@@ -1741,3 +1741,143 @@ BU.BaseCategory["Base.Dung_Rat"] = "ReductionOther"
 BU.BaseCategory["Base.Dung_Turkey"] = "ReductionOther"
 BU.BaseCategory["Base.Dung_Rabbit"] = "ReductionOther"
 BU.BaseCategory["Base.Dung_Raccoon"] = "ReductionOther"
+
+BU.Bundles["BundleUp.PlasticForkBox"] = { base = "Base.PlasticFork", count = 10 }
+BU.Bundles["BundleUp.PlasticKnifeBox"] = { base = "Base.PlasticKnife", count = 10 }
+BU.Bundles["BundleUp.PlasticSpoonBox"] = { base = "Base.PlasticSpoon", count = 10 }
+BU.Bundles["BundleUp.SporkBox"] = { base = "Base.Spork", count = 10 }
+BU.Bundles["BundleUp.ChopsticksBox"] = { base = "Base.Chopsticks", count = 10 }
+BU.Bundles["BundleUp.Straw2Box"] = { base = "Base.Straw2", count = 10 }
+BU.Bundles["BundleUp.CocktailUmbrellaBox"] = { base = "Base.CocktailUmbrella", count = 10 }
+BU.Bundles["BundleUp.SkewersWoodenBox"] = { base = "Base.SkewersWooden", count = 10 }
+BU.Bundles["BundleUp.PlateBox"] = { base = "Base.Plate", count = 10 }
+BU.Bundles["BundleUp.LadleBox"] = { base = "Base.Ladle", count = 10 }
+BU.Bundles["BundleUp.SpatulaBox"] = { base = "Base.Spatula", count = 10 }
+BU.Bundles["BundleUp.WhiskBox"] = { base = "Base.Whisk", count = 10 }
+BU.Bundles["BundleUp.BastingBrushBox"] = { base = "Base.BastingBrush", count = 10 }
+BU.Bundles["BundleUp.GrillBrushBox"] = { base = "Base.GrillBrush", count = 10 }
+BU.Bundles["BundleUp.CheeseGraterBox"] = { base = "Base.CheeseGrater", count = 10 }
+BU.Bundles["BundleUp.StrainerBox"] = { base = "Base.Strainer", count = 10 }
+BU.Bundles["BundleUp.PizzaCutterBox"] = { base = "Base.PizzaCutter", count = 10 }
+BU.Bundles["BundleUp.TinOpenerBox"] = { base = "Base.TinOpener", count = 10 }
+BU.Bundles["BundleUp.BottleOpenerBox"] = { base = "Base.BottleOpener", count = 10 }
+BU.Bundles["BundleUp.P38Box"] = { base = "Base.P38", count = 10 }
+BU.Bundles["BundleUp.CorkscrewBox"] = { base = "Base.Corkscrew", count = 10 }
+BU.Bundles["BundleUp.OvenMittBox"] = { base = "Base.OvenMitt", count = 10 }
+BU.Bundles["BundleUp.CuttingBoardPlasticBox"] = { base = "Base.CuttingBoardPlastic", count = 10 }
+BU.Bundles["BundleUp.CuttingBoardWoodenBox"] = { base = "Base.CuttingBoardWooden", count = 10 }
+BU.Bundles["BundleUp.BakingPanBox"] = { base = "Base.BakingPan", count = 10 }
+BU.Bundles["BundleUp.BakingTrayBox"] = { base = "Base.BakingTray", count = 10 }
+BU.Bundles["BundleUp.MuffinTrayBox"] = { base = "Base.MuffinTray", count = 10 }
+BU.Bundles["BundleUp.RoastingPanBox"] = { base = "Base.RoastingPan", count = 10 }
+BU.Bundles["BundleUp.MarkerBlackBox"] = { base = "Base.MarkerBlack", count = 10 }
+BU.Bundles["BundleUp.MarkerBlueBox"] = { base = "Base.MarkerBlue", count = 10 }
+BU.Bundles["BundleUp.MarkerGreenBox"] = { base = "Base.MarkerGreen", count = 10 }
+BU.Bundles["BundleUp.MarkerRedBox"] = { base = "Base.MarkerRed", count = 10 }
+BU.Bundles["BundleUp.EraserBox"] = { base = "Base.Eraser", count = 10 }
+BU.Bundles["BundleUp.CrayonsBox"] = { base = "Base.Crayons", count = 10 }
+BU.Bundles["BundleUp.PokerChipsBox"] = { base = "Base.PokerChips", count = 10 }
+BU.Bundles["BundleUp.BaseballBox"] = { base = "Base.Baseball", count = 10 }
+BU.Bundles["BundleUp.BasketballBox"] = { base = "Base.Basketball", count = 10 }
+BU.Bundles["BundleUp.BirdieBox"] = { base = "Base.Birdie", count = 10 }
+BU.Bundles["BundleUp.DartBox"] = { base = "Base.Dart", count = 10 }
+BU.Bundles["BundleUp.FootballBox"] = { base = "Base.Football", count = 10 }
+BU.Bundles["BundleUp.GolfBallBox"] = { base = "Base.GolfBall", count = 10 }
+BU.Bundles["BundleUp.PoolBallBox"] = { base = "Base.PoolBall", count = 10 }
+BU.Bundles["BundleUp.SoccerBallBox"] = { base = "Base.SoccerBall", count = 10 }
+BU.Bundles["BundleUp.TennisBallBox"] = { base = "Base.TennisBall", count = 10 }
+BU.Bundles["BundleUp.CrystalBox"] = { base = "Base.Crystal", count = 10 }
+BU.BaseCategory["Base.PlasticFork"] = "ReductionOther"
+BU.BaseCategory["Base.PlasticKnife"] = "ReductionOther"
+BU.BaseCategory["Base.PlasticSpoon"] = "ReductionOther"
+BU.BaseCategory["Base.Spork"] = "ReductionOther"
+BU.BaseCategory["Base.Chopsticks"] = "ReductionOther"
+BU.BaseCategory["Base.Straw2"] = "ReductionOther"
+BU.BaseCategory["Base.CocktailUmbrella"] = "ReductionOther"
+BU.BaseCategory["Base.SkewersWooden"] = "ReductionOther"
+BU.BaseCategory["Base.Plate"] = "ReductionOther"
+BU.BaseCategory["Base.Ladle"] = "ReductionOther"
+BU.BaseCategory["Base.Spatula"] = "ReductionOther"
+BU.BaseCategory["Base.Whisk"] = "ReductionOther"
+BU.BaseCategory["Base.BastingBrush"] = "ReductionOther"
+BU.BaseCategory["Base.GrillBrush"] = "ReductionOther"
+BU.BaseCategory["Base.CheeseGrater"] = "ReductionOther"
+BU.BaseCategory["Base.Strainer"] = "ReductionOther"
+BU.BaseCategory["Base.PizzaCutter"] = "ReductionOther"
+BU.BaseCategory["Base.TinOpener"] = "ReductionOther"
+BU.BaseCategory["Base.BottleOpener"] = "ReductionOther"
+BU.BaseCategory["Base.P38"] = "ReductionOther"
+BU.BaseCategory["Base.Corkscrew"] = "ReductionOther"
+BU.BaseCategory["Base.OvenMitt"] = "ReductionOther"
+BU.BaseCategory["Base.CuttingBoardPlastic"] = "ReductionOther"
+BU.BaseCategory["Base.CuttingBoardWooden"] = "ReductionOther"
+BU.BaseCategory["Base.BakingPan"] = "ReductionOther"
+BU.BaseCategory["Base.BakingTray"] = "ReductionOther"
+BU.BaseCategory["Base.MuffinTray"] = "ReductionOther"
+BU.BaseCategory["Base.RoastingPan"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerBlack"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerBlue"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerGreen"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerRed"] = "ReductionOther"
+BU.BaseCategory["Base.Eraser"] = "ReductionOther"
+BU.BaseCategory["Base.Crayons"] = "ReductionOther"
+BU.BaseCategory["Base.PokerChips"] = "ReductionOther"
+BU.BaseCategory["Base.Baseball"] = "ReductionOther"
+BU.BaseCategory["Base.Basketball"] = "ReductionOther"
+BU.BaseCategory["Base.Birdie"] = "ReductionOther"
+BU.BaseCategory["Base.Dart"] = "ReductionOther"
+BU.BaseCategory["Base.Football"] = "ReductionOther"
+BU.BaseCategory["Base.GolfBall"] = "ReductionOther"
+BU.BaseCategory["Base.PoolBall"] = "ReductionOther"
+BU.BaseCategory["Base.SoccerBall"] = "ReductionOther"
+BU.BaseCategory["Base.TennisBall"] = "ReductionOther"
+BU.BaseCategory["Base.Crystal"] = "ReductionOther"
+
+BU.Bundles["BundleUp.AmethystBox"] = { base = "Base.Amethyst", count = 50 }
+BU.Bundles["BundleUp.DiamondBox"] = { base = "Base.Diamond", count = 50 }
+BU.Bundles["BundleUp.EmeraldBox"] = { base = "Base.Emerald", count = 50 }
+BU.Bundles["BundleUp.RubyBox"] = { base = "Base.Ruby", count = 50 }
+BU.Bundles["BundleUp.SapphireBox"] = { base = "Base.Sapphire", count = 50 }
+BU.Bundles["BundleUp.GoldCoinBox"] = { base = "Base.GoldCoin", count = 50 }
+BU.Bundles["BundleUp.SilverCoinBox"] = { base = "Base.SilverCoin", count = 50 }
+BU.Bundles["BundleUp.DiceBox"] = { base = "Base.Dice", count = 50 }
+BU.Bundles["BundleUp.Dice_BoneBox"] = { base = "Base.Dice_Bone", count = 50 }
+BU.Bundles["BundleUp.Dice_WoodBox"] = { base = "Base.Dice_Wood", count = 50 }
+BU.Bundles["BundleUp.Dice_00Box"] = { base = "Base.Dice_00", count = 50 }
+BU.Bundles["BundleUp.Dice_10Box"] = { base = "Base.Dice_10", count = 50 }
+BU.Bundles["BundleUp.Dice_12Box"] = { base = "Base.Dice_12", count = 50 }
+BU.Bundles["BundleUp.Dice_20Box"] = { base = "Base.Dice_20", count = 50 }
+BU.Bundles["BundleUp.Dice_4Box"] = { base = "Base.Dice_4", count = 50 }
+BU.Bundles["BundleUp.Dice_6Box"] = { base = "Base.Dice_6", count = 50 }
+BU.Bundles["BundleUp.Dice_8Box"] = { base = "Base.Dice_8", count = 50 }
+BU.Bundles["BundleUp.GolfTeeBox"] = { base = "Base.GolfTee", count = 50 }
+BU.Bundles["BundleUp.GamePieceBlackBox"] = { base = "Base.GamePieceBlack", count = 50 }
+BU.Bundles["BundleUp.GamePieceRedBox"] = { base = "Base.GamePieceRed", count = 50 }
+BU.Bundles["BundleUp.GamePieceWhiteBox"] = { base = "Base.GamePieceWhite", count = 50 }
+BU.Bundles["BundleUp.ChessBlackBox"] = { base = "Base.ChessBlack", count = 50 }
+BU.Bundles["BundleUp.ChessWhiteBox"] = { base = "Base.ChessWhite", count = 50 }
+BU.Bundles["BundleUp.RubberBandBox"] = { base = "Base.RubberBand", count = 50 }
+BU.BaseCategory["Base.Amethyst"] = "ReductionOther"
+BU.BaseCategory["Base.Diamond"] = "ReductionOther"
+BU.BaseCategory["Base.Emerald"] = "ReductionOther"
+BU.BaseCategory["Base.Ruby"] = "ReductionOther"
+BU.BaseCategory["Base.Sapphire"] = "ReductionOther"
+BU.BaseCategory["Base.GoldCoin"] = "ReductionMetal"
+BU.BaseCategory["Base.SilverCoin"] = "ReductionMetal"
+BU.BaseCategory["Base.Dice"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_Bone"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_Wood"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_00"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_10"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_12"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_20"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_4"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_6"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_8"] = "ReductionOther"
+BU.BaseCategory["Base.GolfTee"] = "ReductionOther"
+BU.BaseCategory["Base.GamePieceBlack"] = "ReductionOther"
+BU.BaseCategory["Base.GamePieceRed"] = "ReductionOther"
+BU.BaseCategory["Base.GamePieceWhite"] = "ReductionOther"
+BU.BaseCategory["Base.ChessBlack"] = "ReductionOther"
+BU.BaseCategory["Base.ChessWhite"] = "ReductionOther"
+BU.BaseCategory["Base.RubberBand"] = "ReductionOther"
