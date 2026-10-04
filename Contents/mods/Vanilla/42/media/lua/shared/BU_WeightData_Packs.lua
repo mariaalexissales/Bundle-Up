@@ -1646,3 +1646,18 @@ BU.BaseCategory["Base.StoneBlade"] = "ReductionStone"
 BU.BaseCategory["Base.StoneBladeLong"] = "ReductionStone"
 BU.BaseCategory["Base.StoneAxeHead"] = "ReductionStone"
 BU.BaseCategory["Base.StoneMaulHead"] = "ReductionStone"
+
+BU.Bundles["BundleUp.NeedleBox"] = { base = "Base.Needle", count = 50 }
+BU.Bundles["BundleUp.Needle_BoneBox"] = { base = "Base.Needle_Bone", count = 50 }
+BU.Bundles["BundleUp.Needle_BrassBox"] = { base = "Base.Needle_Brass", count = 50 }
+BU.Bundles["BundleUp.Needle_ForgedBox"] = { base = "Base.Needle_Forged", count = 50 }
+BU.Bundles["BundleUp.FishingHook_BoneBox"] = { base = "Base.FishingHook_Bone", count = 50 }
+BU.Bundles["BundleUp.FishingHook_ForgedBox"] = { base = "Base.FishingHook_Forged", count = 50 }
+BU.Bundles["BundleUp.MagnesiumShavingsBox"] = { base = "Base.MagnesiumShavings", count = 50 }
+BU.BaseCategory["Base.Needle"] = "ReductionMetal"
+BU.BaseCategory["Base.Needle_Bone"] = "ReductionOther"
+BU.BaseCategory["Base.Needle_Brass"] = "ReductionMetal"
+BU.BaseCategory["Base.Needle_Forged"] = "ReductionMetal"
+BU.BaseCategory["Base.FishingHook_Bone"] = "ReductionOther"
+BU.BaseCategory["Base.FishingHook_Forged"] = "ReductionMetal"
+BU.BaseCategory["Base.MagnesiumShavings"] = "ReductionMetal"

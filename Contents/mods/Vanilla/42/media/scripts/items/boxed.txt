@@ -4888,4 +4888,60 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackKnappedBox,
     }
+    item NeedleBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Needle_BoneBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Needle_BrassBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Needle_ForgedBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FishingHook_BoneBox {
+        DisplayCategory = Fishing,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FishingHook_ForgedBox {
+        DisplayCategory = Fishing,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item MagnesiumShavingsBox {
+        DisplayCategory = Camping,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
 }

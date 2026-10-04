@@ -1531,4 +1531,48 @@ module BundleUp {
             Base.StoneMaulHead = BundleUp.StoneMaulHeadBox,
         }
     }
+
+    craftRecipe PackSmallsBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 50 [Base.FishingHook_Bone;Base.FishingHook_Forged;Base.MagnesiumShavings;Base.Needle;Base.Needle_Bone;Base.Needle_Brass;Base.Needle_Forged] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.FishingHook_BoneBox = Base.FishingHook_Bone,
+            BundleUp.FishingHook_ForgedBox = Base.FishingHook_Forged,
+            BundleUp.MagnesiumShavingsBox = Base.MagnesiumShavings,
+            BundleUp.NeedleBox = Base.Needle,
+            BundleUp.Needle_BoneBox = Base.Needle_Bone,
+            BundleUp.Needle_BrassBox = Base.Needle_Brass,
+            BundleUp.Needle_ForgedBox = Base.Needle_Forged,
+        }
+    }
+
+    craftRecipe UnpackSmallsBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.FishingHook_BoneBox;BundleUp.FishingHook_ForgedBox;BundleUp.MagnesiumShavingsBox;BundleUp.NeedleBox;BundleUp.Needle_BoneBox;BundleUp.Needle_BrassBox;BundleUp.Needle_ForgedBox] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 50 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.FishingHook_Bone = BundleUp.FishingHook_BoneBox,
+            Base.FishingHook_Forged = BundleUp.FishingHook_ForgedBox,
+            Base.MagnesiumShavings = BundleUp.MagnesiumShavingsBox,
+            Base.Needle = BundleUp.NeedleBox,
+            Base.Needle_Bone = BundleUp.Needle_BoneBox,
+            Base.Needle_Brass = BundleUp.Needle_BrassBox,
+            Base.Needle_Forged = BundleUp.Needle_ForgedBox,
+        }
+    }
 }
