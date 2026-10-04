@@ -1331,4 +1331,50 @@ module BundleUp {
             Base.ModernSuspension3 = BundleUp.ModernSuspension3Box,
         }
     }
+
+    craftRecipe PackCeramicCrate {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 25 [Base.ClayBrick;Base.ClayBrickUnfired;Base.ClayPipeSegment;Base.ClayPipeSegmentUnfired;Base.ClayShingle;Base.ClayShingleUnfired;Base.ClayTile;Base.ClayTileUnfired] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.ClayBrickCrate = Base.ClayBrick,
+            BundleUp.ClayBrickUnfiredCrate = Base.ClayBrickUnfired,
+            BundleUp.ClayPipeSegmentCrate = Base.ClayPipeSegment,
+            BundleUp.ClayPipeSegmentUnfiredCrate = Base.ClayPipeSegmentUnfired,
+            BundleUp.ClayShingleCrate = Base.ClayShingle,
+            BundleUp.ClayShingleUnfiredCrate = Base.ClayShingleUnfired,
+            BundleUp.ClayTileCrate = Base.ClayTile,
+            BundleUp.ClayTileUnfiredCrate = Base.ClayTileUnfired,
+        }
+    }
+
+    craftRecipe UnpackCeramicCrate {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.ClayBrickCrate;BundleUp.ClayBrickUnfiredCrate;BundleUp.ClayPipeSegmentCrate;BundleUp.ClayPipeSegmentUnfiredCrate;BundleUp.ClayShingleCrate;BundleUp.ClayShingleUnfiredCrate;BundleUp.ClayTileCrate;BundleUp.ClayTileUnfiredCrate] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 25 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.ClayBrick = BundleUp.ClayBrickCrate,
+            Base.ClayBrickUnfired = BundleUp.ClayBrickUnfiredCrate,
+            Base.ClayPipeSegment = BundleUp.ClayPipeSegmentCrate,
+            Base.ClayPipeSegmentUnfired = BundleUp.ClayPipeSegmentUnfiredCrate,
+            Base.ClayShingle = BundleUp.ClayShingleCrate,
+            Base.ClayShingleUnfired = BundleUp.ClayShingleUnfiredCrate,
+            Base.ClayTile = BundleUp.ClayTileCrate,
+            Base.ClayTileUnfired = BundleUp.ClayTileUnfiredCrate,
+        }
+    }
 }

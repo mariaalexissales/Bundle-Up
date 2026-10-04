@@ -1449,3 +1449,20 @@ BU.BaseCategory["Base.NormalSuspension2"] = "ReductionMetal"
 BU.BaseCategory["Base.ModernSuspension2"] = "ReductionMetal"
 BU.BaseCategory["Base.NormalSuspension3"] = "ReductionMetal"
 BU.BaseCategory["Base.ModernSuspension3"] = "ReductionMetal"
+
+BU.Bundles["BundleUp.ClayBrickCrate"] = { base = "Base.ClayBrick", count = 25 }
+BU.Bundles["BundleUp.ClayBrickUnfiredCrate"] = { base = "Base.ClayBrickUnfired", count = 25 }
+BU.Bundles["BundleUp.ClayTileCrate"] = { base = "Base.ClayTile", count = 25 }
+BU.Bundles["BundleUp.ClayTileUnfiredCrate"] = { base = "Base.ClayTileUnfired", count = 25 }
+BU.Bundles["BundleUp.ClayShingleCrate"] = { base = "Base.ClayShingle", count = 25 }
+BU.Bundles["BundleUp.ClayShingleUnfiredCrate"] = { base = "Base.ClayShingleUnfired", count = 25 }
+BU.Bundles["BundleUp.ClayPipeSegmentCrate"] = { base = "Base.ClayPipeSegment", count = 25 }
+BU.Bundles["BundleUp.ClayPipeSegmentUnfiredCrate"] = { base = "Base.ClayPipeSegmentUnfired", count = 25 }
+BU.BaseCategory["Base.ClayBrick"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBrickUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayTile"] = "ReductionStone"
+BU.BaseCategory["Base.ClayTileUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayShingle"] = "ReductionStone"
+BU.BaseCategory["Base.ClayShingleUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPipeSegment"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPipeSegmentUnfired"] = "ReductionStone"

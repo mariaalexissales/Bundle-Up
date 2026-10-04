@@ -4271,4 +4271,68 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSuspensionBox,
     }
+    item ClayBrickCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayBrickUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayTileCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayTileUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayShingleCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayShingleUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayPipeSegmentCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayPipeSegmentUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
 }
