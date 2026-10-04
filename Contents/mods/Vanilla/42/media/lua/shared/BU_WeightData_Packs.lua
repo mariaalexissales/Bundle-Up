@@ -1614,3 +1614,26 @@ BU.Bundles["BundleUp.SmallCopperSheetS"] = { base = "Base.SmallCopperSheet", cou
 BU.Bundles["BundleUp.SmallCopperSheetL"] = { base = "Base.SmallCopperSheet", count = 10 }
 BU.BaseCategory["Base.SilverSheet"] = "ReductionMetal"
 BU.BaseCategory["Base.SmallCopperSheet"] = "ReductionMetal"
+
+BU.Bundles["BundleUp.AluminumFragmentsBox"] = { base = "Base.AluminumFragments", count = 10 }
+BU.Bundles["BundleUp.HeavyChainLinkBox"] = { base = "Base.HeavyChainLink", count = 10 }
+BU.Bundles["BundleUp.LatchBox"] = { base = "Base.Latch", count = 10 }
+BU.Bundles["BundleUp.CrudeBladeBox"] = { base = "Base.CrudeBlade", count = 10 }
+BU.Bundles["BundleUp.LongCrudeBladeBox"] = { base = "Base.LongCrudeBlade", count = 10 }
+BU.Bundles["BundleUp.SpearHeadBox"] = { base = "Base.SpearHead", count = 10 }
+BU.Bundles["BundleUp.SpearLongHeadBox"] = { base = "Base.SpearLongHead", count = 10 }
+BU.Bundles["BundleUp.SpadeHead_ForgedBox"] = { base = "Base.SpadeHead_Forged", count = 10 }
+BU.Bundles["BundleUp.BoneBead_LargeBox"] = { base = "Base.BoneBead_Large", count = 10 }
+BU.Bundles["BundleUp.SharpBoneFragmentBox"] = { base = "Base.SharpBoneFragment", count = 10 }
+BU.Bundles["BundleUp.CorkBox"] = { base = "Base.Cork", count = 10 }
+BU.BaseCategory["Base.AluminumFragments"] = "ReductionMetal"
+BU.BaseCategory["Base.HeavyChainLink"] = "ReductionMetal"
+BU.BaseCategory["Base.Latch"] = "ReductionMetal"
+BU.BaseCategory["Base.CrudeBlade"] = "ReductionMetal"
+BU.BaseCategory["Base.LongCrudeBlade"] = "ReductionMetal"
+BU.BaseCategory["Base.SpearHead"] = "ReductionMetal"
+BU.BaseCategory["Base.SpearLongHead"] = "ReductionMetal"
+BU.BaseCategory["Base.SpadeHead_Forged"] = "ReductionMetal"
+BU.BaseCategory["Base.BoneBead_Large"] = "ReductionOther"
+BU.BaseCategory["Base.SharpBoneFragment"] = "ReductionOther"
+BU.BaseCategory["Base.Cork"] = "ReductionOther"

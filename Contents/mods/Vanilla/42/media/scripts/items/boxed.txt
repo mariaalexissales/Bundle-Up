@@ -4768,4 +4768,92 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
     }
+    item AluminumFragmentsBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item HeavyChainLinkBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item LatchBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CrudeBladeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item LongCrudeBladeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SpearHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SpearLongHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SpadeHead_ForgedBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BoneBead_LargeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SharpBoneFragmentBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CorkBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
 }
