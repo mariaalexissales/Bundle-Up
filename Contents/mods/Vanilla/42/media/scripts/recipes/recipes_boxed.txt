@@ -1493,4 +1493,42 @@ module BundleUp {
             Base.ClayTileUnfired = BundleUp.ClayTileUnfiredCrate,
         }
     }
+
+    craftRecipe PackKnappedBox {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 10 [Base.StoneAxeHead;Base.StoneBlade;Base.StoneBladeLong;Base.StoneMaulHead] flags[IsUndamaged;IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.StoneAxeHeadBox = Base.StoneAxeHead,
+            BundleUp.StoneBladeBox = Base.StoneBlade,
+            BundleUp.StoneBladeLongBox = Base.StoneBladeLong,
+            BundleUp.StoneMaulHeadBox = Base.StoneMaulHead,
+        }
+    }
+
+    craftRecipe UnpackKnappedBox {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.StoneAxeHeadBox;BundleUp.StoneBladeBox;BundleUp.StoneBladeLongBox;BundleUp.StoneMaulHeadBox] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.StoneAxeHead = BundleUp.StoneAxeHeadBox,
+            Base.StoneBlade = BundleUp.StoneBladeBox,
+            Base.StoneBladeLong = BundleUp.StoneBladeLongBox,
+            Base.StoneMaulHead = BundleUp.StoneMaulHeadBox,
+        }
+    }
 }

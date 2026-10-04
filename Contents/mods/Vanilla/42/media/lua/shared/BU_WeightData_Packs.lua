@@ -1637,3 +1637,12 @@ BU.BaseCategory["Base.SpadeHead_Forged"] = "ReductionMetal"
 BU.BaseCategory["Base.BoneBead_Large"] = "ReductionOther"
 BU.BaseCategory["Base.SharpBoneFragment"] = "ReductionOther"
 BU.BaseCategory["Base.Cork"] = "ReductionOther"
+
+BU.Bundles["BundleUp.StoneBladeBox"] = { base = "Base.StoneBlade", count = 10 }
+BU.Bundles["BundleUp.StoneBladeLongBox"] = { base = "Base.StoneBladeLong", count = 10 }
+BU.Bundles["BundleUp.StoneAxeHeadBox"] = { base = "Base.StoneAxeHead", count = 10 }
+BU.Bundles["BundleUp.StoneMaulHeadBox"] = { base = "Base.StoneMaulHead", count = 10 }
+BU.BaseCategory["Base.StoneBlade"] = "ReductionStone"
+BU.BaseCategory["Base.StoneBladeLong"] = "ReductionStone"
+BU.BaseCategory["Base.StoneAxeHead"] = "ReductionStone"
+BU.BaseCategory["Base.StoneMaulHead"] = "ReductionStone"

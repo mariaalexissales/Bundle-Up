@@ -133,6 +133,8 @@
   "UnpackFibreBale": "Open Fibre Bale (20 items)",
   "PackSheafBundle": "Bundle Sheaves",
   "UnpackSheafBundle": "Unbundle Sheaves (10 items)",
+  "PackKnappedBox": "Pack Knapped Stone in Box",
+  "UnpackKnappedBox": "Open Knapped Stone Box (10 items)",
   "PackBoxCase": "Pack Food Boxes in Case",
   "PackDrinkCase": "Pack Drink Packs in Case",
   "PackFoodCase": "Pack Food Cartons in Case",

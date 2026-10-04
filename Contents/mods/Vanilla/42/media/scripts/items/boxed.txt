@@ -4856,4 +4856,36 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSupplyBox,
     }
+    item StoneBladeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
+    item StoneBladeLongBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
+    item StoneAxeHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
+    item StoneMaulHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
 }
