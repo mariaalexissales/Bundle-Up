@@ -4031,4 +4031,220 @@ module BundleUp {
         WorldStaticModel = Hide_SheetRope_Large,
         DoubleClickRecipe = UntieHide10,
     }
+
+    item HideCrudeLargeRawR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeLargeRawSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeLargeRawLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeLargeRawLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeLargeWetR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeLargeWetSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeLargeWetLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeLargeWetLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeMediumRawR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeMediumRawSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeMediumRawLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeMediumRawLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeMediumWetR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeMediumWetSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeMediumWetLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeMediumWetLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeSmallRawR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeSmallRawSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeSmallRawLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeSmallRawLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_Crude,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeSmallWetR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeSmallWetSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCrudeSmallWetLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCrudeSmallWetLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
 }

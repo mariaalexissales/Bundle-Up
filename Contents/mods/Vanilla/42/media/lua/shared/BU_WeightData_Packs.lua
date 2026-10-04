@@ -2190,3 +2190,34 @@ BU.BaseCategory["Base.CowLeather_Simmental_Fur_Tan_Small"] = "ReductionLeather"
 BU.BaseCategory["Base.DeerLeather_Fur_Tan_Small"] = "ReductionLeather"
 BU.BaseCategory["Base.PigLeather_Landrace_Fur_Tan_Small"] = "ReductionLeather"
 BU.BaseCategory["Base.SheepLeather_Fur_Tan_Small"] = "ReductionLeather"
+
+BU.Bundles["BundleUp.HideCrudeLargeRawR"] = { base = "Base.Leather_Crude_Large", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeRawSR"] = { base = "Base.Leather_Crude_Large", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeRawLR"] = { base = "Base.Leather_Crude_Large", count = 10 }
+BU.Bundles["BundleUp.HideCrudeLargeRawLSR"] = { base = "Base.Leather_Crude_Large", count = 10 }
+BU.Bundles["BundleUp.HideCrudeLargeWetR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeWetSR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeWetLR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeLargeWetLSR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumRawR"] = { base = "Base.Leather_Crude_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumRawSR"] = { base = "Base.Leather_Crude_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumRawLR"] = { base = "Base.Leather_Crude_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumRawLSR"] = { base = "Base.Leather_Crude_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumWetR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumWetSR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumWetLR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumWetLSR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallRawR"] = { base = "Base.Leather_Crude_Small", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallRawSR"] = { base = "Base.Leather_Crude_Small", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallRawLR"] = { base = "Base.Leather_Crude_Small", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallRawLSR"] = { base = "Base.Leather_Crude_Small", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallWetR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallWetSR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallWetLR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallWetLSR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 10 }
+BU.BaseCategory["Base.Leather_Crude_Large"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Large_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Medium"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Medium_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Small_Tan_Wet"] = "ReductionLeather"
