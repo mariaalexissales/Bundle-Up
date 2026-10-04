@@ -2366,4 +2366,40 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackFibreBale,
     }
+
+    item WheatSheafDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
+
+    item BarleySheafDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
+
+    item RyeSheafDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
+
+    item HempDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
 }

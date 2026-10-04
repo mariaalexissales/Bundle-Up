@@ -1190,4 +1190,42 @@ module BundleUp {
             Base.WoolRaw = BundleUp.WoolRawBale,
         }
     }
+
+    craftRecipe PackSheafBundle {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 10 [Base.BarleySheafDried;Base.HempBundleDried;Base.RyeSheafDried;Base.WheatSheafDried] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.BarleySheafDriedBundle = Base.BarleySheafDried,
+            BundleUp.HempDriedBundle = Base.HempBundleDried,
+            BundleUp.RyeSheafDriedBundle = Base.RyeSheafDried,
+            BundleUp.WheatSheafDriedBundle = Base.WheatSheafDried,
+        }
+    }
+
+    craftRecipe UnpackSheafBundle {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.BarleySheafDriedBundle;BundleUp.HempDriedBundle;BundleUp.RyeSheafDriedBundle;BundleUp.WheatSheafDriedBundle] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.BarleySheafDried = BundleUp.BarleySheafDriedBundle,
+            Base.HempBundleDried = BundleUp.HempDriedBundle,
+            Base.RyeSheafDried = BundleUp.RyeSheafDriedBundle,
+            Base.WheatSheafDried = BundleUp.WheatSheafDriedBundle,
+        }
+    }
 }

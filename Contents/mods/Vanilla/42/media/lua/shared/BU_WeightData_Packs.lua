@@ -1589,3 +1589,12 @@ BU.BaseCategory["Base.PoppyPodsDried"] = "ReductionOther"
 BU.BaseCategory["Base.SunflowerHeadDried"] = "ReductionOther"
 BU.BaseCategory["Base.ComfreyDried"] = "ReductionOther"
 BU.BaseCategory["Base.PlantainDried"] = "ReductionOther"
+
+BU.Bundles["BundleUp.WheatSheafDriedBundle"] = { base = "Base.WheatSheafDried", count = 10 }
+BU.Bundles["BundleUp.BarleySheafDriedBundle"] = { base = "Base.BarleySheafDried", count = 10 }
+BU.Bundles["BundleUp.RyeSheafDriedBundle"] = { base = "Base.RyeSheafDried", count = 10 }
+BU.Bundles["BundleUp.HempDriedBundle"] = { base = "Base.HempBundleDried", count = 10 }
+BU.BaseCategory["Base.WheatSheafDried"] = "ReductionOther"
+BU.BaseCategory["Base.BarleySheafDried"] = "ReductionOther"
+BU.BaseCategory["Base.RyeSheafDried"] = "ReductionOther"
+BU.BaseCategory["Base.HempBundleDried"] = "ReductionOther"
