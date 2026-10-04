@@ -27,7 +27,8 @@ end
 
 local BU_order, BU_orderSource, BU_orderCount = nil, nil, 0
 
--- a nested pack reads its base's weight, so bases have to be patched first.
+-- a nested pack reads its base's weight, so bases have to be patched first. bucketed because
+-- kahlua's table.sort is a recursive quicksort and the add-on rows overflow its stack.
 local function BU_sortedBundles()
     local count = 0
     for _ in pairs(BU.Bundles) do count = count + 1 end
@@ -35,15 +36,25 @@ local function BU_sortedBundles()
         return BU_order
     end
 
-    local order, depth = {}, {}
+    local byDepth, deepest = {}, 0
     for fullType in pairs(BU.Bundles) do
-        order[#order + 1] = fullType
-        depth[fullType] = BU.nestingDepth(fullType)
+        local depth = BU.nestingDepth(fullType)
+        local bucket = byDepth[depth]
+        if not bucket then
+            bucket = {}
+            byDepth[depth] = bucket
+        end
+        bucket[#bucket + 1] = fullType
+        if depth > deepest then deepest = depth end
     end
-    table.sort(order, function(a, b)
-        if depth[a] ~= depth[b] then return depth[a] < depth[b] end
-        return a < b
-    end)
+
+    local order = {}
+    for depth = 0, deepest do
+        local bucket = byDepth[depth]
+        if bucket then
+            for i = 1, #bucket do order[#order + 1] = bucket[i] end
+        end
+    end
 
     BU_order, BU_orderSource, BU_orderCount = order, BU.Bundles, count
     return order
