@@ -13,7 +13,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 5 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
+            item 5 [Base.Wire;Base.SmallSheetMetal;Base.SilverSheet;Base.SmallCopperSheet] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -21,6 +21,8 @@ module BundleUp {
         itemMapper itemTypes {
             BundleUp.WireCable_Small = Base.Wire,
             BundleUp.SmallMetalSheetS = Base.SmallSheetMetal,
+            BundleUp.SilverSheetS = Base.SilverSheet,
+            BundleUp.SmallCopperSheetS = Base.SmallCopperSheet,
         }
     }
 
@@ -30,7 +32,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS;BundleUp.SilverSheetS;BundleUp.SmallCopperSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 5 mapper:itemTypes,
@@ -38,6 +40,8 @@ module BundleUp {
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Small,
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetS,
+            Base.SilverSheet = BundleUp.SilverSheetS,
+            Base.SmallCopperSheet = BundleUp.SmallCopperSheetS,
         }
     }
 
@@ -47,7 +51,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 10 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
+            item 10 [Base.Wire;Base.SmallSheetMetal;Base.SilverSheet;Base.SmallCopperSheet] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -55,6 +59,8 @@ module BundleUp {
         itemMapper itemTypes {
             BundleUp.WireCable_Large = Base.Wire,
             BundleUp.SmallMetalSheetL = Base.SmallSheetMetal,
+            BundleUp.SilverSheetL = Base.SilverSheet,
+            BundleUp.SmallCopperSheetL = Base.SmallCopperSheet,
         }
     }
 
@@ -64,7 +70,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL;BundleUp.SilverSheetL;BundleUp.SmallCopperSheetL] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
@@ -72,6 +78,8 @@ module BundleUp {
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Large,
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetL,
+            Base.SilverSheet = BundleUp.SilverSheetL,
+            Base.SmallCopperSheet = BundleUp.SmallCopperSheetL,
         }
     }
 
@@ -81,7 +89,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 2 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 2 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS;BundleUp.SilverSheetS;BundleUp.SmallCopperSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -89,6 +97,8 @@ module BundleUp {
         itemMapper itemTypes {
             BundleUp.WireCable_Large = BundleUp.WireCable_Small,
             BundleUp.SmallMetalSheetL = BundleUp.SmallMetalSheetS,
+            BundleUp.SilverSheetL = BundleUp.SilverSheetS,
+            BundleUp.SmallCopperSheetL = BundleUp.SmallCopperSheetS,
         }
     }
 

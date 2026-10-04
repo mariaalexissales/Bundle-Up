@@ -2402,4 +2402,44 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSheafBundle,
     }
+
+    item SilverSheetS {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = SmallMetalSheetS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleSmall,
+    }
+
+    item SilverSheetL {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = SmallMetalSheetL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleLarge,
+    }
+
+    item SmallCopperSheetS {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = SmallMetalSheetS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleSmall,
+    }
+
+    item SmallCopperSheetL {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = SmallMetalSheetL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleLarge,
+    }
 }

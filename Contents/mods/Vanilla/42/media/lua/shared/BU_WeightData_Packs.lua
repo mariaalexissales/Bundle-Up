@@ -1607,3 +1607,10 @@ BU.BaseCategory["Base.BurlapPiece"] = "ReductionOther"
 BU.BaseCategory["Base.TarpPiece"] = "ReductionOther"
 BU.BaseCategory["Base.Sheet"] = "ReductionOther"
 BU.BaseCategory["Base.CheeseCloth"] = "ReductionOther"
+
+BU.Bundles["BundleUp.SilverSheetS"] = { base = "Base.SilverSheet", count = 5 }
+BU.Bundles["BundleUp.SilverSheetL"] = { base = "Base.SilverSheet", count = 10 }
+BU.Bundles["BundleUp.SmallCopperSheetS"] = { base = "Base.SmallCopperSheet", count = 5 }
+BU.Bundles["BundleUp.SmallCopperSheetL"] = { base = "Base.SmallCopperSheet", count = 10 }
+BU.BaseCategory["Base.SilverSheet"] = "ReductionMetal"
+BU.BaseCategory["Base.SmallCopperSheet"] = "ReductionMetal"
