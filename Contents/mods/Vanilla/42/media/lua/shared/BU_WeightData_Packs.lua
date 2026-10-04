@@ -1554,3 +1554,38 @@ BU.BaseCategory["Base.Chamomile"] = "ReductionFood"
 BU.BaseCategory["Base.Lavender"] = "ReductionFood"
 BU.BaseCategory["Base.Marigold"] = "ReductionFood"
 BU.BaseCategory["Base.Roses"] = "ReductionFood"
+
+BU.Bundles["BundleUp.FlaxRippledBale"] = { base = "Base.FlaxRippled", count = 20 }
+BU.Bundles["BundleUp.FlaxDriedBale"] = { base = "Base.FlaxDried", count = 20 }
+BU.Bundles["BundleUp.FlaxScutchedBale"] = { base = "Base.FlaxScutched", count = 20 }
+BU.Bundles["BundleUp.FlaxHeckledBale"] = { base = "Base.FlaxHeckled", count = 20 }
+BU.Bundles["BundleUp.FlaxTowBale"] = { base = "Base.FlaxTow", count = 20 }
+BU.Bundles["BundleUp.HempScutchedBale"] = { base = "Base.HempScutched", count = 20 }
+BU.Bundles["BundleUp.DogbaneBale"] = { base = "Base.Dogbane", count = 20 }
+BU.Bundles["BundleUp.WoolRawBale"] = { base = "Base.WoolRaw", count = 20 }
+BU.Bundles["BundleUp.StringBale"] = { base = "Base.String", count = 20 }
+BU.Bundles["BundleUp.HayTuftBale"] = { base = "Base.HayTuft", count = 20 }
+BU.Bundles["BundleUp.GrassTuftBale"] = { base = "Base.GrassTuft", count = 20 }
+BU.Bundles["BundleUp.TobaccoDriedBale"] = { base = "Base.TobaccoDried", count = 20 }
+BU.Bundles["BundleUp.HopsDriedBale"] = { base = "Base.HopsDried", count = 20 }
+BU.Bundles["BundleUp.PoppyPodsDriedBale"] = { base = "Base.PoppyPodsDried", count = 20 }
+BU.Bundles["BundleUp.SunflowerHeadDriedBale"] = { base = "Base.SunflowerHeadDried", count = 20 }
+BU.Bundles["BundleUp.ComfreyDriedBale"] = { base = "Base.ComfreyDried", count = 20 }
+BU.Bundles["BundleUp.PlantainDriedBale"] = { base = "Base.PlantainDried", count = 20 }
+BU.BaseCategory["Base.FlaxRippled"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxDried"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxScutched"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxHeckled"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxTow"] = "ReductionOther"
+BU.BaseCategory["Base.HempScutched"] = "ReductionOther"
+BU.BaseCategory["Base.Dogbane"] = "ReductionOther"
+BU.BaseCategory["Base.WoolRaw"] = "ReductionOther"
+BU.BaseCategory["Base.String"] = "ReductionOther"
+BU.BaseCategory["Base.HayTuft"] = "ReductionOther"
+BU.BaseCategory["Base.GrassTuft"] = "ReductionOther"
+BU.BaseCategory["Base.TobaccoDried"] = "ReductionOther"
+BU.BaseCategory["Base.HopsDried"] = "ReductionOther"
+BU.BaseCategory["Base.PoppyPodsDried"] = "ReductionOther"
+BU.BaseCategory["Base.SunflowerHeadDried"] = "ReductionOther"
+BU.BaseCategory["Base.ComfreyDried"] = "ReductionOther"
+BU.BaseCategory["Base.PlantainDried"] = "ReductionOther"

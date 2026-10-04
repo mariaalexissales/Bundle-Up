@@ -1126,4 +1126,68 @@ module BundleUp {
             Base.PiercedSteelIngot = BundleUp.PiercedSteelIngot_L,
         }
     }
+
+    craftRecipe PackFibreBale {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 20 [Base.ComfreyDried;Base.Dogbane;Base.FlaxDried;Base.FlaxHeckled;Base.FlaxRippled;Base.FlaxScutched;Base.FlaxTow;Base.GrassTuft;Base.HayTuft;Base.HempScutched;Base.HopsDried;Base.PlantainDried;Base.PoppyPodsDried;Base.String;Base.SunflowerHeadDried;Base.TobaccoDried;Base.WoolRaw] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.ComfreyDriedBale = Base.ComfreyDried,
+            BundleUp.DogbaneBale = Base.Dogbane,
+            BundleUp.FlaxDriedBale = Base.FlaxDried,
+            BundleUp.FlaxHeckledBale = Base.FlaxHeckled,
+            BundleUp.FlaxRippledBale = Base.FlaxRippled,
+            BundleUp.FlaxScutchedBale = Base.FlaxScutched,
+            BundleUp.FlaxTowBale = Base.FlaxTow,
+            BundleUp.GrassTuftBale = Base.GrassTuft,
+            BundleUp.HayTuftBale = Base.HayTuft,
+            BundleUp.HempScutchedBale = Base.HempScutched,
+            BundleUp.HopsDriedBale = Base.HopsDried,
+            BundleUp.PlantainDriedBale = Base.PlantainDried,
+            BundleUp.PoppyPodsDriedBale = Base.PoppyPodsDried,
+            BundleUp.StringBale = Base.String,
+            BundleUp.SunflowerHeadDriedBale = Base.SunflowerHeadDried,
+            BundleUp.TobaccoDriedBale = Base.TobaccoDried,
+            BundleUp.WoolRawBale = Base.WoolRaw,
+        }
+    }
+
+    craftRecipe UnpackFibreBale {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.ComfreyDriedBale;BundleUp.DogbaneBale;BundleUp.FlaxDriedBale;BundleUp.FlaxHeckledBale;BundleUp.FlaxRippledBale;BundleUp.FlaxScutchedBale;BundleUp.FlaxTowBale;BundleUp.GrassTuftBale;BundleUp.HayTuftBale;BundleUp.HempScutchedBale;BundleUp.HopsDriedBale;BundleUp.PlantainDriedBale;BundleUp.PoppyPodsDriedBale;BundleUp.StringBale;BundleUp.SunflowerHeadDriedBale;BundleUp.TobaccoDriedBale;BundleUp.WoolRawBale] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 20 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.ComfreyDried = BundleUp.ComfreyDriedBale,
+            Base.Dogbane = BundleUp.DogbaneBale,
+            Base.FlaxDried = BundleUp.FlaxDriedBale,
+            Base.FlaxHeckled = BundleUp.FlaxHeckledBale,
+            Base.FlaxRippled = BundleUp.FlaxRippledBale,
+            Base.FlaxScutched = BundleUp.FlaxScutchedBale,
+            Base.FlaxTow = BundleUp.FlaxTowBale,
+            Base.GrassTuft = BundleUp.GrassTuftBale,
+            Base.HayTuft = BundleUp.HayTuftBale,
+            Base.HempScutched = BundleUp.HempScutchedBale,
+            Base.HopsDried = BundleUp.HopsDriedBale,
+            Base.PlantainDried = BundleUp.PlantainDriedBale,
+            Base.PoppyPodsDried = BundleUp.PoppyPodsDriedBale,
+            Base.String = BundleUp.StringBale,
+            Base.SunflowerHeadDried = BundleUp.SunflowerHeadDriedBale,
+            Base.TobaccoDried = BundleUp.TobaccoDriedBale,
+            Base.WoolRaw = BundleUp.WoolRawBale,
+        }
+    }
 }

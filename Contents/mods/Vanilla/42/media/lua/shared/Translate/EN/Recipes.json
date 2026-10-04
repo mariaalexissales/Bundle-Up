@@ -129,6 +129,8 @@
   "UnpackSuspensionBox": "Open Suspension Box (4 items)",
   "PackCeramicCrate": "Pack Ceramics in Crate",
   "UnpackCeramicCrate": "Open Ceramics Crate (25 items)",
+  "PackFibreBale": "Bale Fibre",
+  "UnpackFibreBale": "Open Fibre Bale (20 items)",
   "PackBoxCase": "Pack Food Boxes in Case",
   "PackDrinkCase": "Pack Drink Packs in Case",
   "PackFoodCase": "Pack Food Cartons in Case",
