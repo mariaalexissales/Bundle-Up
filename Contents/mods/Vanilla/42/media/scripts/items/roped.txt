@@ -1875,7 +1875,7 @@ module BundleUp {
     item HideCowAngusFurR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -1884,7 +1884,7 @@ module BundleUp {
     item HideCowAngusFurSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -2019,7 +2019,7 @@ module BundleUp {
     item HideCowHolsteinFurR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -2028,7 +2028,7 @@ module BundleUp {
     item HideCowHolsteinFurSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -2091,7 +2091,7 @@ module BundleUp {
     item HideCowSimmentalFurR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -2100,7 +2100,7 @@ module BundleUp {
     item HideCowSimmentalFurSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -2487,7 +2487,7 @@ module BundleUp {
     item HideCowAngusWetR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -2496,7 +2496,7 @@ module BundleUp {
     item HideCowAngusWetSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -2631,7 +2631,7 @@ module BundleUp {
     item HideCowHolsteinWetR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -2640,7 +2640,7 @@ module BundleUp {
     item HideCowHolsteinWetSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -2703,7 +2703,7 @@ module BundleUp {
     item HideCowSimmentalWetR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -2712,7 +2712,7 @@ module BundleUp {
     item HideCowSimmentalWetSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -3099,7 +3099,7 @@ module BundleUp {
     item HideCowAngusFullR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -3108,7 +3108,7 @@ module BundleUp {
     item HideCowAngusFullSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBlack,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -3243,7 +3243,7 @@ module BundleUp {
     item HideCowHolsteinFullR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -3252,7 +3252,7 @@ module BundleUp {
     item HideCowHolsteinFullSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowWhitePatch,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -3315,7 +3315,7 @@ module BundleUp {
     item HideCowSimmentalFullR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -3324,7 +3324,7 @@ module BundleUp {
     item HideCowSimmentalFullSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CowBrownPatch,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -4035,7 +4035,7 @@ module BundleUp {
     item HideCrudeLargeRawR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_Crude,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -4044,7 +4044,7 @@ module BundleUp {
     item HideCrudeLargeRawSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_Crude,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
@@ -4071,7 +4071,7 @@ module BundleUp {
     item HideCrudeLargeWetR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CrudeTainted,
         WorldStaticModel = Hide_Rope,
         DoubleClickRecipe = UntieHide5,
@@ -4080,7 +4080,7 @@ module BundleUp {
     item HideCrudeLargeWetSR {
         DisplayCategory = Material,
         ItemType = base:normal,
-        Weight = 20.75,
+        Weight = 20.0,
         Icon = LeatherHide_CrudeTainted,
         WorldStaticModel = Hide_SheetRope,
         DoubleClickRecipe = UntieHide5,
