@@ -1661,3 +1661,83 @@ BU.BaseCategory["Base.Needle_Forged"] = "ReductionMetal"
 BU.BaseCategory["Base.FishingHook_Bone"] = "ReductionOther"
 BU.BaseCategory["Base.FishingHook_Forged"] = "ReductionMetal"
 BU.BaseCategory["Base.MagnesiumShavings"] = "ReductionMetal"
+
+BU.Bundles["BundleUp.Bull_SkullBox"] = { base = "Base.Bull_Skull", count = 10 }
+BU.Bundles["BundleUp.Calf_SkullBox"] = { base = "Base.Calf_Skull", count = 10 }
+BU.Bundles["BundleUp.Chicken_Chick_SkullBox"] = { base = "Base.Chicken_Chick_Skull", count = 10 }
+BU.Bundles["BundleUp.Chicken_Hen_SkullBox"] = { base = "Base.Chicken_Hen_Skull", count = 10 }
+BU.Bundles["BundleUp.Chicken_Rooster_SkullBox"] = { base = "Base.Chicken_Rooster_Skull", count = 10 }
+BU.Bundles["BundleUp.Cow_SkullBox"] = { base = "Base.Cow_Skull", count = 10 }
+BU.Bundles["BundleUp.DeerDoe_SkullBox"] = { base = "Base.DeerDoe_Skull", count = 10 }
+BU.Bundles["BundleUp.DeerFawn_SkullBox"] = { base = "Base.DeerFawn_Skull", count = 10 }
+BU.Bundles["BundleUp.DeerStag_SkullBox"] = { base = "Base.DeerStag_Skull", count = 10 }
+BU.Bundles["BundleUp.Lamb_SkullBox"] = { base = "Base.Lamb_Skull", count = 10 }
+BU.Bundles["BundleUp.Pig_SkullBox"] = { base = "Base.Pig_Skull", count = 10 }
+BU.Bundles["BundleUp.Piglet_SkullBox"] = { base = "Base.Piglet_Skull", count = 10 }
+BU.Bundles["BundleUp.Rabbit_KittenSkullBox"] = { base = "Base.Rabbit_KittenSkull", count = 10 }
+BU.Bundles["BundleUp.Rabbit_SkullBox"] = { base = "Base.Rabbit_Skull", count = 10 }
+BU.Bundles["BundleUp.Raccoon_SkullBox"] = { base = "Base.Raccoon_Skull", count = 10 }
+BU.Bundles["BundleUp.Ram_SkullBox"] = { base = "Base.Ram_Skull", count = 10 }
+BU.Bundles["BundleUp.Sheep_SkullBox"] = { base = "Base.Sheep_Skull", count = 10 }
+BU.Bundles["BundleUp.Turkey_PoultSkullBox"] = { base = "Base.Turkey_PoultSkull", count = 10 }
+BU.Bundles["BundleUp.Turkey_SkullBox"] = { base = "Base.Turkey_Skull", count = 10 }
+BU.Bundles["BundleUp.AnimalSinewBox"] = { base = "Base.AnimalSinew", count = 10 }
+BU.Bundles["BundleUp.Dung_CowBox"] = { base = "Base.Dung_Cow", count = 10 }
+BU.Bundles["BundleUp.Dung_DeerBox"] = { base = "Base.Dung_Deer", count = 10 }
+BU.Bundles["BundleUp.Dung_PigBox"] = { base = "Base.Dung_Pig", count = 10 }
+BU.Bundles["BundleUp.Dung_SheepBox"] = { base = "Base.Dung_Sheep", count = 10 }
+BU.BaseCategory["Base.Bull_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Calf_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Chicken_Chick_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Chicken_Hen_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Chicken_Rooster_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Cow_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.DeerDoe_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.DeerFawn_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.DeerStag_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Lamb_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Pig_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Piglet_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Rabbit_KittenSkull"] = "ReductionOther"
+BU.BaseCategory["Base.Rabbit_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Raccoon_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Ram_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Sheep_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Turkey_PoultSkull"] = "ReductionOther"
+BU.BaseCategory["Base.Turkey_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.AnimalSinew"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Cow"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Deer"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Pig"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Sheep"] = "ReductionOther"
+
+BU.Bundles["BundleUp.ChickenFeatherBox"] = { base = "Base.ChickenFeather", count = 50 }
+BU.Bundles["BundleUp.TurkeyFeatherBox"] = { base = "Base.TurkeyFeather", count = 50 }
+BU.Bundles["BundleUp.FurTuft_BlackBox"] = { base = "Base.FurTuft_Black", count = 50 }
+BU.Bundles["BundleUp.FurTuft_BrowndarkBox"] = { base = "Base.FurTuft_Browndark", count = 50 }
+BU.Bundles["BundleUp.FurTuft_BrownlightBox"] = { base = "Base.FurTuft_Brownlight", count = 50 }
+BU.Bundles["BundleUp.FurTuft_GreyBox"] = { base = "Base.FurTuft_Grey", count = 50 }
+BU.Bundles["BundleUp.FurTuft_WhiteBox"] = { base = "Base.FurTuft_White", count = 50 }
+BU.Bundles["BundleUp.HerbivoreTeethBox"] = { base = "Base.HerbivoreTeeth", count = 50 }
+BU.Bundles["BundleUp.PigTuskBox"] = { base = "Base.PigTusk", count = 50 }
+BU.Bundles["BundleUp.Dung_ChickenBox"] = { base = "Base.Dung_Chicken", count = 50 }
+BU.Bundles["BundleUp.Dung_MouseBox"] = { base = "Base.Dung_Mouse", count = 50 }
+BU.Bundles["BundleUp.Dung_RatBox"] = { base = "Base.Dung_Rat", count = 50 }
+BU.Bundles["BundleUp.Dung_TurkeyBox"] = { base = "Base.Dung_Turkey", count = 50 }
+BU.Bundles["BundleUp.Dung_RabbitBox"] = { base = "Base.Dung_Rabbit", count = 50 }
+BU.Bundles["BundleUp.Dung_RaccoonBox"] = { base = "Base.Dung_Raccoon", count = 50 }
+BU.BaseCategory["Base.ChickenFeather"] = "ReductionOther"
+BU.BaseCategory["Base.TurkeyFeather"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Black"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Browndark"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Brownlight"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Grey"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_White"] = "ReductionOther"
+BU.BaseCategory["Base.HerbivoreTeeth"] = "ReductionOther"
+BU.BaseCategory["Base.PigTusk"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Chicken"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Mouse"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Rat"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Turkey"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Rabbit"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Raccoon"] = "ReductionOther"

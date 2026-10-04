@@ -4944,4 +4944,316 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSmallsBox,
     }
+    item Bull_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Calf_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Chicken_Chick_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Chicken_Hen_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Chicken_Rooster_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Cow_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item DeerDoe_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item DeerFawn_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item DeerStag_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Lamb_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Pig_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Piglet_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Rabbit_KittenSkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Rabbit_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Raccoon_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Ram_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Sheep_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Turkey_PoultSkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Turkey_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item AnimalSinewBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_CowBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_DeerBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_PigBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 5.81,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_SheepBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ChickenFeatherBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item TurkeyFeatherBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_BlackBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_BrowndarkBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_BrownlightBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_GreyBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_WhiteBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item HerbivoreTeethBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item PigTuskBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_ChickenBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_MouseBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_RatBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_TurkeyBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_RabbitBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_RaccoonBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
 }
