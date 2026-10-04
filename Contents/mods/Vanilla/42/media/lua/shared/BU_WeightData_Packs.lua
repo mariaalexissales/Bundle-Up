@@ -1967,3 +1967,89 @@ BU.BaseCategory["Base.LambLeather_Fur"] = "ReductionLeather"
 BU.BaseCategory["Base.SheepLeather_Fur"] = "ReductionLeather"
 BU.BaseCategory["Base.RabbitLeather_Grey_Fur"] = "ReductionLeather"
 BU.BaseCategory["Base.RaccoonLeather_Grey_Fur"] = "ReductionLeather"
+
+BU.Bundles["BundleUp.HideCalfAngusWetR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusWetSR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusWetLR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfAngusWetLSR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusWetR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusWetSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusWetLR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusWetLSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackWetR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackWetSR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackWetLR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackWetLSR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackWetR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackWetSR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackWetLR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackWetLSR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetSR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetLR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetLSR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinWetR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinWetSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinWetLR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinWetLSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetSR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetLR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetLSR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalWetR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalWetSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalWetLR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalWetLSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideDeerWetR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideDeerWetSR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideDeerWetLR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideDeerWetLSR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideFawnWetR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideFawnWetSR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideFawnWetLR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideFawnWetLSR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitWetR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitWetSR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitWetLR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitWetLSR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceWetR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceWetSR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceWetLR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceWetLSR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceWetR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceWetSR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceWetLR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceWetLSR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideLambWetR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideLambWetSR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideLambWetLR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideLambWetLSR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideSheepWetR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideSheepWetSR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideSheepWetLR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideSheepWetLSR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyWetR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyWetSR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyWetLR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyWetLSR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonWetR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonWetSR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonWetLR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonWetLSR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.BaseCategory["Base.CalfLeather_Angus_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Angus_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Black_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Black_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Holstein_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Holstein_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Simmental_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Simmental_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.DeerLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.FawnLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Landrace_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Landrace_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.LambLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.SheepLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Grey_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.RaccoonLeather_Grey_Fur_Tan_Wet"] = "ReductionLeather"
