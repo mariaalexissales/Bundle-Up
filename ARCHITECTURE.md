@@ -60,7 +60,7 @@ zedscript declares the items and recipes, and the flags the engine enforces on i
 | `scripts/items/boxed.txt` | 465 packs: nail and screw boxes, food cartons, supply, medical and parts boxes, brake and suspension boxes |
 | `scripts/items/bundled.txt` | 262 packs: wire, sheets, magazine and book boxes, six-packs, ingot stacks |
 | `scripts/items/roped.txt` | 196 packs: rope bundles of planks, pipes, hides and building stock |
-| `scripts/items/sacked.txt` | 87 packs: sacks, seed pouches, scrap, ore and charcoal |
+| `scripts/items/sacked.txt` | 87 packs: sacks, seed packet boxes, scrap, ore and charcoal |
 | `scripts/items/tiered.txt` | 377 Cases and 329 Crates above the food cartons, vanilla's canned food boxes and the drink six-packs. Generated. |
 | `scripts/recipes/*.txt` | 140 recipes: pack and unpack per family, plus ammo, thread, bulk smelting, and the generated Case and Crate recipes |
 | `scripts/bu_models.txt` | 23 world models, so a dropped pack is a visible pile |
