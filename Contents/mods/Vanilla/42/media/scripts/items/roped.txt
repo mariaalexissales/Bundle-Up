@@ -1835,4 +1835,616 @@ module BundleUp {
         Tags = base:isfirefuel,
         DoubleClickRecipe = UntieBuild10,
     }
+
+    item HideCalfAngusFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfAngusFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfAngusFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfAngusFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowAngusFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowAngusFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowAngusFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowAngusFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigBlackFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigBlackFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigBlackFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigBlackFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletBlackFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletBlackFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletBlackFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletBlackFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBlack,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfHolsteinFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfHolsteinFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfHolsteinFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfHolsteinFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowHolsteinFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowHolsteinFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowHolsteinFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowHolsteinFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CowWhitePatch,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfSimmentalFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfSimmentalFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCalfSimmentalFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCalfSimmentalFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowSimmentalFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowSimmentalFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 20.75,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideCowSimmentalFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideCowSimmentalFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = LeatherHide_CowBrownPatch,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideDeerFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideDeerFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideDeerFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideDeerFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideFawnFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideFawnFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideFawnFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideFawnFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_CowBrown,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigLandraceFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigLandraceFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigLandraceFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigLandraceFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletLandraceFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletLandraceFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HidePigletLandraceFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HidePigletLandraceFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_PigPink,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideLambFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideLambFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideLambFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideLambFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideSheepFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideSheepFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 12.45,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideSheepFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideSheepFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 24.9,
+        Icon = LeatherHide_SheepWhite,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitGreyFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitGreyFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRabbitGreyFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRabbitGreyFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRaccoonFurR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_Rope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRaccoonFurSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_SheetRope,
+        DoubleClickRecipe = UntieHide5,
+    }
+
+    item HideRaccoonFurLR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_Rope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
+
+    item HideRaccoonFurLSR {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = AnimalPelt_Grey,
+        WorldStaticModel = Hide_SheetRope_Large,
+        DoubleClickRecipe = UntieHide10,
+    }
 }
