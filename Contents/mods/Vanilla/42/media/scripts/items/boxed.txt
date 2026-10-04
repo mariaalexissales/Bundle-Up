@@ -4736,4 +4736,36 @@ module BundleUp {
         WorldStaticModel = Parcel_Produce_Small,
         DoubleClickRecipe = UnpackFreshCarton,
     }
+    item BurlapPieceBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item TarpPieceBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SheetBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CheeseClothBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
 }

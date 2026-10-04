@@ -1598,3 +1598,12 @@ BU.BaseCategory["Base.WheatSheafDried"] = "ReductionOther"
 BU.BaseCategory["Base.BarleySheafDried"] = "ReductionOther"
 BU.BaseCategory["Base.RyeSheafDried"] = "ReductionOther"
 BU.BaseCategory["Base.HempBundleDried"] = "ReductionOther"
+
+BU.Bundles["BundleUp.BurlapPieceBox"] = { base = "Base.BurlapPiece", count = 10 }
+BU.Bundles["BundleUp.TarpPieceBox"] = { base = "Base.TarpPiece", count = 10 }
+BU.Bundles["BundleUp.SheetBox"] = { base = "Base.Sheet", count = 10 }
+BU.Bundles["BundleUp.CheeseClothBox"] = { base = "Base.CheeseCloth", count = 10 }
+BU.BaseCategory["Base.BurlapPiece"] = "ReductionOther"
+BU.BaseCategory["Base.TarpPiece"] = "ReductionOther"
+BU.BaseCategory["Base.Sheet"] = "ReductionOther"
+BU.BaseCategory["Base.CheeseCloth"] = "ReductionOther"
