@@ -1466,3 +1466,52 @@ BU.BaseCategory["Base.ClayShingle"] = "ReductionStone"
 BU.BaseCategory["Base.ClayShingleUnfired"] = "ReductionStone"
 BU.BaseCategory["Base.ClayPipeSegment"] = "ReductionStone"
 BU.BaseCategory["Base.ClayPipeSegmentUnfired"] = "ReductionStone"
+
+BU.Bundles["BundleUp.ClayPotUnfiredBox"] = { base = "Base.ClayPotUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayJarUnfiredBox"] = { base = "Base.ClayJarUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayBowlUnfiredBox"] = { base = "Base.ClayBowlUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayMugUnfiredBox"] = { base = "Base.ClayMugUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayPlateUnfiredBox"] = { base = "Base.ClayPlateUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicTeacupUnfiredBox"] = { base = "Base.CeramicTeacupUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicCrucibleSmallUnfiredBox"] = { base = "Base.CeramicCrucibleSmallUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicCrucibleUnfiredBox"] = { base = "Base.CeramicCrucibleUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicMortarandPestleUnfiredBox"] = { base = "Base.CeramicMortarandPestleUnfired", count = 10 }
+BU.Bundles["BundleUp.GlassBlowingPipeUnfiredBox"] = { base = "Base.GlassBlowingPipeUnfired", count = 10 }
+BU.Bundles["BundleUp.SmokingPipeUnfiredBox"] = { base = "Base.SmokingPipeUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayBarMoldUnfiredBox"] = { base = "Base.ClayBarMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayIngotMoldUnfiredBox"] = { base = "Base.ClayIngotMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClaySheetMoldUnfiredBox"] = { base = "Base.ClaySheetMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayBlacksmithAnvilMoldUnfiredBox"] = { base = "Base.ClayBlacksmithAnvilMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayPotBox"] = { base = "Base.ClayPot", count = 10 }
+BU.Bundles["BundleUp.ClayPlateBox"] = { base = "Base.ClayPlate", count = 10 }
+BU.Bundles["BundleUp.CeramicMortarandPestleBox"] = { base = "Base.CeramicMortarandPestle", count = 10 }
+BU.Bundles["BundleUp.GlassBlowingPipeBox"] = { base = "Base.GlassBlowingPipe", count = 10 }
+BU.Bundles["BundleUp.SmokingPipeBox"] = { base = "Base.SmokingPipe", count = 10 }
+BU.Bundles["BundleUp.ClayBarMoldBox"] = { base = "Base.ClayBarMold", count = 10 }
+BU.Bundles["BundleUp.ClayIngotMoldBox"] = { base = "Base.ClayIngotMold", count = 10 }
+BU.Bundles["BundleUp.ClaySheetMoldBox"] = { base = "Base.ClaySheetMold", count = 10 }
+BU.Bundles["BundleUp.ClayBlacksmithAnvilMoldBox"] = { base = "Base.ClayBlacksmithAnvilMold", count = 10 }
+BU.BaseCategory["Base.ClayPotUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayJarUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBowlUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayMugUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPlateUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicTeacupUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicCrucibleSmallUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicCrucibleUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicMortarandPestleUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.GlassBlowingPipeUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.SmokingPipeUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBarMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayIngotMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClaySheetMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBlacksmithAnvilMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPot"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPlate"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicMortarandPestle"] = "ReductionStone"
+BU.BaseCategory["Base.GlassBlowingPipe"] = "ReductionStone"
+BU.BaseCategory["Base.SmokingPipe"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBarMold"] = "ReductionStone"
+BU.BaseCategory["Base.ClayIngotMold"] = "ReductionStone"
+BU.BaseCategory["Base.ClaySheetMold"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBlacksmithAnvilMold"] = "ReductionStone"

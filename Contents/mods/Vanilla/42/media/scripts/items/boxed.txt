@@ -4335,4 +4335,196 @@ module BundleUp {
         WorldStaticModel = Crate_Ammo,
         DoubleClickRecipe = UnpackCeramicCrate,
     }
+    item ClayPotUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayJarUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBowlUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayMugUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayPlateUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicTeacupUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicCrucibleSmallUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicCrucibleUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicMortarandPestleUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item GlassBlowingPipeUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SmokingPipeUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBarMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayIngotMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClaySheetMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBlacksmithAnvilMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayPotBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayPlateBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicMortarandPestleBox {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item GlassBlowingPipeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SmokingPipeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBarMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayIngotMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClaySheetMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBlacksmithAnvilMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
 }
