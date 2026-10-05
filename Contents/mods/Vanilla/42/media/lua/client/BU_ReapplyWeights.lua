@@ -12,6 +12,10 @@ local function BU_reapplyWeights()
     BU.forEachWatchedItem(BU.refreshWeight)
 end
 
+BU.onWeightsChanged = function()
+    BU.forEachWatchedItem(BU.refreshWeight)
+end
+
 local function BU_onFillInventoryContextMenu(playerNum, context, items)
     if not isAdmin() then return end
     context:addOption(getText("ContextMenu_BU_ReapplyWeights"), nil, BU_reapplyWeights)

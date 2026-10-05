@@ -114,6 +114,18 @@ Running that late also means running after every other mod has edited the same a
 
 `BU.refreshWeight` restamps bundles loaded from a save. It doesn't call `setCustomWeight`, because a custom weight stays on the item for good. Leaving it unset keeps the weight coming from the script, so the next sandbox change still reaches bundles already in someone's save.
 
+It does clear the flag when something else set it, for the same reason: a bundle another mod froze would reload with that weight instead of the script's.
+
+### Other weight mods
+
+Mods that rewrite item weights, like CustomW8, don't skip bundles. They rewrite every script item, bundles included, from a baseline they cached the first time they saw it, and they run when they like: at world init, after the sandbox loads, and again whenever one of their own sliders moves. Two of those land after the passes above. A bundle whose baseline was cached before Bundle Up patched it gets `static weight × their multiplier` written over the reduction, and nothing writes it back until the next load.
+
+Their multipliers also don't line up with the base item's. CustomW8's Wood group covers `Base.Plank` and no bundle, so a plank bundle follows a different rule than the planks inside it. Bundle Up's answer is that a bundle weighs its count times whatever the base item weighs right now, minus the slider cut, so whatever a mod does to the base carries through.
+
+To keep that true, `BU.applyWeights` runs again once the game has settled (a few seconds after `OnGameStart` / `OnServerStarted`) and then every in-game hour. It only writes a bundle whose weight is off, so on a game with no weight mod it reads and writes nothing. When it does fix something, the bundles in the player's inventory get restamped.
+
+This means a weight another mod sets directly on a bundle loses to Bundle Up's sliders. The per-item `Item_` sliders are the way to give one bundle its own weight.
+
 ### Food keeps its own spoil timers
 
 Patching the script works for weight because an item copies its weight from the script when it's built. Food saves its own `offAge` and `offAgeMax`, so patching the script never reaches food that's already saved. Packed food needed a migration instead, and the order matters:

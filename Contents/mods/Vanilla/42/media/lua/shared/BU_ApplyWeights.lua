@@ -6,6 +6,8 @@ require "BU_WeightData"
 
 local MIN_WEIGHT = 0.01
 local MAX_WEIGHT = 40
+local WEIGHT_EPSILON = 0.0001
+local SETTLE_DELAY_TICKS = 180
 
 local function BU_reductionFor(fullType, def, sv)
     local short = fullType:match("%.(.+)$") or fullType
@@ -62,11 +64,12 @@ end
 
 function BU.applyWeights()
     local sv = SandboxVars and SandboxVars.BundleUp
-    if not sv then return end
+    if not sv then return 0 end
 
     local sm = getScriptManager()
-    if not sm then return end
+    if not sm then return 0 end
 
+    local changed = 0
     local order = BU_sortedBundles()
     for i = 1, #order do
         local fullType = order[i]
@@ -80,9 +83,13 @@ function BU.applyWeights()
             local weight = raw * (1 - BU_reductionFor(fullType, def, sv) / 100)
             if weight < MIN_WEIGHT then weight = MIN_WEIGHT end
             if weight > MAX_WEIGHT then weight = MAX_WEIGHT end
-            bundle:setActualWeight(weight)
+            if math.abs(bundle:getActualWeight() - weight) > WEIGHT_EPSILON then
+                bundle:setActualWeight(weight)
+                changed = changed + 1
+            end
         end
     end
+    return changed
 end
 
 -- an item copies the script weight when built, so saved ones get restamped. no
@@ -98,6 +105,11 @@ function BU.refreshWeight(item)
         return
     end
 
+    -- another weight mod may have frozen a stale value into the item; it would reload over the script.
+    if item.isCustomWeight and item:isCustomWeight() then
+        item:setCustomWeight(false)
+    end
+
     item:setActualWeight(script:getActualWeight())
     item:setWeight(script:getActualWeight())
 end
@@ -109,3 +121,39 @@ if Events.OnInitGlobalModData then
 end
 Events.OnGameStart.Add(BU.applyWeights)
 Events.OnServerStarted.Add(BU.applyWeights)
+
+-- weight mods rewrite script weights on their own schedule, some of it after the passes above
+-- and in no order we can see. check again once things settle, then hourly. a pass that finds
+-- nothing wrong writes nothing.
+local BU_settled = false
+local BU_settleTicks = nil
+
+local function BU_settle()
+    local changed = BU.applyWeights()
+    if (changed > 0 or not BU_settled) and BU.onWeightsChanged then
+        BU.onWeightsChanged()
+    end
+    BU_settled = true
+end
+
+local function BU_settleTick()
+    BU_settleTicks = BU_settleTicks + 1
+    if BU_settleTicks < SETTLE_DELAY_TICKS then return end
+
+    BU_settleTicks = nil
+    Events.OnTick.Remove(BU_settleTick)
+    BU_settle()
+end
+
+local function BU_armSettle()
+    if BU_settleTicks then return end
+
+    BU_settleTicks = 0
+    Events.OnTick.Add(BU_settleTick)
+end
+
+Events.OnGameStart.Add(BU_armSettle)
+Events.OnServerStarted.Add(BU_armSettle)
+if Events.EveryHours then
+    Events.EveryHours.Add(BU_settle)
+end
