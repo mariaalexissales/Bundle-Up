@@ -57,20 +57,19 @@ zedscript declares the items and recipes, and the flags the engine enforces on i
 
 | File | What's in it |
 | --- | --- |
-| `scripts/items/boxed.txt` | 650 packs: nail and screw boxes, food and crop cartons, supply, medical and parts boxes, ceramic crates, brake and suspension boxes |
-| `scripts/items/bundled.txt` | 287 packs: wire, sheets, magazine and book boxes, six-packs, ingot stacks, fibre bales and sheaves |
-| `scripts/items/roped.txt` | 464 packs: rope bundles of planks, pipes, building stock and hides at every stage from raw to tanned |
-| `scripts/items/sacked.txt` | 87 packs: sacks, seed packet boxes, scrap, ore and charcoal |
+| `scripts/items/packs.txt` | 1,477 packs: every box, carton, crate, bale, sack, six-pack, ingot stack and rope bundle. Generated. |
+| `scripts/items/soda.txt` | 11 packs: the soda six-packs, which go by what's in the can and not by the can |
 | `scripts/items/tiered.txt` | 396 Cases and 344 Crates above the food cartons, vanilla's canned food boxes and the drink six-packs. Generated. |
-| `scripts/recipes/*.txt` | 150 recipes: pack and unpack per family, plus ammo, thread, bulk smelting, and the generated Case and Crate recipes |
+| `scripts/recipes/*.txt` | 150 recipes: 122 generated pack, unpack and merge recipes, the soda ones, thread, bulk smelting, and the generated Case and Crate recipes |
 | `scripts/bu_models.txt` | 23 world models, so a dropped pack is a visible pile |
 | `sandbox-options.txt` | 322 options on eight pages |
 | `lua/shared/Translate/EN/*.json` | Item names, recipe labels, sandbox text |
 
-Most files are written by hand. These come out of the generators in estral-tools, and CI fails if they drift:
+The Lua is written by hand and so are the soda packs. The rest of the packs come out of the generators in estral-tools, and CI fails if they drift:
 
-- `items/tiered.txt`, `recipes/recipes_tiered.txt` and `BU_WeightData_Tiers.lua`, whole, from the pack ladders
-- the sorted block at the end of `ItemName.json` and `Recipes.json`
+- `items/packs.txt`, `recipes/recipes_packs.txt` and `BU_WeightData_Packs.lua`, whole, from `families.json`, where an item that packs is one line
+- `items/tiered.txt`, `recipes/recipes_tiered.txt` and `BU_WeightData_Tiers.lua`, whole, from the cartons, vanilla's boxes and the six-packs
+- the generated packs' entries in `ItemName.json` and `Recipes.json`, which are kept sorted
 - everything in the Vanilla Foods Expanded add-on's scripts, its `BUVFX_WeightData.lua` and its `ItemName.json` / `Recipes.json`, from `vfx_families.json`
 - the block order and pages of `sandbox-options.txt` (labels and tooltips stay hand-written)
 - every pack's `Weight =` line, so the script agrees with the Lua
@@ -82,8 +81,8 @@ Base mod, `Contents/mods/Vanilla/42/media/lua/`:
 
 | File | Side | Job |
 | --- | --- | --- |
-| `shared/BU_WeightData.lua` | shared | Hand-kept pack rows, which weight slider each base item follows, per-family weight cuts, and walking a nested pack down to its vanilla item |
-| `shared/BU_WeightData_Packs.lua` | shared | The other ~1,200 pack rows and their categories. The generators read this. |
+| `shared/BU_WeightData.lua` | shared | The soda pack rows, the built-in weight cut some heavy items get, and walking a nested pack down to its vanilla item |
+| `shared/BU_WeightData_Packs.lua` | shared | The other 1,477 pack rows and which weight slider each base item follows. Generated. |
 | `shared/BU_WeightData_Tiers.lua` | shared | Generated rows for the Cases and Crates |
 | `shared/BU_ApplyWeights.lua` | shared | Sets each pack's weight to base weight × count minus the slider cut, restamps packs already in a save, and re-checks hourly in case another weight mod moved something |
 | `shared/BU_ApplySpoilage.lua` | shared | Scales pack rot thresholds by the sandbox spoilage rate |
@@ -187,7 +186,7 @@ flowchart LR
 
 Every PR runs three required jobs:
 
-- **generated files are current:** the five generators with `--check`
+- **generated files are current:** the six generators with `--check`
 - **mod files are valid:** translations, script references, Lua parsing, line endings
 - **lua does what it did before:** the behaviour check under Testing
 
