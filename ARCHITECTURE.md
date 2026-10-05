@@ -53,7 +53,7 @@ Base mod, `Contents/mods/Vanilla/42/media/lua/`:
 | `shared/BU_WeightData.lua` | shared | Hand-kept pack rows, which weight slider each base item follows, per-family weight cuts, and walking a nested pack down to its vanilla item |
 | `shared/BU_WeightData_Packs.lua` | shared | The other ~1,200 pack rows and their categories. The generators read this. |
 | `shared/BU_WeightData_Tiers.lua` | shared | Generated rows for the Cases and Crates |
-| `shared/BU_ApplyWeights.lua` | shared | Sets each pack's weight to base weight × count minus the slider cut, and restamps packs already in a save |
+| `shared/BU_ApplyWeights.lua` | shared | Sets each pack's weight to base weight × count minus the slider cut, restamps packs already in a save, and re-checks hourly in case another weight mod moved something |
 | `shared/BU_ApplySpoilage.lua` | shared | Scales pack rot thresholds by the sandbox spoilage rate |
 | `shared/BUpacking.lua` | shared | The `BUInv` recipe callbacks: soda and petrol fluids, removing minted empties, flavour tests, carrying food age across a pack |
 | `shared/BU_BulkSmelt.lua` | shared | Bulk smelting: picks the exact melt set and settles it the tick after the engine consumes |
@@ -63,7 +63,7 @@ Base mod, `Contents/mods/Vanilla/42/media/lua/`:
 | `client/BU_Transfer.lua` | client | Sends items back to the container they came from |
 | `client/BU_Watched.lua` | client | Walks the player's inventory and any open loot containers |
 | `client/BU_RefreshSpoilage.lua` | client | Every ten in-game minutes, rescales packs the player is looking at |
-| `client/BU_ReapplyWeights.lua` | client | Admin menu option that re-runs the weight patch |
+| `client/BU_ReapplyWeights.lua` | client | Admin menu option that re-runs the weight patch, and the hook that restamps carried packs when the hourly check finds drift |
 | `server/BUProceduralDistributions.lua` | server | The loot plan, inserted at the sandbox spawn rates |
 
 UI add-on, `Contents/mods/BundleUpUI/42/media/lua/client/`:
