@@ -1449,3 +1449,775 @@ BU.BaseCategory["Base.NormalSuspension2"] = "ReductionMetal"
 BU.BaseCategory["Base.ModernSuspension2"] = "ReductionMetal"
 BU.BaseCategory["Base.NormalSuspension3"] = "ReductionMetal"
 BU.BaseCategory["Base.ModernSuspension3"] = "ReductionMetal"
+
+BU.Bundles["BundleUp.ClayBrickCrate"] = { base = "Base.ClayBrick", count = 25 }
+BU.Bundles["BundleUp.ClayBrickUnfiredCrate"] = { base = "Base.ClayBrickUnfired", count = 25 }
+BU.Bundles["BundleUp.ClayTileCrate"] = { base = "Base.ClayTile", count = 25 }
+BU.Bundles["BundleUp.ClayTileUnfiredCrate"] = { base = "Base.ClayTileUnfired", count = 25 }
+BU.Bundles["BundleUp.ClayShingleCrate"] = { base = "Base.ClayShingle", count = 25 }
+BU.Bundles["BundleUp.ClayShingleUnfiredCrate"] = { base = "Base.ClayShingleUnfired", count = 25 }
+BU.Bundles["BundleUp.ClayPipeSegmentCrate"] = { base = "Base.ClayPipeSegment", count = 25 }
+BU.Bundles["BundleUp.ClayPipeSegmentUnfiredCrate"] = { base = "Base.ClayPipeSegmentUnfired", count = 25 }
+BU.BaseCategory["Base.ClayBrick"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBrickUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayTile"] = "ReductionStone"
+BU.BaseCategory["Base.ClayTileUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayShingle"] = "ReductionStone"
+BU.BaseCategory["Base.ClayShingleUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPipeSegment"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPipeSegmentUnfired"] = "ReductionStone"
+
+BU.Bundles["BundleUp.ClayPotUnfiredBox"] = { base = "Base.ClayPotUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayJarUnfiredBox"] = { base = "Base.ClayJarUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayBowlUnfiredBox"] = { base = "Base.ClayBowlUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayMugUnfiredBox"] = { base = "Base.ClayMugUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayPlateUnfiredBox"] = { base = "Base.ClayPlateUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicTeacupUnfiredBox"] = { base = "Base.CeramicTeacupUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicCrucibleSmallUnfiredBox"] = { base = "Base.CeramicCrucibleSmallUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicCrucibleUnfiredBox"] = { base = "Base.CeramicCrucibleUnfired", count = 10 }
+BU.Bundles["BundleUp.CeramicMortarandPestleUnfiredBox"] = { base = "Base.CeramicMortarandPestleUnfired", count = 10 }
+BU.Bundles["BundleUp.GlassBlowingPipeUnfiredBox"] = { base = "Base.GlassBlowingPipeUnfired", count = 10 }
+BU.Bundles["BundleUp.SmokingPipeUnfiredBox"] = { base = "Base.SmokingPipeUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayBarMoldUnfiredBox"] = { base = "Base.ClayBarMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayIngotMoldUnfiredBox"] = { base = "Base.ClayIngotMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClaySheetMoldUnfiredBox"] = { base = "Base.ClaySheetMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayBlacksmithAnvilMoldUnfiredBox"] = { base = "Base.ClayBlacksmithAnvilMoldUnfired", count = 10 }
+BU.Bundles["BundleUp.ClayPotBox"] = { base = "Base.ClayPot", count = 10 }
+BU.Bundles["BundleUp.ClayPlateBox"] = { base = "Base.ClayPlate", count = 10 }
+BU.Bundles["BundleUp.CeramicMortarandPestleBox"] = { base = "Base.CeramicMortarandPestle", count = 10 }
+BU.Bundles["BundleUp.GlassBlowingPipeBox"] = { base = "Base.GlassBlowingPipe", count = 10 }
+BU.Bundles["BundleUp.SmokingPipeBox"] = { base = "Base.SmokingPipe", count = 10 }
+BU.Bundles["BundleUp.ClayBarMoldBox"] = { base = "Base.ClayBarMold", count = 10 }
+BU.Bundles["BundleUp.ClayIngotMoldBox"] = { base = "Base.ClayIngotMold", count = 10 }
+BU.Bundles["BundleUp.ClaySheetMoldBox"] = { base = "Base.ClaySheetMold", count = 10 }
+BU.Bundles["BundleUp.ClayBlacksmithAnvilMoldBox"] = { base = "Base.ClayBlacksmithAnvilMold", count = 10 }
+BU.BaseCategory["Base.ClayPotUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayJarUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBowlUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayMugUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPlateUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicTeacupUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicCrucibleSmallUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicCrucibleUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicMortarandPestleUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.GlassBlowingPipeUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.SmokingPipeUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBarMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayIngotMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClaySheetMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBlacksmithAnvilMoldUnfired"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPot"] = "ReductionStone"
+BU.BaseCategory["Base.ClayPlate"] = "ReductionStone"
+BU.BaseCategory["Base.CeramicMortarandPestle"] = "ReductionStone"
+BU.BaseCategory["Base.GlassBlowingPipe"] = "ReductionStone"
+BU.BaseCategory["Base.SmokingPipe"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBarMold"] = "ReductionStone"
+BU.BaseCategory["Base.ClayIngotMold"] = "ReductionStone"
+BU.BaseCategory["Base.ClaySheetMold"] = "ReductionStone"
+BU.BaseCategory["Base.ClayBlacksmithAnvilMold"] = "ReductionStone"
+
+BU.Bundles["BundleUp.FlaxCarton"] = { base = "Base.Flax", count = 12 }
+BU.Bundles["BundleUp.HempBundleCarton"] = { base = "Base.HempBundle", count = 12 }
+BU.Bundles["BundleUp.WheatSheafCarton"] = { base = "Base.WheatSheaf", count = 12 }
+BU.Bundles["BundleUp.BarleySheafCarton"] = { base = "Base.BarleySheaf", count = 12 }
+BU.Bundles["BundleUp.RyeSheafCarton"] = { base = "Base.RyeSheaf", count = 12 }
+BU.Bundles["BundleUp.TobaccoCarton"] = { base = "Base.Tobacco", count = 12 }
+BU.Bundles["BundleUp.HopsCarton"] = { base = "Base.Hops", count = 12 }
+BU.Bundles["BundleUp.PoppyPodsCarton"] = { base = "Base.PoppyPods", count = 12 }
+BU.Bundles["BundleUp.PoppiesCarton"] = { base = "Base.Poppies", count = 12 }
+BU.Bundles["BundleUp.SunflowerHeadCarton"] = { base = "Base.SunflowerHead", count = 12 }
+BU.Bundles["BundleUp.BlackSageCarton"] = { base = "Base.BlackSage", count = 12 }
+BU.Bundles["BundleUp.ComfreyCarton"] = { base = "Base.Comfrey", count = 12 }
+BU.Bundles["BundleUp.CommonMallowCarton"] = { base = "Base.CommonMallow", count = 12 }
+BU.Bundles["BundleUp.PlantainCarton"] = { base = "Base.Plantain", count = 12 }
+BU.Bundles["BundleUp.WildGarlic2Carton"] = { base = "Base.WildGarlic2", count = 12 }
+BU.Bundles["BundleUp.ChamomileCarton"] = { base = "Base.Chamomile", count = 12 }
+BU.Bundles["BundleUp.LavenderCarton"] = { base = "Base.Lavender", count = 12 }
+BU.Bundles["BundleUp.MarigoldCarton"] = { base = "Base.Marigold", count = 12 }
+BU.Bundles["BundleUp.RosesCarton"] = { base = "Base.Roses", count = 12 }
+BU.BaseCategory["Base.Flax"] = "ReductionFood"
+BU.BaseCategory["Base.HempBundle"] = "ReductionFood"
+BU.BaseCategory["Base.WheatSheaf"] = "ReductionFood"
+BU.BaseCategory["Base.BarleySheaf"] = "ReductionFood"
+BU.BaseCategory["Base.RyeSheaf"] = "ReductionFood"
+BU.BaseCategory["Base.Tobacco"] = "ReductionFood"
+BU.BaseCategory["Base.Hops"] = "ReductionFood"
+BU.BaseCategory["Base.PoppyPods"] = "ReductionFood"
+BU.BaseCategory["Base.Poppies"] = "ReductionFood"
+BU.BaseCategory["Base.SunflowerHead"] = "ReductionFood"
+BU.BaseCategory["Base.BlackSage"] = "ReductionFood"
+BU.BaseCategory["Base.Comfrey"] = "ReductionFood"
+BU.BaseCategory["Base.CommonMallow"] = "ReductionFood"
+BU.BaseCategory["Base.Plantain"] = "ReductionFood"
+BU.BaseCategory["Base.WildGarlic2"] = "ReductionFood"
+BU.BaseCategory["Base.Chamomile"] = "ReductionFood"
+BU.BaseCategory["Base.Lavender"] = "ReductionFood"
+BU.BaseCategory["Base.Marigold"] = "ReductionFood"
+BU.BaseCategory["Base.Roses"] = "ReductionFood"
+
+BU.Bundles["BundleUp.FlaxRippledBale"] = { base = "Base.FlaxRippled", count = 20 }
+BU.Bundles["BundleUp.FlaxDriedBale"] = { base = "Base.FlaxDried", count = 20 }
+BU.Bundles["BundleUp.FlaxScutchedBale"] = { base = "Base.FlaxScutched", count = 20 }
+BU.Bundles["BundleUp.FlaxHeckledBale"] = { base = "Base.FlaxHeckled", count = 20 }
+BU.Bundles["BundleUp.FlaxTowBale"] = { base = "Base.FlaxTow", count = 20 }
+BU.Bundles["BundleUp.HempScutchedBale"] = { base = "Base.HempScutched", count = 20 }
+BU.Bundles["BundleUp.DogbaneBale"] = { base = "Base.Dogbane", count = 20 }
+BU.Bundles["BundleUp.WoolRawBale"] = { base = "Base.WoolRaw", count = 20 }
+BU.Bundles["BundleUp.StringBale"] = { base = "Base.String", count = 20 }
+BU.Bundles["BundleUp.HayTuftBale"] = { base = "Base.HayTuft", count = 20 }
+BU.Bundles["BundleUp.GrassTuftBale"] = { base = "Base.GrassTuft", count = 20 }
+BU.Bundles["BundleUp.TobaccoDriedBale"] = { base = "Base.TobaccoDried", count = 20 }
+BU.Bundles["BundleUp.HopsDriedBale"] = { base = "Base.HopsDried", count = 20 }
+BU.Bundles["BundleUp.PoppyPodsDriedBale"] = { base = "Base.PoppyPodsDried", count = 20 }
+BU.Bundles["BundleUp.SunflowerHeadDriedBale"] = { base = "Base.SunflowerHeadDried", count = 20 }
+BU.Bundles["BundleUp.ComfreyDriedBale"] = { base = "Base.ComfreyDried", count = 20 }
+BU.Bundles["BundleUp.PlantainDriedBale"] = { base = "Base.PlantainDried", count = 20 }
+BU.BaseCategory["Base.FlaxRippled"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxDried"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxScutched"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxHeckled"] = "ReductionOther"
+BU.BaseCategory["Base.FlaxTow"] = "ReductionOther"
+BU.BaseCategory["Base.HempScutched"] = "ReductionOther"
+BU.BaseCategory["Base.Dogbane"] = "ReductionOther"
+BU.BaseCategory["Base.WoolRaw"] = "ReductionOther"
+BU.BaseCategory["Base.String"] = "ReductionOther"
+BU.BaseCategory["Base.HayTuft"] = "ReductionOther"
+BU.BaseCategory["Base.GrassTuft"] = "ReductionOther"
+BU.BaseCategory["Base.TobaccoDried"] = "ReductionOther"
+BU.BaseCategory["Base.HopsDried"] = "ReductionOther"
+BU.BaseCategory["Base.PoppyPodsDried"] = "ReductionOther"
+BU.BaseCategory["Base.SunflowerHeadDried"] = "ReductionOther"
+BU.BaseCategory["Base.ComfreyDried"] = "ReductionOther"
+BU.BaseCategory["Base.PlantainDried"] = "ReductionOther"
+
+BU.Bundles["BundleUp.WheatSheafDriedBundle"] = { base = "Base.WheatSheafDried", count = 10 }
+BU.Bundles["BundleUp.BarleySheafDriedBundle"] = { base = "Base.BarleySheafDried", count = 10 }
+BU.Bundles["BundleUp.RyeSheafDriedBundle"] = { base = "Base.RyeSheafDried", count = 10 }
+BU.Bundles["BundleUp.HempDriedBundle"] = { base = "Base.HempBundleDried", count = 10 }
+BU.BaseCategory["Base.WheatSheafDried"] = "ReductionOther"
+BU.BaseCategory["Base.BarleySheafDried"] = "ReductionOther"
+BU.BaseCategory["Base.RyeSheafDried"] = "ReductionOther"
+BU.BaseCategory["Base.HempBundleDried"] = "ReductionOther"
+
+BU.Bundles["BundleUp.BurlapPieceBox"] = { base = "Base.BurlapPiece", count = 10 }
+BU.Bundles["BundleUp.TarpPieceBox"] = { base = "Base.TarpPiece", count = 10 }
+BU.Bundles["BundleUp.SheetBox"] = { base = "Base.Sheet", count = 10 }
+BU.Bundles["BundleUp.CheeseClothBox"] = { base = "Base.CheeseCloth", count = 10 }
+BU.BaseCategory["Base.BurlapPiece"] = "ReductionOther"
+BU.BaseCategory["Base.TarpPiece"] = "ReductionOther"
+BU.BaseCategory["Base.Sheet"] = "ReductionOther"
+BU.BaseCategory["Base.CheeseCloth"] = "ReductionOther"
+
+BU.Bundles["BundleUp.SilverSheetS"] = { base = "Base.SilverSheet", count = 5 }
+BU.Bundles["BundleUp.SilverSheetL"] = { base = "Base.SilverSheet", count = 10 }
+BU.Bundles["BundleUp.SmallCopperSheetS"] = { base = "Base.SmallCopperSheet", count = 5 }
+BU.Bundles["BundleUp.SmallCopperSheetL"] = { base = "Base.SmallCopperSheet", count = 10 }
+BU.BaseCategory["Base.SilverSheet"] = "ReductionMetal"
+BU.BaseCategory["Base.SmallCopperSheet"] = "ReductionMetal"
+
+BU.Bundles["BundleUp.AluminumFragmentsBox"] = { base = "Base.AluminumFragments", count = 10 }
+BU.Bundles["BundleUp.HeavyChainLinkBox"] = { base = "Base.HeavyChainLink", count = 10 }
+BU.Bundles["BundleUp.LatchBox"] = { base = "Base.Latch", count = 10 }
+BU.Bundles["BundleUp.CrudeBladeBox"] = { base = "Base.CrudeBlade", count = 10 }
+BU.Bundles["BundleUp.LongCrudeBladeBox"] = { base = "Base.LongCrudeBlade", count = 10 }
+BU.Bundles["BundleUp.SpearHeadBox"] = { base = "Base.SpearHead", count = 10 }
+BU.Bundles["BundleUp.SpearLongHeadBox"] = { base = "Base.SpearLongHead", count = 10 }
+BU.Bundles["BundleUp.SpadeHead_ForgedBox"] = { base = "Base.SpadeHead_Forged", count = 10 }
+BU.Bundles["BundleUp.BoneBead_LargeBox"] = { base = "Base.BoneBead_Large", count = 10 }
+BU.Bundles["BundleUp.SharpBoneFragmentBox"] = { base = "Base.SharpBoneFragment", count = 10 }
+BU.Bundles["BundleUp.CorkBox"] = { base = "Base.Cork", count = 10 }
+BU.BaseCategory["Base.AluminumFragments"] = "ReductionMetal"
+BU.BaseCategory["Base.HeavyChainLink"] = "ReductionMetal"
+BU.BaseCategory["Base.Latch"] = "ReductionMetal"
+BU.BaseCategory["Base.CrudeBlade"] = "ReductionMetal"
+BU.BaseCategory["Base.LongCrudeBlade"] = "ReductionMetal"
+BU.BaseCategory["Base.SpearHead"] = "ReductionMetal"
+BU.BaseCategory["Base.SpearLongHead"] = "ReductionMetal"
+BU.BaseCategory["Base.SpadeHead_Forged"] = "ReductionMetal"
+BU.BaseCategory["Base.BoneBead_Large"] = "ReductionOther"
+BU.BaseCategory["Base.SharpBoneFragment"] = "ReductionOther"
+BU.BaseCategory["Base.Cork"] = "ReductionOther"
+
+BU.Bundles["BundleUp.StoneBladeBox"] = { base = "Base.StoneBlade", count = 10 }
+BU.Bundles["BundleUp.StoneBladeLongBox"] = { base = "Base.StoneBladeLong", count = 10 }
+BU.Bundles["BundleUp.StoneAxeHeadBox"] = { base = "Base.StoneAxeHead", count = 10 }
+BU.Bundles["BundleUp.StoneMaulHeadBox"] = { base = "Base.StoneMaulHead", count = 10 }
+BU.BaseCategory["Base.StoneBlade"] = "ReductionStone"
+BU.BaseCategory["Base.StoneBladeLong"] = "ReductionStone"
+BU.BaseCategory["Base.StoneAxeHead"] = "ReductionStone"
+BU.BaseCategory["Base.StoneMaulHead"] = "ReductionStone"
+
+BU.Bundles["BundleUp.NeedleBox"] = { base = "Base.Needle", count = 50 }
+BU.Bundles["BundleUp.Needle_BoneBox"] = { base = "Base.Needle_Bone", count = 50 }
+BU.Bundles["BundleUp.Needle_BrassBox"] = { base = "Base.Needle_Brass", count = 50 }
+BU.Bundles["BundleUp.Needle_ForgedBox"] = { base = "Base.Needle_Forged", count = 50 }
+BU.Bundles["BundleUp.FishingHook_BoneBox"] = { base = "Base.FishingHook_Bone", count = 50 }
+BU.Bundles["BundleUp.FishingHook_ForgedBox"] = { base = "Base.FishingHook_Forged", count = 50 }
+BU.Bundles["BundleUp.MagnesiumShavingsBox"] = { base = "Base.MagnesiumShavings", count = 50 }
+BU.BaseCategory["Base.Needle"] = "ReductionMetal"
+BU.BaseCategory["Base.Needle_Bone"] = "ReductionOther"
+BU.BaseCategory["Base.Needle_Brass"] = "ReductionMetal"
+BU.BaseCategory["Base.Needle_Forged"] = "ReductionMetal"
+BU.BaseCategory["Base.FishingHook_Bone"] = "ReductionOther"
+BU.BaseCategory["Base.FishingHook_Forged"] = "ReductionMetal"
+BU.BaseCategory["Base.MagnesiumShavings"] = "ReductionMetal"
+
+BU.Bundles["BundleUp.Bull_SkullBox"] = { base = "Base.Bull_Skull", count = 10 }
+BU.Bundles["BundleUp.Calf_SkullBox"] = { base = "Base.Calf_Skull", count = 10 }
+BU.Bundles["BundleUp.Chicken_Chick_SkullBox"] = { base = "Base.Chicken_Chick_Skull", count = 10 }
+BU.Bundles["BundleUp.Chicken_Hen_SkullBox"] = { base = "Base.Chicken_Hen_Skull", count = 10 }
+BU.Bundles["BundleUp.Chicken_Rooster_SkullBox"] = { base = "Base.Chicken_Rooster_Skull", count = 10 }
+BU.Bundles["BundleUp.Cow_SkullBox"] = { base = "Base.Cow_Skull", count = 10 }
+BU.Bundles["BundleUp.DeerDoe_SkullBox"] = { base = "Base.DeerDoe_Skull", count = 10 }
+BU.Bundles["BundleUp.DeerFawn_SkullBox"] = { base = "Base.DeerFawn_Skull", count = 10 }
+BU.Bundles["BundleUp.DeerStag_SkullBox"] = { base = "Base.DeerStag_Skull", count = 10 }
+BU.Bundles["BundleUp.Lamb_SkullBox"] = { base = "Base.Lamb_Skull", count = 10 }
+BU.Bundles["BundleUp.Pig_SkullBox"] = { base = "Base.Pig_Skull", count = 10 }
+BU.Bundles["BundleUp.Piglet_SkullBox"] = { base = "Base.Piglet_Skull", count = 10 }
+BU.Bundles["BundleUp.Rabbit_KittenSkullBox"] = { base = "Base.Rabbit_KittenSkull", count = 10 }
+BU.Bundles["BundleUp.Rabbit_SkullBox"] = { base = "Base.Rabbit_Skull", count = 10 }
+BU.Bundles["BundleUp.Raccoon_SkullBox"] = { base = "Base.Raccoon_Skull", count = 10 }
+BU.Bundles["BundleUp.Ram_SkullBox"] = { base = "Base.Ram_Skull", count = 10 }
+BU.Bundles["BundleUp.Sheep_SkullBox"] = { base = "Base.Sheep_Skull", count = 10 }
+BU.Bundles["BundleUp.Turkey_PoultSkullBox"] = { base = "Base.Turkey_PoultSkull", count = 10 }
+BU.Bundles["BundleUp.Turkey_SkullBox"] = { base = "Base.Turkey_Skull", count = 10 }
+BU.Bundles["BundleUp.AnimalSinewBox"] = { base = "Base.AnimalSinew", count = 10 }
+BU.Bundles["BundleUp.Dung_CowBox"] = { base = "Base.Dung_Cow", count = 10 }
+BU.Bundles["BundleUp.Dung_DeerBox"] = { base = "Base.Dung_Deer", count = 10 }
+BU.Bundles["BundleUp.Dung_PigBox"] = { base = "Base.Dung_Pig", count = 10 }
+BU.Bundles["BundleUp.Dung_SheepBox"] = { base = "Base.Dung_Sheep", count = 10 }
+BU.BaseCategory["Base.Bull_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Calf_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Chicken_Chick_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Chicken_Hen_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Chicken_Rooster_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Cow_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.DeerDoe_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.DeerFawn_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.DeerStag_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Lamb_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Pig_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Piglet_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Rabbit_KittenSkull"] = "ReductionOther"
+BU.BaseCategory["Base.Rabbit_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Raccoon_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Ram_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Sheep_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.Turkey_PoultSkull"] = "ReductionOther"
+BU.BaseCategory["Base.Turkey_Skull"] = "ReductionOther"
+BU.BaseCategory["Base.AnimalSinew"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Cow"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Deer"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Pig"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Sheep"] = "ReductionOther"
+
+BU.Bundles["BundleUp.ChickenFeatherBox"] = { base = "Base.ChickenFeather", count = 50 }
+BU.Bundles["BundleUp.TurkeyFeatherBox"] = { base = "Base.TurkeyFeather", count = 50 }
+BU.Bundles["BundleUp.FurTuft_BlackBox"] = { base = "Base.FurTuft_Black", count = 50 }
+BU.Bundles["BundleUp.FurTuft_BrowndarkBox"] = { base = "Base.FurTuft_Browndark", count = 50 }
+BU.Bundles["BundleUp.FurTuft_BrownlightBox"] = { base = "Base.FurTuft_Brownlight", count = 50 }
+BU.Bundles["BundleUp.FurTuft_GreyBox"] = { base = "Base.FurTuft_Grey", count = 50 }
+BU.Bundles["BundleUp.FurTuft_WhiteBox"] = { base = "Base.FurTuft_White", count = 50 }
+BU.Bundles["BundleUp.HerbivoreTeethBox"] = { base = "Base.HerbivoreTeeth", count = 50 }
+BU.Bundles["BundleUp.PigTuskBox"] = { base = "Base.PigTusk", count = 50 }
+BU.Bundles["BundleUp.Dung_ChickenBox"] = { base = "Base.Dung_Chicken", count = 50 }
+BU.Bundles["BundleUp.Dung_MouseBox"] = { base = "Base.Dung_Mouse", count = 50 }
+BU.Bundles["BundleUp.Dung_RatBox"] = { base = "Base.Dung_Rat", count = 50 }
+BU.Bundles["BundleUp.Dung_TurkeyBox"] = { base = "Base.Dung_Turkey", count = 50 }
+BU.Bundles["BundleUp.Dung_RabbitBox"] = { base = "Base.Dung_Rabbit", count = 50 }
+BU.Bundles["BundleUp.Dung_RaccoonBox"] = { base = "Base.Dung_Raccoon", count = 50 }
+BU.BaseCategory["Base.ChickenFeather"] = "ReductionOther"
+BU.BaseCategory["Base.TurkeyFeather"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Black"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Browndark"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Brownlight"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_Grey"] = "ReductionOther"
+BU.BaseCategory["Base.FurTuft_White"] = "ReductionOther"
+BU.BaseCategory["Base.HerbivoreTeeth"] = "ReductionOther"
+BU.BaseCategory["Base.PigTusk"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Chicken"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Mouse"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Rat"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Turkey"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Rabbit"] = "ReductionOther"
+BU.BaseCategory["Base.Dung_Raccoon"] = "ReductionOther"
+
+BU.Bundles["BundleUp.PlasticForkBox"] = { base = "Base.PlasticFork", count = 10 }
+BU.Bundles["BundleUp.PlasticKnifeBox"] = { base = "Base.PlasticKnife", count = 10 }
+BU.Bundles["BundleUp.PlasticSpoonBox"] = { base = "Base.PlasticSpoon", count = 10 }
+BU.Bundles["BundleUp.SporkBox"] = { base = "Base.Spork", count = 10 }
+BU.Bundles["BundleUp.ChopsticksBox"] = { base = "Base.Chopsticks", count = 10 }
+BU.Bundles["BundleUp.Straw2Box"] = { base = "Base.Straw2", count = 10 }
+BU.Bundles["BundleUp.CocktailUmbrellaBox"] = { base = "Base.CocktailUmbrella", count = 10 }
+BU.Bundles["BundleUp.SkewersWoodenBox"] = { base = "Base.SkewersWooden", count = 10 }
+BU.Bundles["BundleUp.PlateBox"] = { base = "Base.Plate", count = 10 }
+BU.Bundles["BundleUp.LadleBox"] = { base = "Base.Ladle", count = 10 }
+BU.Bundles["BundleUp.SpatulaBox"] = { base = "Base.Spatula", count = 10 }
+BU.Bundles["BundleUp.WhiskBox"] = { base = "Base.Whisk", count = 10 }
+BU.Bundles["BundleUp.BastingBrushBox"] = { base = "Base.BastingBrush", count = 10 }
+BU.Bundles["BundleUp.GrillBrushBox"] = { base = "Base.GrillBrush", count = 10 }
+BU.Bundles["BundleUp.CheeseGraterBox"] = { base = "Base.CheeseGrater", count = 10 }
+BU.Bundles["BundleUp.StrainerBox"] = { base = "Base.Strainer", count = 10 }
+BU.Bundles["BundleUp.PizzaCutterBox"] = { base = "Base.PizzaCutter", count = 10 }
+BU.Bundles["BundleUp.TinOpenerBox"] = { base = "Base.TinOpener", count = 10 }
+BU.Bundles["BundleUp.BottleOpenerBox"] = { base = "Base.BottleOpener", count = 10 }
+BU.Bundles["BundleUp.P38Box"] = { base = "Base.P38", count = 10 }
+BU.Bundles["BundleUp.CorkscrewBox"] = { base = "Base.Corkscrew", count = 10 }
+BU.Bundles["BundleUp.OvenMittBox"] = { base = "Base.OvenMitt", count = 10 }
+BU.Bundles["BundleUp.CuttingBoardPlasticBox"] = { base = "Base.CuttingBoardPlastic", count = 10 }
+BU.Bundles["BundleUp.CuttingBoardWoodenBox"] = { base = "Base.CuttingBoardWooden", count = 10 }
+BU.Bundles["BundleUp.BakingPanBox"] = { base = "Base.BakingPan", count = 10 }
+BU.Bundles["BundleUp.BakingTrayBox"] = { base = "Base.BakingTray", count = 10 }
+BU.Bundles["BundleUp.MuffinTrayBox"] = { base = "Base.MuffinTray", count = 10 }
+BU.Bundles["BundleUp.RoastingPanBox"] = { base = "Base.RoastingPan", count = 10 }
+BU.Bundles["BundleUp.MarkerBlackBox"] = { base = "Base.MarkerBlack", count = 10 }
+BU.Bundles["BundleUp.MarkerBlueBox"] = { base = "Base.MarkerBlue", count = 10 }
+BU.Bundles["BundleUp.MarkerGreenBox"] = { base = "Base.MarkerGreen", count = 10 }
+BU.Bundles["BundleUp.MarkerRedBox"] = { base = "Base.MarkerRed", count = 10 }
+BU.Bundles["BundleUp.EraserBox"] = { base = "Base.Eraser", count = 10 }
+BU.Bundles["BundleUp.CrayonsBox"] = { base = "Base.Crayons", count = 10 }
+BU.Bundles["BundleUp.PokerChipsBox"] = { base = "Base.PokerChips", count = 10 }
+BU.Bundles["BundleUp.BaseballBox"] = { base = "Base.Baseball", count = 10 }
+BU.Bundles["BundleUp.BasketballBox"] = { base = "Base.Basketball", count = 10 }
+BU.Bundles["BundleUp.BirdieBox"] = { base = "Base.Birdie", count = 10 }
+BU.Bundles["BundleUp.DartBox"] = { base = "Base.Dart", count = 10 }
+BU.Bundles["BundleUp.FootballBox"] = { base = "Base.Football", count = 10 }
+BU.Bundles["BundleUp.GolfBallBox"] = { base = "Base.GolfBall", count = 10 }
+BU.Bundles["BundleUp.PoolBallBox"] = { base = "Base.PoolBall", count = 10 }
+BU.Bundles["BundleUp.SoccerBallBox"] = { base = "Base.SoccerBall", count = 10 }
+BU.Bundles["BundleUp.TennisBallBox"] = { base = "Base.TennisBall", count = 10 }
+BU.Bundles["BundleUp.CrystalBox"] = { base = "Base.Crystal", count = 10 }
+BU.BaseCategory["Base.PlasticFork"] = "ReductionOther"
+BU.BaseCategory["Base.PlasticKnife"] = "ReductionOther"
+BU.BaseCategory["Base.PlasticSpoon"] = "ReductionOther"
+BU.BaseCategory["Base.Spork"] = "ReductionOther"
+BU.BaseCategory["Base.Chopsticks"] = "ReductionOther"
+BU.BaseCategory["Base.Straw2"] = "ReductionOther"
+BU.BaseCategory["Base.CocktailUmbrella"] = "ReductionOther"
+BU.BaseCategory["Base.SkewersWooden"] = "ReductionOther"
+BU.BaseCategory["Base.Plate"] = "ReductionOther"
+BU.BaseCategory["Base.Ladle"] = "ReductionOther"
+BU.BaseCategory["Base.Spatula"] = "ReductionOther"
+BU.BaseCategory["Base.Whisk"] = "ReductionOther"
+BU.BaseCategory["Base.BastingBrush"] = "ReductionOther"
+BU.BaseCategory["Base.GrillBrush"] = "ReductionOther"
+BU.BaseCategory["Base.CheeseGrater"] = "ReductionOther"
+BU.BaseCategory["Base.Strainer"] = "ReductionOther"
+BU.BaseCategory["Base.PizzaCutter"] = "ReductionOther"
+BU.BaseCategory["Base.TinOpener"] = "ReductionOther"
+BU.BaseCategory["Base.BottleOpener"] = "ReductionOther"
+BU.BaseCategory["Base.P38"] = "ReductionOther"
+BU.BaseCategory["Base.Corkscrew"] = "ReductionOther"
+BU.BaseCategory["Base.OvenMitt"] = "ReductionOther"
+BU.BaseCategory["Base.CuttingBoardPlastic"] = "ReductionOther"
+BU.BaseCategory["Base.CuttingBoardWooden"] = "ReductionOther"
+BU.BaseCategory["Base.BakingPan"] = "ReductionOther"
+BU.BaseCategory["Base.BakingTray"] = "ReductionOther"
+BU.BaseCategory["Base.MuffinTray"] = "ReductionOther"
+BU.BaseCategory["Base.RoastingPan"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerBlack"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerBlue"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerGreen"] = "ReductionOther"
+BU.BaseCategory["Base.MarkerRed"] = "ReductionOther"
+BU.BaseCategory["Base.Eraser"] = "ReductionOther"
+BU.BaseCategory["Base.Crayons"] = "ReductionOther"
+BU.BaseCategory["Base.PokerChips"] = "ReductionOther"
+BU.BaseCategory["Base.Baseball"] = "ReductionOther"
+BU.BaseCategory["Base.Basketball"] = "ReductionOther"
+BU.BaseCategory["Base.Birdie"] = "ReductionOther"
+BU.BaseCategory["Base.Dart"] = "ReductionOther"
+BU.BaseCategory["Base.Football"] = "ReductionOther"
+BU.BaseCategory["Base.GolfBall"] = "ReductionOther"
+BU.BaseCategory["Base.PoolBall"] = "ReductionOther"
+BU.BaseCategory["Base.SoccerBall"] = "ReductionOther"
+BU.BaseCategory["Base.TennisBall"] = "ReductionOther"
+BU.BaseCategory["Base.Crystal"] = "ReductionOther"
+
+BU.Bundles["BundleUp.AmethystBox"] = { base = "Base.Amethyst", count = 50 }
+BU.Bundles["BundleUp.DiamondBox"] = { base = "Base.Diamond", count = 50 }
+BU.Bundles["BundleUp.EmeraldBox"] = { base = "Base.Emerald", count = 50 }
+BU.Bundles["BundleUp.RubyBox"] = { base = "Base.Ruby", count = 50 }
+BU.Bundles["BundleUp.SapphireBox"] = { base = "Base.Sapphire", count = 50 }
+BU.Bundles["BundleUp.GoldCoinBox"] = { base = "Base.GoldCoin", count = 50 }
+BU.Bundles["BundleUp.SilverCoinBox"] = { base = "Base.SilverCoin", count = 50 }
+BU.Bundles["BundleUp.DiceBox"] = { base = "Base.Dice", count = 50 }
+BU.Bundles["BundleUp.Dice_BoneBox"] = { base = "Base.Dice_Bone", count = 50 }
+BU.Bundles["BundleUp.Dice_WoodBox"] = { base = "Base.Dice_Wood", count = 50 }
+BU.Bundles["BundleUp.Dice_00Box"] = { base = "Base.Dice_00", count = 50 }
+BU.Bundles["BundleUp.Dice_10Box"] = { base = "Base.Dice_10", count = 50 }
+BU.Bundles["BundleUp.Dice_12Box"] = { base = "Base.Dice_12", count = 50 }
+BU.Bundles["BundleUp.Dice_20Box"] = { base = "Base.Dice_20", count = 50 }
+BU.Bundles["BundleUp.Dice_4Box"] = { base = "Base.Dice_4", count = 50 }
+BU.Bundles["BundleUp.Dice_6Box"] = { base = "Base.Dice_6", count = 50 }
+BU.Bundles["BundleUp.Dice_8Box"] = { base = "Base.Dice_8", count = 50 }
+BU.Bundles["BundleUp.GolfTeeBox"] = { base = "Base.GolfTee", count = 50 }
+BU.Bundles["BundleUp.GamePieceBlackBox"] = { base = "Base.GamePieceBlack", count = 50 }
+BU.Bundles["BundleUp.GamePieceRedBox"] = { base = "Base.GamePieceRed", count = 50 }
+BU.Bundles["BundleUp.GamePieceWhiteBox"] = { base = "Base.GamePieceWhite", count = 50 }
+BU.Bundles["BundleUp.ChessBlackBox"] = { base = "Base.ChessBlack", count = 50 }
+BU.Bundles["BundleUp.ChessWhiteBox"] = { base = "Base.ChessWhite", count = 50 }
+BU.Bundles["BundleUp.RubberBandBox"] = { base = "Base.RubberBand", count = 50 }
+BU.BaseCategory["Base.Amethyst"] = "ReductionOther"
+BU.BaseCategory["Base.Diamond"] = "ReductionOther"
+BU.BaseCategory["Base.Emerald"] = "ReductionOther"
+BU.BaseCategory["Base.Ruby"] = "ReductionOther"
+BU.BaseCategory["Base.Sapphire"] = "ReductionOther"
+BU.BaseCategory["Base.GoldCoin"] = "ReductionMetal"
+BU.BaseCategory["Base.SilverCoin"] = "ReductionMetal"
+BU.BaseCategory["Base.Dice"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_Bone"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_Wood"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_00"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_10"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_12"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_20"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_4"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_6"] = "ReductionOther"
+BU.BaseCategory["Base.Dice_8"] = "ReductionOther"
+BU.BaseCategory["Base.GolfTee"] = "ReductionOther"
+BU.BaseCategory["Base.GamePieceBlack"] = "ReductionOther"
+BU.BaseCategory["Base.GamePieceRed"] = "ReductionOther"
+BU.BaseCategory["Base.GamePieceWhite"] = "ReductionOther"
+BU.BaseCategory["Base.ChessBlack"] = "ReductionOther"
+BU.BaseCategory["Base.ChessWhite"] = "ReductionOther"
+BU.BaseCategory["Base.RubberBand"] = "ReductionOther"
+
+BU.Bundles["BundleUp.HideCalfAngusFurR"] = { base = "Base.CalfLeather_Angus_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusFurSR"] = { base = "Base.CalfLeather_Angus_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusFurLR"] = { base = "Base.CalfLeather_Angus_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCalfAngusFurLSR"] = { base = "Base.CalfLeather_Angus_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusFurR"] = { base = "Base.CowLeather_Angus_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusFurSR"] = { base = "Base.CowLeather_Angus_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusFurLR"] = { base = "Base.CowLeather_Angus_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusFurLSR"] = { base = "Base.CowLeather_Angus_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackFurR"] = { base = "Base.PigLeather_Black_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackFurSR"] = { base = "Base.PigLeather_Black_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackFurLR"] = { base = "Base.PigLeather_Black_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackFurLSR"] = { base = "Base.PigLeather_Black_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackFurR"] = { base = "Base.PigletLeather_Black_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackFurSR"] = { base = "Base.PigletLeather_Black_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackFurLR"] = { base = "Base.PigletLeather_Black_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackFurLSR"] = { base = "Base.PigletLeather_Black_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinFurR"] = { base = "Base.CalfLeather_Holstein_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinFurSR"] = { base = "Base.CalfLeather_Holstein_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinFurLR"] = { base = "Base.CalfLeather_Holstein_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinFurLSR"] = { base = "Base.CalfLeather_Holstein_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinFurR"] = { base = "Base.CowLeather_Holstein_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinFurSR"] = { base = "Base.CowLeather_Holstein_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinFurLR"] = { base = "Base.CowLeather_Holstein_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinFurLSR"] = { base = "Base.CowLeather_Holstein_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalFurR"] = { base = "Base.CalfLeather_Simmental_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalFurSR"] = { base = "Base.CalfLeather_Simmental_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalFurLR"] = { base = "Base.CalfLeather_Simmental_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalFurLSR"] = { base = "Base.CalfLeather_Simmental_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalFurR"] = { base = "Base.CowLeather_Simmental_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalFurSR"] = { base = "Base.CowLeather_Simmental_Fur", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalFurLR"] = { base = "Base.CowLeather_Simmental_Fur", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalFurLSR"] = { base = "Base.CowLeather_Simmental_Fur", count = 10 }
+BU.Bundles["BundleUp.HideDeerFurR"] = { base = "Base.DeerLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideDeerFurSR"] = { base = "Base.DeerLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideDeerFurLR"] = { base = "Base.DeerLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideDeerFurLSR"] = { base = "Base.DeerLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideFawnFurR"] = { base = "Base.FawnLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideFawnFurSR"] = { base = "Base.FawnLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideFawnFurLR"] = { base = "Base.FawnLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideFawnFurLSR"] = { base = "Base.FawnLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideRabbitFurR"] = { base = "Base.RabbitLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideRabbitFurSR"] = { base = "Base.RabbitLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideRabbitFurLR"] = { base = "Base.RabbitLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideRabbitFurLSR"] = { base = "Base.RabbitLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceFurR"] = { base = "Base.PigLeather_Landrace_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceFurSR"] = { base = "Base.PigLeather_Landrace_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceFurLR"] = { base = "Base.PigLeather_Landrace_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceFurLSR"] = { base = "Base.PigLeather_Landrace_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceFurR"] = { base = "Base.PigletLeather_Landrace_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceFurSR"] = { base = "Base.PigletLeather_Landrace_Fur", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceFurLR"] = { base = "Base.PigletLeather_Landrace_Fur", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceFurLSR"] = { base = "Base.PigletLeather_Landrace_Fur", count = 10 }
+BU.Bundles["BundleUp.HideLambFurR"] = { base = "Base.LambLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideLambFurSR"] = { base = "Base.LambLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideLambFurLR"] = { base = "Base.LambLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideLambFurLSR"] = { base = "Base.LambLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideSheepFurR"] = { base = "Base.SheepLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideSheepFurSR"] = { base = "Base.SheepLeather_Fur", count = 5 }
+BU.Bundles["BundleUp.HideSheepFurLR"] = { base = "Base.SheepLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideSheepFurLSR"] = { base = "Base.SheepLeather_Fur", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyFurR"] = { base = "Base.RabbitLeather_Grey_Fur", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyFurSR"] = { base = "Base.RabbitLeather_Grey_Fur", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyFurLR"] = { base = "Base.RabbitLeather_Grey_Fur", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyFurLSR"] = { base = "Base.RabbitLeather_Grey_Fur", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonFurR"] = { base = "Base.RaccoonLeather_Grey_Fur", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonFurSR"] = { base = "Base.RaccoonLeather_Grey_Fur", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonFurLR"] = { base = "Base.RaccoonLeather_Grey_Fur", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonFurLSR"] = { base = "Base.RaccoonLeather_Grey_Fur", count = 10 }
+BU.BaseCategory["Base.CalfLeather_Angus_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Angus_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Black_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Black_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Holstein_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Holstein_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Simmental_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Simmental_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.DeerLeather_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.FawnLeather_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Landrace_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Landrace_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.LambLeather_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.SheepLeather_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Grey_Fur"] = "ReductionLeather"
+BU.BaseCategory["Base.RaccoonLeather_Grey_Fur"] = "ReductionLeather"
+
+BU.Bundles["BundleUp.HideCalfAngusWetR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusWetSR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusWetLR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfAngusWetLSR"] = { base = "Base.CalfLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusWetR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusWetSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusWetLR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusWetLSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackWetR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackWetSR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackWetLR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackWetLSR"] = { base = "Base.PigLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackWetR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackWetSR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackWetLR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackWetLSR"] = { base = "Base.PigletLeather_Black_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetSR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetLR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinWetLSR"] = { base = "Base.CalfLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinWetR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinWetSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinWetLR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinWetLSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetSR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetLR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalWetLSR"] = { base = "Base.CalfLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalWetR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalWetSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalWetLR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalWetLSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideDeerWetR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideDeerWetSR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideDeerWetLR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideDeerWetLSR"] = { base = "Base.DeerLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideFawnWetR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideFawnWetSR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideFawnWetLR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideFawnWetLSR"] = { base = "Base.FawnLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitWetR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitWetSR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitWetLR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitWetLSR"] = { base = "Base.RabbitLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceWetR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceWetSR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceWetLR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceWetLSR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceWetR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceWetSR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceWetLR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceWetLSR"] = { base = "Base.PigletLeather_Landrace_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideLambWetR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideLambWetSR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideLambWetLR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideLambWetLSR"] = { base = "Base.LambLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideSheepWetR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideSheepWetSR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideSheepWetLR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideSheepWetLSR"] = { base = "Base.SheepLeather_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyWetR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyWetSR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyWetLR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyWetLSR"] = { base = "Base.RabbitLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonWetR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonWetSR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonWetLR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonWetLSR"] = { base = "Base.RaccoonLeather_Grey_Fur_Tan_Wet", count = 10 }
+BU.BaseCategory["Base.CalfLeather_Angus_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Angus_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Black_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Black_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Holstein_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Holstein_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Simmental_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Simmental_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.DeerLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.FawnLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Landrace_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Landrace_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.LambLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.SheepLeather_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Grey_Fur_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.RaccoonLeather_Grey_Fur_Tan_Wet"] = "ReductionLeather"
+
+BU.Bundles["BundleUp.HideCalfAngusFullR"] = { base = "Base.CalfLeather_Angus_Full", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusFullSR"] = { base = "Base.CalfLeather_Angus_Full", count = 5 }
+BU.Bundles["BundleUp.HideCalfAngusFullLR"] = { base = "Base.CalfLeather_Angus_Full", count = 10 }
+BU.Bundles["BundleUp.HideCalfAngusFullLSR"] = { base = "Base.CalfLeather_Angus_Full", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusFullR"] = { base = "Base.CowLeather_Angus_Full", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusFullSR"] = { base = "Base.CowLeather_Angus_Full", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusFullLR"] = { base = "Base.CowLeather_Angus_Full", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusFullLSR"] = { base = "Base.CowLeather_Angus_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackFullR"] = { base = "Base.PigLeather_Black_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackFullSR"] = { base = "Base.PigLeather_Black_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackFullLR"] = { base = "Base.PigLeather_Black_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackFullLSR"] = { base = "Base.PigLeather_Black_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackFullR"] = { base = "Base.PigletLeather_Black_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackFullSR"] = { base = "Base.PigletLeather_Black_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigletBlackFullLR"] = { base = "Base.PigletLeather_Black_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigletBlackFullLSR"] = { base = "Base.PigletLeather_Black_Full", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinFullR"] = { base = "Base.CalfLeather_Holstein_Full", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinFullSR"] = { base = "Base.CalfLeather_Holstein_Full", count = 5 }
+BU.Bundles["BundleUp.HideCalfHolsteinFullLR"] = { base = "Base.CalfLeather_Holstein_Full", count = 10 }
+BU.Bundles["BundleUp.HideCalfHolsteinFullLSR"] = { base = "Base.CalfLeather_Holstein_Full", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinFullR"] = { base = "Base.CowLeather_Holstein_Full", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinFullSR"] = { base = "Base.CowLeather_Holstein_Full", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinFullLR"] = { base = "Base.CowLeather_Holstein_Full", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinFullLSR"] = { base = "Base.CowLeather_Holstein_Full", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalFullR"] = { base = "Base.CalfLeather_Simmental_Full", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalFullSR"] = { base = "Base.CalfLeather_Simmental_Full", count = 5 }
+BU.Bundles["BundleUp.HideCalfSimmentalFullLR"] = { base = "Base.CalfLeather_Simmental_Full", count = 10 }
+BU.Bundles["BundleUp.HideCalfSimmentalFullLSR"] = { base = "Base.CalfLeather_Simmental_Full", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalFullR"] = { base = "Base.CowLeather_Simmental_Full", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalFullSR"] = { base = "Base.CowLeather_Simmental_Full", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalFullLR"] = { base = "Base.CowLeather_Simmental_Full", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalFullLSR"] = { base = "Base.CowLeather_Simmental_Full", count = 10 }
+BU.Bundles["BundleUp.HideDeerFullR"] = { base = "Base.DeerLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideDeerFullSR"] = { base = "Base.DeerLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideDeerFullLR"] = { base = "Base.DeerLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideDeerFullLSR"] = { base = "Base.DeerLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideFawnFullR"] = { base = "Base.FawnLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideFawnFullSR"] = { base = "Base.FawnLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideFawnFullLR"] = { base = "Base.FawnLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideFawnFullLSR"] = { base = "Base.FawnLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideRabbitFullR"] = { base = "Base.RabbitLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideRabbitFullSR"] = { base = "Base.RabbitLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideRabbitFullLR"] = { base = "Base.RabbitLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideRabbitFullLSR"] = { base = "Base.RabbitLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceFullR"] = { base = "Base.PigLeather_Landrace_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceFullSR"] = { base = "Base.PigLeather_Landrace_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceFullLR"] = { base = "Base.PigLeather_Landrace_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceFullLSR"] = { base = "Base.PigLeather_Landrace_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceFullR"] = { base = "Base.PigletLeather_Landrace_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceFullSR"] = { base = "Base.PigletLeather_Landrace_Full", count = 5 }
+BU.Bundles["BundleUp.HidePigletLandraceFullLR"] = { base = "Base.PigletLeather_Landrace_Full", count = 10 }
+BU.Bundles["BundleUp.HidePigletLandraceFullLSR"] = { base = "Base.PigletLeather_Landrace_Full", count = 10 }
+BU.Bundles["BundleUp.HideLambFullR"] = { base = "Base.LambLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideLambFullSR"] = { base = "Base.LambLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideLambFullLR"] = { base = "Base.LambLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideLambFullLSR"] = { base = "Base.LambLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideSheepFullR"] = { base = "Base.SheepLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideSheepFullSR"] = { base = "Base.SheepLeather_Full", count = 5 }
+BU.Bundles["BundleUp.HideSheepFullLR"] = { base = "Base.SheepLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideSheepFullLSR"] = { base = "Base.SheepLeather_Full", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyFullR"] = { base = "Base.RabbitLeather_Grey_Full", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyFullSR"] = { base = "Base.RabbitLeather_Grey_Full", count = 5 }
+BU.Bundles["BundleUp.HideRabbitGreyFullLR"] = { base = "Base.RabbitLeather_Grey_Full", count = 10 }
+BU.Bundles["BundleUp.HideRabbitGreyFullLSR"] = { base = "Base.RabbitLeather_Grey_Full", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonFullR"] = { base = "Base.RaccoonLeather_Grey_Full", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonFullSR"] = { base = "Base.RaccoonLeather_Grey_Full", count = 5 }
+BU.Bundles["BundleUp.HideRaccoonFullLR"] = { base = "Base.RaccoonLeather_Grey_Full", count = 10 }
+BU.Bundles["BundleUp.HideRaccoonFullLSR"] = { base = "Base.RaccoonLeather_Grey_Full", count = 10 }
+BU.BaseCategory["Base.CalfLeather_Angus_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Angus_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Black_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Black_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Holstein_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Holstein_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.CalfLeather_Simmental_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Simmental_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.DeerLeather_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.FawnLeather_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Landrace_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.PigletLeather_Landrace_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.LambLeather_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.SheepLeather_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.RabbitLeather_Grey_Full"] = "ReductionLeather"
+BU.BaseCategory["Base.RaccoonLeather_Grey_Full"] = "ReductionLeather"
+
+BU.Bundles["BundleUp.HideCowAngusMediumR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusMediumSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusMediumLR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusMediumLSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusSmallR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusSmallSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideCowAngusSmallLR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideCowAngusSmallLSR"] = { base = "Base.CowLeather_Angus_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackSmallR"] = { base = "Base.PigLeather_Black_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackSmallSR"] = { base = "Base.PigLeather_Black_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HidePigBlackSmallLR"] = { base = "Base.PigLeather_Black_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HidePigBlackSmallLSR"] = { base = "Base.PigLeather_Black_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinMediumR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinMediumSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinMediumLR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinMediumLSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinSmallR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinSmallSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideCowHolsteinSmallLR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideCowHolsteinSmallLSR"] = { base = "Base.CowLeather_Holstein_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalMediumR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalMediumSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalMediumLR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalMediumLSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalSmallR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalSmallSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideCowSimmentalSmallLR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideCowSimmentalSmallLSR"] = { base = "Base.CowLeather_Simmental_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideDeerSmallR"] = { base = "Base.DeerLeather_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideDeerSmallSR"] = { base = "Base.DeerLeather_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideDeerSmallLR"] = { base = "Base.DeerLeather_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideDeerSmallLSR"] = { base = "Base.DeerLeather_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceSmallR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceSmallSR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HidePigLandraceSmallLR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HidePigLandraceSmallLSR"] = { base = "Base.PigLeather_Landrace_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideSheepSmallR"] = { base = "Base.SheepLeather_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideSheepSmallSR"] = { base = "Base.SheepLeather_Fur_Tan_Small", count = 5 }
+BU.Bundles["BundleUp.HideSheepSmallLR"] = { base = "Base.SheepLeather_Fur_Tan_Small", count = 10 }
+BU.Bundles["BundleUp.HideSheepSmallLSR"] = { base = "Base.SheepLeather_Fur_Tan_Small", count = 10 }
+BU.BaseCategory["Base.CowLeather_Angus_Fur_Tan_Medium"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Angus_Fur_Tan_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Black_Fur_Tan_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Holstein_Fur_Tan_Medium"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Holstein_Fur_Tan_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Simmental_Fur_Tan_Medium"] = "ReductionLeather"
+BU.BaseCategory["Base.CowLeather_Simmental_Fur_Tan_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.DeerLeather_Fur_Tan_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.PigLeather_Landrace_Fur_Tan_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.SheepLeather_Fur_Tan_Small"] = "ReductionLeather"
+
+BU.Bundles["BundleUp.HideCrudeLargeRawR"] = { base = "Base.Leather_Crude_Large", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeRawSR"] = { base = "Base.Leather_Crude_Large", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeRawLR"] = { base = "Base.Leather_Crude_Large", count = 10 }
+BU.Bundles["BundleUp.HideCrudeLargeRawLSR"] = { base = "Base.Leather_Crude_Large", count = 10 }
+BU.Bundles["BundleUp.HideCrudeLargeWetR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeWetSR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeLargeWetLR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeLargeWetLSR"] = { base = "Base.Leather_Crude_Large_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumRawR"] = { base = "Base.Leather_Crude_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumRawSR"] = { base = "Base.Leather_Crude_Medium", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumRawLR"] = { base = "Base.Leather_Crude_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumRawLSR"] = { base = "Base.Leather_Crude_Medium", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumWetR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumWetSR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeMediumWetLR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeMediumWetLSR"] = { base = "Base.Leather_Crude_Medium_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallRawR"] = { base = "Base.Leather_Crude_Small", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallRawSR"] = { base = "Base.Leather_Crude_Small", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallRawLR"] = { base = "Base.Leather_Crude_Small", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallRawLSR"] = { base = "Base.Leather_Crude_Small", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallWetR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallWetSR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 5 }
+BU.Bundles["BundleUp.HideCrudeSmallWetLR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 10 }
+BU.Bundles["BundleUp.HideCrudeSmallWetLSR"] = { base = "Base.Leather_Crude_Small_Tan_Wet", count = 10 }
+BU.BaseCategory["Base.Leather_Crude_Large"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Large_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Medium"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Medium_Tan_Wet"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Small"] = "ReductionLeather"
+BU.BaseCategory["Base.Leather_Crude_Small_Tan_Wet"] = "ReductionLeather"

@@ -4271,4 +4271,1541 @@ module BundleUp {
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackSuspensionBox,
     }
+    item ClayBrickCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayBrickUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayTileCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayTileUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayShingleCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayShingleUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayPipeSegmentCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayPipeSegmentUnfiredCrate {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = StoneCrate,
+        WorldStaticModel = Crate_Ammo,
+        DoubleClickRecipe = UnpackCeramicCrate,
+    }
+    item ClayPotUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayJarUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBowlUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayMugUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayPlateUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicTeacupUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicCrucibleSmallUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicCrucibleUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 40.0,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicMortarandPestleUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item GlassBlowingPipeUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SmokingPipeUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBarMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayIngotMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClaySheetMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBlacksmithAnvilMoldUnfiredBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayPotBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayPlateBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CeramicMortarandPestleBox {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item GlassBlowingPipeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SmokingPipeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBarMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayIngotMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClaySheetMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ClayBlacksmithAnvilMoldBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item FlaxCarton {
+        DisplayCategory = Material,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        Weight = 1.99,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item HempBundleCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        Weight = 9.96,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item WheatSheafCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        Weight = 9.96,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item BarleySheafCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        Weight = 9.96,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item RyeSheafCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        Weight = 9.96,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item TobaccoCarton {
+        DisplayCategory = Tool,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        Weight = 1.99,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item HopsCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 7,
+        DaysTotallyRotten = 14,
+        Weight = 2.99,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item PoppyPodsCarton {
+        DisplayCategory = Gardening,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item PoppiesCarton {
+        DisplayCategory = Gardening,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item SunflowerHeadCarton {
+        DisplayCategory = Gardening,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 10,
+        DaysTotallyRotten = 13,
+        Weight = 1.99,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item BlackSageCarton {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item ComfreyCarton {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item CommonMallowCarton {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item PlantainCarton {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item WildGarlic2Carton {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item ChamomileCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item LavenderCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item MarigoldCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item RosesCarton {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        CantEat = true,
+        DaysFresh = 6,
+        DaysTotallyRotten = 10,
+        Weight = 1.0,
+        Icon = Parcel_Small_Fruit,
+        WorldStaticModel = Parcel_Produce_Small,
+        DoubleClickRecipe = UnpackFreshCarton,
+    }
+    item BurlapPieceBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item TarpPieceBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SheetBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CheeseClothBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item AluminumFragmentsBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item HeavyChainLinkBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item LatchBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CrudeBladeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item LongCrudeBladeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SpearHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SpearLongHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SpadeHead_ForgedBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BoneBead_LargeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SharpBoneFragmentBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CorkBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item StoneBladeBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
+    item StoneBladeLongBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 6.22,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
+    item StoneAxeHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
+    item StoneMaulHeadBox {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackKnappedBox,
+    }
+    item NeedleBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Needle_BoneBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Needle_BrassBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Needle_ForgedBox {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FishingHook_BoneBox {
+        DisplayCategory = Fishing,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FishingHook_ForgedBox {
+        DisplayCategory = Fishing,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item MagnesiumShavingsBox {
+        DisplayCategory = Camping,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Bull_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Calf_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Chicken_Chick_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Chicken_Hen_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Chicken_Rooster_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Cow_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item DeerDoe_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item DeerFawn_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item DeerStag_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Lamb_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Pig_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Piglet_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Rabbit_KittenSkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Rabbit_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Raccoon_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Ram_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Sheep_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Turkey_PoultSkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Turkey_SkullBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item AnimalSinewBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_CowBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_DeerBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_PigBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 5.81,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Dung_SheepBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ChickenFeatherBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item TurkeyFeatherBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_BlackBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_BrowndarkBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_BrownlightBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_GreyBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item FurTuft_WhiteBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item HerbivoreTeethBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item PigTuskBox {
+        DisplayCategory = AnimalPart,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_ChickenBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_MouseBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_RatBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_TurkeyBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_RabbitBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dung_RaccoonBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item PlasticForkBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item PlasticKnifeBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item PlasticSpoonBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SporkBox {
+        DisplayCategory = Camping,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item ChopsticksBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item Straw2Box {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CocktailUmbrellaBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SkewersWoodenBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item PlateBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item LadleBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SpatulaBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item WhiskBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BastingBrushBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item GrillBrushBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CheeseGraterBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item StrainerBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item PizzaCutterBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item TinOpenerBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BottleOpenerBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item P38Box {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 0.41,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CorkscrewBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item OvenMittBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CuttingBoardPlasticBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CuttingBoardWoodenBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BakingPanBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BakingTrayBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item MuffinTrayBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item RoastingPanBox {
+        DisplayCategory = Cooking,
+        ItemType = base:normal,
+        Weight = 10.79,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item MarkerBlackBox {
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item MarkerBlueBox {
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item MarkerGreenBox {
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item MarkerRedBox {
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item EraserBox {
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CrayonsBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item PokerChipsBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BaseballBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BasketballBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item BirdieBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item DartBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item FootballBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item GolfBallBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item PoolBallBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 6.64,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item SoccerBallBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item TennisBallBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 2.49,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item CrystalBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSupplyBox,
+    }
+    item AmethystBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item DiamondBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item EmeraldBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item RubyBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item SapphireBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 0.04,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item GoldCoinBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item SilverCoinBox {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item DiceBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_BoneBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_WoodBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_00Box {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_10Box {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_12Box {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_20Box {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_4Box {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_6Box {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item Dice_8Box {
+        DisplayCategory = Memento,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item GolfTeeBox {
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item GamePieceBlackBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item GamePieceRedBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item GamePieceWhiteBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item ChessBlackBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item ChessWhiteBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
+    item RubberBandBox {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSmallsBox,
+    }
 }

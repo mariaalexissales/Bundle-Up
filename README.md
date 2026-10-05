@@ -5,7 +5,7 @@
 [![latest release](https://img.shields.io/github/v/release/mariaalexissales/Bundle-Up?label=release)](https://github.com/mariaalexissales/Bundle-Up/releases/latest)
 [![workshop subscribers](https://img.shields.io/steam/subscriptions/3746632343?label=workshop%20subscribers)](https://steamcommunity.com/sharedfiles/filedetails/?id=3746632343)
 
-Packing mod for Project Zomboid. Live on the Steam Workshop: 1,700+ packs covering ~850 vanilla items, 140 recipes, ~6,000 lines of Lua, 70+ merged PRs.
+Packing mod for Project Zomboid. Live on the Steam Workshop: 2,200+ packs covering ~1,100 vanilla items, 150 recipes, ~6,000 lines of Lua, 70+ merged PRs.
 
 Project Zomboid is a zombie survival game. You loot everything, every item has weight and takes a slot, and a big base turns into shelves of half-full crates. Bundle Up packs those items into bundles, boxes, sacks and cartons and unpacks them exactly as they went in.
 
@@ -27,9 +27,9 @@ The modding layer has no docs. Most of this README is what I found out by readin
 
 Put 99 nails in a box and half your base goes missing to server chunk rot. Sheet metal ends up spread across 20 crates because it won't fit in one. Bundle Up packs all of it down.
 
-- **1,700+ packs covering ~850 vanilla items** across old and new B42 stock: rope bundles, boxes, bags, sacks, six-packs, cartons, cases and crates.
+- **2,200+ packs covering ~1,100 vanilla items** across old and new B42 stock: rope bundles, boxes, bags, sacks, six-packs, cartons, cases and crates. That includes what sits between two crafting steps: unfired pottery, flax and hemp at every stage, hides from raw to tanned.
 - **Packing never launders an item.** Part-used, damaged, wet, loaded or rotten stock stays out, and what goes in comes back out exactly as it was, down to the colour of the wine.
-- **Tiered packing.** Cartons pack into Cases and Cases into Crates, so a hoard that used to bottom out at "a shelf of cartons" collapses twice more. A Food Case takes four of any of the 305 food cartons, and a Crate takes up to four Cases: 192 items in a single slot. Vanilla's canned food boxes, egg cartons and the drink six-packs climb the same ladder, and a Crate only takes as many Cases as stay under the weight cap.
+- **Tiered packing.** Cartons pack into Cases and Cases into Crates, so a hoard that used to bottom out at "a shelf of cartons" collapses twice more. A Food Case takes four of any of the 324 food cartons, and a Crate takes up to four Cases: 192 items in a single slot. Vanilla's canned food boxes, egg cartons and the drink six-packs climb the same ladder, and a Crate only takes as many Cases as stay under the weight cap.
 - **Everything you drop is visible.** Every item carries a world model, so a dropped pack is an actual pile instead of thin air, and the 10-count bundles look bigger than the 5-count ones.
 - **Food keeps rotting while it's packed.** A carton is storage, not a stasis pod. It chills, freezes and thaws on the same schedule as the loose food beside it.
 - **Part-used stock merges back.** Half-empty spools, rolls and bottles merge into whole ones, and *Add to* / *Consolidate all* read every container in reach, not just your main inventory.
@@ -211,7 +211,7 @@ It filters that diff to the expected output types, so anything you picked up mid
 
 ## Generated content
 
-There are 305 food cartons, each needing a Case and a Crate: an item block, a pack and an unpack recipe, a weight row and a display name per rung. That's too much to review by hand, so the upper tiers are generated from the pack ladders the mod already declares.
+There are 324 food cartons, each needing a Case and a Crate: an item block, a pack and an unpack recipe, a weight row and a display name per rung. That's too much to review by hand, so the upper tiers are generated from the pack ladders the mod already declares.
 
 `generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes three whole files stamped *do not edit by hand*, plus a sorted block at the end of `ItemName.json` and `Recipes.json`. All of it is committed. Running it again with no source change must produce no diff, and `--check` enforces that on every PR.
 

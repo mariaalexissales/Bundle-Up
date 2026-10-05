@@ -2213,4 +2213,233 @@ module BundleUp {
         Tags = base:hasmetal,
         DoubleClickRecipe = UnstackIngotL,
     }
+
+    item FlaxRippledBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item FlaxDriedBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item FlaxScutchedBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item FlaxHeckledBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item FlaxTowBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item HempScutchedBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item DogbaneBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item WoolRawBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item StringBale {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item HayTuftBale {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item GrassTuftBale {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item TobaccoDriedBale {
+        DisplayCategory = Tool,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item HopsDriedBale {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 4.98,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item PoppyPodsDriedBale {
+        DisplayCategory = Gardening,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item SunflowerHeadDriedBale {
+        DisplayCategory = Gardening,
+        ItemType = base:normal,
+        Weight = 3.32,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item ComfreyDriedBale {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item PlantainDriedBale {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item WheatSheafDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
+
+    item BarleySheafDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
+
+    item RyeSheafDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
+
+    item HempDriedBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 8.3,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackSheafBundle,
+    }
+
+    item SilverSheetS {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = SmallMetalSheetS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleSmall,
+    }
+
+    item SilverSheetL {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = SmallMetalSheetL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleLarge,
+    }
+
+    item SmallCopperSheetS {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 2.07,
+        Icon = SmallMetalSheetS,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleSmall,
+    }
+
+    item SmallCopperSheetL {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        Weight = 4.15,
+        Icon = SmallMetalSheetL,
+        WorldStaticModel = Parcel_Small,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = UnbundleLarge,
+    }
 }
