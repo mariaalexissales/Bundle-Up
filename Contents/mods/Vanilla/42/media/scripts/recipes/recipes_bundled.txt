@@ -13,7 +13,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 5 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
+            item 5 [Base.Wire;Base.SmallSheetMetal;Base.SilverSheet;Base.SmallCopperSheet] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -21,6 +21,8 @@ module BundleUp {
         itemMapper itemTypes {
             BundleUp.WireCable_Small = Base.Wire,
             BundleUp.SmallMetalSheetS = Base.SmallSheetMetal,
+            BundleUp.SilverSheetS = Base.SilverSheet,
+            BundleUp.SmallCopperSheetS = Base.SmallCopperSheet,
         }
     }
 
@@ -30,7 +32,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS;BundleUp.SilverSheetS;BundleUp.SmallCopperSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 5 mapper:itemTypes,
@@ -38,6 +40,8 @@ module BundleUp {
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Small,
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetS,
+            Base.SilverSheet = BundleUp.SilverSheetS,
+            Base.SmallCopperSheet = BundleUp.SmallCopperSheetS,
         }
     }
 
@@ -47,7 +51,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 10 [Base.Wire;Base.SmallSheetMetal] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
+            item 10 [Base.Wire;Base.SmallSheetMetal;Base.SilverSheet;Base.SmallCopperSheet] mode:destroy flags[ItemCount;IsExclusive;IsFull] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -55,6 +59,8 @@ module BundleUp {
         itemMapper itemTypes {
             BundleUp.WireCable_Large = Base.Wire,
             BundleUp.SmallMetalSheetL = Base.SmallSheetMetal,
+            BundleUp.SilverSheetL = Base.SilverSheet,
+            BundleUp.SmallCopperSheetL = Base.SmallCopperSheet,
         }
     }
 
@@ -64,7 +70,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 1 [BundleUp.WireCable_Large;BundleUp.SmallMetalSheetL;BundleUp.SilverSheetL;BundleUp.SmallCopperSheetL] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 10 mapper:itemTypes,
@@ -72,6 +78,8 @@ module BundleUp {
         itemMapper itemTypes {
             Base.Wire = BundleUp.WireCable_Large,
             Base.SmallSheetMetal = BundleUp.SmallMetalSheetL,
+            Base.SilverSheet = BundleUp.SilverSheetL,
+            Base.SmallCopperSheet = BundleUp.SmallCopperSheetL,
         }
     }
 
@@ -81,7 +89,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 2 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 2 [BundleUp.WireCable_Small;BundleUp.SmallMetalSheetS;BundleUp.SilverSheetS;BundleUp.SmallCopperSheetS] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 1 mapper:itemTypes,
@@ -89,6 +97,8 @@ module BundleUp {
         itemMapper itemTypes {
             BundleUp.WireCable_Large = BundleUp.WireCable_Small,
             BundleUp.SmallMetalSheetL = BundleUp.SmallMetalSheetS,
+            BundleUp.SilverSheetL = BundleUp.SilverSheetS,
+            BundleUp.SmallCopperSheetL = BundleUp.SmallCopperSheetS,
         }
     }
 
@@ -1124,6 +1134,108 @@ module BundleUp {
             Base.SmallSilverBar = BundleUp.SmallSilverBar_L,
             Base.PiercedIronIngot = BundleUp.PiercedIronIngot_L,
             Base.PiercedSteelIngot = BundleUp.PiercedSteelIngot_L,
+        }
+    }
+
+    craftRecipe PackFibreBale {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 20 [Base.ComfreyDried;Base.Dogbane;Base.FlaxDried;Base.FlaxHeckled;Base.FlaxRippled;Base.FlaxScutched;Base.FlaxTow;Base.GrassTuft;Base.HayTuft;Base.HempScutched;Base.HopsDried;Base.PlantainDried;Base.PoppyPodsDried;Base.String;Base.SunflowerHeadDried;Base.TobaccoDried;Base.WoolRaw] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.ComfreyDriedBale = Base.ComfreyDried,
+            BundleUp.DogbaneBale = Base.Dogbane,
+            BundleUp.FlaxDriedBale = Base.FlaxDried,
+            BundleUp.FlaxHeckledBale = Base.FlaxHeckled,
+            BundleUp.FlaxRippledBale = Base.FlaxRippled,
+            BundleUp.FlaxScutchedBale = Base.FlaxScutched,
+            BundleUp.FlaxTowBale = Base.FlaxTow,
+            BundleUp.GrassTuftBale = Base.GrassTuft,
+            BundleUp.HayTuftBale = Base.HayTuft,
+            BundleUp.HempScutchedBale = Base.HempScutched,
+            BundleUp.HopsDriedBale = Base.HopsDried,
+            BundleUp.PlantainDriedBale = Base.PlantainDried,
+            BundleUp.PoppyPodsDriedBale = Base.PoppyPodsDried,
+            BundleUp.StringBale = Base.String,
+            BundleUp.SunflowerHeadDriedBale = Base.SunflowerHeadDried,
+            BundleUp.TobaccoDriedBale = Base.TobaccoDried,
+            BundleUp.WoolRawBale = Base.WoolRaw,
+        }
+    }
+
+    craftRecipe UnpackFibreBale {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.ComfreyDriedBale;BundleUp.DogbaneBale;BundleUp.FlaxDriedBale;BundleUp.FlaxHeckledBale;BundleUp.FlaxRippledBale;BundleUp.FlaxScutchedBale;BundleUp.FlaxTowBale;BundleUp.GrassTuftBale;BundleUp.HayTuftBale;BundleUp.HempScutchedBale;BundleUp.HopsDriedBale;BundleUp.PlantainDriedBale;BundleUp.PoppyPodsDriedBale;BundleUp.StringBale;BundleUp.SunflowerHeadDriedBale;BundleUp.TobaccoDriedBale;BundleUp.WoolRawBale] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 20 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.ComfreyDried = BundleUp.ComfreyDriedBale,
+            Base.Dogbane = BundleUp.DogbaneBale,
+            Base.FlaxDried = BundleUp.FlaxDriedBale,
+            Base.FlaxHeckled = BundleUp.FlaxHeckledBale,
+            Base.FlaxRippled = BundleUp.FlaxRippledBale,
+            Base.FlaxScutched = BundleUp.FlaxScutchedBale,
+            Base.FlaxTow = BundleUp.FlaxTowBale,
+            Base.GrassTuft = BundleUp.GrassTuftBale,
+            Base.HayTuft = BundleUp.HayTuftBale,
+            Base.HempScutched = BundleUp.HempScutchedBale,
+            Base.HopsDried = BundleUp.HopsDriedBale,
+            Base.PlantainDried = BundleUp.PlantainDriedBale,
+            Base.PoppyPodsDried = BundleUp.PoppyPodsDriedBale,
+            Base.String = BundleUp.StringBale,
+            Base.SunflowerHeadDried = BundleUp.SunflowerHeadDriedBale,
+            Base.TobaccoDried = BundleUp.TobaccoDriedBale,
+            Base.WoolRaw = BundleUp.WoolRawBale,
+        }
+    }
+
+    craftRecipe PackSheafBundle {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 10 [Base.BarleySheafDried;Base.HempBundleDried;Base.RyeSheafDried;Base.WheatSheafDried] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.BarleySheafDriedBundle = Base.BarleySheafDried,
+            BundleUp.HempDriedBundle = Base.HempBundleDried,
+            BundleUp.RyeSheafDriedBundle = Base.RyeSheafDried,
+            BundleUp.WheatSheafDriedBundle = Base.WheatSheafDried,
+        }
+    }
+
+    craftRecipe UnpackSheafBundle {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.BarleySheafDriedBundle;BundleUp.HempDriedBundle;BundleUp.RyeSheafDriedBundle;BundleUp.WheatSheafDriedBundle] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.BarleySheafDried = BundleUp.BarleySheafDriedBundle,
+            Base.HempBundleDried = BundleUp.HempDriedBundle,
+            Base.RyeSheafDried = BundleUp.RyeSheafDriedBundle,
+            Base.WheatSheafDried = BundleUp.WheatSheafDriedBundle,
         }
     }
 }
