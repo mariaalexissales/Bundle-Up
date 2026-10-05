@@ -37,6 +37,10 @@ jobs:
 
       # the generators are stdlib-only, so there is nothing to install.
       # --check exits 1 and names the stale files if regenerating would change them.
+      # first, because the tiers read the cartons this writes.
+      - name: packs are up to date
+        run: python estral-tools/bundle-up/generate_packs.py --check
+
       - name: tiers are up to date
         run: python estral-tools/bundle-up/generate_tiers.py --check
 

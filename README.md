@@ -223,9 +223,13 @@ It filters that diff to the expected output types, so anything you picked up mid
 
 ## Generated content
 
-There are 324 food cartons, each needing a Case and a Crate: an item block, a pack and an unpack recipe, a weight row and a display name per rung. That's too much to review by hand, so the upper tiers are generated from the pack ladders the mod already declares.
+A pack used to be typed in six places: an item block, the pack recipe's list and its mapper, the same again for the unpack, a weight row, a weight category and a display name. At 1,477 packs nobody could review that, and 3.1's 478 new ones only went in with a throwaway script. Now `families.json` says each one once, `{"base": "Hinge", "name": "Door Hinges"}`, and `generate_packs.py` writes the rest. A family lists its members and the variants each one comes in, a box of 10 or rope and sheet rope bundles of 5 and 10, and the recipes are templates that take whichever packs name them. Only the soda six-packs, thread and bulk smelting are still written by hand.
 
-`generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes three whole files stamped *do not edit by hand*, plus a sorted block at the end of `ItemName.json` and `Recipes.json`. All of it is committed. Running it again with no source change must produce no diff, and `--check` enforces that on every PR.
+The table wasn't typed either. A one-off converter read it out of the old hand-written files, and `compare_packs.py` checked the regenerated mod against the old one: same items, recipes, weights and names, ignoring only the order the game ignores.
+
+There are 324 food cartons, each needing a Case and a Crate: an item block, a pack and an unpack recipe, a weight row and a display name per rung. Those upper tiers are generated from the cartons.
+
+`generate_tiers.py` reads `BU_WeightData_Packs.lua` and writes three whole files stamped *do not edit by hand*, plus its entries in `ItemName.json` and `Recipes.json`, which both generators keep sorted. All of it is committed. Running it again with no source change must produce no diff, and `--check` enforces that on every PR.
 
 `generate_sandbox.py` does the same for `sandbox-options.txt`. A per-item slider belongs on the page of the category slider that item inherits from, which means walking `resolve_base` down to the vanilla item the same way `BU_ApplyWeights.lua` does in game. Doing that by hand for 322 options is where typos come from, and deriving it keeps the pages right when new tiers land. Labels and tooltips are written by hand and the generator doesn't touch them. It owns block order, `page =` values and the eight page titles, nothing else.
 
@@ -245,9 +249,10 @@ There are 324 food cartons, each needing a Case and a Crate: an item block, a pa
 
 The repo is the mod folder. It lives at `Zomboid/Workshop/Bundle Up` and the game loads it in place, so there's no build step.
 
-Check the generated files are current (drop `--check` to regenerate after changing a pack ladder):
+Check the generated files are current (drop `--check` to regenerate after changing `families.json`):
 
 ```bash
+python ../estral-tools/bundle-up/generate_packs.py --check
 python ../estral-tools/bundle-up/generate_tiers.py --check
 python ../estral-tools/bundle-up/generate_vfx.py --check
 python ../estral-tools/bundle-up/generate_sandbox.py --check
@@ -276,6 +281,7 @@ Every push and PR runs these, and `dev` and `main` only take a merge when they p
 
 | Check | What it catches |
 | --- | --- |
+| Packs are up to date | `families.json` changed and the packs weren't regenerated, or a generated file was edited by hand and the next regenerate would undo it. |
 | Tiers are up to date | A pack ladder changed and the generated tiers weren't regenerated, or a generated file was edited by hand and the next regenerate would undo it. |
 | VFX packs are up to date | The Vanilla Foods Expanded add-on drifted from `vfx_families.json`, or one of its generated files was edited by hand. |
 | Sandbox options are up to date | A new slider with no label, or on the page of a category it doesn't inherit from. |
