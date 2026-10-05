@@ -2,10 +2,13 @@
 --ESTRAL--
 ----------
 
+require "TimedActions/ISInventoryTransferAction"
+
 BU = BU or {}
 
 function BU.sendBack(player, item, container)
-    local action = ISInventoryTransferUtil.newInventoryTransferAction(
+    -- not the util factory: item arrange swaps in its own action for floor drops while shift is held.
+    local action = ISInventoryTransferAction:new(
         player, item, player:getInventory(), container, nil)
     -- whatever was poured dry is gone by now, so the transfer has to tolerate it.
     action:setAllowMissingItems(true)

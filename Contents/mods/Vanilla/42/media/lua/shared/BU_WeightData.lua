@@ -467,6 +467,17 @@ BU.BaseReduction = {
     ["Base.CowLeather_Holstein_Fur_Tan"]  = 20,
     ["Base.CowLeather_Simmental_Fur_Tan"] = 20,
     ["Base.Leather_Crude_Large_Tan"]      = 20,
+    ["Base.CowLeather_Angus_Fur"]         = 20,
+    ["Base.CowLeather_Angus_Fur_Tan_Wet"] = 20,
+    ["Base.CowLeather_Angus_Full"]        = 20,
+    ["Base.CowLeather_Holstein_Fur"]      = 20,
+    ["Base.CowLeather_Holstein_Fur_Tan_Wet"] = 20,
+    ["Base.CowLeather_Holstein_Full"]     = 20,
+    ["Base.CowLeather_Simmental_Fur"]     = 20,
+    ["Base.CowLeather_Simmental_Fur_Tan_Wet"] = 20,
+    ["Base.CowLeather_Simmental_Full"]    = 20,
+    ["Base.Leather_Crude_Large"]          = 20,
+    ["Base.Leather_Crude_Large_Tan_Wet"]  = 20,
 }
 
 local MAX_DEPTH = 16

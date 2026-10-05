@@ -25,12 +25,12 @@ zedscript declares the items and recipes, and the flags the engine enforces on i
 
 | File | What's in it |
 | --- | --- |
-| `scripts/items/boxed.txt` | 465 packs: nail and screw boxes, food cartons, supply, medical and parts boxes, brake and suspension boxes |
-| `scripts/items/bundled.txt` | 262 packs: wire, sheets, magazine and book boxes, six-packs, ingot stacks |
-| `scripts/items/roped.txt` | 196 packs: rope bundles of planks, pipes, hides and building stock |
-| `scripts/items/sacked.txt` | 87 packs: sacks, seed pouches, scrap, ore and charcoal |
-| `scripts/items/tiered.txt` | 377 Cases and 329 Crates above the food cartons, vanilla's canned food boxes and the drink six-packs. Generated. |
-| `scripts/recipes/*.txt` | 140 recipes: pack and unpack per family, plus ammo, thread, bulk smelting, and the generated Case and Crate recipes |
+| `scripts/items/boxed.txt` | 650 packs: nail and screw boxes, food and crop cartons, supply, medical and parts boxes, ceramic crates, brake and suspension boxes |
+| `scripts/items/bundled.txt` | 287 packs: wire, sheets, magazine and book boxes, six-packs, ingot stacks, fibre bales and sheaves |
+| `scripts/items/roped.txt` | 464 packs: rope bundles of planks, pipes, building stock and hides at every stage from raw to tanned |
+| `scripts/items/sacked.txt` | 87 packs: sacks, seed packet boxes, scrap, ore and charcoal |
+| `scripts/items/tiered.txt` | 396 Cases and 344 Crates above the food cartons, vanilla's canned food boxes and the drink six-packs. Generated. |
+| `scripts/recipes/*.txt` | 150 recipes: pack and unpack per family, plus ammo, thread, bulk smelting, and the generated Case and Crate recipes |
 | `scripts/bu_models.txt` | 23 world models, so a dropped pack is a visible pile |
 | `sandbox-options.txt` | 322 options on eight pages |
 | `lua/shared/Translate/EN/*.json` | Item names, recipe labels, sandbox text |
@@ -51,7 +51,7 @@ Base mod, `Contents/mods/Vanilla/42/media/lua/`:
 | File | Side | Job |
 | --- | --- | --- |
 | `shared/BU_WeightData.lua` | shared | Hand-kept pack rows, which weight slider each base item follows, per-family weight cuts, and walking a nested pack down to its vanilla item |
-| `shared/BU_WeightData_Packs.lua` | shared | The other ~580 pack rows and their categories. The generators read this. |
+| `shared/BU_WeightData_Packs.lua` | shared | The other ~1,200 pack rows and their categories. The generators read this. |
 | `shared/BU_WeightData_Tiers.lua` | shared | Generated rows for the Cases and Crates |
 | `shared/BU_ApplyWeights.lua` | shared | Sets each pack's weight to base weight × count minus the slider cut, and restamps packs already in a save |
 | `shared/BU_ApplySpoilage.lua` | shared | Scales pack rot thresholds by the sandbox spoilage rate |
