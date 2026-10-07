@@ -108,6 +108,7 @@ UI add-on, `Contents/mods/BundleUpUI/42/media/lua/client/`:
 | `BUUI_Spinner.lua` | The `-` / number / `+` / `MAX` control |
 | `BUUI_Button.lua` | The NeatUI-skinned button |
 | `BUUI_Sidebar.lua` | The sidebar fly-out that opens the panel |
+| `BUUI_Keybind.lua` | The rebindable keys under Options > Mods: toggle the panel, and Bundle All, Unbundle All and Merge All with no window |
 
 Guns of Marz add-on, `Contents/mods/BundleUpGoM/42/media/`:
 

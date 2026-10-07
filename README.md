@@ -196,6 +196,8 @@ end
 
 `BundleUpUI` adds a panel that reads every container in reach and lists everything you could pack, unpack or merge right now, with a `-` / `+` / `MAX` dial per row and a **Bundle All** that runs everything ready at once. It's a separate mod in the same subscription, off by default, and the base mod works the same with or without it.
 
+**K** opens and closes the panel. Bundle All, Unbundle All and Merge All can each take a key of their own under Options > Mods, and run without the panel open; those three ship unbound.
+
 **It finds recipes by module name.** The panel builds its list from `ScriptManager.instance:getAllCraftRecipes()`, filtered on one table:
 
 ```lua
