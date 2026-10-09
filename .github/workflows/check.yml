@@ -96,3 +96,8 @@ jobs:
 
       - name: no file mixes line endings
         run: python estral-tools/bundle-up/check_line_endings.py
+
+      # steam refuses an upload whose description reaches 8,000 bytes, and the
+      # game's id lines count.
+      - name: workshop page fits steam's limit
+        run: python estral-tools/workshop/check_length.py
