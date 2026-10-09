@@ -1,0 +1,120 @@
+/*----------*/
+/*--ESTRAL--*/
+/*----------*/
+
+module BundleUp {
+    imports {
+        Base,
+    }
+
+    item SodaPack {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = GingerSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaPack,
+    }
+
+    item DietSodaPack {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = GingerSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaPack,
+    }
+
+    item GingerAleSP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = GingerSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenGingerAlePack,
+    }
+
+    item BlueberrySP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = BlueberrySP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item BubblegumSP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = BubblegumSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item GrapeSP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = GrapeSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item LimeSP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = LimeSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item OrangeSP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = OrangeSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item PineappleSP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = PineappleSP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item StrawberrySP {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = StrawberrySP,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenSodaCanPack,
+    }
+
+    item VarietyPack {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.49,
+        Icon = VarietyPack,
+        WorldStaticModel = BeerCanSixpack,
+        Tags = base:hasmetal,
+        DoubleClickRecipe = OpenVarietyPack,
+    }
+
+}

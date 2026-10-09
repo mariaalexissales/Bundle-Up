@@ -37,6 +37,10 @@ jobs:
 
       # the generators are stdlib-only, so there is nothing to install.
       # --check exits 1 and names the stale files if regenerating would change them.
+      # first, because the tiers read the cartons this writes.
+      - name: packs are up to date
+        run: python estral-tools/bundle-up/generate_packs.py --check
+
       - name: tiers are up to date
         run: python estral-tools/bundle-up/generate_tiers.py --check
 
@@ -92,3 +96,8 @@ jobs:
 
       - name: no file mixes line endings
         run: python estral-tools/bundle-up/check_line_endings.py
+
+      # steam refuses an upload whose description reaches 8,000 bytes, and the
+      # game's id lines count.
+      - name: workshop page fits steam's limit
+        run: python estral-tools/workshop/check_length.py

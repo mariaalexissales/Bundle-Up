@@ -485,6 +485,15 @@ function BUUI.openPanel(player)
     data.instance = window
 end
 
+function BUUI.togglePanel(player)
+    local window = BUUI.getWindow(player:getPlayerNum())
+    if window then
+        window:onCloseClick()
+    else
+        BUUI.openPanel(player)
+    end
+end
+
 Events.OnPlayerDeath.Add(function(player)
     local window = BUUI.getWindow(player:getPlayerNum())
     if window then window:close() end
