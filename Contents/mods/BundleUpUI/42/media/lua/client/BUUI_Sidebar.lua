@@ -93,13 +93,7 @@ end
 
 function BUUI_Popup:onMouseDown(x, y)
     self:hideTooltip()
-
-    local window = BUUI.getWindow(self.playerNum)
-    if window then
-        window:onCloseClick()
-    else
-        BUUI.openPanel(self.chr)
-    end
+    BUUI.togglePanel(self.chr)
 
     return true
 end

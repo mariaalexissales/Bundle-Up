@@ -1,6 +1,9 @@
 {
     "IGUI_BUUI_Title": "Bundle Up",
     "IGUI_BUUI_PanelTooltip": "Packing Panel",
+    "IGUI_BUUI_ToggleKey": "Toggle Packing Panel",
+    "IGUI_BUUI_ToggleKeyTooltip": "Opens and closes the Packing Panel.",
+    "IGUI_BUUI_BatchKeyTooltip": "Runs on everything in reach, with or without the panel open. Press again to stop.",
     "IGUI_BUUI_Bundle": "Bundle",
     "IGUI_BUUI_Unbundle": "Unbundle",
     "IGUI_BUUI_BundleItems": "Bundle Items",
