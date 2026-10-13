@@ -8874,7 +8874,7 @@ module BundleUp {
         DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 0.83,
-        Icon = Parcel_Large_Hardware,
+        Icon = HayBale10,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackFodderBundle,
     }
@@ -8883,7 +8883,7 @@ module BundleUp {
         DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.66,
-        Icon = Parcel_Large_Hardware,
+        Icon = HayBale20,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackFibreBale,
     }
@@ -8892,7 +8892,7 @@ module BundleUp {
         DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 0.83,
-        Icon = Parcel_Large_Hardware,
+        Icon = GrassCut10,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackFodderBundle,
     }
@@ -8901,7 +8901,7 @@ module BundleUp {
         DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.66,
-        Icon = Parcel_Large_Hardware,
+        Icon = GrassCut20,
         WorldStaticModel = Parcel_Hardware_Large,
         DoubleClickRecipe = UnpackFibreBale,
     }
