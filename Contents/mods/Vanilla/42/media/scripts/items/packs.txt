@@ -8816,24 +8816,6 @@ module BundleUp {
         DoubleClickRecipe = UnpackFibreBale,
     }
 
-    item HayTuftBale {
-        DisplayCategory = Food,
-        ItemType = base:normal,
-        Weight = 1.66,
-        Icon = Parcel_Large_Hardware,
-        WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackFibreBale,
-    }
-
-    item GrassTuftBale {
-        DisplayCategory = Food,
-        ItemType = base:normal,
-        Weight = 1.66,
-        Icon = Parcel_Large_Hardware,
-        WorldStaticModel = Parcel_Hardware_Large,
-        DoubleClickRecipe = UnpackFibreBale,
-    }
-
     item TobaccoDriedBale {
         DisplayCategory = Tool,
         ItemType = base:normal,
@@ -8881,6 +8863,42 @@ module BundleUp {
 
     item PlantainDriedBale {
         DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item HayTuftBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFodderBundle,
+    }
+
+    item HayTuftBale {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 1.66,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFibreBale,
+    }
+
+    item GrassTuftBundle {
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.83,
+        Icon = Parcel_Large_Hardware,
+        WorldStaticModel = Parcel_Hardware_Large,
+        DoubleClickRecipe = UnpackFodderBundle,
+    }
+
+    item GrassTuftBale {
+        DisplayCategory = Food,
         ItemType = base:normal,
         Weight = 1.66,
         Icon = Parcel_Large_Hardware,
