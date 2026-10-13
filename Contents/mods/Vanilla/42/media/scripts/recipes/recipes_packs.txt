@@ -2893,14 +2893,14 @@ module BundleUp {
             BundleUp.DogbaneBale = Base.Dogbane,
             BundleUp.WoolRawBale = Base.WoolRaw,
             BundleUp.StringBale = Base.String,
-            BundleUp.HayTuftBale = Base.HayTuft,
-            BundleUp.GrassTuftBale = Base.GrassTuft,
             BundleUp.TobaccoDriedBale = Base.TobaccoDried,
             BundleUp.HopsDriedBale = Base.HopsDried,
             BundleUp.PoppyPodsDriedBale = Base.PoppyPodsDried,
             BundleUp.SunflowerHeadDriedBale = Base.SunflowerHeadDried,
             BundleUp.ComfreyDriedBale = Base.ComfreyDried,
             BundleUp.PlantainDriedBale = Base.PlantainDried,
+            BundleUp.HayTuftBale = Base.HayTuft,
+            BundleUp.GrassTuftBale = Base.GrassTuft,
         }
     }
 
@@ -2910,7 +2910,7 @@ module BundleUp {
         Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
         category = Packing,
         inputs {
-            item 1 [BundleUp.FlaxRippledBale;BundleUp.FlaxDriedBale;BundleUp.FlaxScutchedBale;BundleUp.FlaxHeckledBale;BundleUp.FlaxTowBale;BundleUp.HempScutchedBale;BundleUp.DogbaneBale;BundleUp.WoolRawBale;BundleUp.StringBale;BundleUp.HayTuftBale;BundleUp.GrassTuftBale;BundleUp.TobaccoDriedBale;BundleUp.HopsDriedBale;BundleUp.PoppyPodsDriedBale;BundleUp.SunflowerHeadDriedBale;BundleUp.ComfreyDriedBale;BundleUp.PlantainDriedBale] flags[IsExclusive;ItemCount] mappers[itemTypes],
+            item 1 [BundleUp.FlaxRippledBale;BundleUp.FlaxDriedBale;BundleUp.FlaxScutchedBale;BundleUp.FlaxHeckledBale;BundleUp.FlaxTowBale;BundleUp.HempScutchedBale;BundleUp.DogbaneBale;BundleUp.WoolRawBale;BundleUp.StringBale;BundleUp.TobaccoDriedBale;BundleUp.HopsDriedBale;BundleUp.PoppyPodsDriedBale;BundleUp.SunflowerHeadDriedBale;BundleUp.ComfreyDriedBale;BundleUp.PlantainDriedBale;BundleUp.HayTuftBale;BundleUp.GrassTuftBale] flags[IsExclusive;ItemCount] mappers[itemTypes],
         }
         outputs {
             item 20 mapper:itemTypes,
@@ -2925,14 +2925,14 @@ module BundleUp {
             Base.Dogbane = BundleUp.DogbaneBale,
             Base.WoolRaw = BundleUp.WoolRawBale,
             Base.String = BundleUp.StringBale,
-            Base.HayTuft = BundleUp.HayTuftBale,
-            Base.GrassTuft = BundleUp.GrassTuftBale,
             Base.TobaccoDried = BundleUp.TobaccoDriedBale,
             Base.HopsDried = BundleUp.HopsDriedBale,
             Base.PoppyPodsDried = BundleUp.PoppyPodsDriedBale,
             Base.SunflowerHeadDried = BundleUp.SunflowerHeadDriedBale,
             Base.ComfreyDried = BundleUp.ComfreyDriedBale,
             Base.PlantainDried = BundleUp.PlantainDriedBale,
+            Base.HayTuft = BundleUp.HayTuftBale,
+            Base.GrassTuft = BundleUp.GrassTuftBale,
         }
     }
 
@@ -2971,6 +2971,40 @@ module BundleUp {
             Base.BarleySheafDried = BundleUp.BarleySheafDriedBundle,
             Base.RyeSheafDried = BundleUp.RyeSheafDriedBundle,
             Base.HempBundleDried = BundleUp.HempDriedBundle,
+        }
+    }
+
+    craftRecipe PackFodderBundle {
+        timedAction = PackingBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 10 [Base.GrassTuft;Base.HayTuft] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 1 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            BundleUp.HayTuftBundle = Base.HayTuft,
+            BundleUp.GrassTuftBundle = Base.GrassTuft,
+        }
+    }
+
+    craftRecipe UnpackFodderBundle {
+        timedAction = UnPackBox,
+        time = 5,
+        Tags = InHandCraft;CanBeDoneInDark;CanBeDoneFromFloor,
+        category = Packing,
+        inputs {
+            item 1 [BundleUp.HayTuftBundle;BundleUp.GrassTuftBundle] flags[IsExclusive;ItemCount] mappers[itemTypes],
+        }
+        outputs {
+            item 10 mapper:itemTypes,
+        }
+        itemMapper itemTypes {
+            Base.HayTuft = BundleUp.HayTuftBundle,
+            Base.GrassTuft = BundleUp.GrassTuftBundle,
         }
     }
 
