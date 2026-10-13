@@ -25,7 +25,7 @@ zedscript declares the items and recipes, and the flags the engine enforces on i
 
 | File | What's in it |
 | --- | --- |
-| `scripts/items/packs.txt` | 1,477 packs: every box, carton, crate, bale, sack, six-pack, ingot stack and rope bundle. Generated. |
+| `scripts/items/packs.txt` | 1,479 packs: every box, carton, crate, bale, sack, six-pack, ingot stack and rope bundle. Generated. |
 | `scripts/items/soda.txt` | 11 packs: the soda six-packs, which go by what's in the can and not by the can |
 | `scripts/items/tiered.txt` | 396 Cases and 344 Crates above the food cartons, vanilla's canned food boxes and the drink six-packs. Generated. |
 | `scripts/recipes/*.txt` | 150 recipes: 122 generated pack, unpack and merge recipes, the soda ones, thread, bulk smelting, and the generated Case and Crate recipes |
@@ -50,7 +50,7 @@ Base mod, `Contents/mods/Vanilla/42/media/lua/`:
 | File | Side | Job |
 | --- | --- | --- |
 | `shared/BU_WeightData.lua` | shared | The soda pack rows, the built-in weight cut some heavy items get, and walking a nested pack down to its vanilla item |
-| `shared/BU_WeightData_Packs.lua` | shared | The other 1,477 pack rows and which weight slider each base item follows. Generated. |
+| `shared/BU_WeightData_Packs.lua` | shared | The other 1,479 pack rows and which weight slider each base item follows. Generated. |
 | `shared/BU_WeightData_Tiers.lua` | shared | Generated rows for the Cases and Crates |
 | `shared/BU_ApplyWeights.lua` | shared | Sets each pack's weight to base weight × count minus the slider cut, restamps packs already in a save, and re-checks hourly in case another weight mod moved something |
 | `shared/BU_ApplySpoilage.lua` | shared | Scales pack rot thresholds by the sandbox spoilage rate |
