@@ -2,16 +2,17 @@
 
 The [README](README.md) covers what the mod does and the engine surprises behind it. This is the map: which file does what, when each piece runs, the rules the code keeps, and how a change gets from a branch to the Workshop.
 
-## Four mods, one subscription
+## Five mods, one subscription
 
 | Folder | Mod id | What it is |
 | --- | --- | --- |
 | `Contents/mods/Vanilla/42/` | `BundleUp` | Everything that matters in play: items, recipes, weights, loot, spoilage, merging. No dependencies. |
 | `Contents/mods/BundleUpUI/42/` | `BundleUpUI` | The optional Packing panel. Requires `BundleUp` and NeatUI Framework. |
+| `Contents/mods/BundleUpVPUI/42/` | `BundleUpVPUI` | The same panel as a tab on Viewpoint Interface's hub. Requires `BundleUp` and Viewpoint Interface. |
 | `Contents/mods/BundleUpGoM/42/` | `BundleUpGoM` | Optional Guns of Marz support: its magazines, 40mm rounds and weapon repair packs, up to crates. Requires `BundleUp` and Guns of Marz. |
 | `Contents/mods/BundleUpVFX/42/` | `BundleUpVFX` | Optional Vanilla Foods Expanded support: 887 of its store foods and drinks, up to crates. Requires `BundleUp` and Vanilla Foods Expanded. |
 
-The UI add-on reads the base mod (its recipes, `BU.Merge`, the transfer helpers). The base mod never calls the UI, so it plays the same with the add-on off.
+The two UI add-ons share the panel's logic, which ships in the base mod: `BUUI_Index`, `BUUI_Queue` and `BUUI_Model` index the recipes, build the rows, run batches and the batch hotkeys. `BUUI_Index` checks the active mod list first and stops unless `BundleUpUI` or `BundleUpVPUI` is on, and the other two stop when it did, so with no UI add-on the base mod plays exactly as before. Each add-on only draws: a NeatUI window, or a Viewpoint hub tab. Both register a view with `BUUI.addView`, so a hotkey batch updates whichever is open.
 
 The Guns of Marz add-on plugs into the base mod through three hooks: its pack rows go into `BU.Bundles`, its loot goes into the base mod's plan through `BU.addLoot`, and it sets `BU.vanillaMagazinesOff` so nobody can pack mags into a vanilla magazine box while GoM is swapping those for its own. If the panel is on too, it lists GoM's own ammo recipes in `BUUI.extraRecipes`. Its items and recipes are in module `BundleUp`, so the panel and the checks treat them like the base mod's.
 
@@ -24,11 +25,14 @@ flowchart LR
     subgraph base["BundleUp (Vanilla/42)"]
         scripts["scripts/*.txt<br/>items, recipes, models"]
         shared["lua/shared<br/>weights, spoilage, recipe callbacks, merge plan"]
-        client["lua/client<br/>Pour into, spoilage refresh, admin reapply"]
+        client["lua/client<br/>Pour into, spoilage refresh, admin reapply,<br/>panel index, queue and model (UI add-ons only)"]
         server["lua/server<br/>loot tables"]
     end
     subgraph ui["BundleUpUI (BundleUpUI/42)"]
-        panel["Packing panel<br/>index, queue, window, sidebar button"]
+        panel["Packing panel<br/>window, sidebar button"]
+    end
+    subgraph vpui["BundleUpVPUI (BundleUpVPUI/42)"]
+        vptab["Viewpoint hub tab"]
     end
     subgraph gom["BundleUpGoM (BundleUpGoM/42)"]
         gompacks["magazine, 40mm and repair pack ladders<br/>loot, sandbox page"]
@@ -41,8 +45,10 @@ flowchart LR
     shared --> engine
     client --> engine
     server --> engine
-    panel -->|"recipes, BU.Merge, BU.sendBack"| base
+    panel -->|"BUUI model, queue, index"| base
     panel --> engine
+    vptab -->|"BUUI model, queue, index"| base
+    vptab -->|"Hub.register"| viewpoint(("Viewpoint<br/>Interface"))
     gompacks -->|"BU.Bundles, BU.addLoot, BU.vanillaMagazinesOff"| base
     gompacks -.->|"BUUI.extraRecipes"| ui
     gompacks --> engine
@@ -97,18 +103,31 @@ Base mod, `Contents/mods/Vanilla/42/media/lua/`:
 | `client/BU_ReapplyWeights.lua` | client | Admin menu option that re-runs the weight patch, and the hook that restamps carried packs when the hourly check finds drift |
 | `server/BUProceduralDistributions.lua` | server | The loot plan, inserted at the sandbox spawn rates |
 
+Panel logic, in the base mod at `Contents/mods/Vanilla/42/media/lua/client/`, loaded only with a UI add-on on:
+
+| File | Job |
+| --- | --- |
+| `BUUI_Index.lua` | The UI gate. Indexes the packing recipes and turns what's in reach into pack, unpack and merge rows |
+| `BUUI_Queue.lua` | Runs a batch one craft or pour at a time and sends outputs back where their inputs came from |
+| `BUUI_Model.lua` | What both panels share: refresh with dialled amounts kept, the stale-scan gate, source names, the view registry, hotkey batches |
+
 UI add-on, `Contents/mods/BundleUpUI/42/media/lua/client/`:
 
 | File | Job |
 | --- | --- |
-| `BUUI_Index.lua` | Indexes the packing recipes and turns what's in reach into pack, unpack and merge rows |
-| `BUUI_Queue.lua` | Runs a batch one craft or pour at a time and sends outputs back where their inputs came from |
 | `BUUI_Panel.lua` | The window: tabs, sources, list, footer buttons, auto-refresh |
 | `BUUI_Row.lua` | One recycled list row |
 | `BUUI_Spinner.lua` | The `-` / number / `+` / `MAX` control |
 | `BUUI_Button.lua` | The NeatUI-skinned button |
 | `BUUI_Sidebar.lua` | The sidebar fly-out that opens the panel |
 | `BUUI_Keybind.lua` | The rebindable keys under Options > Mods: toggle the panel, and Bundle All, Unbundle All and Merge All with no window |
+
+Viewpoint UI add-on, `Contents/mods/BundleUpVPUI/42/media/lua/client/`:
+
+| File | Job |
+| --- | --- |
+| `BUVP_Tab.lua` | The hub tab: mode tabs, sources, rows with a `-` / number / `+` / `MAX` dial, footer buttons, auto-refresh |
+| `BUVP_Keybind.lua` | The toggle key, unbound, and the batch keys when `BundleUpUI` isn't on to carry them |
 
 Guns of Marz add-on, `Contents/mods/BundleUpGoM/42/media/`:
 
@@ -141,7 +160,7 @@ Most of the bugs in this mod's history came from doing the right thing at the wr
 sequenceDiagram
     participant G as Game
     participant B as BundleUp
-    participant U as BundleUpUI
+    participant U as UI add-ons
     G->>B: file load
     Note over B: loot plan recorded, not inserted<br/>Pour into and pour action patched
     G->>G: sandbox settings load
@@ -151,7 +170,7 @@ sequenceDiagram
     G->>B: OnGameStart (client, single player) / OnServerStarted (dedicated)
     Note over B: weights and spoilage again, restamping saved packs<br/>loot: remove BundleUp.* by name, insert at sandbox rates,<br/>rebuild the Java loot copy (not on clients, not if nothing changed)
     G->>U: OnGameStart
-    Note over U: recipe index built, sidebar button patched in
+    Note over U: recipe index built (base mod file, UI add-on on),<br/>sidebar button patched in
     loop while playing
         G->>B: OnTick after a craft
         Note over B: remove the sacks and shells the engine minted,<br/>settle bulk smelting
