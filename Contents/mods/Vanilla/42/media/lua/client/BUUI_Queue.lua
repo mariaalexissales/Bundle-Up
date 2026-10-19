@@ -3,6 +3,8 @@
 ----------
 
 require "BUUI_Index"
+if not BUUI.MODE then return end
+
 require "BU_Transfer"
 require "TimedActions/ISConsolidateDrainable"
 
