@@ -8,11 +8,11 @@ The [README](README.md) covers what the mod does and the engine surprises behind
 | --- | --- | --- |
 | `Contents/mods/Vanilla/42/` | `BundleUp` | Everything that matters in play: items, recipes, weights, loot, spoilage, merging. No dependencies. |
 | `Contents/mods/BundleUpUI/42/` | `BundleUpUI` | The optional Packing panel. Requires `BundleUp` and NeatUI Framework. |
-| `Contents/mods/BundleUpVPUI/42/` | `BundleUpVPUI` | The same panel as a tab on Viewpoint Interface's hub. Requires `BundleUp` and Viewpoint Interface. |
+| `Contents/mods/BundleUpVPUI/42/` | `BundleUpVPUI` | The same panel as a tab on Viewpoint Interface's hub. Requires `BundleUp` and Viewpoint Interface. Can't be on with `BundleUpUI`. |
 | `Contents/mods/BundleUpGoM/42/` | `BundleUpGoM` | Optional Guns of Marz support: its magazines, 40mm rounds and weapon repair packs, up to crates. Requires `BundleUp` and Guns of Marz. |
 | `Contents/mods/BundleUpVFX/42/` | `BundleUpVFX` | Optional Vanilla Foods Expanded support: 887 of its store foods and drinks, up to crates. Requires `BundleUp` and Vanilla Foods Expanded. |
 
-The two UI add-ons share the panel's logic, which ships in the base mod: `BUUI_Index`, `BUUI_Queue` and `BUUI_Model` index the recipes, build the rows, run batches and the batch hotkeys. `BUUI_Index` checks the active mod list first and stops unless `BundleUpUI` or `BundleUpVPUI` is on, and the other two stop when it did, so with no UI add-on the base mod plays exactly as before. Each add-on only draws: a NeatUI window, or a Viewpoint hub tab. Both register a view with `BUUI.addView`, so a hotkey batch updates whichever is open.
+The two UI add-ons share the panel's logic, which ships in the base mod: `BUUI_Index`, `BUUI_Queue` and `BUUI_Model` index the recipes, build the rows, run batches and the batch hotkeys. `BUUI_Index` checks the active mod list first and stops unless `BundleUpUI` or `BundleUpVPUI` is on, and the other two stop when it did, so with no UI add-on the base mod plays exactly as before. Each add-on only draws: a NeatUI window, or a Viewpoint hub tab. Each registers a view with `BUUI.addView`, so a hotkey batch updates the panel when it's open.
 
 The Guns of Marz add-on plugs into the base mod through three hooks: its pack rows go into `BU.Bundles`, its loot goes into the base mod's plan through `BU.addLoot`, and it sets `BU.vanillaMagazinesOff` so nobody can pack mags into a vanilla magazine box while GoM is swapping those for its own. If the panel is on too, it lists GoM's own ammo recipes in `BUUI.extraRecipes`. Its items and recipes are in module `BundleUp`, so the panel and the checks treat them like the base mod's.
 
@@ -127,7 +127,7 @@ Viewpoint UI add-on, `Contents/mods/BundleUpVPUI/42/media/lua/client/`:
 | File | Job |
 | --- | --- |
 | `BUVP_Tab.lua` | The hub tab: mode tabs, sources, rows with a `-` / number / `+` / `MAX` dial, footer buttons, auto-refresh |
-| `BUVP_Keybind.lua` | The toggle key, unbound, and the batch keys when `BundleUpUI` isn't on to carry them |
+| `BUVP_Keybind.lua` | The toggle key, unbound, and the three batch keys |
 
 Guns of Marz add-on, `Contents/mods/BundleUpGoM/42/media/`:
 

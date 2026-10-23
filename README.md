@@ -199,7 +199,7 @@ end
 
 **K** opens and closes the panel. Bundle All, Unbundle All and Merge All can each take a key of their own under Options > Mods, and run without the panel open; those three ship unbound.
 
-**`BundleUpVPUI` is the same panel for [Viewpoint Interface](https://steamcommunity.com/sharedfiles/filedetails/?id=3812616893).** Viewpoint hides the sidebar and puts every screen on its hub, so the panel goes there as a tab, drawn the way Viewpoint draws its own. Click a row's number to type one in, or scroll on it. K is Viewpoint's Build key, so the toggle ships unbound; the hub's rail always opens it. It doesn't need NeatUI, and it can be on alongside `BundleUpUI`, which keeps its window for the isometric view.
+**`BundleUpVPUI` is the same panel for [Viewpoint Interface](https://steamcommunity.com/sharedfiles/filedetails/?id=3812616893).** Viewpoint hides the sidebar and puts every screen on its hub, so the panel goes there as a tab, drawn the way Viewpoint draws its own. Click a row's number to type one in, or scroll on it. K is Viewpoint's Build key, so the toggle ships unbound; the hub's rail always opens it. It doesn't need NeatUI. Pick one panel by how you play: `BundleUpUI` for isometric, `BundleUpVPUI` for Viewpoint. `BundleUpVPUI`'s mod.info says `incompatible=BundleUpUI`, so the Mods menu won't tick both.
 
 **Both panels run on the same code, which lives in the base mod.** Indexing, the rows, the batch queue and the hotkey batches are in `BUUI_Index`, `BUUI_Queue` and `BUUI_Model` in the base mod, so the two can't drift. Without a UI add-on on, those files stop on their first line and define nothing.
 
