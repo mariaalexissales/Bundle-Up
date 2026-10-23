@@ -217,8 +217,8 @@ function Tab:batchFinished()
     self:refreshIfShown()
 end
 
--- only the button that started the batch becomes Stop. a batch from a hotkey or the
--- other panel has none here, and falls to All so it can still be cancelled.
+-- only the button that started the batch becomes Stop. a batch from a hotkey has none
+-- here, and falls to All so it can still be cancelled.
 function Tab:stopButton()
     return self.running or self.allButton
 end
@@ -268,7 +268,6 @@ end
 function Tab:update(now)
     if BUUI.Queue.isRunning() then return end
 
-    -- the other panel's Stop ends a batch without telling the views.
     if self.running then
         self.running = nil
         self.dirty = true
