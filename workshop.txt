@@ -20,12 +20,14 @@ description=[*][b]322 sandbox options[/b] for spawn rates, weights and spoilage
 description=[/list]
 description=[hr][/hr]
 description=[h2]Optional Add-ons[/h2]
-description=All three come with this subscription. Tick them on in the Mods menu. The base mod needs none of them.
+description=All four come with this subscription. Tick them on in the Mods menu. The base mod needs none of them.
 description=[list]
 description=[*][b]Packing Panel:[/b] one window to pack, unpack and merge everything in reach, with Bundle All. Needs [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032]NeatUI Framework[/url].
+description=[*][b]Packing Panel for Viewpoint:[/b] the same panel as a tab on the Viewpoint hub. Needs [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3812616893]Viewpoint - Interface[/url].
 description=[*][b]Guns of Marz:[/b] its 55 magazines, 40mm rounds and repair packs, up to crates. Needs [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990]Guns of Marz[/url].
 description=[*][b]Vanilla Foods Expanded:[/b] 887 of its store foods and drinks, up to crates. Needs [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3577903007]Vanilla Foods Expanded[/url].
 description=[/list]
+description=[b]Pick one panel:[/b] the Packing Panel if you play isometric, the Viewpoint one if you play through Viewpoint. The Mods menu won’t let you tick both.
 description=[hr][/hr]
 description=[h1]Join Our Community![/h1]
 description=Have questions, suggestions, or need support? Join the official Discord server to stay updated on future releases and connect with other players!
