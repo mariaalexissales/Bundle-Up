@@ -1,0 +1,8 @@
+name=Bundle Up! - Viewpoint UI Add-on
+id=BundleUpVPUI
+author=Estral
+description=Adds the packing panel to the Viewpoint - Interface hub - by Estral
+poster=poster.png
+require=BundleUp,\ViewpointUI
+versionMin=42.21
+incompatible=BundleUpUI
