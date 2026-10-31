@@ -35,7 +35,7 @@ Put 99 nails in a box and half your base goes missing to server chunk rot. Sheet
 - **Part-used stock merges back.** Half-empty spools, rolls and bottles merge into whole ones, and *Add to* / *Consolidate all* read every container in reach, not just your main inventory.
 - **322 sandbox options** across eight pages: loot spawn rates, then per-category and per-item weight sliders grouped by the category each one inherits from, so servers can tune the whole thing without touching a file.
 
-Three optional add-ons ship in the same subscription: the packing panel, Guns of Marz support and Vanilla Foods Expanded support. The base mod has no dependencies and isn't gaining any.
+Four optional add-ons ship in the same subscription: the packing panel, the same panel as a Viewpoint Interface tab, Guns of Marz support and Vanilla Foods Expanded support. The base mod has no dependencies and isn't gaining any.
 
 One load-order note, if you also run Remove Vanilla Anything: both mods edit the loot tables on `OnGameStart`, and which goes first follows your mod list. Load Bundle Up first and *Also remove modded items* will strip its packs; load it second and they survive. Both work, so pick the one you want.
 
@@ -45,8 +45,9 @@ One load-order note, if you also run Remove Vanilla Anything: both mods edit the
 
 | Path | What lives there |
 | --- | --- |
-| `Contents/mods/Vanilla/42/` | The base mod. ~16,000 lines of zedscript, ~4,300 of Lua, 322 sandbox options. |
-| `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,800 lines of Lua, off by default, needs NeatUI Framework. |
+| `Contents/mods/Vanilla/42/` | The base mod. ~16,000 lines of zedscript, ~5,300 of Lua, 322 sandbox options. |
+| `Contents/mods/BundleUpUI/42/` | Optional UI add-on. ~1,000 lines of Lua, off by default, needs NeatUI Framework. |
+| `Contents/mods/BundleUpVPUI/42/` | Optional Viewpoint UI add-on. The same panel as a tab on Viewpoint Interface's hub. ~500 lines of Lua, off by default, needs Viewpoint Interface. |
 | `Contents/mods/BundleUpGoM/42/` | Optional Guns of Marz add-on. Packs its 55 magazines, 40mm rounds and weapon repair packs up to crates. Needs Guns of Marz. |
 | `Contents/mods/BundleUpVFX/42/` | Optional Vanilla Foods Expanded add-on. Packs 887 of its store foods and drinks up to crates. Needs Vanilla Foods Expanded. |
 
@@ -198,6 +199,10 @@ end
 
 **K** opens and closes the panel. Bundle All, Unbundle All and Merge All can each take a key of their own under Options > Mods, and run without the panel open; those three ship unbound.
 
+**`BundleUpVPUI` is the same panel for [Viewpoint Interface](https://steamcommunity.com/sharedfiles/filedetails/?id=3812616893).** Viewpoint hides the sidebar and puts every screen on its hub, so the panel goes there as a tab, drawn the way Viewpoint draws its own. Click a row's number to type one in, or scroll on it. K is Viewpoint's Build key, so the toggle ships unbound; the hub's rail always opens it. It doesn't need NeatUI. Pick one panel by how you play: `BundleUpUI` for isometric, `BundleUpVPUI` for Viewpoint. `BundleUpVPUI`'s mod.info says `incompatible=BundleUpUI`, so the Mods menu won't tick both.
+
+**Both panels run on the same code, which lives in the base mod.** Indexing, the rows, the batch queue and the hotkey batches are in `BUUI_Index`, `BUUI_Queue` and `BUUI_Model` in the base mod, so the two can't drift. Without a UI add-on on, those files stop on their first line and define nothing.
+
 **It finds recipes by module name.** The panel builds its list from `ScriptManager.instance:getAllCraftRecipes()`, filtered on one table:
 
 ```lua
@@ -315,7 +320,7 @@ The checks are scripts in estral-tools, the same ones I run locally.
 
 ## Credits
 
-By **Estral**. The UI add-on is built on [NeatUI Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032) by Rocco & Afyrmo.
+By **Estral**. The UI add-on is built on [NeatUI Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=3508537032) by Rocco & Afyrmo, and the Viewpoint UI add-on on [Viewpoint Interface](https://steamcommunity.com/sharedfiles/filedetails/?id=3812616893)'s hub.
 
 Found a bug or want something packed? Use the [bug report or coverage form](https://github.com/mariaalexissales/Bundle-Up/issues/new/choose), or leave a comment on the Workshop page.
 
