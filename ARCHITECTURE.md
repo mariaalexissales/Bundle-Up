@@ -20,43 +20,6 @@ The Vanilla Foods Expanded add-on uses the same hooks minus the magazine switch:
 
 Build 42 only reads a `common/` folder or a version folder like `42/`. Nothing at the mod root is loaded, so there isn't anything there.
 
-```mermaid
-flowchart LR
-    subgraph base["BundleUp (Vanilla/42)"]
-        scripts["scripts/*.txt<br/>items, recipes, models"]
-        shared["lua/shared<br/>weights, spoilage, recipe callbacks, merge plan"]
-        client["lua/client<br/>Pour into, spoilage refresh, admin reapply,<br/>panel index, queue and model (UI add-ons only)"]
-        server["lua/server<br/>loot tables"]
-    end
-    subgraph ui["BundleUpUI (BundleUpUI/42)"]
-        panel["Packing panel<br/>window, sidebar button"]
-    end
-    subgraph vpui["BundleUpVPUI (BundleUpVPUI/42)"]
-        vptab["Viewpoint hub tab"]
-    end
-    subgraph gom["BundleUpGoM (BundleUpGoM/42)"]
-        gompacks["magazine, 40mm and repair pack ladders<br/>loot, sandbox page"]
-    end
-    subgraph vfx["BundleUpVFX (BundleUpVFX/42)"]
-        vfxpacks["carton, six-pack, case and crate ladders<br/>loot, sandbox page"]
-    end
-    engine(("Project Zomboid<br/>engine"))
-    scripts --> engine
-    shared --> engine
-    client --> engine
-    server --> engine
-    panel -->|"BUUI model, queue, index"| base
-    panel --> engine
-    vptab -->|"BUUI model, queue, index"| base
-    vptab -->|"Hub.register"| viewpoint(("Viewpoint<br/>Interface"))
-    gompacks -->|"BU.Bundles, BU.addLoot, BU.vanillaMagazinesOff"| base
-    gompacks -.->|"BUUI.extraRecipes"| ui
-    gompacks --> engine
-    vfxpacks -->|"BU.Bundles, BU.addLoot"| base
-    vfxpacks -.->|"BUUI.extraRecipes"| ui
-    vfxpacks --> engine
-```
-
 ## Data and behaviour
 
 zedscript declares the items and recipes, and the flags the engine enforces on its own. Lua only covers what a flag can't.
