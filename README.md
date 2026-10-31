@@ -327,3 +327,4 @@ Found a bug or want something packed? Use the [bug report or coverage form](http
 - **[Remove Vanilla Anything](https://steamcommunity.com/sharedfiles/filedetails/?id=3799346338)**: for those who are tired of seeing vanilla items in their heavily modded servers
 - **[Dead Court Deck](https://steamcommunity.com/sharedfiles/filedetails/?id=3800241753)**: for your ~~scalper~~ collectable needs! ([source](https://github.com/mariaalexissales/Dead-Court-Deck))
 - **[LAPLACE//DAEMON](https://steamcommunity.com/sharedfiles/filedetails/?id=3809376465)**: every blade you forge rolls a rarity, and a fortune ([source](https://github.com/mariaalexissales/LAPLACE-DAEMON))
+- **[zBay](https://steamcommunity.com/sharedfiles/filedetails/?id=3817487234)**: buy, sell and bid with your server’s own currency
