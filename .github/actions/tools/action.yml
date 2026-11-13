@@ -1,0 +1,32 @@
+name: tools
+description: estral-tools beside the mod, and the python that runs it
+
+inputs:
+  ssh-key:
+    description: the read-only deploy key for estral-tools
+    required: true
+  pip:
+    description: packages to install, space separated
+    default: ''
+
+runs:
+  using: composite
+  steps:
+    # estral-tools is private. it lands inside the checkout, gitignored, and its
+    # scripts read the mod out of the working directory, not their own location.
+    - uses: actions/checkout@v7
+      with:
+        repository: mariaalexissales/estral-tools
+        ssh-key: ${{ inputs.ssh-key }}
+        path: estral-tools
+        persist-credentials: false
+
+    - uses: actions/setup-python@v7
+      with:
+        python-version: '3.12'
+
+    - if: inputs.pip != ''
+      shell: bash
+      env:
+        PACKAGES: ${{ inputs.pip }}
+      run: pip install --quiet $PACKAGES

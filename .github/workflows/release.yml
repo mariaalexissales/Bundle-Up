@@ -22,16 +22,9 @@ jobs:
       # title is read from it.
       - run: git fetch --force --tags origin
 
-      - uses: actions/checkout@v7
+      - uses: ./.github/actions/tools
         with:
-          repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
-          path: estral-tools
-          persist-credentials: false
-
-      - uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
 
       - name: publish the notes and the workshop zip
         env:
