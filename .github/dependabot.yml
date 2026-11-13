@@ -1,10 +1,16 @@
 version: 2
 updates:
   - package-ecosystem: github-actions
-    directory: /
+    # / only covers the workflows, so the setup action is named too
+    directories:
+      - /
+      - /.github/actions/tools
     schedule:
       interval: weekly
     # main only ever holds what is live on the Workshop
     target-branch: dev
     commit-message:
       prefix: chore
+    groups:
+      actions:
+        patterns: ['*']

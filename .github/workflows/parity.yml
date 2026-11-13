@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # always main, even on a pull request: main is the branch that has to match.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main
           persist-credentials: false
@@ -32,4 +32,26 @@ jobs:
           test -d "$RUNNER_TEMP/workshop/steamapps/workshop/content/108600/3746632343/mods"
 
       - name: no file differs
-        run: diff -rq "$RUNNER_TEMP/workshop/steamapps/workshop/content/108600/3746632343/mods" Contents/mods
+        run: |
+          live="$RUNNER_TEMP/workshop/steamapps/workshop/content/108600/3746632343/mods"
+          if diff -rq "$live" Contents/mods > "$RUNNER_TEMP/main.txt"; then
+            exit 0
+          fi
+          cat "$RUNNER_TEMP/main.txt"
+          {
+            echo '### the live build against `main`'
+            echo '```'
+            cat "$RUNNER_TEMP/main.txt"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # a build that matches dev went up before its release pr merged.
+          git fetch --quiet --depth 1 origin dev
+          mkdir "$RUNNER_TEMP/dev"
+          git archive FETCH_HEAD Contents/mods | tar -x -C "$RUNNER_TEMP/dev"
+          if diff -rq "$live" "$RUNNER_TEMP/dev/Contents/mods" > /dev/null; then
+            echo "::error::the live build is dev's: the upload is out and its release pr isn't merged. merge dev into main."
+          else
+            echo "::error::the live build is neither main's nor dev's: main is waiting on its upload, or the upload came from another branch."
+          fi
+          exit 1
