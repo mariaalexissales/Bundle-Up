@@ -4,6 +4,20 @@
 
 BUUI = BUUI or {}
 
+local BUUI_ADDONS = { BundleUpUI = true, BundleUpVPUI = true }
+
+local function BUUI_addonActive()
+    local mods = getActivatedMods()
+    for i = 0, mods:size() - 1 do
+        if BUUI_ADDONS[tostring(mods:get(i))] then return true end
+    end
+    return false
+end
+
+-- the ui add-ons share this file from the base mod. without one it defines nothing,
+-- and BUUI.MODE staying nil is what the files after it check.
+if not BUUI_addonActive() then return end
+
 require "BU_MergeData"
 
 BUUI.MODE = {

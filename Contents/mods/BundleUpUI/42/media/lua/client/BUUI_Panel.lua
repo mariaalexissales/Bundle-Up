@@ -4,8 +4,7 @@
 
 require "ISUI/ISCollapsableWindow"
 require "BUUI_Button"
-require "BUUI_Index"
-require "BUUI_Queue"
+require "BUUI_Model"
 require "BUUI_Row"
 
 BUUI = BUUI or {}
@@ -19,13 +18,11 @@ local TAB_HEIGHT = 22
 local BAR_HEIGHT = 22
 local FOOTER_HEIGHT = 30
 local REFRESH_TICKS = 90
-local STALE_REFRESHES = 10
 local ROW_GAP = 4
 local TAB_GAP = 4
 local TAB_TITLE_PAD = 28
 local FOOTER_INSET = 4
 local LABEL_PAD = 24
-local SOURCES_SHOWN = 3
 local WINDOW_WIDTH, WINDOW_HEIGHT = 720, 560
 local SCREEN_MARGIN = 40
 
@@ -75,18 +72,6 @@ function BUUI_Panel:bands()
     local footerY = self.height - self:resizeWidgetHeight() - FOOTER_HEIGHT
     return tabY, barY, listY, footerY
 end
-
-local BUUI_LABELS = {
-    [BUUI.MODE.BUNDLE] = {
-        items = "IGUI_BUUI_BundleItems", all = "IGUI_BUUI_BundleAll", empty = "IGUI_BUUI_Empty",
-    },
-    [BUUI.MODE.UNBUNDLE] = {
-        items = "IGUI_BUUI_UnbundleItems", all = "IGUI_BUUI_UnbundleAll", empty = "IGUI_BUUI_EmptyUnbundle",
-    },
-    [BUUI.MODE.MERGE] = {
-        items = "IGUI_BUUI_MergeItems", all = "IGUI_BUUI_MergeAll", empty = "IGUI_BUUI_EmptyMerge",
-    },
-}
 
 -- both footer buttons swap label with the tab and one of them turns into Stop, so each
 -- is sized for the widest text it can ever hold and the strip never reflows.
@@ -183,61 +168,8 @@ function BUUI_Panel:onRefresh()
     self:refresh()
 end
 
-local function BUUI_sameScan(a, b)
-    if not a or not b or a.square ~= b.square then return false end
-
-    local ca, cb = a.containers, b.containers
-    if ca:size() ~= cb:size() then return false end
-    for i = 0, ca:size() - 1 do
-        if ca:get(i) ~= cb:get(i) then return false end
-    end
-
-    for fullType, count in pairs(a.tally) do
-        if b.tally[fullType] ~= count then return false end
-    end
-    for fullType in pairs(b.tally) do
-        if a.tally[fullType] == nil then return false end
-    end
-
-    return true
-end
-
-function BUUI_Panel:scanReach()
-    local containers, tally, sample = BUUI.scanContainers(self.player)
-    return {
-        square = self.player:getCurrentSquare(),
-        containers = containers,
-        tally = tally,
-        sample = sample,
-    }
-end
-
 function BUUI_Panel:refresh(scan)
-    -- the auto-refresh rebuilds every row, so a dialled quantity has to be carried
-    -- across by key or the timer wipes it before the player reaches the button.
-    local dialled = {}
-    for _, row in ipairs(self.rows) do
-        if row.key then dialled[row.key] = row.quantity end
-    end
-
-    if self.mode == BUUI.MODE.MERGE then
-        scan = nil
-    else
-        scan = scan or self:scanReach()
-    end
-    self.lastScan = scan
-    self.skipped = 0
-
-    local rows, containers = BUUI.resolveRows(self.player, self.mode, scan)
-    self.rows = rows
-    self.sourceText = self:describeSources(containers)
-
-    self.ready = 0
-    for _, row in ipairs(self.rows) do
-        local previous = dialled[row.key]
-        if previous then row.quantity = math.min(previous, row.max) end
-        if row.ready then self.ready = self.ready + 1 end
-    end
+    BUUI.refreshView(self, scan)
 
     -- the scroll view only reassigns data when the visible range moves, so a refresh
     -- that leaves the row count alone has to be forced through.
@@ -249,8 +181,8 @@ end
 function BUUI_Panel:updateFooter()
     if not self.bundleItems then return end
 
-    self.bundleItems.title = getText(BUUI_LABELS[self.mode].items)
-    self.bundleAll.title = getText(BUUI_LABELS[self.mode].all)
+    self.bundleItems.title = getText(BUUI.LABELS[self.mode].items)
+    self.bundleAll.title = getText(BUUI.LABELS[self.mode].all)
 
     -- only the button that started the batch becomes Stop. one that outlived its window
     -- has none, and falls to Bundle All so a reopened panel can still cancel it.
@@ -262,50 +194,8 @@ function BUUI_Panel:updateFooter()
         return
     end
 
-    local chosen = 0
-    for _, row in ipairs(self.rows) do
-        if row.ready and (row.quantity or 0) > 0 then chosen = chosen + 1 end
-    end
-
-    self.bundleItems.enable = chosen > 0
+    self.bundleItems.enable = #BUUI.chosenRows(self) > 0
     self.bundleAll.enable = (self.ready or 0) > 0
-end
-
--- the player's own inventory has no holder and its raw type reads "none".
-local function BUUI_containerName(container)
-    local holder = container:getContainingItem()
-    if holder then return holder:getName() end
-
-    local kind = container:getType()
-    if not kind or kind == "" or kind == "none" then
-        return getText("IGUI_BUUI_Inventory")
-    end
-
-    return getTextOrNull("IGUI_ContainerTitle_" .. tostring(kind)) or tostring(kind)
-end
-
-function BUUI_Panel:describeSources(containers)
-    local names, seen = {}, {}
-
-    for i = 0, containers:size() - 1 do
-        local name = BUUI_containerName(containers:get(i))
-        if name and name ~= "" and not seen[name] then
-            seen[name] = true
-            names[#names + 1] = name
-        end
-    end
-
-    if #names == 0 then return getText("IGUI_BUUI_NoSources") end
-
-    local shown = {}
-    for i = 1, math.min(SOURCES_SHOWN, #names) do shown[i] = names[i] end
-
-    local text = getText("IGUI_BUUI_Sources") .. " " .. table.concat(shown, ", ")
-    if #names > SOURCES_SHOWN then
-        text = text .. " (+" .. tostring(#names - SOURCES_SHOWN) .. ")"
-    end
-
-    return text
 end
 
 function BUUI_Panel:stopBatch()
@@ -326,12 +216,7 @@ function BUUI_Panel:onBundleItems()
         return
     end
 
-    local chosen = {}
-    for _, row in ipairs(self.rows) do
-        if row.ready and (row.quantity or 0) > 0 then
-            chosen[#chosen + 1] = row
-        end
-    end
+    local chosen = BUUI.chosenRows(self)
     if #chosen == 0 then return end
 
     self.runningButton = self.bundleItems
@@ -382,7 +267,7 @@ function BUUI_Panel:render()
         COL_TEXT.r, COL_TEXT.g, COL_TEXT.b, 1, UIFont.Small)
 
     if #self.rows == 0 then
-        local empty = getText(BUUI_LABELS[self.mode].empty)
+        local empty = getText(BUUI.LABELS[self.mode].empty)
         local width = getTextManager():MeasureStringX(UIFont.Small, empty)
         local height = footerY - listY - GAP
         self:drawText(empty, (self.width - width) / 2, listY + height / 2 - 8,
@@ -405,19 +290,8 @@ function BUUI_Panel:update()
     if self.ticks < REFRESH_TICKS then return end
     self.ticks = 0
 
-    -- fill levels, wear and rot change a row without moving the tally, so merge is never
-    -- gated and the other tabs still re-probe after STALE_REFRESHES skipped checks.
-    if self.mode ~= BUUI.MODE.MERGE and self.skipped < STALE_REFRESHES then
-        local scan = self:scanReach()
-        if BUUI_sameScan(scan, self.lastScan) then
-            self.skipped = self.skipped + 1
-            return
-        end
-        self:refresh(scan)
-        return
-    end
-
-    self:refresh()
+    local changed, scan = BUUI.pollView(self)
+    if changed then self:refresh(scan) end
 end
 
 function BUUI_Panel:onResize()
@@ -493,6 +367,17 @@ function BUUI.togglePanel(player)
         BUUI.openPanel(player)
     end
 end
+
+BUUI.addView(function(finished)
+    local window = BUUI.getWindow(0)
+    if not window then return end
+
+    if finished then
+        window:onBatchFinished()
+    else
+        window:refresh()
+    end
+end)
 
 Events.OnPlayerDeath.Add(function(player)
     local window = BUUI.getWindow(player:getPlayerNum())
