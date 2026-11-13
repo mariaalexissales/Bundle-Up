@@ -17,12 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # the harness reads the base branch's lua out of git, so it needs the history.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}

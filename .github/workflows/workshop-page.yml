@@ -21,13 +21,13 @@ jobs:
       # a schedule would check main, which only ever holds the last upload. the next
       # upload comes from dev, so dev is the one that has to keep up with the page.
       # main stays in the history as the base the page's edits are merged against.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name != 'pull_request' && 'dev' || '' }}
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
