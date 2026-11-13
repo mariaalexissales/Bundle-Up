@@ -303,13 +303,13 @@ The checks are scripts in estral-tools, the same ones I run locally.
 
 **Behaviour.** Every PR also runs the mod's Lua twice, once from the base branch and once from the PR, behind a stub of the game's API, and diffs every result and engine call. That covers the Packing panel's rows, the batch queue, merging, *Pour into* and the panel layout. A `refactor:` PR fails if anything differs. Any other PR gets the diff as a warning to check against what it meant to change. Loot gets the same comparison, but only locally, because it needs the game's own loot tables.
 
-**Workshop parity.** Every morning CI downloads the live Workshop build with steamcmd and diffs it against `main`. Any file that differs turns it red.
+**Workshop parity.** Every morning CI downloads the live Workshop build with steamcmd and diffs it against `main`. Any file that differs turns it red. It then checks the build against `dev`: a match means the upload went out and its release PR hasn't merged, anything else means `main` is still waiting on its upload.
 
 **Workshop page.** Every PR, and a daily run against `dev`, fails when the live Workshop page has an edit `workshop.txt` doesn't. Only `main` requires it, so editing the page doesn't block topic PRs, but the release PR can't merge until the page's edits are in the file the upload will push.
 
-**Releases.** Pushing a version tag publishes a [GitHub release](https://github.com/mariaalexissales/Bundle-Up/releases) with the patch notes from that version's release PRs, every PR and commit that went into it, and the Workshop build zipped. Every version back to 1.21 has one. The Workshop upload itself is still done by hand, because it needs a Steam login. Steam has its own [change notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3746632343) for each upload.
+**Releases.** Merging a `[Patch x.y]` release PR into `main` tags the merge `vx.y` and publishes a [GitHub release](https://github.com/mariaalexissales/Bundle-Up/releases) with the patch notes from that version's release PRs, every PR and commit that went into it, and the Workshop build zipped. Every version back to 1.21 has one. The Workshop upload itself is still done by hand, because it needs a Steam login. Steam has its own [change notes](https://steamcommunity.com/sharedfiles/filedetails/changelog/3746632343) for each upload.
 
-**PR titles** have to start with `fix:`, `feat:`, `chore:`, `refactor:`, `docs:` or `[Patch x.y] -`, any version number, so the history says what changed. **Dependabot** keeps the workflow actions current and opens its PRs against `dev`, never `main`.
+**PR titles** have to start with `fix:`, `feat:`, `chore:`, `refactor:`, `docs:` or `[Patch x.y] -`, any version number, so the history says what changed. **Dependabot** keeps the workflow actions current with one PR a week, opened against `dev`, never `main`.
 
 ---
 

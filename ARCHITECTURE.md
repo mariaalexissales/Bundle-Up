@@ -177,7 +177,7 @@ PRs into `main` also need **workshop.txt matches the live page**. I write the Wo
 
 The scripts behind all of them live in estral-tools, a private repo CI checks out with a read-only deploy key.
 
-Pushing a `v*` tag publishes the GitHub release with that version's patch notes and a zip of the build. A daily job downloads the live Workshop build with steamcmd and diffs it against `main`, so a drift shows up the next morning.
+Merging a `[Patch x.y]` release PR into `main` tags the merge `vx.y` and publishes the GitHub release with that version's patch notes and a zip of the build. A daily job downloads the live Workshop build with steamcmd and diffs it against `main`, so a drift shows up the next morning. When they differ it checks `dev` as well, to say whether the upload or the merge is the half that's missing.
 
 ## Testing
 
