@@ -21,21 +21,10 @@ jobs:
         with:
           persist-credentials: false
 
-      # the generators live in estral-tools, which is private, so this needs the
-      # read-only deploy key. it lands beside the mod rather than in it, and they
-      # read the mod out of the working directory, not their own location.
-      - uses: actions/checkout@v7
+      - uses: ./.github/actions/tools
         with:
-          repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
-          path: estral-tools
-          persist-credentials: false
 
-      - uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
-
-      # the generators are stdlib-only, so there is nothing to install.
       # --check exits 1 and names the stale files if regenerating would change them.
       # first, because the tiers read the cartons this writes.
       - name: packs are up to date
@@ -69,16 +58,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: actions/checkout@v7
+      - uses: ./.github/actions/tools
         with:
-          repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
-          path: estral-tools
-          persist-credentials: false
-
-      - uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
+          pip: luaparser==4.2.0
 
       # broken json and a missing name both fail silently in game: the label
       # just renders as its raw key.
@@ -90,9 +73,7 @@ jobs:
 
       # a lua syntax error only shows up once the game loads the file.
       - name: lua files parse
-        run: |
-          pip install --quiet luaparser==4.2.0
-          python estral-tools/bundle-up/check_lua.py
+        run: python estral-tools/bundle-up/check_lua.py
 
       - name: no file mixes line endings
         run: python estral-tools/bundle-up/check_line_endings.py

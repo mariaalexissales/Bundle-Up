@@ -22,18 +22,10 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: actions/checkout@v7
+      - uses: ./.github/actions/tools
         with:
-          repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
-          path: estral-tools
-          persist-credentials: false
-
-      - uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
-
-      - run: pip install --quiet lupa==2.8 luaparser==4.2.0
+          pip: lupa==2.8 luaparser==4.2.0
 
       # reports go to RUNNER_TEMP: compare_tokens lists untracked files, so a report
       # written into the checkout would show up in itself. the title goes in through

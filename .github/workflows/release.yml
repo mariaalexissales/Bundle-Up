@@ -1,6 +1,9 @@
 name: release
 
 on:
+  pull_request:
+    types: [closed]
+    branches: [main]
   push:
     tags: ['v*']
 
@@ -11,29 +14,60 @@ permissions:
 jobs:
   release:
     name: publish the release
+    # a [Patch x.y] release pr merging, or a tag pushed by hand.
+    if: >-
+      github.event_name == 'push' ||
+      (github.event.pull_request.merged && github.head_ref == 'dev' &&
+       startsWith(github.event.pull_request.title, '[Patch '))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: ${{ github.event.pull_request.merge_commit_sha || github.ref }}
           fetch-depth: 0
           persist-credentials: false
 
-      # checkout leaves the pushed tag without its annotation, and the release
+      # the tagger is whoever merged, not the actions bot. a tag made with this
+      # token doesn't start the workflow again. the title goes in through env,
+      # same as pr-title.yml.
+      - name: tag the merge
+        id: tag
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: ${{ github.event.pull_request.title }}
+          SHA: ${{ github.event.pull_request.merge_commit_sha }}
+        run: |
+          version=$(printf '%s' "$TITLE" | sed -nE 's/^\[Patch ([0-9]+(\.[0-9]+)+)\] - .*/\1/p')
+          if [ -z "$version" ]; then
+            echo "::error::the title has no [Patch x.y] - version to tag"
+            exit 1
+          fi
+          tag="v$version"
+          echo "name=$tag" >> "$GITHUB_OUTPUT"
+          if gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$tag" > /dev/null 2>&1; then
+            echo "$tag is already there"
+            exit 0
+          fi
+          object=$(gh api "repos/$GITHUB_REPOSITORY/git/tags" \
+            -f tag="$tag" -f message="$TITLE" -f object="$SHA" -f type=commit \
+            -f "tagger[name]=$(git log -1 --format=%an "$SHA")" \
+            -f "tagger[email]=$(git log -1 --format=%ae "$SHA")" \
+            -f "tagger[date]=$(git log -1 --format=%cI "$SHA")" \
+            --jq .sha)
+          gh api "repos/$GITHUB_REPOSITORY/git/refs" -f ref="refs/tags/$tag" -f sha="$object" > /dev/null
+          echo "tagged $SHA as $tag"
+
+      # checkout leaves a pushed tag without its annotation, and the release
       # title is read from it.
       - run: git fetch --force --tags origin
 
-      - uses: actions/checkout@v7
+      - uses: ./.github/actions/tools
         with:
-          repository: mariaalexissales/estral-tools
           ssh-key: ${{ secrets.ESTRAL_TOOLS_KEY }}
-          path: estral-tools
-          persist-credentials: false
-
-      - uses: actions/setup-python@v7
-        with:
-          python-version: '3.12'
 
       - name: publish the notes and the workshop zip
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python estral-tools/bundle-up/publish_release.py "$GITHUB_REF_NAME"
+          TAG: ${{ steps.tag.outputs.name || github.ref_name }}
+        run: python estral-tools/bundle-up/publish_release.py "$TAG"
