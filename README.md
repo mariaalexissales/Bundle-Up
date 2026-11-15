@@ -127,6 +127,12 @@ To keep that true, `BU.applyWeights` runs again once the game has settled (a few
 
 This means a weight another mod sets directly on a bundle loses to Bundle Up's sliders. The per-item `Item_` sliders are the way to give one bundle its own weight.
 
+### Changing a slider mid-game
+
+The game fires no event when a sandbox option changes, and a slider moved mid-game used to do nothing until the next in-game hour or a reload, which read as "the slider is broken". Now `EveryOneMinute` compares the weight sliders against the last values seen and re-runs the pass when one moved. A minute that finds nothing calls no Java.
+
+The restamp only reaches bundles in the inventory and the open loot window, so each bundle is also checked when a container is shown. One whose weight already matches the script is left alone.
+
 ### Food keeps its own spoil timers
 
 Patching the script works for weight because an item copies its weight from the script when it's built. Food saves its own `offAge` and `offAgeMax`, so patching the script never reaches food that's already saved. Packed food needed a migration instead, and the order matters:
