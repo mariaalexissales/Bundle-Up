@@ -105,13 +105,21 @@ function BU.refreshWeight(item)
         return
     end
 
+    local weight = script:getActualWeight()
+    local frozen = item.isCustomWeight and item:isCustomWeight()
+    if not frozen
+        and math.abs(item:getActualWeight() - weight) <= WEIGHT_EPSILON
+        and math.abs(item:getWeight() - weight) <= WEIGHT_EPSILON then
+        return
+    end
+
     -- another weight mod may have frozen a stale value into the item; it would reload over the script.
-    if item.isCustomWeight and item:isCustomWeight() then
+    if frozen then
         item:setCustomWeight(false)
     end
 
-    item:setActualWeight(script:getActualWeight())
-    item:setWeight(script:getActualWeight())
+    item:setActualWeight(weight)
+    item:setWeight(weight)
 end
 
 -- OnInitGlobalModData is the only event after the sandbox loads and before any inventory
@@ -128,9 +136,9 @@ Events.OnServerStarted.Add(BU.applyWeights)
 local BU_settled = false
 local BU_settleTicks = nil
 
-local function BU_settle()
+local function BU_settle(force)
     local changed = BU.applyWeights()
-    if (changed > 0 or not BU_settled) and BU.onWeightsChanged then
+    if (changed > 0 or force == true or not BU_settled) and BU.onWeightsChanged then
         BU.onWeightsChanged()
     end
     BU_settled = true
@@ -156,4 +164,34 @@ Events.OnGameStart.Add(BU_armSettle)
 Events.OnServerStarted.Add(BU_armSettle)
 if Events.EveryHours then
     Events.EveryHours.Add(BU_settle)
+end
+
+-- nothing fires when a sandbox option changes mid-game, so the weight sliders are compared
+-- against the last values seen. a minute that finds them unmoved calls no java.
+local BU_seen = nil
+
+local function BU_slidersMoved(sv)
+    local first = BU_seen == nil
+    if first then BU_seen = {} end
+
+    local moved = false
+    for key, value in pairs(sv) do
+        if type(value) == "number" and BU_seen[key] ~= value
+            and (key:sub(1, 9) == "Reduction" or key:sub(1, 5) == "Item_") then
+            BU_seen[key] = value
+            moved = true
+        end
+    end
+    return moved and not first
+end
+
+local function BU_watchSliders()
+    local sv = SandboxVars and SandboxVars.BundleUp
+    if sv and BU_slidersMoved(sv) then
+        BU_settle(true)
+    end
+end
+
+if Events.EveryOneMinute then
+    Events.EveryOneMinute.Add(BU_watchSliders)
 end

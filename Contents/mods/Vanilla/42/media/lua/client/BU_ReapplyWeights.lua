@@ -16,6 +16,14 @@ BU.onWeightsChanged = function()
     BU.forEachWatchedItem(BU.refreshWeight)
 end
 
+-- a pack in a container nobody had open missed the restamp, so it is checked when shown.
+local function BU_onRefreshContainers(page, state)
+    if state == "end" then
+        BU.forEachWatchedItem(BU.refreshWeight)
+    end
+end
+Events.OnRefreshInventoryWindowContainers.Add(BU_onRefreshContainers)
+
 local function BU_onFillInventoryContextMenu(playerNum, context, items)
     if not isAdmin() then return end
     context:addOption(getText("ContextMenu_BU_ReapplyWeights"), nil, BU_reapplyWeights)
